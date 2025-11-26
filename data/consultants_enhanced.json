@@ -11,6 +11,7 @@
       "size": "~200 employees",
       "founded": null,
       "website": "https://forsen.com/",
+      "sourceRefs": ["forsen_website", "forsen_amaranten_press", "forsen_grow_hotel", "forsen_hotel_oden"],
       "businessModel": "Independent project and construction management company - NOT architects/designers. This is critical - they coordinate but don't compete with Fyra's design role.",
       "keyContacts": [
         {
@@ -188,6 +189,7 @@
       "size": "22,000 employees (2,000+ in Sweden)",
       "founded": null,
       "website": "https://swecogroup.com/ | https://sweco.se/",
+      "sourceRefs": ["sweco_website", "sweco_blique_nobis", "sweco_aterbruk", "sweco_amanda_borneke", "amanda_borneke_linkedin", "sweco_stora_enso"],
       "businessModel": "Full-service architecture + engineering + sustainability + project management. CRITICAL: Sweco CAN do architecture, but also offers standalone PM services. Need to clarify scope so Fyra retains design role.",
       "keyContacts": [
         {
@@ -373,6 +375,7 @@
       "size": "~400 employees",
       "founded": "1947 (70+ years)",
       "website": "https://hifab.se/",
+      "sourceRefs": ["hifab_website", "hifab_skycity", "hifab_energy_focus"],
       "listing": "Publicly listed on Nasdaq First North",
       "businessModel": "Pure project management and owner's advisory (byggherrerådgivning). CRITICAL: Hifab does NOT do design. They are PM only = natural partner for Fyra's design work.",
       "keyContacts": [

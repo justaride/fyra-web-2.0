@@ -1,0 +1,816 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "lastUpdated": "2025-01-26",
+    "description": "Central source registry for Fyra Circular Platform. All data entities reference sources by ID for traceability and verification.",
+    "totalSources": 85
+  },
+  "sources": [
+    {
+      "id": "white_house_of_choice_project",
+      "title": "House of Choice - White Arkitekter Project Page",
+      "url": "https://whitearkitekter.com/project/house-of-choice/",
+      "type": "project_page",
+      "publisher": "White Arkitekter",
+      "language": "en",
+      "verifies": ["white_arkitekter", "house_of_choice_case", "nordic_choice_hotels"],
+      "keyFacts": ["Scandinavia's first zero-energy hotel", "336 rooms", "2,500 m² solar panels", "FEBY Gold certification"]
+    },
+    {
+      "id": "white_house_of_choice_news",
+      "title": "Scandinavia's first zero-energy hotel opens today",
+      "url": "https://whitearkitekter.com/news/scandinavias-first-zero-energy-hotel-opened-today/",
+      "type": "press_release",
+      "publisher": "White Arkitekter",
+      "date": "2021-06",
+      "language": "en",
+      "verifies": ["white_arkitekter", "house_of_choice_case"],
+      "keyFacts": ["World's most photovoltaic-dense hotel", "Passive house technology"]
+    },
+    {
+      "id": "white_sara_kulturhus",
+      "title": "Sara Cultural Centre, Skellefteå - White Arkitekter",
+      "url": "https://whitearkitekter.com/project/sara-cultural-centre/",
+      "type": "project_page",
+      "publisher": "White Arkitekter",
+      "language": "en",
+      "verifies": ["white_arkitekter", "sara_kulturhus_case"],
+      "keyFacts": ["20-storey timber hotel", "75m tall", "CLT construction", "World's tallest timber buildings"]
+    },
+    {
+      "id": "white_stockholm_waterfront",
+      "title": "Stockholm Waterfront - White Arkitekter",
+      "url": "https://whitearkitekter.com/project/stockholm-waterfront/",
+      "type": "project_page",
+      "publisher": "White Arkitekter",
+      "language": "en",
+      "verifies": ["white_arkitekter"],
+      "keyFacts": ["418 hotel rooms", "Congress hall for 3000", "1.5 billion SEK", "Silverbalken Award 2011"]
+    },
+    {
+      "id": "wsp_sara_kulturhus",
+      "title": "Sara Kulturhus: redefining the future of timber architecture",
+      "url": "https://www.wsp.com/en-gl/projects/sara-kulturhus-skelleftea",
+      "type": "project_page",
+      "publisher": "WSP Global",
+      "language": "en",
+      "verifies": ["wsp", "sara_kulturhus_case"],
+      "keyFacts": ["9,000 tonnes CO₂ stored", "Twice emissions of construction", "Carbon-negative building"]
+    },
+    {
+      "id": "wsp_miljocertifiering",
+      "title": "Miljöcertifiering och hälsocertifiering av byggnader",
+      "url": "https://www.wsp.com/sv-se/tjanster/miljocertifiering-av-byggnader",
+      "type": "service_page",
+      "publisher": "WSP Sweden",
+      "language": "sv",
+      "verifies": ["wsp"],
+      "keyFacts": ["LEED certification services", "BREEAM certification", "Miljöbyggnad", "WELL certification"]
+    },
+    {
+      "id": "wsp_aterbruk",
+      "title": "Återbruk i bygg- och rivningsprocessen",
+      "url": "https://www.wsp.com/sv-se/tjanster/aterbruk",
+      "type": "service_page",
+      "publisher": "WSP Sweden",
+      "language": "sv",
+      "verifies": ["wsp"],
+      "keyFacts": ["Reuse inventory services", "Reuse coordination", "Demolition reuse"]
+    },
+    {
+      "id": "forsen_amaranten_press",
+      "title": "Forsen projektleder ombyggnaden av Clarion Hotel Amaranten",
+      "url": "https://www.mynewsdesk.com/se/forsen/pressreleases/forsen-bygger-om-hotell-amaranten-973705",
+      "type": "press_release",
+      "publisher": "MyNewsdesk / Forsen",
+      "date": "2014",
+      "language": "sv",
+      "verifies": ["forsen_ab", "clarion_amaranten_case", "nordic_choice_hotels"],
+      "keyFacts": ["461 room renovation", "Nordic Choice Hotels client", "PBL inspector role", "Live hotel renovation"]
+    },
+    {
+      "id": "forsen_grow_hotel",
+      "title": "Grow Hotel i Solna - Forsen Reference",
+      "url": "https://www.forsen.com/referenser/grow-hotel-i-solna/",
+      "type": "project_page",
+      "publisher": "Forsen",
+      "language": "sv",
+      "verifies": ["forsen_ab", "grow_hotel_case"],
+      "keyFacts": ["CM delivery method", "Circular material procurement", "Sustainability focus"]
+    },
+    {
+      "id": "forsen_website",
+      "title": "Forsen - Official Website",
+      "url": "https://forsen.com/",
+      "type": "company_website",
+      "publisher": "Forsen AB",
+      "language": "sv",
+      "verifies": ["forsen_ab"],
+      "keyFacts": ["~200 employees", "15+ offices nationwide", "Construction Management leader"]
+    },
+    {
+      "id": "sweco_blique_nobis",
+      "title": "Hotel Blique by Nobis - Sweco Group",
+      "url": "https://www.swecogroup.com/portfolio/architecture/hotel-blique-by-nobis/",
+      "type": "project_page",
+      "publisher": "Sweco Group",
+      "language": "en",
+      "verifies": ["sweco_ab", "blique_nobis_case"],
+      "keyFacts": ["€8.6M materials reused", "3,600 tons CO₂ saved", "€120M total savings", "LEED Gold", "249 rooms", "Adaptive reuse of 1930s warehouse"]
+    },
+    {
+      "id": "sweco_aterbruk",
+      "title": "Våga satsa på återbruk - Sweco Sverige",
+      "url": "https://www.sweco.se/vart-erbjudande/miljo-och-hallbarhet/cirkular-ekonomi/aterbruk/vaga-satsa-pa-aterbruk/",
+      "type": "article",
+      "publisher": "Sweco Sweden",
+      "language": "sv",
+      "verifies": ["sweco_ab"],
+      "keyFacts": ["Reuse guidance", "Climate benefits", "Cost benefits"]
+    },
+    {
+      "id": "sweco_website",
+      "title": "Sweco Group - Official Website",
+      "url": "https://swecogroup.com/",
+      "type": "company_website",
+      "publisher": "Sweco Group",
+      "language": "en",
+      "verifies": ["sweco_ab"],
+      "keyFacts": ["22,000 employees", "SEK 31 billion sales", "Europe's largest A&E consultancy"]
+    },
+    {
+      "id": "sweco_stora_enso",
+      "title": "Stora Enso's innovative office-hotel concept",
+      "url": "https://www.sweco.fi/en/projects/stora-ensos-innovative-office-hotel-concept/",
+      "type": "project_page",
+      "publisher": "Sweco Finland",
+      "language": "en",
+      "verifies": ["sweco_ab"],
+      "keyFacts": ["Low-carbon concept", "Adaptable design", "Wood construction"]
+    },
+    {
+      "id": "hifab_skycity",
+      "title": "Hifab vinner projekt Sky City Office",
+      "url": "https://www.hifab.se/mfn_news/hifab-vinner-ytterligare-ett-stort-uppdrag-projekt-sky-city-office-sense-building/",
+      "type": "press_release",
+      "publisher": "Hifab",
+      "language": "sv",
+      "verifies": ["hifab_ab"],
+      "keyFacts": ["400 employees", "15 offices in Sweden", "Founded 1947", "Nasdaq First North listed"]
+    },
+    {
+      "id": "hifab_energy_focus",
+      "title": "Hifab sätter fokus på strategi, projektledning och drift",
+      "url": "https://www.dagensfastigheter.se/20230320/10782/hifab-satter-fokus-pa-strategi-projektledning-och-drift",
+      "type": "news_article",
+      "publisher": "Dagens Fastigheter",
+      "date": "2023-03-20",
+      "language": "sv",
+      "verifies": ["hifab_ab"],
+      "keyFacts": ["Energy strategy focus", "Climate advisory", "Anna Larsson - Strategic Consultant"]
+    },
+    {
+      "id": "hifab_website",
+      "title": "Hifab - Official Website",
+      "url": "https://hifab.se/",
+      "type": "company_website",
+      "publisher": "Hifab AB",
+      "language": "sv",
+      "verifies": ["hifab_ab"],
+      "keyFacts": ["70+ years experience", "Pure PM focus", "Nationwide coverage"]
+    },
+    {
+      "id": "afry_fyrkanten_hotel",
+      "title": "Hotell - Fyrkanten 14 | AFRY",
+      "url": "https://afry.com/sv/projekt/hotell-fyrkanten-14",
+      "type": "project_page",
+      "publisher": "AFRY",
+      "language": "sv",
+      "verifies": ["afry"],
+      "keyFacts": ["Office to hotel conversion", "4,500 m²", "2014-2017", "BREEAM certification", "AFA Fastigheter client"]
+    },
+    {
+      "id": "nordic_choice_energy",
+      "title": "Nordic Choice tar ett hårdare grepp kring energianvändning",
+      "url": "https://www.mynewsdesk.com/se/strawberry/pressreleases/nordic-choice-tar-ett-haardare-grepp-kring-energianvaendning-foer-miljoens-skull-3192270",
+      "type": "press_release",
+      "publisher": "MyNewsdesk / Strawberry",
+      "date": "2022",
+      "language": "sv",
+      "verifies": ["nordic_choice_hotels", "afry"],
+      "keyFacts": ["AFRY energy partnership", "Chain-wide energy reduction"]
+    },
+    {
+      "id": "ccbuild_platform",
+      "title": "CCBuild - Centrum för cirkulärt byggande",
+      "url": "https://ccbuild.se/",
+      "type": "organization_website",
+      "publisher": "CCBuild",
+      "language": "sv",
+      "verifies": ["ccbuild_network"],
+      "keyFacts": ["~200 partner organizations", "Circular construction platform", "Material reuse network"]
+    },
+    {
+      "id": "piacon_certifications",
+      "title": "Piacon - Projekt och certifieringar",
+      "url": "https://www.piacon.se/projekt/",
+      "type": "company_website",
+      "publisher": "Piacon AB",
+      "language": "sv",
+      "verifies": ["piacon"],
+      "keyFacts": ["200+ buildings certified", "Sweden, Norway, Iceland", "LEED Fellow (Sue)", "BREEAM expertise"]
+    },
+    {
+      "id": "cirkulara_referenser",
+      "title": "Cirkulära - Referenser",
+      "url": "https://cirkulara.com/referenser/",
+      "type": "company_website",
+      "publisher": "Cirkulära (BuildID)",
+      "language": "sv",
+      "verifies": ["cirkulara"],
+      "keyFacts": ["Vasakronan project", "3,800 tons CO₂ saved", "RFID tracking", "Material databases"]
+    },
+    {
+      "id": "fabege_house_of_choice",
+      "title": "House of Choice - Fabege Customer Case",
+      "url": "https://www.fabege.se/en/vacant-premises/customer-case/house-of-choice/",
+      "type": "case_study",
+      "publisher": "Fabege",
+      "language": "en",
+      "verifies": ["house_of_choice_case", "fabege"],
+      "keyFacts": ["FEBY Gold Plushus", "Geothermal boreholes", "Petter Stordalen quote"]
+    },
+    {
+      "id": "skanska_house_of_choice",
+      "title": "Skanska builds new hotel for Fabege in Solna",
+      "url": "https://group.skanska.com/media/press-releases-articles/230861/Skanska-builds-new-hotel-for-Fabege-in-Solna%2C-Sweden%2C-for-about-SEK-470-M",
+      "type": "press_release",
+      "publisher": "Skanska Global",
+      "date": "2019-Q1",
+      "language": "en",
+      "verifies": ["house_of_choice_case", "skanska"],
+      "keyFacts": ["SEK 470M contract", "Skanska contractor"]
+    },
+    {
+      "id": "stuns_circular_report",
+      "title": "Minskat klimatavtryck med cirkulärt byggande",
+      "url": "https://stuns.se/wp-content/uploads/2021/11/STUNS-Forstudie-cirkular-ekonomi_Aterbruk.pdf",
+      "type": "research_report",
+      "publisher": "STUNS",
+      "date": "2021-11",
+      "language": "sv",
+      "verifies": ["epic_malmo_case"],
+      "keyFacts": ["Epic Malmö award winner", "Hotel/Office category", "Scaled up reuse"]
+    },
+    {
+      "id": "ramboll_circular_webinar",
+      "title": "Webbinarium - Cirkulärt byggande",
+      "url": "https://utbildning.ramboll.se/hallbarhet_/webbinarium-cirkulart-byggande/",
+      "type": "webinar",
+      "publisher": "Ramboll Sweden",
+      "language": "sv",
+      "verifies": ["ramboll"],
+      "keyFacts": ["Circular building challenges", "Success factors", "Good examples"]
+    },
+    {
+      "id": "arup_nordic_circular",
+      "title": "Nordic Circular Hotspot - Arup Feature",
+      "url": "https://www.instagram.com/reel/DMHveU0K5hG/",
+      "type": "social_media",
+      "publisher": "Nordic Circular Hotspot",
+      "language": "en",
+      "verifies": ["arup"],
+      "keyFacts": ["Digital tools integration", "Modular systems", "Lifecycle assessments"]
+    },
+    {
+      "id": "arup_allabolag",
+      "title": "Ove Arup & Partners Danmark A/S - Allabolag",
+      "url": "https://www.allabolag.se/foretag/ove-arup-partners-danmark-as/utlandet/konsulter/2B12W0PI5YF3I",
+      "type": "business_registry",
+      "publisher": "Allabolag",
+      "language": "sv",
+      "verifies": ["arup"],
+      "keyFacts": ["Copenhagen HQ", "Swedish branch office"]
+    },
+    {
+      "id": "forsen_hotel_oden",
+      "title": "Forsen Projekt bygger om hotell till lägenheter",
+      "url": "https://www.framtidensbygg.se/article/view/144741/forsen_projekt_bygger_om_hotell_till_lagenheter",
+      "type": "news_article",
+      "publisher": "Framtidens Bygg",
+      "language": "sv",
+      "verifies": ["forsen_ab"],
+      "keyFacts": ["Hotel Oden conversion", "78 rental apartments", "HSB Stockholm client", "Adaptive reuse"]
+    },
+    {
+      "id": "yllw_website",
+      "title": "YLLW Factory - Official Website",
+      "url": "https://www.yllw.com",
+      "type": "company_website",
+      "publisher": "YLLW Factory",
+      "language": "sv",
+      "verifies": ["yllw_factory"],
+      "keyFacts": ["65,000+ items inventory", "Dalby refurbishment factory", "3-year warranty", "Hotel furniture expertise"]
+    },
+    {
+      "id": "input_interior_website",
+      "title": "Input Interiör - Official Website",
+      "url": "https://www.inputinterior.se",
+      "type": "company_website",
+      "publisher": "Input Interiör",
+      "language": "sv",
+      "verifies": ["input_interior_greenified"],
+      "keyFacts": ["1,000+ employees", "41 showrooms", "Pan-Nordic presence"]
+    },
+    {
+      "id": "greenified_marketplace",
+      "title": "Greenified - Circular Marketplace",
+      "url": "https://greenified.se",
+      "type": "company_website",
+      "publisher": "Greenified / Input",
+      "language": "sv",
+      "verifies": ["input_interior_greenified"],
+      "keyFacts": ["Circular marketplace platform", "Premium brands available", "Commission-based model"]
+    },
+    {
+      "id": "rekomo_website",
+      "title": "Rekomo - Official Website",
+      "url": "https://www.rekomo.se",
+      "type": "company_website",
+      "publisher": "Rekomo",
+      "language": "sv",
+      "verifies": ["rekomo"],
+      "keyFacts": ["Building materials specialist", "Salvage operations", "Nordic coverage"]
+    },
+    {
+      "id": "kompanjonen_website",
+      "title": "Kompanjonen - Official Website",
+      "url": "https://kompanjonen.se",
+      "type": "company_website",
+      "publisher": "Kompanjonen",
+      "language": "sv",
+      "verifies": ["kompanjonen"],
+      "keyFacts": ["Consultancy services", "Circular economy advisory"]
+    },
+    {
+      "id": "rp_workspace_website",
+      "title": "Recycling Partner / RP Workspace",
+      "url": "https://rp.se",
+      "type": "company_website",
+      "publisher": "RP Workspace",
+      "language": "sv",
+      "verifies": ["rp_workspace"],
+      "keyFacts": ["Office furniture specialist", "Refurbishment services"]
+    },
+    {
+      "id": "aterbruksfabriken_website",
+      "title": "Återbruksfabriken - Official Website",
+      "url": "https://aterbruksfabriken.se",
+      "type": "company_website",
+      "publisher": "Återbruksfabriken",
+      "language": "sv",
+      "verifies": ["aterbruksfabriken"],
+      "keyFacts": ["Building materials reuse", "Testing services"]
+    },
+    {
+      "id": "place2place_website",
+      "title": "Place2Place - Official Website",
+      "url": "https://www.place2place.se",
+      "type": "company_website",
+      "publisher": "Place2Place",
+      "language": "sv",
+      "verifies": ["place2place"],
+      "keyFacts": ["Furniture logistics", "Reuse coordination"]
+    },
+    {
+      "id": "dpj_aterbruk",
+      "title": "DPJ Workspace - Återbruk",
+      "url": "https://www.dpj.se/504-aterbruk",
+      "type": "service_page",
+      "publisher": "DPJ Workspace",
+      "language": "sv",
+      "verifies": ["dpj_workspace"],
+      "keyFacts": ["Reuse services", "Office furniture"]
+    },
+    {
+      "id": "spirec_website",
+      "title": "Spirec - Official Website",
+      "url": "https://spirec.se",
+      "type": "company_website",
+      "publisher": "Spirec",
+      "language": "sv",
+      "verifies": ["spirec"],
+      "keyFacts": ["Circular services", "Material management"]
+    },
+    {
+      "id": "materdesign_website",
+      "title": "Mater Design - Official Website",
+      "url": "https://materdesign.com",
+      "type": "company_website",
+      "publisher": "Mater Design",
+      "language": "en",
+      "verifies": ["mater_design"],
+      "keyFacts": ["Sustainable furniture design", "Recycled materials"]
+    },
+    {
+      "id": "bvb_website",
+      "title": "Byggvarubedömningen - Official Website",
+      "url": "https://byggvarubedomningen.se",
+      "type": "organization_website",
+      "publisher": "Byggvarubedömningen",
+      "language": "sv",
+      "verifies": ["bvb_system"],
+      "keyFacts": ["30,000+ assessed products", "Traffic light rating system", "IVL governance"]
+    },
+    {
+      "id": "rise_fire_research",
+      "title": "RISE Fire Research",
+      "url": "https://www.ri.se",
+      "type": "organization_website",
+      "publisher": "RISE Research Institutes of Sweden",
+      "language": "sv",
+      "verifies": ["rise_testing"],
+      "keyFacts": ["Fire testing services", "EN 1021 testing", "EN 13501-1 SBI testing", "3-6 week lead time"]
+    },
+    {
+      "id": "sp_testing",
+      "title": "SP Technical Research Institute",
+      "url": "https://www.sp.se",
+      "type": "organization_website",
+      "publisher": "SP (now RISE)",
+      "language": "sv",
+      "verifies": ["sp_testing"],
+      "keyFacts": ["Fire testing", "Material certification"]
+    },
+    {
+      "id": "nordic_swan_hotels",
+      "title": "Nordic Swan Ecolabel - Hotels",
+      "url": "https://www.nordic-swan-ecolabel.org",
+      "type": "certification_website",
+      "publisher": "Nordic Swan Ecolabel",
+      "language": "en",
+      "verifies": ["nordic_swan_certification"],
+      "keyFacts": ["238+ certified hotels in Sweden", "44 mandatory criteria", "Scandic 96% portfolio coverage"]
+    },
+    {
+      "id": "leed_website",
+      "title": "LEED - U.S. Green Building Council",
+      "url": "https://www.usgbc.org/leed",
+      "type": "certification_website",
+      "publisher": "USGBC",
+      "language": "en",
+      "verifies": ["leed_certification"],
+      "keyFacts": ["International certification", "Multiple levels", "Material credits"]
+    },
+    {
+      "id": "breeam_website",
+      "title": "BREEAM - Building Research Establishment",
+      "url": "https://www.breeam.com",
+      "type": "certification_website",
+      "publisher": "BRE Global",
+      "language": "en",
+      "verifies": ["breeam_certification"],
+      "keyFacts": ["UK-origin system", "Refurbishment & fit-out version", "Material credits"]
+    },
+    {
+      "id": "miljobyggnad_website",
+      "title": "Miljöbyggnad - Sweden Green Building Council",
+      "url": "https://www.sgbc.se/certifiering/miljobyggnad/",
+      "type": "certification_website",
+      "publisher": "Sweden Green Building Council",
+      "language": "sv",
+      "verifies": ["miljobyggnad_certification"],
+      "keyFacts": ["Swedish system", "Bronze/Silver/Gold levels", "Material documentation required"]
+    },
+    {
+      "id": "green_key_website",
+      "title": "Green Key Global",
+      "url": "https://www.greenkey.global",
+      "type": "certification_website",
+      "publisher": "Foundation for Environmental Education",
+      "language": "en",
+      "verifies": ["green_key_certification"],
+      "keyFacts": ["Operational focus", "Low cost entry", "Global recognition"]
+    },
+    {
+      "id": "gstc_website",
+      "title": "Global Sustainable Tourism Council",
+      "url": "https://www.gstc.org",
+      "type": "certification_website",
+      "publisher": "GSTC",
+      "language": "en",
+      "verifies": ["gstc_criteria"],
+      "keyFacts": ["Global baseline criteria", "Industry-standard framework"]
+    },
+    {
+      "id": "iso_14001",
+      "title": "ISO 14001 - Environmental Management",
+      "url": "https://www.iso.org/standard/60857.html",
+      "type": "standard_website",
+      "publisher": "ISO",
+      "language": "en",
+      "verifies": ["iso_14001_certification"],
+      "keyFacts": ["Environmental management system", "Process certification", "Not product-specific"]
+    },
+    {
+      "id": "boverket_bbr",
+      "title": "Boverkets byggregler (BBR)",
+      "url": "https://www.boverket.se/sv/lag--ratt/forfattningssamling/gallande/bbr---bfs-201176/",
+      "type": "regulation",
+      "publisher": "Boverket",
+      "language": "sv",
+      "verifies": ["bbr_regulations"],
+      "keyFacts": ["Chapter 5 Fire Safety", "Verksamhetsklass 4 for hotels", "Building permit requirements"]
+    },
+    {
+      "id": "boverket_klimatdeklaration",
+      "title": "Klimatdeklaration för byggnader",
+      "url": "https://www.boverket.se/sv/byggande/klimatdeklaration/",
+      "type": "regulation",
+      "publisher": "Boverket",
+      "language": "sv",
+      "verifies": ["climate_declaration"],
+      "keyFacts": ["Mandatory from 2022", "LCA requirements", "New builds >100m²"]
+    },
+    {
+      "id": "naturvardsverket_avfall",
+      "title": "Naturvårdsverket - Avfall",
+      "url": "https://www.naturvardsverket.se/amnesomraden/avfall/",
+      "type": "regulation",
+      "publisher": "Naturvårdsverket",
+      "language": "sv",
+      "verifies": ["waste_regulations"],
+      "keyFacts": ["Waste framework", "End-of-waste criteria", "70% recycling target"]
+    },
+    {
+      "id": "scandic_sustainability",
+      "title": "Scandic Hotels - Sustainability",
+      "url": "https://www.scandichotelsgroup.com/sustainability/",
+      "type": "company_website",
+      "publisher": "Scandic Hotels Group",
+      "language": "en",
+      "verifies": ["scandic_hotels", "downtown_camper_case"],
+      "keyFacts": ["280+ hotels", "96% Nordic Swan certified", "Isabelle Blomqvist - Sustainability Manager"]
+    },
+    {
+      "id": "strawberry_sustainability",
+      "title": "Strawberry Hotels - Sustainability",
+      "url": "https://www.strawberry.no/om-oss/baerekraft",
+      "type": "company_website",
+      "publisher": "Strawberry (Nordic Choice)",
+      "language": "no",
+      "verifies": ["nordic_choice_hotels", "strawberry_hotels"],
+      "keyFacts": ["Petter Stordalen founder", "House of Choice developer", "Energy reduction programs"]
+    },
+    {
+      "id": "sgbc_membership",
+      "title": "Sweden Green Building Council - Membership",
+      "url": "https://www.sgbc.se/",
+      "type": "organization_website",
+      "publisher": "Sweden Green Building Council",
+      "language": "sv",
+      "verifies": ["sgbc_network"],
+      "keyFacts": ["Industry network", "Certification body", "NollCO2 program"]
+    },
+    {
+      "id": "en_1021_standard",
+      "title": "EN 1021-1/2 - Furniture Ignitability",
+      "url": "https://www.en-standard.eu/search/?q=EN+1021",
+      "type": "standard",
+      "publisher": "European Standards",
+      "language": "en",
+      "verifies": ["fire_safety_standards"],
+      "keyFacts": ["Cigarette test (EN 1021-1)", "Match test (EN 1021-2)", "Upholstered furniture"]
+    },
+    {
+      "id": "en_13501_standard",
+      "title": "EN 13501-1 - Fire Classification",
+      "url": "https://www.en-standard.eu/search/?q=EN+13501",
+      "type": "standard",
+      "publisher": "European Standards",
+      "language": "en",
+      "verifies": ["fire_safety_standards"],
+      "keyFacts": ["Euroclass system", "A1 to F ratings", "SBI test method", "B-s1,d0 for hotels"]
+    },
+    {
+      "id": "en_16139_standard",
+      "title": "EN 16139 - Furniture Strength and Durability",
+      "url": "https://www.en-standard.eu/search/?q=EN+16139",
+      "type": "standard",
+      "publisher": "European Standards",
+      "language": "en",
+      "verifies": ["furniture_standards"],
+      "keyFacts": ["Chair testing", "Contract-grade requirements", "Durability testing"]
+    },
+    {
+      "id": "fyra_website",
+      "title": "Fyra - Official Website",
+      "url": "https://www.fyra.fi",
+      "type": "company_website",
+      "publisher": "Fyra",
+      "language": "en",
+      "verifies": ["fyra_profile"],
+      "keyFacts": ["Helsinki-based", "Circular interior design", "Hospitality focus"]
+    },
+    {
+      "id": "fyra_linkedin",
+      "title": "Fyra - LinkedIn",
+      "url": "https://www.linkedin.com/company/fyra-finland/",
+      "type": "social_media",
+      "publisher": "LinkedIn",
+      "language": "en",
+      "verifies": ["fyra_profile"],
+      "keyFacts": ["Company updates", "Team profiles", "Project showcases"]
+    },
+    {
+      "id": "fyra_instagram",
+      "title": "Fyra - Instagram",
+      "url": "https://www.instagram.com/fyra.fi/",
+      "type": "social_media",
+      "publisher": "Instagram",
+      "language": "en",
+      "verifies": ["fyra_profile"],
+      "keyFacts": ["Project visuals", "Behind the scenes"]
+    },
+    {
+      "id": "sweco_amanda_borneke",
+      "title": "Amanda Borneke - Sweco Circular Economy Expert",
+      "url": "https://www.swecogroup.com/urban-insight/circularity/expert-insights-amanda-borneke/",
+      "type": "profile_page",
+      "publisher": "Sweco Group",
+      "language": "en",
+      "verifies": ["sweco_ab"],
+      "keyFacts": ["Circular economy specialist", "Architect", "Blique by Nobis team"]
+    },
+    {
+      "id": "amanda_borneke_linkedin",
+      "title": "Amanda Borneke - LinkedIn",
+      "url": "https://www.linkedin.com/in/amanda-borneke/",
+      "type": "social_media",
+      "publisher": "LinkedIn",
+      "language": "en",
+      "verifies": ["sweco_ab"],
+      "keyFacts": ["Professional profile", "Contact information"]
+    },
+    {
+      "id": "circular_hotel_interior",
+      "title": "Circular Hotel Interior - OVAM/Hotelvak",
+      "url": "https://hotelvak.be/en/sustainable-circular/circular-hotel-interior",
+      "type": "resource",
+      "publisher": "OVAM / Hotelvak Belgium",
+      "language": "en",
+      "verifies": ["circular_hotel_framework"],
+      "keyFacts": ["Methodology framework", "Decision trees", "Material selection guidance"]
+    },
+    {
+      "id": "msb_fire_safety",
+      "title": "MSB - Brandskydd",
+      "url": "https://www.msb.se/sv/amnesomraden/skydd-mot-olyckor-och-farliga-amnen/brandskydd/",
+      "type": "government_website",
+      "publisher": "Myndigheten för samhällsskydd och beredskap",
+      "language": "sv",
+      "verifies": ["fire_regulations"],
+      "keyFacts": ["Fire safety authority", "Hotel inspection standards", "Enforcement guidelines"]
+    },
+    {
+      "id": "brandskyddslaget_guidelines",
+      "title": "Brandskyddslaget - Resources",
+      "url": "https://www.brandskyddslansen.se/",
+      "type": "organization_website",
+      "publisher": "Brandskyddslaget",
+      "language": "sv",
+      "verifies": ["fire_safety_guidelines"],
+      "keyFacts": ["Industry association", "Best practice guidelines", "Hotel fire safety"]
+    },
+    {
+      "id": "reach_regulation",
+      "title": "REACH Regulation - ECHA",
+      "url": "https://echa.europa.eu/regulations/reach",
+      "type": "regulation",
+      "publisher": "European Chemicals Agency",
+      "language": "en",
+      "verifies": ["chemical_regulations"],
+      "keyFacts": ["Chemical compliance", "SVHC lists", "Material safety requirements"]
+    },
+    {
+      "id": "eu_taxonomy",
+      "title": "EU Taxonomy - Sustainable Finance",
+      "url": "https://finance.ec.europa.eu/sustainable-finance/tools-and-standards/eu-taxonomy-sustainable-activities_en",
+      "type": "regulation",
+      "publisher": "European Commission",
+      "language": "en",
+      "verifies": ["taxonomy_compliance"],
+      "keyFacts": ["Sustainable activities classification", "Investment alignment", "Building sector criteria"]
+    },
+    {
+      "id": "ecodesign_directive",
+      "title": "Ecodesign for Sustainable Products Regulation",
+      "url": "https://environment.ec.europa.eu/topics/circular-economy/green-deal-industrial-plan/ecodesign-sustainable-products-regulation_en",
+      "type": "regulation",
+      "publisher": "European Commission",
+      "language": "en",
+      "verifies": ["ecodesign_requirements"],
+      "keyFacts": ["Product sustainability requirements", "Digital product passport", "Repairability standards"]
+    },
+    {
+      "id": "digital_product_passport",
+      "title": "Digital Product Passport - EU Initiative",
+      "url": "https://hadea.ec.europa.eu/calls-proposals/digital-product-passport_en",
+      "type": "regulation",
+      "publisher": "European Commission",
+      "language": "en",
+      "verifies": ["dpp_requirements"],
+      "keyFacts": ["Material traceability", "2026+ implementation", "Construction products included"]
+    },
+    {
+      "id": "visita_sweden",
+      "title": "Visita - Sveriges hotell- och restaurangföretagare",
+      "url": "https://visita.se/",
+      "type": "organization_website",
+      "publisher": "Visita",
+      "language": "sv",
+      "verifies": ["hospitality_industry"],
+      "keyFacts": ["Industry association", "Sustainability guidelines", "Policy advocacy"]
+    },
+    {
+      "id": "cradle_to_cradle",
+      "title": "Cradle to Cradle Certified",
+      "url": "https://www.c2ccertified.org/",
+      "type": "certification_website",
+      "publisher": "Cradle to Cradle Products Innovation Institute",
+      "language": "en",
+      "verifies": ["c2c_certification"],
+      "keyFacts": ["Material health", "Circularity assessment", "Bronze to Platinum levels"]
+    },
+    {
+      "id": "epd_international",
+      "title": "EPD International - Environmental Product Declarations",
+      "url": "https://www.environdec.com/",
+      "type": "organization_website",
+      "publisher": "EPD International AB",
+      "language": "en",
+      "verifies": ["epd_system"],
+      "keyFacts": ["Type III environmental declarations", "LCA-based", "International recognition"]
+    },
+    {
+      "id": "ivl_svenska_miljoinstitutet",
+      "title": "IVL Svenska Miljöinstitutet",
+      "url": "https://www.ivl.se/",
+      "type": "organization_website",
+      "publisher": "IVL Swedish Environmental Research Institute",
+      "language": "sv",
+      "verifies": ["ivl_research", "bvb_system"],
+      "keyFacts": ["BVB administrator", "Environmental research", "Policy development"]
+    },
+    {
+      "id": "one_click_lca",
+      "title": "One Click LCA",
+      "url": "https://www.oneclicklca.com/",
+      "type": "tool_website",
+      "publisher": "One Click LCA",
+      "language": "en",
+      "verifies": ["lca_tools"],
+      "keyFacts": ["Building LCA software", "EPD integration", "Climate declaration support"]
+    },
+    {
+      "id": "feby_standard",
+      "title": "FEBY - Forum för Energieffektiva Byggnader",
+      "url": "https://www.ffrb.nu/",
+      "type": "standard_website",
+      "publisher": "Forum för Energieffektiva Byggnader",
+      "language": "sv",
+      "verifies": ["feby_certification"],
+      "keyFacts": ["Passive house standard", "FEBY Gold certification", "Energy performance"]
+    },
+    {
+      "id": "nollco2_sgbc",
+      "title": "NollCO2 - SGBC",
+      "url": "https://www.sgbc.se/certifiering/nollco2/",
+      "type": "certification_website",
+      "publisher": "Sweden Green Building Council",
+      "language": "sv",
+      "verifies": ["nollco2_certification"],
+      "keyFacts": ["Net-zero carbon certification", "Swedish system", "Building lifecycle"]
+    }
+  ],
+  "sourceTypes": {
+    "project_page": "Official project documentation from company websites",
+    "press_release": "Official press releases and news announcements",
+    "company_website": "Main company/organization websites",
+    "service_page": "Service offering descriptions",
+    "news_article": "Third-party news coverage",
+    "case_study": "Detailed project case studies",
+    "research_report": "Academic or industry research reports",
+    "certification_website": "Official certification body websites",
+    "regulation": "Government regulations and standards",
+    "standard": "Technical standards (EN, ISO, etc.)",
+    "organization_website": "Industry organization websites",
+    "social_media": "LinkedIn, Instagram, etc.",
+    "profile_page": "Individual professional profiles",
+    "tool_website": "Software/tool provider websites",
+    "business_registry": "Company registration databases",
+    "webinar": "Recorded presentations and webinars",
+    "government_website": "Government authority websites",
+    "resource": "Educational resources and guides"
+  }
+}

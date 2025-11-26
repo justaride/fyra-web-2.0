@@ -20,7 +20,12 @@
       "placementNO": "Alle brannkritiske områder (lobbyer, korridorer, restauranter)",
       "testingRequired": "Material Safety Data Sheets (MSDS) only - no flame testing needed",
       "testingRequiredNO": "Kun Material Safety Data Sheets (MSDS) - ingen flammetesting",
-      "operators": ["YLLW Factory", "Input Interiör", "Rekomo AB", "Recycling Partner"],
+      "operators": [
+        "YLLW Factory",
+        "Input Interiör",
+        "Rekomo AB",
+        "Recycling Partner"
+      ],
       "cost": "Minimal documentation burden",
       "costNO": "Minimal dokumentasjonsbyrde",
       "costRange": "0-5,000 SEK",
@@ -49,8 +54,14 @@
       "placementNO": "Restauranter, konferanserom, lobbyer (IKKE fluktveier/korridorer)",
       "testingRequired": "EN 1021-1 (cigarette test) + potentially EN 1021-2 (match test) for upholstery fabrics",
       "testingRequiredNO": "EN 1021-1 (sigaretttest) + potensielt EN 1021-2 (fyrstikktest) for møbeltekstiler",
-      "testingStandards": ["EN 1021-1", "EN 1021-2"],
-      "operators": ["YLLW Factory", "Input Interiör"],
+      "testingStandards": [
+        "EN 1021-1",
+        "EN 1021-2"
+      ],
+      "operators": [
+        "YLLW Factory",
+        "Input Interiör"
+      ],
       "cost": "Testing cost per fabric type",
       "costNO": "Testing-kostnad per tekstiltype",
       "costRange": "18,000-30,000 SEK",
@@ -84,7 +95,10 @@
       "placementWarningNO": "BBR krever B-s1,d0 for korridor-vegger/tak; polstret møbler i korridorer frarådes",
       "testingRequired": "Full Euroclass BS 5852 Crib 5 (high-hazard)",
       "testingRequiredNO": "Full Euroclass BS 5852 Crib 5 (høy-risiko)",
-      "testingStandards": ["BS 5852 Crib 5", "EN 13501-1"],
+      "testingStandards": [
+        "BS 5852 Crib 5",
+        "EN 13501-1"
+      ],
       "operators": [],
       "cost": "Per product testing - often not economically viable",
       "costNO": "Per produkt testing - ofte ikke økonomisk levedyktig",
@@ -264,5 +278,12 @@
       "outcome": "Full compliance with hospitality fire standards",
       "relevance": "Demonstrates that circular materials CAN meet hospitality fire requirements (though this was new manufacturing, not reuse)"
     }
+  ],
+  "sourceRefs": [
+    "boverket_bbr",
+    "msb_fire_safety",
+    "rise_fire_research",
+    "en_1021_standard",
+    "en_13501_standard"
   ]
 }

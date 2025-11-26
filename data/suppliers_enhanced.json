@@ -2,6 +2,7 @@
   {
     "id": "yllw_factory",
     "name": "YLLW FACTORY",
+    "sourceRefs": ["yllw_website", "rise_fire_research", "en_1021_standard"],
     "description": "Sweden's leading B2B furniture reuse specialist with 65,000+ items in inventory and comprehensive refurbishment services. Operates a dedicated refurbishment factory in Dalby with hospitality market expertise including hotels and restaurants. Provides full-service solutions from sourcing to installation with 3-year warranties.",
     "location": "Primary warehouse and refurbishment factory in Dalby, Sk\u00e5ne. Secondary warehouse in J\u00f6nk\u00f6ping. Sales office in Stockholm. Nationwide coverage across Sweden.",
     "mapLocations": [
@@ -143,6 +144,7 @@
   },
   {
     "id": "input_interior_greenified",
+    "sourceRefs": ["input_interior_website", "greenified_marketplace"],
     "name": "INPUT INTERI\u00d6R / GREENIFIED",
     "description": "Sweden's largest interior solutions provider with 1,000+ employees and 41 showrooms nationwide. Operates Greenified circular marketplace platform integrating new and reused furniture. Enterprise-scale infrastructure with professional project management and comprehensive sustainability documentation.",
     "location": "41 showrooms across Sweden with prominent Stockholm headquarters. Pan-Nordic presence including Finland, Denmark, and Norway. Primary refurbishment operations in Dalby (shared with YLLW partnership). J\u00f6nk\u00f6ping warehouse facility.",
@@ -284,6 +286,7 @@
   },
   {
     "id": "rekomo_ab",
+    "sourceRefs": ["rekomo_website"],
     "name": "REKOMO AB",
     "description": "Established B2B office furniture reuse specialist (approximately 30 years operating history) with emphasis on fast delivery and competitive pricing. Three major showrooms covering Sweden's primary metropolitan areas with large warehouse facilities at each location.",
     "location": "Major showrooms and warehouses in Stockholm, Gothenburg (G\u00f6teborg), and Malm\u00f6 covering Sweden's three largest metropolitan areas. Additional presence in multiple Swedish cities providing regional coverage.",
@@ -418,6 +421,7 @@
   },
   {
     "id": "kompanjonen",
+    "sourceRefs": ["kompanjonen_website"],
     "name": "KOMPANJONEN",
     "description": "Specialized circular construction consultant and reuse facilitator, subsidiary of Dacke Consulting. Expert in regulatory compliance navigation, Building Material Bank (BVB) alternative pathways, and complex sourcing coordination. Operates as strategic partner rather than stock-based supplier.",
     "location": "Stockholm-based consulting office. Not a warehouse operation but coordinates sourcing from regional suppliers and salvage networks across Sweden.",
@@ -548,6 +552,7 @@
   },
   {
     "id": "recycling_partner_rp",
+    "sourceRefs": ["rp_workspace_website"],
     "name": "RECYCLING PARTNER (RP) M\u00d6BLER & INREDNING",
     "description": "Furniture reuse division of Sweden's Recycling Partner waste management conglomerate. Operates 8 regional warehouse locations across Sweden providing distributed inventory coverage. Leverages parent company's extensive logistics and corporate liquidation network.",
     "location": "8 warehouse locations distributed across Sweden providing best geographic coverage of any identified operator. Regional presence enables local delivery and reduces transport costs for projects outside major metros.",
@@ -686,6 +691,7 @@
   },
   {
     "id": "aterbruksfabriken",
+    "sourceRefs": ["aterbruksfabriken_website", "rise_fire_research"],
     "name": "\u00c5TERBRUKSFABRIKEN",
     "description": "Building materials salvage and reuse specialist operating Sweden's largest dedicated circular construction warehouse. Focus on architectural elements, interior construction systems, and building materials rather than furniture. S\u00f6dert\u00e4lje location provides Stockholm region access.",
     "location": "Vrena, S\u00f6dert\u00e4lje/S\u00f6rmland region approximately 50km from Stockholm. 5,000 square meter dedicated warehouse facility for building materials and interior construction components.",
@@ -809,6 +815,7 @@
   },
   {
     "id": "place2place",
+    "sourceRefs": ["place2place_website"],
     "name": "PLACE2PLACE",
     "description": "Online marketplace platform aggregating third-party sellers of vintage and designer furniture. Does not own inventory but facilitates transactions between individual sellers and buyers. Specializes in unique, one-of-a-kind pieces rather than volume commercial furniture.",
     "location": "Online platform without physical warehouses. Likely Stockholm-based team manages platform operations. Sellers located throughout Sweden with items requiring individual negotiation for delivery.",
@@ -919,6 +926,7 @@
   },
   {
     "id": "brattons_aterbruk",
+    "sourceRefs": [],
     "name": "BRATT\u00d6NS \u00c5TERBRUK",
     "description": "G\u00f6teborg regional architectural salvage yard specializing in unique statement pieces and reclaimed building materials. Salvage yard business model focuses on one-of-a-kind items rather than volume commercial furniture supply.",
     "location": "G\u00f6teborg (Gothenburg) region, Western Sweden. Salvage yard facility with regional G\u00f6teborg market focus. Distance from Stockholm (approximately 470km) limits nationwide projects.",
@@ -1026,6 +1034,7 @@
   },
   {
     "id": "dpj_aterbruk",
+    "sourceRefs": ["dpj_aterbruk"],
     "name": "DPJ WORKSPACE (ÅTERBRUK)",
     "description": "Large mainstream office furniture retailer with a dedicated 'Återbruk' (Reuse) section. Operates primarily as an outlet for open-box returns, showroom samples, and overstock, offering 'like new' condition items. Good for budget-conscious projects needing standard office furniture but limited by inventory availability (often small quantities of specific items).",
     "location": "Nationwide coverage with offices in Stockholm. Online-first model with physical showroom presence.",
@@ -1119,6 +1128,7 @@
   },
   {
     "id": "malmo_aterbyggdepa",
+    "sourceRefs": [],
     "name": "MALM\u00d6 \u00c5TERBYGGDEP\u00c5",
     "description": "Long-established building materials salvage depot in Malm\u00f6/Sk\u00e5ne region with 20+ year history. Specializes in architectural salvage and reclaimed building materials rather than furniture. Regional Malm\u00f6 specialist for southern Sweden hotel building materials.",
     "location": "Malm\u00f6/Sk\u00e5ne, Southern Sweden",
@@ -1212,6 +1222,7 @@
   },
   {
     "id": "spirec",
+    "sourceRefs": ["spirec_website"],
     "name": "SPIREC",
     "description": "Startup founded in 2022 focusing on the reuse of surplus wood and building supplies. Based in Västerås. Started by reclaiming wood from shipping pallets and expanded to general oversupply building materials (formwork timber, surplus screws, etc.). Strong sustainability mission.",
     "location": "Västerås region, Sweden.",
@@ -1300,6 +1311,7 @@
   },
   {
     "id": "mater_design",
+    "sourceRefs": ["materdesign_website"],
     "name": "MATER DESIGN",
     "description": "\u26a0\ufe0f MANUFACTURER (NOT REUSE OPERATOR): Copenhagen-based designer manufacturer producing NEW furniture from recycled materials (upcycled products). Known for ocean plastic chairs and coffee waste-based furniture. Relevant for clients wanting 'circular materials' but NOT reused furniture. Included for reference as Copenhagen hospitality supplier but does not fit Fyra's B2B reuse focus.",
     "location": "Copenhagen, Denmark",

@@ -4,28 +4,32 @@
     "title": "DOWNTOWN CAMPER BY SCANDIC",
     "type": "Hotel Case Study",
     "details": {
-      "chain": "Scandic Hotels Group \u2190 MAJOR CHAIN (280+ properties)",
+      "chain": "Scandic Hotels Group ← MAJOR CHAIN (280+ properties)",
       "size": "280+ hotels across Nordics",
-      "operat\u00f6r": "Scandic Hotels Group",
+      "operatör": "Scandic Hotels Group",
       "website": "scandichotelsgroup.com",
-      "scope": "COMPREHENSIVE RENOVATION - 1970s office building \u2192 lifestyle hotel",
+      "scope": "COMPREHENSIVE RENOVATION - 1970s office building → lifestyle hotel",
       "portfolio": "Multiple Scandic properties, international hotels",
       "email": "isabelle.blomqvist@scandichotels.com",
       "hotel-level": ""
     },
-    "location": "Stockholm & G\u00f6teborg",
+    "location": "Stockholm & Göteborg",
     "year": "2016-2018 (adaptive reuse + retrofit)",
     "category": "Lifestyle/Midscale+, Leisure-focused",
     "phone": "Via Scandic central reservations",
     "notes": [
-      "Scandic Hotels Group \u2190 CRITICAL FOR SCALE",
+      "Scandic Hotels Group ← CRITICAL FOR SCALE",
       "Isabelle Blomqvist - Sustainability Manager, Scandic Hotels Group",
       "Building reuse - 1970s structure adequate for hotel use with upgrades",
       "Scandic operates 280+ hotels - Model can scale across portfolio"
     ],
     "website": "stylt.se",
-    "chain": "\u2705 HIGHEST IN SWEDEN",
-    "year_verified": 2018
+    "chain": "✅ HIGHEST IN SWEDEN",
+    "year_verified": 2018,
+    "sourceRefs": [
+      "scandic_sustainability",
+      "nordic_swan_hotels"
+    ]
   },
   {
     "id": "scandic_go_(concept)",
@@ -48,21 +52,25 @@
       "Durability testing - Modular furniture must withstand hotel use (high-wear environment)",
       "Budget segment - Largest addressable market (more budget hotels than luxury)"
     ],
-    "chain": "\u2705 MAXIMUM",
-    "year_verified": 2024
+    "chain": "✅ MAXIMUM",
+    "year_verified": 2024,
+    "sourceRefs": [
+      "scandic_sustainability",
+      "nordic_swan_hotels"
+    ]
   },
   {
-    "id": "ohboy_hotel_malm\u00f6",
-    "title": "OHBOY HOTEL MALM\u00d6",
+    "id": "ohboy_hotel_malmö",
+    "title": "OHBOY HOTEL MALMÖ",
     "type": "Hotel Case Study",
     "details": {
       "name": "Ohboy Hotel",
       "role": "Architect, developer, AND hotel operator (rare triple role)",
       "hotel website": "",
-      "malm\u00f6 positioning": "Design hotel with sustainability story"
+      "malmö positioning": "Design hotel with sustainability story"
     },
-    "chain": "\u26a0\ufe0f VERY LOW",
-    "location": "Davidshallstorg 12, Malm\u00f6, Sweden",
+    "chain": "⚠️ VERY LOW",
+    "location": "Davidshallstorg 12, Malmö, Sweden",
     "size": "74 rooms",
     "year": "2016-2018",
     "category": "Design boutique / Mid-upscale",
@@ -70,10 +78,11 @@
     "phone": "+46 40-85606",
     "scope": "NEW BUILD with integrated sustainability from design phase",
     "notes": [
-      "Malm\u00f6 example - Proves sustainable design hotels work in Sweden's 3rd largest city",
+      "Malmö example - Proves sustainable design hotels work in Sweden's 3rd largest city",
       "Operational sustainability - Zero-waste breakfast = operational example for other hotels"
     ],
-    "year_verified": 2018
+    "year_verified": 2018,
+    "sourceRefs": []
   },
   {
     "id": "hotel_green_solution_house,_bornholm",
@@ -82,7 +91,7 @@
     "details": {
       "name": "Hotel Green Solution House",
       "category": "Eco-design hotel / Mid-upscale",
-      "operat\u00f8r": "Hotel management team",
+      "operatør": "Hotel management team",
       "scope": "COMPREHENSIVE - CLIMATE-POSITIVE DESIGN - Most intensive circular hotel in Nordics",
       "contact": "Via hotel website greensolutionhouse.dk",
       "known for": "Willing to share learnings (hotel = living lab)",
@@ -96,13 +105,14 @@
     "phone": "Via website",
     "notes": [
       "Living lab - Hotel tests circular innovations for industry",
-      "Trine Richter - Hotel Director \u2190 KEY CONTACT",
+      "Trine Richter - Hotel Director ← KEY CONTACT",
       "Climate-positive - Only hotel documented as removing more CO2 than construction emitted",
       "LIVING LAB MODEL - Shows hotel can be R&D platform (potential Fyra client value-add)",
       "Contact Trine Richter (Hotel Director) - PRIORITY CONTACT"
     ],
-    "architect": "Kasper Guldager Jensen \u2190 CIRCULAR ECONOMY EXPERT",
-    "year_verified": 2021
+    "architect": "Kasper Guldager Jensen ← CIRCULAR ECONOMY EXPERT",
+    "year_verified": 2021,
+    "sourceRefs": []
   },
   {
     "id": "villa_copenhagen_-_earth_suite",
@@ -130,29 +140,33 @@
       "No compromise - Earth Suite maintains luxury hotel standards",
       "Single suite proof-of-concept - Not yet attempted across full hotel",
       "Showcase model - 1-2 circular suites per property (not full hotel) realistic",
-      "Network Mapping Tables - Cross-reference hoteller \u2194 B2B operat\u00f8rer \u2194 konsulenter"
+      "Network Mapping Tables - Cross-reference hoteller ↔ B2B operatører ↔ konsulenter"
     ],
-    "chain": "\u2b50\u2b50\u2b50 MEDIUM",
-    "year_verified": 2020
+    "chain": "⭐⭐⭐ MEDIUM",
+    "year_verified": 2020,
+    "sourceRefs": [
+      "materdesign_website",
+      "strawberry_sustainability"
+    ]
   },
   {
-    "id": "hotel_herman_k_(br\u00f8chner_hotels)",
-    "title": "HOTEL HERMAN K (BR\u00d8CHNER HOTELS)",
+    "id": "hotel_herman_k_(brøchner_hotels)",
+    "title": "HOTEL HERMAN K (BRØCHNER HOTELS)",
     "type": "Hotel Case Study",
     "details": {
       "name": "Hotel Herman K",
-      "chain": "Br\u00f8chner Hotels (Danish boutique collection - 8 hotels)",
+      "chain": "Brøchner Hotels (Danish boutique collection - 8 hotels)",
       "built": "Hotel conversion of 1963 transformer station (industrial adaptive reuse)",
-      "eier/operat\u00f8r": "Br\u00f8chner Hotels (Danish family-owned)",
+      "eier/operatør": "Brøchner Hotels (Danish family-owned)",
       "website": "brochner-hotels.com",
-      "phone": "Via Br\u00f8chner Hotels website",
+      "phone": "Via Brøchner Hotels website",
       "scope": "ADAPTIVE REUSE + CHEMICAL-FREE DESIGN - Denmark's first chemical-free hotel",
       "portfolio": "8 hotels in Copenhagen area",
       "hotel-specific": "",
       "hotel manager": "Lise Egenius (as of research date)",
       "contact": "Via hotel",
-      "torben br\u00f8chner (founder/owner)": "Via brochner-hotels.com",
-      "br\u00f8chner hotels sustainability team": "Via corporate contact",
+      "torben brøchner (founder/owner)": "Via brochner-hotels.com",
+      "brøchner hotels sustainability team": "Via corporate contact",
       "lise egenius (general manager)": "Via hotel contact",
       "linkedin": "Searchable \"Lise Egenius Hotel Herman K\"",
       "repeat guests": "High (boutique hotel loyalty)",
@@ -164,30 +178,31 @@
     "year": "2016-2018",
     "category": "Design boutique / Mid-upscale",
     "notes": [
-      "Br\u00f8chner Hotels - Danish boutique hotel collection",
-      "Br\u00f8chner Hotels in-house design team (likely)",
-      "Br\u00f8chner portfolio - Learnings applicable to other 7 hotels",
-      "Br\u00f8chner Hotels has 8 properties - Model can replicate across portfolio",
-      "Br\u00f8chner's 8 hotels - Could become chain-wide standard",
+      "Brøchner Hotels - Danish boutique hotel collection",
+      "Brøchner Hotels in-house design team (likely)",
+      "Brøchner portfolio - Learnings applicable to other 7 hotels",
+      "Brøchner Hotels has 8 properties - Model can replicate across portfolio",
+      "Brøchner's 8 hotels - Could become chain-wide standard",
       "Health-focused brands - Wellness hotels could adopt",
-      "BR\u00d8CHNER PORTFOLIO - 8 hotels = scalability potential",
-      "Contact Lise Egenius (GM) or Br\u00f8chner Hotels - PRIORITY CONTACT"
+      "BRØCHNER PORTFOLIO - 8 hotels = scalability potential",
+      "Contact Lise Egenius (GM) or Brøchner Hotels - PRIORITY CONTACT"
     ],
-    "chain": "\u2b50\u2b50\u2b50 MEDIUM-HIGH",
-    "year_verified": 2018
+    "chain": "⭐⭐⭐ MEDIUM-HIGH",
+    "year_verified": 2018,
+    "sourceRefs": []
   },
   {
-    "id": "hotel_ottilia_(br\u00f8chner_hotels)",
-    "title": "HOTEL OTTILIA (BR\u00d8CHNER HOTELS)",
+    "id": "hotel_ottilia_(brøchner_hotels)",
+    "title": "HOTEL OTTILIA (BRØCHNER HOTELS)",
     "type": "Hotel Case Study",
     "details": {
       "name": "Hotel Ottilia",
-      "chain": "Br\u00f8chner Hotels (same ownership as Herman K)",
-      "eier/operat\u00f8r": "Br\u00f8chner Hotels",
+      "chain": "Brøchner Hotels (same ownership as Herman K)",
+      "eier/operatør": "Brøchner Hotels",
       "website": "brochner-hotels.com/ottilia",
-      "scope": "ADAPTIVE REUSE - Historic brewery \u2192 hotel",
+      "scope": "ADAPTIVE REUSE - Historic brewery → hotel",
       "contact": "Via brochner-hotels.com",
-      "br\u00f8chner hotels": "Via brochner-hotels.com (same contact as Herman K)"
+      "brøchner hotels": "Via brochner-hotels.com (same contact as Herman K)"
     },
     "location": "Bryggervangen 2, Copenhagen, Denmark (Carlsberg City district)",
     "size": "~155 rooms",
@@ -195,11 +210,12 @@
     "category": "Design boutique / Mid-upscale",
     "phone": "Via website",
     "notes": [
-      "Br\u00f8chner Hotels (same as Herman K)",
+      "Brøchner Hotels (same as Herman K)",
       "Competitive area - Carlsberg City has multiple hotels (differentiation challenge)",
-      "Portfolio context - Shows Br\u00f8chner Hotels' consistent approach across properties"
+      "Portfolio context - Shows Brøchner Hotels' consistent approach across properties"
     ],
-    "year_verified": 2018
+    "year_verified": 2018,
+    "sourceRefs": []
   },
   {
     "id": "clarion_hotel_the_hub_(oslo)",
@@ -207,12 +223,12 @@
     "type": "Hotel Case Study",
     "details": {
       "name": "Clarion Hotel The Hub",
-      "chain": "Nordic Choice Hotels / Strawberry \u2190 MAJOR NORDIC CHAIN",
+      "chain": "Nordic Choice Hotels / Strawberry ← MAJOR NORDIC CHAIN",
       "size": "~423 rooms (one of Oslo's largest hotels)",
       "category": "Business/conference hotel / Upper-midscale",
-      "operat\u00f8r": "Nordic Choice Hotels (Strawberry)",
+      "operatør": "Nordic Choice Hotels (Strawberry)",
       "website": "strawberryhotels.com",
-      "nordic choice hotels / strawberry \u2190 critical": "Major Nordic chain (200+ hotels)",
+      "nordic choice hotels / strawberry ← critical": "Major Nordic chain (200+ hotels)",
       "nordic choice hotels sustainability team": "Via strawberryhotels.com",
       "general manager": "Contact via hotel (+47 21 40 00 00)",
       "client pitch": "\"Norway's tallest timber hotel: 1,300 tonnes CO2 stored + BREEAM Excellent\""
@@ -231,7 +247,10 @@
       "NORDIC CHOICE = MEGA CHAIN - 200+ hotels, huge partnership potential"
     ],
     "chain": "Nordic Choice = same as House of Choice (Stockholm) - demonstrates chain-wide commitment",
-    "year_verified": 2020
+    "year_verified": 2020,
+    "sourceRefs": [
+      "strawberry_sustainability"
+    ]
   },
   {
     "id": "thon_hotel_oslo_airport_(gardermoen)",
@@ -242,7 +261,7 @@
       "chain": "Thon Hotels (Norwegian hotel chain, ~80 hotels)",
       "size": "~500 rooms (Norway's largest conference hotel)",
       "category": "Airport/conference hotel / Midscale",
-      "eier/operat\u00f8r": "Thon Hotels (family-owned Norwegian chain)",
+      "eier/operatør": "Thon Hotels (family-owned Norwegian chain)",
       "website": "thonhotels.com",
       "thon hotels sustainability team": "Via thonhotels.com corporate contact",
       "thon hotels head office": "Oslo",
@@ -271,7 +290,10 @@
       "Conference segment expertise - Develop conference hotel circular specifications",
       "Conference hotels = opportunity - Large volume, underserved by circular designers"
     ],
-    "chain": "\u2b50\u2b50\u2b50\u2b50 HIGH",
-    "year_verified": 2019
+    "chain": "⭐⭐⭐⭐ HIGH",
+    "year_verified": 2019,
+    "sourceRefs": [
+      "iso_14001"
+    ]
   }
 ]
