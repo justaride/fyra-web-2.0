@@ -1,0 +1,382 @@
+{
+  "company": {
+    "name": "Fyra",
+    "tagline": "Thinkers of Built Spaces",
+    "founded": 2010,
+    "location": "Helsinki, Finland",
+    "employeeCount": "18+",
+    "website": "https://www.fyra.fi",
+    "description": "Fyra is a leading Helsinki-based interior architecture studio that has positioned itself as one of Finland's foremost specialists in public spaces, workplaces, and hospitality design. The name 'Fyra' means 'four' in Finnish/Swedish, referring to the four founders and their collective vision.",
+    "mission": "Creating better habitats for humans with less resources through life-centric, research-driven design.",
+    "vision": "To be rethinking built spaces, radically modernizing structures, and making better human habitats with less.",
+    "values": [
+      {
+        "title": "Collective Spirit",
+        "description": "A 'we-company' where original values of equality and belonging remain at the core"
+      },
+      {
+        "title": "Life-Centric Design",
+        "description": "Design that promotes physical, social, and mental wellbeing alongside ecological responsibility"
+      },
+      {
+        "title": "Research-Driven",
+        "description": "Every project undergoes research phases with extensive user engagement and data analysis"
+      },
+      {
+        "title": "Circular Economy",
+        "description": "Committed to reducing natural resource use through the 9R strategies of circular economy"
+      }
+    ],
+    "memberships": [
+      "Green Building Council Finland (FiGBC)",
+      "100Gruppen (Sweden)",
+      "Interior Designers' Emergency Declaration on Climate and Biodiversity",
+      "Finnish Circular Economy Green Deal",
+      "Nordic Circular Construction"
+    ]
+  },
+  "founders": [
+    {
+      "id": "eva-marie",
+      "name": "Eva-Marie Eriksson",
+      "role": "Partner, CEO",
+      "title": "M.Sc.Econ",
+      "specialization": "Hotels and Restaurants",
+      "description": "Co-founder and Senior Designer leading Fyra's hospitality portfolio with expertise in creating memorable guest experiences.",
+      "email": "eva-marie.eriksson@fyra.fi"
+    },
+    {
+      "id": "hanna",
+      "name": "Hanna Neuvo",
+      "role": "Partner, CEO",
+      "title": "Director, Workplace Design",
+      "specialization": "Workplace Development & Business Strategy",
+      "description": "Co-founder with overall responsibility for business development. Led the Ethica Circular Sprint partnership.",
+      "email": "hanna.neuvo@fyra.fi"
+    },
+    {
+      "id": "niina",
+      "name": "Niina Sihto",
+      "role": "Partner",
+      "title": "Director, RE Development",
+      "specialization": "Real Estate Development & Circular Design",
+      "description": "Specialist in property development and circular design. Represented Fyra in the national Circular Design program with Sitra.",
+      "email": "niina.sihto@fyra.fi"
+    },
+    {
+      "id": "tiina",
+      "name": "Tiina Närkki",
+      "role": "Partner",
+      "title": "Director",
+      "specialization": "Design Direction",
+      "description": "Co-founder contributing to Fyra's design excellence and strategic direction.",
+      "email": "tiina.narkki@fyra.fi"
+    }
+  ],
+  "team": [
+    {
+      "name": "Emma Keränen",
+      "role": "Head of Hospitality Development",
+      "title": "Interior Architect"
+    },
+    {
+      "name": "Anu Latvala",
+      "role": "Head of Concepts & RE Development",
+      "title": "Interior Architect"
+    },
+    {
+      "name": "Katja Nordman",
+      "role": "Business Director",
+      "title": "M.Sc. Economics"
+    },
+    {
+      "name": "Ha Linh Vu",
+      "role": "LCA Specialist",
+      "title": "M.Sc. Materials Science"
+    },
+    {
+      "name": "Marina Gretsova",
+      "role": "Digital Lead",
+      "title": "VR/Metaverse"
+    },
+    {
+      "name": "Mirkka Ylikauppila",
+      "role": "Workplace Specialist",
+      "title": "Designer"
+    },
+    {
+      "name": "Ada Juslen",
+      "role": "Account Manager",
+      "title": ""
+    }
+  ],
+  "expertise": [
+    {
+      "id": "hospitality",
+      "title": "Hospitality Design",
+      "description": "Hotels, restaurants, bars, cafes, and event spaces that create memorable experiences while respecting architectural heritage.",
+      "icon": "Hotel"
+    },
+    {
+      "id": "workplace",
+      "title": "Workplace Development",
+      "description": "Research-driven office design that goes beyond traditional interiors through systematic stakeholder engagement and piloting.",
+      "icon": "Building2"
+    },
+    {
+      "id": "realestate",
+      "title": "Real Estate Development",
+      "description": "Early-stage involvement to identify property potential and translate it into cohesive, future-proof visions.",
+      "icon": "Landmark"
+    },
+    {
+      "id": "sustainability",
+      "title": "Sustainability & LCA",
+      "description": "Life cycle assessment and circular economy integration from the earliest stages of every project.",
+      "icon": "Leaf"
+    }
+  ],
+  "projects": [
+    {
+      "id": "finlandia-hall",
+      "name": "Finlandia Hall",
+      "type": "Heritage Renovation",
+      "location": "Helsinki, Finland",
+      "year": "2024-2025",
+      "client": "Finlandia Hall",
+      "area": null,
+      "description": "Reimagining the bistro and café areas of Alvar Aalto's iconic 1971 congress venue. Every design decision respects the essence of the original architecture, ensuring dialogue between past and present.",
+      "approach": "The goal was to honor tradition while integrating modern services. We respected Aalto's design language in new solutions, ensuring they feel like a natural part of the space.",
+      "awards": [
+        {"name": "Monocle Design Awards", "category": "Best Hospitality Fit-Out", "year": 2025},
+        {"name": "Wallpaper Design Awards", "category": "Best Modernist Revival", "year": 2025}
+      ],
+      "featured": true
+    },
+    {
+      "id": "hotel-kamp",
+      "name": "Hotel Kämp",
+      "type": "Hotel Renovation",
+      "location": "Helsinki, Finland",
+      "year": "2023-2026",
+      "client": "Kämp Collection",
+      "area": "3100 m² (new wing)",
+      "description": "Comprehensive reimagining of all 179 guest rooms and public spaces, plus 22 new rooms in the Helander House extension including the 179m² Sibelius Suite with grand piano.",
+      "approach": "Maintaining Kämp's heritage while cultivating calm, inviting luxury. The interiors reflect Finnish Golden Age aesthetics, inspired by Helene Schjerfbeck's works.",
+      "awards": [],
+      "featured": true
+    },
+    {
+      "id": "ey-finland",
+      "name": "EY Finland Office",
+      "type": "Workplace",
+      "location": "Helsinki, Finland",
+      "year": "2023",
+      "client": "EY Finland",
+      "area": "6,913 m²",
+      "description": "A hospitality-driven office reflecting EY's culture and workplace mission. Two 1950s-60s buildings merged with two new floors in a comprehensive two-year renovation.",
+      "approach": "LEED Platinum certified. 40% of furniture reused without changes, 30% given 'facelifts'. Preservation of stone floors, glass walls, and wooden structures.",
+      "sustainability": {
+        "certification": "LEED Platinum",
+        "furnitureReused": "40%",
+        "furnitureRefurbished": "30%",
+        "features": ["Biophilic garden atrium", "Low-carbon material choices", "Test Lab validation with employees"]
+      },
+      "awards": [
+        {"name": "Frame Awards", "category": "Large Office of the Year", "year": 2024}
+      ],
+      "featured": true
+    },
+    {
+      "id": "bouchon-careme",
+      "name": "Bouchon Carême",
+      "type": "Restaurant",
+      "location": "Helsinki, Finland",
+      "year": "2024",
+      "client": "Hans Välimäki et al.",
+      "area": null,
+      "description": "Located in Finland's first purpose-built department store (1900, Selim A. Lindqvist). Robust, authentic materials create a relaxed atmosphere at the intersection of tradition and modernity.",
+      "approach": "Authenticity and unpretentious style. Warm natural tones, solid wooden furniture, tall wooden shelves creating intimate corners, with a lively front-of-house bar.",
+      "awards": [
+        {"name": "Prix Versailles", "category": "16 Most Beautiful Restaurants in the World", "year": 2025}
+      ],
+      "featured": true
+    },
+    {
+      "id": "sitra",
+      "name": "Sitra Workspace",
+      "type": "Workplace",
+      "location": "Helsinki, Finland",
+      "year": "2023",
+      "client": "Sitra (Finnish Innovation Fund)",
+      "area": null,
+      "description": "Workplace development project for Finland's innovation fund, showcasing successful circular solutions and sustainable design practices.",
+      "approach": "Integration of circular economy principles with workplace development expertise.",
+      "awards": [
+        {"name": "Workplace Awards", "category": "Sustainability", "year": 2023}
+      ],
+      "featured": false
+    },
+    {
+      "id": "hotel-vaakuna",
+      "name": "Original Sokos Hotel Vaakuna",
+      "type": "Hotel Renovation",
+      "location": "Helsinki, Finland",
+      "year": "2021",
+      "client": "Sokotel",
+      "area": null,
+      "description": "Renovation of a functionalist 1952 hotel, preserving original design elements while modernizing for contemporary needs.",
+      "approach": "Focus on preservation: original doors and brass numbers renovated, vintage armchairs re-upholstered, reception furniture and lamps restored.",
+      "awards": [
+        {"name": "Restaurant and Bar Design Awards", "category": "Hotel (Shortlisted)", "year": 2021}
+      ],
+      "featured": false
+    },
+    {
+      "id": "box-posti",
+      "name": "Box by Posti",
+      "type": "Retail",
+      "location": "Helsinki, Finland",
+      "year": "2020",
+      "client": "Posti",
+      "area": null,
+      "description": "Bright interiors for a collection point for online orders, including recycling area and fitting rooms.",
+      "approach": "Innovative use of color and space for a new type of retail experience.",
+      "awards": [
+        {"name": "Dezeen Awards", "category": "Large Retail Interior of the Year", "year": 2021},
+        {"name": "IFI Design Distinction Awards", "category": "Commerce (Bronze)", "year": 2022}
+      ],
+      "featured": false
+    },
+    {
+      "id": "naava-oasis",
+      "name": "Naava Oasis",
+      "type": "Product Design",
+      "location": "Helsinki, Finland",
+      "year": "2021",
+      "client": "Naava",
+      "area": null,
+      "description": "Room-within-room concept combining biophilic design with air purification, natural light, and pleasant acoustics.",
+      "approach": "Locally produced birch plywood frame and acrylic walls. Modular, flexible structure for open office environments.",
+      "awards": [
+        {"name": "IFI Design Distinction Awards", "category": "Sustainability (Bronze)", "year": 2022}
+      ],
+      "featured": false
+    },
+    {
+      "id": "konelabra",
+      "name": "Konelabra",
+      "type": "Real Estate Development",
+      "location": "Helsinki, Finland",
+      "year": "2024",
+      "client": "Cobbleyard Real Estate",
+      "area": null,
+      "description": "Complete reimagination of a historic 1925-1933 red brick technical education building that had stood empty for five years.",
+      "approach": "Preservation central: original doors, trim, and floors restored. New architectural elements complement existing character. Seeking BREEAM In-Use certification.",
+      "awards": [],
+      "featured": false
+    }
+  ],
+  "awards": {
+    "studioAwards": [
+      {"name": "Architizer A+Awards", "category": "Best Interior Design Firm", "year": 2022},
+      {"name": "Dezeen Awards", "category": "Interior Design Studio of the Year", "year": 2021},
+      {"name": "SIO Finland", "category": "Interior Architecture Agency of the Year", "year": 2020}
+    ],
+    "projectAwards": [
+      {"project": "Finlandia Hall", "name": "Monocle Design Awards", "category": "Best Hospitality Fit-Out", "year": 2025},
+      {"project": "Finlandia Hall", "name": "Wallpaper Design Awards", "category": "Best Modernist Revival", "year": 2025},
+      {"project": "Bouchon Carême", "name": "Prix Versailles", "category": "16 Most Beautiful Restaurants in the World", "year": 2025},
+      {"project": "Bistro Gina", "name": "Créateurs Design Awards", "category": "Best Hospitality Project (Finalist)", "year": 2025},
+      {"project": "EY Finland", "name": "Frame Awards", "category": "Large Office of the Year", "year": 2024},
+      {"project": "Sitra", "name": "Workplace Awards", "category": "Sustainability", "year": 2023},
+      {"project": "Box by Posti", "name": "Dezeen Awards", "category": "Large Retail Interior of the Year", "year": 2021},
+      {"project": "Box by Posti", "name": "IFI Design Distinction Awards", "category": "Commerce (Bronze)", "year": 2022},
+      {"project": "Naava Oasis", "name": "IFI Design Distinction Awards", "category": "Sustainability (Bronze)", "year": 2022},
+      {"project": "New Nordic School", "name": "IFI Design Distinction Awards", "category": "Learning (Silver)", "year": 2022},
+      {"project": "Solita", "name": "Workplace Awards", "category": "Work Environment Act of the Year", "year": 2020}
+    ]
+  },
+  "sustainability": {
+    "approach": "Fyra believes the industry needs rethinking of built spaces. Structures need radical modernization. Better human habitats must be made with less.",
+    "nineRs": {
+      "description": "Fyra bases its sustainability work on the 9R strategies of circular economy, with special emphasis on the first three (Refuse, Rethink, Reduce) which have the greatest impact.",
+      "strategies": [
+        {"code": "R0", "name": "Refuse", "description": "Avoid unnecessary material consumption from the start"},
+        {"code": "R1", "name": "Rethink", "description": "Redesign for more intensive use"},
+        {"code": "R2", "name": "Reduce", "description": "Produce more resource-efficiently"},
+        {"code": "R3", "name": "Reuse", "description": "Extend product life through direct reuse"},
+        {"code": "R4", "name": "Repair", "description": "Fix products to extend lifespan"},
+        {"code": "R5", "name": "Refurbish", "description": "Upgrade and restore products"},
+        {"code": "R6", "name": "Remanufacture", "description": "Create new products from old components"},
+        {"code": "R7", "name": "Repurpose", "description": "Use materials for different purposes"},
+        {"code": "R8", "name": "Recycle", "description": "Process materials into new raw materials"},
+        {"code": "R9", "name": "Recover", "description": "Energy recovery as last resort"}
+      ]
+    },
+    "lca": {
+      "title": "Life Cycle Assessment",
+      "description": "Fyra has developed specialized expertise in LCA for interior projects. They use the Finnish CO2data.fi database and FiGBC framework.",
+      "achievements": [
+        "First LCA-compliant interior project in Finland (Bensow case, 2023)",
+        "Published comparative LCA studies for knowledge sharing",
+        "Dedicated LCA Specialist (Ha Linh Vu, M.Sc. Materials Science)",
+        "Active participant in FiGBC working group for interior LCA framework"
+      ],
+      "findings": [
+        "Renovation version B had 31% higher carbon footprint than version A",
+        "Loose furniture accounts for 20-24% of total carbon footprint",
+        "Renovations every 3 years = 60 tonnes CO2e over 60 years",
+        "Renovations every 10 years = under 20 tonnes CO2e (65% reduction)"
+      ]
+    },
+    "greenDeal": {
+      "title": "Circular Economy Green Deal",
+      "description": "Fyra was among the first participants in Finland's Circular Economy Green Deal, committing to reduce natural resource use and set tangible goals for a low-carbon circular economy.",
+      "commitments": [
+        "Develop project-specific circular economy plans for each project",
+        "Map the use of recycled materials and extent of reuse",
+        "Integrate circular economic design principles from earliest project stages"
+      ]
+    }
+  },
+  "methodology": {
+    "lifeCentric": {
+      "title": "Life-Centric Design",
+      "description": "Elements promoting physical, social, and mental wellbeing, together with ecological responsibility, under the guiding principle of life-centric design thinking.",
+      "goal": "Create solutions that fulfill functional requirements while improving people's quality of life, health, and wellbeing."
+    },
+    "researchBased": {
+      "title": "Research-Based Approach",
+      "description": "Projects undergo a research phase establishing clear direction through extensive user engagement.",
+      "methods": ["Interviews", "Workshops", "Co-creation sessions", "Activation events", "Data analysis", "User behavior studies"]
+    },
+    "piloting": {
+      "title": "Test Lab & Piloting",
+      "description": "Piloting solutions lets organizations test and refine planned initiatives before final implementation.",
+      "benefits": ["Valuable insights from real users", "Encourages staff participation", "Minimizes potential pitfalls", "Ensures optimal results"]
+    },
+    "digitalTwins": {
+      "title": "Digital Twins & VR",
+      "description": "Fyra Metaverse Lounge transforms spaces into highly detailed, photorealistic digital replicas.",
+      "uses": ["Design validation", "Onboarding & change management", "Immersive international marketing"]
+    }
+  },
+  "clients": [
+    "Scandic", "Strawberry", "Sokotel", "Holiday Club Resorts", "Kämp Collection",
+    "EY Finland", "Sitra", "Nokia", "Supercell", "WithSecure",
+    "Neste", "Outokumpu", "Wärtsilä", "Metsä Group", "Varma",
+    "Skanska", "Sponda", "CBRE", "Cobbleyard", "Antilooppi",
+    "L'Oréal", "Nestlé", "Roche", "Unicef", "DLA Piper",
+    "Carnegie", "United Bankers", "Posti", "Swappie", "Solita"
+  ],
+  "contact": {
+    "address": "Helsinki, Finland",
+    "email": "info@fyra.fi",
+    "website": "https://www.fyra.fi",
+    "social": {
+      "linkedin": "https://www.linkedin.com/company/fyra-finland/",
+      "instagram": "https://www.instagram.com/fyra.fi/"
+    }
+  }
+}
