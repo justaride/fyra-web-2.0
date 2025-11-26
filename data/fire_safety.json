@@ -1,0 +1,268 @@
+{
+  "tiers": [
+    {
+      "tier": 1,
+      "name": "Low-Risk Reuse",
+      "nameNO": "Lav-Risiko Gjenbruk",
+      "description": "Minimal testing required - inherently non-combustible or naturally fire-resistant materials",
+      "descriptionNO": "Minimal testing påkrevd - iboende ikke-brennbare eller naturlig brannsikre materialer",
+      "productTypes": [
+        "Metal/glass furniture (inherently non-combustible)",
+        "Solid wood furniture (thick hardwood = naturally fire-resistant)",
+        "Concrete/stone décor"
+      ],
+      "productTypesNO": [
+        "Metall/glass møbler (iboende ikke-brennbare)",
+        "Solid tre-møbler (tykk hardtre = naturlig brannsikker)",
+        "Betong/stein dekor"
+      ],
+      "placement": "All fire-critical areas (lobbies, corridors, restaurants)",
+      "placementNO": "Alle brannkritiske områder (lobbyer, korridorer, restauranter)",
+      "testingRequired": "Material Safety Data Sheets (MSDS) only - no flame testing needed",
+      "testingRequiredNO": "Kun Material Safety Data Sheets (MSDS) - ingen flammetesting",
+      "operators": ["YLLW Factory", "Input Interiör", "Rekomo AB", "Recycling Partner"],
+      "cost": "Minimal documentation burden",
+      "costNO": "Minimal dokumentasjonsbyrde",
+      "costRange": "0-5,000 SEK",
+      "timeline": "1-2 weeks",
+      "riskLevel": "low",
+      "icon": "✅",
+      "color": "emerald"
+    },
+    {
+      "tier": 2,
+      "name": "Medium-Risk Reuse",
+      "nameNO": "Medium-Risiko Gjenbruk",
+      "description": "Strategic testing required - reupholstered furniture with new fire-rated fabrics",
+      "descriptionNO": "Strategisk testing påkrevd - remøblert med nye brannsikre tekstiler",
+      "productTypes": [
+        "Reupholstered furniture (reuse frame + NEW fire-rated fabric)",
+        "Case goods with minimal textile",
+        "Hard seating (wood chairs with thin cushions)"
+      ],
+      "productTypesNO": [
+        "Remøblerte møbler (gjenbruk ramme + NY brannsikker tekstil)",
+        "Kasse-møbler med minimal tekstil",
+        "Hard seating (tre-stoler med tynne puter)"
+      ],
+      "placement": "Restaurants, conference rooms, lobbies (NOT escape route corridors)",
+      "placementNO": "Restauranter, konferanserom, lobbyer (IKKE fluktveier/korridorer)",
+      "testingRequired": "EN 1021-1 (cigarette test) + potentially EN 1021-2 (match test) for upholstery fabrics",
+      "testingRequiredNO": "EN 1021-1 (sigaretttest) + potensielt EN 1021-2 (fyrstikktest) for møbeltekstiler",
+      "testingStandards": ["EN 1021-1", "EN 1021-2"],
+      "operators": ["YLLW Factory", "Input Interiör"],
+      "cost": "Testing cost per fabric type",
+      "costNO": "Testing-kostnad per tekstiltype",
+      "costRange": "18,000-30,000 SEK",
+      "timeline": "8-12 weeks (refurbishment + fabric procurement)",
+      "timelineNO": "8-12 uker (remøblering + tekstilinnkjøp)",
+      "strategy": "YLLW reupholsters with Kvadrat, Gabriel, Maharam fire-rated contract fabrics (EN 1021-1/2 certified). Test certificate from textile supplier satisfies requirement. Frame reuse + compliant textile = approved system.",
+      "strategyNO": "YLLW remøblerer med Kvadrat, Gabriel, Maharam brannsikre kontrakt-tekstiler (EN 1021-1/2 sertifisert). Testsertifikat fra tekstil-leverandør tilfredsstiller krav. Ramme-gjenbruk + godkjent tekstil = godkjent system.",
+      "riskLevel": "medium",
+      "icon": "⚠️",
+      "color": "yellow"
+    },
+    {
+      "tier": 3,
+      "name": "High-Risk Reuse",
+      "nameNO": "Høy-Risiko Gjenbruk",
+      "description": "Extensive testing/avoidance - NOT recommended for escape routes",
+      "descriptionNO": "Omfattende testing/unngåelse - IKKE anbefalt for fluktveier",
+      "productTypes": [
+        "Fully upholstered furniture (sofas, lounge chairs, thick cushions)",
+        "Vintage textiles (curtains, tapestries)",
+        "Unknown-origin pieces"
+      ],
+      "productTypesNO": [
+        "Fullt polstret møbler (sofaer, lenestol, tykke puter)",
+        "Vintage tekstiler (gardiner, tapisserier)",
+        "Ukjent opprinnelse"
+      ],
+      "placement": "AVOID in escape routes; use in guest rooms instead",
+      "placementNO": "UNNGÅ i fluktveier; bruk i gjesteværelser isteden",
+      "placementWarning": "BBR requires B-s1,d0 for corridor walls/ceilings; upholstered furniture in corridors discouraged",
+      "placementWarningNO": "BBR krever B-s1,d0 for korridor-vegger/tak; polstret møbler i korridorer frarådes",
+      "testingRequired": "Full Euroclass BS 5852 Crib 5 (high-hazard)",
+      "testingRequiredNO": "Full Euroclass BS 5852 Crib 5 (høy-risiko)",
+      "testingStandards": ["BS 5852 Crib 5", "EN 13501-1"],
+      "operators": [],
+      "cost": "Per product testing - often not economically viable",
+      "costNO": "Per produkt testing - ofte ikke økonomisk levedyktig",
+      "costRange": "45,000-70,000 SEK",
+      "timeline": "6-8 weeks per product",
+      "timelineNO": "6-8 uker per produkt",
+      "recommendation": "AVOID in escape routes; relocate to guest rooms",
+      "recommendationNO": "UNNGÅ i fluktveier; flytt til gjesteværelser",
+      "alternatives": [
+        {
+          "strategy": "Guest Rooms",
+          "description": "Lower fire requirements (D-s2,d0 for surfaces; loose furniture = no specific Euroclass)",
+          "descriptionNO": "Lavere brannkrav (D-s2,d0 for overflater; løse møbler = ingen spesifikk Euroclass)"
+        },
+        {
+          "strategy": "Sprinkler Compensation",
+          "description": "Buildings with full sprinkler systems = relaxed furniture requirements (equivalence approach)",
+          "descriptionNO": "Bygninger med fullstendig sprinkler-system = lempede møbelkrav (ekvivalens-tilnærming)"
+        },
+        {
+          "strategy": "Precedent",
+          "description": "Ett Hem, Hobo Hotel used vintage upholstered furniture via sprinkler + compartmentation strategy",
+          "descriptionNO": "Ett Hem, Hobo Hotel brukte vintage polstret møbler via sprinkler + seksjonerings-strategi"
+        }
+      ],
+      "riskLevel": "high",
+      "icon": "🚨",
+      "color": "red"
+    }
+  ],
+  "testingLabs": [
+    {
+      "name": "RISE",
+      "fullName": "RISE Research Institutes of Sweden",
+      "location": "Borås, Sweden",
+      "services": [
+        "EN 1021-1/2 testing (upholstery)",
+        "EN 13501-1 testing (wall materials)",
+        "Fire safety consulting"
+      ],
+      "costRange": "18,000-60,000 SEK",
+      "timeline": "3-8 weeks",
+      "website": "https://www.ri.se",
+      "contact": "Via website"
+    },
+    {
+      "name": "SP",
+      "fullName": "SP Technical Research Institute of Sweden",
+      "location": "Stockholm, Sweden",
+      "services": [
+        "EN 1021-1/2 testing (upholstery)",
+        "Euroclass testing",
+        "Material safety verification"
+      ],
+      "costRange": "18,000-60,000 SEK",
+      "timeline": "3-8 weeks",
+      "website": "https://www.sp.se",
+      "contact": "Via website"
+    }
+  ],
+  "fireConsultants": [
+    {
+      "name": "Piacon",
+      "specialty": "Fire safety strategy for hotel projects",
+      "services": [
+        "Fire strategy design",
+        "BBR compliance navigation",
+        "Equivalence pathway documentation",
+        "Pre-application meetings with fire authority"
+      ],
+      "experience": "Swedish hotel fire safety compliance",
+      "contact": "Via website"
+    },
+    {
+      "name": "White Arkitekter",
+      "specialty": "Architectural fire engineering",
+      "services": [
+        "Fire safety strategy",
+        "Building code compliance",
+        "Fire authority coordination"
+      ],
+      "experience": "Nordic commercial and hospitality projects",
+      "contact": "Via website"
+    }
+  ],
+  "complianceFramework": {
+    "regulations": [
+      {
+        "code": "BBR Chapter 5",
+        "name": "Swedish Building Regulations - Fire Safety",
+        "nameNO": "Svensk Byggnadsregelverk - Brannsikkerhet",
+        "applicability": "All Swedish hotel construction and renovation",
+        "applicabilityNO": "All svensk hotell-bygging og renovering",
+        "keyRequirements": [
+          "Verksamhetsklass 4 for hotels",
+          "B-s1,d0 for corridor walls/ceilings",
+          "D-s2,d0 for guest room surfaces",
+          "Sprinkler systems may allow equivalence approaches"
+        ]
+      }
+    ],
+    "authorities": [
+      {
+        "name": "Räddningstjänsten",
+        "role": "Fire Authority",
+        "roleNO": "Brannmyndighet",
+        "responsibility": "Fire safety approval for building permits",
+        "responsibilityNO": "Brannsikkerhets-godkjenning for byggetillatelser",
+        "processStep": "Pre-application meeting recommended for vintage furniture projects"
+      }
+    ]
+  },
+  "costImplications": [
+    {
+      "scenario": "Baseline (No Fire Concerns)",
+      "cost": "Standard reused furniture pricing",
+      "costIncrease": "0%"
+    },
+    {
+      "scenario": "Low-Risk Reuse (Tier 1)",
+      "cost": "MSDS documentation, admin",
+      "costIncrease": "+5-10%"
+    },
+    {
+      "scenario": "Medium-Risk Reuse (Tier 2)",
+      "cost": "Reupholstery with fire-rated fabrics, testing",
+      "costIncrease": "+15-25%"
+    },
+    {
+      "scenario": "High-Risk Reuse (Tier 3)",
+      "cost": "Extensive testing",
+      "costIncrease": "+40-60%",
+      "recommendation": "Often not economically viable; better to avoid"
+    }
+  ],
+  "bestPractices": [
+    {
+      "title": "Design fire-critical spaces around Tier 1 & Tier 2 reuse",
+      "description": "Maximize non-combustible and reupholstered furniture in corridors and public areas"
+    },
+    {
+      "title": "Relocate Tier 3 items to guest rooms",
+      "description": "Guest rooms have lower fire requirements (D-s2,d0) making vintage upholstered furniture more viable"
+    },
+    {
+      "title": "Start testing during design development",
+      "description": "Begin fire testing before construction tender to avoid project delays (8-10 weeks minimum for multiple products)"
+    },
+    {
+      "title": "Leverage sprinkler systems for equivalence",
+      "description": "Buildings with full sprinkler systems may use alternative compliance pathways (precedent: Ett Hem, Hobo Hotel)"
+    },
+    {
+      "title": "Engage fire consultant early",
+      "description": "Pre-application meeting with Räddningstjänsten + Piacon/White Arkitekter can identify viable strategies before design is locked"
+    }
+  ],
+  "precedents": [
+    {
+      "project": "Ett Hem Hotel",
+      "location": "Stockholm, Sweden",
+      "approach": "Vintage upholstered furniture in guest rooms via sprinkler + compartmentation strategy",
+      "outcome": "Approved by Swedish fire authority",
+      "relevance": "Demonstrates equivalence pathway for Tier 3 furniture in guest rooms"
+    },
+    {
+      "project": "Hobo Hotel",
+      "location": "Stockholm, Sweden",
+      "approach": "Vintage furniture with sprinkler compensation",
+      "outcome": "Successful regulatory approval",
+      "relevance": "Swedish precedent for vintage hospitality interiors"
+    },
+    {
+      "project": "Villa Copenhagen - Earth Suite",
+      "location": "Copenhagen, Denmark",
+      "approach": "Ocean plastic furniture (Mater Design) - new from recycled materials",
+      "outcome": "Full compliance with hospitality fire standards",
+      "relevance": "Demonstrates that circular materials CAN meet hospitality fire requirements (though this was new manufacturing, not reuse)"
+    }
+  ]
+}

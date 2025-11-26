@@ -1,0 +1,397 @@
+{
+  "bvbSystem": {
+    "name": "Byggvarubedömningen (BVB)",
+    "description": "Sweden's established construction product assessment system evaluating products based on chemical content and lifecycle aspects. Over 30,000 assessed products in database.",
+    "administrator": "Non-profit economic association owned by Swedish construction industry stakeholders. IVL Svenska Miljöinstitutet plays key governance role.",
+    "status": "Voluntary but de facto market standard",
+    "adoptionRate": "10,000+ logbooks across Sweden's largest projects. Major contractors (Skanska, NCC, Peab) use systematically.",
+    "website": "https://byggvarubedomningen.se",
+    "ratingSystem": {
+      "levels": [
+        {
+          "name": "Recommended",
+          "color": "green",
+          "criteria": "All chemical content criteria 'Recommended', no lifecycle criteria 'To be avoided', at least 50% of lifecycle criteria 'Recommended'"
+        },
+        {
+          "name": "Accepted",
+          "color": "yellow",
+          "criteria": "No content criteria 'To be avoided', no lifecycle criteria 'To be avoided'"
+        },
+        {
+          "name": "To be avoided",
+          "color": "red",
+          "criteria": "One or more content OR lifecycle criteria assessed as 'To be avoided'"
+        }
+      ]
+    },
+    "assessmentProcess": {
+      "applicant": "Manufacturers or authorized representatives only (third-party assessment not permitted)",
+      "documentation": ["Building Product Declaration (eBVD2015)", "Lifecycle documentation", "Third-party test reports"],
+      "timeline": "New assessment: 10 working days. Reassessment: 20 working days",
+      "cost": {
+        "subscription": "Required for manufacturers (pricing not public)",
+        "standardAssessment": "Included in subscription",
+        "confidentialAssessment": "6,000 SEK per product",
+        "reassessment": "1,000 SEK"
+      }
+    },
+    "circularEconomyCriteria": {
+      "recycledContent": {
+        "criterion": "1.2: Proportion of Recycled Material",
+        "recommended": "≥50% post-consumer recycled material by weight",
+        "accepted": "<50% or data lacking",
+        "notes": "Only post-consumer material qualifies. Pre-consumer (production waste) excluded."
+      },
+      "recyclability": {
+        "criterion": "5.2: Recycling",
+        "recommended": "≥70% can be material recycled",
+        "accepted": "≥70% recyclable as fill/energy OR installation waste systems exist",
+        "toBeAvoided": "<70% recyclable OR data lacking"
+      },
+      "gaps": [
+        "No reparability criteria",
+        "No modular design requirements",
+        "No design for disassembly assessment",
+        "No spare parts availability criteria",
+        "No pathway for reclaimed/used products"
+      ]
+    },
+    "hospitalitySectorUsage": {
+      "adoption": "Less systematic than office/residential sectors",
+      "alternatives": ["Nordic Swan Ecolabel", "OEKO-TEX for textiles", "Fire safety compliance (EN 13501-1)"],
+      "requirement": "Nice to have in most cases. Must have only when: pursuing Miljöbyggnad Gold/Silver, client has internal BVB mandate, or seeking differentiation through verified low-emission interiors"
+    },
+    "productCoverage": {
+      "high": ["Paints and coatings", "Flooring", "Insulation", "Gypsum boards", "Adhesives and sealants"],
+      "moderate": ["Ceiling tiles", "Window/door systems", "HVAC components", "Technical textiles"],
+      "low": ["Furniture (especially upholstered)", "Decorative textiles", "Lighting fixtures", "Kitchen equipment", "Bathroom fixtures"]
+    },
+    "criticalGap": {
+      "title": "Reclaimed and Used Products",
+      "issue": "No established pathway exists for assessing used/reclaimed products",
+      "barriers": [
+        "Unknown chemical content (older products may contain banned substances)",
+        "Performance degradation from wear/aging",
+        "Lack of original manufacturer to submit assessment",
+        "No testing framework for used materials"
+      ],
+      "fyraImplication": "Must develop equivalency frameworks demonstrating environmental benefits through alternative documentation"
+    }
+  },
+  "specificationTemplates": [
+    {
+      "id": "furniture",
+      "category": "Furniture",
+      "examples": "Office chairs, lounge seating, beds, desks, casegoods",
+      "options": [
+        {
+          "id": "optionA",
+          "name": "BVB Rating",
+          "description": "Byggvarubedömningen rating: 'Recommended' (Green) preferred; 'Accepted' (Yellow) minimum"
+        },
+        {
+          "id": "optionB",
+          "name": "Equivalent Certification",
+          "alternatives": [
+            "Möbelfakta certified (Swedish furniture standard)",
+            "Nordic Swan Ecolabel",
+            "EU Ecolabel",
+            "Cradle to Cradle Certified (Bronze minimum, Silver preferred)",
+            "EPD per ISO 14025/EN 15804 with REACH Annex XVII compliance"
+          ]
+        },
+        {
+          "id": "optionC",
+          "name": "Reclaimed/Refurbished Furniture",
+          "requirements": [
+            {
+              "name": "Fire Safety Testing",
+              "detail": "Third-party certificate demonstrating Euroclass B-s2,d0 or better for upholstery"
+            },
+            {
+              "name": "Embodied Carbon Calculation",
+              "detail": "Minimum 60% carbon savings vs. new manufacture (EN 15978, RICS, or One Click LCA methodology)"
+            },
+            {
+              "name": "Structural Integrity",
+              "detail": "Test per EN 1728 (seating) or EN 1129 (casegoods), or engineer's assessment of remaining service life"
+            },
+            {
+              "name": "Hazardous Substance Screening",
+              "detail": "Minimum XRF scan for heavy metals; FTIR or lab analysis if suspect materials identified"
+            }
+          ]
+        }
+      ],
+      "circularDesignCriteria": [
+        "Modular construction enabling component replacement",
+        "Manufacturer take-back or certified recycling program",
+        "Minimum 30% recycled content by weight (post-consumer preferred)"
+      ],
+      "mandatoryRequirements": {
+        "fireSafety": {
+          "upholstery": "Euroclass B-s2,d0 minimum (EN 13501-1 + EN 1021-1/2)",
+          "frameMaterials": "Non-combustible or Euroclass D-s2,d0 minimum"
+        },
+        "vocEmissions": {
+          "indoorAir": "Maximum TVOC ≤1,000 µg/m³ at 28 days (ISO 16000-9)",
+          "woodPanels": "Formaldehyde ≤E1 level (≤0.124 mg/m³ per EN 717-1)"
+        }
+      }
+    },
+    {
+      "id": "textiles",
+      "category": "Textiles",
+      "examples": "Carpet, curtains, upholstery fabric, bedding, towels",
+      "options": [
+        {
+          "id": "optionA",
+          "name": "BVB Rating",
+          "description": "'Recommended' (Green) preferred; 'Accepted' (Yellow) minimum. Note: Limited BVB coverage for decorative textiles."
+        },
+        {
+          "id": "optionB",
+          "name": "Textile-Specific Certification",
+          "alternatives": [
+            "OEKO-TEX Standard 100 (Class I or II)",
+            "GOTS (Global Organic Textile Standard)",
+            "Nordic Swan Ecolabel for textiles",
+            "EU Ecolabel for textile products",
+            "Cradle to Cradle Material Health Certificate"
+          ]
+        },
+        {
+          "id": "optionC",
+          "name": "Performance-Based Documentation",
+          "requirements": [
+            "EPD per ISO 14025/EN 15804",
+            "Heavy metals: REACH Annex XVII compliance (lead <90ppm, cadmium <100ppm)",
+            "Azo dyes: Free of carcinogenic amines per EN 14362-1",
+            "Formaldehyde: ≤75 ppm (ISO 14184-1)",
+            "Phthalates: DEHP, DBP, BBP, DIBP each <0.1% by weight"
+          ]
+        },
+        {
+          "id": "optionD",
+          "name": "Reclaimed/Vintage Textiles",
+          "requirements": [
+            {
+              "name": "Chemical Screening",
+              "detail": "Lab analysis confirming absence of banned substances per REACH Annex XVII"
+            },
+            {
+              "name": "Fire Safety Testing",
+              "detail": "Euroclass Bfl-s1 (flooring) or B-s1,d0 (curtains/upholstery) per EN 13501-1"
+            },
+            {
+              "name": "Hygiene Certification",
+              "detail": "Professional cleaning and sanitization per ISO 14644 or equivalent"
+            },
+            {
+              "name": "Embodied Carbon Benefit",
+              "detail": "Minimum 70% carbon savings vs. new manufacture"
+            }
+          ]
+        }
+      ],
+      "circularContent": [
+        "Minimum 50% recycled content by weight (post-consumer preferred)",
+        "Manufacturer take-back program (e.g., Interface ReEntry, Tarkett ReStart)"
+      ],
+      "mandatoryRequirements": {
+        "fireSafety": {
+          "flooring": "Euroclass Bfl-s1 minimum",
+          "curtains": "B-s1,d0 minimum",
+          "upholstery": "EN 1021-1/2 compliance"
+        }
+      }
+    },
+    {
+      "id": "lighting",
+      "category": "Lighting",
+      "examples": "Architectural lighting, decorative fixtures, task lighting",
+      "options": [
+        {
+          "id": "optionA",
+          "name": "BVB Rating",
+          "description": "Where available (limited coverage for complete luminaires)"
+        },
+        {
+          "id": "optionB",
+          "name": "Alternative Documentation",
+          "alternatives": [
+            "EPD per ISO 14025/EN 15804",
+            "EU Energy Label (efficiency class)",
+            "Nordic Swan Ecolabel (where available)",
+            "Manufacturer LCA data"
+          ]
+        },
+        {
+          "id": "optionC",
+          "name": "Reclaimed Lighting",
+          "requirements": [
+            {
+              "name": "Electrical Safety",
+              "detail": "CE marking verification or re-certification by qualified electrician"
+            },
+            {
+              "name": "Component Replacement",
+              "detail": "LED retrofit with documented energy efficiency improvement"
+            },
+            {
+              "name": "Fire Safety",
+              "detail": "Heat-generating components assessed for fire risk"
+            },
+            {
+              "name": "Embodied Carbon",
+              "detail": "Calculation demonstrating net benefit vs. new manufacture"
+            }
+          ]
+        }
+      ],
+      "circularDesignCriteria": [
+        "Modular design enabling LED/driver replacement",
+        "Standardized components for repairability",
+        "Manufacturer take-back program"
+      ],
+      "mandatoryRequirements": {
+        "electrical": "CE marking or equivalent safety certification",
+        "efficiency": "Minimum EU Energy Label class as specified by project"
+      }
+    },
+    {
+      "id": "buildingMaterials",
+      "category": "Building Materials",
+      "examples": "Flooring, wall panels, ceiling systems, doors, windows",
+      "options": [
+        {
+          "id": "optionA",
+          "name": "BVB Rating",
+          "description": "'Recommended' (Green) required; 'Accepted' (Yellow) with justification"
+        },
+        {
+          "id": "optionB",
+          "name": "Equivalent Certification",
+          "alternatives": [
+            "SundaHus rating (A or B)",
+            "BASTA registration",
+            "Nordic Swan Ecolabel",
+            "EPD per EN 15804",
+            "Cradle to Cradle Certified"
+          ]
+        },
+        {
+          "id": "optionC",
+          "name": "Reclaimed Building Materials",
+          "requirements": [
+            {
+              "name": "Structural Assessment",
+              "detail": "Engineer's certification of remaining service life and load capacity"
+            },
+            {
+              "name": "Hazardous Materials Screening",
+              "detail": "Asbestos, lead paint, PCB testing as applicable by material age"
+            },
+            {
+              "name": "Fire Performance",
+              "detail": "Original fire rating documentation or re-testing per EN 13501-1"
+            },
+            {
+              "name": "Acoustic Performance",
+              "detail": "Testing or engineering assessment where relevant"
+            },
+            {
+              "name": "Traceability",
+              "detail": "Documentation of source building and material history"
+            }
+          ]
+        }
+      ],
+      "circularContent": [
+        "Minimum 50% recycled content for 'Recommended' rating",
+        "≥70% recyclable at end of life",
+        "Design for disassembly where applicable"
+      ]
+    }
+  ],
+  "equivalencyFramework": {
+    "title": "Equivalency Framework for Reclaimed Products",
+    "purpose": "When products cannot achieve BVB rating, demonstrate equivalent environmental and health performance through alternative documentation",
+    "pathways": [
+      {
+        "name": "Embodied Carbon Pathway",
+        "description": "Demonstrate significant carbon savings through reuse vs. new manufacture",
+        "requirements": [
+          "LCA calculation per EN 15978 or equivalent methodology",
+          "Minimum 60% embodied carbon reduction vs. new equivalent",
+          "Third-party verification recommended for large projects"
+        ],
+        "acceptedTools": ["One Click LCA", "Athena Impact Estimator", "Tally", "Project-specific calculations"]
+      },
+      {
+        "name": "Performance Testing Pathway",
+        "description": "Demonstrate product meets current performance standards through testing",
+        "requirements": [
+          "Fire safety testing per relevant EN standard",
+          "Structural integrity testing per product category",
+          "Chemical screening for hazardous substances",
+          "Documentation by accredited testing laboratory"
+        ],
+        "testingLabs": ["RISE Fire Research", "SP Technical Research Institute", "Accredited EN testing labs"]
+      },
+      {
+        "name": "Fire Engineer Assessment Pathway",
+        "description": "Performance-based design approach with compensating measures",
+        "requirements": [
+          "Engage certified fire safety engineer (brandskyddskonsult)",
+          "Document equivalent safety through compensating measures",
+          "Typical measures: enhanced sprinklers, earlier detection, shorter escape distances"
+        ],
+        "successRate": "~90% acceptance with engineer sign-off",
+        "bestFor": "Heritage buildings, unique designs, boutique hotels"
+      },
+      {
+        "name": "Insurance Pre-Approval Pathway",
+        "description": "Secure insurer acceptance before procurement",
+        "requirements": [
+          "Contact insurer before procurement",
+          "Document specific products and fire safety documentation",
+          "Get written confirmation of coverage terms",
+          "Common myth: 'Insurance denies coverage for reused furniture' - FALSE if fire-certified"
+        ]
+      }
+    ]
+  },
+  "fireTestingResources": {
+    "primaryLab": {
+      "name": "RISE Fire Research",
+      "locations": ["Stockholm", "Borås", "Lund"],
+      "contact": "fire@ri.se | +46 10 516 50 00",
+      "services": [
+        {
+          "test": "EN 1021-1/2 (Upholstered furniture)",
+          "timeline": "3-6 weeks",
+          "cost": "15,000-25,000 SEK"
+        },
+        {
+          "test": "EN 13501-1 SBI (Reaction to fire)",
+          "timeline": "3-6 weeks",
+          "cost": "45,000-60,000 SEK"
+        },
+        {
+          "test": "BS 5852 Crib 5 (UK standard)",
+          "timeline": "3-6 weeks",
+          "cost": "30,000-50,000 SEK"
+        }
+      ]
+    },
+    "alternativeApproach": {
+      "name": "Fabric Replacement",
+      "description": "Replace existing fabric with fire-rated textile",
+      "cost": "200-800 SEK/chair",
+      "compliance": "100% with new certified fabric",
+      "duration": "Life of furniture"
+    }
+  }
+}

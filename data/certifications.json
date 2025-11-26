@@ -1,0 +1,442 @@
+[
+  {
+    "id": "nordic-swan",
+    "name": "Nordic Swan Ecolabel",
+    "shortName": "Svanemerket",
+    "type": "Operational",
+    "scope": "Hotels in operation",
+    "coverage": "Nordic countries",
+    "adoptionLevel": "Very High",
+    "description": "The official Nordic environmental label with very high adoption in Sweden and the Nordics. Requires 44 mandatory criteria across 8 areas: energy, water, waste, food, chemicals, procurement, biodiversity, and communication.",
+    "certificationLevels": ["Certified"],
+    "relevanceScore": 5,
+    "interiorCriteria": {
+      "furniture": {
+        "strength": "Medium",
+        "requirements": "Hotels must purchase eco-labeled furniture and products. Nordic Swan-labeled furniture requires min. 70% certified wood (FSC/PEFC), strict chemical requirements, low formaldehyde and VOC emissions.",
+        "specifics": ["Eco-labeled furniture prioritized", "No halogenated flame retardants", "No antibacterial additives"]
+      },
+      "textiles": {
+        "strength": "Medium",
+        "requirements": "Eco-labeled textiles preferred for bed linens and towels. Strict requirements for eco-friendly detergents.",
+        "specifics": ["Eco-labeled textiles preferred", "Strict chemical limits on cleaning products"]
+      },
+      "lighting": {
+        "strength": "Low",
+        "requirements": "No specific certification requirements; general energy efficiency focus.",
+        "specifics": ["Energy efficiency general requirement"]
+      },
+      "chemicals": {
+        "strength": "High",
+        "requirements": "Strict limits on VOC emissions, formaldehyde in paints, adhesives, and cleaning products.",
+        "specifics": ["Low VOC limits", "Formaldehyde restrictions", "Eco-labeled cleaning products mandatory"]
+      }
+    },
+    "circularEconomy": {
+      "score": "Low-Medium",
+      "strengths": ["Mandatory waste sorting and recycling", "Single-use plastic reduction"],
+      "gaps": ["Limited focus on furniture reuse", "No design for disassembly requirements", "No material passport requirements"]
+    },
+    "marketAdoption": {
+      "sweden": "238+ hotels, 87 Scandic properties",
+      "trend": "Increasing - stricter requirements from 2023",
+      "majorUsers": ["Scandic Hotels (96% of portfolio)", "First Hotels", "Elite Hotels"]
+    },
+    "certificationProcess": {
+      "assessor": "Third-party independent jury",
+      "duration": "4-6 months initial; renewal faster",
+      "validity": "4-5 years with annual audits",
+      "cost": "Variable based on hotel size; annual fee + initial assessment"
+    },
+    "fyraRelevance": {
+      "opportunity": "High - Nordic standard with strong credibility. Eco-labeled furniture requirements create opening for circular solutions.",
+      "challenge": "Limited specificity about circular design, modularity, or material passports."
+    },
+    "website": "https://www.nordic-swan-ecolabel.org"
+  },
+  {
+    "id": "leed",
+    "name": "LEED",
+    "shortName": "LEED",
+    "type": "Building",
+    "scope": "New construction (BD+C) and Interior (ID+C)",
+    "coverage": "Global (US Green Building Council)",
+    "adoptionLevel": "Low in Nordics",
+    "description": "Leadership in Energy and Environmental Design - globally recognized point-based system with categories including Sustainable Sites, Water Efficiency, Energy, Materials & Resources, Indoor Environmental Quality, and Innovation.",
+    "certificationLevels": ["Certified (40-49)", "Silver (50-59)", "Gold (60-79)", "Platinum (80+)"],
+    "relevanceScore": 3,
+    "interiorCriteria": {
+      "furniture": {
+        "strength": "Medium",
+        "requirements": "Furniture included in recycled content calculations. Reused furniture documented with replacement value. Credits for FSC-certified wood.",
+        "specifics": ["10-20% recycled content by cost", "Furniture reuse credit", "FSC wood credit", "Low VOC requirements"]
+      },
+      "textiles": {
+        "strength": "Low",
+        "requirements": "Limited criteria; mainly low VOC emissions focus.",
+        "specifics": ["Low VOC emissions"]
+      },
+      "lighting": {
+        "strength": "Medium",
+        "requirements": "Energy efficiency focus; EPD credits available.",
+        "specifics": ["Energy efficiency", "EPD documentation"]
+      },
+      "chemicals": {
+        "strength": "High",
+        "requirements": "Low-emitting materials required for adhesives, paints, carpets, composite wood.",
+        "specifics": ["VOC limits for adhesives", "VOC limits for paints", "Formaldehyde limits for wood"]
+      }
+    },
+    "circularEconomy": {
+      "score": "Medium",
+      "strengths": ["Credit for material reuse", "Recycled content credits", "Construction waste management"],
+      "gaps": ["No explicit design for disassembly credit (possible under Innovation)", "Focus on new construction"]
+    },
+    "marketAdoption": {
+      "sweden": "Few hotels - Radisson Blu Waterfront Stockholm, Elite Hotel Ideon Lund (Platinum)",
+      "trend": "Low but stable",
+      "majorUsers": ["International hotel chains", "Corporate buildings"]
+    },
+    "certificationProcess": {
+      "assessor": "USGBC registered projects",
+      "duration": "Several months to years",
+      "validity": "Recertification available",
+      "cost": "~2% of construction cost; Platinum up to 6.8%"
+    },
+    "fyraRelevance": {
+      "opportunity": "Credits for recycled content and material reuse valuable for circular approach. International recognition.",
+      "challenge": "Expensive. Limited furniture/textile specificity. Focus on new construction."
+    },
+    "website": "https://www.usgbc.org/leed"
+  },
+  {
+    "id": "breeam",
+    "name": "BREEAM",
+    "shortName": "BREEAM",
+    "type": "Building",
+    "scope": "New construction and existing buildings (In-Use)",
+    "coverage": "Global (UK origin); BREEAM-NOR for Norway",
+    "adoptionLevel": "Low but increasing",
+    "description": "Building Research Establishment Environmental Assessment Method - point-based system covering Management, Health & Wellbeing, Energy, Transport, Water, Materials, Waste, Land Use & Ecology, Pollution, and Innovation.",
+    "certificationLevels": ["Pass", "Good", "Very Good", "Excellent", "Outstanding"],
+    "relevanceScore": 3,
+    "interiorCriteria": {
+      "furniture": {
+        "strength": "Low-Medium",
+        "requirements": "Indirect through indoor air quality and material selection. Responsible sourcing credits (80% tier 1-3).",
+        "specifics": ["Responsible sourcing", "LCA assessment", "Recycled content credits"]
+      },
+      "textiles": {
+        "strength": "Low",
+        "requirements": "Limited; mainly indirect through indoor air quality.",
+        "specifics": ["Indoor air quality focus"]
+      },
+      "lighting": {
+        "strength": "Medium",
+        "requirements": "Energy efficiency and daylight requirements.",
+        "specifics": ["Energy efficiency", "Daylight provision"]
+      },
+      "chemicals": {
+        "strength": "Medium",
+        "requirements": "Indoor air quality requirements; VOC limits.",
+        "specifics": ["VOC emissions", "Indoor air quality"]
+      }
+    },
+    "circularEconomy": {
+      "score": "Medium",
+      "strengths": ["Waste management during construction", "Material reuse credits", "LCA assessment"],
+      "gaps": ["No specific circular furniture design requirements", "Design for disassembly possible under Innovation only"]
+    },
+    "marketAdoption": {
+      "sweden": "Gothia Towers (Very Good, 1200 rooms), Comfort Hotel Solna (Excellent)",
+      "trend": "Increasing",
+      "majorUsers": ["Large conference hotels", "Nordic Choice/Strawberry properties"]
+    },
+    "certificationProcess": {
+      "assessor": "Licensed independent assessor",
+      "duration": "Several months",
+      "validity": "3 years for In-Use",
+      "cost": "~2% of construction; Excellent/Outstanding up to 6.8%"
+    },
+    "fyraRelevance": {
+      "opportunity": "Comprehensive material and LCA assessment. Recognized internationally. Good for large hotels.",
+      "challenge": "Costly. Limited interior/furniture specificity."
+    },
+    "website": "https://www.breeam.com"
+  },
+  {
+    "id": "miljobyggnad",
+    "name": "Miljöbyggnad",
+    "shortName": "Miljöbyggnad",
+    "type": "Building",
+    "scope": "New construction and existing buildings",
+    "coverage": "Sweden (Sweden Green Building Council)",
+    "adoptionLevel": "Medium for buildings; Low for hotels",
+    "description": "Swedish green building certification with 15 indicators across energy, climate impact, indoor environment, outdoor environment, and circularity. Version 4.0 introduced circularity indicators.",
+    "certificationLevels": ["Bronze", "Silver", "Gold"],
+    "relevanceScore": 4,
+    "interiorCriteria": {
+      "furniture": {
+        "strength": "Low-Medium",
+        "requirements": "Indicator 4 'Climate Impact' assesses embodied carbon in building materials (A1-A5, A1-C4 for Gold). Accepts BVB or equivalent documentation.",
+        "specifics": ["Embodied carbon assessment", "BVB rating accepted", "Alternative documentation (EPD, Nordic Swan) accepted"]
+      },
+      "textiles": {
+        "strength": "Low",
+        "requirements": "Limited direct requirements.",
+        "specifics": ["Indirect through material documentation"]
+      },
+      "lighting": {
+        "strength": "Medium",
+        "requirements": "Energy efficiency requirements.",
+        "specifics": ["Energy efficiency"]
+      },
+      "chemicals": {
+        "strength": "High",
+        "requirements": "Material health documentation required. BVB or equivalent.",
+        "specifics": ["BVB documentation", "SundaHus accepted", "BASTA accepted"]
+      }
+    },
+    "circularEconomy": {
+      "score": "Medium",
+      "strengths": ["Circularity indicators in v4.0", "Embodied carbon focus", "Accepts multiple documentation types"],
+      "gaps": ["Primary focus on energy and climate", "Limited furniture-specific criteria"]
+    },
+    "marketAdoption": {
+      "sweden": "Medium for buildings; low for hotels specifically",
+      "trend": "Increasing with v4.0",
+      "majorUsers": ["Swedish property developers", "Public buildings"]
+    },
+    "certificationProcess": {
+      "assessor": "SGBC certified assessor",
+      "duration": "3-6 months",
+      "validity": "Ongoing with monitoring",
+      "cost": "Variable"
+    },
+    "fyraRelevance": {
+      "opportunity": "Swedish standard. Embodied carbon focus aligns with circular benefits. Accepts alternative documentation for reused products.",
+      "challenge": "Limited hotel adoption. Focus on building-level, not interior-specific."
+    },
+    "website": "https://www.sgbc.se/certifiering/miljobyggnad/"
+  },
+  {
+    "id": "green-key",
+    "name": "Green Key",
+    "shortName": "Green Key",
+    "type": "Operational",
+    "scope": "Accommodation and conference facilities",
+    "coverage": "Global (60+ countries); 170+ facilities in Sweden",
+    "adoptionLevel": "Medium",
+    "description": "Operational certification for hotels with 13 criteria areas including environmental management, staff, guest information, water, cleaning, waste, energy, food, nature, and transport.",
+    "certificationLevels": ["Green Key certified"],
+    "relevanceScore": 2,
+    "interiorCriteria": {
+      "furniture": {
+        "strength": "Very Low",
+        "requirements": "No specific furniture requirements.",
+        "specifics": []
+      },
+      "textiles": {
+        "strength": "Very Low",
+        "requirements": "No specific textile requirements.",
+        "specifics": []
+      },
+      "lighting": {
+        "strength": "Low",
+        "requirements": "Energy efficiency focus.",
+        "specifics": ["Energy-efficient lighting"]
+      },
+      "chemicals": {
+        "strength": "Low",
+        "requirements": "Some eco-friendly toiletry requirements (dispensers).",
+        "specifics": ["Eco-friendly toiletries"]
+      }
+    },
+    "circularEconomy": {
+      "score": "Low",
+      "strengths": ["Waste reduction and sorting focus"],
+      "gaps": ["No reuse requirements", "No circular design criteria", "No material specifications"]
+    },
+    "marketAdoption": {
+      "sweden": "170+ facilities including Elite Hotels chains",
+      "trend": "Stable",
+      "majorUsers": ["Budget/mid-market hotels", "First Hotels", "Elite Hotels"]
+    },
+    "certificationProcess": {
+      "assessor": "Independent jury",
+      "duration": "2-4 months",
+      "validity": "Annual renewal",
+      "cost": "Affordable"
+    },
+    "fyraRelevance": {
+      "opportunity": "Affordable entry-level certification. Good for budget hotels.",
+      "challenge": "Minimal relevance for interior design and materials."
+    },
+    "website": "https://www.greenkey.global"
+  },
+  {
+    "id": "circular-hotel-interior",
+    "name": "Circular Hotel Interior",
+    "shortName": "CHI",
+    "type": "Product",
+    "scope": "Hotel interior products (textiles, wood, furniture)",
+    "coverage": "EU (launched 2023)",
+    "adoptionLevel": "Very Low (new)",
+    "description": "New EU certification specifically for hotel interior products with 27 criteria across 4 domains: eco-design, eco-production, lifetime extension, and waste reduction. The most relevant certification for circular interior design.",
+    "certificationLevels": ["1 Badge", "2 Badges", "3 Badges", "4 Badges"],
+    "relevanceScore": 5,
+    "interiorCriteria": {
+      "furniture": {
+        "strength": "Very High",
+        "requirements": "Comprehensive circular criteria: Is the product circular? Demountable, repairable, recyclable, biodegradable? Spare parts availability, disassembly instructions, take-back systems.",
+        "specifics": ["Design for disassembly", "Repairability", "Recyclability", "Take-back system", "Spare parts", "Disassembly instructions"]
+      },
+      "textiles": {
+        "strength": "Very High",
+        "requirements": "Same comprehensive criteria applied to textiles.",
+        "specifics": ["Circular design", "Recyclability", "Biodegradability"]
+      },
+      "lighting": {
+        "strength": "High",
+        "requirements": "Circular design principles apply.",
+        "specifics": ["Modular design", "Repairability"]
+      },
+      "chemicals": {
+        "strength": "High",
+        "requirements": "Eco-production requirements including material sourcing and production processes.",
+        "specifics": ["Sustainable materials", "Renewable energy in production"]
+      }
+    },
+    "circularEconomy": {
+      "score": "Very High",
+      "strengths": ["Design for disassembly explicit", "Modularity requirements", "Material passport (partial)", "Circular business models", "Lifetime extension focus", "Take-back systems", "Reconditioning emphasis"],
+      "gaps": ["New and unknown", "Limited market recognition", "Product-level not hotel-level"]
+    },
+    "marketAdoption": {
+      "sweden": "Very low - new certification (started 2023)",
+      "trend": "Emerging",
+      "majorUsers": ["Early adopter manufacturers (Carpentier wood paneling)"]
+    },
+    "certificationProcess": {
+      "assessor": "Third-party certification body",
+      "duration": "Variable",
+      "validity": "TBD",
+      "cost": "TBD"
+    },
+    "fyraRelevance": {
+      "opportunity": "HIGHEST RELEVANCE for circular interior design. Opportunity to be early adopter and influencer. Aligns perfectly with Fyra's mission.",
+      "challenge": "New and unknown; limited market recognition currently."
+    },
+    "website": "https://hotelvak.be/en/sustainable-circular/circular-hotel-interior"
+  },
+  {
+    "id": "iso-14001",
+    "name": "ISO 14001",
+    "shortName": "ISO 14001",
+    "type": "Management System",
+    "scope": "Environmental management system",
+    "coverage": "Global",
+    "adoptionLevel": "High",
+    "description": "Process-based environmental management system framework. Not prescriptive about specific performance levels but provides systematic approach to environmental management.",
+    "certificationLevels": ["ISO 14001 certified"],
+    "relevanceScore": 2,
+    "interiorCriteria": {
+      "furniture": {
+        "strength": "Very Low",
+        "requirements": "No specific requirements; process-based framework.",
+        "specifics": []
+      },
+      "textiles": {
+        "strength": "Very Low",
+        "requirements": "No specific requirements.",
+        "specifics": []
+      },
+      "lighting": {
+        "strength": "Very Low",
+        "requirements": "No specific requirements.",
+        "specifics": []
+      },
+      "chemicals": {
+        "strength": "Low",
+        "requirements": "Framework allows environmental management including chemical handling.",
+        "specifics": ["Process-based chemical management"]
+      }
+    },
+    "circularEconomy": {
+      "score": "Low",
+      "strengths": ["Framework allows circular approaches", "Continuous improvement mindset"],
+      "gaps": ["Not prescriptive", "No specific circular requirements"]
+    },
+    "marketAdoption": {
+      "sweden": "High - all Strawberry (Nordic Choice) hotels certified",
+      "trend": "Stable",
+      "majorUsers": ["Strawberry Hotels", "Major hotel chains"]
+    },
+    "certificationProcess": {
+      "assessor": "Accredited certification body",
+      "duration": "3-6 months",
+      "validity": "3 years with annual surveillance",
+      "cost": "Variable"
+    },
+    "fyraRelevance": {
+      "opportunity": "Integrated in operational practices; flexible framework.",
+      "challenge": "No specific interior or material requirements."
+    },
+    "website": "https://www.iso.org/standard/60857.html"
+  },
+  {
+    "id": "gstc",
+    "name": "GSTC Hotel Criteria",
+    "shortName": "GSTC",
+    "type": "Standard",
+    "scope": "Sustainability standards for hotels",
+    "coverage": "Global",
+    "adoptionLevel": "Low but increasing",
+    "description": "Global Sustainable Tourism Council criteria covering sustainable management, socioeconomic, cultural, and environmental impacts. Basis for accreditation of certification bodies.",
+    "certificationLevels": ["GSTC certified (via accredited body)"],
+    "relevanceScore": 3,
+    "interiorCriteria": {
+      "furniture": {
+        "strength": "Medium",
+        "requirements": "Criterion A13 'Sourcing and Purchasing' requires written sustainable procurement policy covering furniture. Prioritization of reusable, returnable, recyclable items.",
+        "specifics": ["Sustainable procurement policy", "Reusable items prioritized", "Recycled materials preferred", "Local suppliers prioritized"]
+      },
+      "textiles": {
+        "strength": "Medium",
+        "requirements": "Included in sustainable procurement requirements.",
+        "specifics": ["Sustainable procurement", "Local/fair-trade suppliers"]
+      },
+      "lighting": {
+        "strength": "Low",
+        "requirements": "Energy efficiency focus.",
+        "specifics": ["Energy efficiency"]
+      },
+      "chemicals": {
+        "strength": "Medium",
+        "requirements": "Environmental management requirements.",
+        "specifics": ["Environmental management"]
+      }
+    },
+    "circularEconomy": {
+      "score": "Low-Medium",
+      "strengths": ["Procurement policy requires circular thinking", "Reusable items prioritized"],
+      "gaps": ["No design for disassembly requirements", "No material passport requirements"]
+    },
+    "marketAdoption": {
+      "sweden": "Low - primarily accreditation standard",
+      "trend": "Increasing",
+      "majorUsers": ["Certification bodies", "International hotel groups"]
+    },
+    "certificationProcess": {
+      "assessor": "Accredited certification body",
+      "duration": "2-6 months",
+      "validity": "Variable",
+      "cost": "Variable"
+    },
+    "fyraRelevance": {
+      "opportunity": "Comprehensive procurement requirements; internationally recognized.",
+      "challenge": "Complex certification process. Not specific about circular design."
+    },
+    "website": "https://www.gstc.org"
+  }
+]

@@ -1,0 +1,622 @@
+{
+  "tier1": [
+    {
+      "id": "forsen_ab",
+      "name": "FORSEN AB",
+      "priority": "★★★★★ HIGHEST",
+      "tagline": "Hospitality PM Specialist with Construction Management Expertise",
+      "description": "Sweden's leading independent project and construction management company with proven hospitality track record and circular material procurement experience. Only consultant with 10+ documented hotel projects AND Construction Management expertise enabling flexible circular procurement.",
+      "headquarters": "Stockholm, Sweden",
+      "coverage": "Nationwide - offices from Luleå to Malmö (15+ offices)",
+      "size": "~200 employees",
+      "founded": null,
+      "website": "https://forsen.com/",
+      "businessModel": "Independent project and construction management company - NOT architects/designers. This is critical - they coordinate but don't compete with Fyra's design role.",
+      "keyContacts": [
+        {
+          "role": "General Inquiry",
+          "method": "Via forsen.com contact form",
+          "note": "Reference: Construction Management for circular hotel renovation"
+        }
+      ],
+      "certification": "PBL Inspector (kontrollansvarig) certified - can sign off on building permits",
+      "hospitalityProjects": {
+        "count": "10+",
+        "rating": "★★★★★",
+        "description": "Industry leader in Swedish Construction Management with recognized hospitality PM specialty",
+        "featured": [
+          {
+            "name": "Clarion Hotel Amaranten Renovation",
+            "year": 2014,
+            "location": "Stockholm",
+            "client": "Nordic Choice Hotels",
+            "scope": "Full renovation of 461-room hotel (live/operational hotel)",
+            "role": "Project leader + PBL inspector",
+            "achievement": "Successfully delivered complex live renovation managing operational constraints",
+            "relevance": "Demonstrates ability to work around operating hotel - critical skill",
+            "confidence": "HIGH (verified via mynewsdesk.com)"
+          },
+          {
+            "name": "Grow Hotel",
+            "location": "Solna (Stockholm area)",
+            "scope": "New business hotel via Construction Management (CM) delivery",
+            "role": "Project leadership using CM method",
+            "achievement": "Successfully implemented strategy to source reclaimed materials under CM mode",
+            "relevance": "PROVEN circular material procurement experience using CM contracting flexibility",
+            "confidence": "HIGH (verified via forsen.com)"
+          },
+          {
+            "name": "Clarion Malmö Live",
+            "location": "Malmö",
+            "client": "Nordic Choice Hotels",
+            "role": "Owner's representative",
+            "relevance": "Nordic Choice relationship; major conference hotel",
+            "confidence": "MEDIUM"
+          },
+          {
+            "name": "HTL Hotels (Scandic Digital Brand)",
+            "year": 2015,
+            "location": "Stockholm (multiple locations)",
+            "client": "Scandic Hotels",
+            "scope": "Multiple hotel fit-outs for Scandic's digital hotel brand",
+            "role": "Project leadership",
+            "achievement": "Demonstrated understanding of scheduling around hotel operations and brand standards",
+            "relevance": "Scandic relationship; understands hotel brand requirements",
+            "confidence": "HIGH (verified via mynewsdesk.com)"
+          }
+        ]
+      },
+      "sustainability": {
+        "circularEconomy": {
+          "rating": "★★★☆☆ EMERGING",
+          "description": "Historically <15% reuse typical but actively integrating circular principles. Key strength: CM contracting expertise enables flexibility for circular procurement.",
+          "demonstrated": [
+            "Grow Hotel: Wrote reuse requirements into CM contracts; demonstrated procurement of reclaimed materials",
+            "Process Innovation: CM method allows real-time material sourcing vs. fixed GC contract"
+          ]
+        },
+        "lca": {
+          "rating": "★★☆☆☆ LIMITED",
+          "description": "Relies on external environmental consultants. Can coordinate LCA but doesn't perform in-house."
+        },
+        "certifications": {
+          "rating": "NOT a sustainability-focused firm",
+          "description": "No specific certification specialists on staff. Would partner with external certification consultants (e.g., Piacon)."
+        },
+        "fireSafety": {
+          "rating": "★★★☆☆ STANDARD",
+          "description": "Standard PM compliance tracking. No specialized reuse material fire testing expertise documented. Would coordinate with testing labs (RISE) but not expert themselves."
+        },
+        "supplyChain": {
+          "rating": "★★☆☆☆ DEVELOPING",
+          "description": "No established reuse supplier network documented. Gap: Fyra would need to provide or identify reuse suppliers. Can write requirements into contracts once suppliers identified."
+        }
+      },
+      "technicalScope": {
+        "fullPM": true,
+        "regulatory": true,
+        "construction": true,
+        "deliveryMethods": ["Construction Management (CM) - INDUSTRY LEADER", "Design-Bid-Build", "Partnering contracts"],
+        "limited": ["Architecture/Design (works WITH architects)", "HVAC design (coordinates only)", "Structural engineering (coordinates only)", "Sustainability expertise (growing, often external)", "LCA (external)"],
+        "fyraBenefits": [
+          "Fyra designs → Forsen translates into specifications",
+          "Fyra identifies reuse suppliers → Forsen writes into contracts",
+          "Fyra sets sustainability goals → Forsen coordinates compliance"
+        ]
+      },
+      "differentiators": [
+        "Construction Management Leadership - Industry-leading CM expertise in Sweden enables circular procurement flexibility",
+        "Proven Circular Integration - Grow Hotel demonstrates actual reuse material sourcing, not just theory",
+        "Live Hotel Experience - Clarion Amaranten 461-room live renovation understands operational constraints",
+        "Chain Hotel Relationships - Nordic Choice + Scandic connections valuable for Fyra's scaling ambitions",
+        "PBL Inspector Certification - Can sign off on permits internally, streamlines process",
+        "Independent PM - No design conflict; purely coordinates = partners naturally with Fyra's design role"
+      ],
+      "whyMatchForFyra": {
+        "fit": "EXCELLENT",
+        "reasons": [
+          "Complementary Roles: Forsen = PM, Fyra = Design. No overlap/competition.",
+          "Proven Circular Track Record: Grow Hotel demonstrates they CAN implement circular procurement",
+          "Hospitality Depth: 10+ hotel projects, chain relationships, live renovation experience",
+          "CM Flexibility: Construction Management delivery enables real-time circular material sourcing",
+          "Geographic Alignment: Stockholm HQ + Göteborg presence matches Fyra's market entry",
+          "Cost-Effective: Mid-range pricing (~6,000 SEK/day) vs. premium firms",
+          "Growth Partner Potential: Emerging circular practice = opportunity for Fyra to shape approach"
+        ],
+        "valueForForsen": [
+          "Fyra brings cutting-edge circular hospitality design expertise Forsen lacks",
+          "Opportunity to deepen circular economy credentials with expert partner",
+          "Access to Fyra's Nordic circular hospitality network and case studies",
+          "Co-marketing potential: 'Sweden's first PM-Design circular hospitality partnership'"
+        ]
+      },
+      "concerns": [
+        {
+          "concern": "Circular Economy Depth: Not yet market-leading in sustainability (emerging practice)",
+          "mitigation": "Fyra provides circular expertise; Forsen provides PM execution"
+        },
+        {
+          "concern": "No Established Reuse Supply Chain: No documented YLLW/Input partnerships",
+          "mitigation": "Fyra + Forsen co-develop supplier framework agreements"
+        },
+        {
+          "concern": "External Sustainability Consultants: Relies on external for LCA, certifications",
+          "mitigation": "If LEED/BREEAM needed, add Piacon as third partner"
+        },
+        {
+          "concern": "Mid-Size Firm Resources: 200 employees = not massive like Sweco (22,000)",
+          "mitigation": "Sufficient for boutique hotel projects; confirm capacity for large projects"
+        },
+        {
+          "concern": "Fire Safety Reuse Expertise: No specialized fire testing knowledge",
+          "mitigation": "Standard PM can coordinate RISE testing; Fyra provides fire cert strategy"
+        }
+      ],
+      "bestFor": [
+        "Live hotel renovations (operational hotel during construction)",
+        "Construction Management flexibility for circular material sourcing",
+        "Chain hotel experience (Nordic Choice, Scandic relationships)",
+        "Stockholm/Göteborg/nationwide coverage",
+        "50-150 room hotel renovations with circular procurement focus"
+      ],
+      "pricing": "~6,000 SEK/day (mid-range)",
+      "approachStrategy": {
+        "contact": "Email/call via forsen.com contact form",
+        "subject": "Partnership Inquiry: Circular Hotel Renovation Project Management",
+        "reference": "Grow Hotel CM success with circular materials procurement",
+        "askFor": "Project Manager with hotel renovation experience + Construction Management expertise",
+        "bring": "Fyra's Finnish circular hospitality case studies; explain interior design + procurement strategy role",
+        "valueProposition": "Forsen brings Sweden's leading CM expertise for hotel projects; Fyra brings Nordic circular hospitality design leadership. Together we fill market gap where no consultant excels in both.",
+        "questions": [
+          "Can Forsen provide client reference for Grow Hotel CM circular procurement?",
+          "What is Forsen's current project pipeline and availability for 2025-2026?",
+          "Does Forsen have existing relationships with YLLW Factory, Input/Greenified, or other reuse suppliers?",
+          "Would Forsen be interested in co-developing circular hotel procurement framework?",
+          "How does Forsen structure CM fees for projects with circular material sourcing?",
+          "What hotel brand standards is Forsen familiar with?"
+        ]
+      }
+    },
+    {
+      "id": "sweco_ab",
+      "name": "SWECO",
+      "priority": "★★★★☆ VERY HIGH",
+      "tagline": "Multidisciplinary Powerhouse with Proven Circular Economy ROI",
+      "description": "Largest A&E consultancy in Europe with quantified circular economy success. Blique by Nobis project achieved €8.6M materials reused and 3,600 tons CO₂ saved. Full-service architecture + engineering + sustainability + PM under one roof.",
+      "headquarters": "Stockholm, Sweden",
+      "coverage": "All Sweden + 8 European countries",
+      "size": "22,000 employees (2,000+ in Sweden)",
+      "founded": null,
+      "website": "https://swecogroup.com/ | https://sweco.se/",
+      "businessModel": "Full-service architecture + engineering + sustainability + project management. CRITICAL: Sweco CAN do architecture, but also offers standalone PM services. Need to clarify scope so Fyra retains design role.",
+      "keyContacts": [
+        {
+          "role": "Stockholm Office Main",
+          "phone": "+46 8 695 60 00"
+        },
+        {
+          "role": "Circular Economy Expert",
+          "name": "Amanda Borneke",
+          "title": "Architect/Circular Economy Specialist",
+          "linkedin": "linkedin.com/in/amanda-borneke",
+          "profile": "swecogroup.com/urban-insight/circularity/expert-insights-amanda-borneke"
+        },
+        {
+          "role": "Project Architect (Blique)",
+          "name": "Anna Joelsson"
+        },
+        {
+          "role": "CEO Sweco Sverige",
+          "name": "Ulrika Francke",
+          "note": "Executive level if needed"
+        }
+      ],
+      "hospitalityProjects": {
+        "count": "3-5 major projects",
+        "rating": "★★★☆☆",
+        "description": "Strong office/commercial portfolio transferable to hospitality",
+        "featured": [
+          {
+            "name": "Blique by Nobis",
+            "year": 2019,
+            "location": "Stockholm",
+            "rooms": 249,
+            "client": "Nobis Hospitality Group",
+            "scope": "Adaptive reuse of 1930s Lewerentz warehouse to design hotel",
+            "role": "Architecture + sustainability coordination + PM services",
+            "architects": "Ewa Buhr-Berg, Karin Hurtig, Amanda Borneke (circular economy)",
+            "outcomes": {
+              "materialsReused": "€8.6 MILLION",
+              "co2Saved": "3,600 TONS",
+              "totalSavings": "€120 MILLION vs demolition + new build (€63/m² waste avoidance)",
+              "certifications": ["LEED Gold", "Nordic Swan"],
+              "innovations": ["Indoor farming integration (rooftop greenhouse)"]
+            },
+            "relevance": "PROVEN CIRCULAR ECONOMY ROI with hard numbers. Adaptive reuse methodology documented. Luxury positioning + sustainability = not budget approach. Reused major structural elements while meeting modern codes.",
+            "confidence": "VERY HIGH (multiple primary sources with quantified data)"
+          }
+        ]
+      },
+      "sustainability": {
+        "circularEconomy": {
+          "rating": "★★★★☆ HIGH",
+          "description": "30-50% reuse achieved in some projects (Blique demonstrates high end of range). Systematic approach using C3 tool (Carbon Cost Compass) for LCA. Published guidance on reuse coordination. Corporate commitment: Science-based climate targets; 2045 net-zero goal.",
+          "tools": [
+            "C3 (Carbon Cost Compass): LCA tool for quantifying carbon + cost impacts",
+            "Climate accounting systems",
+            "Material tracking workflows"
+          ]
+        },
+        "lca": {
+          "rating": "★★★★★ EXCELLENT",
+          "description": "In-house LCA specialists. C3 tool for project-specific analysis. Climate declaration experience. Can quantify embodied carbon savings (as demonstrated in Blique)."
+        },
+        "certifications": {
+          "rating": "★★★★★ EXCELLENT",
+          "description": "Dozens of certified LEED/BREEAM/Miljöbyggnad assessors. Achieved LEED Gold (Blique), Nordic Swan. Sweden Green Building Council (SGBC) members. Can manage full certification process."
+        },
+        "fireSafety": {
+          "rating": "★★★☆☆ ENGINEERING CAPACITY",
+          "description": "Engineering capability exists (MEP division). Specific reuse material fire testing not explicitly documented. Likely can coordinate but not specialist like RISE lab."
+        },
+        "bvb": {
+          "rating": "★★★★☆ STRONG",
+          "description": "Active in SGBC development of BVB standards. Understands BVB assessment framework. Can align circular materials with BVB requirements."
+        }
+      },
+      "technicalScope": {
+        "fullPM": true,
+        "architecture": true,
+        "engineering": true,
+        "sustainability": true,
+        "regulatory": true,
+        "multidisciplinary": [
+          "Architecture (but Fyra would retain interior design)",
+          "MEP (HVAC, electrical, plumbing)",
+          "Structural engineering",
+          "Building physics",
+          "Acoustics",
+          "LCA/climate declarations",
+          "Certification management (LEED/BREEAM/Miljöbyggnad)",
+          "Energy modeling",
+          "Circular economy strategies"
+        ],
+        "scopingOptions": [
+          "Option A (Recommended): Sweco PM + technical engineering | Fyra interior design | Sweco sustainability",
+          "Option B: Sweco PM + full technical | Fyra FF&E only | Sweco handles all architecture"
+        ]
+      },
+      "differentiators": [
+        "Largest A&E in Europe - Unmatched multidisciplinary breadth and resources",
+        "Proven Circular Economy ROI - Blique case provides compelling business case (€8.6M materials, 3,600 tons CO₂, €120M total)",
+        "One-Stop-Shop Capability - Architecture + MEP + structural + sustainability + PM under one roof",
+        "Proprietary Tools - C3 (Carbon Cost Compass) enables ROI quantification for client business cases",
+        "Systematic Sustainability Practice - Corporate climate commitments provide accountability",
+        "Published Thought Leadership - Reuse guidance demonstrates practical implementation capacity",
+        "Scale + Flexibility - 22,000 employees can handle boutique OR large chain projects"
+      ],
+      "whyMatchForFyra": {
+        "fit": "STRONG WITH CAVEATS",
+        "reasons": [
+          "Proven Circular Results: Blique provides BEST documented circular hotel case in Sweden",
+          "Technical Depth: Full engineering + sustainability integration ensures quality execution",
+          "Certification Expertise: Can manage LEED/BREEAM/Swan process end-to-end",
+          "Quantification Capability: C3 tool enables ROI documentation for client business cases",
+          "Geographic Coverage: Stockholm + Göteborg + nationwide matches expansion plans",
+          "Resource Depth: Large firm can handle multiple simultaneous projects"
+        ],
+        "caveat": "SCOPE OVERLAP: Sweco DOES architecture. Need careful scope delineation to avoid competition with Fyra.",
+        "valueForSweco": [
+          "Fyra brings specialized hospitality circular interior design depth Sweco lacks",
+          "Opportunity to replicate Blique success model across multiple projects",
+          "Access to Fyra's Nordic circular hospitality network",
+          "Joint thought leadership: publish case studies together"
+        ]
+      },
+      "concerns": [
+        {
+          "concern": "Design Overlap: Sweco has architects. Risk of competing with Fyra.",
+          "mitigation": "Structure as 'Sweco PM + Engineering | Fyra Interior Design' partnership"
+        },
+        {
+          "concern": "Large Firm Complexity: 22,000 employees = need specific team assignment",
+          "mitigation": "Request Amanda Borneke (circular economy expert) + proven hotel team members"
+        },
+        {
+          "concern": "No Dedicated Hospitality Unit: Hotel expertise distributed vs. concentrated",
+          "mitigation": "Assemble 'dream team' with hotel + circular experience members"
+        },
+        {
+          "concern": "Engineering-Minded Culture: May default to proven solutions vs. cutting-edge innovation",
+          "mitigation": "Fyra's circular leadership pushes innovation; client must specify ambitious targets"
+        },
+        {
+          "concern": "Mid-High Pricing: 6,000-8,000 SEK/day (~5% of project cost)",
+          "mitigation": "ROI justification via Blique case; efficiency of one-stop-shop"
+        }
+      ],
+      "bestFor": [
+        "Design hotels with ambitious sustainability targets",
+        "Adaptive reuse with structural/technical challenges",
+        "Projects requiring LEED/BREEAM/Nordic Swan certification",
+        "Clients needing quantified circular ROI for business case (C3 tool)",
+        "Large projects (100-250 rooms) requiring substantial resources",
+        "Luxury/high-end positioning (not budget projects)"
+      ],
+      "pricing": "6,000-8,000 SEK/day (~5% of project cost)",
+      "approachStrategy": {
+        "contact": "Phone Stockholm office: +46 8 695 60 00",
+        "askFor": "Amanda Borneke (Circular Economy Specialist) AND Buildings Division",
+        "reference": "Blique by Nobis success (3,600 tons CO₂ saved, €8.6M materials reused)",
+        "prompt": "Request proposal for 'circular hotel renovation approach' to trigger internal dream team assembly",
+        "bring": "Fyra's case studies; explain how Fyra's interior design complements Sweco's technical work",
+        "criticalDiscussion": "Must clarify design scope to avoid overlap - see scopingOptions",
+        "valueProposition": "Replicate Blique's documented circular success across multiple hotel projects. Fyra brings specialized hospitality interior design depth Sweco lacks. Joint thought leadership: Co-publish case studies, co-present at conferences.",
+        "questions": [
+          "Can Sweco replicate Blique team (Amanda Borneke + hotel-experienced PM + engineers)?",
+          "How does Sweco structure pricing for bundled services vs. separate scopes?",
+          "Can Sweco provide Nobis/Blique client reference?",
+          "What is Sweco's availability for 2025-2026?",
+          "Does Sweco have relationships with YLLW Factory, Input, or other hospitality reuse suppliers?",
+          "How would Sweco structure partnership where Fyra leads interior design and Sweco provides PM + engineering?"
+        ]
+      }
+    },
+    {
+      "id": "hifab_ab",
+      "name": "HIFAB AB",
+      "priority": "★★★★☆ HIGH",
+      "tagline": "Established PM with 70 Years Experience and Growing Sustainability Practice",
+      "description": "Sweden's established project management and owner's advisory firm with 70+ years experience and 400 employees across 15 offices nationwide. Pure PM focus (does NOT do design) makes natural partner for Fyra. Known for cost-effective, reliable execution with growing energy/sustainability practice.",
+      "headquarters": "Stockholm, Sweden",
+      "coverage": "15 offices across Sweden (all major regions) - MOST comprehensive regional coverage",
+      "size": "~400 employees",
+      "founded": "1947 (70+ years)",
+      "website": "https://hifab.se/",
+      "listing": "Publicly listed on Nasdaq First North",
+      "businessModel": "Pure project management and owner's advisory (byggherrerådgivning). CRITICAL: Hifab does NOT do design. They are PM only = natural partner for Fyra's design work.",
+      "keyContacts": [
+        {
+          "role": "General Contact",
+          "method": "Via hifab.se contact form + phone"
+        },
+        {
+          "role": "CEO",
+          "name": "Nicke Rydgren",
+          "note": "Strategic level; focusing on energy strategy"
+        },
+        {
+          "role": "Head of Project Management West/Stockholm",
+          "name": "Christian Horn"
+        },
+        {
+          "role": "Strategic Consultant in Energy",
+          "name": "Anna Larsson",
+          "division": "Hifab Advisory"
+        }
+      ],
+      "hospitalityProjects": {
+        "count": "5-10 projects over 70-year history",
+        "rating": "★★★☆☆",
+        "description": "PM roles for hotel and tourism-related builds. Systematic PM approach vs. specialized hospitality focus. Less hospitality depth than Forsen's 10+ hotels but solid track record.",
+        "featured": [
+          {
+            "name": "Airport Hotels (Multiple)",
+            "location": "Swedish airports",
+            "role": "Project management",
+            "relevance": "Demonstrates infrastructure hotel experience",
+            "confidence": "MEDIUM"
+          },
+          {
+            "name": "Hotel Oden Conversion",
+            "location": "Vasastan, Stockholm",
+            "client": "HSB Stockholm",
+            "scope": "Adaptive reuse - converting Hotel Oden to 78 rental apartments (hotel → residential)",
+            "role": "Project management",
+            "relevance": "Adaptive reuse experience (even though converting FROM hotel)",
+            "note": "Attribution ambiguous - requires verification",
+            "confidence": "MEDIUM"
+          },
+          {
+            "name": "Clarion Hotel @ Airport City",
+            "location": "Stockholm Airport City",
+            "scope": "20,000 m² office building near new Clarion Hotel",
+            "role": "Project organization for partnering project",
+            "relevance": "Airport City development familiarity; partnering contract experience",
+            "confidence": "MEDIUM"
+          }
+        ]
+      },
+      "sustainability": {
+        "circularEconomy": {
+          "rating": "★★☆☆☆ EMERGING/GROWING",
+          "description": "Historically NOT sustainability specialist firm. <15% reuse typical in past projects. RECENT DEVELOPMENT: Integrating energy/climate advisory into PM services. CEO focus on energy strategy signals top-down sustainability commitment.",
+          "energyFocus": "Growing expertise in energy-efficient buildings and operations. Strengthening operational optimization capability. Advisory division developing climate consulting."
+        },
+        "lca": {
+          "rating": "★☆☆☆☆ LIMITED",
+          "description": "Would rely on external environmental consultant. Growing capability via energy/climate advisory integration."
+        },
+        "certifications": {
+          "rating": "★☆☆☆☆ EXTERNAL PARTNER REQUIRED",
+          "description": "Not sustainability-specialist firm. Would require external certification consultant (e.g., Piacon) for LEED/BREEAM."
+        },
+        "fireSafety": {
+          "rating": "★★★★☆ STRONG",
+          "description": "70+ years navigating Swedish building rules = very good BBR knowledge. No issues handling compliance tracking. Standard PM capability."
+        },
+        "regulatory": {
+          "rating": "★★★★★ EXCELLENT",
+          "description": "BBR: Very good (70+ years). Municipal Processes: 15 offices = broad municipal relationships nationwide. Permits: Standard PM coordination. Work Environment (Arbetsmiljöverket): Internal routines for construction site safety."
+        }
+      },
+      "technicalScope": {
+        "fullPM": true,
+        "regulatory": true,
+        "construction": true,
+        "core": [
+          "Concept to handover project management",
+          "Budget management",
+          "Schedule coordination",
+          "Contractor procurement",
+          "Quality assurance",
+          "Partnering contract expertise",
+          "Building permit coordination (70+ years experience)",
+          "BBR compliance",
+          "Fire safety compliance tracking",
+          "Municipal relationships (15 offices)"
+        ],
+        "limited": [
+          "Architecture/Design (coordinates but doesn't do; works WITH architects)",
+          "HVAC design (coordinates but doesn't design)",
+          "Structural engineering (coordinates but doesn't design)",
+          "Sustainability expertise (growing internally; often external consultant)",
+          "LCA (would require external specialist)",
+          "Certifications (would require external)"
+        ],
+        "fyraBenefits": [
+          "Fyra designs → Hifab coordinates implementation",
+          "Fyra specifies → Hifab enforces specifications",
+          "Fyra sets sustainability goals → Hifab coordinates (+ external specialist if needed)"
+        ]
+      },
+      "differentiators": [
+        "70 Years Experience - Long-established reputation and institutional knowledge",
+        "Nationwide Coverage - 15 offices = most comprehensive regional coverage of any firm profiled",
+        "Public Sector Experience - Valuable if projects involve municipal stakeholders or public approvals",
+        "Partnering Model Familiarity - Can align incentives for collaborative projects",
+        "Systematic/Methodical Approach - Structured PM processes; reliable",
+        "Cost-Effective Management - Reputation for efficient, budget-conscious PM (~6,000 SEK/day)",
+        "Pure PM Focus - Does NOT do design = no overlap with Fyra's interior design role",
+        "Growing Sustainability Practice - Emerging capability = opportunity for Fyra to shape approach"
+      ],
+      "whyMatchForFyra": {
+        "fit": "SOLID FOR CONSERVATIVE/COST-CONSCIOUS PROJECTS",
+        "reasons": [
+          "Pure PM Role: Does NOT do architecture/design = zero competition with Fyra",
+          "Regulatory Expertise: 70 years + 15 offices = strongest regulatory navigation",
+          "Geographic Flexibility: Can handle projects anywhere in Sweden",
+          "Cost-Effective: Known for efficient management = good for budget-conscious clients",
+          "Reliable Execution: Conservative, systematic approach = predictable outcomes",
+          "Growing Sustainability: Emerging circular practice = opportunity for Fyra to lead",
+          "Public Sector Access: 70-year public sector relationships valuable if municipal projects"
+        ],
+        "valueForHifab": [
+          "Fyra brings cutting-edge circular hospitality design expertise Hifab lacks",
+          "Opportunity to deepen sustainability credentials (CEO's stated energy focus)",
+          "Access to Fyra's Nordic circular hospitality network",
+          "Enhance Hifab's hospitality sector positioning"
+        ]
+      },
+      "concerns": [
+        {
+          "concern": "Circular Economy Depth: Not sustainability specialist; <15% reuse historically",
+          "mitigation": "Fyra leads circular strategy; Hifab coordinates implementation. Pair with Piacon if certification needed."
+        },
+        {
+          "concern": "Conservative Execution Style: Long public sector history may mean slower innovation adoption",
+          "mitigation": "Good for risk-averse clients; may not suit cutting-edge circular showcase projects"
+        },
+        {
+          "concern": "External Sustainability Consultants: Relies on external for LCA, certifications, deep sustainability",
+          "mitigation": "Budget for Piacon or similar as third partner if LEED/BREEAM targeted"
+        },
+        {
+          "concern": "Less Prestigious Brand: Not as well-known in sustainability circles vs. Sweco/White",
+          "mitigation": "Value is reliability + cost-effectiveness, not brand prestige"
+        },
+        {
+          "concern": "Limited Hospitality Depth: 5-10 hotels over 70 years = familiarity but not specialization like Forsen",
+          "mitigation": "Sufficient for boutique projects; Fyra brings hospitality expertise"
+        },
+        {
+          "concern": "No Reuse Supply Chain: No documented YLLW/Input partnerships",
+          "mitigation": "Fyra + Hifab co-develop supplier framework agreements"
+        },
+        {
+          "concern": "Mid-Size Firm Resources: 400 employees = may juggle resources on multiple large projects",
+          "mitigation": "Confirm availability before engagement"
+        }
+      ],
+      "bestFor": [
+        "Budget-conscious clients prioritizing cost optimization",
+        "Risk-averse clients preferring established, conservative firms",
+        "Regulatory complexity requiring deep municipal relationships",
+        "Regional/rural projects outside Stockholm (15-office coverage)",
+        "Public sector clients (70-year public work relationships)",
+        "Partnering contract approach",
+        "Projects where Fyra provides all sustainability expertise"
+      ],
+      "pricing": "~6,000 SEK/day (cost-effective)",
+      "approachStrategy": {
+        "contact": "Via hifab.se contact form or phone",
+        "reference": "70 years PM experience + growing energy/sustainability focus",
+        "emphasize": "Owner's advisory role (no design overlap with Fyra)",
+        "askFor": "Christian Horn (Head of PM Stockholm) OR experienced hospitality PM",
+        "position": "Cost-effective PM for circular hotel project",
+        "bring": "Fyra's case studies; explain how Fyra provides sustainability expertise Hifab needs",
+        "valueProposition": "Hifab brings reliable PM execution + regulatory navigation; Fyra brings circular hospitality design innovation. Opportunity: Deepen Hifab's sustainability credentials (CEO's stated energy focus). Emphasis: Cost-effective partnership + cutting-edge sustainability.",
+        "bestFor": [
+          "Budget-conscious clients",
+          "Risk-averse clients preferring established firms",
+          "Projects requiring strong regulatory navigation (rural municipalities, complex permits)",
+          "Public sector projects (Hifab's 70-year public sector relationships)"
+        ],
+        "questions": [
+          "Can Hifab provide hotel project client references?",
+          "What is Hifab's current workload and availability?",
+          "How does Hifab structure sustainability integration - in-house or external partners?",
+          "Would Hifab recommend pairing with specific environmental consultants (Piacon?) for circular goals?",
+          "Can Hifab provide examples of partnering contracts on past projects?",
+          "What are Hifab's fee structures?"
+        ]
+      }
+    }
+  ],
+  "decisionFramework": {
+    "useForsen": {
+      "when": [
+        "Client values Construction Management flexibility for circular material sourcing",
+        "Live hotel renovation (operational hotel during construction)",
+        "Chain hotel experience matters (Nordic Choice, Scandic relationships)",
+        "Hospitality-specific PM expertise is priority",
+        "Project in Stockholm or nationwide (multi-office coverage)",
+        "Client wants proven circular procurement track record (Grow Hotel)"
+      ],
+      "typicalProject": "50-150 room hotel renovation, live hotel, circular procurement focus, Stockholm/Göteborg"
+    },
+    "useSweco": {
+      "when": [
+        "Client needs quantified circular ROI for business case (C3 tool)",
+        "Multidisciplinary complexity requires architecture + engineering + sustainability integration",
+        "Certification targets (LEED, BREEAM, Nordic Swan) are priorities",
+        "Adaptive reuse with structural/technical challenges (Blique model)",
+        "Luxury/design hotel positioning (not budget)",
+        "Client wants brand name recognition (largest A&E in Europe)",
+        "Large project requiring substantial resource allocation"
+      ],
+      "typicalProject": "100-250 room design hotel, adaptive reuse, ambitious sustainability targets, high-end positioning"
+    },
+    "useHifab": {
+      "when": [
+        "Budget-conscious client",
+        "Risk-averse client preferring established, conservative firm",
+        "Regulatory complexity requires deep municipal relationships",
+        "Regional/rural project outside Stockholm (15-office nationwide coverage)",
+        "Public sector client (70-year public work relationships)",
+        "Partnering contract approach preferred",
+        "Fyra provides all sustainability expertise (Hifab coordinates implementation)"
+      ],
+      "typicalProject": "50-100 room hotel, municipal client or complex permits, budget optimization priority, Fyra leads sustainability"
+    }
+  },
+  "marketGap": {
+    "finding": "NO Swedish consultant specializes in hospitality + circularity + whole-project PM simultaneously",
+    "breakdown": {
+      "forsen": "Hospitality + PM ✓ | Circularity ★★★☆☆",
+      "sweco": "PM + Circularity ✓ | Hospitality ★★★☆☆",
+      "hifab": "PM + Hospitality ✓ | Circularity ★★☆☆☆"
+    },
+    "fyraOpportunity": "BE the hospitality circular specialist who partners with Swedish PMs rather than competes"
+  }
+}

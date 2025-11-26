@@ -1,0 +1,459 @@
+[
+  {
+    "id": "rush_project",
+    "title": "Rush Project",
+    "titleNO": "Akutt Renovering",
+    "icon": "🔥",
+    "description": "Hotel needs rapid furniture replacement due to unexpected event (fire, acquisition, rebranding deadline)",
+    "descriptionNO": "Hotell trenger rask møbelerstatning pga. uventet hendelse (brann, oppkjøp, rebranding)",
+    "context": "Time-critical project requiring maximum speed with acceptable quality compromises",
+    "contextNO": "Tidskritisk prosjekt som krever maksimal hastighet med akseptable kvalitetskompromisser",
+    "recommendedSuppliers": {
+      "primary": {
+        "name": "YLLW FACTORY",
+        "id": "yllw_factory",
+        "rationale": "Largest inventory, Stockholm presence, proven hospitality experience, turnkey services",
+        "rationaleNO": "Største lager, Stockholm-tilstedeværelse, dokumentert hospitality-erfaring, fullservice-tjenester"
+      },
+      "backup": [
+        {
+          "name": "REKOMO AB",
+          "id": "rekomo_ab",
+          "condition": "If budget-conscious",
+          "conditionNO": "Hvis budsjettbevisst"
+        },
+        {
+          "name": "INPUT INTERIÖR",
+          "id": "input_interior_greenified",
+          "condition": "If need new+reused mix",
+          "conditionNO": "Hvis behov for ny+brukt mix"
+        }
+      ]
+    },
+    "timeline": "2-4 weeks typical",
+    "timelineNO": "2-4 uker typisk",
+    "estimatedCost": "Premium pricing (+10-20% rush fee)",
+    "estimatedCostNO": "Premium-prising (+10-20% hastegebyr)",
+    "criticalSuccessFactors": [
+      "Contact within 48 hours of need identification",
+      "Accept 'family of styles' vs. perfect matching",
+      "Budget for 10-20% premium on rush orders",
+      "Pre-approve quality grades (B-grade acceptable for speed)"
+    ],
+    "criticalSuccessFactorsNO": [
+      "Kontakt innen 48 timer etter behovsidentifisering",
+      "Aksepter 'familie av stiler' vs. perfekt matching",
+      "Budsjett for 10-20% premium på rush-ordrer",
+      "Forhåndsgodkjenn kvalitetsgrader (B-grade akseptabel for hastighet)"
+    ],
+    "risks": [
+      {
+        "risk": "Fire certification gap",
+        "timeline": "3-8 weeks",
+        "mitigation": "Use items in low-risk areas (back office) or guest rooms (lower fire requirements)",
+        "riskNO": "Brannsertifisering gap",
+        "mitigationNO": "Bruk gjenstander i lavrisiko-områder (backoffice) eller gjesteværelser (lavere brannkrav)"
+      },
+      {
+        "risk": "Volume limitations - even large operators may not have 100+ matching items immediately",
+        "mitigation": "Phased delivery (50 rooms Week 1, 50 rooms Week 4)",
+        "riskNO": "Volumsbegrensninger - selv store operatører har kanskje ikke 100+ matchende gjenstander umiddelbart",
+        "mitigationNO": "Fasert levering (50 rom Uke 1, 50 rom Uke 4)"
+      },
+      {
+        "risk": "Quality variability due to less selective sourcing",
+        "mitigation": "Fyra site inspection of warehouse before selection",
+        "riskNO": "Kvalitetsvariabilitet pga. mindre selektiv sourcing",
+        "mitigationNO": "Fyra site-inspeksjon av lager før valg"
+      }
+    ],
+    "keyConsiderations": [
+      "Speed is priority over perfect aesthetic match",
+      "Fire safety may require strategic room placement",
+      "Expect 'family of styles' rather than exact matching",
+      "Budget for rush premium and potential phased delivery"
+    ],
+    "keyConsiderationsNO": [
+      "Hastighet er prioritet over perfekt estetisk match",
+      "Brannsikkerhet kan kreve strategisk rom-plassering",
+      "Forvent 'familie av stiler' heller enn eksakt matching",
+      "Budsjett for haste-premium og potensiell fasert levering"
+    ]
+  },
+  {
+    "id": "large_hotel",
+    "title": "Large Hotel Renovation",
+    "titleNO": "Stor Hotellrenovering",
+    "icon": "🏢",
+    "description": "100-200 room hotel renovation with circular furniture integration",
+    "descriptionNO": "100-200 roms hotellrenovering med sirkulære møbler",
+    "context": "Full-scale hotel renovation requiring volume capacity and dual-supplier strategy",
+    "contextNO": "Fullskala hotellrenovering som krever volumkapasitet og dual-supplier strategi",
+    "recommendedSuppliers": {
+      "primary": {
+        "name": "YLLW FACTORY",
+        "id": "yllw_factory",
+        "rationale": "Public areas, restaurant, lobby (design-critical spaces)",
+        "rationaleNO": "Offentlige områder, restaurant, lobby (design-kritiske rom)"
+      },
+      "secondary": {
+        "name": "INPUT INTERIÖR / GREENIFIED",
+        "id": "input_interior_greenified",
+        "rationale": "Guest room furniture (volume capacity)",
+        "rationaleNO": "Gjesteværelsesmøbler (volumkapasitet)"
+      },
+      "rationale": "No single operator can reliably deliver 100+ beds",
+      "rationaleNO": "Ingen enkelt operatør kan pålitelig levere 100+ senger"
+    },
+    "timeline": "6-12 months planning, 3-6 months execution",
+    "timelineNO": "6-12 måneder planlegging, 3-6 måneder gjennomføring",
+    "estimatedCost": "50-70% of new furniture cost for comparable quality",
+    "estimatedCostNO": "50-70% av nye møbler kostnad for sammenlignbar kvalitet",
+    "criticalGap": {
+      "item": "Hotel Bed Frames",
+      "severity": "CRITICAL",
+      "budgetImpact": "25-30% of room budget",
+      "estimatedCost": "1.2-2.25M SEK for 150-room hotel",
+      "workaround": "Source beds new, use circular economy for all other furniture (chairs, tables, storage, lighting)",
+      "itemNO": "Hotell Sengerammer",
+      "workaroundNO": "Kjøp senger nye, bruk sirkulærøkonomi for alle andre møbler (stoler, bord, oppbevaring, belysning)"
+    },
+    "criticalSuccessFactors": [
+      "Engage both YLLW and Input early (9-12 months before construction)",
+      "Accept that beds will be new (25-30% of budget)",
+      "Design public spaces around available reuse inventory",
+      "Build 8-10 week buffer for fire testing coordination",
+      "Use framework agreements for volume discounts (15-20% off)"
+    ],
+    "criticalSuccessFactorsNO": [
+      "Engasjer både YLLW og Input tidlig (9-12 måneder før bygging)",
+      "Aksepter at senger vil være nye (25-30% av budsjett)",
+      "Design offentlige rom rundt tilgjengelig gjenbrukslager",
+      "Bygg inn 8-10 uker buffer for branntesting-koordinering",
+      "Bruk rammeavtaler for volumrabatter (15-20% avslag)"
+    ],
+    "risks": [
+      {
+        "risk": "Bed frame gap - no reuse solution available",
+        "mitigation": "Budget for new beds, maximize reuse everywhere else",
+        "riskNO": "Sengeramme-gap - ingen gjenbruksløsning tilgjengelig",
+        "mitigationNO": "Budsjett for nye senger, maksimer gjenbruk andre steder"
+      },
+      {
+        "risk": "Fire safety testing delays for upholstered furniture",
+        "timeline": "8-12 weeks",
+        "mitigation": "Start fire testing during design development phase",
+        "riskNO": "Brannsikkerhetstesting forsinkelser for polstret møbler",
+        "mitigationNO": "Start branntesting i design-utviklingsfasen"
+      },
+      {
+        "risk": "Coordination complexity with dual suppliers",
+        "mitigation": "Assign single Fyra PM to coordinate both suppliers",
+        "riskNO": "Koordineringskompleksitet med to leverandører",
+        "mitigationNO": "Tildel én Fyra PM til å koordinere begge leverandører"
+      }
+    ],
+    "keyConsiderations": [
+      "Dual-supplier strategy is necessary for volume",
+      "Hotel beds are the primary gap in circular economy supply",
+      "Fire safety planning must start early (design phase)",
+      "Framework agreements unlock 15-20% volume discounts",
+      "Expect 50-70% cost of new furniture"
+    ],
+    "keyConsiderationsNO": [
+      "Dual-supplier strategi er nødvendig for volum",
+      "Hotellsenger er det primære gapet i sirkulærøkonomi-tilbud",
+      "Brannsikkerhetsplanlegging må starte tidlig (designfase)",
+      "Rammeavtaler låser opp 15-20% volumrabatter",
+      "Forvent 50-70% kostnad av nye møbler"
+    ]
+  },
+  {
+    "id": "boutique_hotel",
+    "title": "Boutique High-End Hotel",
+    "titleNO": "Boutique High-End Hotell",
+    "icon": "✨",
+    "description": "30-50 room boutique hotel with unique, design-forward circular furniture",
+    "descriptionNO": "30-50 roms boutique-hotell med unike, designdrevne sirkulære møbler",
+    "context": "Design-focused project prioritizing unique pieces over volume matching",
+    "contextNO": "Designfokusert prosjekt som prioriterer unike stykker fremfor volum-matching",
+    "recommendedSuppliers": {
+      "primary": {
+        "name": "YLLW FACTORY",
+        "id": "yllw_factory",
+        "rationale": "Curated vintage pieces, refurbishment capability, hospitality experience",
+        "rationaleNO": "Kuraterte vintage-stykker, remøblerings-kapasitet, hospitality-erfaring"
+      },
+      "secondary": {
+        "name": "KOMPANJONEN",
+        "id": "kompanjonen",
+        "rationale": "Vintage design pieces (Arne Jacobsen, Bruno Mathsson)",
+        "rationaleNO": "Vintage design-stykker (Arne Jacobsen, Bruno Mathsson)"
+      }
+    },
+    "timeline": "6-9 months sourcing + refurbishment",
+    "timelineNO": "6-9 måneder sourcing + remøblering",
+    "estimatedCost": "Premium positioning - 60-80% of new designer furniture",
+    "estimatedCostNO": "Premium-posisjonering - 60-80% av nye designermøbler",
+    "criticalSuccessFactors": [
+      "Embrace 'one-of-a-kind' aesthetic vs. uniformity",
+      "Allow 6-9 month lead time for sourcing unique pieces",
+      "Budget for premium refurbishment (custom reupholstery, refinishing)",
+      "Partner closely with interior designer for item selection",
+      "Accept mix of eras/styles unified by color palette or material"
+    ],
+    "criticalSuccessFactorsNO": [
+      "Omfavn 'one-of-a-kind' estetikk vs. uniformitet",
+      "Tillat 6-9 måneder lead time for sourcing av unike stykker",
+      "Budsjett for premium remøblering (skreddersydd repolstring, oppussing)",
+      "Samarbeid tett med interiørarkitekt for gjenstand-valg",
+      "Aksepter mix av epoker/stiler forent av fargepalett eller materiale"
+    ],
+    "risks": [
+      {
+        "risk": "Sourcing timeline unpredictability for rare pieces",
+        "mitigation": "Build 3-month buffer into project schedule",
+        "riskNO": "Sourcing tidslinje uforutsigbarhet for sjeldne stykker",
+        "mitigationNO": "Bygg inn 3-måneders buffer i prosjekt-timeplan"
+      },
+      {
+        "risk": "Vintage upholstered furniture fire testing costs",
+        "cost": "45,000-70,000 SEK per product type",
+        "mitigation": "Use vintage upholstered furniture in guest rooms (lower fire requirements), Tier 1-2 in public areas",
+        "riskNO": "Vintage polstret møbler branntesting kostnader",
+        "mitigationNO": "Bruk vintage polstret møbler i gjesteværelser (lavere brannkrav), Tier 1-2 i offentlige områder"
+      },
+      {
+        "risk": "Limited matching quantities (may only find 1-2 of each item)",
+        "mitigation": "Design around uniqueness - different chair at each table becomes intentional aesthetic",
+        "riskNO": "Begrenset matching antall (finner kanskje bare 1-2 av hver gjenstand)",
+        "mitigationNO": "Design rundt unikhet - forskjellig stol ved hvert bord blir intensjonell estetikk"
+      }
+    ],
+    "keyConsiderations": [
+      "Uniqueness is asset, not limitation - embrace curated mix",
+      "Extended timeline (6-9 months) required for sourcing",
+      "Premium refurbishment adds 20-30% to base cost",
+      "Fire safety strategy: vintage upholstery in guest rooms, Tier 1-2 in public spaces",
+      "Ideal for design-forward brands (Nobis, Ett Hem style)"
+    ],
+    "keyConsiderationsNO": [
+      "Unikhet er en ressurs, ikke begrensning - omfavn kuratert mix",
+      "Forlenget tidslinje (6-9 måneder) påkrevd for sourcing",
+      "Premium remøblering legger til 20-30% på basiskostnad",
+      "Brannsikkerhetsstrategi: vintage polstring i gjesteværelser, Tier 1-2 i offentlige rom",
+      "Ideell for designdrevne merkevarer (Nobis, Ett Hem-stil)"
+    ]
+  },
+  {
+    "id": "cross_border",
+    "title": "Cross-Border Nordic Project",
+    "titleNO": "Grensekryssende Nordisk Prosjekt",
+    "icon": "🌍",
+    "description": "Multi-location hotel chain rollout across Nordic countries",
+    "descriptionNO": "Flerlokasjon hotellkjede-utrulling på tvers av nordiske land",
+    "context": "Pan-Nordic hotel chain requiring coordinated multi-country sourcing and logistics",
+    "contextNO": "Pan-nordisk hotellkjede som krever koordinert flerlandsourcing og logistikk",
+    "recommendedSuppliers": {
+      "primary": {
+        "name": "INPUT INTERIÖR / GREENIFIED",
+        "id": "input_interior_greenified",
+        "rationale": "Pan-Nordic presence (Sweden, Finland, Denmark, Norway), enterprise infrastructure",
+        "rationaleNO": "Pan-nordisk tilstedeværelse (Sverige, Finland, Danmark, Norge), bedriftsinfrastruktur"
+      },
+      "backup": {
+        "name": "MATER DESIGN",
+        "id": "mater_design",
+        "rationale": "Copenhagen-based with Nordic reach, recycled materials expertise",
+        "rationaleNO": "København-basert med nordisk rekkevidde, resirkulert materiale-ekspertise"
+      }
+    },
+    "timeline": "12-18 months for multi-location rollout",
+    "timelineNO": "12-18 måneder for flerlokasjon-utrulling",
+    "estimatedCost": "Volume discounts (20-25%) offset by cross-border logistics complexity",
+    "estimatedCostNO": "Volumrabatter (20-25%) motvirket av grensekryssende logistikk-kompleksitet",
+    "criticalSuccessFactors": [
+      "Select supplier with established Nordic network",
+      "Standardize furniture packages across locations (reduce sourcing complexity)",
+      "Build 12-18 month rollout timeline with location phasing",
+      "Negotiate framework agreement for multi-country pricing",
+      "Coordinate with local fire authorities in each country (regulations vary)"
+    ],
+    "criticalSuccessFactorsNO": [
+      "Velg leverandør med etablert nordisk nettverk",
+      "Standardiser møbelpakker på tvers av lokasjoner (reduser sourcing-kompleksitet)",
+      "Bygg 12-18 måneders utrullings-tidslinje med lokasjonsfasering",
+      "Forhandl rammeavtale for flerlandsprising",
+      "Koordiner med lokale brannmyndigheter i hvert land (reguleringer varierer)"
+    ],
+    "risks": [
+      {
+        "risk": "Varying fire safety regulations across Nordic countries",
+        "mitigation": "Engage fire consultant early to map BBR (SE) vs. TEK (NO) vs. BR (DK) requirements",
+        "riskNO": "Varierende brannsikkerhetsreguleringer på tvers av nordiske land",
+        "mitigationNO": "Engasjer brannskonsulent tidlig for å kartlegge BBR (SE) vs. TEK (NO) vs. BR (DK) krav"
+      },
+      {
+        "risk": "Cross-border logistics complexity and customs (post-Brexit considerations)",
+        "mitigation": "Work with Input's established Nordic logistics network",
+        "riskNO": "Grensekryssende logistikk-kompleksitet og toll (post-Brexit hensyn)",
+        "mitigationNO": "Jobb med Inputs etablerte nordiske logistikknettverk"
+      },
+      {
+        "risk": "Inventory availability varies by country - Finland may have limited reuse market",
+        "mitigation": "Hub model: Source centrally from Sweden, distribute to other Nordic locations",
+        "riskNO": "Lagertilgjengelighet varierer etter land - Finland kan ha begrenset gjenbruksmarked",
+        "mitigationNO": "Hub-modell: Kilde sentralt fra Sverige, distribuer til andre nordiske lokasjoner"
+      }
+    ],
+    "keyConsiderations": [
+      "Input Interiör is only supplier with verified pan-Nordic presence",
+      "Fire regulations differ across Nordic countries - require country-specific mapping",
+      "Hub-and-spoke model (source from Sweden, distribute) is most viable",
+      "Framework agreements essential for multi-location pricing consistency",
+      "Build longer timeline (12-18 months) for coordination complexity"
+    ],
+    "keyConsiderationsNO": [
+      "Input Interiör er eneste leverandør med verifisert pan-nordisk tilstedeværelse",
+      "Brannreguleringer varierer på tvers av nordiske land - krever landsspesifikk kartlegging",
+      "Hub-and-spoke modell (kilde fra Sverige, distribuer) er mest levedyktig",
+      "Rammeavtaler essensielt for flerlokasjon priskonsistens",
+      "Bygg lengre tidslinje (12-18 måneder) for koordineringskompleksitet"
+    ]
+  },
+  {
+    "id": "fire_critical",
+    "title": "Fire-Critical Public Spaces",
+    "titleNO": "Brannkritiske Offentlige Rom",
+    "icon": "🚨",
+    "description": "Public areas with strict fire safety compliance (lobbies, corridors, restaurants)",
+    "descriptionNO": "Offentlige områder med strenge brannsikkerhetskrav (lobbyer, korridorer, restauranter)",
+    "context": "Renovation of fire-critical spaces requiring Swedish BBR Chapter 5 compliance",
+    "contextNO": "Renovering av brannkritiske rom som krever svensk BBR Kapittel 5 overholdelse",
+    "recommendedApproach": {
+      "strategy": "Three-Tier Fire Safety System",
+      "strategyNO": "Tre-Tier Brannsikkerhetssystem",
+      "tier1": {
+        "use": "Corridors, escape routes, high-traffic public areas",
+        "useNO": "Korridorer, fluktveier, høytrafikk offentlige områder",
+        "furniture": "Metal/glass furniture, solid wood furniture, concrete/stone decor",
+        "furnitureNO": "Metall/glass møbler, solid tre-møbler, betong/stein dekor",
+        "testing": "Material Safety Data Sheets (MSDS) only - no flame testing",
+        "testingNO": "Kun Material Safety Data Sheets (MSDS) - ingen flammetesting",
+        "cost": "Minimal (0-5,000 SEK documentation)",
+        "costNO": "Minimal (0-5,000 SEK dokumentasjon)"
+      },
+      "tier2": {
+        "use": "Restaurants, conference rooms, lobbies (NOT escape corridors)",
+        "useNO": "Restauranter, konferanserom, lobbyer (IKKE fluktkorridorer)",
+        "furniture": "Reupholstered furniture with NEW fire-rated fabrics (Kvadrat, Gabriel, Maharam)",
+        "furnitureNO": "Remøblert møbler med NYE brannsikre tekstiler (Kvadrat, Gabriel, Maharam)",
+        "testing": "EN 1021-1 (cigarette test) + EN 1021-2 (match test)",
+        "testingNO": "EN 1021-1 (sigaretttest) + EN 1021-2 (fyrstikktest)",
+        "cost": "18,000-30,000 SEK per fabric type",
+        "costNO": "18,000-30,000 SEK per tekstiltype",
+        "timeline": "8-12 weeks (refurbishment + fabric procurement)",
+        "timelineNO": "8-12 uker (remøblering + tekstilinnkjøp)"
+      },
+      "tier3": {
+        "use": "AVOID in escape routes - use in guest rooms instead",
+        "useNO": "UNNGÅ i fluktveier - bruk i gjesteværelser isteden",
+        "furniture": "Fully upholstered vintage furniture (sofas, lounge chairs)",
+        "furnitureNO": "Fullt polstret vintage møbler (sofaer, lenestol)",
+        "testing": "Full Euroclass BS 5852 Crib 5 (high-hazard)",
+        "testingNO": "Full Euroclass BS 5852 Crib 5 (høy-risiko)",
+        "cost": "45,000-70,000 SEK per product",
+        "costNO": "45,000-70,000 SEK per produkt",
+        "recommendation": "Relocate to guest rooms (lower fire requirements)",
+        "recommendationNO": "Flytt til gjesteværelser (lavere brannkrav)"
+      }
+    },
+    "recommendedSuppliers": {
+      "tier1and2": [
+        {
+          "name": "YLLW FACTORY",
+          "id": "yllw_factory",
+          "capability": "Full Tier 1 & 2 - metal/wood furniture + reupholstery with fire-rated fabrics, RISE/SP testing coordination"
+        },
+        {
+          "name": "INPUT INTERIÖR",
+          "id": "input_interior_greenified",
+          "capability": "Tier 1 & 2 - can arrange EN 1021 testing via partners"
+        },
+        {
+          "name": "REKOMO AB",
+          "id": "rekomo_ab",
+          "capability": "Tier 1 only - metal/wood furniture, no fire testing coordination"
+        }
+      ]
+    },
+    "timeline": "8-10 weeks minimum for fire testing coordination (start during design phase)",
+    "timelineNO": "8-10 uker minimum for branntesting-koordinering (start i designfasen)",
+    "estimatedCost": "+15-25% cost increase for Tier 2 reupholstered furniture with fire-rated fabrics",
+    "estimatedCostNO": "+15-25% kostnadsøkning for Tier 2 remøblert møbler med brannsikre tekstiler",
+    "criticalSuccessFactors": [
+      "Design fire-critical spaces around Tier 1 & Tier 2 reuse",
+      "Relocate Tier 3 items to guest rooms (D-s2,d0 requirements)",
+      "Start testing during design development (8-10 week buffer)",
+      "Engage fire consultant early (Piacon, White Arkitekter)",
+      "Leverage sprinkler systems for equivalence pathways (precedent: Ett Hem, Hobo Hotel)"
+    ],
+    "criticalSuccessFactorsNO": [
+      "Design brannkritiske rom rundt Tier 1 & Tier 2 gjenbruk",
+      "Flytt Tier 3 gjenstander til gjesteværelser (D-s2,d0 krav)",
+      "Start testing i design-utviklingsfasen (8-10 ukers buffer)",
+      "Engasjer brannskonsulent tidlig (Piacon, White Arkitekter)",
+      "Utnytt sprinklersystemer for ekvivalensmuligheter (presedens: Ett Hem, Hobo Hotel)"
+    ],
+    "risks": [
+      {
+        "risk": "Tier 3 furniture testing costs prohibitive (45-70K SEK per product)",
+        "mitigation": "Avoid Tier 3 in public areas - relocate vintage upholstered furniture to guest rooms",
+        "riskNO": "Tier 3 møbler testing kostnader uoverkommelige (45-70K SEK per produkt)",
+        "mitigationNO": "Unngå Tier 3 i offentlige områder - flytt vintage polstret møbler til gjesteværelser"
+      },
+      {
+        "risk": "Fire authority approval delays if vintage upholstery used in corridors",
+        "mitigation": "Pre-application meeting with Räddningstjänsten (fire authority)",
+        "riskNO": "Brannmyndighet godkjenningsforsinkelser hvis vintage polstring brukes i korridorer",
+        "mitigationNO": "Forhåndssøknadsmøte med Räddningstjänsten (brannmyndighet)"
+      },
+      {
+        "risk": "Upholstered furniture refurbishment timeline (8-12 weeks) delays project",
+        "mitigation": "Begin fire testing and refurbishment during design phase, not construction",
+        "riskNO": "Polstret møbler remøblerings-tidslinje (8-12 uker) forsinker prosjekt",
+        "mitigationNO": "Begynn branntesting og remøblering i designfasen, ikke konstruksjon"
+      }
+    ],
+    "keyConsiderations": [
+      "Fire safety is legal requirement - cannot be compromised",
+      "Three-tier system balances compliance with circular economy goals",
+      "Tier 1 (metal/wood) safest for corridors - minimal testing burden",
+      "Tier 2 (reupholstery) viable for restaurants/lobbies with EN 1021 testing",
+      "Tier 3 (vintage upholstery) should be relocated to guest rooms",
+      "Sprinkler systems enable alternative compliance pathways",
+      "Early fire consultant engagement prevents costly redesigns"
+    ],
+    "keyConsiderationsNO": [
+      "Brannsikkerhet er lovkrav - kan ikke kompromitteres",
+      "Tre-tier system balanserer overholdelse med sirkulærøkonomi-mål",
+      "Tier 1 (metall/tre) sikreste for korridorer - minimal testing-byrde",
+      "Tier 2 (remøblering) levedyktig for restauranter/lobbyer med EN 1021 testing",
+      "Tier 3 (vintage polstring) bør flyttes til gjesteværelser",
+      "Sprinklersystemer muliggjør alternative overholdelsesveier",
+      "Tidlig brannskonsulent-engasjement forhindrer kostbare redesign"
+    ],
+    "precedents": [
+      {
+        "project": "Ett Hem Hotel, Stockholm",
+        "approach": "Vintage upholstered furniture in guest rooms via sprinkler + compartmentation",
+        "outcome": "Approved by Swedish fire authority"
+      },
+      {
+        "project": "Hobo Hotel, Stockholm",
+        "approach": "Vintage furniture with sprinkler compensation",
+        "outcome": "Successful regulatory approval"
+      }
+    ]
+  }
+]

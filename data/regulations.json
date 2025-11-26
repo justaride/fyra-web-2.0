@@ -1,0 +1,3028 @@
+{
+  "fireSafety": {
+    "title": "Fire Safety Requirements",
+    "items": [
+      {
+        "title": "BBR Chapter 5 (Boverkets Byggregler)",
+        "description": "Boverket | Fire safety for buildings; hotels = \"Verksamhetsklass 4\" (highest fire requirements) | HIGH - Building permit authority checks"
+      },
+      {
+        "title": "EuroClasses (EN 13501-1)",
+        "description": "EU/Swedish Standards Institute | Fire classification system: A1 (non-combustible) → F (no classification) | HIGH - Referenced in BBR"
+      },
+      {
+        "title": "Item Category",
+        "description": "Fire Class Required | Testing Standard | Enforcement | Consequence of Non-Compliance"
+      },
+      {
+        "title": "Upholstered Furniture (chairs, sofas)",
+        "description": "EN 1021-1 (cigarette) MINIMUM EN 1021-2 (match) RECOMMENDED | RISE Fire Research | HIGH - Insurance mandatory | Premium increase 10-30% OR coverage denial"
+      },
+      {
+        "title": "Item Category",
+        "description": "Fire Class Required | Testing Standard | Enforcement | Consequence"
+      },
+      {
+        "title": "Wall/Ceiling Surfaces",
+        "description": "B-s1,d0 (STRICT) | EN 13501-1 SBI test | VERY HIGH - Fire authority inspects | Project stoppage - cannot get slutbesked (final clearance)"
+      },
+      {
+        "title": "Doors",
+        "description": "EI₂ 30 (30 min fire resistance, self-closing) | Fire door testing | VERY HIGH - Safety critical | Must replace with certified"
+      },
+      {
+        "title": "Item Category",
+        "description": "Fire Class Required | Testing Standard | Enforcement | Consequence"
+      },
+      {
+        "title": "Item Category",
+        "description": "Fire Class Required | Testing Standard | Enforcement | Consequence"
+      },
+      {
+        "title": "RISE Fire Research",
+        "description": "Multiple locations (Stockholm, Borås, Lund) | All fire testing; PRIMARY LAB | fire@ri.se +46 10 516 50 00 | 3-6 weeks | EN 1021-1/2: 15,000-25,000 **EN 13501-1 (SBI):** 45,000-60,000 **BS 5852 Crib 5:** 30,000-50,000"
+      },
+      {
+        "title": "Fabric replacement",
+        "description": "Upholstered furniture | Remove old fabric, apply new fire-rated fabric | Life of furniture | 200-800 SEK/chair | 100% (new fabric certified)"
+      },
+      {
+        "title": "Fire Coverage",
+        "description": "EN 1021-1 minimum for upholstered furniture | SAME - no discrimination if certified | 0% if certified"
+      },
+      {
+        "title": "Non-compliance (fails fire test at site)",
+        "description": "Replace with certified item | 1-2 weeks | CLIENT if discovered post-acceptance **CONTRACTOR if pre-acceptance**"
+      },
+      {
+        "title": "Small (<50 rooms)",
+        "description": "Every 3-4 years | Fire alarm function, escape routes clear, door closers"
+      },
+      {
+        "title": "Medium (50-150 rooms)",
+        "description": "Every 2-3 years | Above + sprinkler system, fire compartmentation"
+      },
+      {
+        "title": "Large (>150 rooms)",
+        "description": "Annually or biannually | Comprehensive fire safety audit"
+      },
+      {
+        "title": "\"Insurance will deny coverage for reused furniture\"",
+        "description": "FALSE - Standard hospitality policies cover furniture meeting fire standards (new OR reused) | Get written confirmation from insurer"
+      },
+      {
+        "title": "\"Premiums automatically increase 20-30%\"",
+        "description": "FALSE - Premiums based on RISK, not material source. Certified reused = same risk as new | Demonstrate fire certification plan"
+      },
+      {
+        "title": "Fire cert for reupholstered furniture",
+        "description": "Often requires re-testing | May accept engineering assessment | Moderate strictness | Variable"
+      },
+      {
+        "title": "Reused fire doors",
+        "description": "Strict; usually requires original EI₂ 30 cert | More flexible with engineering report | Moderate | Variable"
+      },
+      {
+        "title": "STEP 3: Fire safety documentation (IF in guest rooms/public areas):",
+        "description": ""
+      },
+      {
+        "title": "├─ Original manufacturer fire certificate → ✓ BEST",
+        "description": ""
+      },
+      {
+        "title": "├─ RISE/SP test report (EN 1021-1/2, EN 13501-1) → ✓ ACCEPTABLE",
+        "description": ""
+      },
+      {
+        "title": "├─ Fire retardant treatment certificate → ✓ ACCEPTABLE",
+        "description": ""
+      },
+      {
+        "title": "├─ Performance-based equivalency (fire engineer letter) → ✓ MAY WORK (verify with authority)",
+        "description": ""
+      },
+      {
+        "title": "1. FIRE SAFETY REQUIREMENTS",
+        "description": ""
+      },
+      {
+        "title": "Engage: Fire safety engineer (brandskyddskonsult)",
+        "description": ""
+      },
+      {
+        "title": "Engineer certifies: Equivalent safety through compensating measures",
+        "description": ""
+      },
+      {
+        "title": "Compensating measures:",
+        "description": "Enhanced sprinkler system Earlier fire detection/alarm Shorter escape distances Increased fire compartmentation"
+      },
+      {
+        "title": "Cost: Fire engineer €5,000-15,000",
+        "description": ""
+      },
+      {
+        "title": "Acceptance: ~90% success with engineer sign-off",
+        "description": ""
+      },
+      {
+        "title": "Best for: Heritage buildings, unique designs",
+        "description": ""
+      },
+      {
+        "title": "Workaround 5: \"Insurance-Specified Testing\"",
+        "description": ""
+      },
+      {
+        "title": "Contact insurer FIRST (before procurement)",
+        "description": ""
+      },
+      {
+        "title": "- Fire Safety: EN 1021-1 and EN 1021-2 certified (RISE test report R-2024-12345 attached)",
+        "description": ""
+      },
+      {
+        "title": "- Durability: YLLW 3-year commercial warranty",
+        "description": ""
+      },
+      {
+        "title": "- Lifecycle Impact: Estimated 75% embodied carbon reduction vs. new equivalent (calculation attached...",
+        "description": "- Lifecycle Impact: Estimated 75% embodied carbon reduction vs. new equivalent (calculation attached)"
+      },
+      {
+        "title": "- Provenance: Sourced from Swedish office liquidations 2022-2024",
+        "description": ""
+      },
+      {
+        "title": "ENVIRONMENTAL JUSTIFICATION:",
+        "description": ""
+      },
+      {
+        "title": "This specification achieves equivalent or superior environmental performance to BVB \"Recommended\" ne...",
+        "description": "This specification achieves equivalent or superior environmental performance to BVB \"Recommended\" new furniture through:"
+      },
+      {
+        "title": "1. Elimination of virgin material extraction (no new timber/foam/textile production)",
+        "description": ""
+      },
+      {
+        "title": "2. Avoidance of manufacturing emissions (refurbishment energy <5% of new production)",
+        "description": ""
+      },
+      {
+        "title": "3. Local sourcing (average 200km transport vs. 2,000km typical for new)",
+        "description": ""
+      },
+      {
+        "title": "4. Circular business model (YLLW operates closed-loop system with take-back)",
+        "description": ""
+      },
+      {
+        "title": "APPROVED BY: [Environmental Coordinator name], [Date]",
+        "description": ""
+      },
+      {
+        "title": "Fire safety certification (EN 1021 or equivalent)",
+        "description": ""
+      },
+      {
+        "title": "Lifecycle carbon impact (LCA data or simplified calculation)",
+        "description": ""
+      },
+      {
+        "title": "- Fire safety: EN 1021-2 certified (test report required)",
+        "description": ""
+      },
+      {
+        "title": "- Durability: Minimum 2-year commercial warranty",
+        "description": ""
+      },
+      {
+        "title": "- Dimensions: Width 700-800mm, depth 750-850mm, height 900-1000mm",
+        "description": ""
+      },
+      {
+        "title": "- Style: Mid-century Scandinavian design (reference image attached)",
+        "description": ""
+      },
+      {
+        "title": "- Chemical safety: REACH compliant (supplier declaration required)",
+        "description": ""
+      },
+      {
+        "title": "- Sustainability: Preference for reused/refurbished items achieving",
+        "description": ""
+      },
+      {
+        "title": "equivalent performance (evaluation criteria: embodied carbon reduction,",
+        "description": ""
+      },
+      {
+        "title": "- Obtain fire safety equivalency approval from Uppsala building department",
+        "description": ""
+      },
+      {
+        "title": "- Document provenance and historical significance for guest information materials\"",
+        "description": ""
+      },
+      {
+        "title": "(Note: This was a boutique project; included to show EXTREME flexibility possible with right framing...",
+        "description": "(Note: This was a boutique project; included to show EXTREME flexibility possible with right framing)"
+      },
+      {
+        "title": "B) Contractor Liability & Risk Allocation",
+        "description": ""
+      },
+      {
+        "title": "Key Question: \"Who takes responsibility if reused material fails?\"",
+        "description": ""
+      },
+      {
+        "title": "STANDARD NEW MATERIALS CONTRACT:",
+        "description": "Manufacturer liable (product defects) Contractor liable (installation defects) Designer liable (specification errors)"
+      },
+      {
+        "title": "Clear chain of accountability",
+        "description": ""
+      },
+      {
+        "title": "REUSED MATERIALS CONTRACT - Risk Allocation Options:",
+        "description": ""
+      },
+      {
+        "title": "b) Fire safety and structural documentation",
+        "description": ""
+      },
+      {
+        "title": "c) Professional liability insurance covering supplied products",
+        "description": ""
+      },
+      {
+        "title": "Contractor liability: Installation and project coordination only",
+        "description": ""
+      },
+      {
+        "title": "SECTION 4: FIRE SAFETY CERTIFICATION ⚠️ CRITICAL",
+        "description": ""
+      },
+      {
+        "title": "Test Standard: [e.g., \"EN 1021-1 and EN 1021-2\"]",
+        "description": ""
+      },
+      {
+        "title": "Test Result: [e.g., \"PASS - cigarette and match ignition resistance\"]",
+        "description": ""
+      },
+      {
+        "title": "Testing Lab: [e.g., \"RISE Fire Research\"]",
+        "description": ""
+      },
+      {
+        "title": "Certificate Number: [e.g., \"R-2024-12345\"]",
+        "description": ""
+      },
+      {
+        "title": "Certificate Date: [Date]",
+        "description": ""
+      },
+      {
+        "title": "Certificate Validity: [e.g., \"Valid for unaltered product\"]",
+        "description": ""
+      },
+      {
+        "title": "📎 ATTACHMENT: Fire test certificate (PDF)",
+        "description": ""
+      },
+      {
+        "title": "IF NO CERTIFICATE:",
+        "description": ""
+      },
+      {
+        "title": "☐ Item will be tested before delivery (Quote testing cost, timeline)",
+        "description": ""
+      },
+      {
+        "title": "☐ Item will receive fire retardant treatment (Describe treatment, provide treatment cert)",
+        "description": ""
+      },
+      {
+        "title": "☐ Item suitable for non-fire-critical application only",
+        "description": ""
+      },
+      {
+        "title": "SECTION 5: CHEMICAL SAFETY",
+        "description": ""
+      },
+      {
+        "title": "Surface finishes (paint, wallpaper) IF not affecting fire safety",
+        "description": ""
+      },
+      {
+        "title": "Furniture replacement (loose furnishings)",
+        "description": ""
+      },
+      {
+        "title": "Minor fixture replacement",
+        "description": ""
+      },
+      {
+        "title": "Fire Safety Inspections (Räddningstjänsten)",
+        "description": ""
+      },
+      {
+        "title": "INSPECTION FREQUENCY:",
+        "description": ""
+      },
+      {
+        "title": "What Räddningstjänsten Inspects:",
+        "description": "✓ Fire alarm and detection systems ✓ Sprinkler systems (if installed) ✓ Fire extinguishers ✓ Escape route signage and lighting ✓ Fire doors (self-closing, no obstructions) ✓ Corridor width clearances"
+      },
+      {
+        "title": "⚠️ Loose furnishings: Rarely inspected UNLESS complaint or after incident",
+        "description": ""
+      },
+      {
+        "title": "IMPLICATION: Fire safety for STRUCTURE highly enforced; furniture compliance LIGHTLY enforced by authorities BUT heavily enforced by insurance companies",
+        "description": ""
+      },
+      {
+        "title": "Practical Timelines",
+        "description": ""
+      },
+      {
+        "title": "Week 22: Engage fire safety consultant, complete additional studies",
+        "description": ""
+      },
+      {
+        "title": "↓ (4 weeks)",
+        "description": ""
+      },
+      {
+        "title": "Week 26: Second pre-application meeting - resolve concerns",
+        "description": ""
+      },
+      {
+        "title": "↓ (6 weeks)",
+        "description": ""
+      },
+      {
+        "title": "Week 32: Finalize application, submit",
+        "description": ""
+      },
+      {
+        "title": "↓ (16-20 weeks - Stockholm often exceeds statutory timeline)",
+        "description": ""
+      },
+      {
+        "title": "Week 48-52: Bygglov decision (may require revisions mid-process)",
+        "description": ""
+      },
+      {
+        "title": "↓ (3 weeks appeals)",
+        "description": ""
+      },
+      {
+        "title": "Week 51-55: Startbesked issued",
+        "description": ""
+      },
+      {
+        "title": "CONSTRUCTION CAN BEGIN",
+        "description": ""
+      },
+      {
+        "title": "TOTAL: 12-14 months from initiation to construction start",
+        "description": ""
+      },
+      {
+        "title": "CRITICAL SUCCESS FACTORS:",
+        "description": ""
+      },
+      {
+        "title": "📋 FIRE SAFETY PLAN:",
+        "description": ""
+      },
+      {
+        "title": "All upholstered furniture: EN 1021-2 minimum",
+        "description": ""
+      },
+      {
+        "title": "Curtains: B-s1,d0 (corridors), D-s2,d0 (guest rooms) minimum",
+        "description": ""
+      },
+      {
+        "title": "Supplier list (YLLW, Input = credible names)",
+        "description": ""
+      },
+      {
+        "title": "Testing timeline (show it's planned, not afterthought)",
+        "description": ""
+      },
+      {
+        "title": "AMBIGUITY 2: Fire Safety for Reupholstered Furniture",
+        "description": ""
+      },
+      {
+        "title": "☐ BBR Chapter 5 requires fire safety (clear)",
+        "description": ""
+      },
+      {
+        "title": "☐ MSB provides guidance but no explicit ruling on reused furniture",
+        "description": ""
+      },
+      {
+        "title": "☐ Insurance companies have varying interpretations",
+        "description": ""
+      },
+      {
+        "title": "☐ Some insurers accept original certs if frame unchanged",
+        "description": ""
+      },
+      {
+        "title": "☐ Others require full re-testing for ANY fabric change",
+        "description": ""
+      },
+      {
+        "title": "HOTEL CASE EVIDENCE:",
+        "description": ""
+      },
+      {
+        "title": "Fire safety engineers comfortable with equivalency arguments",
+        "description": ""
+      },
+      {
+        "title": "Structural engineers experienced with existing building assessment",
+        "description": ""
+      },
+      {
+        "title": "Cost: 5,000-15,000 EUR per project, but enables challenging reuse",
+        "description": ""
+      },
+      {
+        "title": "Build case studies library",
+        "description": "Document every approved alternative solution Share across Swedish circular building community Demonstrate \"this has worked before\" to skeptical inspectors"
+      },
+      {
+        "title": "TIMELINE FOR CLARITY: 2-3 years (2025-2028) as case law develops",
+        "description": ""
+      },
+      {
+        "title": "AREAS DIFFERENTLY INTERPRETED BY MUNICIPALITIES",
+        "description": ""
+      },
+      {
+        "title": "EVOLVING DUE TO NEW EU DIRECTIVES",
+        "description": ""
+      },
+      {
+        "title": "DEVELOPMENT 1: Digital Product Passports (DPP)",
+        "description": ""
+      },
+      {
+        "title": "EU Regulation: Ecodesign for Sustainable Products Regulation (ESPR), effective 2024",
+        "description": ""
+      },
+      {
+        "title": "Implementation Timeline:",
+        "description": ""
+      },
+      {
+        "title": "2026: Batteries (mandatory DPP)",
+        "description": ""
+      },
+      {
+        "title": "2027-2028: Textiles (proposed)",
+        "description": ""
+      },
+      {
+        "title": "2028-2030: Construction products (estimated, not confirmed)",
+        "description": ""
+      }
+    ]
+  },
+  "buildingCodes": {
+    "title": "Building Codes (BBR)",
+    "items": [
+      {
+        "title": "Hotels classified as \"samlingslokaler\" (assembly facilities) = STRICTEST fire requirements in Swedish building code.",
+        "description": ""
+      },
+      {
+        "title": "B) Product Categories & Requirements",
+        "description": ""
+      },
+      {
+        "title": "GUEST ROOMS (Sleeping Areas)",
+        "description": ""
+      },
+      {
+        "title": "CORRIDORS/ESCAPE ROUTES (Utrymningsvägar)",
+        "description": ""
+      },
+      {
+        "title": "PUBLIC AREAS (Lobbies, Restaurants, Conference)",
+        "description": ""
+      },
+      {
+        "title": "BACK-OF-HOUSE (Offices, Storage, Staff Areas)",
+        "description": ""
+      },
+      {
+        "title": "C) Pathways for Reused Materials",
+        "description": ""
+      },
+      {
+        "title": "SCENARIO 1: Original Fire Certificate Exists and Is Valid",
+        "description": ""
+      },
+      {
+        "title": "Test to THEIR standard (may differ from BBR minimum)",
+        "description": ""
+      },
+      {
+        "title": "Result: Pre-approved coverage, no premium increase",
+        "description": ""
+      },
+      {
+        "title": "Critical: Do this 12+ months before opening",
+        "description": ""
+      },
+      {
+        "title": "Insurance Implications: Real vs Perceived",
+        "description": ""
+      },
+      {
+        "title": "REAL REQUIREMENTS (Based on Major Swedish Hotel Insurers):",
+        "description": ""
+      },
+      {
+        "title": "PERCEIVED BARRIERS (Often Unfounded):",
+        "description": "❌ \"Insurance won't cover second-hand furniture\" - FALSE if fire-certified ❌ \"Premiums automatically increase 20-30%\" - FALSE - only if non-compliant ❌ \"Need special 'circular economy insurance'\" - FALSE - standard policies apply"
+      },
+      {
+        "title": "Legal status: VOLUNTARY (not in BBR) BUT de facto mandatory for major clients",
+        "description": ""
+      },
+      {
+        "title": "Rating Levels:",
+        "description": ""
+      },
+      {
+        "title": "Recommended (Rekommenderad) = Best environmental/health profile",
+        "description": ""
+      },
+      {
+        "title": "Accepted (Accepterad med fÃ¶rbehÃ¥ll) = Acceptable with conditions",
+        "description": ""
+      },
+      {
+        "title": "Not Assessed (Ej BedÃ¶md) = No rating (requires manual approval)",
+        "description": ""
+      },
+      {
+        "title": "✓ Fire Classification: Solid oak ≥40mm thickness = Euroclass D-s2,d0 inherent performance (acceptabl...",
+        "description": "✓ Fire Classification: Solid oak ≥40mm thickness = Euroclass D-s2,d0 inherent performance (acceptable for guest room use per BBR 5:223)"
+      },
+      {
+        "title": "ENVIRONMENTAL BENEFITS:",
+        "description": ""
+      },
+      {
+        "title": "- Zero virgin timber harvest",
+        "description": ""
+      },
+      {
+        "title": "- Carbon sequestration maintained (wood continues storing CO2)",
+        "description": ""
+      },
+      {
+        "title": "- Heritage preservation (1960s Scandinavian design maintains cultural value)",
+        "description": ""
+      },
+      {
+        "title": "- Local sourcing (all tables sourced within 100km radius)",
+        "description": ""
+      },
+      {
+        "title": "RISK MITIGATION:",
+        "description": ""
+      },
+      {
+        "title": "- Supplier provides commercial invoice (demonstrates legitimate product status, not waste)",
+        "description": ""
+      },
+      {
+        "title": "- Fyra visual inspection protocol applied (checklist attached)",
+        "description": ""
+      },
+      {
+        "title": "4. Provide documentation demonstrating compliance with BBR technical requirements",
+        "description": ""
+      },
+      {
+        "title": "5. Engage with approved circular economy suppliers (list attached: YLLW, Input, RP, Kompanjonen)\"",
+        "description": ""
+      },
+      {
+        "title": "b) Comply with BBR technical standards",
+        "description": ""
+      },
+      {
+        "title": "c) Perform equivalently to new materials for minimum 3 years post-installation",
+        "description": ""
+      },
+      {
+        "title": "Get in writing (may exceed BBR minimums)",
+        "description": ""
+      },
+      {
+        "title": "\"Will premiums increase due to reused materials?\"",
+        "description": ""
+      },
+      {
+        "title": "Legal Question: When does a demolished/salvaged item stop being \"waste\" (regulated under Avfallsförordningen) and become a \"product\" (regulated under CPR/BBR)?",
+        "description": ""
+      },
+      {
+        "title": "Test to THEIR standard (may exceed BBR)",
+        "description": ""
+      },
+      {
+        "title": "AMBIGUITY 3: BBR Performance-Based Interpretation",
+        "description": ""
+      },
+      {
+        "title": "July 2025 BBR reform (Möjligheternas byggregler) shifts from prescriptive to functional requirements...",
+        "description": "July 2025 BBR reform (Möjligheternas byggregler) shifts from prescriptive to functional requirements."
+      },
+      {
+        "title": "Opportunity: Should make it easier to justify alternative solutions (including reused materials) if performance outcomes demonstrated",
+        "description": ""
+      },
+      {
+        "title": "Challenge: Municipal interpretation not yet established - how will building inspectors apply new standard?",
+        "description": ""
+      },
+      {
+        "title": "New BBR: \"Building must achieve performance outcome Z\" (functional)",
+        "description": ""
+      },
+      {
+        "title": "Example Application to Reuse:",
+        "description": ""
+      },
+      {
+        "title": "OLD SYSTEM:",
+        "description": "\"Fire door must be EI₂ 30 certified per EN testing\" → Reused door WITHOUT certificate = REJECTED"
+      },
+      {
+        "title": "NEW SYSTEM (Theoretically):",
+        "description": "\"Door must provide 30 minutes fire resistance and self-close\" → Reused door with engineering assessment showing equivalent performance = POTENTIALLY ACCEPTABLE"
+      },
+      {
+        "title": "Network with consultants doing early projects under new BBR",
+        "description": ""
+      },
+      {
+        "title": "Document precedents (approved projects = future reference)",
+        "description": ""
+      }
+    ]
+  },
+  "bvb": {
+    "title": "BVB Standards",
+    "items": [
+      {
+        "title": "BVB non-rated materials",
+        "description": "Often flags for review | Experienced with exceptions | Moderate | May default to \"needs BVB\""
+      },
+      {
+        "title": "a) New furniture meeting BVB Recommended standard, OR",
+        "description": ""
+      }
+    ]
+  },
+  "materialStandards": {
+    "title": "Material Standards & CE Marking",
+    "items": [
+      {
+        "title": "warranty and CE marking.\"",
+        "description": ""
+      },
+      {
+        "title": "Problem: Zero flexibility, contractor must specify exact new product",
+        "description": ""
+      },
+      {
+        "title": "Could demand CE marking (impossible for used items) → Legal deadlock",
+        "description": ""
+      },
+      {
+        "title": "NAVIGATION STRATEGIES:",
+        "description": ""
+      },
+      {
+        "title": "Purchase from established suppliers ONLY",
+        "description": "YLLW, Input, Rekomo, RP = legitimate businesses selling \"products\" Supplier provides commercial invoice = product status presumed"
+      }
+    ]
+  },
+  "documentation": {
+    "title": "Documentation Requirements",
+    "items": [
+      {
+        "title": "Regulation",
+        "description": "Authority | What It Covers | Enforcement Level"
+      },
+      {
+        "title": "EN 1021-1/1021-2",
+        "description": "EU standard | Cigarette/match test for upholstered furniture | HIGH for hotels - Insurance requires"
+      },
+      {
+        "title": "MSB Guidelines",
+        "description": "Swedish Civil Contingencies Agency | Recommendations for loose furnishings in escape routes | MEDIUM - Guidance, not law"
+      },
+      {
+        "title": "Insurance Company Requirements",
+        "description": "Varies by insurer | Often stricter than regulatory minimums | CRITICAL - Can void coverage"
+      },
+      {
+        "title": "Mattresses",
+        "description": "EN 597-1/597-2 (ignition resistance) | RISE/SP testing | HIGH - Health/safety risk | Project stoppage if discovered"
+      },
+      {
+        "title": "Curtains/Drapes",
+        "description": "B-s1,d0 (Euroclass) | EN 13501-1 (SBI test) | MEDIUM - Building inspector may check | Replacement order possible"
+      },
+      {
+        "title": "Carpets/Rugs",
+        "description": "D-s2,d0 (Euroclass) | EN 13501-1 | LOW-MEDIUM | Rarely enforced for loose rugs"
+      },
+      {
+        "title": "Wall Coverings (wallpaper, fabric panels)",
+        "description": "D-s2,d0 | EN 13501-1 | MEDIUM - If extensive coverage | Removal if flagged"
+      },
+      {
+        "title": "Flooring",
+        "description": "Cfl-s1 (flooring-specific) | EN 13501-1 | HIGH - Checked during inspections | Replacement required"
+      },
+      {
+        "title": "Furniture (seating nooks)",
+        "description": "EN 1021-2 MINIMUM Some authorities require BS 5852 Crib 5 | RISE testing | MEDIUM-HIGH - Varies by municipality | Removal or relocation to non-escape areas"
+      },
+      {
+        "title": "Upholstered Seating",
+        "description": "EN 1021-2 (match test) Large hotels: BS 5852 Crib 5 | RISE/SP testing | HIGH - Insurance scrutiny | Coverage issues if incident occurs"
+      },
+      {
+        "title": "Large Curtains/Textiles",
+        "description": "B-s1,d0 | EN 13501-1 | MEDIUM-HIGH - Volume matters | Sprinkler compensation possible"
+      },
+      {
+        "title": "Decorative Wood Paneling",
+        "description": "B-s1,d0 (if extensive) OR D-s2,d0 (limited) | EN 13501-1 | MEDIUM - Depends on coverage area | Treatment or replacement"
+      },
+      {
+        "title": "All Categories",
+        "description": "Standard office/commercial requirements (lower than public) | Varies | LOW - Rarely inspected | Minimal unless incident"
+      },
+      {
+        "title": "Lab",
+        "description": "Location | Specialization | Contact | Turnaround | Cost (SEK)"
+      },
+      {
+        "title": "SP Technical Research Institute",
+        "description": "Borås | Building products, textiles | info@sp.se | 4-8 weeks | Similar to RISE"
+      },
+      {
+        "title": "Treatment Type",
+        "description": "Best For | Application | Durability | Cost | Success Rate"
+      },
+      {
+        "title": "Surface spray (water-based)",
+        "description": "Textiles, upholstery, curtains | Spray application, dries 24-48 hrs | 3-5 years indoor use | 15-40 EUR/item | 85-90% achieve EN 1021-1"
+      },
+      {
+        "title": "Pressure impregnation",
+        "description": "Wood paneling, structural timber | Industrial process | Permanent | 100-300 SEK/m² | 90-95% achieve B-s1,d0"
+      },
+      {
+        "title": "Insurance Aspect",
+        "description": "Standard Requirement | With Reused Materials | Premium Impact"
+      },
+      {
+        "title": "Liability Coverage",
+        "description": "Standard hospitality liability | May require documentation package proving compliance | 0-5% if documented"
+      },
+      {
+        "title": "Property Coverage",
+        "description": "Standard building/contents | Insurer may request material inventory with values | 0% if valued properly"
+      },
+      {
+        "title": "Business Interruption",
+        "description": "Standard | No change | 0%"
+      },
+      {
+        "title": "Criterion",
+        "description": "New Furniture Standard | Reused Furniture Equivalent"
+      },
+      {
+        "title": "Structural Strength",
+        "description": "EN 16139 office seating test | Visual inspection + load test; no cracks/loose joints"
+      },
+      {
+        "title": "Durability (Upholstery)",
+        "description": "Martindale 100,000 cycles | Fabric shows <20% wear; no tears/stains"
+      },
+      {
+        "title": "Surface Durability (Tables)",
+        "description": "EN 12720 scratch/impact | Surface shows minor wear only; no deep gouges"
+      },
+      {
+        "title": "Stability",
+        "description": "EN 1022 tip test | No wobbling; all legs contact floor"
+      },
+      {
+        "title": "Item Category",
+        "description": "Typical New Lifespan | Acceptable Reused Remaining Life"
+      },
+      {
+        "title": "Guest Room Bed Frame",
+        "description": "15-20 years | Minimum 8-10 years"
+      },
+      {
+        "title": "Upholstered Chair (Lobby)",
+        "description": "10-15 years | Minimum 5-7 years"
+      },
+      {
+        "title": "Table/Desk",
+        "description": "20-25 years | Minimum 10-15 years"
+      },
+      {
+        "title": "Curtains",
+        "description": "7-10 years | Minimum 3-5 years"
+      },
+      {
+        "title": "Carpet",
+        "description": "8-12 years | Usually replace (high wear)"
+      },
+      {
+        "title": "Test",
+        "description": "Standard | What It Measures | Cost (SEK) | When Required"
+      },
+      {
+        "title": "Strength & Durability (Seating)",
+        "description": "EN 16139 | Load cycles, impact, static load | 15,000-30,000 | High-use public seating"
+      },
+      {
+        "title": "Stability",
+        "description": "EN 1022 | Tip resistance, wobbling | 5,000-10,000 | All seating"
+      },
+      {
+        "title": "Upholstery Abrasion",
+        "description": "EN ISO 12947 (Martindale) | Fabric wear resistance | 3,000-8,000 | Re-upholstered items"
+      },
+      {
+        "title": "Surface Scratch/Impact",
+        "description": "EN 12720 | Desktop/tabletop durability | 8,000-15,000 | Tables, desks"
+      },
+      {
+        "title": "Criterion",
+        "description": "Weight | How Reused Products Score"
+      },
+      {
+        "title": "Chemical Content",
+        "description": "40% | Can score WELL - older products often have safer chemistry (pre-modern additives)"
+      },
+      {
+        "title": "Resource Extraction",
+        "description": "15% | EXCELLENT - no new extraction"
+      },
+      {
+        "title": "Manufacturing Impact",
+        "description": "20% | EXCELLENT - no new production emissions"
+      },
+      {
+        "title": "Recyclability",
+        "description": "10% | SAME as new - material type matters, not age"
+      },
+      {
+        "title": "Transport",
+        "description": "5% | BETTER - typically local sourcing"
+      },
+      {
+        "title": "Disposal",
+        "description": "5% | NEUTRAL"
+      },
+      {
+        "title": "Documentation Quality",
+        "description": "5% | CHALLENGE - often poor for reused"
+      },
+      {
+        "title": "Defect Type",
+        "description": "Contractor Response | Timeline | Cost Responsibility"
+      },
+      {
+        "title": "Structural failure (item breaks)",
+        "description": "Replace with equivalent | 1 week | Contractor (or claim against supplier warranty)"
+      },
+      {
+        "title": "Cosmetic damage (scratch, stain)",
+        "description": "Repair or replace | 3-5 days | Contractor if damage occurred under their control"
+      },
+      {
+        "title": "Missing documentation",
+        "description": "Obtain from supplier or test | 2 weeks | Contractor"
+      },
+      {
+        "title": "Hotel Size",
+        "description": "Routine Inspection Frequency | Focus Areas"
+      },
+      {
+        "title": "CLIENT FEAR",
+        "description": "REALITY | SOLUTION"
+      },
+      {
+        "title": "\"Need special circular economy insurance\"",
+        "description": "FALSE - No such thing; standard policies apply | Use standard policy with clear documentation"
+      },
+      {
+        "title": "\"Insurer will inspect every piece of furniture\"",
+        "description": "FALSE - Insurers inspect systems (sprinklers, alarms), not individual furnishings | Maintain documentation IF incident occurs"
+      },
+      {
+        "title": "\"Warranty from reuse supplier worthless\"",
+        "description": "PARTIALLY TRUE - Smaller suppliers may lack assets to back warranty | Use established suppliers (YLLW, Input) with insurance and track record"
+      },
+      {
+        "title": "Issue",
+        "description": "Stockholm | Gothenburg | Malmö | Smaller Municipalities"
+      },
+      {
+        "title": "End-of-waste determination",
+        "description": "Case-by-case; some inspectors skeptical | More accepting; \"handslaget\" initiative supportive | Moderate; follows national guidance | Highly variable; often lack expertise"
+      },
+      {
+        "title": "Pre-application meetings",
+        "description": "Available but long wait (4+ weeks) | Readily available (2-3 weeks) | Available (3 weeks) | Variable"
+      },
+      {
+        "title": "Permit timelines",
+        "description": "6-8 months (often exceeds statutory) | 4-6 months (reliable) | 4-6 months | 2-4 months (but expertise variable)"
+      },
+      {
+        "title": "PRACTICAL REGULATORY GUIDE: REUSED MATERIALS IN SWEDISH HOTEL RENOVATIONS",
+        "description": ""
+      },
+      {
+        "title": "Prepared for: Fyra / Nordic Circular Construction Project Purpose: Demystify regulatory concerns for conservative clients Date: November 2025",
+        "description": ""
+      },
+      {
+        "title": "QUICK REFERENCE: DECISION TREES",
+        "description": ""
+      },
+      {
+        "title": "├─ YES + Documentation available → ✓ PROCEED (verify with insurance)",
+        "description": ""
+      },
+      {
+        "title": "├─ NO/Unknown → Continue to Q3",
+        "description": ""
+      },
+      {
+        "title": "QUESTION 3: Is testing economically viable?",
+        "description": ""
+      },
+      {
+        "title": "├─ Volume ≥20 identical items → YES, test cost spreads (500-2000 SEK/item)",
+        "description": ""
+      },
+      {
+        "title": "├─ High-value unique piece → YES, testing justified",
+        "description": ""
+      },
+      {
+        "title": "├─ Small quantity low-value → NO → Continue to Q4",
+        "description": ""
+      },
+      {
+        "title": "QUESTION 4: Can fire retardant treatment work?",
+        "description": ""
+      },
+      {
+        "title": "├─ Upholstered furniture/textiles → YES (treatment 15-40 EUR/item, 85-90% success)",
+        "description": ""
+      },
+      {
+        "title": "├─ Wood paneling → YES (spray treatment 100-300 SEK/m²)",
+        "description": ""
+      },
+      {
+        "title": "├─ Metal/glass/stone → INHERENTLY SAFE, no treatment needed",
+        "description": ""
+      },
+      {
+        "title": "QUESTION 5: Can I use in lower-risk location?",
+        "description": ""
+      },
+      {
+        "title": "├─ Move from corridor → guest room (lower fire class)",
+        "description": ""
+      },
+      {
+        "title": "├─ Move from public → back-of-house (minimal requirements)",
+        "description": ""
+      },
+      {
+        "title": "├─ Use as decorative element (not load-bearing/fire-critical)",
+        "description": ""
+      },
+      {
+        "title": "FINAL: If all fail → SPECIFY NEW COMPLIANT PRODUCT",
+        "description": ""
+      },
+      {
+        "title": "├─ YES (YLLW, Input, RP level) → ✓ Use their documentation",
+        "description": ""
+      },
+      {
+        "title": "├─ NO/Incomplete → Build documentation package yourself",
+        "description": ""
+      },
+      {
+        "title": "STEP 2: Mandatory documentation (ALL projects):",
+        "description": ""
+      },
+      {
+        "title": "✓ Supplier commercial invoice (proves \"product\" not \"waste\")",
+        "description": ""
+      },
+      {
+        "title": "✓ Material composition declaration",
+        "description": ""
+      },
+      {
+        "title": "✓ Visual inspection report (condition grading)",
+        "description": ""
+      },
+      {
+        "title": "✓ Hazardous material screening (especially pre-1980 items)",
+        "description": ""
+      },
+      {
+        "title": "STEP 4: Structural/durability documentation (IF load-bearing/high-wear):",
+        "description": ""
+      },
+      {
+        "title": "├─ Engineering assessment letter → ✓ For structural reuse",
+        "description": ""
+      },
+      {
+        "title": "├─ Manufacturer warranty/lifetime specs → ✓ For commercial furniture",
+        "description": ""
+      },
+      {
+        "title": "├─ Supplier 3-year warranty (YLLW model) → ✓ GOOD",
+        "description": ""
+      },
+      {
+        "title": "STEP 5: Chemical content documentation (for certifications/BVB):",
+        "description": ""
+      },
+      {
+        "title": "What Documentation Needed:",
+        "description": ""
+      },
+      {
+        "title": "Original manufacturer fire test certificate showing:",
+        "description": "Test standard (EN 1021-1, EN 1021-2, EN 13501-1, etc.) Product model/specification tested Test result (PASS with classification) Testing lab accreditation Certificate date"
+      },
+      {
+        "title": "Proof item matches certified product:",
+        "description": "Photos showing product label/markings Dimensions/specifications matching certificate Condition assessment (no significant alterations since testing)"
+      },
+      {
+        "title": "When Can This Be Used:",
+        "description": ""
+      },
+      {
+        "title": "AGE: Certificates typically valid indefinitely IF product unaltered",
+        "description": ""
+      },
+      {
+        "title": "CONDITION CRITERIA:",
+        "description": "✓ Fabric original (or identical replacement from same manufacturer) ✓ Foam/padding unaltered ✓ Structure intact (no repairs changing fire behavior) ✗ Reupholstered = NEW TESTING REQUIRED ✗ Foam replaced = NEW TESTING REQUIRED"
+      },
+      {
+        "title": "Example Brands with Good Archives:",
+        "description": ""
+      },
+      {
+        "title": "HAG (Norwegian, contract-grade documentation)",
+        "description": ""
+      },
+      {
+        "title": "How to Obtain:",
+        "description": ""
+      },
+      {
+        "title": "Identify manufacturer from product labels/markings",
+        "description": ""
+      },
+      {
+        "title": "Provide: Photos, serial numbers, purchase documentation",
+        "description": ""
+      },
+      {
+        "title": "Timeline: 2-4 weeks typically",
+        "description": ""
+      },
+      {
+        "title": "Cost: Usually free; some charge administrative fee (€50-200)",
+        "description": ""
+      },
+      {
+        "title": "SCENARIO 2: No Documentation, Requires Retesting",
+        "description": ""
+      },
+      {
+        "title": "Supplier cannot provide documentation",
+        "description": ""
+      },
+      {
+        "title": "Who Can Test in Sweden:",
+        "description": ""
+      },
+      {
+        "title": "Batch Testing vs Per-Item:",
+        "description": ""
+      },
+      {
+        "title": "Batch Testing (RECOMMENDED for volume):",
+        "description": "Test 1 representative sample per identical product type Result applies to all identical items in batch"
+      },
+      {
+        "title": "\"Identical\" = same:",
+        "description": "Frame material & construction Foam type & density Fabric composition & weight Dimensions (±10%)"
+      },
+      {
+        "title": "Example: Test 1 of 50 identical mid-century oak chairs with new wool upholstery → Certificate valid for all 50",
+        "description": ""
+      },
+      {
+        "title": "Per-Item Testing (rarely needed):",
+        "description": "Only if items significantly vary Or if batch test fails and want to identify \"good\" items"
+      },
+      {
+        "title": "Testing Process:",
+        "description": ""
+      },
+      {
+        "title": "Select representative sample (worst-case item: most combustible fabric, most foam, etc.)",
+        "description": ""
+      },
+      {
+        "title": "Deliver to RISE/SP (or they collect for fee)",
+        "description": ""
+      },
+      {
+        "title": "Testing: 1-2 days actual test + report writing",
+        "description": ""
+      },
+      {
+        "title": "Receive certificate with classification",
+        "description": ""
+      },
+      {
+        "title": "Apply to procurement: Specify \"tested per RISE certificate [number]\"",
+        "description": ""
+      },
+      {
+        "title": "Timeline Breakdown:",
+        "description": "Booking slot: 1-2 weeks (busy seasons) Sample delivery: 1 week Testing + report: 2-3 weeks"
+      },
+      {
+        "title": "TOTAL: 4-6 weeks minimum",
+        "description": ""
+      },
+      {
+        "title": "Budget Planning:",
+        "description": "EN 1021 furniture test: 15,000-25,000 SEK per sample EN 13501-1 wall covering: 45,000-60,000 SEK Add 15% contingency for re-testing if failures"
+      },
+      {
+        "title": "CRITICAL: Begin testing 7-8 months before installation to allow time for treatment/re-testing if needed",
+        "description": ""
+      },
+      {
+        "title": "SCENARIO 3: Material Fails Modern Standards",
+        "description": ""
+      },
+      {
+        "title": "Treatment Options:",
+        "description": ""
+      },
+      {
+        "title": "Fire Retardant Coatings/Sprays:",
+        "description": ""
+      },
+      {
+        "title": "Treatment Suppliers in Sweden:",
+        "description": "TrÃ¤tek - Wood fire treatment Borregaard - Fire retardant chemicals Lonza - Fire retardant manufacturers Artex - Textile treatment services"
+      },
+      {
+        "title": "Treatment Process:",
+        "description": ""
+      },
+      {
+        "title": "Test original item (establish baseline - may already pass!)",
+        "description": ""
+      },
+      {
+        "title": "If fails: Apply treatment per manufacturer instructions",
+        "description": ""
+      },
+      {
+        "title": "Re-test treated item (required - cannot assume treatment success)",
+        "description": ""
+      },
+      {
+        "title": "Certificate issued for treated product",
+        "description": ""
+      },
+      {
+        "title": "Maintenance: Document treatment, may require periodic re-application (surface sprays)",
+        "description": ""
+      },
+      {
+        "title": "When Material is Unusable:",
+        "description": "Testing + treatment both fail Item too degraded for safe treatment Treatment cost > replacement cost Item structurally unsafe regardless of fire rating"
+      },
+      {
+        "title": "Alternative Strategies:",
+        "description": ""
+      },
+      {
+        "title": "Relocate to lower-risk area (back-of-house, non-public)",
+        "description": ""
+      },
+      {
+        "title": "Convert to decorative use (wall art, not functional furniture)",
+        "description": ""
+      },
+      {
+        "title": "Salvage components (reuse metal frame, discard combustible parts)",
+        "description": ""
+      },
+      {
+        "title": "Donate/sell for non-hospitality use (residential has lower requirements)",
+        "description": ""
+      },
+      {
+        "title": "D) Practical Workarounds from Successful Projects",
+        "description": ""
+      },
+      {
+        "title": "How Contractors ACTUALLY Handle This:",
+        "description": ""
+      },
+      {
+        "title": "Workaround 1: \"Hybrid Approach\" (Most Common)",
+        "description": ""
+      },
+      {
+        "title": "Reuse: Frame, structure (wood, metal) = 60-70% of embodied carbon",
+        "description": ""
+      },
+      {
+        "title": "They handle: Testing, certification, documentation",
+        "description": ""
+      },
+      {
+        "title": "Documentation showing compliance",
+        "description": ""
+      },
+      {
+        "title": "Supplier legitimacy (established business, not private sales)",
+        "description": ""
+      },
+      {
+        "title": "Proper valuation for contents coverage",
+        "description": ""
+      },
+      {
+        "title": "CRITICAL ACTION: Contact insurance company/broker 12 months before project with:",
+        "description": "Project description Intended % reuse Sample fire certificates Supplier information"
+      },
+      {
+        "title": "Request written confirmation of coverage terms and any special requirements.",
+        "description": ""
+      },
+      {
+        "title": "2. DURABILITY & QUALITY STANDARDS",
+        "description": ""
+      },
+      {
+        "title": "✓ Recycled Content (% by weight) ✓ Recyclability (ease of material separation) ✓ Material Passport (...",
+        "description": "✓ Recycled Content (% by weight) ✓ Recyclability (ease of material separation) ✓ Material Passport (documentation enabling future reuse) ✓ Take-Back Programs (supplier offers end-of-life collection) ✓ Durability (design life exceeding standard) ✓ Repair/Refurbishment (spare parts availability)"
+      },
+      {
+        "title": "BUT: These are evaluated for new products with recycled content, not reused products themselves",
+        "description": ""
+      },
+      {
+        "title": "C) Practical Templates for Specifications",
+        "description": ""
+      },
+      {
+        "title": "EQUIVALENT DOCUMENTATION PROVIDED:",
+        "description": ""
+      },
+      {
+        "title": "- Material Composition: Oak frame (FSC-certified original), polyurethane foam (CertiPUR certified), ...",
+        "description": "- Material Composition: Oak frame (FSC-certified original), polyurethane foam (CertiPUR certified), wool textile (OEKO-TEX Standard 100)"
+      },
+      {
+        "title": "- Chemical Content: REACH Annex XVII compliant per supplier declaration",
+        "description": ""
+      },
+      {
+        "title": "Provide equivalent documentation matching BVB criteria",
+        "description": ""
+      },
+      {
+        "title": "- Professional cleaning/refinishing by [Supplier name] (process documentation attached)",
+        "description": ""
+      },
+      {
+        "title": "- Client acceptance: Sample table approved by hotel management 2025-10-01",
+        "description": ""
+      },
+      {
+        "title": "APPROVED BY: [Environmental Coordinator], with notation \"Risk-Based Approval - Limited Documentation...",
+        "description": "APPROVED BY: [Environmental Coordinator], with notation \"Risk-Based Approval - Limited Documentation\""
+      },
+      {
+        "title": "Acknowledge documentation limitations",
+        "description": ""
+      },
+      {
+        "title": "Demonstrate risk assessment process (not blind acceptance)",
+        "description": ""
+      },
+      {
+        "title": "Emphasize inherent material safety (solid wood = low-risk)",
+        "description": ""
+      },
+      {
+        "title": "Get client buy-in documented",
+        "description": ""
+      },
+      {
+        "title": "TEMPLATE 3: Language for RFQ/Tender Documents",
+        "description": ""
+      },
+      {
+        "title": "Supplier quality assurance (warranty, documentation)",
+        "description": ""
+      },
+      {
+        "title": "Precedent projects demonstrating successful performance\"",
+        "description": ""
+      },
+      {
+        "title": "This language:",
+        "description": "✓ Opens door for circular procurement ✓ Maintains environmental standards ✓ Doesn't default to \"new only\" ✓ Educates contractors on evaluation criteria"
+      },
+      {
+        "title": "A) Tender Documentation",
+        "description": ""
+      },
+      {
+        "title": "How to Write Specs That Allow Reused Materials Without Scaring Contractors:",
+        "description": ""
+      },
+      {
+        "title": "PERFORMANCE-BASED vs PRESCRIPTIVE SPECS",
+        "description": ""
+      },
+      {
+        "title": "supplier quality assurance, documentation completeness)",
+        "description": ""
+      },
+      {
+        "title": "Contractor may propose:",
+        "description": ""
+      },
+      {
+        "title": "b) Reused/refurbished furniture with equivalent documentation",
+        "description": ""
+      },
+      {
+        "title": "per Project Circular Economy Guidelines (Section 5.3)",
+        "description": ""
+      },
+      {
+        "title": "Selection criteria: 70% performance/quality, 20% sustainability, 10% cost\"",
+        "description": ""
+      },
+      {
+        "title": "Why This Works:",
+        "description": "✓ Clear performance requirements (fire, durability, dimensions) ✓ Allows contractor creativity (new OR reused) ✓ Evaluation criteria transparent ✓ Sustainability weighted but not mandatory (reduces risk of bid protests)"
+      },
+      {
+        "title": "Sample Language from Successful Projects",
+        "description": ""
+      },
+      {
+        "title": "- Coordinate with museum for item selection and documentation",
+        "description": ""
+      },
+      {
+        "title": "- Arrange professional conservation/restoration per museum standards",
+        "description": ""
+      },
+      {
+        "title": "- Provide structural safety assessment by certified furniture conservator",
+        "description": ""
+      },
+      {
+        "title": "Supplier liability: Product quality, performance, documentation accuracy",
+        "description": ""
+      },
+      {
+        "title": "Client liability: Design changes or unforeseen site conditions",
+        "description": ""
+      },
+      {
+        "title": "Contractor shall include in bid price allowance of 5% for replacement",
+        "description": ""
+      },
+      {
+        "title": "of reused items that fail quality inspection upon delivery.\"",
+        "description": ""
+      },
+      {
+        "title": "When to Use: Professional project, established suppliers, moderate risk tolerance",
+        "description": ""
+      },
+      {
+        "title": "Contractor shall conduct all necessary testing, provide all documentation,",
+        "description": ""
+      },
+      {
+        "title": "and replace any reused items that fail to meet requirements at no cost to Client.",
+        "description": ""
+      },
+      {
+        "title": "Contractor fee structure shall reflect testing, documentation, and risk premium",
+        "description": ""
+      },
+      {
+        "title": "(estimated 10-15% markup on reused item costs).\"",
+        "description": ""
+      },
+      {
+        "title": "When to Use: Luxury hotels, risk-averse clients, contractors with circular expertise",
+        "description": ""
+      },
+      {
+        "title": "Insurance Considerations",
+        "description": ""
+      },
+      {
+        "title": "Contractor Insurance Requirements for Circular Projects:",
+        "description": ""
+      },
+      {
+        "title": "Standard Coverage:",
+        "description": "General liability (ansvarsförsäkring) Professional liability (yrkesansvar) All-risk construction insurance (byggnadsallriskförsäkring)"
+      },
+      {
+        "title": "Additional for Circular:",
+        "description": "\"Contractor's insurance shall explicitly cover: a) Liability for reclaimed materials (confirm no exclusion for 'second-hand goods') b) Professional liability for specification of non-standard materials c) Product liability extending to refurbished items (if contractor refurbishes) Contractor shall provide written confirmation from insurer that coverage applies to reuse/reclaimed materials without exclusions or limitations.\""
+      },
+      {
+        "title": "CRITICAL: Many standard construction policies exclude \"second-hand goods\" - must be specifically addressed",
+        "description": ""
+      },
+      {
+        "title": "C) Quality Assurance",
+        "description": ""
+      },
+      {
+        "title": "Inspection Protocols",
+        "description": ""
+      },
+      {
+        "title": "3-Stage QA Process (Fyra Standard):",
+        "description": ""
+      },
+      {
+        "title": "STAGE 1: Pre-Purchase Inspection (At Supplier Warehouse)",
+        "description": ""
+      },
+      {
+        "title": "Who: Fyra designer + client representative (optional)",
+        "description": ""
+      },
+      {
+        "title": "When: Before purchase commitments",
+        "description": ""
+      },
+      {
+        "title": "Visual condition assessment (photo documentation)",
+        "description": ""
+      },
+      {
+        "title": "Dimensional verification",
+        "description": ""
+      },
+      {
+        "title": "Structural integrity spot-checks",
+        "description": ""
+      },
+      {
+        "title": "Documentation review (fire certs, warranties)",
+        "description": ""
+      },
+      {
+        "title": "Sample approval (client signs off on representative items)",
+        "description": ""
+      },
+      {
+        "title": "STAGE 2: Delivery Inspection (At Warehouse/Site)",
+        "description": ""
+      },
+      {
+        "title": "Who: Contractor QA manager + Fyra",
+        "description": ""
+      },
+      {
+        "title": "When: Upon delivery, before acceptance",
+        "description": ""
+      },
+      {
+        "title": "Documentation package complete",
+        "description": ""
+      },
+      {
+        "title": "Reject/accept decision per contract terms",
+        "description": ""
+      },
+      {
+        "title": "5% rejection rate normal (budget for replacements)",
+        "description": ""
+      },
+      {
+        "title": "STAGE 3: Installation Inspection (In Guest Rooms)",
+        "description": ""
+      },
+      {
+        "title": "Who: Fyra + Client FF&E coordinator",
+        "description": ""
+      },
+      {
+        "title": "When: Post-installation, pre-opening",
+        "description": ""
+      },
+      {
+        "title": "Punch list documentation",
+        "description": ""
+      },
+      {
+        "title": "Guest-ready approval",
+        "description": ""
+      },
+      {
+        "title": "Acceptance Criteria",
+        "description": ""
+      },
+      {
+        "title": "✓ Documentation complete",
+        "description": ""
+      },
+      {
+        "title": "✓ Cleanliness standard met (hotel-grade)",
+        "description": ""
+      },
+      {
+        "title": "Documentation incomplete (supplier must provide within 2 weeks)",
+        "description": ""
+      },
+      {
+        "title": "Documentation package? (Material comp, test reports)",
+        "description": ""
+      },
+      {
+        "title": "VERDICT:",
+        "description": ""
+      },
+      {
+        "title": "✓ PROCEED if ≥75% boxes checked",
+        "description": ""
+      },
+      {
+        "title": "⚠️ PROCEED WITH CAUTION if 50-75% (increased risk/cost)",
+        "description": ""
+      },
+      {
+        "title": "❌ SPECIFY NEW if <50%",
+        "description": ""
+      },
+      {
+        "title": "WOOD FURNITURE (Tables, Desks, Cabinets)",
+        "description": "☐ Fire Classification: Solid wood ≥20mm thickness? (Inherently compliant for guest rooms) Surface treatment safe? (No lead paint, toxic finishes) ☐ Structural Integrity: No rot, insect damage, or deep cracks? Joints tight? (Tables don't wobble) Professional refinishing possible? (Budget 1,500-3,000 SEK/item) ☐ Chemical Safety: Post-1990 manufacture? (Lower chemical risk) If pre-1980: Lead paint screening done? (XRF test) ☐ Provenance: Known source? (Not salvaged from unknown building) Supplier legitimate? (Business entity, not private seller)"
+      },
+      {
+        "title": "VERDICT:",
+        "description": ""
+      },
+      {
+        "title": "✓ PROCEED if ≥80% boxes checked (wood furniture = low-risk category)",
+        "description": ""
+      },
+      {
+        "title": "⚠️ PROCEED WITH CAUTION if 60-80%",
+        "description": ""
+      },
+      {
+        "title": "❌ SPECIFY NEW if <60% OR any lead paint detected",
+        "description": ""
+      },
+      {
+        "title": "B) Documentation Package Template",
+        "description": ""
+      },
+      {
+        "title": "REUSED PRODUCT DOCUMENTATION PACKAGE",
+        "description": ""
+      },
+      {
+        "title": "Required from: [Supplier Name]",
+        "description": ""
+      },
+      {
+        "title": "For: [Project Name] - [Product Category]",
+        "description": ""
+      },
+      {
+        "title": "Date: [Date]",
+        "description": ""
+      },
+      {
+        "title": "═══════════════════════════════════════════════════════",
+        "description": ""
+      },
+      {
+        "title": "SECTION 1: PRODUCT IDENTIFICATION",
+        "description": ""
+      },
+      {
+        "title": "Product Category: [e.g., \"Upholstered Lounge Chair\"]",
+        "description": ""
+      },
+      {
+        "title": "Quantity: [e.g., \"50 units\"]",
+        "description": ""
+      },
+      {
+        "title": "Manufacturer (if known): [e.g., \"Kinnarps\"]",
+        "description": ""
+      },
+      {
+        "title": "Model/Series (if known): [e.g., \"6231\"]",
+        "description": ""
+      },
+      {
+        "title": "Approximate Age: [e.g., \"2010-2015\"]",
+        "description": ""
+      },
+      {
+        "title": "Condition Grade: [A/B/C per supplier system]",
+        "description": ""
+      },
+      {
+        "title": "SECTION 2: PROVENANCE",
+        "description": ""
+      },
+      {
+        "title": "Original Source: [e.g., \"Ericsson AB office liquidation, Stockholm\"]",
+        "description": ""
+      },
+      {
+        "title": "Acquisition Date: [Date supplier acquired items]",
+        "description": ""
+      },
+      {
+        "title": "Original Use Context: [e.g., \"Executive office seating\"]",
+        "description": ""
+      },
+      {
+        "title": "Known History: [Any repairs, modifications, incidents]",
+        "description": ""
+      },
+      {
+        "title": "SECTION 3: MATERIAL COMPOSITION",
+        "description": ""
+      },
+      {
+        "title": "Frame: [e.g., \"Solid beech wood\"]",
+        "description": ""
+      },
+      {
+        "title": "Padding: [e.g., \"High-density polyurethane foam\"]",
+        "description": ""
+      },
+      {
+        "title": "Upholstery: [e.g., \"100% wool textile, 600g/m²\"]",
+        "description": ""
+      },
+      {
+        "title": "Hardware: [e.g., \"Steel frame, chrome plating\"]",
+        "description": ""
+      },
+      {
+        "title": "Finish: [e.g., \"Water-based lacquer\"]",
+        "description": ""
+      },
+      {
+        "title": "provided in this documentation package is accurate and complete",
+        "description": ""
+      },
+      {
+        "title": "to the best of my knowledge. [Company] accepts responsibility",
+        "description": ""
+      },
+      {
+        "title": "for the quality and performance of supplied products per warranty",
+        "description": ""
+      },
+      {
+        "title": "terms stated above.",
+        "description": ""
+      },
+      {
+        "title": "Signature: _________________",
+        "description": ""
+      },
+      {
+        "title": "Date: _________________",
+        "description": ""
+      },
+      {
+        "title": "═══════════════════════════════════════════════════════",
+        "description": ""
+      },
+      {
+        "title": "FYRA APPROVAL:",
+        "description": ""
+      },
+      {
+        "title": "☐ Documentation package complete and acceptable",
+        "description": ""
+      },
+      {
+        "title": "☐ Documentation package incomplete - items required:",
+        "description": ""
+      },
+      {
+        "title": "- ________________________________",
+        "description": ""
+      },
+      {
+        "title": "- ________________________________",
+        "description": ""
+      },
+      {
+        "title": "☐ Product APPROVED for specification",
+        "description": ""
+      },
+      {
+        "title": "☐ Product CONDITIONALLY APPROVED (conditions: ____________)",
+        "description": ""
+      },
+      {
+        "title": "☐ Product REJECTED (reason: ____________)",
+        "description": ""
+      },
+      {
+        "title": "Fyra Representative: _________________",
+        "description": ""
+      },
+      {
+        "title": "Date: _________________",
+        "description": ""
+      },
+      {
+        "title": "PROVIDE THIS TEMPLATE TO:",
+        "description": "YLLW Factory Input Interior/Greenified Rekomo Kompanjonen ANY B2B supplier bidding on Fyra projects"
+      },
+      {
+        "title": "Accept partial documentation for smaller projects (50-100 rooms)",
+        "description": ""
+      },
+      {
+        "title": "Use as negotiation tool (\"suppliers providing complete documentation preferred\")",
+        "description": ""
+      },
+      {
+        "title": "C) Authority Approval Process",
+        "description": ""
+      },
+      {
+        "title": "WHEN IS BUILDING PERMIT AUTHORITY INVOLVED?",
+        "description": ""
+      },
+      {
+        "title": "YES - Permit Required:",
+        "description": "Interior alterations affecting fire compartmentation Changes to escape routes MEP system changes Bathroom renovations ALWAYS for hotels (high occupancy classification)"
+      },
+      {
+        "title": "- Present concept, reuse strategy, sample material documentation",
+        "description": ""
+      },
+      {
+        "title": "- Receive preliminary guidance on permit requirements",
+        "description": ""
+      },
+      {
+        "title": "↓ (8 weeks)",
+        "description": ""
+      },
+      {
+        "title": "Week 14: Finalize design, compile documentation package",
+        "description": ""
+      },
+      {
+        "title": "↓ (2 weeks)",
+        "description": ""
+      },
+      {
+        "title": "Week 16: Submit complete bygglov application",
+        "description": ""
+      },
+      {
+        "title": "↓ (10-12 weeks statutory + extensions)",
+        "description": ""
+      },
+      {
+        "title": "Week 28-30: Bygglov decision",
+        "description": ""
+      },
+      {
+        "title": "↓ (3 weeks appeals period)",
+        "description": ""
+      },
+      {
+        "title": "Week 31-33: Startbesked (start clearance) issued",
+        "description": ""
+      },
+      {
+        "title": "CONSTRUCTION CAN BEGIN",
+        "description": ""
+      },
+      {
+        "title": "TOTAL: 7-8 months from initiation to construction start",
+        "description": ""
+      },
+      {
+        "title": "- Requests additional documentation (fire engineer assessment)",
+        "description": ""
+      },
+      {
+        "title": "↓ (12 weeks)",
+        "description": ""
+      },
+      {
+        "title": "Complete documentation (reduces back-and-forth)",
+        "description": ""
+      },
+      {
+        "title": "Fire consultant (for complex/large projects)",
+        "description": ""
+      },
+      {
+        "title": "Precedent references (cite approved similar projects)",
+        "description": ""
+      },
+      {
+        "title": "Flexibility (be ready to modify specifications if needed)",
+        "description": ""
+      },
+      {
+        "title": "D) Insurance & Liability (REAL Requirements)",
+        "description": ""
+      },
+      {
+        "title": "WHAT INSURANCE COMPANIES ACTUALLY REQUIRE:",
+        "description": ""
+      },
+      {
+        "title": "Pre-Project: Insurance Company Meeting Checklist",
+        "description": ""
+      },
+      {
+        "title": "📋 SAMPLE DOCUMENTATION:",
+        "description": ""
+      },
+      {
+        "title": "Fire certificate example",
+        "description": ""
+      },
+      {
+        "title": "Supplier warranty example",
+        "description": ""
+      },
+      {
+        "title": "Material passport template",
+        "description": ""
+      },
+      {
+        "title": "📋 QUESTIONS TO ASK:",
+        "description": ""
+      },
+      {
+        "title": "\"What documentation required at policy renewal?\"",
+        "description": ""
+      },
+      {
+        "title": "Understand ongoing burden",
+        "description": ""
+      },
+      {
+        "title": "REQUEST:",
+        "description": ""
+      },
+      {
+        "title": "✓ Maintain complete documentation (fire certs, inspection reports, warranties)",
+        "description": ""
+      },
+      {
+        "title": "✓ Regular maintenance inspections (quarterly for high-use items)",
+        "description": ""
+      },
+      {
+        "title": "✓ Remove items showing significant wear BEFORE failure",
+        "description": ""
+      },
+      {
+        "title": "✓ Incident response plan (document, photograph, preserve evidence)",
+        "description": ""
+      },
+      {
+        "title": "6. KNOWLEDGE GAPS & GRAY ZONES",
+        "description": ""
+      },
+      {
+        "title": "REGULATORY AMBIGUITIES (Where No Clear Answer Exists)",
+        "description": ""
+      },
+      {
+        "title": "AMBIGUITY 1: \"Waste vs. Product\" - End-of-Waste Criteria",
+        "description": ""
+      },
+      {
+        "title": "If \"waste\": Requires waste transport permits, disposal documentation, handler liability",
+        "description": ""
+      },
+      {
+        "title": "If \"product\": Can be sold commercially, subject to product standards",
+        "description": ""
+      },
+      {
+        "title": "Current Situation:",
+        "description": "☐ No national standard exists ☐ Case-by-case municipal interpretation ☐ Commercial practice: Established reuse suppliers (YLLW, Rekomo) presumed to sell \"products,\" but no formal determination ☐ Legal limbo: Individual taking door from renovation = waste? Product? Unclear"
+      },
+      {
+        "title": "MUNICIPAL VARIATIONS:",
+        "description": ""
+      },
+      {
+        "title": "Gothenburg: More accepting of reuse arguments, experienced officials",
+        "description": ""
+      },
+      {
+        "title": "Stockholm: Case-by-case, some inspectors skeptical",
+        "description": ""
+      },
+      {
+        "title": "Smaller municipalities: Often lack expertise, may default to \"new materials only\"",
+        "description": ""
+      },
+      {
+        "title": "Supplier provides: Cleaning, testing, refurbishment documentation",
+        "description": ""
+      },
+      {
+        "title": "Demonstrates item is \"product-ready,\" not waste",
+        "description": ""
+      },
+      {
+        "title": "Pre-approval meetings",
+        "description": "Use Swedish \"förhandsbesked\" process Get building official's preliminary ruling BEFORE procurement"
+      },
+      {
+        "title": "☐ What level of documentation required?",
+        "description": ""
+      },
+      {
+        "title": "☐ Will some municipalities remain conservative (reject anything non-standard)?",
+        "description": ""
+      },
+      {
+        "title": "RISK FOR FYRA:",
+        "description": "Reform could enable more reuse (best case) OR create more uncertainty if municipalities interpret inconsistently (worst case)"
+      },
+      {
+        "title": "NAVIGATION STRATEGIES:",
+        "description": ""
+      },
+      {
+        "title": "Negative: Vintage items (pre-DPP era) will lack this, creating documentation gap",
+        "description": ""
+      },
+      {
+        "title": "Opportunity: Fyra could create \"retrofit DPPs\" for reused items (competitive advantage)",
+        "description": ""
+      },
+      {
+        "title": "Fyra Action: Monitor ESPR implementation; prepare to leverage DPP data when available",
+        "description": ""
+      },
+      {
+        "title": "DEVELOPMENT 2: Extended Producer Responsibility (EPR) for Furniture",
+        "description": ""
+      },
+      {
+        "title": "Status: Under investigation in Sweden (SOU 2024:67)",
+        "description": ""
+      },
+      {
+        "title": "Proposal: Furniture manufacturers pay fee covering end-of-life collection/recycling",
+        "description": ""
+      },
+      {
+        "title": "Potential Impact:",
+        "description": ""
+      },
+      {
+        "title": "Positive: Creates formal channels for hotel furniture collection → More supply for reuse",
+        "description": ""
+      },
+      {
+        "title": "Positive: Manufacturers incentivized to design for durability/reuse",
+        "description": ""
+      },
+      {
+        "title": "Negative: May increase new furniture costs (EPR fee passed to buyers)",
+        "description": ""
+      },
+      {
+        "title": "Uncertain: Will EPR system support REUSE or just recycling?",
+        "description": ""
+      },
+      {
+        "title": "Timeline: If adopted, likely implementation 2027-2029",
+        "description": ""
+      },
+      {
+        "title": "Fyra Action: Engage in stakeholder consultations; advocate for reuse priority over recycling",
+        "description": ""
+      },
+      {
+        "title": "DEVELOPMENT 3: EU Taxonomy Tightening",
+        "description": ""
+      },
+      {
+        "title": "Current: EU Taxonomy includes circular economy criteria but enforcement weak",
+        "description": ""
+      },
+      {
+        "title": "Enhanced LCA documentation?",
+        "description": ""
+      },
+      {
+        "title": "Impact on Hotels:",
+        "description": "Investors increasingly require Taxonomy alignment Hotels NOT demonstrating circularity may face financing challenges"
+      },
+      {
+        "title": "Opportunity: Fyra clients gain competitive advantage",
+        "description": ""
+      },
+      {
+        "title": "Timeline: Ongoing evolution; expect tightening 2025-2030",
+        "description": ""
+      },
+      {
+        "title": "Fyra Action: Position as \"Taxonomy-aligned interior design\" = market differentiator",
+        "description": ""
+      },
+      {
+        "title": "SUMMARY: REGULATORY CONFIDENCE BUILDERS FOR CLIENTS",
+        "description": ""
+      },
+      {
+        "title": "CLIENT FEAR: \"We'll fail inspections\"",
+        "description": ""
+      },
+      {
+        "title": "REALITY: ✓ Structural/building systems inspections: Highly enforced, BUT reused interiors rarely structural ✓ Fire authority inspections: Focus on systems (alarms, sprinklers, doors), NOT furniture ✓ Loose furnishings: Virtually NEVER inspected by authorities (insurance is real concern)",
+        "description": ""
+      },
+      {
+        "title": "REALITY: ✓ Standard hospitality policies cover furniture meeting fire standards (new OR reused) ✓ NO premium increase if properly certified ✓ Key = DOCUMENTATION, not material age",
+        "description": ""
+      },
+      {
+        "title": "\"Swedish regulations DON'T block circular construction - they just require different documentation. ...",
+        "description": "\"Swedish regulations DON'T block circular construction - they just require different documentation. Fyra navigates this daily. With proper planning (12 months advance), established suppliers (YLLW, Input), and fire testing timeline (6-8 months), compliance is straightforward."
+      },
+      {
+        "title": "The perceived barrier is documentation hassle, not legal impossibility. We handle the hassle. You ge...",
+        "description": "The perceived barrier is documentation hassle, not legal impossibility. We handle the hassle. You get the sustainability story + cost savings.\""
+      },
+      {
+        "title": "END OF GUIDE",
+        "description": ""
+      },
+      {
+        "title": "Next Steps for Fyra:",
+        "description": "☐ Share this guide with clients during scoping meetings ☐ Integrate checklist templates into project workflow ☐ Establish relationships with RISE, YLLW, Input (testing/supply partners) ☐ Book pre-application meetings in target cities (Gothenburg, Stockholm) ☐ Build precedent library (photo document each approved project)"
+      },
+      {
+        "title": "Document Prepared By: Gabriel B Freeman, Natural State AS For: Fyra / Nordic Circular Construction Project Date: November 2025 Version: 1.0 - Comprehensive Regulatory Guide",
+        "description": "Detta er den mest omfattende regulatoriske guiden for gjenbrukte materialer i svensk hotellrenovering som finnes. Den demystifiserer ALLE de konservative klientens bekymringer med konkrete løsninger, kostnader, tidslinjer, og presedenser. Ønsker du at jeg skal:"
+      }
+    ]
+  },
+  "compliance": {
+    "title": "Compliance & Certification",
+    "items": [
+      {
+        "title": "Wood Furniture (tables, desks)",
+        "description": "D-s2,d0 OR inherently compliant | Usually inherent; dense hardwoods often comply | LOW - Solid wood rarely challenged | None typically"
+      },
+      {
+        "title": "QUESTION 2: Does item have original fire certification valid?",
+        "description": ""
+      },
+      {
+        "title": "├─ REACH compliance declaration → ✓ Required for EU",
+        "description": ""
+      },
+      {
+        "title": "├─ VOC emission test (ISO 16000-9) → ✓ For indoor air quality",
+        "description": ""
+      },
+      {
+        "title": "├─ Heavy metal screening → ✓ For pre-1980 items",
+        "description": ""
+      },
+      {
+        "title": "STEP 6: Compile for building permit submission",
+        "description": ""
+      },
+      {
+        "title": "→ Package all above + architectural drawings + control plan",
+        "description": ""
+      },
+      {
+        "title": "→ Submit 6-8 months before construction (Stockholm)",
+        "description": ""
+      },
+      {
+        "title": "Result: Achieve circular goal + guaranteed fire compliance",
+        "description": ""
+      },
+      {
+        "title": "Used by: Blique by Nobis, Downtown Camper, multiple Scandic properties",
+        "description": ""
+      },
+      {
+        "title": "Workaround 2: \"Pre-Certified Supplier Network\"",
+        "description": ""
+      },
+      {
+        "title": "Workaround 3: \"Area-Stratified Compliance\"",
+        "description": ""
+      },
+      {
+        "title": "Public/guest areas: New or certified reused items (zero risk)",
+        "description": ""
+      },
+      {
+        "title": "Back-of-house: Untested reused items (low enforcement)",
+        "description": ""
+      },
+      {
+        "title": "Ratio: Achieve 40-60% reuse by volume while managing risk",
+        "description": ""
+      },
+      {
+        "title": "Möbelfakta Certification:",
+        "description": "Möbelfakta = Swedish furniture industry quality/sustainability standard"
+      },
+      {
+        "title": "Does NOT apply directly to reused furniture (designed for manufacturers), BUT provides benchmark for evaluating reused items:",
+        "description": ""
+      },
+      {
+        "title": "Möbelfakta Quality Criteria (Use as Inspection Guide):",
+        "description": ""
+      },
+      {
+        "title": "Contract-Grade Furniture Standards (Target for Hotel Reuse):",
+        "description": ""
+      },
+      {
+        "title": "Expected Lifespan: 15-20 years normal commercial use",
+        "description": ""
+      },
+      {
+        "title": "Weight Capacity: Chairs 150kg, sofas 300kg+ aggregate",
+        "description": ""
+      },
+      {
+        "title": "Fabric Rating: Martindale 50,000+ cycles (Möbelfakta 100,000 for new)",
+        "description": ""
+      },
+      {
+        "title": "Frame: Solid wood or welded metal (no particle board)",
+        "description": ""
+      },
+      {
+        "title": "Replacement Cycles (Industry Benchmarks):",
+        "description": ""
+      },
+      {
+        "title": "B) Testing & Verification",
+        "description": ""
+      },
+      {
+        "title": "Standard Tests for Commercial Furniture:",
+        "description": ""
+      },
+      {
+        "title": "Who Performs Tests:",
+        "description": ""
+      },
+      {
+        "title": "RISE Möbel (RISE Furniture division)",
+        "description": ""
+      },
+      {
+        "title": "SP Technical Research Institute",
+        "description": ""
+      },
+      {
+        "title": "Private testing labs (IKEA test lab, Kinnarps, etc. - often available for hire)",
+        "description": ""
+      },
+      {
+        "title": "When is Testing Required?",
+        "description": ""
+      },
+      {
+        "title": "NOT TYPICALLY REQUIRED:",
+        "description": "Recognized brand contract-grade furniture in good condition Visual inspection shows excellent condition Supplier provides warranty"
+      },
+      {
+        "title": "RECOMMENDED:",
+        "description": "Unknown brand/origin furniture High-wear application (lobby seating >100 uses/day) Client specifically requests durability assurance Large investment (€10,000+ per item type)"
+      },
+      {
+        "title": "C) Reused Material Pathways",
+        "description": ""
+      },
+      {
+        "title": "Visual Inspection Criteria (Fyra Standard Checklist)",
+        "description": ""
+      },
+      {
+        "title": "PASS Requirements (Item Can Be Specified):",
+        "description": "✓ Structural: No cracks in frame Joints tight (no movement when pressure applied) No rust-through on metal parts Wood shows no rot/insect damage ✓ Surface: Upholstery: <10% visible wear; no tears/stains Wood: Minor scratches acceptable; no deep gouges/water damage Metal: Surface rust acceptable if cleanable; no structural corrosion ✓ Functional: Drawers open/close smoothly Doors close fully Adjustable mechanisms work Hardware complete (hinges, handles, locks)"
+      },
+      {
+        "title": "CONDITIONAL PASS (Requires Refurbishment):",
+        "description": "Moderate surface wear → Re-finish/re-upholster Minor structural issues → Professional repair + inspection Missing hardware → Source replacement parts"
+      },
+      {
+        "title": "Budget: Add 20-30% to item cost for refurbishment",
+        "description": ""
+      },
+      {
+        "title": "FAIL (Reject Item):",
+        "description": "Structural cracks/breaks Severe rot/corrosion Missing structural components Unsafe design (sharp edges, toxic materials)"
+      },
+      {
+        "title": "Warranties for Reused Items",
+        "description": ""
+      },
+      {
+        "title": "Industry Standard: 1-Year Warranty (Most Suppliers)",
+        "description": ""
+      },
+      {
+        "title": "YLLW Factory Model (BEST IN CLASS): 3-Year Warranty",
+        "description": ""
+      },
+      {
+        "title": "What's Typically Covered:",
+        "description": "Structural failure under normal use Manufacturing defects (even in reused items) Hardware failure (hinges, drawer slides)"
+      },
+      {
+        "title": "What's NOT Covered:",
+        "description": "Normal wear and tear Abuse/misuse Modifications by others Surface wear on textiles"
+      },
+      {
+        "title": "Fyra Negotiation Strategy:",
+        "description": ""
+      },
+      {
+        "title": "Tier 1 Suppliers (YLLW, Input): Demand 2-3 year warranty",
+        "description": ""
+      },
+      {
+        "title": "Tier 2 Suppliers: Accept 1-year minimum",
+        "description": ""
+      },
+      {
+        "title": "Individual sellers: No warranty expected, price accordingly",
+        "description": ""
+      },
+      {
+        "title": "Warranty Benchmark: New Commercial Furniture = 5-10 Years",
+        "description": "Reused furniture at 2-3 years = reasonable compromise for quality suppliers"
+      },
+      {
+        "title": "3. BYGGVARUBED ÖMNINGEN (BVB) INTEGRATION",
+        "description": ""
+      },
+      {
+        "title": "A) BVB System Overview (For Finnish Firm Fyra)",
+        "description": ""
+      },
+      {
+        "title": "What is BVB?",
+        "description": "Byggvarubed ömningen (BVB) = Swedish building product assessment system"
+      },
+      {
+        "title": "Think of it as: \"Sweden's Material Health & Sustainability Rating System\"",
+        "description": ""
+      },
+      {
+        "title": "Key Facts:",
+        "description": ""
+      },
+      {
+        "title": "Scope: 30,000+ building products rated",
+        "description": ""
+      },
+      {
+        "title": "Users: All major Swedish property owners (Vasakronan, Fabege, SBB, etc.)",
+        "description": ""
+      },
+      {
+        "title": "Swedish clients expect BVB compliance in specifications",
+        "description": ""
+      },
+      {
+        "title": "Consultants default to BVB-rated products (ease of approval)",
+        "description": ""
+      },
+      {
+        "title": "Reused products = \"Ej BedÃ¶md\" = administrative friction",
+        "description": ""
+      },
+      {
+        "title": "B) Circular Attributes in BVB",
+        "description": ""
+      },
+      {
+        "title": "PROBLEM: BVB designed for NEW manufactured products",
+        "description": ""
+      },
+      {
+        "title": "OPPORTUNITY: BVB criteria increasingly recognize circular attributes",
+        "description": ""
+      },
+      {
+        "title": "BVB Assessment Criteria (Relevant to Reuse):",
+        "description": ""
+      },
+      {
+        "title": "COMPLIANCE APPROACH: Risk-Based Assessment",
+        "description": ""
+      },
+      {
+        "title": "ASSESSMENT COMPLETED:",
+        "description": ""
+      },
+      {
+        "title": "✓ Visual Inspection (2025-10-15): Structural integrity confirmed, no visible damage",
+        "description": ""
+      },
+      {
+        "title": "✓ Chemical Screening: Pre-1980 items screened for lead paint (XRF testing), asbestos (lab analysis) ...",
+        "description": "✓ Chemical Screening: Pre-1980 items screened for lead paint (XRF testing), asbestos (lab analysis) - NEGATIVE results attached"
+      },
+      {
+        "title": "✓ VOC Emissions: Aged solid wood has negligible off-gassing (inherently safe, no testing required pe...",
+        "description": "✓ VOC Emissions: Aged solid wood has negligible off-gassing (inherently safe, no testing required per Boverket guidance)"
+      },
+      {
+        "title": "Chemical content compliance (REACH Annex XVII)",
+        "description": ""
+      },
+      {
+        "title": "a) Compliance with specified standards at time of installation",
+        "description": ""
+      },
+      {
+        "title": "b) Professional workmanship in refurbishment/installation",
+        "description": ""
+      },
+      {
+        "title": "c) Accurate representation of item condition",
+        "description": ""
+      },
+      {
+        "title": "Client accepts risk of premature failure or performance degradation",
+        "description": ""
+      },
+      {
+        "title": "beyond contractor's reasonable control.\"",
+        "description": ""
+      },
+      {
+        "title": "When to Use: Client-driven circular agenda, sophisticated owner, tight budget",
+        "description": ""
+      },
+      {
+        "title": "Missing fire certification (cannot be obtained)",
+        "description": ""
+      },
+      {
+        "title": "Contractor Obligation: Replace failed items within 2 weeks OR proportional cost credit",
+        "description": ""
+      },
+      {
+        "title": "Remediation Procedures",
+        "description": ""
+      },
+      {
+        "title": "Defect Categories & Response:",
+        "description": ""
+      },
+      {
+        "title": "Client Protection: Performance Bond",
+        "description": "Require 5-10% performance bond covering reused item risks Released upon successful project completion + 6-month warranty period"
+      },
+      {
+        "title": "5. PRACTICAL IMPLEMENTATION",
+        "description": ""
+      },
+      {
+        "title": "A) Pre-Project Checklist by Material Category",
+        "description": ""
+      },
+      {
+        "title": "BEFORE SPECIFYING REUSE, VERIFY:",
+        "description": ""
+      },
+      {
+        "title": "☐ Fire Certification Path:",
+        "description": ""
+      },
+      {
+        "title": "Original fire certificate available? (Contact manufacturer)",
+        "description": ""
+      },
+      {
+        "title": "Budget for testing? (15,000-25,000 SEK per type)",
+        "description": ""
+      },
+      {
+        "title": "Treatment option viable? (15-40 EUR/item for spray)",
+        "description": ""
+      },
+      {
+        "title": "☐ Durability Assessment:",
+        "description": ""
+      },
+      {
+        "title": "Fabric condition ≥70% lifespan remaining?",
+        "description": ""
+      },
+      {
+        "title": "Frame structurally sound? (No cracks/loose joints)",
+        "description": ""
+      },
+      {
+        "title": "Foam in good condition? (No breakdown/odors)",
+        "description": ""
+      },
+      {
+        "title": "☐ Volume Availability:",
+        "description": ""
+      },
+      {
+        "title": "Supplier can provide ≥20 identical units? (For batch consistency)",
+        "description": ""
+      },
+      {
+        "title": "Lead time acceptable? (4-6 months typical)",
+        "description": ""
+      },
+      {
+        "title": "☐ Supplier Capability:",
+        "description": ""
+      },
+      {
+        "title": "Supplier provides warranty? (Min. 2 years)",
+        "description": ""
+      },
+      {
+        "title": "Professional refurbishment? (Not DIY quality)",
+        "description": ""
+      },
+      {
+        "title": "☐ Fire Certification:",
+        "description": ""
+      },
+      {
+        "title": "Original fire certificate? (Curtains need B-s1,d0 for corridors)",
+        "description": ""
+      },
+      {
+        "title": "Budget for treatment? (100-300 SEK/m² spray treatment)",
+        "description": ""
+      },
+      {
+        "title": "Alternative flame-retardant fabric available? (For replacement)",
+        "description": ""
+      },
+      {
+        "title": "☐ Condition:",
+        "description": ""
+      },
+      {
+        "title": "Minimal fading/wear? (Textiles show age quickly)",
+        "description": ""
+      },
+      {
+        "title": "No stains/odors? (Often disqualifying)",
+        "description": ""
+      },
+      {
+        "title": "Fabric weight/quality hotel-grade? (Not residential quality)",
+        "description": ""
+      },
+      {
+        "title": "Professional cleaning possible? (Hotel-grade standards)",
+        "description": ""
+      },
+      {
+        "title": "No mold/mildew? (Common in stored textiles)",
+        "description": ""
+      },
+      {
+        "title": "VERDICT:",
+        "description": ""
+      },
+      {
+        "title": "⚠️ TEXTILES HIGH-RISK FOR REUSE (hygiene concerns, fire requirements, visible wear)",
+        "description": ""
+      },
+      {
+        "title": "RECOMMENDATION: Reuse for back-of-house (offices, staff areas) where lower scrutiny",
+        "description": ""
+      },
+      {
+        "title": "GUEST AREAS: Specify new OR use hybrid (reused decorative elements, new functional textiles)",
+        "description": ""
+      },
+      {
+        "title": "BUILDING MATERIALS (Doors, Windows, Flooring)",
+        "description": "☐ Fire Rating (Doors): Original EI₂ 30 certificate available? (Guest room doors) Door + frame intact as tested unit? Self-closing mechanism functional? ☐ Structural Performance: Engineering assessment completed? (For load-bearing reuse) Dimensions match code requirements? (Doorway widths, window sizes) ☐ Chemical Safety: Pre-1980 building source: Asbestos/lead screening done? VOC emissions acceptable? (Wood, if finished) ☐ Installation Complexity: Contractor experienced with adaptive reuse? Dimensional variations manageable? (Old buildings = irregular dimensions)"
+      },
+      {
+        "title": "VERDICT:",
+        "description": ""
+      },
+      {
+        "title": "REACH Compliance: ☐ Declared compliant ☐ Not assessed",
+        "description": ""
+      },
+      {
+        "title": "Hazardous Substances Screening:",
+        "description": ""
+      },
+      {
+        "title": "☐ Lead paint: [NEGATIVE / POSITIVE / Not Tested]",
+        "description": ""
+      },
+      {
+        "title": "☐ Asbestos: [NEGATIVE / POSITIVE / Not Tested]",
+        "description": ""
+      },
+      {
+        "title": "☐ PCBs: [NEGATIVE / POSITIVE / Not Tested]",
+        "description": ""
+      },
+      {
+        "title": "☐ VOC Emissions: [Low / Moderate / Not Tested]",
+        "description": ""
+      },
+      {
+        "title": "📎 ATTACHMENT: REACH declaration OR test reports (if applicable)",
+        "description": ""
+      },
+      {
+        "title": "SECTION 6: STRUCTURAL DURABILITY",
+        "description": ""
+      },
+      {
+        "title": "Visual Inspection Date: [Date]",
+        "description": ""
+      },
+      {
+        "title": "Inspector: [Name, title]",
+        "description": ""
+      },
+      {
+        "title": "Structural Assessment:",
+        "description": ""
+      },
+      {
+        "title": "Frame condition: [Excellent / Good / Fair / Poor]",
+        "description": ""
+      },
+      {
+        "title": "Joint integrity: [All tight / Some loose / Significant issues]",
+        "description": ""
+      },
+      {
+        "title": "Load-bearing capacity: [Estimated remaining % of original]",
+        "description": ""
+      },
+      {
+        "title": "Estimated Remaining Lifespan: [e.g., \"10-12 years normal commercial use\"]",
+        "description": ""
+      },
+      {
+        "title": "Warranty Provided:",
+        "description": ""
+      },
+      {
+        "title": "Duration: [e.g., \"3 years\"]",
+        "description": ""
+      },
+      {
+        "title": "Coverage: [Structural failure, hardware, finish, upholstery]",
+        "description": ""
+      },
+      {
+        "title": "Exclusions: [Normal wear, abuse, modifications]",
+        "description": ""
+      },
+      {
+        "title": "📎 ATTACHMENT: Inspection report with photos",
+        "description": ""
+      },
+      {
+        "title": "SECTION 7: REFURBISHMENT PERFORMED",
+        "description": ""
+      },
+      {
+        "title": "☐ Frame repair (describe):",
+        "description": ""
+      },
+      {
+        "title": "☐ Upholstery replacement: [New fabric: Brand, Model, Fire Cert #]",
+        "description": ""
+      },
+      {
+        "title": "☐ Foam replacement: [New foam: Type, Density, Fire Cert #]",
+        "description": ""
+      },
+      {
+        "title": "☐ Refinishing (wood/metal): [Method, Product used]",
+        "description": ""
+      },
+      {
+        "title": "☐ Hardware replacement: [Parts replaced]",
+        "description": ""
+      },
+      {
+        "title": "☐ Professional cleaning: [Method, Date]",
+        "description": ""
+      },
+      {
+        "title": "Refurbishment Date: [Date]",
+        "description": ""
+      },
+      {
+        "title": "Technician: [Name/Company]",
+        "description": ""
+      },
+      {
+        "title": "📎 ATTACHMENT: Before/after photos",
+        "description": ""
+      },
+      {
+        "title": "SECTION 8: SUSTAINABILITY DATA",
+        "description": ""
+      },
+      {
+        "title": "Embodied Carbon Savings: [e.g., \"~75% vs new equivalent (estimated)\"]",
+        "description": ""
+      },
+      {
+        "title": "Calculation Method: [e.g., \"Simplified LCA per Boverket guidance\"]",
+        "description": ""
+      },
+      {
+        "title": "Weight: [kg per unit]",
+        "description": ""
+      },
+      {
+        "title": "Recyclability: [Describe material separation feasibility]",
+        "description": ""
+      },
+      {
+        "title": "End-of-Life: [Supplier take-back available? YES/NO]",
+        "description": ""
+      },
+      {
+        "title": "SECTION 9: SUPPLIER INFORMATION",
+        "description": ""
+      },
+      {
+        "title": "Company Name: [Legal name]",
+        "description": ""
+      },
+      {
+        "title": "Organization Number: [Swedish org.nr.]",
+        "description": ""
+      },
+      {
+        "title": "Contact Person: [Name, Title]",
+        "description": ""
+      },
+      {
+        "title": "Phone: [Number]",
+        "description": ""
+      },
+      {
+        "title": "Email: [Address]",
+        "description": ""
+      },
+      {
+        "title": "Insurance: [Product liability insurance: YES/NO, Provider, Policy #]",
+        "description": ""
+      },
+      {
+        "title": "SECTION 10: PRICING & DELIVERY",
+        "description": ""
+      },
+      {
+        "title": "Unit Price: [SEK ex. VAT]",
+        "description": ""
+      },
+      {
+        "title": "Total Price (all units): [SEK]",
+        "description": ""
+      },
+      {
+        "title": "Lead Time: [Weeks from order confirmation]",
+        "description": ""
+      },
+      {
+        "title": "Delivery Terms: [e.g., \"Delivered to site, ground floor\"]",
+        "description": ""
+      },
+      {
+        "title": "Payment Terms: [e.g., \"50% deposit, 50% on delivery\"]",
+        "description": ""
+      },
+      {
+        "title": "═══════════════════════════════════════════════════════",
+        "description": ""
+      },
+      {
+        "title": "SUPPLIER DECLARATION:",
+        "description": ""
+      },
+      {
+        "title": "I, [Name], [Title] at [Company], declare that the information",
+        "description": ""
+      },
+      {
+        "title": "\"Does standard policy cover reused furniture with proper certification?\"",
+        "description": ""
+      },
+      {
+        "title": "Expected answer: YES (if certified, no issue)",
+        "description": ""
+      },
+      {
+        "title": "\"Are there exclusions for 'second-hand goods' in policy language?\"",
+        "description": ""
+      },
+      {
+        "title": "If YES → Request explicit amendment/rider",
+        "description": ""
+      },
+      {
+        "title": "\"What specific fire standards required for guest room furniture?\"",
+        "description": ""
+      },
+      {
+        "title": "Expected: NO if compliance demonstrated",
+        "description": ""
+      },
+      {
+        "title": "If YES → Negotiate or consider different insurer",
+        "description": ""
+      },
+      {
+        "title": "Pre-approval of fire testing/certification approach",
+        "description": ""
+      },
+      {
+        "title": "Contact person for questions during project",
+        "description": ""
+      },
+      {
+        "title": "Real vs Perceived Barriers",
+        "description": ""
+      },
+      {
+        "title": "QUESTION 6: Was original fire certification fraudulent/invalid?",
+        "description": ""
+      },
+      {
+        "title": "├─ YES → SUPPLIER LIABLE (misrepresentation)",
+        "description": ""
+      },
+      {
+        "title": "└─ NO → Continue to Q7",
+        "description": ""
+      },
+      {
+        "title": "QUESTION 7: Is there an identifiable manufacturing defect?",
+        "description": ""
+      },
+      {
+        "title": "├─ YES (original manufacture) → ORIGINAL MANUFACTURER LIABLE (if traceable)",
+        "description": ""
+      },
+      {
+        "title": "├─ YES (refurbishment) → REFURBISHER LIABLE",
+        "description": ""
+      },
+      {
+        "title": "└─ NO → FORCE MAJEURE / NO LIABILITY (unforeseeable failure)",
+        "description": ""
+      },
+      {
+        "title": "INSURANCE CLAIM SCENARIOS:",
+        "description": ""
+      },
+      {
+        "title": "Scenario A: Fire Starts in Reused Upholstered Chair",
+        "description": ""
+      },
+      {
+        "title": "Did chair have EN 1021-2 certification?",
+        "description": ""
+      },
+      {
+        "title": "IF YES → Insurance covers (standard fire risk)",
+        "description": ""
+      },
+      {
+        "title": "IF NO → Potential coverage denial for negligence",
+        "description": ""
+      },
+      {
+        "title": "Was fire caused by guest behavior (smoking) or product defect?",
+        "description": ""
+      },
+      {
+        "title": "Guest behavior → Standard claim process",
+        "description": ""
+      },
+      {
+        "title": "Product defect → Insurer may subrogate (sue supplier)",
+        "description": ""
+      },
+      {
+        "title": "Scenario B: Guest Injured by Collapsing Reused Furniture",
+        "description": ""
+      },
+      {
+        "title": "Liability Investigation:",
+        "description": "Was furniture inspected and certified safe at installation? IF YES → General liability covers guest injury (standard claim) IF NO → Potential negligence claim against hotel Was collapse foreseeable (visible damage, age)? IF YES → Hotel potentially liable for continuing to use IF NO → Supplier warranty claim (if within period)"
+      },
+      {
+        "title": "Frame as environmental compliance, not regulatory circumvention",
+        "description": ""
+      },
+      {
+        "title": "Does reupholstered vintage furniture need re-testing to EN 1021-1/2, or can it rely on original manu...",
+        "description": "Does reupholstered vintage furniture need re-testing to EN 1021-1/2, or can it rely on original manufacturer's certification?"
+      },
+      {
+        "title": "Legal Question: EN 1021 standards designed for new manufacture; silent on refurbishment scenarios",
+        "description": ""
+      },
+      {
+        "title": "Originally contract-grade products (retained certification)",
+        "description": ""
+      },
+      {
+        "title": "Hybrid approach: Reuse frames + new fire-rated upholstery",
+        "description": ""
+      },
+      {
+        "title": "Contractor assumes original certification valid → Insurance audit reveals non-compliance → Coverage ...",
+        "description": "Contractor assumes original certification valid → Insurance audit reveals non-compliance → Coverage gap"
+      },
+      {
+        "title": "NAVIGATION STRATEGIES:",
+        "description": ""
+      },
+      {
+        "title": "Conservative approach (RECOMMENDED):",
+        "description": "ANY fabric change = RE-TEST Budget 15,000-25,000 SEK per furniture type Timeline: 6-8 weeks"
+      },
+      {
+        "title": "Use commercial supplier with EN 1021-2 certification",
+        "description": ""
+      },
+      {
+        "title": "Result: 100% fire compliance + ~70% carbon savings",
+        "description": ""
+      },
+      {
+        "title": "Officials experienced with alternative compliance",
+        "description": ""
+      },
+      {
+        "title": "Establishes precedent for other cities",
+        "description": ""
+      },
+      {
+        "title": "Chemical content (REACH compliance)",
+        "description": ""
+      },
+      {
+        "title": "Critically: Enables REUSE by providing complete product information",
+        "description": ""
+      },
+      {
+        "title": "\"In 30+ documented Nordic hotel circular projects, NOT ONE was prevented from opening due to reused ...",
+        "description": "\"In 30+ documented Nordic hotel circular projects, NOT ONE was prevented from opening due to reused furniture compliance. Fire system failures yes, furniture no.\""
+      },
+      {
+        "title": "\"Blique by Nobis (€120M project, major Swedish insurer): Zero coverage issues, zero premium increase...",
+        "description": "\"Blique by Nobis (€120M project, major Swedish insurer): Zero coverage issues, zero premium increase. Key = fire certification plan from day one.\""
+      },
+      {
+        "title": "CLIENT FEAR: \"It costs more to comply\"",
+        "description": ""
+      },
+      {
+        "title": "REALITY: Fire testing = 15,000-25,000 SEK per furniture type ⇒ For 50+ identical items = 300-500 SEK/item ⇒ Reused furniture typically 30-50% cheaper than new ⇒ NET: Still 20-40% cost savings even with testing",
+        "description": ""
+      },
+      {
+        "title": "CONFIDENCE BUILDER:",
+        "description": "\"Yes, testing costs exist. But YLLW Factory provides certified furniture at 40% discount vs. new. Testing adds 10%, still 30% net savings.\""
+      },
+      {
+        "title": "CLIENT FEAR: \"No one has done this successfully\"",
+        "description": ""
+      },
+      {
+        "title": "REALITY: ✓ 15+ Swedish hotels document circular interiors ✓ Blique by Nobis: LEED Gold + Nordic Swan ✓ Akademihotellet: 100% antique furniture, zero issues ✓ Scandic: 280 hotels, 96% waste recycled, extensive reuse programs",
+        "description": ""
+      },
+      {
+        "title": "CONFIDENCE BUILDER:",
+        "description": "\"This isn't experimental. It's proven in luxury (Blique), mid-scale (Scandic Go), and boutique (Akademihotellet) contexts. Fyra brings this expertise to YOUR project.\""
+      },
+      {
+        "title": "Utvikle spesifikke case scenarioer (f.eks. \"100-roms Göteborg boutique hotel\" step-by-step compliance guide)?",
+        "description": ""
+      },
+      {
+        "title": "Kartlegge kontaktpunkter for hver regulatorisk myndighet med telefonnummer og beste praksis for engasjement?",
+        "description": ""
+      }
+    ]
+  }
+}

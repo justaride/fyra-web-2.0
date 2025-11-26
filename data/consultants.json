@@ -1,0 +1,126 @@
+[
+    {
+        "id": "white-arkitekter",
+        "name": "White Arkitekter",
+        "role": "Strategic Knowledge Partner",
+        "tier": "Primary",
+        "category": "Architecture & Sustainability",
+        "description": "Scandinavia's leading architectural practice with deep expertise in circular hospitality and zero-energy buildings.",
+        "locations": [
+            "Stockholm",
+            "Gothenburg",
+            "Malmö",
+            "Umeå"
+        ],
+        "services": [
+            "Circular Interior Architecture",
+            "LCA (Life Cycle Assessment)",
+            "BREEAM/Miljöbyggnad Certification",
+            "Zero-Energy Design"
+        ],
+        "keyProjects": [
+            "House of Choice (Zero-energy hotel)",
+            "Sara Kulturhus (Timber hotel)",
+            "Blique by Nobis"
+        ],
+        "contact": {
+            "name": "Raimo Joss",
+            "title": "Lead Architect Hospitality Sustainability",
+            "email": "raimo.joss@white.se",
+            "phone": "+46 8 402 26 59"
+        },
+        "collaborationType": "Knowledge Exchange Partnership"
+    },
+    {
+        "id": "forsen-ab",
+        "name": "Forsen AB",
+        "role": "Tactical PM Partner",
+        "tier": "Secondary",
+        "category": "Project Management",
+        "description": "Independent project management firm specializing in construction management and regulatory navigation for complex renovations.",
+        "locations": [
+            "Nationwide (Luleå to Malmö)"
+        ],
+        "services": [
+            "Construction Management (CM)",
+            "PBL Permit Coordination",
+            "Regulatory Compliance",
+            "Cost Management"
+        ],
+        "keyProjects": [
+            "Clarion Hotel Amaranten",
+            "Grow Hotel Solna"
+        ],
+        "contact": {
+            "title": "Hospitality PM Lead",
+            "website": "forsen.com"
+        },
+        "collaborationType": "Strategic PM Partnership"
+    },
+    {
+        "id": "kompanjonen",
+        "name": "Kompanjonen",
+        "role": "Sourcing Specialist",
+        "tier": "Specialist",
+        "category": "Sourcing & Reuse Strategy",
+        "description": "Dedicated circular economy consultancy focused on sourcing unique reused items and managing compliance documentation.",
+        "locations": [
+            "Stockholm"
+        ],
+        "services": [
+            "Specialized Sourcing",
+            "Fire Testing Coordination",
+            "Regulatory Documentation",
+            "Reuse Logistics"
+        ],
+        "keyProjects": [
+            "Fabege Pilot (Återbrukshubben)",
+            "CCBuild Marketplace Integration"
+        ],
+        "contact": {
+            "name": "Per Håkansson",
+            "title": "CEO",
+            "website": "dackeconsulting.com"
+        },
+        "collaborationType": "Subcontractor / Specialist"
+    },
+    {
+        "id": "sweco",
+        "name": "Sweco",
+        "role": "Technical Consultant",
+        "tier": "Reserve",
+        "category": "Engineering & Design",
+        "description": "Europe's leading engineering and architecture consultancy with strong technical capabilities in adaptive reuse.",
+        "locations": [
+            "Nationwide"
+        ],
+        "services": [
+            "Structural Engineering",
+            "Energy Optimization",
+            "Circular Material Management"
+        ],
+        "keyProjects": [
+            "Blique by Nobis"
+        ],
+        "collaborationType": "Project-Specific"
+    },
+    {
+        "id": "hifab",
+        "name": "Hifab",
+        "role": "Project Management",
+        "tier": "Reserve",
+        "category": "Project Management",
+        "description": "Project management firm with emerging circular competence and strong adaptive reuse experience.",
+        "locations": [
+            "15 Offices Nationwide"
+        ],
+        "services": [
+            "Project Management",
+            "Adaptive Reuse Coordination"
+        ],
+        "keyProjects": [
+            "Hotel Oden (Adaptive Reuse)"
+        ],
+        "collaborationType": "Project-Specific"
+    }
+]

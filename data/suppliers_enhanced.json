@@ -1,0 +1,1401 @@
+[
+  {
+    "id": "yllw_factory",
+    "name": "YLLW FACTORY",
+    "description": "Sweden's leading B2B furniture reuse specialist with 65,000+ items in inventory and comprehensive refurbishment services. Operates a dedicated refurbishment factory in Dalby with hospitality market expertise including hotels and restaurants. Provides full-service solutions from sourcing to installation with 3-year warranties.",
+    "location": "Primary warehouse and refurbishment factory in Dalby, Sk\u00e5ne. Secondary warehouse in J\u00f6nk\u00f6ping. Sales office in Stockholm. Nationwide coverage across Sweden.",
+    "mapLocations": [
+      {
+        "name": "Stockholm Showroom",
+        "address": "Riddargatan 7, 114 35 Stockholm",
+        "lat": 59.3364,
+        "lng": 18.0772
+      },
+      {
+        "name": "Dalby Factory & Warehouse",
+        "address": "Pumpv\u00e4gen 1, 247 50 Dalby",
+        "lat": 55.6640,
+        "lng": 13.3440
+      },
+      {
+        "name": "J\u00f6nk\u00f6ping Warehouse",
+        "address": "J\u00f6nk\u00f6ping (Warehouse)",
+        "lat": 57.7826,
+        "lng": 14.1618
+      }
+    ],
+    "services": [
+      "Office furniture sales and refurbishment",
+      "Hotel furniture sourcing and refurbishment",
+      "Restaurant and caf\u00e9 furniture",
+      "Custom reupholstery with fire-rated fabrics",
+      "Buy-back and circular loop programs",
+      "Corporate liquidation management",
+      "Full logistics and installation services",
+      "Fire safety testing coordination via RISE/SP",
+      "3-year warranty on refurbished items",
+      "Project management for large-scale renovations",
+      "Sustainability reporting and CO2 documentation"
+    ],
+    "capabilities": {
+      "volume": "65,000+ items in inventory with capacity for multiple simultaneous large hotel projects. Historically accumulated 30,000 chairs, demonstrating exceptional volume capability. Can handle 100-200 room hotel renovations.",
+      "leadTime": "Stock items: 1-3 weeks. Custom sourcing projects: 6-12 weeks. Refurbishment services add 3-6 weeks. Volume orders: 4-8 weeks for accumulation and quality control.",
+      "inventory": "Largest B2B furniture inventory in Sweden. Strong focus on office chairs, desks, storage, sofas, lounge furniture. Restaurant and caf\u00e9 furniture available. Critical gap: hotel bed frames not currently stocked.",
+      "logistics": "Nationwide Swedish delivery. Stockholm sales office provides rapid metropolitan coverage. Full installation services with professional project management. Nordic coverage possible but requires verification."
+    },
+    "contact": {
+      "name": "Ola Sj\u00f6din, CEO & Founder",
+      "phone": "+46 (0)413-21 80 70",
+      "email": "ola@yllw.com, sales@yllw.com",
+      "website": "https://www.yllw.com"
+    },
+    "certifications": [
+      "Kammarkollegiet framework supplier status",
+      "RISE and SP testing lab partnerships for fire safety",
+      "Contract-grade textile fire ratings (EN 1021)",
+      "Full sustainability reporting capability",
+      "CO2 quantification for projects"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 1",
+      "score": "Highest - Premium hospitality specialist with proven hotel experience",
+      "strengths": [
+        "Documented hospitality segment focus (Hotell & Restaurang)",
+        "Proven hotel projects: Nobis Hotels, Wihlborgs premium properties",
+        "Largest inventory (65,000+ items) enables volume hotel projects",
+        "In-house refurbishment factory ensures quality control",
+        "3-year warranty provides client confidence",
+        "Fire safety capability with RISE/SP testing coordination",
+        "Full-service model: sourcing, refurbishment, logistics, installation",
+        "Stockholm presence for rapid metropolitan delivery",
+        "Framework supplier credentials demonstrate enterprise capability",
+        "Sustainability reporting matches hotel ESG requirements"
+      ],
+      "gaps": [
+        "Hotel bed frames not currently stocked (critical 25-30% of room budget)",
+        "Material passports not systematically provided",
+        "Hospitality segment not exclusively focused (competes with office furniture)",
+        "Textile refurbishment uses new fire-rated fabrics (not reused textiles)",
+        "Website doesn't prominently showcase hotel portfolio"
+      ]
+    },
+    "pricing": "Premium positioning at approximately 50-70% of new furniture cost. Volume discounts available for 100+ room projects (15-20% off standard pricing). Framework agreement pricing negotiable. Refurbishment adds 20-30% margin to base sourcing cost.",
+    "projectExamples": [
+      "Nobis Hotels - luxury hospitality furniture refurbishment",
+      "Wihlborgs - multiple premium property fit-outs with sustainability focus",
+      "Kammarkollegiet framework projects - government and institutional buildings",
+      "E.ON collaboration via Input partnership - 195 tonnes CO2 saved",
+      "Major corporate office fit-outs (100+ workstations)",
+      "Restaurant and caf\u00e9 furniture projects across Sweden"
+    ],
+    "strengths": [
+      "Largest B2B reused furniture inventory in Sweden (65,000+ items)",
+      "Only operator with confirmed hotel market experience and references",
+      "In-house refurbishment factory enables quality control and customization",
+      "3-year warranty demonstrates confidence in refurbishment quality",
+      "Fire safety testing coordination capability essential for hospitality",
+      "Full-service model reduces client coordination burden",
+      "Framework supplier status enables enterprise contracts",
+      "Stockholm + Dalby + J\u00f6nk\u00f6ping coverage provides national reach",
+      "Buy-back programs create circular loop potential"
+    ],
+    "gaps": [
+      "Hotel bed frames (critical gap blocking 25-30% of guest room budget)",
+      "Material passport systems not yet implemented",
+      "Textile refurbishment capability limited to new fire-rated fabrics",
+      "Hospitality positioning not exclusive (office furniture still primary focus)",
+      "Lighting fixture refurbishment and electrical certification not offered",
+      "Cross-border logistics (Finland-Sweden) requires verification",
+      "Small-batch boutique projects may be deprioritized vs large corporate clients"
+    ],
+    "founded": "2011 (as Soeco) - rebrand to YLLW ongoing",
+    "employees": "~40",
+    "legalStructure": "Aktiebolag (AB) - Private company",
+    "formerNames": [
+      "Soeco Kontorsm\u00f6bler AB"
+    ],
+    "ownership": "Private ownership - Founder Ola Sj\u00f6din",
+    "specificTestStandards": [
+      "EN 1021-1",
+      "EN 1021-2",
+      "Contract-grade textiles"
+    ],
+    "warrantyDuration": "3 years",
+    "rentalOptions": true,
+    "minimumOrder": "No strict minimum but economical for orders >20 items",
+    "volumeDiscounts": "15-20% off for 100+ room projects",
+    "aestheticDescription": "Professional quality, contract-grade furniture",
+    "bestFor": [
+      "100-200 room hotel renovations",
+      "Premium hospitality properties requiring fire safety compliance",
+      "Projects needing 50+ matching items with 6-8 week lead time",
+      "Stockholm/G\u00f6teborg/Malm\u00f6 locations"
+    ],
+    "avoidFor": [
+      "Projects requiring 100+ truly identical items",
+      "Hotel bed frames (critical gap - not stocked)",
+      "Small boutique projects (<20 items) - may be deprioritized"
+    ],
+    "confidenceLevel": "\u2b50\u2b50\u2b50\u2b50\u2b50 VERY HIGH",
+    "verificationStatus": "Multi-source verified for major claims. 30% annual growth rate documented. Hospitality service line explicit on website. Nobis project confirmed multiple sources.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "input_interior_greenified",
+    "name": "INPUT INTERI\u00d6R / GREENIFIED",
+    "description": "Sweden's largest interior solutions provider with 1,000+ employees and 41 showrooms nationwide. Operates Greenified circular marketplace platform integrating new and reused furniture. Enterprise-scale infrastructure with professional project management and comprehensive sustainability documentation.",
+    "location": "41 showrooms across Sweden with prominent Stockholm headquarters. Pan-Nordic presence including Finland, Denmark, and Norway. Primary refurbishment operations in Dalby (shared with YLLW partnership). J\u00f6nk\u00f6ping warehouse facility.",
+    "mapLocations": [
+      {
+        "name": "HQ V\u00e4stra Fr\u00f6lunda",
+        "address": "Olof Asklunds gata 10, 421 30 V\u00e4stra Fr\u00f6lunda",
+        "lat": 57.6534,
+        "lng": 11.9317
+      },
+      {
+        "name": "Stockholm Office",
+        "address": "Sveav\u00e4gen 145, 113 46 Stockholm",
+        "lat": 59.3444,
+        "lng": 18.0532
+      },
+      {
+        "name": "J\u00f6nk\u00f6ping Office",
+        "address": "Huskvarnav\u00e4gen 64, 554 54 J\u00f6nk\u00f6ping",
+        "lat": 57.7947,
+        "lng": 14.2256
+      }
+    ],
+    "services": [
+      "Sales of professionally refurbished furniture",
+      "Greenified marketplace platform (commission-based)",
+      "Furniture rental options for corporate clients",
+      "Full-service project management (turnkey solutions)",
+      "Custom sourcing for specific design requirements",
+      "Professional reupholstery and refinishing",
+      "New furniture integration (hybrid circular + new)",
+      "Logistics and installation services",
+      "Sustainability reporting and CO2 quantification",
+      "Nordic-wide delivery and coordination",
+      "Volume discount programs for enterprise clients"
+    ],
+    "capabilities": {
+      "volume": "Enterprise scale: entire corporate headquarters fit-outs documented (E.ON example). 1,000+ employee infrastructure enables simultaneous large projects. Access to both YLLW inventory (Dalby) and own Input Stockholm stock.",
+      "leadTime": "Greenified stock items: 1-3 weeks. Custom sourcing projects: 6-12 weeks. Refurbishment services: add 3-6 weeks. Enterprise PM structure enables complex phased delivery schedules.",
+      "inventory": "Hybrid model: large refurbished inventory plus new furniture integration. Access to premium brands (Vitra, Fritz Hansen) in inventory. Dalby refurbishment factory shared capacity with YLLW. Stockholm HQ showroom for rapid metro access.",
+      "logistics": "Confirmed Nordic coverage (Sweden, Finland, Denmark, Norway). 41 showrooms provide distributed delivery capability. Professional logistics network for cross-border projects. Stockholm-Helsinki route proven."
+    },
+    "contact": {
+      "name": "Key Account Manager (contact via main channels)",
+      "phone": "+46 200 77 00 25",
+      "email": "info@inputinterior.se",
+      "website": "https://www.inputinterior.se, https://greenified.se"
+    },
+    "certifications": [
+      "Full sustainability reporting (195 tonnes CO2e quantified in E.ON case)",
+      "Professional documentation systems for enterprise clients",
+      "EU-wide environmental product declarations (EPDs)",
+      "EN standard fire testing capability (arrange via partners)",
+      "Green building certification project experience"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 1",
+      "score": "High potential - Strong enterprise capability but unproven hospitality track record",
+      "strengths": [
+        "Largest scale operator (1,000+ employees, 41 showrooms)",
+        "Pan-Nordic presence enables cross-border hotel projects",
+        "Hybrid new + reused model allows seamless integration",
+        "Enterprise infrastructure with dedicated project managers",
+        "E.ON case study demonstrates large-scale sustainability projects",
+        "Greenified platform provides digital inventory access",
+        "Professional sustainability documentation and CO2 reporting",
+        "Premium brand access (Vitra, Fritz Hansen) in inventory",
+        "Stockholm HQ prominence for rapid metropolitan projects",
+        "Volume capacity suitable for 100-200 room hotels"
+      ],
+      "gaps": [
+        "No documented hotel projects or hospitality references",
+        "Fire safety testing coordination less proactive than YLLW",
+        "Hospitality specialization unproven (office focus dominant)",
+        "Stockholm showroom prominence unclear vs 41 total locations",
+        "Fire compliance documentation not systematically provided",
+        "Hotel-specific logistics (night deliveries, phased rollouts) unverified",
+        "Aesthetic curation for hospitality vs office needs confirmation"
+      ]
+    },
+    "pricing": "Volume discounts available for enterprise clients. Turnkey service model with bundled pricing (design, procurement, installation). Likely competitive with YLLW at 50-70% of new furniture cost. Greenified marketplace items individually priced by sellers.",
+    "projectExamples": [
+      "E.ON corporate headquarters - complete office fit-out saving 195 tonnes CO2",
+      "Wihlborgs premium properties (collaboration with YLLW)",
+      "Major corporate clients across Nordics",
+      "Enterprise framework agreements",
+      "Greenified platform transactions across Sweden",
+      "Nordic cross-border projects (Finland-Sweden confirmed)"
+    ],
+    "strengths": [
+      "Largest organizational scale (1,000+ employees) in Swedish reuse market",
+      "Pan-Nordic coverage (41 showrooms) enables cross-border hotel projects",
+      "Hybrid new + reused model provides flexibility for brand-specific hotels",
+      "Enterprise PM infrastructure handles complex phased renovations",
+      "Greenified platform offers digital inventory transparency",
+      "E.ON sustainability case provides credibility for ESG-focused clients",
+      "Premium brand inventory (Vitra, Fritz Hansen) suitable for upscale hotels",
+      "Professional documentation systems match hotel procurement requirements",
+      "Stockholm prominence provides rapid metropolitan delivery"
+    ],
+    "gaps": [
+      "Zero documented hospitality projects (unproven in hotel sector)",
+      "Fire safety specialization less developed than YLLW",
+      "Hospitality aesthetic curation unverified (office furniture focus)",
+      "Hotel-specific service adaptations (night delivery, guest disruption management) not confirmed",
+      "41 showrooms distribution may dilute Stockholm resources vs YLLW focus",
+      "Cross-border regulatory navigation (Swedish BBR vs Finnish codes) unproven",
+      "Material passport systems not implemented",
+      "Hotel bed frames not stocked (same gap as YLLW)"
+    ],
+    "founded": "Input established (year not documented); Greenified launched as circular division",
+    "employees": "1,000+",
+    "legalStructure": "Aktiebolag (AB) - Scandinavia's largest independent interior solutions firm",
+    "formerNames": [],
+    "ownership": "Independent private company",
+    "specificTestStandards": [
+      "EN standards via RISE/SP",
+      "Can coordinate fire testing"
+    ],
+    "warrantyDuration": "Provides warranties on refurbished items (duration not specified)",
+    "rentalOptions": true,
+    "minimumOrder": "No strict minimum; marketplace accessible for single items; volume projects preferred",
+    "volumeDiscounts": "Volume discounts available for enterprise clients",
+    "aestheticDescription": "Premium designer brands (Fritz Hansen, Vitra, Herman Miller)",
+    "bestFor": [
+      "Enterprise-scale projects",
+      "Pan-Nordic deployments",
+      "Premium design requirements",
+      "Sustainability reporting requirements"
+    ],
+    "avoidFor": [
+      "Projects without documented hospitality experience validation",
+      "Fire safety-critical projects where proactive coordination is essential (less systematic than YLLW)"
+    ],
+    "confidenceLevel": "\u2b50\u2b50\u2b50\u2b50 HIGH",
+    "verificationStatus": "Multi-source verified for organizational scale and E.ON project. Specific current Greenified inventory needs platform check. Exact hospitality project list requires direct contact.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Hybrid"
+  },
+  {
+    "id": "rekomo_ab",
+    "name": "REKOMO AB",
+    "description": "Established B2B office furniture reuse specialist (approximately 30 years operating history) with emphasis on fast delivery and competitive pricing. Three major showrooms covering Sweden's primary metropolitan areas with large warehouse facilities at each location.",
+    "location": "Major showrooms and warehouses in Stockholm, Gothenburg (G\u00f6teborg), and Malm\u00f6 covering Sweden's three largest metropolitan areas. Additional presence in multiple Swedish cities providing regional coverage.",
+    "mapLocations": [
+      {
+        "name": "Stockholm",
+        "address": "Lyftkransv\u00e4gen 7B, 142 50 Skog\u00e5s",
+        "lat": 59.2065,
+        "lng": 18.0965
+      },
+      {
+        "name": "G\u00f6teborg",
+        "address": "Fl\u00f6jelbergsgatan 11-13, 431 37 M\u00f6lndal",
+        "lat": 57.6593,
+        "lng": 12.0119
+      },
+      {
+        "name": "Malm\u00f6",
+        "address": "Koster\u00f6gatan 12, 211 24 Malm\u00f6",
+        "lat": 55.6033,
+        "lng": 13.0163
+      }
+    ],
+    "services": [
+      "Buy and resell used office furniture",
+      "Furniture rental options",
+      "Fast delivery services (1-2 week emphasis)",
+      "Volume office furniture procurement",
+      "Basic refurbishment and cleaning",
+      "Corporate liquidation purchases",
+      "Nordic-wide delivery services",
+      "Large showroom browsing experience",
+      "Competitive budget pricing"
+    ],
+    "capabilities": {
+      "volume": "Large corporate office fit-outs documented. Three major warehouse facilities enable significant inventory. Can accommodate volume orders but may require 2-4 weeks to accumulate matching items across locations.",
+      "leadTime": "Stock items: 1-2 weeks (fast delivery core value proposition). Volume orders: 2-4 weeks for accumulation. Rush delivery capability for urgent projects.",
+      "inventory": "Large ready stock across three major showrooms. Focus on office furniture (chairs, desks, storage). Generic commercial aesthetics rather than curated design pieces. High inventory turnover model.",
+      "logistics": "Confirmed Nordic coverage (serves entire Nordics per website claims). Stockholm-G\u00f6teborg-Malm\u00f6 triangle provides major metro coverage. Regional delivery network for secondary Swedish cities."
+    },
+    "contact": {
+      "name": "Contact via regional offices",
+      "phone": "010-33 33 111",
+      "email": "info@rekomo.se",
+      "website": "https://www.rekomo.se"
+    },
+    "certifications": [
+      "Basic commercial furniture standards",
+      "No documented fire safety testing coordination",
+      "No systematic certification documentation mentioned"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 1",
+      "score": "Medium-high for budget hotels - Best for cost-focused projects with less stringent aesthetic requirements",
+      "strengths": [
+        "Fast delivery (1-2 weeks) valuable for rush hotel projects",
+        "Competitive pricing (~50% of new) suits budget hotel chains",
+        "Large inventory across three major metros",
+        "Approximately 30 years operating history demonstrates stability",
+        "Nordic coverage claimed (useful for chain rollouts)",
+        "Volume capacity suitable for 100+ room projects",
+        "Three major showrooms allow client browsing/selection",
+        "Rental options provide flexibility for temporary needs"
+      ],
+      "gaps": [
+        "Generic aesthetics unsuitable for design-forward or luxury hotels",
+        "No documented fire safety testing coordination capability",
+        "No hospitality project references or experience documented",
+        "Basic refurbishment (closer to as-is than YLLW's restored quality)",
+        "No systematic compliance documentation support",
+        "Office furniture focus limits hospitality-appropriate inventory",
+        "No material passport or advanced sustainability documentation",
+        "Fire-rated textile integration unclear"
+      ]
+    },
+    "pricing": "Most competitive pricing among Tier 1-2 operators at approximately 50% of new furniture cost. Volume discounts likely available. Budget positioning trades refurbishment depth for cost savings.",
+    "projectExamples": [
+      "Large corporate office fit-outs across Sweden",
+      "Multi-location corporate rollouts using three major metros",
+      "Volume furniture procurement for business facilities",
+      "Fast-track office relocations and expansions"
+    ],
+    "strengths": [
+      "Fastest delivery times (1-2 weeks) in Swedish B2B reuse market",
+      "Most competitive pricing (approximately 50% of new)",
+      "30 years operating history provides market stability",
+      "Three major metro locations (Stockholm-G\u00f6teborg-Malm\u00f6) cover primary markets",
+      "Large warehouse facilities enable volume projects",
+      "Nordic coverage useful for hotel chain multi-property rollouts",
+      "Showroom model allows hands-on client selection",
+      "Rental options add flexibility for temporary or seasonal hotels"
+    ],
+    "gaps": [
+      "Generic office aesthetics unsuitable for upscale hospitality",
+      "No fire safety testing or compliance coordination capability",
+      "No documented hospitality experience or references",
+      "Refurbishment quality lower than YLLW (trades quality for speed/cost)",
+      "No systematic sustainability documentation or material passports",
+      "Compliance support minimal (client handles permitting/testing)",
+      "Hotel-specific services (reupholstery, custom finishes) not emphasized",
+      "Large operators may deprioritize small boutique projects"
+    ],
+    "founded": "Approximately 1992 (~30+ years in business)",
+    "employees": "~50",
+    "legalStructure": "Aktiebolag (AB)",
+    "formerNames": [
+      "Ergoff"
+    ],
+    "ownership": "Private company",
+    "specificTestStandards": [
+      "May coordinate testing for large contracts (case-by-case)"
+    ],
+    "warrantyDuration": "No explicit warranty documented",
+    "rentalOptions": true,
+    "minimumOrder": "No documented minimum; B2B and B2C mix suggests flexible",
+    "volumeDiscounts": "Likely volume discounts available",
+    "aestheticDescription": "Generic/functional aesthetics, budget to mid-market quality",
+    "bestFor": [
+      "Budget hotels, hostels, cost-focused chain refurbishments",
+      "Fast-track projects (1-2 weeks)",
+      "Cost-focused renovations"
+    ],
+    "avoidFor": [
+      "Luxury or design-forward hotels",
+      "Projects requiring systematic fire safety documentation",
+      "Projects needing premium aesthetics"
+    ],
+    "confidenceLevel": "\u2b50\u2b50\u2b50 MEDIUM-HIGH",
+    "verificationStatus": "Company website and scale verifiable. ~30 years operation confirmed multiple sources. Hospitality-specific capabilities need confirmation.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "kompanjonen",
+    "name": "KOMPANJONEN",
+    "description": "Specialized circular construction consultant and reuse facilitator, subsidiary of Dacke Consulting. Expert in regulatory compliance navigation, Building Material Bank (BVB) alternative pathways, and complex sourcing coordination. Operates as strategic partner rather than stock-based supplier.",
+    "location": "Stockholm-based consulting office. Not a warehouse operation but coordinates sourcing from regional suppliers and salvage networks across Sweden.",
+    "mapLocations": [
+      {
+        "name": "Stockholm (Consulting)",
+        "address": "Stockholm (General)",
+        "lat": 59.3293,
+        "lng": 18.0686
+      }
+    ],
+    "services": [
+      "Circular construction consulting and advisory",
+      "Building Material Bank (BVB) compliance documentation",
+      "Custom sourcing and procurement coordination",
+      "Fire safety testing coordination with RISE/SP labs",
+      "Regulatory navigation for Swedish building codes",
+      "Material specification and compliance verification",
+      "Specialty item sourcing (lighting, building materials, unique pieces)",
+      "Building permit documentation support",
+      "Sustainability certification assistance (LEED, BREEAM, Milj\u00f6byggnad)",
+      "Architectural salvage coordination",
+      "Project-based consulting retainers"
+    ],
+    "capabilities": {
+      "volume": "Not a volume supplier - sources on-demand for specific projects. Can coordinate large building renovation scales (entire hotel interior documented). Strength is sourcing difficult-to-find items, not bulk furniture.",
+      "leadTime": "Sourcing projects: 4-16 weeks variable depending on specificity and market availability. Complex or rare items: longer lead times. Custom sourcing nature means unpredictable timelines.",
+      "inventory": "No warehouse inventory - consultant model coordinates third-party suppliers. Network includes \u00c5terbruksfabriken, Bratt\u00f6ns, vintage dealers, demolition contractors across Sweden.",
+      "logistics": "Coordinates logistics but doesn't provide delivery services. Cross-border (Sweden-Finland) possible via coordination but not standard offering. Client or general contractor typically handles final delivery."
+    },
+    "contact": {
+      "name": "Per H\u00e5kansson (CEO, Dacke Consulting parent company)",
+      "phone": "Via website",
+      "email": "Via website contact or Dacke Consulting channels",
+      "website": "https://kompanjonen.se, http://dackeconsulting.com"
+    },
+    "certifications": [
+      "BVB (Building Material Bank) specialist certification",
+      "Swedish building code compliance expertise",
+      "Green building certification consulting capability",
+      "Fire safety regulatory knowledge",
+      "Guides clients to certified options rather than certifying products directly"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 2",
+      "score": "High potential as specialist facilitator - NOT direct supplier but critical for complex circular hotel projects",
+      "strengths": [
+        "Compliance specialization essential for fire-critical hospitality spaces",
+        "BVB alternative pathway expertise enables innovative circular solutions",
+        "Fire safety testing coordination reduces client burden",
+        "Custom sourcing finds unique pieces YLLW/Input can't provide",
+        "Building permit documentation support navigates regulatory complexity",
+        "Stockholm location provides local Swedish regulatory knowledge",
+        "Consultant model adapts to any project size (no minimum orders)",
+        "Network coordination accesses regional specialists (Bratt\u00f6ns, \u00c5terbruksfabriken)",
+        "Sustainability certification support (LEED/BREEAM) matches hotel ESG goals"
+      ],
+      "gaps": [
+        "Not a volume furniture supplier (cannot fulfill baseline 100+ chairs)",
+        "No warehouse inventory requires coordination of multiple sources",
+        "No installation services (client coordinates separately)",
+        "Consultant fees add project cost vs direct supplier purchasing",
+        "Unpredictable lead times for custom sourcing (4-16 weeks variable)",
+        "No hospitality-specific experience documented",
+        "General construction focus (not hotel specialization)",
+        "Sourcing model introduces complexity vs single-source suppliers"
+      ]
+    },
+    "pricing": "Consulting/facilitation fee model: 15-25% commission on sourced items (industry standard) or project advisory retainer or hourly/daily consulting rates. Specific rates require direct negotiation.",
+    "projectExamples": [
+      "Large building renovations requiring circular construction compliance",
+      "BVB alternative pathway documentation for green building projects",
+      "Complex regulatory navigation for sustainable construction",
+      "Custom sourcing for architectural salvage and specialty items",
+      "Hotel interior projects documented (entire hotel scale)",
+      "Coordination of multiple reuse suppliers for comprehensive fit-outs"
+    ],
+    "strengths": [
+      "Only identified BVB compliance specialist in Swedish B2B reuse market",
+      "Fire safety testing coordination capability critical for hospitality",
+      "Regulatory navigation expertise reduces permitting risk",
+      "Custom sourcing network finds items volume suppliers can't stock",
+      "Consultant model provides flexibility (no inventory limitations)",
+      "Stockholm location offers local Swedish building code knowledge",
+      "Sustainability certification support enables LEED/BREEAM hotel projects",
+      "Building permit documentation reduces architect/client workload",
+      "Project-specific adaptability (boutique to large-scale)"
+    ],
+    "gaps": [
+      "Cannot supply volume furniture needs (100+ matching chairs impossible)",
+      "No warehouse inventory requires multi-supplier coordination",
+      "Installation services not provided (adds coordination complexity)",
+      "Consultant fees increase project costs 15-25%",
+      "Lead times unpredictable (sourcing-dependent, 4-16 weeks variable)",
+      "No hospitality-specific expertise documented (general construction)",
+      "Not turnkey solution (requires client project management involvement)",
+      "Sourcing complexity may slow fast-track hotel renovations"
+    ],
+    "founded": "Not documented",
+    "employees": "Small specialized team (size not documented)",
+    "legalStructure": "Subsidiary of larger consulting/industrial group (Dacke Consulting)",
+    "formerNames": [],
+    "ownership": "Part of Dacke Consulting group",
+    "specificTestStandards": [
+      "Coordinates RISE/SP testing",
+      "Compliance documentation specialist"
+    ],
+    "warrantyDuration": "Depends on sourced suppliers",
+    "rentalOptions": false,
+    "minimumOrder": "Project-based; likely no strict minimum but economical for >\u20ac10k projects",
+    "volumeDiscounts": "N/A - consultant/facilitation fee model",
+    "aestheticDescription": "N/A - facilitator not direct supplier",
+    "bestFor": [
+      "Complex circular projects needing expert coordination",
+      "Compliance navigation",
+      "BVB alternative pathway projects",
+      "Fire safety testing coordination"
+    ],
+    "avoidFor": [
+      "Volume furniture supply (cannot fulfill baseline 100+ chairs)",
+      "Projects needing single-source supplier",
+      "Budget-constrained projects (15-25% consultant fees add cost)"
+    ],
+    "confidenceLevel": "\u2b50\u2b50\u2b50 MEDIUM-HIGH",
+    "verificationStatus": "Role and specialization verified. Fabege partnership documented. Compliance specialization confirmed. Specific project portfolio and pricing require direct contact.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "recycling_partner_rp",
+    "name": "RECYCLING PARTNER (RP) M\u00d6BLER & INREDNING",
+    "description": "Furniture reuse division of Sweden's Recycling Partner waste management conglomerate. Operates 8 regional warehouse locations across Sweden providing distributed inventory coverage. Leverages parent company's extensive logistics and corporate liquidation network.",
+    "location": "8 warehouse locations distributed across Sweden providing best geographic coverage of any identified operator. Regional presence enables local delivery and reduces transport costs for projects outside major metros.",
+    "mapLocations": [
+      {
+        "name": "Malm\u00f6 (Staffanstorp)",
+        "address": "Maskinv\u00e4gen 1, 245 34 Staffanstorp",
+        "lat": 55.6583,
+        "lng": 13.2046
+      },
+      {
+        "name": "Uppsala",
+        "address": "Hytt\u00f6gatan 6, 752 28 Uppsala",
+        "lat": 59.8519,
+        "lng": 17.6522
+      },
+      {
+        "name": "Stockholm (Nacka)",
+        "address": "Kvarnholmsv\u00e4gen 56, Nacka",
+        "lat": 59.3128,
+        "lng": 18.1304
+      },
+      {
+        "name": "Link\u00f6ping",
+        "address": "Norra St\u00e5nggatan 20, 582 73 Link\u00f6ping",
+        "lat": 58.4111,
+        "lng": 15.6268
+      }
+    ],
+    "services": [
+      "Buy and resell used office furniture",
+      "Regional warehouse sales across 8 Swedish locations",
+      "Basic refurbishment and cleaning services",
+      "Corporate liquidation coordination via RP parent company",
+      "Distributed inventory aggregation across regions",
+      "Local delivery from regional warehouses",
+      "Potential 'Remake' custom furniture line (requires verification)",
+      "Waste management integration (circular loop via parent company)"
+    ],
+    "capabilities": {
+      "volume": "Regional network strength: 8 locations enable distributed inventory aggregation. Corporate office scale projects documented. Can batch orders of 50-100 items if distributed across regional warehouses. Smaller per-location inventory than YLLW/Input but geographic distribution compensates.",
+      "leadTime": "Stock items: 2-3 weeks from regional warehouses. Volume orders: 4-8 weeks to accumulate items across 8 locations. Regional proximity reduces delivery times vs Stockholm-only operators.",
+      "inventory": "Distributed across 8 regional warehouses rather than centralized. Office furniture focus (chairs, desks, storage). Functional commercial aesthetics. Parent company waste management network provides sourcing pipeline from corporate liquidations.",
+      "logistics": "Best geographic distribution of any Swedish operator (8 locations). Parent company's extensive logistics network from waste management operations. Potential Nordic reach via RP group network but requires verification for furniture division."
+    },
+    "contact": {
+      "name": "Contact via regional offices or main website",
+      "phone": "Via website (regional offices)",
+      "email": "Via website contact form",
+      "website": "https://rp.se"
+    },
+    "certifications": [
+      "RP group environmental credentials from waste management operations",
+      "Specific product certifications not documented",
+      "Professional waste/recycling industry standards",
+      "Fire safety testing capability not confirmed"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 2",
+      "score": "Medium potential - Best for regional projects outside Stockholm where RP has local presence",
+      "strengths": [
+        "8 regional locations provide best geographic coverage in Sweden",
+        "Parent company (RP group) credibility from waste management sector",
+        "Distributed inventory reduces transport costs for regional hotels",
+        "Corporate liquidation network via parent company ensures supply",
+        "Environmental credentials from RP group's sustainability focus",
+        "Regional presence useful for hotel chains with distributed properties",
+        "Waste management infrastructure enables circular loop closure",
+        "Potential 'Remake' custom line adds value (if confirmed)"
+      ],
+      "gaps": [
+        "No documented hospitality projects or hotel experience",
+        "Basic refurbishment services (functional rather than design-focused)",
+        "Fire safety testing coordination not documented",
+        "Office furniture focus limits hospitality-appropriate aesthetics",
+        "Smaller per-location inventory vs centralized operators",
+        "No systematic compliance documentation mentioned",
+        "Regional coordination complexity (8 locations requires aggregation)",
+        "Mid-market quality positioning vs premium hotel needs"
+      ]
+    },
+    "pricing": "Likely volume discounts available given regional network scale. Competitive regional pricing due to lower transport costs. Estimated 50-60% of new furniture cost.",
+    "projectExamples": [
+      "Corporate office fit-outs across Sweden's regions",
+      "Regional projects leveraging distributed warehouse network",
+      "5,000+ clients documented (primarily office/commercial)",
+      "Corporate liquidation management via parent RP group"
+    ],
+    "strengths": [
+      "Best geographic distribution (8 locations) of any Swedish B2B reuse operator",
+      "Parent company credibility and infrastructure from RP waste management group",
+      "Regional delivery reduces costs for hotels outside Stockholm-G\u00f6teborg-Malm\u00f6",
+      "Corporate liquidation network ensures consistent furniture supply",
+      "Environmental credentials from parent company's sustainability focus",
+      "Distributed inventory enables multi-site hotel chain projects",
+      "Waste management integration creates circular loop potential",
+      "5,000+ corporate clients demonstrate market acceptance"
+    ],
+    "gaps": [
+      "No hotel or hospitality experience documented",
+      "Basic refurbishment quality (functional vs design-forward)",
+      "Fire safety compliance capability not confirmed",
+      "Office furniture aesthetics unsuitable for upscale hotels",
+      "8 locations create coordination complexity (vs single warehouse)",
+      "Per-location inventory smaller than centralized operators (YLLW, Input)",
+      "No systematic documentation or material passport systems",
+      "Regional focus may limit Stockholm metro rapid delivery capability"
+    ],
+    "founded": "Not documented",
+    "employees": "Not documented (part of larger RP group)",
+    "legalStructure": "Aktiebolag (AB) - Part of larger recycling conglomerate",
+    "formerNames": [],
+    "ownership": "Part of Recycling Partner AB group (waste management/recycling conglomerate)",
+    "specificTestStandards": [
+      "Case-by-case for large contracts"
+    ],
+    "warrantyDuration": "Not documented",
+    "rentalOptions": false,
+    "minimumOrder": "No documented minimum",
+    "volumeDiscounts": "Likely volume discounts given regional network scale",
+    "aestheticDescription": "Mid-market commercial quality, functional aesthetics",
+    "bestFor": [
+      "Regional projects outside Stockholm where RP has local presence",
+      "Mid-market quality requirements",
+      "Distributed hotel chain properties across Sweden's 8 regional locations"
+    ],
+    "avoidFor": [
+      "Luxury hotel projects",
+      "Fire safety compliance-critical projects",
+      "Projects requiring premium aesthetics"
+    ],
+    "confidenceLevel": "\u2b50\u2b50\u2b50 MEDIUM",
+    "verificationStatus": "Geographic coverage verified (8 locations). Hospitality-specific capabilities unclear. Documentation/testing services need confirmation.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "aterbruksfabriken",
+    "name": "\u00c5TERBRUKSFABRIKEN",
+    "description": "Building materials salvage and reuse specialist operating Sweden's largest dedicated circular construction warehouse. Focus on architectural elements, interior construction systems, and building materials rather than furniture. S\u00f6dert\u00e4lje location provides Stockholm region access.",
+    "location": "Vrena, S\u00f6dert\u00e4lje/S\u00f6rmland region approximately 50km from Stockholm. 5,000 square meter dedicated warehouse facility for building materials and interior construction components.",
+    "mapLocations": [
+      {
+        "name": "Vrena Warehouse",
+        "address": "Stationsv\u00e4gen 6, 611 73 Vrena",
+        "lat": 58.8606,
+        "lng": 16.6989
+      }
+    ],
+    "services": [
+      "Salvaged building materials sales (doors, windows, flooring)",
+      "Architectural element salvage and resale",
+      "Interior construction systems (drywall, partitions, ceiling systems)",
+      "HVAC and mechanical systems salvage",
+      "Millwork and finish materials",
+      "Wood, glass, and stone reclaimed materials",
+      "Green building certification project support",
+      "Large-scale demolition material recovery",
+      "Building material quality assessment"
+    ],
+    "capabilities": {
+      "volume": "5,000 m\u00b2 warehouse enables large commercial building renovation scale. Can supply materials for entire hotel interior build-outs (structural and finish materials). Not suitable for furniture volume (limited furniture inventory).",
+      "leadTime": "Stock items: 2-4 weeks from warehouse. Custom sourcing: 6-12 weeks (demolition-dependent timing). Building materials lead times longer than furniture due to project-specific sourcing.",
+      "inventory": "Extensive building materials: doors, windows, flooring, ceiling systems, glass partitions, drywall, millwork materials. Minimal furniture focus. Inventory depends on current demolition projects. S\u00f6dert\u00e4lje proximity to Stockholm provides metro access.",
+      "logistics": "Regional delivery within Stockholm area (50km radius). Heavy building materials (weight/volume) make cross-border shipping cost-prohibitive. Best for local/regional Swedish projects, not Finland exports."
+    },
+    "contact": {
+      "name": "Contact via website",
+      "phone": "Via website",
+      "email": "Via website contact",
+      "website": "https://aterbruksfabriken.se"
+    },
+    "certifications": [
+      "Green building certification project experience",
+      "Works with LEED, BREEAM, Milj\u00f6byggnad projects",
+      "Building material safety standards",
+      "Quality assessment protocols for salvaged materials"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 2",
+      "score": "Low-medium for furniture, HIGH for building materials - Best for hotel interior build-outs rather than furnishings",
+      "strengths": [
+        "5,000 m\u00b2 facility is Sweden's largest dedicated building material reuse warehouse",
+        "Building materials specialization fills gap in furniture-focused operators",
+        "S\u00f6dert\u00e4lje location (50km from Stockholm) provides metro area access",
+        "Green building certification experience supports sustainable hotel projects",
+        "Large commercial building renovation scale matches hotel needs",
+        "Architectural salvage creates unique hotel design opportunities",
+        "Cost savings on building materials (30-50% vs new) significant for renovations",
+        "Sustainable material sourcing supports hotel ESG commitments"
+      ],
+      "gaps": [
+        "Minimal furniture inventory (not suitable for guest room furnishings)",
+        "Building materials focus requires separate furniture suppliers",
+        "Demolition-dependent sourcing creates unpredictable lead times",
+        "Heavy materials unsuitable for cross-border shipping (Finland projects)",
+        "Contractor-focused (not interior designer partnerships documented)",
+        "Utilitarian vs hospitality-grade aesthetics requires vetting",
+        "No systematic hospitality project experience",
+        "Building material compliance (vs furniture) different expertise"
+      ]
+    },
+    "pricing": "Building materials typically 30-50% of new cost. Project-based pricing common. Volume discounts likely for large hotel renovation material packages.",
+    "projectExamples": [
+      "Large commercial building renovations",
+      "Green building certification projects (LEED, BREEAM, Milj\u00f6byggnad)",
+      "Architectural salvage for design-focused projects",
+      "Interior construction material supply for sustainable builds",
+      "Demolition material recovery for circular construction"
+    ],
+    "strengths": [
+      "Largest dedicated building material reuse warehouse in Sweden (5,000 m\u00b2)",
+      "Fills critical gap: building materials complement furniture operators",
+      "S\u00f6dert\u00e4lje location provides Stockholm region access (50km)",
+      "Green building certification experience essential for sustainable hotels",
+      "Architectural salvage creates unique design opportunities (lobbies, public spaces)",
+      "Cost savings (30-50% vs new) on building materials significant for budgets",
+      "Large commercial scale matches hotel renovation material volumes",
+      "Sustainable sourcing supports hotel ESG and circular economy commitments"
+    ],
+    "gaps": [
+      "Not a furniture supplier (cannot fulfill guest room furnishing needs)",
+      "Requires separate coordination with furniture operators (YLLW, Input)",
+      "Demolition-dependent inventory creates supply unpredictability",
+      "Heavy materials prohibit cost-effective cross-border shipping",
+      "Contractor sales focus (limited interior designer collaboration experience)",
+      "Hospitality-grade aesthetic curation not standard (functional focus)",
+      "No documented hotel projects or hospitality specialization",
+      "Building material compliance expertise different from furniture fire safety"
+    ],
+    "founded": "Not documented (post-2015 based on market emergence timing)",
+    "employees": "Not documented (likely small-medium team given warehouse scale)",
+    "legalStructure": "Likely AB but not documented",
+    "formerNames": [],
+    "ownership": "Private (not documented)",
+    "specificTestStandards": [
+      "Building materials compliance",
+      "Green building certification support"
+    ],
+    "warrantyDuration": "Not documented",
+    "rentalOptions": false,
+    "minimumOrder": "Likely project-based minimum (economical for \u20ac5k+ orders)",
+    "volumeDiscounts": "Likely available for large hotel renovation material packages",
+    "aestheticDescription": "Building materials focus - functional to architectural salvage quality",
+    "bestFor": [
+      "Hotel interior build-outs (doors, windows, flooring, ceiling systems)",
+      "Stockholm region projects (50km from Stockholm)",
+      "Green building certification projects (LEED, BREEAM, Milj\u00f6byggnad)"
+    ],
+    "avoidFor": [
+      "Guest room furniture needs (not a furniture supplier)",
+      "Cross-border Finland shipping (heavy materials cost-prohibitive)",
+      "Fast-track projects (demolition-dependent sourcing creates unpredictable lead times)"
+    ],
+    "confidenceLevel": "\u2b50\u2b50\u2b50 MEDIUM",
+    "verificationStatus": "Scale and focus area verified (5,000 m\u00b2 warehouse). Hospitality-specific capabilities unknown. Documentation processes unclear.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "place2place",
+    "name": "PLACE2PLACE",
+    "description": "Online marketplace platform aggregating third-party sellers of vintage and designer furniture. Does not own inventory but facilitates transactions between individual sellers and buyers. Specializes in unique, one-of-a-kind pieces rather than volume commercial furniture.",
+    "location": "Online platform without physical warehouses. Likely Stockholm-based team manages platform operations. Sellers located throughout Sweden with items requiring individual negotiation for delivery.",
+    "mapLocations": [],
+    "services": [
+      "Marketplace platform connecting furniture sellers and buyers",
+      "Vintage and designer furniture curation",
+      "Transaction facilitation and commission collection",
+      "Individual item listings from multiple third-party sellers",
+      "Unique statement pieces and designer collectibles",
+      "Online browsing and discovery platform",
+      "Seller verification and platform management"
+    ],
+    "capabilities": {
+      "volume": "Not suitable for volume orders. Each item is unique with individual sellers. Cannot supply 10+ matching chairs or uniform guest room furniture. Best for 1-5 statement pieces per project.",
+      "leadTime": "Highly variable: 2-8 weeks depending on individual seller negotiation. Each transaction requires separate coordination. No guaranteed timelines due to marketplace model.",
+      "inventory": "Aggregates third-party seller inventory (no owned stock). Vintage designer pieces, mid-century modern, architectural antiques. High-end aesthetic but unpredictable availability. Cannot guarantee specific items or quantities.",
+      "logistics": "Delivery depends on individual seller agreements. Some sellers offer delivery, others require buyer pickup. Cross-border (Sweden-Finland) possible if individual sellers agree but not standard platform service."
+    },
+    "contact": {
+      "name": "Platform team via website",
+      "phone": "Via website",
+      "email": "Via website",
+      "website": "https://www.place2place.se"
+    },
+    "certifications": [
+      "Not applicable - marketplace model does not certify products",
+      "Individual sellers responsible for item condition and compliance",
+      "No systematic fire testing or material documentation"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 2",
+      "score": "Boutique/statement pieces ONLY - NOT for volume uniform guest room furnishing",
+      "strengths": [
+        "Access to unique vintage designer pieces unavailable from commercial operators",
+        "High-end aesthetic suitable for luxury boutique hotels",
+        "Online platform enables easy browsing and discovery",
+        "Individual seller model allows rare finds (Arne Jacobsen, Alvar Aalto, etc.)",
+        "Suitable for lobby signature furniture and restaurant statement pieces",
+        "Complements volume suppliers (YLLW/Input) for design accent pieces",
+        "No minimum order constraints (single item purchases viable)",
+        "Designer furniture at 40-70% of new cost when available"
+      ],
+      "gaps": [
+        "Cannot supply volume or matching sets (each item unique)",
+        "Unpredictable availability (cannot guarantee specific pieces)",
+        "No fire safety testing or compliance documentation",
+        "Individual seller negotiation time-intensive (unsuitable for fast projects)",
+        "Delivery logistics seller-dependent (no standard service)",
+        "No warranty or quality guarantees (as-is marketplace)",
+        "Not suitable for uniform guest room furnishing or brand-standard hotels",
+        "Transaction complexity increases project coordination burden"
+      ]
+    },
+    "pricing": "Individual item pricing by sellers. No volume discounts. Marketplace commission added to seller prices. Designer pieces typically 40-70% of new retail when available. Unpredictable pricing due to vintage market volatility.",
+    "projectExamples": [
+      "Boutique hotel lobby statement pieces",
+      "Restaurant designer furniture accent pieces",
+      "Luxury suite unique vintage furnishings",
+      "Individual designer collectibles for design-forward properties"
+    ],
+    "strengths": [
+      "Access to unique vintage designer pieces unavailable elsewhere",
+      "High-end aesthetic quality suitable for luxury boutique hotels",
+      "Online platform simplifies browsing and discovery",
+      "No minimum order enables single statement piece purchases",
+      "Complements volume suppliers by filling unique design gaps",
+      "Designer furniture pricing (40-70% of new) when available",
+      "Individual seller model exposes rare architectural antiques",
+      "Suitable for design-critical spaces (lobbies, restaurants, signature suites)"
+    ],
+    "gaps": [
+      "Completely unsuitable for volume uniform furniture needs",
+      "Cannot guarantee availability of specific items or styles",
+      "Zero fire safety testing or compliance capability",
+      "Each transaction requires individual seller negotiation (time burden)",
+      "No standard delivery logistics (seller-dependent arrangements)",
+      "No warranties or quality control (as-is marketplace risk)",
+      "Unpredictable pricing due to vintage furniture market volatility",
+      "Not viable for brand-standard hotels requiring consistency"
+    ],
+    "founded": "Not documented",
+    "employees": "Small tech team (estimate based on platform model)",
+    "legalStructure": "Marketplace platform (tech company), likely AB but not documented",
+    "formerNames": [],
+    "ownership": "Private startup (inferred)",
+    "specificTestStandards": [],
+    "warrantyDuration": "No warranties (as-is marketplace)",
+    "rentalOptions": false,
+    "minimumOrder": "No minimum; single-item purchases feasible",
+    "volumeDiscounts": "N/A - individual seller pricing",
+    "aestheticDescription": "High-end designer vintage, collector-quality pieces, statement furniture",
+    "bestFor": [
+      "Boutique lobby furniture (1-5 statement pieces)",
+      "Unique restaurant furniture (designer classics)",
+      "Signature suites with curated vintage"
+    ],
+    "avoidFor": [
+      "Volume uniform furnishing (50+ identical items)",
+      "Brand-standard hotels requiring consistency",
+      "Fire safety compliance projects",
+      "Fast-track projects (individual seller negotiation time-intensive)"
+    ],
+    "confidenceLevel": "\u2b50\u2b50\u2b50 MEDIUM",
+    "verificationStatus": "Platform model and premium brands verified. Specific inventory variable by sellers. No systematic testing or warranties.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "brattons_aterbruk",
+    "name": "BRATT\u00d6NS \u00c5TERBRUK",
+    "description": "G\u00f6teborg regional architectural salvage yard specializing in unique statement pieces and reclaimed building materials. Salvage yard business model focuses on one-of-a-kind items rather than volume commercial furniture supply.",
+    "location": "G\u00f6teborg (Gothenburg) region, Western Sweden. Salvage yard facility with regional G\u00f6teborg market focus. Distance from Stockholm (approximately 470km) limits nationwide projects.",
+    "services": [
+      "Architectural salvage yard sales",
+      "Unique statement pieces and antiques",
+      "Reclaimed building materials",
+      "High-end vintage furniture (sold as-is)",
+      "Decorative architectural elements",
+      "Salvaged wood, metal, and stone materials",
+      "Regional G\u00f6teborg market specialty sourcing"
+    ],
+    "capabilities": {
+      "volume": "Salvage yard model unsuitable for volume orders. Cannot supply 50+ matching chairs or uniform hotel furniture. Best for 1-10 unique statement pieces per project.",
+      "leadTime": "Items sold as-is from salvage yard inventory. Immediate availability for in-stock items but unpredictable sourcing for specific requests. Restoration time adds weeks if client arranges separately.",
+      "inventory": "Salvage yard inventory constantly changing based on demolitions. Architectural elements, vintage furniture, statement pieces, reclaimed materials. G\u00f6teborg regional focus limits Stockholm metro access.",
+      "logistics": "Regional G\u00f6teborg delivery. Customer pickup common for salvage yards. Stockholm delivery (470km) adds significant cost and complexity. Cross-border shipping unlikely for heavy architectural elements."
+    },
+    "contact": {
+      "name": "Salvage yard staff via website or phone",
+      "phone": "Via website",
+      "email": "Via website",
+      "website": "Available via search (not provided in source documents)"
+    },
+    "certifications": [
+      "Salvage yard as-is sales (no systematic certifications)",
+      "Buyer responsible for restoration and compliance",
+      "No fire safety testing or material documentation provided"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 3",
+      "score": "Boutique hotel focal points only - Regional G\u00f6teborg specialist unsuitable for volume needs",
+      "strengths": [
+        "Unique architectural salvage creates signature hotel design moments",
+        "High-end reclaimed materials suitable for luxury boutique properties",
+        "Very competitive pricing on salvage yard as-is items",
+        "G\u00f6teborg regional presence useful for Western Sweden hotel projects",
+        "Statement pieces differentiate boutique hotels from chain properties",
+        "Architectural elements (wood paneling, vintage signage) add character",
+        "Salvage yard browsing experience for hands-on designer selection"
+      ],
+      "gaps": [
+        "Zero volume capability (cannot supply uniform guest room furniture)",
+        "G\u00f6teborg location (470km from Stockholm) limits national reach",
+        "Sold as-is (buyer arranges restoration, adds cost and time)",
+        "No refurbishment or finishing services provided",
+        "No fire safety testing or compliance support",
+        "Salvage yard inventory unpredictable (cannot guarantee specific items)",
+        "No delivery/installation services (customer pickup typical)",
+        "Regional focus limits pan-Swedish or cross-border projects"
+      ]
+    },
+    "pricing": "Very low pricing typical of salvage yards (as-is sales). Estimated 20-40% of new cost before restoration. Client bears restoration costs (additional 50-100% of purchase price for professional work).",
+    "projectExamples": [
+      "Boutique hotel lobby statement pieces (G\u00f6teborg region)",
+      "Restaurant architectural salvage elements",
+      "Design-forward properties seeking unique vintage character",
+      "Regional G\u00f6teborg renovation projects"
+    ],
+    "strengths": [
+      "Unique architectural salvage unavailable from commercial operators",
+      "Very competitive as-is pricing (20-40% of new before restoration)",
+      "High-end reclaimed materials for luxury boutique properties",
+      "G\u00f6teborg regional specialization for Western Sweden projects",
+      "Statement pieces create memorable hotel design moments",
+      "Salvage yard model exposes rare architectural elements",
+      "Suitable for design-critical signature spaces (lobbies, bars)"
+    ],
+    "gaps": [
+      "Completely unsuitable for volume hotel furniture needs",
+      "G\u00f6teborg regional focus (470km from Stockholm) limits national projects",
+      "As-is sales require separate restoration (adds cost and complexity)",
+      "No refurbishment, finishing, or installation services",
+      "Zero fire safety testing or compliance capability",
+      "Unpredictable inventory (salvage-dependent, cannot guarantee items)",
+      "No delivery services (customer pickup or separate arrangement)",
+      "Unsuitable for fast-track projects (restoration timeline adds weeks)"
+    ],
+    "founded": "Not documented",
+    "employees": "Not documented",
+    "legalStructure": "Not documented",
+    "formerNames": [],
+    "ownership": "Not documented",
+    "specificTestStandards": [],
+    "warrantyDuration": "None - as-is salvage yard sales",
+    "rentalOptions": false,
+    "minimumOrder": "No documented minimum",
+    "volumeDiscounts": "N/A - salvage yard as-is pricing",
+    "aestheticDescription": "Architectural salvage, reclaimed materials - unique/vintage character",
+    "bestFor": [
+      "Boutique hotel lobby statement pieces (G\u00f6teborg region)",
+      "Restaurant architectural salvage elements",
+      "Design-forward properties seeking unique vintage character"
+    ],
+    "avoidFor": [
+      "Volume hotel furniture needs",
+      "Stockholm projects (470km distance from G\u00f6teborg)",
+      "Fast-track projects (restoration adds weeks)",
+      "Fire safety compliance projects"
+    ],
+    "confidenceLevel": "\u2b50\u2b50 MEDIUM-LOW",
+    "verificationStatus": "Regional G\u00f6teborg presence confirmed. As-is sales model typical of salvage yards. Specific current inventory unpredictable.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "dpj_aterbruk",
+    "name": "DPJ WORKSPACE (ÅTERBRUK)",
+    "description": "Large mainstream office furniture retailer with a dedicated 'Återbruk' (Reuse) section. Operates primarily as an outlet for open-box returns, showroom samples, and overstock, offering 'like new' condition items. Good for budget-conscious projects needing standard office furniture but limited by inventory availability (often small quantities of specific items).",
+    "location": "Nationwide coverage with offices in Stockholm. Online-first model with physical showroom presence.",
+    "services": [
+      "Sales of used/outlet office furniture",
+      "Buy-back of office furniture (limited)",
+      "New furniture sales (primary business)",
+      "Delivery and installation services (via main business)",
+      "Warranty on used items (2-3 year reclamation rights)"
+    ],
+    "capabilities": {
+      "volume": "Limited for specific used items (often 5-10 of a model rather than 50+). Large scale for new furniture. Best for supplementing new orders or small back-office fit-outs.",
+      "leadTime": "Stock items: Immediate/Fast (1-2 weeks). Dependent on current returns/outlet inventory.",
+      "inventory": "Office chairs, desks, lamps, storage. Condition classified as 'Nyskick' (Like New) to 'Mycket gott skick'. Inventory fluctuates based on returns and demo stock.",
+      "logistics": "Strong nationwide logistics network (leveraging new furniture infrastructure). Delivery to all major Swedish cities."
+    },
+    "contact": {
+      "name": "DPJ B2B Sales",
+      "phone": "Via website",
+      "email": "Via website",
+      "website": "https://www.dpj.se/504-aterbruk"
+    },
+    "certifications": [
+      "Standard product warranties (modified for used)",
+      "Original product certifications often valid (if 'like new')",
+      "No specific circular economy certifications documented"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 2",
+      "score": "Medium - Good for back-office or specific budget needs, not for main guest areas",
+      "strengths": [
+        "Budget pricing (40-60% of new)",
+        "'Like new' condition often available",
+        "Strong logistics and professional service (from main business)",
+        "Good for back-office or in-room desks",
+        "Can mix new and used items easily in one order"
+      ],
+      "gaps": [
+        "Limited quantity of identical used items",
+        "No hospitality-specific reuse experience",
+        "Inventory driven by returns (unpredictable)",
+        "Aesthetics skew heavily corporate/office",
+        "No refurbishment service (sold as-is/inspected)"
+      ]
+    },
+    "pricing": "Budget-friendly. Typically 40-60% of new price. Outlet pricing model.",
+    "projectExamples": [
+      "Office fit-outs mixing new and used",
+      "Small business furniture supply",
+      "Budget-conscious corporate updates"
+    ],
+    "strengths": [
+      "Professional e-commerce experience",
+      "Reliable condition grading ('Like New')",
+      "Fast delivery",
+      "Cost savings on high-quality brands"
+    ],
+    "gaps": [
+      "Cannot guarantee large volumes of matching used items",
+      "Not a dedicated circular partner (retailer with reuse arm)",
+      "Limited design/hospitality aesthetic"
+    ],
+    "founded": "Established retailer (Reuse section newer)",
+    "employees": "Large (Retailer scale)",
+    "legalStructure": "AB",
+    "formerNames": [],
+    "ownership": "Private",
+    "specificTestStandards": [
+      "Original manufacturer standards apply"
+    ],
+    "warrantyDuration": "2-3 years reclamation rights",
+    "rentalOptions": false,
+    "minimumOrder": "No minimum",
+    "volumeDiscounts": "Possible on bulk orders (mixed new/used)",
+    "aestheticDescription": "Modern office furniture, functional, standard commercial brands",
+    "bestFor": [
+      "Back-office furniture",
+      "Small meeting rooms",
+      "Supplementing new furniture orders",
+      "Budget projects needing 'like new' quality"
+    ],
+    "avoidFor": [
+      "Large uniform guest room projects (used stock too fragmented)",
+      "High-design boutique areas",
+      "Projects requiring custom refurbishment"
+    ],
+    "confidenceLevel": "⭐⭐⭐ HIGH (for what it is)",
+    "verificationStatus": "Retailer status verified. Reuse section active and visible online.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Hybrid"
+  },
+  {
+    "id": "malmo_aterbyggdepa",
+    "name": "MALM\u00d6 \u00c5TERBYGGDEP\u00c5",
+    "description": "Long-established building materials salvage depot in Malm\u00f6/Sk\u00e5ne region with 20+ year history. Specializes in architectural salvage and reclaimed building materials rather than furniture. Regional Malm\u00f6 specialist for southern Sweden hotel building materials.",
+    "location": "Malm\u00f6/Sk\u00e5ne, Southern Sweden",
+    "services": [
+      "Salvaged building materials sales",
+      "Architectural element salvage",
+      "Doors, windows, fixtures",
+      "Reclaimed building components",
+      "Regional Malm\u00f6 area specialty sourcing"
+    ],
+    "capabilities": {
+      "volume": "Building materials scale suitable for hotel renovations. NOT suitable for furniture volume. Can supply materials for multiple hotel rooms (doors, fixtures, etc.).",
+      "leadTime": "Stock items: 2-4 weeks. Custom sourcing: 6-12 weeks (demolition-dependent).",
+      "inventory": "Building materials focus: doors, windows, fixtures, flooring, architectural elements. Minimal furniture inventory.",
+      "logistics": "Regional Malm\u00f6/Sk\u00e5ne delivery. Heavy materials shipping cost-prohibitive for long distances."
+    },
+    "contact": {
+      "name": "Contact via facility",
+      "phone": "Not documented",
+      "email": "Not documented",
+      "website": "Not documented"
+    },
+    "certifications": [
+      "20+ year operating history demonstrates stability",
+      "Building material standards (not systematically documented)"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 3",
+      "score": "\u2b50\u2b50 LOW-MEDIUM for building materials only",
+      "strengths": [
+        "Long-established Malm\u00f6 presence (20+ years)",
+        "Building materials complement furniture suppliers",
+        "Regional southern Sweden specialist",
+        "Cost savings on building materials (30-50% vs new)"
+      ],
+      "gaps": [
+        "Not a furniture supplier",
+        "Malm\u00f6 regional focus limits national projects",
+        "No documented hospitality projects",
+        "Demolition-dependent inventory creates unpredictability",
+        "No systematic compliance documentation"
+      ]
+    },
+    "pricing": "Building materials typically 30-50% of new cost. Project-based pricing likely.",
+    "projectExamples": [
+      "Regional Malm\u00f6 building renovations",
+      "Architectural salvage projects",
+      "Southern Sweden construction projects"
+    ],
+    "strengths": [
+      "20+ year established presence in Malm\u00f6",
+      "Regional southern Sweden specialist",
+      "Building materials complement furniture operators",
+      "Cost savings potential on building materials"
+    ],
+    "gaps": [
+      "Not suitable for furniture needs",
+      "Malm\u00f6 regional focus limits broader deployment",
+      "No hospitality-specific experience documented",
+      "Heavy materials shipping limits geographic reach",
+      "Demolition-dependent sourcing creates lead time unpredictability"
+    ],
+    "founded": "Approximately 2000 or earlier (20+ year history noted)",
+    "employees": "Not documented",
+    "legalStructure": "Not documented",
+    "formerNames": [],
+    "ownership": "Not documented",
+    "specificTestStandards": [
+      "Building materials standards"
+    ],
+    "warrantyDuration": "Not documented",
+    "rentalOptions": false,
+    "minimumOrder": "Likely project-based minimum",
+    "volumeDiscounts": "Likely for large renovation material packages",
+    "aestheticDescription": "Building materials - functional to architectural salvage quality",
+    "bestFor": [
+      "Malm\u00f6 hotel building materials (doors, fixtures)",
+      "Southern Sweden regional projects",
+      "Architectural salvage for character"
+    ],
+    "avoidFor": [
+      "Furniture needs",
+      "Stockholm or northern Sweden projects",
+      "Cross-border shipping",
+      "Fast-track projects"
+    ],
+    "confidenceLevel": "\u2b50\u2b50 MEDIUM-LOW",
+    "verificationStatus": "20+ year history and Malm\u00f6 presence verified. Specific capabilities require direct contact.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "spirec",
+    "name": "SPIREC",
+    "description": "Startup founded in 2022 focusing on the reuse of surplus wood and building supplies. Based in Västerås. Started by reclaiming wood from shipping pallets and expanded to general oversupply building materials (formwork timber, surplus screws, etc.). Strong sustainability mission.",
+    "location": "Västerås region, Sweden.",
+    "services": [
+      "Sales of reclaimed wood and lumber",
+      "Sales of surplus building materials (screws, formwork)",
+      "Circular material sourcing for construction",
+      "Collaboration on sustainability pilot projects"
+    ],
+    "capabilities": {
+      "volume": "Niche/Small scale. Not a volume furniture supplier. Good for specific material needs (e.g., reclaimed wood for decor).",
+      "leadTime": "Variable, depends on material availability.",
+      "inventory": "Reclaimed wood (pallet lumber), surplus building materials. Inventory is opportunistic.",
+      "logistics": "Regional focus (Västerås/Mälardalen). Logistics for larger orders likely negotiable."
+    },
+    "contact": {
+      "name": "Spirec Team",
+      "phone": "Via website",
+      "email": "Via website",
+      "website": "https://spirec.se"
+    },
+    "certifications": [
+      "No formal product certifications documented",
+      "Focus on material reuse and waste reduction",
+      "May use CCBuild templates as they mature"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 3",
+      "score": "Low - Niche material supplier, not a turnkey hospitality partner",
+      "strengths": [
+        "Strong sustainability story (reclaimed wood)",
+        "Cost-effective for raw materials",
+        "Good for rustic/industrial design elements",
+        "Startup agility and willingness to collaborate"
+      ],
+      "gaps": [
+        "Not a furniture supplier",
+        "No hospitality experience",
+        "Limited product range (wood/construction materials)",
+        "No fire safety testing or compliance documentation",
+        "Small scale/startup risks"
+      ]
+    },
+    "pricing": "Variable. Mix of very low cost (surplus/reclaimed) and standard pricing. Potential for significant savings on raw materials.",
+    "projectExamples": [
+      "Reclaiming wood from shipping pallets",
+      "Reselling surplus construction materials from Peab",
+      "Pilot projects for circular construction"
+    ],
+    "strengths": [
+      "Authentic circularity (waste-to-resource)",
+      "Niche expertise in wood reuse",
+      "Partnership potential for green pilots"
+    ],
+    "gaps": [
+      "Very limited scope for general hotel needs",
+      "Geographic limitation (Västerås)",
+      "Early stage company (processes evolving)"
+    ],
+    "founded": "2022",
+    "employees": "Small startup team",
+    "legalStructure": "AB",
+    "formerNames": [],
+    "ownership": "Private (Founder-led)",
+    "specificTestStandards": [],
+    "warrantyDuration": "Not documented (likely as-is for materials)",
+    "rentalOptions": false,
+    "minimumOrder": "No strict minimum",
+    "volumeDiscounts": "Likely available for bulk material purchases",
+    "aestheticDescription": "Raw, industrial, rustic (reclaimed wood)",
+    "bestFor": [
+      "Feature walls/decor using reclaimed wood",
+      "Custom furniture fabrication (as material source)",
+      "Green pilot projects",
+      "Cost-conscious construction material needs"
+    ],
+    "avoidFor": [
+      "Turnkey furniture supply",
+      "Standard hotel fit-outs",
+      "Projects requiring certified fire-rated materials"
+    ],
+    "confidenceLevel": "⭐⭐ MEDIUM (Startup)",
+    "verificationStatus": "Startup status and focus verified via website and research. Specific inventory needs real-time check.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "mater_design",
+    "name": "MATER DESIGN",
+    "description": "\u26a0\ufe0f MANUFACTURER (NOT REUSE OPERATOR): Copenhagen-based designer manufacturer producing NEW furniture from recycled materials (upcycled products). Known for ocean plastic chairs and coffee waste-based furniture. Relevant for clients wanting 'circular materials' but NOT reused furniture. Included for reference as Copenhagen hospitality supplier but does not fit Fyra's B2B reuse focus.",
+    "location": "Copenhagen, Denmark",
+    "services": [
+      "\u26a0\ufe0f MANUFACTURES NEW FURNITURE from recycled materials",
+      "Upcycled designer furniture production",
+      "Ocean plastic furniture (Nova Sea chair)",
+      "Coffee waste-based furniture lines",
+      "Contract quantities for hospitality projects",
+      "International export capabilities"
+    ],
+    "capabilities": {
+      "volume": "\u2705 Contract quantities proven. Villa Copenhagen project (~390 rooms) demonstrates hospitality scale capability.",
+      "leadTime": "Manufacturing lead times (not reuse sourcing). Likely 8-16 weeks for custom production runs.",
+      "inventory": "NEW PRODUCTS from recycled materials - not secondhand/reused inventory. Designer furniture manufacturing.",
+      "logistics": "International export capability. Denmark to Sweden feasible via \u00d6resund bridge."
+    },
+    "contact": {
+      "name": "Mater Design ApS",
+      "phone": "Via website",
+      "email": "Via website",
+      "website": "https://materdesign.com"
+    },
+    "certifications": [
+      "Likely Cradle-to-Cradle or similar sustainability certifications",
+      "Designer furniture quality standards",
+      "Contract-grade hospitality furniture capability"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Not Applicable (Manufacturer)",
+      "score": "\u2b50\u2b50\u2b50\u2b50 HIGH for NEW furniture from recycled materials (NOT for B2B reuse)",
+      "strengths": [
+        "Proven luxury hospitality experience (Villa Copenhagen 390-room hotel)",
+        "Designer quality aesthetic suitable for premium hotels",
+        "Ocean plastic and coffee waste circular materials story",
+        "Contract quantities capability",
+        "International export proven",
+        "Strong sustainability credentials"
+      ],
+      "gaps": [
+        "\u26a0\ufe0f CRITICAL: NOT a reuse operator - manufactures NEW products",
+        "Does not provide secondhand/refurbished furniture",
+        "Premium designer pricing (not cost-competitive with reuse)",
+        "Manufacturing model incompatible with Fyra's reuse focus",
+        "Different circular economy approach (recycled materials vs. product reuse)"
+      ]
+    },
+    "pricing": "PREMIUM - Designer furniture pricing. Likely 80-120% of standard new furniture (premium positioning for circular design).",
+    "projectExamples": [
+      "Villa Copenhagen (390-room luxury hotel) - Earth Suite with ocean plastic Nova Sea chairs",
+      "International designer furniture projects",
+      "Sustainability-focused hospitality properties"
+    ],
+    "strengths": [
+      "Major Nordic hospitality reference (Villa Copenhagen)",
+      "Designer quality aesthetics",
+      "Strong circular materials narrative (ocean plastic, coffee waste)",
+      "Proven contract quantities and international shipping",
+      "Copenhagen location strategic for Danish projects"
+    ],
+    "gaps": [
+      "\u26a0\ufe0f NOT A REUSE OPERATOR - fundamental incompatibility with Fyra's model",
+      "Manufactures new products (not secondhand)",
+      "Premium pricing not cost-competitive with reused furniture",
+      "Different circular economy segment (material recycling vs. product reuse)",
+      "Cannot provide the cost savings central to reuse value proposition"
+    ],
+    "founded": "Not documented (established Danish designer brand)",
+    "employees": "Not documented",
+    "legalStructure": "Mater Design ApS (assumed Danish ApS structure)",
+    "formerNames": [],
+    "ownership": "Private Danish design company",
+    "specificTestStandards": [
+      "Contract-grade hospitality furniture standards",
+      "Likely EN standards for commercial furniture"
+    ],
+    "warrantyDuration": "Manufacturer warranties (likely 2-5 years for contract furniture)",
+    "rentalOptions": false,
+    "minimumOrder": "Contract minimum order quantities likely apply",
+    "volumeDiscounts": "Likely available for large hospitality projects",
+    "aestheticDescription": "Premium Danish designer furniture - modern/contemporary aesthetic with sustainability story",
+    "bestFor": [
+      "\u26a0\ufe0f NOT FOR REUSE PROJECTS",
+      "Clients wanting NEW furniture from recycled materials",
+      "Premium Danish hospitality projects with strong sustainability marketing",
+      "Projects where 'circular materials' story valued over cost savings"
+    ],
+    "avoidFor": [
+      "\u26a0\ufe0f ANY REUSE-FOCUSED PROJECT",
+      "Budget-conscious hotel renovations",
+      "Projects seeking cost savings through secondhand furniture",
+      "Fyra's core B2B reuse operator network"
+    ],
+    "confidenceLevel": "\u2b50\u2b50\u2b50\u2b50 HIGH for manufacturer capabilities",
+    "verificationStatus": "Villa Copenhagen project verified. Designer manufacturer status clear. NOT suitable for B2B reuse operator list.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Hybrid"
+  }
+]
