@@ -926,7 +926,7 @@
   },
   {
     "id": "brattons_aterbruk",
-    "sourceRefs": [],
+    "sourceRefs": ["brattons_website", "smartakartan_brattons", "kommun_naringsliv_brattons"],
     "name": "BRATT\u00d6NS \u00c5TERBRUK",
     "description": "G\u00f6teborg regional architectural salvage yard specializing in unique statement pieces and reclaimed building materials. Salvage yard business model focuses on one-of-a-kind items rather than volume commercial furniture supply.",
     "location": "G\u00f6teborg (Gothenburg) region, Western Sweden. Salvage yard facility with regional G\u00f6teborg market focus. Distance from Stockholm (approximately 470km) limits nationwide projects.",
@@ -946,10 +946,10 @@
       "logistics": "Regional G\u00f6teborg delivery. Customer pickup common for salvage yards. Stockholm delivery (470km) adds significant cost and complexity. Cross-border shipping unlikely for heavy architectural elements."
     },
     "contact": {
-      "name": "Salvage yard staff via website or phone",
-      "phone": "Via website",
-      "email": "Via website",
-      "website": "Available via search (not provided in source documents)"
+      "name": "Andreas Landqvist",
+      "phone": "+46 734-246747 (mobile) | +46 31-330 15 10 (office)",
+      "email": "Via website contact form",
+      "website": "https://www.brattonsaterbruk.se/"
     },
     "certifications": [
       "Salvage yard as-is sales (no systematic certifications)",
@@ -1128,7 +1128,7 @@
   },
   {
     "id": "malmo_aterbyggdepa",
-    "sourceRefs": [],
+    "sourceRefs": ["malmo_stad_aterbyggdepa", "malmoabd_website"],
     "name": "MALM\u00d6 \u00c5TERBYGGDEP\u00c5",
     "description": "Long-established building materials salvage depot in Malm\u00f6/Sk\u00e5ne region with 20+ year history. Specializes in architectural salvage and reclaimed building materials rather than furniture. Regional Malm\u00f6 specialist for southern Sweden hotel building materials.",
     "location": "Malm\u00f6/Sk\u00e5ne, Southern Sweden",
@@ -1146,13 +1146,14 @@
       "logistics": "Regional Malm\u00f6/Sk\u00e5ne delivery. Heavy materials shipping cost-prohibitive for long distances."
     },
     "contact": {
-      "name": "Contact via facility",
-      "phone": "Not documented",
-      "email": "Not documented",
-      "website": "Not documented"
+      "name": "Malmö Återbyggdepå (Municipal initiative)",
+      "phone": "Via Malmö Stad",
+      "email": "Via website contact",
+      "website": "http://www.malmoabd.se/"
     },
     "certifications": [
-      "20+ year operating history demonstrates stability",
+      "Municipal social enterprise - 3,800+ people employed through labor market programs",
+      "Webshop launched May 2024",
       "Building material standards (not systematically documented)"
     ],
     "hospitalityReadiness": {

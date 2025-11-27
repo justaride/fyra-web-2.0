@@ -3,7 +3,7 @@
     "version": "1.0",
     "lastUpdated": "2025-01-26",
     "description": "Central source registry for Fyra Circular Platform. All data entities reference sources by ID for traceability and verification.",
-    "totalSources": 100
+    "totalSources": 106
   },
   "sources": [
     {
@@ -931,6 +931,56 @@
       "language": "en",
       "verifies": ["hotel_herman_k_brochner_hotels"],
       "keyFacts": ["Green Key certification", "Chemical-free hotel concept", "Sustainability innovation"]
+    },
+    {
+      "id": "brattons_website",
+      "title": "Brattöns Återbruk - Begagnat Byggmaterial",
+      "url": "https://www.brattonsaterbruk.se/",
+      "type": "company_website",
+      "publisher": "Brattöns Återbruk AB",
+      "language": "sv",
+      "verifies": ["brattons_aterbruk"],
+      "keyFacts": ["Founded 2012", "Salvage yard in Göteborg Hisingen", "Steel beams and glass partitions specialty", "195 tonnes CO2 saved annually"]
+    },
+    {
+      "id": "smartakartan_brattons",
+      "title": "Brattöns Återbruk - Smarta Kartan Göteborg",
+      "url": "https://www.smartakartan.se/goteborg/brattons-aterbruk/",
+      "type": "directory_listing",
+      "publisher": "Smarta Kartan",
+      "language": "sv",
+      "verifies": ["brattons_aterbruk"],
+      "keyFacts": ["Verified reuse business", "Göteborg circular economy network"]
+    },
+    {
+      "id": "kommun_naringsliv_brattons",
+      "title": "Redan en veteran inom återbruk",
+      "url": "https://kommunochnaringsliv.se/redan-en-veteran-inom-aterbruk/",
+      "type": "news_article",
+      "publisher": "Kommun & Näringsliv",
+      "language": "sv",
+      "verifies": ["brattons_aterbruk"],
+      "keyFacts": ["10+ years experience", "Demolition industry roots", "B2B focus on construction companies"]
+    },
+    {
+      "id": "malmo_stad_aterbyggdepa",
+      "title": "Malmö Återbyggdepå öppnar webbshop",
+      "url": "https://malmo.se/Aktuellt/Artiklar-Malmo-stad/2024-05-15-Malmo-Aterbyggdepa-oppnar-webbshop.html",
+      "type": "government_website",
+      "publisher": "Malmö Stad",
+      "language": "sv",
+      "verifies": ["malmo_aterbyggdepa"],
+      "keyFacts": ["Municipal initiative", "Webshop opened 2024", "3,800+ people employed through labor market programs"]
+    },
+    {
+      "id": "malmoabd_website",
+      "title": "Malmö Återbyggdepå - Official Website",
+      "url": "http://www.malmoabd.se/",
+      "type": "company_website",
+      "publisher": "Malmö Återbyggdepå",
+      "language": "sv",
+      "verifies": ["malmo_aterbyggdepa"],
+      "keyFacts": ["Used building materials depot", "Both private and B2B customers", "Social enterprise integration"]
     }
   ],
   "sourceTypes": {

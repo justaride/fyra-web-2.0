@@ -16,8 +16,13 @@
       "keyContacts": [
         {
           "role": "General Inquiry",
-          "method": "Via forsen.com contact form",
+          "phone": "+46 8 506 004 00",
+          "email": "Format: [firstname]@forsen.com",
           "note": "Reference: Construction Management for circular hotel renovation"
+        },
+        {
+          "role": "CFO",
+          "name": "Ebba Karth"
         }
       ],
       "certification": "PBL Inspector (kontrollansvarig) certified - can sign off on building permits",
@@ -382,21 +387,31 @@
       "businessModel": "Pure project management and owner's advisory (byggherrerådgivning). CRITICAL: Hifab does NOT do design. They are PM only = natural partner for Fyra's design work.",
       "keyContacts": [
         {
-          "role": "General Contact",
-          "method": "Via hifab.se contact form + phone"
+          "role": "Stockholm Office",
+          "phone": "+46 70 213 34 34",
+          "address": "Sveavägen 163, 113 46 Stockholm",
+          "email": "Format: [firstname].[lastname]@hifab.se"
         },
         {
           "role": "CEO",
           "name": "Nicke Rydgren",
+          "email": "nicke.rydgren@hifab.se",
           "note": "Strategic level; focusing on energy strategy"
         },
         {
           "role": "Head of Project Management West/Stockholm",
-          "name": "Christian Horn"
+          "name": "Christian Horn",
+          "email": "christian.horn@hifab.se"
+        },
+        {
+          "role": "CMO",
+          "name": "Emma Johansson",
+          "email": "emma.johansson@hifab.se"
         },
         {
           "role": "Strategic Consultant in Energy",
           "name": "Anna Larsson",
+          "email": "anna.larsson@hifab.se",
           "division": "Hifab Advisory"
         }
       ],
