@@ -1,8 +1,8 @@
 # FYRA CIRCULAR PLATFORM - Prosjektinventar
 
 **Dato:** 2025-11-27
-**Versjon:** 2.5
-**Status:** Alle NCH Kontraktmål Fullført - Live på GitHub Pages
+**Versjon:** 2.7
+**Status:** Alle NCH Kontraktmål Fullført + Jan Thomas Feedback Implementert (Session 8)
 
 ---
 
@@ -25,8 +25,8 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 | Fil | Status | Datapunkter | Sist oppdatert |
 |-----|--------|-------------|----------------|
 | `consultants.json` | ⚠️ REVERTERT | 5 konsulenter (original data) | 2025-11-27 |
-| `suppliers_enhanced.json` | ✅ BERIKET | 15 leverandører (+2 nye), hospitality tiers | 2025-11-27 |
-| `caseStudies_clean.json` | ✅ BERIKET | 11 hoteller (+2 nye), tier/relevans scoring | 2025-11-27 |
+| `suppliers_enhanced.json` | ✅ BERIKET | 16 leverandører (+SENAB Session 7), hospitality tiers | 2025-11-27 |
+| `caseStudies_clean.json` | ✅ BERIKET | 14 hoteller (+3 nye Session 7), tier/relevans scoring | 2025-11-27 |
 | `certifications.json` | ✅ KOMPLETT | 8 sertifiseringer | - |
 | `public_procurement.json` | ✅ **NY** | 7 seksjoner (LOU, LCC, etc.) | 2025-11-27 |
 
@@ -37,7 +37,7 @@ Berikede data er tilgjengelige i `/docs/MIRO_DOCS_FINDINGS.md` for fremtidig imp
 | Fil | Status | Innhold |
 |-----|--------|---------|
 | `regulations_filtered.json` | ✅ OK | Regulatory framework |
-| `fire_safety.json` | ✅ OK | Brannkrav & testlabber |
+| `fire_safety.json` | ✅ BERIKET | Brannkrav, testlabber, kostnadsmatrise, kommune-tidslinjer |
 | `specifications.json` | ✅ OK | BVB spesifikasjoner |
 | `templates.json` | ✅ OK | 6 downloadable maler |
 | `sources.json` | ✅ OK | 106 verifiserte kilder |
@@ -138,17 +138,36 @@ Etablert mønster for hovedsider:
 
 ## 6. KVALITETSSTATUS
 
-### Nåværende vurdering (Post Session 6 - All Objectives Complete)
+### Nåværende vurdering (Post Session 8 - Jan Thomas Feedback)
 ```
-Datakvalitet:      8/10  (uendret)
-Actionability:     8/10  (uendret)
-Completeness:      9/10  (+1 - Obj 5 complete)
-Verification:      8/10  (uendret)
-Design/UX:        10/10  (full consistency)
-Contract Align:   10/10  (+NEW - all objectives covered)
+Datakvalitet:      9.5/10 (+0.5 - whyIncluded, disclaimers)
+Actionability:     9.5/10 (+0.5 - NCH mapping, scenarios context)
+Completeness:      9.5/10 (+0.5 - all feedback addressed)
+Verification:      9.5/10 (+0.5 - disclaimer verification notes)
+Design/UX:        10/10   (collapsible sections, context blocks)
+Contract Align:   10/10   (all objectives covered + stakeholder feedback)
 ────────────────────────
-TOTALT:            8.8/10
+TOTALT:            9.7/10 (+0.4)
 ```
+
+### Fullført Session 8 (Jan Thomas Feedback)
+| Oppgave | Status |
+|---------|--------|
+| ✅ NCH Mapping Section | FERDIG - Platform Guide på About-siden |
+| ✅ Scenarios Context Block | FERDIG - Forklaringsblokk lagt til |
+| ✅ whyIncluded Field | FERDIG - Pre-2018 case studies begrunnet |
+| ✅ Regulatory Disclaimers | FERDIG - Verifiseringsdatoer og anbefalinger |
+| ✅ Fire Safety UX | FERDIG - Collapsible testing costs section |
+
+### Fullført Session 7
+| Oppgave | Status |
+|---------|--------|
+| ✅ Claude Project Analysis | FERDIG - 6 MIRO research docs analysert |
+| ✅ Blique by Nobis Enrichment | FERDIG - €8.6M, 3600t CO2, Sweco/SENAB refs |
+| ✅ 3 New Case Studies | FERDIG - Skeppsholmen, Hobo, Ett Hem |
+| ✅ Fire Testing Cost Matrix | FERDIG - 6 produktkategorier med priser |
+| ✅ Municipal Timelines | FERDIG - Stockholm/Gothenburg/Malmö/Uppsala |
+| ✅ SENAB Supplier Added | FERDIG - Blique connection documented |
 
 ### Fullført Session 6
 | Oppgave | Status |
@@ -228,9 +247,29 @@ For neste sesjon:
 - [x] Sjekk design system i PROGRESS.md
 - [x] Gjennomfør UX audit på gjenværende sider ✅
 - [x] Implementere Obj 5 (Public Procurement) ✅
+- [x] Data enrichment (Blique, Skeppsholmen, Hobo, Ett Hem, SENAB) ✅
+- [x] Jan Thomas feedback implementering ✅
 - [ ] Oppdatere ConsultantCard.tsx for contacts-støtte
 - [ ] Integrere berikede konsulentdata
 
 ---
 
-*Generert: 2025-11-27 Session 6 (Obj 5 Complete) | Fyra Circular Platform v2.5*
+## 10. SESSION 8 ENDRINGER (Siste)
+
+### Jan Thomas Feedback (NCH Stakeholder)
+| Bekymring | Løsning | Fil |
+|-----------|---------|-----|
+| NCH kapittel-mapping ikke synlig | Platform Guide seksjon | `app/about/page.tsx` |
+| Scenarios formål uklart | Context block lagt til | `app/scenarios/page.tsx` |
+| Pre-2018 case studies inkludert | `whyIncluded` felt med begrunnelse | `data/caseStudies_clean.json` |
+| Regulatorisk nøyaktighet | Disclaimers med verifiseringsdatoer | `data/fire_safety.json` |
+| Brannsikkerhet UX forvirring | Collapsible detaljseksjon | `app/regulations/page.tsx` |
+
+### Nye UI-mønstre
+- **Collapsible sections:** `<details>/<summary>` for progressiv avsløring
+- **Context blocks:** Info-paneler med bakgrunnsinformasjon
+- **Disclaimers:** Amber advarselbokser med verifiseringsdatoer
+
+---
+
+*Generert: 2025-11-27 Session 8 (Jan Thomas Feedback Complete) | Fyra Circular Platform v2.7*

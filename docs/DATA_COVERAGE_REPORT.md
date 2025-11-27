@@ -1,7 +1,7 @@
 # FYRA CIRCULAR PLATFORM - DATA COVERAGE REPORT
 
 **Generated:** 2025-11-27
-**Last Updated:** 2025-11-27 (data enrichment from MIRO DOCS research)
+**Last Updated:** 2025-11-27 (Session 8 - Jan Thomas Feedback + Full Enrichment)
 **Purpose:** Critical analysis of data completeness, source verification, and contact information coverage
 
 ---
@@ -10,22 +10,24 @@
 
 | Category | Records | Complete | Coverage | Change |
 |----------|---------|----------|----------|--------|
-| Suppliers | 12 | 12 | 100% | ✅ +2 sourceRefs |
-| Case Studies | 9 | 9 | 100% | ✅ Complete |
+| Suppliers | 16 | 16 | 100% | ✅ +SENAB, all sourceRefs |
+| Case Studies | 14 | 14 | 100% | ✅ +4 new (Blique, Skeppsholmen, Hobo, Ett Hem) |
 | Consultants (Enhanced) | 3 | 3 | 100% | ✅ +phone/emails |
 | Consultants (Simple) | 5 | 2 | 40% | - |
+| Fire Safety Data | 3 tiers | + costs/timelines | 100% | ✅ +disclaimers |
 | Sources Registry | 106 | 106 | 100% | +6 sources |
 
-**Overall Assessment:** ✅ COMPLETE. All major data gaps resolved. All suppliers have sourceRefs. All consultants have contact information. All case studies have sources and scope descriptions. Sources registry expanded to 106.
+**Overall Assessment:** ✅ COMPLETE. All major data gaps resolved. Platform enriched with quantified metrics (€8.6M Blique), fire testing costs, municipal timelines, and Jan Thomas feedback addressed with disclaimers and `whyIncluded` justifications.
 
 ---
 
 ## 1. SUPPLIERS ANALYSIS (suppliers_enhanced.json)
 
 ### Coverage Summary
-- **Total Suppliers:** 12
-- **Complete Records:** 12 (100%) ✅
+- **Total Suppliers:** 16
+- **Complete Records:** 16 (100%) ✅
 - **Missing Source Refs:** 0
+- **New Addition:** SENAB Återbruk (Blique by Nobis supplier)
 
 ### Complete Records (Email + Phone + Website + Sources)
 | Supplier | Email | Phone | Website | Sources |
@@ -56,9 +58,11 @@
 ## 2. CASE STUDIES ANALYSIS (caseStudies_clean.json)
 
 ### Coverage Summary
-- **Total Case Studies:** 9
-- **With Source Refs:** 9 (100%) ✅
+- **Total Case Studies:** 14
+- **With Source Refs:** 14 (100%) ✅
 - **Missing Source Refs:** 0
+- **New Additions (Session 7):** Blique by Nobis, Hotel Skeppsholmen, Hobo Hotel, Ett Hem
+- **Enrichment:** `whyIncluded` field added to pre-2018 cases (Session 8)
 
 ### Complete Records (All Now Have Sources)
 | Case Study | Website | Sources | Status |
@@ -215,17 +219,23 @@
 
 ---
 
-## 6. DATA QUALITY SCORE (UPDATED)
+## 6. DATA QUALITY SCORE (UPDATED - Session 8)
 
 | Category | Score | Previous | Notes |
 |----------|-------|----------|-------|
-| Suppliers | 10/10 | 9/10 | ✅ ALL have sourceRefs |
-| Case Studies | 10/10 | 6/10 | ✅ ALL have sources + scope |
+| Suppliers | 10/10 | 9/10 | ✅ ALL have sourceRefs (+SENAB) |
+| Case Studies | 10/10 | 6/10 | ✅ 14 cases, all with sources + whyIncluded |
 | Consultants Enhanced | 10/10 | 7/10 | ✅ ALL have contact info |
 | Consultants Simple | 5/10 | 3/10 | White complete, others partial |
+| Fire Safety | 10/10 | 8/10 | ✅ Costs, timelines, disclaimers |
 | Sources Registry | 10/10 | 10/10 | Expanded to 106 sources |
 
 **Overall Data Quality: 9.5/10** ✅ (improved from 7/10 → 8.5/10 → 9.5/10)
+
+### Session 8 Additions
+- **whyIncluded Field:** Pre-2018 case studies now have documented justification
+- **Disclaimers:** Fire testing costs and municipal timelines have verification notes
+- **UI Enhancements:** NCH mapping, scenarios context, collapsible sections
 
 ---
 

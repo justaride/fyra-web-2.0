@@ -5,7 +5,8 @@ import {
     Award, Building2, Users, Leaf, Globe, Hotel, Landmark,
     Trophy, Calendar, MapPin, ArrowRight, ExternalLink,
     Recycle, FlaskConical, Target, Sparkles, CheckCircle,
-    Mail, Linkedin, Instagram
+    Mail, Linkedin, Instagram, BookOpen, FileText, Scale,
+    Briefcase, HelpCircle, ChevronDown
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -175,6 +176,123 @@ export default async function AboutPage() {
                         <div>
                             <div className="text-3xl font-bold text-slate-900">4</div>
                             <div className="text-sm text-slate-500">Founding Partners</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* NCH Platform Guide - How This Platform Answers Research Questions */}
+            <section className="py-12 bg-gradient-to-b from-slate-100 to-white border-b">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="text-center mb-8">
+                            <div className="inline-flex items-center gap-2 bg-indigo-100 text-indigo-700 px-4 py-2 rounded-full text-sm mb-4">
+                                <BookOpen className="w-4 h-4" />
+                                <span>Platform Guide</span>
+                            </div>
+                            <h2 className="text-2xl font-bold text-slate-900 mb-3">How This Platform Maps to NCH Objectives</h2>
+                            <p className="text-slate-600">This platform is the deliverable for the Nordic Circular Hotspot (NCH) collaboration agreement. Here&apos;s how each section answers the research objectives.</p>
+                        </div>
+
+                        <div className="space-y-4">
+                            {/* Objective 2 */}
+                            <div className="bg-white rounded-xl border shadow-sm p-6">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 bg-teal-100 rounded-lg flex items-center justify-center shrink-0">
+                                        <Users className="w-5 h-5 text-teal-600" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="font-bold text-slate-900 mb-1">Objective 2: Segment Analysis</h3>
+                                        <p className="text-sm text-slate-600 mb-3">Who are the key players in circular hospitality construction?</p>
+                                        <div className="flex flex-wrap gap-2">
+                                            <a href="/suppliers" className="inline-flex items-center gap-1 text-sm bg-teal-50 text-teal-700 px-3 py-1.5 rounded-lg hover:bg-teal-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> Suppliers Directory
+                                            </a>
+                                            <a href="/experts" className="inline-flex items-center gap-1 text-sm bg-teal-50 text-teal-700 px-3 py-1.5 rounded-lg hover:bg-teal-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> Expert Consultants
+                                            </a>
+                                            <a href="/case-studies" className="inline-flex items-center gap-1 text-sm bg-teal-50 text-teal-700 px-3 py-1.5 rounded-lg hover:bg-teal-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> Case Studies
+                                            </a>
+                                            <a href="/certifications" className="inline-flex items-center gap-1 text-sm bg-teal-50 text-teal-700 px-3 py-1.5 rounded-lg hover:bg-teal-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> Certifications
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Objective 3 */}
+                            <div className="bg-white rounded-xl border shadow-sm p-6">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
+                                        <Scale className="w-5 h-5 text-blue-600" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="font-bold text-slate-900 mb-1">Objective 3: Nordic Upscaling Strategy</h3>
+                                        <p className="text-sm text-slate-600 mb-3">What regulations and approaches enable circular construction across the Nordics?</p>
+                                        <div className="flex flex-wrap gap-2">
+                                            <a href="/regulations" className="inline-flex items-center gap-1 text-sm bg-blue-50 text-blue-700 px-3 py-1.5 rounded-lg hover:bg-blue-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> Regulatory Guide
+                                            </a>
+                                            <a href="/scenarios" className="inline-flex items-center gap-1 text-sm bg-blue-50 text-blue-700 px-3 py-1.5 rounded-lg hover:bg-blue-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> Project Scenarios
+                                            </a>
+                                            <a href="/specifications" className="inline-flex items-center gap-1 text-sm bg-blue-50 text-blue-700 px-3 py-1.5 rounded-lg hover:bg-blue-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> BVB Specifications
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Objective 4 */}
+                            <div className="bg-white rounded-xl border shadow-sm p-6">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 bg-amber-100 rounded-lg flex items-center justify-center shrink-0">
+                                        <Briefcase className="w-5 h-5 text-amber-600" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="font-bold text-slate-900 mb-1">Objective 4: Implementation Support</h3>
+                                        <p className="text-sm text-slate-600 mb-3">What practical tools help execute circular hotel projects?</p>
+                                        <div className="flex flex-wrap gap-2">
+                                            <a href="/templates" className="inline-flex items-center gap-1 text-sm bg-amber-50 text-amber-700 px-3 py-1.5 rounded-lg hover:bg-amber-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> Templates &amp; Tools
+                                            </a>
+                                            <a href="/experts" className="inline-flex items-center gap-1 text-sm bg-amber-50 text-amber-700 px-3 py-1.5 rounded-lg hover:bg-amber-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> Consultant Contacts
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Objective 5 */}
+                            <div className="bg-white rounded-xl border shadow-sm p-6">
+                                <div className="flex items-start gap-4">
+                                    <div className="w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center shrink-0">
+                                        <FileText className="w-5 h-5 text-indigo-600" />
+                                    </div>
+                                    <div className="flex-1">
+                                        <h3 className="font-bold text-slate-900 mb-1">Objective 5: Public Procurement Best Practice</h3>
+                                        <p className="text-sm text-slate-600 mb-3">How does Swedish public procurement (LOU) support circular approaches?</p>
+                                        <div className="flex flex-wrap gap-2">
+                                            <a href="/regulations#public-procurement" className="inline-flex items-center gap-1 text-sm bg-indigo-50 text-indigo-700 px-3 py-1.5 rounded-lg hover:bg-indigo-100 transition-colors">
+                                                <ArrowRight className="w-3 h-3" /> Public Procurement Section
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-6 p-4 bg-slate-50 rounded-lg border border-slate-200">
+                            <div className="flex items-start gap-3">
+                                <HelpCircle className="w-5 h-5 text-slate-400 shrink-0 mt-0.5" />
+                                <div className="text-sm text-slate-600">
+                                    <strong className="text-slate-700">About Scenarios:</strong> The Scenarios section provides decision frameworks for different project types, helping you choose the right approach based on budget, timeline, and sustainability targets. They connect market players (Obj 2) with regulatory requirements (Obj 3).
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

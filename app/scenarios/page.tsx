@@ -1,7 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Header } from '@/components/Header';
-import { Clock, AlertTriangle, CheckCircle, Building2, Flame, Globe, Sparkles, ArrowRight } from 'lucide-react';
+import { Clock, AlertTriangle, CheckCircle, Building2, Flame, Globe, Sparkles, ArrowRight, Info, Link as LinkIcon } from 'lucide-react';
 import Link from 'next/link';
 
 interface Supplier {
@@ -300,6 +300,38 @@ export default async function ScenariosPage() {
                             <div className="flex items-center gap-2">
                                 <AlertTriangle className="w-4 h-4 text-green-400" />
                                 <span>Risk Mitigation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Context Block - How Scenarios Fit into NCH Framework */}
+            <section className="py-6 bg-blue-50 border-b border-blue-100">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="flex items-start gap-4">
+                            <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center shrink-0">
+                                <Info className="w-5 h-5 text-blue-600" />
+                            </div>
+                            <div>
+                                <h3 className="font-semibold text-slate-900 mb-2">How Scenarios Support Your Project</h3>
+                                <p className="text-sm text-slate-600 mb-3">
+                                    These scenarios are decision frameworks that connect <strong>market players</strong> (suppliers, consultants)
+                                    with <strong>regulatory requirements</strong> (fire safety, certifications). They help you choose the right
+                                    approach based on your project&apos;s budget, timeline, and sustainability targets.
+                                </p>
+                                <div className="flex flex-wrap gap-2">
+                                    <Link href="/suppliers" className="inline-flex items-center gap-1 text-xs bg-white text-slate-600 px-3 py-1.5 rounded-lg border hover:border-blue-300 transition-colors">
+                                        <LinkIcon className="w-3 h-3" /> Find Suppliers
+                                    </Link>
+                                    <Link href="/regulations" className="inline-flex items-center gap-1 text-xs bg-white text-slate-600 px-3 py-1.5 rounded-lg border hover:border-blue-300 transition-colors">
+                                        <LinkIcon className="w-3 h-3" /> Check Regulations
+                                    </Link>
+                                    <Link href="/case-studies" className="inline-flex items-center gap-1 text-xs bg-white text-slate-600 px-3 py-1.5 rounded-lg border hover:border-blue-300 transition-colors">
+                                        <LinkIcon className="w-3 h-3" /> See Examples
+                                    </Link>
+                                </div>
                             </div>
                         </div>
                     </div>

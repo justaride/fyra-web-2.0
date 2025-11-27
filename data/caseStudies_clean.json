@@ -229,6 +229,11 @@
     "type": "Hotel Case Study",
     "tier": "Reference",
     "fyraRelevance": 4,
+    "whyIncluded": {
+      "reason": "Local Sourcing Model",
+      "explanation": "Demonstrates Skåne-based local wood supply chain (Branders Snickeri) still active today. Model for regional circular material sourcing in southern Sweden.",
+      "stillRelevant": true
+    },
     "details": {
       "principal architect": "Cord Siegel (Hauschild + Siegel)",
       "furniture designers": "Lisa Hilland, Mats Theselius",
@@ -310,36 +315,65 @@
     "id": "blique_by_nobis",
     "title": "BLIQUE BY NOBIS",
     "type": "Hotel Case Study",
-    "tier": "Reference",
-    "fyraRelevance": 4,
+    "tier": "Flagship",
+    "fyraRelevance": 5,
     "details": {
       "chain": "Nobis Hospitality Group",
-      "scope": "ADAPTIVE REUSE - 1930s Philips warehouse",
-      "architect": "Wingårdhs (adaptive reuse)"
+      "scope": "ADAPTIVE REUSE - 1930s Sigurd Lewerentz warehouse to luxury design hotel",
+      "original_architect": "Sigurd Lewerentz (1930s)",
+      "renovation_architect": "Wingårdhs Arkitektkontor",
+      "sustainability_consultant": "Sweco (Amanda Borneke, Anna Joelsson)",
+      "furniture_supplier": "SENAB",
+      "lca_tool": "Sweco C3 (Carbon Cost Compass)"
     },
+    "contacts": [
+      {
+        "name": "Amanda Borneke",
+        "title": "Circular Economy Specialist, Sweco",
+        "linkedin": "linkedin.com/in/amanda-borneke",
+        "note": "Key consultant for circular strategy"
+      },
+      {
+        "name": "Anna Joelsson",
+        "title": "Hållbarhetschef Buildings, Sweco",
+        "email": "anna.joelsson@sweco.se"
+      }
+    ],
     "location": "Stockholm, Hagastaden",
     "size": "249 rooms",
-    "category": "Upper-upscale design",
+    "category": "Luxury / Upper-upscale design",
+    "website": "bliquebynobis.se",
     "year": "2019",
     "circularFeatures": [
-      "1930s industrial warehouse conversion",
-      "Original industrial elements preserved",
-      "Local art and design integration",
-      "Heritage architecture adaptation"
+      "€8.6 MILLION materials reused (quantified by Sweco)",
+      "3,600 TONNES CO2 saved vs. demolition + new build",
+      "€120 MILLION total project savings (€63/m² demolition waste avoidance)",
+      "1930s Sigurd Lewerentz industrial concrete structure preserved",
+      "LEED Gold + Nordic Swan Ecolabel certifications",
+      "Indoor farming integration (rooftop greenhouse)",
+      "Refurbished furniture from SENAB",
+      "Original industrial elements preserved and highlighted",
+      "Sweco C3 tool used for full lifecycle assessment"
     ],
     "metrics": {
-      "co2Impact": "Significant - avoided new construction",
-      "materialReuse": "Industrial heritage preserved"
+      "co2Impact": "3,600 tonnes CO2 saved",
+      "materialReusedValue": "€8.6 million",
+      "totalSavings": "€120 million vs. demolition + new build",
+      "wasteAvoidance": "€63/m² demolition waste costs avoided",
+      "circularContent": "30-50% reuse achieved",
+      "certification": ["LEED Gold", "Nordic Swan Ecolabel"]
     },
     "notes": [
-      "Major adaptive reuse success story",
-      "Philips warehouse → luxury hotel",
-      "Wingårdhs expertise in heritage conversion"
+      "BEST documented circular hotel case in Sweden with quantified ROI",
+      "Model for luxury adaptive reuse with verified financial returns",
+      "Sweco's flagship circular project - Amanda Borneke key expert",
+      "Demonstrates that circular can achieve premium positioning",
+      "SENAB provided refurbished furniture - hospitality-grade reuse proven"
     ],
     "chain": "Nobis Hospitality Group",
-    "chainPotential": "MEDIUM - boutique portfolio",
+    "chainPotential": "MEDIUM - boutique luxury portfolio model",
     "year_verified": 2019,
-    "sourceRefs": ["prompt1_gemini", "prompt6_chatgpt"]
+    "sourceRefs": ["sweco_blique_nobis", "sweco_amanda_borneke", "wingardhs_blique", "archdaily_blique", "nobis_website"]
   },
   {
     "id": "clarion_hotel_the_hub_oslo",
@@ -448,5 +482,165 @@
     "chainPotential": "HIGH - ~80 properties",
     "year_verified": 2019,
     "sourceRefs": ["iso_14001"]
+  },
+  {
+    "id": "hotel_skeppsholmen_stockholm",
+    "title": "HOTEL SKEPPSHOLMEN",
+    "type": "Hotel Case Study",
+    "tier": "Flagship",
+    "fyraRelevance": 5,
+    "whyIncluded": {
+      "reason": "Heritage Precedent",
+      "explanation": "Demonstrates Byggnadsminne-listed building renovation pathway. Essential reference for protected heritage buildings - regulatory approach remains current regardless of project age.",
+      "stillRelevant": true
+    },
+    "details": {
+      "chain": "Nobis Hospitality Group",
+      "scope": "HERITAGE PRESERVATION - 1699 Karolinska military barracks adaptive reuse",
+      "original_building": "1699 military barracks (Karolinska era)",
+      "heritage_classification": "Byggnadsminne (Listed Building)",
+      "interior_designer": "Period-appropriate restoration"
+    },
+    "contacts": [
+      {
+        "name": "Nobis Hospitality Group",
+        "note": "Via nobishotels.se"
+      }
+    ],
+    "location": "Skeppsholmen, Stockholm",
+    "size": "78 rooms + 3 suites",
+    "category": "Luxury Boutique / Heritage",
+    "website": "hotelskeppsholmen.se",
+    "year": "2009",
+    "circularFeatures": [
+      "325+ year heritage preservation (1699 building)",
+      "Original timber structure retained and restored",
+      "Period-appropriate restoration techniques",
+      "Integration of antique Swedish furnishings",
+      "Byggnadsminne listed status maintained throughout renovation",
+      "Circular through preservation - avoided demolition entirely"
+    ],
+    "metrics": {
+      "heritage": "325+ years preserved",
+      "circularContent": "Building-level circular (entire structure reused)",
+      "certification": "Byggnadsminne listed"
+    },
+    "notes": [
+      "Sweden's premier heritage hotel preservation example",
+      "Model for circular through preservation (reuse entire building)",
+      "Same owner as Blique by Nobis - Nobis Hospitality Group expertise",
+      "Island location (Skeppsholmen) adds unique character",
+      "Demonstrates heritage compliance path for circular hospitality"
+    ],
+    "chain": "Nobis Hospitality Group",
+    "chainPotential": "LOW - unique heritage asset",
+    "year_verified": 2009,
+    "sourceRefs": ["nobis_website"]
+  },
+  {
+    "id": "hobo_hotel_stockholm",
+    "title": "HOBO HOTEL",
+    "type": "Hotel Case Study",
+    "tier": "Showcase",
+    "fyraRelevance": 5,
+    "whyIncluded": {
+      "reason": "Fire Safety Precedent",
+      "explanation": "Swedish regulatory approval (Räddningstjänsten) of vintage/upcycled furniture via sprinkler compensation. This fire safety equivalence approach remains legally relevant for current projects.",
+      "stillRelevant": true
+    },
+    "details": {
+      "chain": "Nobis Hospitality Group",
+      "scope": "DESIGN BOUTIQUE - Upcycled materials and vintage furniture integration",
+      "designer": "Studio Aisslinger (Werner Aisslinger, Berlin)",
+      "fire_strategy": "Sprinkler-based equivalence for vintage furniture"
+    },
+    "contacts": [
+      {
+        "name": "Hobo Hotel",
+        "website": "hobo.se"
+      }
+    ],
+    "location": "Brunkebergstorg, Stockholm",
+    "size": "201 rooms",
+    "category": "Design Boutique / Lifestyle",
+    "website": "hobo.se",
+    "year": "2017",
+    "circularFeatures": [
+      "Upcycled materials throughout interior design",
+      "Reclaimed wood paneling in public areas",
+      "Industrial salvage lighting fixtures",
+      "Vintage furniture integration (Swedish fire approval precedent)",
+      "Approved fire strategy with sprinklers allowing vintage furniture",
+      "Mixed materials aesthetic celebrating imperfection"
+    ],
+    "metrics": {
+      "circularContent": "High - upcycled focus throughout",
+      "fireSafety": "Sprinkler equivalence approved"
+    },
+    "notes": [
+      "CRITICAL: Swedish precedent for vintage furniture in hotels",
+      "Fire safety solved via sprinkler compensation strategy",
+      "Studio Aisslinger - internationally renowned German design firm",
+      "Nobis portfolio demonstrates range: heritage (Skeppsholmen) to lifestyle (Hobo)",
+      "Model for 'creative reuse' aesthetic in hospitality"
+    ],
+    "chain": "Nobis Hospitality Group",
+    "chainPotential": "MEDIUM - lifestyle brand model replicable",
+    "year_verified": 2017,
+    "sourceRefs": ["hobo_website", "nobis_website"]
+  },
+  {
+    "id": "ett_hem_stockholm",
+    "title": "ETT HEM",
+    "type": "Hotel Case Study",
+    "tier": "Showcase",
+    "fyraRelevance": 4,
+    "whyIncluded": {
+      "reason": "Fire Safety Precedent",
+      "explanation": "First Swedish hotel to achieve regulatory approval for vintage furniture via sprinkler + compartmentation compensation. Establishes the legal pathway still referenced by fire consultants today.",
+      "stillRelevant": true
+    },
+    "details": {
+      "scope": "ULTRA-BOUTIQUE - Residential aesthetic with vintage furniture",
+      "designer": "Ilse Crawford (Studioilse, London)",
+      "operator": "Independent / Small Luxury Hotels of the World",
+      "building_era": "Arts & Crafts era building (early 1900s)",
+      "fire_strategy": "Sprinkler + compartmentation compensation"
+    },
+    "contacts": [
+      {
+        "name": "Ett Hem",
+        "website": "etthem.se",
+        "phone": "+46 8 20 05 90"
+      }
+    ],
+    "location": "Lärkstaden, Stockholm",
+    "size": "12 rooms only",
+    "category": "Ultra-luxury Boutique",
+    "website": "etthem.se",
+    "year": "2012",
+    "circularFeatures": [
+      "Vintage furniture throughout (no exhaustive fire testing required)",
+      "Antique Swedish pieces as core design element",
+      "Arts & Crafts era building preservation",
+      "Residential 'home away from home' concept",
+      "Fire safety: sprinkler + compartmentation strategy",
+      "Patina and age celebrated rather than hidden"
+    ],
+    "metrics": {
+      "circularContent": "High - vintage furniture priority",
+      "fireSafety": "Compensatory measures approved"
+    },
+    "notes": [
+      "Swedish precedent for vintage furniture without exhaustive testing",
+      "Fire safety achieved through sprinkler + compartmentation compensation",
+      "Ilse Crawford - internationally renowned designer (known for Soho House)",
+      "Ultra-boutique model (12 rooms) allows flexibility larger hotels may not have",
+      "Demonstrates residential aesthetic achievable with reused furniture"
+    ],
+    "chain": "Independent",
+    "chainPotential": "LOW - ultra-boutique model",
+    "year_verified": 2012,
+    "sourceRefs": ["etthem_website", "dezeen_etthem"]
   }
 ]

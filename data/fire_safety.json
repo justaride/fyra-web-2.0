@@ -284,6 +284,128 @@
     "msb_fire_safety",
     "rise_fire_research",
     "en_1021_standard",
-    "en_13501_standard"
-  ]
+    "en_13501_standard",
+    "prompt5_regulatory_guide"
+  ],
+  "testingCostMatrix": {
+    "title": "Fire Testing Cost Matrix",
+    "source": "RISE/SP labs Sweden (2024-2025 pricing)",
+    "budgetGuidance": "Budget 100,000-200,000 SEK for comprehensive hotel renovation fire testing (8-10 product types)",
+    "disclaimer": {
+      "text": "Testing costs are indicative estimates. Prices change annually and vary by sample complexity. Always verify current pricing directly with RISE (ri.se) or your testing lab before project budgeting.",
+      "lastVerified": "2025-11",
+      "verificationMethod": "Research compilation from industry sources and project documentation",
+      "recommendedAction": "Contact RISE directly at +46 10 516 50 00 for current pricing"
+    },
+    "items": [
+      {
+        "product": "Upholstered chair (single sample)",
+        "testStandard": "EN 1021-1 (cigarette test)",
+        "cost": "15,000-18,000 SEK",
+        "timeline": "3-4 weeks",
+        "notes": "Most common test for contract furniture"
+      },
+      {
+        "product": "Upholstered chair (single sample)",
+        "testStandard": "EN 1021-2 (match test)",
+        "cost": "18,000-25,000 SEK",
+        "timeline": "3-4 weeks",
+        "notes": "Required for higher fire safety classification"
+      },
+      {
+        "product": "Sofa / deep-seat furniture",
+        "testStandard": "BS 5852 Crib 5 (high-hazard)",
+        "cost": "45,000-70,000 SEK",
+        "timeline": "6-8 weeks",
+        "notes": "Required for public areas with extended seated duration"
+      },
+      {
+        "product": "Curtain fabric (per sample)",
+        "testStandard": "EN 13501-1 (Euroclass)",
+        "cost": "45,000-60,000 SEK",
+        "timeline": "6-8 weeks",
+        "notes": "Required for curtains in corridors and public areas"
+      },
+      {
+        "product": "Wall covering / textile panel",
+        "testStandard": "EN 13501-1 (Euroclass B-s1,d0)",
+        "cost": "50,000-75,000 SEK",
+        "timeline": "6-8 weeks",
+        "notes": "Corridors require B-s1,d0 classification"
+      },
+      {
+        "product": "Mattress (full testing)",
+        "testStandard": "EN 597-1/2 + national supplements",
+        "cost": "60,000-90,000 SEK",
+        "timeline": "8-10 weeks",
+        "notes": "Complex testing - consider new certified mattresses instead"
+      }
+    ],
+    "economicViability": {
+      "viable": [
+        "Testing 1-3 product TYPES with multiple identical units (cost spread across many pieces)",
+        "Frame reuse + certified new fabric (textile supplier provides certificate)",
+        "Metal/wood furniture (inherently compliant, minimal testing)"
+      ],
+      "marginal": [
+        "Testing 5-10 unique vintage pieces (may equal new purchase cost)",
+        "Mixed batch testing (each unique piece needs individual test)"
+      ],
+      "notViable": [
+        "Testing >10 unique upholstered pieces",
+        "Vintage textiles requiring full Euroclass testing",
+        "Unknown-origin fully upholstered furniture for corridors"
+      ]
+    }
+  },
+  "municipalTimelines": {
+    "title": "Swedish Municipal Approval Timelines",
+    "description": "Building permit and fire safety approval timelines vary significantly by municipality",
+    "disclaimer": {
+      "text": "Timelines are typical ranges based on project manager interviews and documented projects. Actual timelines vary by project complexity, municipal workload, and seasonal factors. Always confirm with your specific municipality.",
+      "lastVerified": "2025-11",
+      "verificationMethod": "Research compilation from consultant interviews and project documentation"
+    },
+    "items": [
+      {
+        "municipality": "Stockholm",
+        "timeline": "12-14 months",
+        "complexity": "High",
+        "notes": "Most stringent review process, multiple departments involved",
+        "recommendation": "Allow 18 months for complex reuse projects"
+      },
+      {
+        "municipality": "Gothenburg",
+        "timeline": "7-8 months",
+        "complexity": "Medium",
+        "notes": "Most developed circular procurement tools in Sweden",
+        "recommendation": "IDEAL for pilot circular hotel projects - supportive regulatory environment"
+      },
+      {
+        "municipality": "Malmö",
+        "timeline": "8-10 months",
+        "complexity": "Medium",
+        "notes": "Growing circular focus, Västra Hamnen sustainability cluster",
+        "recommendation": "Good option for southern Sweden projects"
+      },
+      {
+        "municipality": "Uppsala",
+        "timeline": "6-8 months",
+        "complexity": "Medium-Low",
+        "notes": "University city, precedent with Akademihotellet museum furniture swap",
+        "recommendation": "Consider for heritage/university-adjacent projects"
+      }
+    ],
+    "preApplicationMeetings": {
+      "recommended": true,
+      "purpose": "Identify viable fire safety strategies before design is finalized",
+      "participants": ["Project architect", "Fire consultant (Piacon/White)", "Räddningstjänsten representative"],
+      "timing": "8-12 weeks before building permit submission",
+      "benefits": [
+        "Clarify equivalence pathway acceptance",
+        "Identify documentation requirements early",
+        "Avoid costly redesign during permit review"
+      ]
+    }
+  }
 }

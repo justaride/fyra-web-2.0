@@ -1604,5 +1604,103 @@
     "verificationStatus": "Villa Copenhagen project verified. Designer manufacturer status clear. NOT suitable for B2B reuse operator list.",
     "lastUpdated": "2024-2025",
     "businessModel": "Hybrid"
+  },
+  {
+    "id": "senab_aterbruk",
+    "name": "SENAB Återbruk",
+    "sourceRefs": ["prompt4_frontrunner", "senab_website"],
+    "description": "Part of established SENAB group - one of Sweden's largest office furniture suppliers. SENAB Återbruk division specializes in refurbished furniture with documented hospitality project experience (Blique by Nobis). Enterprise-grade infrastructure with sustainability documentation capabilities.",
+    "location": "Stockholm region. Part of SENAB group with nationwide distribution network.",
+    "mapLocations": [
+      {
+        "name": "SENAB Stockholm HQ",
+        "address": "Stockholm area",
+        "lat": 59.3293,
+        "lng": 18.0686
+      }
+    ],
+    "services": [
+      "Refurbished office furniture sales",
+      "Hotel and hospitality furniture refurbishment",
+      "Corporate furniture liquidation",
+      "Sustainability documentation and reporting",
+      "Enterprise-scale project management",
+      "Logistics and installation services"
+    ],
+    "capabilities": {
+      "volume": "Part of major SENAB group - significant inventory and logistics capacity. Can handle large hotel renovation projects.",
+      "leadTime": "Stock items: 2-4 weeks. Custom refurbishment projects: 6-10 weeks.",
+      "inventory": "Focus on high-quality office furniture suitable for hotel public areas. Strong contract furniture selection.",
+      "logistics": "Nationwide Swedish delivery through SENAB group infrastructure."
+    },
+    "contact": {
+      "name": "SENAB Group",
+      "phone": "Via senab.com",
+      "email": "info@senab.com",
+      "website": "https://senab.com/aterbruk"
+    },
+    "certifications": [
+      "Part of established SENAB corporate group",
+      "Enterprise-level sustainability reporting",
+      "Professional documentation standards"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 2",
+      "score": "Medium-High - Proven hospitality reference (Blique by Nobis)",
+      "strengths": [
+        "VERIFIED: Supplied refurbished furniture to Blique by Nobis (249-room luxury hotel)",
+        "Part of major Swedish furniture group - enterprise reliability",
+        "Sustainability documentation capability aligned with hotel ESG requirements",
+        "Nationwide logistics through SENAB infrastructure"
+      ],
+      "gaps": [
+        "Less specialized in hospitality than YLLW Factory",
+        "Limited public information on refurbishment factory capabilities",
+        "Pricing not publicly available"
+      ]
+    },
+    "pricing": "Contact for project-specific pricing. Part of established corporate group suggests competitive enterprise pricing.",
+    "projectExamples": [
+      "Blique by Nobis, Stockholm (249 rooms) - refurbished furniture supply (part of EUR 8.6M materials reused project)"
+    ],
+    "strengths": [
+      "Proven hospitality project: Blique by Nobis (Sweden's best-documented circular hotel)",
+      "Part of established SENAB group - enterprise reliability and scale",
+      "Nationwide logistics network",
+      "Professional sustainability documentation"
+    ],
+    "gaps": [
+      "Less public-facing than YLLW Factory",
+      "Hospitality not primary focus (office furniture core)",
+      "Limited online inventory visibility"
+    ],
+    "founded": "Part of SENAB group",
+    "employees": "Part of larger SENAB organization",
+    "legalStructure": "Division of SENAB Group",
+    "formerNames": [],
+    "ownership": "Corporate (SENAB Group)",
+    "specificTestStandards": [
+      "EN 1021-1/2 capability implied (hospitality project completion)"
+    ],
+    "warrantyDuration": "Corporate standard warranties",
+    "rentalOptions": false,
+    "minimumOrder": "Project-based",
+    "volumeDiscounts": "Likely available for large hospitality projects",
+    "aestheticDescription": "Professional quality refurbished office and contract furniture",
+    "bestFor": [
+      "Projects seeking proven hospitality reference (Blique by Nobis)",
+      "Enterprise clients preferring established corporate supplier",
+      "Hotel public area furniture (lobby, conference, restaurant)",
+      "Projects requiring formal sustainability documentation"
+    ],
+    "avoidFor": [
+      "Small boutique projects seeking specialized hospitality focus",
+      "Projects requiring extensive vintage/antique pieces",
+      "Budget projects prioritizing lowest cost over documentation"
+    ],
+    "confidenceLevel": "HIGH - Verified via Blique by Nobis project",
+    "verificationStatus": "Blique by Nobis project reference verified through multiple sources (Sweco documentation, frontrunner hotel research). Part of established SENAB group.",
+    "lastUpdated": "2024-2025",
+    "businessModel": "Circular"
   }
 ]

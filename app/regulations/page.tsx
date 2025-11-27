@@ -418,6 +418,87 @@ export default async function RegulationsPage() {
                         ))}
                     </div>
 
+                    {/* Detailed Testing Costs - Collapsible */}
+                    <details className="bg-amber-50 rounded-xl border border-amber-200 mb-8 group">
+                        <summary className="p-6 cursor-pointer list-none">
+                            <div className="flex items-center justify-between">
+                                <div className="flex items-center gap-3">
+                                    <div className="p-2 bg-amber-100 rounded-lg">
+                                        <Info className="w-5 h-5 text-amber-700" />
+                                    </div>
+                                    <div>
+                                        <h3 className="font-bold text-amber-900">Detailed Testing Cost Matrix</h3>
+                                        <p className="text-xs text-amber-700">Click to expand indicative pricing from RISE/SP labs</p>
+                                    </div>
+                                </div>
+                                <ArrowRight className="w-5 h-5 text-amber-600 transition-transform group-open:rotate-90" />
+                            </div>
+                        </summary>
+                        <div className="px-6 pb-6 border-t border-amber-200 pt-4">
+                            {/* Disclaimer */}
+                            <div className="bg-amber-100 rounded-lg p-3 mb-4 text-xs text-amber-800">
+                                <strong>Disclaimer:</strong> Testing costs are indicative estimates from 2024-2025. Prices change annually and vary by sample complexity. Always verify current pricing directly with RISE (ri.se) or your testing lab before project budgeting. Contact RISE at +46 10 516 50 00 for current pricing.
+                            </div>
+
+                            {/* Cost Matrix Table */}
+                            <div className="overflow-x-auto bg-white rounded-lg border border-amber-100">
+                                <table className="w-full text-sm">
+                                    <thead>
+                                        <tr className="border-b bg-amber-50">
+                                            <th className="text-left py-3 px-4 font-semibold text-slate-700">Product Type</th>
+                                            <th className="text-left py-3 px-4 font-semibold text-slate-700">Test Standard</th>
+                                            <th className="text-left py-3 px-4 font-semibold text-slate-700">Cost (SEK)</th>
+                                            <th className="text-left py-3 px-4 font-semibold text-slate-700">Timeline</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr className="border-b">
+                                            <td className="py-3 px-4 text-slate-900">Upholstered chair</td>
+                                            <td className="py-3 px-4 text-slate-600">EN 1021-1 (cigarette)</td>
+                                            <td className="py-3 px-4 text-slate-600">15,000-18,000</td>
+                                            <td className="py-3 px-4 text-slate-600">3-4 weeks</td>
+                                        </tr>
+                                        <tr className="border-b">
+                                            <td className="py-3 px-4 text-slate-900">Upholstered chair</td>
+                                            <td className="py-3 px-4 text-slate-600">EN 1021-2 (match)</td>
+                                            <td className="py-3 px-4 text-slate-600">18,000-25,000</td>
+                                            <td className="py-3 px-4 text-slate-600">3-4 weeks</td>
+                                        </tr>
+                                        <tr className="border-b">
+                                            <td className="py-3 px-4 text-slate-900">Sofa / deep-seat</td>
+                                            <td className="py-3 px-4 text-slate-600">BS 5852 Crib 5</td>
+                                            <td className="py-3 px-4 text-slate-600">45,000-70,000</td>
+                                            <td className="py-3 px-4 text-slate-600">6-8 weeks</td>
+                                        </tr>
+                                        <tr className="border-b">
+                                            <td className="py-3 px-4 text-slate-900">Curtain fabric</td>
+                                            <td className="py-3 px-4 text-slate-600">EN 13501-1 Euroclass</td>
+                                            <td className="py-3 px-4 text-slate-600">45,000-60,000</td>
+                                            <td className="py-3 px-4 text-slate-600">6-8 weeks</td>
+                                        </tr>
+                                        <tr className="border-b">
+                                            <td className="py-3 px-4 text-slate-900">Wall covering</td>
+                                            <td className="py-3 px-4 text-slate-600">EN 13501-1 B-s1,d0</td>
+                                            <td className="py-3 px-4 text-slate-600">50,000-75,000</td>
+                                            <td className="py-3 px-4 text-slate-600">6-8 weeks</td>
+                                        </tr>
+                                        <tr>
+                                            <td className="py-3 px-4 text-slate-900">Mattress</td>
+                                            <td className="py-3 px-4 text-slate-600">EN 597-1/2</td>
+                                            <td className="py-3 px-4 text-slate-600">60,000-90,000</td>
+                                            <td className="py-3 px-4 text-slate-600">8-10 weeks</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            {/* Budget Guidance */}
+                            <div className="mt-4 p-3 bg-slate-100 rounded-lg text-sm text-slate-700">
+                                <strong>Budget Guidance:</strong> For comprehensive hotel renovation fire testing (8-10 product types), budget 100,000-200,000 SEK.
+                            </div>
+                        </div>
+                    </details>
+
                     {/* Best Practices */}
                     <div className="bg-emerald-50 rounded-xl border border-emerald-200 p-6">
                         <h3 className="font-bold text-emerald-900 mb-4 flex items-center gap-2">

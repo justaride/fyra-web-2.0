@@ -981,6 +981,66 @@
       "language": "sv",
       "verifies": ["malmo_aterbyggdepa"],
       "keyFacts": ["Used building materials depot", "Both private and B2B customers", "Social enterprise integration"]
+    },
+    {
+      "id": "nobis_website",
+      "title": "Nobis Hospitality Group - Official Website",
+      "url": "https://nobishotels.se/",
+      "type": "company_website",
+      "publisher": "Nobis Hospitality Group",
+      "language": "sv",
+      "verifies": ["blique_by_nobis", "hotel_skeppsholmen_stockholm", "hobo_hotel_stockholm"],
+      "keyFacts": ["Boutique hotel collection", "Stockholm-based", "Design-focused hospitality"]
+    },
+    {
+      "id": "wingardhs_blique",
+      "title": "Blique by Nobis - Wingårdhs Arkitektkontor",
+      "url": "https://wingardhs.se/projects/blique-by-nobis/",
+      "type": "project_page",
+      "publisher": "Wingårdhs Arkitektkontor",
+      "language": "sv",
+      "verifies": ["blique_by_nobis"],
+      "keyFacts": ["Adaptive reuse of 1930s Lewerentz warehouse", "249 rooms", "Rooftop greenhouse"]
+    },
+    {
+      "id": "archdaily_blique",
+      "title": "Blique by Nobis Hotel / Wingårdh Arkitektkontor",
+      "url": "https://www.archdaily.com/970867/blique-by-nobis-hotel-wingardh-arkitektkontor",
+      "type": "news_article",
+      "publisher": "ArchDaily",
+      "language": "en",
+      "verifies": ["blique_by_nobis"],
+      "keyFacts": ["Architectural photography", "Design details", "Sigurd Lewerentz heritage"]
+    },
+    {
+      "id": "hobo_website",
+      "title": "Hobo Hotel - Official Website",
+      "url": "https://hobo.se/",
+      "type": "company_website",
+      "publisher": "Nobis Hospitality Group",
+      "language": "en",
+      "verifies": ["hobo_hotel_stockholm"],
+      "keyFacts": ["Design boutique hotel", "Brunkebergstorg location", "Studio Aisslinger design"]
+    },
+    {
+      "id": "etthem_website",
+      "title": "Ett Hem - Official Website",
+      "url": "https://etthem.se/",
+      "type": "company_website",
+      "publisher": "Ett Hem",
+      "language": "en",
+      "verifies": ["ett_hem_stockholm"],
+      "keyFacts": ["12-room ultra-boutique", "Ilse Crawford design", "Residential aesthetic"]
+    },
+    {
+      "id": "dezeen_etthem",
+      "title": "Ett Hem hotel by Studioilse",
+      "url": "https://www.dezeen.com/2012/11/01/ett-hem-by-studioilse/",
+      "type": "news_article",
+      "publisher": "Dezeen",
+      "language": "en",
+      "verifies": ["ett_hem_stockholm"],
+      "keyFacts": ["Ilse Crawford design coverage", "Arts & Crafts building", "Residential hotel concept"]
     }
   ],
   "sourceTypes": {

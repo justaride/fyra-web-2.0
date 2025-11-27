@@ -18,7 +18,8 @@ import {
     Recycle,
     Mail,
     Star,
-    ArrowRight
+    ArrowRight,
+    Linkedin
 } from 'lucide-react';
 import SourceReferences from '@/components/SourceReferences';
 import { JsonLd, generateArticleSchema } from '@/components/JsonLd';
@@ -27,6 +28,9 @@ interface CaseStudyContact {
     name?: string;
     title?: string;
     email?: string;
+    linkedin?: string;
+    phone?: string;
+    website?: string;
     note?: string;
 }
 
@@ -34,7 +38,12 @@ interface CaseStudyMetrics {
     co2Impact?: string;
     circularContent?: string;
     materialReuse?: string;
-    certification?: string;
+    materialReusedValue?: string;
+    totalSavings?: string;
+    wasteAvoidance?: string;
+    heritage?: string;
+    fireSafety?: string;
+    certification?: string | string[];
 }
 
 interface CaseStudy {
@@ -214,6 +223,24 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
                                             <p className="text-white font-semibold">{study.metrics.co2Impact}</p>
                                         </div>
                                     )}
+                                    {study.metrics.materialReusedValue && (
+                                        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                                            <div className="flex items-center gap-2 text-amber-300 mb-1">
+                                                <TrendingUp className="w-4 h-4" />
+                                                <span className="text-xs font-medium uppercase tracking-wider">Materials Reused</span>
+                                            </div>
+                                            <p className="text-white font-semibold">{study.metrics.materialReusedValue}</p>
+                                        </div>
+                                    )}
+                                    {study.metrics.totalSavings && (
+                                        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
+                                            <div className="flex items-center gap-2 text-emerald-300 mb-1">
+                                                <TrendingUp className="w-4 h-4" />
+                                                <span className="text-xs font-medium uppercase tracking-wider">Total Savings</span>
+                                            </div>
+                                            <p className="text-white font-semibold text-sm">{study.metrics.totalSavings}</p>
+                                        </div>
+                                    )}
                                     {study.metrics.circularContent && (
                                         <div className="bg-white/10 backdrop-blur-sm rounded-xl p-4">
                                             <div className="flex items-center gap-2 text-teal-300 mb-1">
@@ -229,7 +256,11 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
                                                 <Star className="w-4 h-4" />
                                                 <span className="text-xs font-medium uppercase tracking-wider">Certified</span>
                                             </div>
-                                            <p className="text-white font-semibold">{study.metrics.certification}</p>
+                                            <p className="text-white font-semibold">
+                                                {Array.isArray(study.metrics.certification)
+                                                    ? study.metrics.certification.join(', ')
+                                                    : study.metrics.certification}
+                                            </p>
                                         </div>
                                     )}
                                     {study.year_verified && (
@@ -347,9 +378,26 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
                                                 <p className="text-sm text-slate-600">{contact.title}</p>
                                             )}
                                             {contact.email && (
-                                                <a href={`mailto:${contact.email}`} className="text-sm text-teal-600 hover:text-teal-700 flex items-center gap-1.5 mt-1">
+                                                <a href={`mailto:${contact.email}`} className="text-sm text-teal-600 hover:text-teal-700 flex items-center gap-1.5 mt-2">
                                                     <Mail className="w-3.5 h-3.5" />
                                                     {contact.email}
+                                                </a>
+                                            )}
+                                            {contact.linkedin && (
+                                                <a
+                                                    href={contact.linkedin.startsWith('http') ? contact.linkedin : `https://${contact.linkedin}`}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="text-sm text-blue-600 hover:text-blue-700 flex items-center gap-1.5 mt-1"
+                                                >
+                                                    <Linkedin className="w-3.5 h-3.5" />
+                                                    LinkedIn Profile
+                                                </a>
+                                            )}
+                                            {contact.phone && (
+                                                <a href={`tel:${contact.phone.replace(/\s/g, '')}`} className="text-sm text-slate-600 hover:text-teal-600 flex items-center gap-1.5 mt-1">
+                                                    <Phone className="w-3.5 h-3.5" />
+                                                    {contact.phone}
                                                 </a>
                                             )}
                                             {contact.note && (

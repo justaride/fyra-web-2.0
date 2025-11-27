@@ -1,7 +1,7 @@
 # FYRA CIRCULAR PLATFORM - IMPLEMENTATION PROGRESS
 
-**Last Updated:** 2025-11-27 (Session 6 - NCH Contract Alignment Complete)
-**Current State:** All Contract Objectives Complete - LIVE on GitHub Pages
+**Last Updated:** 2025-11-27 (Session 8 - Jan Thomas Feedback Implemented)
+**Current State:** All Contract Objectives Complete + Stakeholder Feedback Addressed
 **Deployment:** https://justaride.github.io/fyra-web-2.0/
 
 ---
@@ -183,18 +183,68 @@ Added professional hero sections to all 6 remaining pages:
 ### Core Data (All with sourceRefs)
 | File | Records | Status |
 |------|---------|--------|
-| suppliers_enhanced.json | 15 suppliers | ENRICHED |
+| suppliers_enhanced.json | 16 suppliers | ENRICHED (+SENAB) |
 | consultants_enhanced.json | 3 Tier-1 PMs | OK |
 | consultants.json | 5 consultants | REVERTED |
-| caseStudies_clean.json | 11 case studies | ENRICHED |
+| caseStudies_clean.json | 14 case studies | ENRICHED (+4 new, +whyIncluded) |
 | scenarios.json | 5 scenarios | OK |
 | certifications.json | 8 certifications | OK |
 | regulations_filtered.json | 4 categories | OK |
-| **public_procurement.json** | **7 sections** | **NEW** |
+| public_procurement.json | 7 sections | OK |
 | specifications.json | BVB + templates | OK |
-| fire_safety.json | 3 tiers + labs | OK |
+| fire_safety.json | 3 tiers + labs + costs + timelines | ENRICHED (+disclaimers) |
 | sources.json | 106 sources | OK |
 | templates.json | 6 templates | OK |
+
+---
+
+## SESSION 8 CHANGES (2025-11-27)
+
+### Jan Thomas Feedback Implementation
+Addressed stakeholder feedback from NCH review of platform:
+
+| # | Concern | Solution | File(s) |
+|---|---------|----------|---------|
+| 1 | NCH chapter mapping not visible | Added "Platform Guide" section to About page with objective-to-page cards | `app/about/page.tsx` |
+| 2 | Scenarios purpose unclear | Added context block explaining scenarios vs regulations relationship | `app/scenarios/page.tsx` |
+| 3 | Pre-2018 case studies included | Added `whyIncluded` field with justification (fire precedent, heritage, etc.) | `data/caseStudies_clean.json` |
+| 4 | Regulatory detail accuracy | Added disclaimer objects with verification notes to testing costs & timelines | `data/fire_safety.json` |
+| 5 | Fire safety UX confusion | Added collapsible `<details>` section for detailed testing cost matrix | `app/regulations/page.tsx` |
+
+### UI Enhancements
+- **NCH Platform Guide:** Cards linking NCH objectives 2-5 to specific platform pages
+- **Scenarios Context Block:** Blue info panel explaining scenarios as "what-if" guides
+- **Collapsible Testing Costs:** `<details>/<summary>` pattern for progressive disclosure
+- **Disclaimers:** Amber warning boxes with verification dates and recommended actions
+
+---
+
+## SESSION 7 CHANGES (2025-11-27)
+
+### Data Enrichment from Claude Project Analysis
+Analyzed 6 MIRO research documents and enriched platform data:
+
+**Case Studies Added:**
+| Case Study | Type | Key Data |
+|------------|------|----------|
+| Blique by Nobis | Flagship | €8.6M materials reused, 3,600t CO2 saved, Sweco/SENAB connections |
+| Hotel Skeppsholmen | Heritage | 350+ year preservation, Nobis group |
+| Hobo Hotel | Showcase | Vintage furniture precedent with fire safety approval |
+| Ett Hem | Boutique | Ilse Crawford design, sprinkler compensation strategy |
+
+**Fire Safety Enrichments:**
+- Testing cost matrix with 6 product categories (15K-70K SEK ranges)
+- Municipal approval timelines (Stockholm 12-14mo, Gothenburg 7-8mo)
+- Budget guidance: 100K-200K SEK for comprehensive testing
+
+**Suppliers Added:**
+- SENAB Återbruk - Blique by Nobis furniture supplier
+
+### Files Modified
+- `data/caseStudies_clean.json` - +4 case studies, enriched Blique metrics
+- `data/fire_safety.json` - +testingCostMatrix, +municipalTimelines
+- `data/suppliers_enhanced.json` - +SENAB Återbruk
+- `docs/ENRICHMENT_ACTION_PLAN.md` - Created comprehensive enrichment roadmap
 
 ---
 
@@ -230,6 +280,8 @@ Source: PROMPT 3 research (Perplexity + ChatGPT outputs)
 
 | Priority | Section | Status | Notes |
 |----------|---------|--------|-------|
+| ~~**HIGH**~~ | ~~**Jan Thomas Feedback**~~ | **DONE** | ~~NCH mapping, scenarios context, disclaimers, UX~~ Session 8 |
+| ~~**HIGH**~~ | ~~**Data Enrichment**~~ | **DONE** | ~~Blique, Skeppsholmen, Hobo, Ett Hem, SENAB~~ Session 7 |
 | ~~**HIGH**~~ | ~~**Obj 5: Public Procurement**~~ | **DONE** | ~~Adding LOU/procurement content~~ `79cfcbf` |
 | HIGH | Consultant Data Integration | BLOCKED | Requires ConsultantCard.tsx update for contacts array |
 | ~~MEDIUM~~ | ~~Page UX Audit~~ | **DONE** | ~~Ensure all pages follow landing page design standards~~ |
