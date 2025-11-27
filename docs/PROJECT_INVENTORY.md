@@ -1,8 +1,8 @@
 # FYRA CIRCULAR PLATFORM - Prosjektinventar
 
 **Dato:** 2025-11-27
-**Versjon:** 2.1
-**Status:** Design Refresh Komplett - Live på GitHub Pages
+**Versjon:** 2.2
+**Status:** Landing Page + Symbol System Komplett - Live på GitHub Pages
 
 ---
 
@@ -41,134 +41,160 @@ Berikede data er tilgjengelige i `/docs/MIRO_DOCS_FINDINGS.md` for fremtidig imp
 
 ---
 
-## 2. DOKUMENTASJON (5 filer)
+## 2. DOKUMENTASJON (6 filer)
 
 | Fil | Formål | Status |
 |-----|--------|--------|
 | `CRITICAL_ANALYSIS.md` | Kvalitetsanalyse & gap-vurdering | ✅ OPPDATERT |
 | `MIRO_DOCS_FINDINGS.md` | Sammendrag av MIRO research | ✅ NY |
 | `IMPLEMENTATION_PLAN.md` | Implementeringsplan | ✅ OK |
-| `PROGRESS.md` | Fremdriftslogg | ✅ OK |
+| `PROGRESS.md` | Fremdriftslogg | ✅ OPPDATERT Session 5 |
 | `DATA_COVERAGE_REPORT.md` | Datadekningsrapport | ✅ OK |
-| `PROJECT_INVENTORY.md` | Dette dokumentet | ✅ NY |
+| `PROJECT_INVENTORY.md` | Dette dokumentet | ✅ v2.2 |
 
 ---
 
-## 3. APPLIKASJONSFILER (13 sider)
+## 3. APPLIKASJONSFILER (14 sider)
 
 ### Hovedsider
-| Side | Route | Datafil |
-|------|-------|---------|
-| Home/Suppliers | `/` | suppliers_enhanced.json |
-| Experts | `/experts` | consultants.json |
-| Case Studies | `/case-studies` | caseStudies_clean.json |
-| Regulations | `/regulations` | regulations_filtered.json |
-| Certifications | `/certifications` | certifications.json |
-| Specifications | `/specifications` | specifications.json |
-| About | `/about` | - |
+| Side | Route | Datafil | Status |
+|------|-------|---------|--------|
+| Landing Page | `/` | Multiple (suppliers, cases, consultants) | ✅ NY Session 5 |
+| Suppliers Directory | `/suppliers` | suppliers_enhanced.json | ✅ NY Session 5 |
+| Experts | `/experts` | consultants.json | ✅ OK |
+| Case Studies | `/case-studies` | caseStudies_clean.json | ✅ OK |
+| Regulations | `/regulations` | regulations_filtered.json | ✅ Icons oppdatert |
+| Certifications | `/certifications` | certifications.json | ⚠️ Trenger UX audit |
+| Specifications | `/specifications` | specifications.json | ⚠️ Trenger UX audit |
+| About | `/about` | fyra-profile.json | ✅ OK |
 
 ### Detaljsider
-| Side | Route | Datafil |
-|------|-------|---------|
-| Supplier Detail | `/suppliers/[id]` | suppliers_enhanced.json |
-| Case Study Detail | `/case-studies/[id]` | caseStudies_clean.json |
-| Template Detail | `/templates/[id]` | templates.json |
+| Side | Route | Datafil | Status |
+|------|-------|---------|--------|
+| Supplier Detail | `/suppliers/[id]` | suppliers_enhanced.json | ✅ Icons oppdatert |
+| Case Study Detail | `/case-studies/[id]` | caseStudies_clean.json | ✅ Design refresh |
+| Template Detail | `/templates/[id]` | templates.json | ✅ OK |
 
 ### Utility-sider
-| Side | Route |
-|------|-------|
-| Templates List | `/templates` |
-| Scenarios | `/scenarios` |
+| Side | Route | Status |
+|------|-------|--------|
+| Templates List | `/templates` | ⚠️ Trenger UX audit |
+| Scenarios | `/scenarios` | ⚠️ Trenger UX audit |
 
 ---
 
-## 4. KILDEMATERIALE (MIRO DOCS)
+## 4. KOMPONENT-STATUS
 
-### Gjennomgått materiale
-| PROMPT | Tema | Hovedfil | Status |
-|--------|------|----------|--------|
-| 1 | Konsulenter/PM | ChatGPT + Gemini | ✅ LEST |
-| 2 | Leverandører | ChatGPT + Perplexity | ✅ LEST |
-| 3 | Regulatory | ChatGPT | ✅ LEST |
-| 4 | BVB | ChatGPT | ✅ LEST |
-| 5 | Sertifiseringer | ChatGPT | ✅ LEST |
-| 6 | Case Studies | ChatGPT | ✅ LEST |
+### Oppdatert Session 5
+| Komponent | Endring | Status |
+|-----------|---------|--------|
+| `SourceReferences.tsx` | Emoji → Lucide icons | ✅ FERDIG |
+| `EnhancedConsultantCard.tsx` | ★ stars → Bar indicators | ✅ FERDIG |
+| `Header.tsx` | Link til /suppliers | ✅ FERDIG |
+| `MobileNav.tsx` | Link til /suppliers | ✅ FERDIG |
 
-### Ikke-prosessert materiale
-- Citations-filer (for store, krever manuell gjennomgang)
-- Noen Perplexity/Gemini outputs (delvis lest)
+### Trenger oppdatering
+| Komponent | Problem | Prioritet |
+|-----------|---------|-----------|
+| `ConsultantCard.tsx` | Støtter ikke contacts-array | HØY |
 
 ---
 
-## 5. KVALITETSSTATUS
+## 5. DESIGN SYSTEM STATUS
 
-### Nåværende vurdering (Post Fase 2)
+### Symbol System (Session 5)
+| Kategori | Før | Etter |
+|----------|-----|-------|
+| Ratings | ★★★★☆ emoji | Teal bar indicators |
+| Tiers | ★★★ / ●●● emoji | Dot indicators |
+| Fire safety | ✅⚠️🚨 emoji | ShieldCheck/AlertTriangle/ShieldAlert |
+| Source types | 🏗️📰🏢 emoji | Lucide icons |
+
+### Landing Page Pattern (Session 5)
+Etablert mønster for hovedsider:
+1. Hero section med value proposition
+2. Explainer/context bar
+3. Pathway cards for brukerintent
+4. Featured content preview
+5. Additional resources
+6. Credibility section
+7. CTA footer
+
+---
+
+## 6. KVALITETSSTATUS
+
+### Nåværende vurdering (Post Session 5)
 ```
-Datakvalitet:      8/10  (+2 fra baseline)
-Actionability:     8/10  (+2 fra baseline)
-Completeness:      8/10  (+3 fra baseline)
+Datakvalitet:      8/10  (uendret)
+Actionability:     8/10  (uendret)
+Completeness:      8/10  (uendret)
 Verification:      8/10  (uendret)
+Design/UX:         9/10  (+2 fra baseline)
 ────────────────────────
-TOTALT:            8.0/10
+TOTALT:            8.2/10
 ```
 
-### Fullført (2025-11-27)
+### Fullført Session 5
 | Oppgave | Status |
 |---------|--------|
-| ✅ Berike suppliers_enhanced.json | FERDIG - 15 leverandører med hospitality tiers |
-| ✅ Berike caseStudies_clean.json | FERDIG - 11 cases med Fyra relevans scores |
-| ⚠️ Berike consultants.json | REVERTERT - Build-feil, data i MIRO_DOCS_FINDINGS.md |
-| ✅ Deploy til GitHub Pages | FERDIG - https://justaride.github.io/fyra-web-2.0/ |
-
-### Gjenstående til 9/10
-| Oppgave | Prioritet |
-|---------|-----------|
-| Oppdatere ConsultantCard.tsx for contacts-array | HØY |
-| Integrere berikede konsulentdata | HØY |
-| Verifisere kontaktinfo (email/telefon) | MEDIUM |
-| Rydde opp legacy/duplikat filer | LAV |
+| ✅ Symbol system overhaul | FERDIG - Alle emojis erstattet |
+| ✅ Landing page redesign | FERDIG - Option A implementert |
+| ✅ /suppliers route | FERDIG - Dedikert side for directory |
+| ✅ Navigation oppdatert | FERDIG - Header + MobileNav |
 
 ---
 
-## 6. NESTE PROSESS - FASE 3
+## 7. UX AUDIT CHECKLIST
 
-### 6.1 Frontend-oppdatering (Prioritet 1)
+### Sider som følger Landing Page standard
+- [x] `/` - Landing Page (REFERANSE)
+- [x] `/suppliers/[id]` - Supplier detail
+- [x] `/case-studies/[id]` - Case study detail
+- [x] `/regulations` - Fire safety
+- [x] `/about` - Fyra profile
 
-**ConsultantCard.tsx oppdatering:**
-- Endre fra `contact` (objekt) til `contacts` (array)
-- Støtte visning av flere kontakter per konsulent
-- Legge til scoring-visning
+### Sider som trenger UX audit
+- [ ] `/suppliers` - Har ikke hero section
+- [ ] `/experts` - Har ikke hero section
+- [ ] `/case-studies` - Har ikke hero section
+- [ ] `/certifications` - Sjekk design consistency
+- [ ] `/specifications` - Sjekk design consistency
+- [ ] `/scenarios` - Sjekk design consistency
+- [ ] `/templates` - Sjekk design consistency
 
-**Etter komponent-oppdatering:**
-- Integrere berikede konsulentdata fra MIRO_DOCS_FINDINGS.md
-- Oppdatere consultants.json med 11 konsulenter
+---
 
-### 6.2 Kvalitetssikring (Prioritet 2)
+## 8. NESTE PROSESS - FASE 4
 
-- Verifisere alle email-adresser
-- Sjekke at alle sourceRefs peker til gyldige kilder
-- Teste alle lenker i templates
+### 8.1 UX Consistency Audit (Prioritet 1)
+Følgende sider bør evalueres mot landing page mønsteret:
+1. Legge til hero sections der det mangler
+2. Sikre konsistent visuell hierarki
+3. Fjerne gjenværende emojis i data
+4. Legge til pathway/CTA elements
 
-### 6.3 Fremtidige forbedringer
+### 8.2 Consultant Integration (Prioritet 2)
+- Oppdatere ConsultantCard.tsx for contacts-array
+- Integrere berikede konsulentdata
 
+### 8.3 Fremtidige forbedringer
 - Søkefunksjonalitet på tvers av alt innhold
 - Leverandør-sammenligningsverktøy
 - Prosjektkostnadskalkulator
 
 ---
 
-## 7. HANDOFF-SJEKKLISTE
+## 9. HANDOFF-SJEKKLISTE
 
 For neste sesjon:
 
-- [x] Les dette dokumentet først
-- [x] Sjekk CRITICAL_ANALYSIS.md for bakgrunn
-- [x] Sjekk MIRO_DOCS_FINDINGS.md for ekstraherte data
-- [x] Berike suppliers_enhanced.json ✅ FERDIG
-- [x] Berike caseStudies_clean.json ✅ FERDIG
+- [x] Les PROGRESS.md for session 5 changes
+- [x] Sjekk design system i PROGRESS.md
+- [ ] Gjennomfør UX audit på gjenværende sider
 - [ ] Oppdatere ConsultantCard.tsx for contacts-støtte
 - [ ] Integrere berikede konsulentdata
 
 ---
 
-*Generert: 2025-11-27 | Fyra Circular Platform v2.0*
+*Generert: 2025-11-27 Session 5 | Fyra Circular Platform v2.2*

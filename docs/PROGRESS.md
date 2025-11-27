@@ -1,7 +1,7 @@
 # FYRA CIRCULAR PLATFORM - IMPLEMENTATION PROGRESS
 
-**Last Updated:** 2025-11-27 (Session 4 - Design Refresh)
-**Current State:** ~97% Complete - LIVE on GitHub Pages
+**Last Updated:** 2025-11-27 (Session 5 - Landing Page & Symbol System)
+**Current State:** ~98% Complete - LIVE on GitHub Pages
 **Deployment:** https://justaride.github.io/fyra-web-2.0/
 
 ---
@@ -22,25 +22,43 @@
 | - | JSON-LD Structured Data | **DONE** | `145bfed` |
 | - | Mobile Navigation Menu | **DONE** | `d0f44d7` |
 | - | Full Data Enrichment | **DONE** | `d477d7d` |
-| - | **Design Refresh** | **DONE** | `a99979f` |
+| - | Design Refresh | **DONE** | `a99979f` |
+| - | **Symbol System (Emoji→Icons)** | **DONE** | `316e4b0`, `aba753f` |
+| - | **Landing Page Redesign** | **DONE** | `d9354cf` |
 
-### Design Refresh (2025-11-27)
+---
 
-| Component | Changes |
-|-----------|---------|
-| globals.css | Fyra teal color palette, improved typography, custom scrollbars |
-| layout.tsx | SEO metadata, OpenGraph, Twitter cards |
-| Header.tsx | Teal branding, Recycle icon, NavLink components |
-| Case Study Pages | TierBadge, RelevanceScore, metrics display, new layout |
-| Supplier Pages | Tier stars, improved capabilities/services, gradient sections |
+## SESSION 5 CHANGES (2025-11-27)
 
-### In Progress / Remaining
+### Symbol System Overhaul
+Replaced all emoji-based indicators with professional Lucide icons:
 
-| Priority | Section | Status | Notes |
-|----------|---------|--------|-------|
-| - | Search Functionality | NOT STARTED | Future enhancement |
-| - | Supplier Comparison Tool | NOT STARTED | Future enhancement |
-| - | Consultant Data Integration | BLOCKED | Requires ConsultantCard.tsx update |
+| Component | Before | After |
+|-----------|--------|-------|
+| `SourceReferences.tsx` | Emoji icons (🏗️📰🏢) | Lucide icons (Building2, Newspaper, etc.) |
+| `EnhancedConsultantCard.tsx` | Star emojis (★★★★☆) | Teal bar indicators |
+| `suppliers/[id]/page.tsx` | Star tier display (★★★) | Dot indicators (●●○) |
+| `regulations/page.tsx` | Tier emojis (✅⚠️🚨) | ShieldCheck, AlertTriangle, ShieldAlert |
+
+### Landing Page Redesign (Option A)
+Complete homepage restructure from bare supplier list to proper landing page:
+
+| Section | Purpose |
+|---------|---------|
+| Hero | Value proposition + key stats (suppliers, case studies, consultants) |
+| Explainer bar | "What is circular construction?" education |
+| Pathway cards | User intent navigation (Find Suppliers, See Examples, Regulations, Experts) |
+| Featured case studies | Flagship projects with metrics |
+| Supplier preview | Hospitality-ready suppliers (Proven/Experienced tier) |
+| Resources grid | Certifications, BVB Specs, Scenarios, Templates |
+| Built by Fyra | Credibility section with memberships |
+| CTA footer | Clear call-to-action |
+
+### Routing Changes
+| Route | Before | After |
+|-------|--------|-------|
+| `/` | Supplier Directory | Landing Page |
+| `/suppliers` | Did not exist | Supplier Directory (NEW) |
 
 ---
 
@@ -48,7 +66,8 @@
 
 ### Navigation Structure
 ```
-/                       - Supplier Directory (Map + List)
+/                       - Landing Page (NEW - value prop + pathways)
+/suppliers              - Supplier Directory (NEW - map + list)
 /suppliers/[id]         - Individual supplier detail pages (15 suppliers)
 /experts                - Enhanced PM profiles with decision framework
 /scenarios              - 5 project scenario guides
@@ -65,13 +84,48 @@
 ### Components Created
 - `Header.tsx` - Main header with Fyra branding and navigation
 - `MobileNav.tsx` - Responsive mobile navigation menu
-- `EnhancedConsultantCard.tsx` - Expandable consultant cards with ratings
+- `EnhancedConsultantCard.tsx` - Expandable consultant cards with bar ratings
 - `ConsultantCard.tsx` - Basic consultant card display
 - `SupplierCard.tsx` - Clickable supplier cards linking to detail pages
+- `SupplierDirectory.tsx` - Map/List view with filtering
 - `CaseStudyCard.tsx` - Clickable case study cards linking to detail pages
-- `SourceReferences.tsx` - Source citation display component
+- `SourceReferences.tsx` - Source citation with Lucide icons
 - `JsonLd.tsx` - JSON-LD structured data component for SEO
 - `PrintButton.tsx` - Client-side print button for templates
+
+---
+
+## DESIGN SYSTEM
+
+### Color Palette
+| Color | Hex | Usage |
+|-------|-----|-------|
+| Fyra Teal | #0d9488 | Primary brand color |
+| Fyra Teal Light | #14b8a6 | Hover states |
+| Fyra Teal Dark | #0f766e | Dark accents |
+| Fyra Emerald | #10b981 | Success indicators |
+| Slate 900 | #0f172a | Text, dark backgrounds |
+| Slate 50 | #f8fafc | Page backgrounds |
+
+### Typography
+- **Font:** Geist Sans (Google Fonts)
+- **Base size:** 16px
+- **Line height:** 1.6 (body), 1.25 (headings)
+- **Letter spacing:** -0.02em (headings)
+
+### Visual Indicators (NO EMOJIS)
+| Indicator Type | Component | Style |
+|----------------|-----------|-------|
+| Rating bars | RatingIndicator | Teal rounded bars (w-1.5 h-4) |
+| Tier dots | TierIndicator | Colored circles (w-2 h-2) |
+| Relevance score | RelevanceScore | Teal/slate bars (w-1.5 h-4) |
+| Fire safety tiers | TierIcon | ShieldCheck/AlertTriangle/ShieldAlert |
+| Source types | SourceTypeIcon | Building2, Newspaper, BadgeCheck, etc. |
+
+### Components
+- Rounded corners: `rounded-xl` (cards), `rounded-2xl` (hero sections)
+- Shadows: `shadow-sm` (subtle), `shadow-lg shadow-teal-500/25` (CTAs)
+- Gradients: `from-slate-800 via-slate-900 to-teal-900` (hero sections)
 
 ---
 
@@ -92,56 +146,25 @@
 | sources.json | 106 sources | OK |
 | templates.json | 6 templates | OK |
 
-**Note:** consultants.json was reverted 2025-11-27 due to build error. Enriched data available in MIRO_DOCS_FINDINGS.md for future implementation.
-
 ---
 
-## DESIGN SYSTEM
+## IN PROGRESS / REMAINING
 
-### Color Palette
-| Color | Hex | Usage |
-|-------|-----|-------|
-| Fyra Green | #0d9488 | Primary brand color |
-| Fyra Green Light | #14b8a6 | Hover states |
-| Fyra Green Dark | #0f766e | Dark accents |
-| Fyra Emerald | #10b981 | Success indicators |
-| Slate 900 | #0f172a | Text, dark backgrounds |
-| Slate 50 | #f8fafc | Page backgrounds |
-
-### Typography
-- **Font:** Geist Sans (Google Fonts)
-- **Base size:** 16px
-- **Line height:** 1.6 (body), 1.25 (headings)
-- **Letter spacing:** -0.02em (headings)
-
-### Components
-- Rounded corners: `rounded-xl` (cards), `rounded-2xl` (hero sections)
-- Shadows: `shadow-sm` (subtle), `shadow-lg shadow-teal-500/25` (CTAs)
-- Gradients: `from-slate-800 via-slate-900 to-teal-900` (hero sections)
-
----
-
-## NEXT IMPLEMENTATION PRIORITIES
-
-### 1. Symbol System Refinement
-- Replace emoji-based symbols with Lucide icons
-- Create consistent icon usage guidelines
-- Implement custom SVG badges for tiers
-
-### 2. Consultant Integration
-- Update ConsultantCard.tsx to support contacts array
-- Integrate enriched consultant data from MIRO_DOCS_FINDINGS.md
-
-### 3. Future Enhancements
-- Search functionality across all content
-- Supplier comparison tool
-- Project cost calculator
+| Priority | Section | Status | Notes |
+|----------|---------|--------|-------|
+| HIGH | Consultant Data Integration | BLOCKED | Requires ConsultantCard.tsx update for contacts array |
+| MEDIUM | Page UX Audit | PLANNED | Ensure all pages follow landing page design standards |
+| LOW | Search Functionality | NOT STARTED | Future enhancement |
+| LOW | Supplier Comparison Tool | NOT STARTED | Future enhancement |
 
 ---
 
 ## GIT HISTORY
 
 ```
+d9354cf feat: Complete landing page redesign (Option A)
+aba753f feat: Replace emoji tier icons with Lucide icons on regulations page
+316e4b0 feat: Replace emoji symbols with professional Lucide icons
 a99979f feat: Major design refresh with Fyra branding
 8e28d7d docs: Update documentation to reflect deployed state
 4ffa476 fix: Revert consultants.json to fix build error
