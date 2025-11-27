@@ -32,7 +32,7 @@
     ]
   },
   {
-    "id": "scandic_go_(concept)",
+    "id": "scandic_go_concept",
     "title": "SCANDIC GO (CONCEPT)",
     "type": "Hotel Case Study",
     "details": {
@@ -60,7 +60,7 @@
     ]
   },
   {
-    "id": "ohboy_hotel_malmö",
+    "id": "ohboy_hotel_malmo",
     "title": "OHBOY HOTEL MALMÖ",
     "type": "Hotel Case Study",
     "details": {
@@ -85,7 +85,7 @@
     "sourceRefs": []
   },
   {
-    "id": "hotel_green_solution_house,_bornholm",
+    "id": "hotel_green_solution_house_bornholm",
     "title": "HOTEL GREEN SOLUTION HOUSE, BORNHOLM",
     "type": "Hotel Case Study",
     "details": {
@@ -115,7 +115,7 @@
     "sourceRefs": []
   },
   {
-    "id": "villa_copenhagen_-_earth_suite",
+    "id": "villa_copenhagen_earth_suite",
     "title": "VILLA COPENHAGEN - EARTH SUITE",
     "type": "Hotel Case Study",
     "details": {
@@ -150,7 +150,7 @@
     ]
   },
   {
-    "id": "hotel_herman_k_(brøchner_hotels)",
+    "id": "hotel_herman_k_brochner_hotels",
     "title": "HOTEL HERMAN K (BRØCHNER HOTELS)",
     "type": "Hotel Case Study",
     "details": {
@@ -192,7 +192,7 @@
     "sourceRefs": []
   },
   {
-    "id": "hotel_ottilia_(brøchner_hotels)",
+    "id": "hotel_ottilia_brochner_hotels",
     "title": "HOTEL OTTILIA (BRØCHNER HOTELS)",
     "type": "Hotel Case Study",
     "details": {
@@ -218,7 +218,7 @@
     "sourceRefs": []
   },
   {
-    "id": "clarion_hotel_the_hub_(oslo)",
+    "id": "clarion_hotel_the_hub_oslo",
     "title": "CLARION HOTEL THE HUB (OSLO)",
     "type": "Hotel Case Study",
     "details": {
@@ -253,7 +253,7 @@
     ]
   },
   {
-    "id": "thon_hotel_oslo_airport_(gardermoen)",
+    "id": "thon_hotel_oslo_airport_gardermoen",
     "title": "THON HOTEL OSLO AIRPORT (GARDERMOEN)",
     "type": "Hotel Case Study",
     "details": {
