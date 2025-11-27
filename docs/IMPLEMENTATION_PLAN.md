@@ -683,8 +683,8 @@ For Claude Web Mode functionality, the platform needs a structured source librar
 | **P4** | Case Study Detail Pages | ✅ DONE | `34a0d6b` |
 | **P4** | Supplier Detail Pages | ✅ DONE | `34a0d6b` |
 | **P5** | Source Library (JSON) | ✅ DONE | `9e00c1a` |
-| **P6** | Templates/Downloads | ⏳ IN PROGRESS | - |
-| - | JSON-LD Structured Data | 🔜 PENDING | - |
+| **P6** | Templates/Downloads | ✅ DONE | `145bfed` |
+| - | JSON-LD Structured Data | ✅ DONE | `145bfed` |
 | - | Search Functionality | 🔜 PENDING | - |
 
 ---

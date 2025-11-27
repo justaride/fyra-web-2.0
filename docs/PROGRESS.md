@@ -17,8 +17,8 @@
 | P4 | Case Study Detail Pages | **DONE** | `34a0d6b` |
 | P4 | Supplier Detail Pages | **DONE** | `34a0d6b` |
 | P5 | Source Library | **DONE** | `9e00c1a` |
-| P6 | Templates/Downloads | **DONE** | pending |
-| - | JSON-LD Structured Data | **DONE** | pending |
+| P6 | Templates/Downloads | **DONE** | `145bfed` |
+| - | JSON-LD Structured Data | **DONE** | `145bfed` |
 | - | Implementation Plan Doc | **DONE** | `94ca164` |
 
 ### In Progress / Remaining
@@ -97,6 +97,7 @@
 ## GIT HISTORY
 
 ```
+145bfed feat: Add templates section and JSON-LD structured data
 34a0d6b feat: Add detail pages for suppliers and case studies
 b32c0db feat: Implement scenarios page, enhance experts and regulations
 94ca164 docs: Add comprehensive implementation plan
