@@ -100,6 +100,7 @@
 ## GIT HISTORY
 
 ```
+99112e6 fix: Use ASCII-safe slugs for case study IDs
 d0f44d7 feat: Add responsive mobile navigation menu
 315de54 docs: Update progress tracking with completed items
 145bfed feat: Add templates section and JSON-LD structured data
