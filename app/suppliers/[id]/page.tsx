@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import SourceReferences from '@/components/SourceReferences';
 import { cn } from '@/lib/utils';
+import { JsonLd, generateLocalBusinessSchema } from '@/components/JsonLd';
 
 interface Supplier {
     id: string;
@@ -109,8 +110,30 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
         notFound();
     }
 
+    // Parse location for address
+    const locationParts = supplier.location.split(',').map(s => s.trim());
+    const locality = locationParts[0] || '';
+    const region = locationParts[1] || '';
+
+    // Generate JSON-LD structured data
+    const jsonLdData = generateLocalBusinessSchema({
+        name: supplier.name,
+        description: supplier.description,
+        url: supplier.contact.website,
+        email: supplier.contact.email?.split(',')[0],
+        phone: supplier.contact.phone,
+        address: {
+            locality,
+            region,
+            country: 'SE',
+        },
+        priceRange: supplier.pricing.includes('40-70%') ? '$$' : '$$$',
+        services: supplier.services,
+    });
+
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
+            <JsonLd data={jsonLdData} />
             <Header />
 
             <div className="container mx-auto px-4 py-8">

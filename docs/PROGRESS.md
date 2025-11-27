@@ -1,7 +1,7 @@
 # FYRA CIRCULAR PLATFORM - IMPLEMENTATION PROGRESS
 
 **Last Updated:** 2025-11-27
-**Current State:** ~75% Complete (up from 60%)
+**Current State:** ~85% Complete (up from 75%)
 
 ---
 
@@ -14,18 +14,18 @@
 | P1 | Consultants/Experts | **DONE** | `b32c0db` |
 | P2 | Scenarios (5 guides) | **DONE** | `b32c0db` |
 | P3 | Regulatory/Fire Safety | **DONE** | `b32c0db` |
-| P4 | Case Study Detail Pages | **DONE** | `b8a9c49` |
-| P4 | Supplier Detail Pages | **DONE** | `b8a9c49` |
+| P4 | Case Study Detail Pages | **DONE** | `34a0d6b` |
+| P4 | Supplier Detail Pages | **DONE** | `34a0d6b` |
 | P5 | Source Library | **DONE** | `9e00c1a` |
+| P6 | Templates/Downloads | **DONE** | pending |
+| - | JSON-LD Structured Data | **DONE** | pending |
 | - | Implementation Plan Doc | **DONE** | `94ca164` |
 
 ### In Progress / Remaining
 
 | Priority | Section | Status | Notes |
 |----------|---------|--------|-------|
-| P6 | Templates/Downloads | NOT STARTED | PDF generation needed |
-| - | JSON-LD Structured Data | NOT STARTED | For Claude Web Mode |
-| - | Search Functionality | NOT STARTED | |
+| - | Search Functionality | NOT STARTED | Future enhancement |
 
 ---
 
@@ -42,6 +42,8 @@
 /regulations            - Fire safety tier system + BBR compliance
 /certifications         - Sustainability certifications
 /specifications         - BVB system + templates
+/templates              - Downloadable forms & templates (6 templates)
+/templates/[id]         - Printable template forms
 /about                  - Fyra company profile
 ```
 
@@ -52,6 +54,8 @@
 - `ScenarioCard` (inline) - Project scenario display
 - `SupplierCard.tsx` - Clickable supplier cards linking to detail pages
 - `CaseStudyCard.tsx` - Clickable case study cards linking to detail pages
+- `JsonLd.tsx` - JSON-LD structured data component for SEO
+- `PrintButton.tsx` - Client-side print button for templates
 
 ---
 
@@ -70,33 +74,30 @@
 | specifications.json | BVB + templates | Yes |
 | fire_safety.json | 3 tiers + labs | Yes |
 | sources.json | 85 sources | Central registry |
+| templates.json | 6 templates | Yes |
 
 ---
 
 ## NEXT IMPLEMENTATION PRIORITIES
 
-### 1. Templates Section (P6)
-- Material Passport template
-- BVB Equivalency Form
-- Fire Testing Checklist
-- Supplier RFQ Template
-
-### 2. Technical Enhancements
-- JSON-LD structured data for all entity pages
-- Search functionality
-- Comparison matrix tools
-
-### 3. Future Enhancements
-- PDF export for templates
+### 1. Future Enhancements
+- Search functionality across all content
 - Supplier comparison tool
 - Project cost calculator
+- PDF export for templates
+- Mobile navigation menu
+
+### 2. Content Enhancements
+- More case studies as they become available
+- Additional regulatory guidance for Norway/Denmark
+- Partner network expansion
 
 ---
 
 ## GIT HISTORY
 
 ```
-b8a9c49 feat: Add detail pages for suppliers and case studies
+34a0d6b feat: Add detail pages for suppliers and case studies
 b32c0db feat: Implement scenarios page, enhance experts and regulations
 94ca164 docs: Add comprehensive implementation plan
 9e00c1a feat: Implement source registry and reference system

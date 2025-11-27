@@ -26,6 +26,7 @@ export function Header({ supplierCount }: HeaderProps) {
                         <Link href="/regulations" className="hover:text-slate-900 transition-colors">Regulations</Link>
                         <Link href="/certifications" className="hover:text-slate-900 transition-colors">Certifications</Link>
                         <Link href="/specifications" className="hover:text-slate-900 transition-colors">Specifications</Link>
+                        <Link href="/templates" className="hover:text-slate-900 transition-colors">Templates</Link>
                         <span className="text-slate-300">|</span>
                         <Link href="/about" className="hover:text-slate-900 transition-colors">About</Link>
                     </nav>

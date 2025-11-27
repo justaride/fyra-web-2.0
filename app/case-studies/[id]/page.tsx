@@ -17,6 +17,7 @@ import {
     Globe
 } from 'lucide-react';
 import SourceReferences from '@/components/SourceReferences';
+import { JsonLd, generateArticleSchema } from '@/components/JsonLd';
 
 interface CaseStudy {
     id: string;
@@ -64,6 +65,14 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
         notFound();
     }
 
+    // Generate JSON-LD structured data
+    const jsonLdData = generateArticleSchema({
+        headline: study.title,
+        description: study.scope || `Circular construction case study: ${study.title} in ${study.location}`,
+        datePublished: study.year,
+        author: 'Fyra Circular Platform',
+    });
+
     // Extract key details
     const chainInfo = study.details?.chain || study.chain;
     const operatorInfo = study.details?.['operatør'] || study.details?.['eier/operatør'] || study.details?.operatør;
@@ -86,6 +95,7 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
+            <JsonLd data={jsonLdData} />
             <Header />
 
             <div className="container mx-auto px-4 py-8">

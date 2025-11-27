@@ -1,0 +1,218 @@
+[
+  {
+    "id": "material-passport",
+    "title": "Material Passport Template",
+    "category": "Documentation",
+    "description": "Track provenance, condition, and certifications for reused materials. Essential for audit trails and property owner compliance.",
+    "sections": [
+      {
+        "title": "Item Identification",
+        "fields": ["Item Name/Description", "Original Manufacturer", "Model/Product Code", "Year of Manufacture (est.)", "Previous Owner/Source", "Acquisition Date"]
+      },
+      {
+        "title": "Condition Assessment",
+        "fields": ["Visual Condition (A/B/C)", "Structural Integrity", "Surface Condition", "Functionality Status", "Repairs Needed", "Refurbishment Completed"]
+      },
+      {
+        "title": "Material Composition",
+        "fields": ["Primary Material", "Secondary Materials", "Upholstery Type", "Finish/Coating", "Known Hazardous Materials", "SVHC Declaration"]
+      },
+      {
+        "title": "Fire Safety",
+        "fields": ["Fire Test Standard", "Certificate Number", "Test Date", "Testing Laboratory", "Fire Treatment Applied", "Treatment Date"]
+      },
+      {
+        "title": "Environmental Data",
+        "fields": ["Estimated Weight (kg)", "CO2 Savings vs New", "Embodied Carbon (est.)", "Recyclability Rating", "End-of-Life Plan"]
+      }
+    ],
+    "usage": "Complete one passport per item or batch of identical items. Attach copies of certificates and test reports.",
+    "sourceRef": "DOC-6-B2"
+  },
+  {
+    "id": "bvb-equivalency",
+    "title": "BVB Equivalency Declaration",
+    "category": "Compliance",
+    "description": "Document that reused materials meet BVB (ByggVarubedömningen) equivalent standards for property owner approval.",
+    "sections": [
+      {
+        "title": "Product Information",
+        "fields": ["Product Description", "Intended Use Location", "BVB Category (if new)", "Equivalent BVB Rating Claimed"]
+      },
+      {
+        "title": "Chemical Content Declaration",
+        "fields": ["SVHC Substances Present (Y/N)", "REACH Annex XVII Compliance", "Heavy Metal Testing (pre-2000 items)", "VOC Emissions Status", "Test Report Reference"]
+      },
+      {
+        "title": "Fire Safety Compliance",
+        "fields": ["EN Standard Achieved", "Test Certificate Number", "Testing Laboratory", "Certificate Validity Date"]
+      },
+      {
+        "title": "Structural Assessment",
+        "fields": ["Visual Inspection Date", "Inspector Name", "Load Testing Completed (Y/N)", "Maximum Load Rating", "Safety Factor"]
+      },
+      {
+        "title": "Environmental Performance",
+        "fields": ["LCA Calculation Method", "CO2 Savings (kg)", "Waste Diverted (kg)", "Circular Economy Contribution"]
+      },
+      {
+        "title": "Declaration",
+        "fields": ["Prepared By", "Organization", "Date", "Property Owner Approval", "Approval Date"]
+      }
+    ],
+    "usage": "Submit to property owner sustainability team before design finalization. Attach all referenced test reports and certificates.",
+    "sourceRef": "DOC-5-S4"
+  },
+  {
+    "id": "fire-testing-checklist",
+    "title": "Fire Testing Checklist",
+    "category": "Safety",
+    "description": "Pre-testing checklist to ensure items are properly prepared and documented for fire safety testing at RISE or SP laboratories.",
+    "sections": [
+      {
+        "title": "Item Classification",
+        "fields": ["Item Type", "Intended Placement Area", "Risk Category (High/Medium/Low)", "Required EN Standard", "Test Type Needed"]
+      },
+      {
+        "title": "Pre-Test Preparation",
+        "fields": ["Sample Size Prepared", "Sample Dimensions Documented", "Material Composition Known", "Previous Test History", "Fire Treatment History"]
+      },
+      {
+        "title": "Testing Requirements",
+        "fields": ["EN 1021-1 (Cigarette)", "EN 1021-2 (Match)", "BS 5852 Crib 5", "EN 13501-1 (Euroclass)", "Custom Test Requirements"]
+      },
+      {
+        "title": "Laboratory Submission",
+        "fields": ["Laboratory Selected", "Submission Date", "Contact Person", "Estimated Completion", "Rush Priority (Y/N)"]
+      },
+      {
+        "title": "Cost & Timeline",
+        "fields": ["Quoted Cost (SEK)", "Payment Reference", "Expected Report Date", "Re-test Budget (if fail)"]
+      }
+    ],
+    "costs": {
+      "upholstered": "18,000-30,000 SEK per type",
+      "wallMaterials": "45,000-60,000 SEK per type",
+      "timeline": "3-8 weeks"
+    },
+    "labs": ["RISE Fire Research (Borås)", "SP Technical Research Institute (Stockholm)"],
+    "sourceRef": "DOC-5-S1"
+  },
+  {
+    "id": "supplier-rfq",
+    "title": "Supplier RFQ Template",
+    "category": "Procurement",
+    "description": "Request for Quotation template specifically designed for circular furniture procurement from B2B reuse operators.",
+    "sections": [
+      {
+        "title": "Project Overview",
+        "fields": ["Project Name", "Property/Hotel Name", "Project Type", "Location", "Timeline", "Project Manager Contact"]
+      },
+      {
+        "title": "Quantity Requirements",
+        "fields": ["Item Category", "Quantity Needed", "Acceptable Condition Grade", "Style/Aesthetic Direction", "Must Match Existing (Y/N)"]
+      },
+      {
+        "title": "Technical Requirements",
+        "fields": ["Fire Certification Required", "EN Standard Needed", "BVB Compliance Needed", "Warranty Requirements", "Maintenance Documentation"]
+      },
+      {
+        "title": "Logistics",
+        "fields": ["Delivery Address", "Delivery Date Required", "Phased Delivery Acceptable", "Installation Required", "Old Furniture Removal Needed"]
+      },
+      {
+        "title": "Commercial Terms",
+        "fields": ["Budget Range (SEK)", "Payment Terms Preferred", "Framework Agreement (Y/N)", "Insurance Requirements", "Warranty Period Required"]
+      },
+      {
+        "title": "Evaluation Criteria",
+        "fields": ["Price Weight (%)", "Quality Weight (%)", "Sustainability Weight (%)", "Timeline Weight (%)", "Experience Weight (%)"]
+      }
+    ],
+    "usage": "Send to multiple qualified operators. Allow 1-2 weeks for response. Include photos of desired aesthetic if available.",
+    "sourceRef": "DOC-6-B4"
+  },
+  {
+    "id": "quality-inspection",
+    "title": "Quality Inspection Form",
+    "category": "Quality Assurance",
+    "description": "Standardized inspection form for evaluating reused furniture quality upon delivery or during warehouse assessment.",
+    "sections": [
+      {
+        "title": "Delivery Information",
+        "fields": ["Delivery Date", "Supplier Name", "PO Reference", "Items Received", "Inspector Name"]
+      },
+      {
+        "title": "Visual Inspection",
+        "fields": ["Overall Appearance", "Color Consistency", "Surface Scratches/Marks", "Stains/Discoloration", "Rust/Corrosion", "Photos Attached (Y/N)"]
+      },
+      {
+        "title": "Structural Check",
+        "fields": ["Frame Integrity", "Joint Tightness", "Leg Stability", "Drawer/Door Function", "Hardware Condition", "Load Test Passed (Y/N)"]
+      },
+      {
+        "title": "Upholstery Assessment",
+        "fields": ["Fabric Condition", "Foam Condition", "Seam Integrity", "Fire Label Present", "Odor Check", "Stain Resistance"]
+      },
+      {
+        "title": "Grade Assignment",
+        "fields": ["Grade A (Excellent)", "Grade B (Good)", "Grade C (Acceptable)", "Rejected", "Requires Repair", "Repair Notes"]
+      },
+      {
+        "title": "Sign-Off",
+        "fields": ["Accepted Quantity", "Rejected Quantity", "Rejection Reason", "Inspector Signature", "Date", "Supplier Notified"]
+      }
+    ],
+    "gradeDefinitions": {
+      "A": "Excellent - Near-new condition, no visible wear",
+      "B": "Good - Minor wear consistent with use, fully functional",
+      "C": "Acceptable - Visible wear, may need minor repair, functional"
+    },
+    "sourceRef": "DOC-5-S4"
+  },
+  {
+    "id": "circular-procurement-clauses",
+    "title": "Circular Procurement Clauses",
+    "category": "Legal",
+    "description": "Standard contract clauses for incorporating circular economy requirements into procurement agreements.",
+    "clauses": [
+      {
+        "id": "1",
+        "title": "Circular Content Minimum",
+        "text": "The Supplier shall ensure that a minimum of [X]% of supplied furniture items by value are sourced from reused, refurbished, or remanufactured sources with documented provenance."
+      },
+      {
+        "id": "2",
+        "title": "Material Passport Requirement",
+        "text": "The Supplier shall provide a Material Passport for each item or batch of items delivered, documenting origin, condition assessment, material composition, and applicable certifications."
+      },
+      {
+        "id": "3",
+        "title": "Fire Safety Compliance",
+        "text": "All upholstered furniture shall be certified to EN 1021-1 minimum, with EN 1021-2 certification required for items placed in public areas or escape routes. Certificates shall be provided prior to installation."
+      },
+      {
+        "id": "4",
+        "title": "BVB Equivalency",
+        "text": "For items without BVB rating, the Supplier shall provide BVB Equivalency Documentation demonstrating compliance with equivalent chemical content, fire safety, and structural safety standards."
+      },
+      {
+        "id": "5",
+        "title": "Take-Back Commitment",
+        "text": "The Supplier agrees to accept return of supplied items at end of use period for reuse, refurbishment, or responsible recycling, subject to condition assessment."
+      },
+      {
+        "id": "6",
+        "title": "CO2 Reporting",
+        "text": "The Supplier shall provide carbon footprint documentation for supplied items, including estimated CO2 savings compared to equivalent new products."
+      },
+      {
+        "id": "7",
+        "title": "Warranty Terms",
+        "text": "The Supplier warrants all refurbished items for a minimum period of [12/24] months against structural defects. Warranty covers frame, joints, and mechanical components."
+      }
+    ],
+    "usage": "Incorporate relevant clauses into procurement contracts. Adjust percentages and timeframes based on project requirements and operator capabilities.",
+    "sourceRef": "DOC-5-S4"
+  }
+]
