@@ -51,16 +51,17 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 
 ---
 
-## 2. DOKUMENTASJON (6 filer)
+## 2. DOKUMENTASJON (7 filer)
 
 | Fil | Formål | Status |
 |-----|--------|--------|
 | `CRITICAL_ANALYSIS.md` | Kvalitetsanalyse & gap-vurdering | ✅ OPPDATERT |
 | `MIRO_DOCS_FINDINGS.md` | Sammendrag av MIRO research | ✅ NY |
 | `IMPLEMENTATION_PLAN.md` | Implementeringsplan | ✅ OK |
-| `PROGRESS.md` | Fremdriftslogg | ✅ OPPDATERT Session 9 |
-| `DATA_COVERAGE_REPORT.md` | Datadekningsrapport | ✅ OPPDATERT Session 9 |
-| `PROJECT_INVENTORY.md` | Dette dokumentet | ✅ v2.8 |
+| `PROGRESS.md` | Fremdriftslogg | ✅ OPPDATERT Session 10 |
+| `DATA_COVERAGE_REPORT.md` | Datadekningsrapport | ✅ OPPDATERT Session 10 |
+| `DESIGN_ENHANCEMENT_PLAN.md` | Fremtidige designforbedringer | ✅ NY Session 10 |
+| `PROJECT_INVENTORY.md` | Dette dokumentet | ✅ v3.1 |
 
 ---
 
