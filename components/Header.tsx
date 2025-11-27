@@ -2,16 +2,22 @@ import Link from 'next/link';
 import { MobileNav } from './MobileNav';
 import { Recycle } from 'lucide-react';
 import { ThemeToggle } from './ThemeToggle';
+import { SearchWrapper } from './SearchWrapper';
 
 interface HeaderProps {
     supplierCount?: number;
+    searchData?: {
+        suppliers: any[];
+        caseStudies: any[];
+        consultants: any[];
+    };
 }
 
-export function Header({ supplierCount }: HeaderProps) {
+export function Header({ supplierCount, searchData }: HeaderProps) {
     return (
-        <header className="bg-white/95 backdrop-blur-sm border-b border-slate-200/80 sticky top-0 z-40 shadow-sm relative">
-            <div className="container mx-auto px-4 py-4 lg:py-5">
-                <div className="flex justify-between items-center">
+        <header className="bg-white/95 dark:bg-slate-900/95 backdrop-blur-sm border-b border-slate-200/80 dark:border-slate-700/80 sticky top-0 z-40 shadow-sm relative">
+            <div className="container mx-auto px-4 py-3 lg:py-4">
+                <div className="flex justify-between items-center gap-4">
                     <Link href="/" className="flex items-center gap-3 lg:gap-4 group">
                         {/* Fyra Logo - Teal green for circularity */}
                         <div className="relative">
@@ -33,8 +39,17 @@ export function Header({ supplierCount }: HeaderProps) {
                         </div>
                     </Link>
 
+                    {/* Search Bar - Desktop */}
+                    {searchData && (
+                        <SearchWrapper
+                            suppliers={searchData.suppliers}
+                            caseStudies={searchData.caseStudies}
+                            consultants={searchData.consultants}
+                        />
+                    )}
+
                     {/* Desktop Navigation */}
-                    <nav className="hidden lg:flex items-center gap-1 text-sm font-medium">
+                    <nav className="hidden xl:flex items-center gap-1 text-sm font-medium">
                         <NavLink href="/suppliers">Suppliers</NavLink>
                         <NavLink href="/experts">Experts</NavLink>
                         <NavLink href="/scenarios">Scenarios</NavLink>

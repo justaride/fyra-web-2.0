@@ -59,11 +59,10 @@ async function getCaseStudies(): Promise<CaseStudy[]> {
   return JSON.parse(fileContents);
 }
 
-async function getConsultantsCount(): Promise<number> {
+async function getConsultants(): Promise<any[]> {
   const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
   const fileContents = await fs.readFile(filePath, 'utf8');
-  const data = JSON.parse(fileContents);
-  return data.length;
+  return JSON.parse(fileContents);
 }
 
 // Relevance score indicator
@@ -144,7 +143,8 @@ function PathwayCard({
 export default async function Home() {
   const suppliers = await getSuppliers();
   const caseStudies = await getCaseStudies();
-  const consultantsCount = await getConsultantsCount();
+  const consultants = await getConsultants();
+  const consultantsCount = consultants.length;
 
   // Get featured case studies (Flagship tier with high relevance)
   const featuredCaseStudies = caseStudies
@@ -158,7 +158,14 @@ export default async function Home() {
 
   return (
     <main className="min-h-screen bg-slate-50 font-sans">
-      <Header supplierCount={suppliers.length} />
+      <Header
+        supplierCount={suppliers.length}
+        searchData={{
+          suppliers,
+          caseStudies,
+          consultants,
+        }}
+      />
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white py-20 lg:py-28">
