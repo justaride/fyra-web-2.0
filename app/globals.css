@@ -1,8 +1,33 @@
 @import "tailwindcss";
 
+/* Fyra Circular Platform - Design System */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Core colors */
+  --background: #fafbfc;
+  --foreground: #1a1f2e;
+
+  /* Fyra Brand Colors - Circular Economy Theme */
+  --fyra-green: #0d9488;      /* Primary - teal/green for circularity */
+  --fyra-green-light: #14b8a6;
+  --fyra-green-dark: #0f766e;
+  --fyra-emerald: #10b981;
+
+  /* Accent colors */
+  --accent-blue: #3b82f6;
+  --accent-amber: #f59e0b;
+
+  /* Neutral palette */
+  --slate-50: #f8fafc;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+  --slate-400: #94a3b8;
+  --slate-500: #64748b;
+  --slate-600: #475569;
+  --slate-700: #334155;
+  --slate-800: #1e293b;
+  --slate-900: #0f172a;
 }
 
 @theme inline {
@@ -10,17 +35,142 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  /* Fyra custom colors for Tailwind */
+  --color-fyra-green: var(--fyra-green);
+  --color-fyra-green-light: var(--fyra-green-light);
+  --color-fyra-green-dark: var(--fyra-green-dark);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Typography improvements */
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Improved heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-geist-sans), system-ui, -apple-system, sans-serif;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+/* Better paragraph spacing */
+p {
+  line-height: 1.7;
+}
+
+/* Card hover effects */
+.card-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px -8px rgba(0, 0, 0, 0.1);
+}
+
+/* Smooth link transitions */
+a {
+  transition: color 0.15s ease-in-out;
+}
+
+/* Custom scrollbar for better UX */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--slate-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--slate-300);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--slate-400);
+}
+
+/* Focus states for accessibility */
+*:focus-visible {
+  outline: 2px solid var(--fyra-green);
+  outline-offset: 2px;
+}
+
+/* Utility classes for Fyra branding */
+.fyra-gradient {
+  background: linear-gradient(135deg, var(--fyra-green) 0%, var(--fyra-emerald) 100%);
+}
+
+.fyra-gradient-dark {
+  background: linear-gradient(135deg, var(--slate-800) 0%, var(--fyra-green-dark) 100%);
+}
+
+.fyra-border {
+  border-color: var(--fyra-green);
+}
+
+/* Badge styling */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  letter-spacing: 0.025em;
+}
+
+.badge-primary {
+  background-color: color-mix(in srgb, var(--fyra-green) 15%, transparent);
+  color: var(--fyra-green-dark);
+}
+
+.badge-success {
+  background-color: color-mix(in srgb, var(--fyra-emerald) 15%, transparent);
+  color: #065f46;
+}
+
+/* Better list styling */
+ul.checklist li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+}
+
+/* Section dividers */
+.section-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--slate-200), transparent);
+  margin: 2rem 0;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0f172a;
+    --foreground: #f1f5f9;
+  }
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
 }

@@ -11,7 +11,7 @@ import {
     Globe,
     Building2,
     Users,
-    CheckCircle,
+    CheckCircle2,
     AlertTriangle,
     Star,
     Clock,
@@ -20,7 +20,9 @@ import {
     Shield,
     Award,
     ExternalLink,
-    Briefcase
+    Briefcase,
+    ArrowRight,
+    Recycle
 } from 'lucide-react';
 import SourceReferences from '@/components/SourceReferences';
 import { cn } from '@/lib/utils';
@@ -89,14 +91,20 @@ export async function generateStaticParams() {
 
 function TierBadge({ tier }: { tier: string }) {
     const tierNum = tier.includes('1') ? 1 : tier.includes('2') ? 2 : 3;
-    const colors = {
-        1: 'bg-emerald-100 text-emerald-700 border-emerald-200',
-        2: 'bg-blue-100 text-blue-700 border-blue-200',
-        3: 'bg-amber-100 text-amber-700 border-amber-200'
+    const styles = {
+        1: 'bg-teal-100 text-teal-800 ring-teal-600/20',
+        2: 'bg-blue-100 text-blue-800 ring-blue-600/20',
+        3: 'bg-amber-100 text-amber-800 ring-amber-600/20'
+    };
+    const icons = {
+        1: '★★★',
+        2: '★★',
+        3: '★'
     };
 
     return (
-        <span className={cn("px-3 py-1 rounded-full text-sm font-semibold border", colors[tierNum as keyof typeof colors])}>
+        <span className={cn("inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold ring-1 ring-inset", styles[tierNum as keyof typeof styles])}>
+            <span className="text-xs">{icons[tierNum as keyof typeof icons]}</span>
             {tier}
         </span>
     );
@@ -110,12 +118,10 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
         notFound();
     }
 
-    // Parse location for address
     const locationParts = supplier.location.split(',').map(s => s.trim());
     const locality = locationParts[0] || '';
     const region = locationParts[1] || '';
 
-    // Generate JSON-LD structured data
     const jsonLdData = generateLocalBusinessSchema({
         name: supplier.name,
         description: supplier.description,
@@ -132,79 +138,87 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
     });
 
     return (
-        <main className="min-h-screen bg-slate-50 font-sans">
+        <main className="min-h-screen bg-slate-50">
             <JsonLd data={jsonLdData} />
             <Header />
 
-            <div className="container mx-auto px-4 py-8">
+            <div className="container mx-auto px-4 py-8 max-w-6xl">
                 {/* Back Link */}
                 <Link
                     href="/"
-                    className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-6 text-sm font-medium"
+                    className="inline-flex items-center gap-2 text-slate-500 hover:text-teal-600 mb-6 text-sm font-medium transition-colors"
                 >
                     <ArrowLeft className="w-4 h-4" />
                     Back to Suppliers
                 </Link>
 
-                {/* Header */}
-                <div className="bg-white rounded-2xl border shadow-sm overflow-hidden mb-8">
-                    <div className="bg-gradient-to-br from-blue-600 to-blue-700 text-white p-8">
-                        <div className="flex flex-wrap items-start justify-between gap-4">
-                            <div>
-                                <div className="flex items-center gap-3 mb-3">
+                {/* Hero Section */}
+                <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-8">
+                    <div className="bg-gradient-to-br from-slate-800 via-slate-900 to-teal-900 text-white p-8 lg:p-10">
+                        <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-6">
+                            <div className="flex-1">
+                                <div className="flex flex-wrap items-center gap-3 mb-4">
                                     <TierBadge tier={supplier.hospitalityReadiness.tier} />
-                                    <span className="text-blue-200 text-sm">{supplier.confidenceLevel}</span>
+                                    <span className="px-3 py-1 bg-white/15 rounded-full text-xs font-medium backdrop-blur-sm">
+                                        {supplier.confidenceLevel}
+                                    </span>
                                 </div>
-                                <h1 className="text-3xl font-bold mb-2">{supplier.name}</h1>
-                                <p className="text-blue-100 max-w-2xl">{supplier.description}</p>
+
+                                <h1 className="text-2xl lg:text-3xl font-bold mb-3 leading-tight">
+                                    {supplier.name}
+                                </h1>
+
+                                <p className="text-slate-300 max-w-2xl leading-relaxed mb-6">
+                                    {supplier.description}
+                                </p>
+
+                                <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-slate-300 text-sm">
+                                    <div className="flex items-center gap-2">
+                                        <MapPin className="w-4 h-4 text-teal-400" />
+                                        <span>{supplier.location.split('.')[0]}</span>
+                                    </div>
+                                    {supplier.employees && (
+                                        <div className="flex items-center gap-2">
+                                            <Users className="w-4 h-4 text-teal-400" />
+                                            <span>{supplier.employees} employees</span>
+                                        </div>
+                                    )}
+                                    {supplier.founded && (
+                                        <div className="flex items-center gap-2">
+                                            <Building2 className="w-4 h-4 text-teal-400" />
+                                            <span>Founded {supplier.founded}</span>
+                                        </div>
+                                    )}
+                                </div>
                             </div>
+
                             {supplier.contact.website && (
                                 <a
                                     href={supplier.contact.website}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 px-4 py-2 rounded-lg text-sm transition-colors"
+                                    className="inline-flex items-center justify-center gap-2 bg-teal-500 hover:bg-teal-400 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors shadow-lg shadow-teal-500/25"
                                 >
                                     <Globe className="w-4 h-4" />
                                     Visit Website
                                 </a>
                             )}
                         </div>
-
-                        {/* Quick Stats */}
-                        <div className="flex flex-wrap gap-4 mt-6 text-sm">
-                            <div className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-lg">
-                                <MapPin className="w-4 h-4" />
-                                <span>{supplier.location.split('.')[0]}</span>
-                            </div>
-                            {supplier.employees && (
-                                <div className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-lg">
-                                    <Users className="w-4 h-4" />
-                                    <span>{supplier.employees} employees</span>
-                                </div>
-                            )}
-                            {supplier.founded && (
-                                <div className="flex items-center gap-2 bg-white/10 px-3 py-1.5 rounded-lg">
-                                    <Building2 className="w-4 h-4" />
-                                    <span>Founded {supplier.founded}</span>
-                                </div>
-                            )}
-                        </div>
                     </div>
 
                     {/* Contact Bar */}
-                    <div className="bg-slate-50 px-8 py-4 border-t flex flex-wrap items-center gap-6">
+                    <div className="bg-slate-50 px-8 py-4 border-t border-slate-100 flex flex-wrap items-center gap-6">
                         {supplier.contact.name && (
-                            <span className="text-sm font-medium text-slate-700">{supplier.contact.name}</span>
+                            <span className="text-sm font-semibold text-slate-700">{supplier.contact.name}</span>
                         )}
                         {supplier.contact.phone && (
-                            <a href={`tel:${supplier.contact.phone}`} className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600">
+                            <a href={`tel:${supplier.contact.phone}`} className="flex items-center gap-2 text-sm text-slate-600 hover:text-teal-600 transition-colors">
                                 <Phone className="w-4 h-4" />
                                 {supplier.contact.phone}
                             </a>
                         )}
                         {supplier.contact.email && (
-                            <a href={`mailto:${supplier.contact.email.split(',')[0]}`} className="flex items-center gap-2 text-sm text-slate-600 hover:text-blue-600">
+                            <a href={`mailto:${supplier.contact.email.split(',')[0]}`} className="flex items-center gap-2 text-sm text-slate-600 hover:text-teal-600 transition-colors">
                                 <Mail className="w-4 h-4" />
                                 {supplier.contact.email.split(',')[0]}
                             </a>
@@ -216,54 +230,58 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
                     {/* Main Content */}
                     <div className="lg:col-span-2 space-y-6">
                         {/* Capabilities */}
-                        <div className="bg-white rounded-xl border shadow-sm p-6">
-                            <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                                <Package className="w-5 h-5 text-blue-600" />
+                        <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6 lg:p-8">
+                            <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                                <div className="h-10 w-10 rounded-lg bg-teal-100 flex items-center justify-center">
+                                    <Package className="w-5 h-5 text-teal-600" />
+                                </div>
                                 Capabilities
                             </h2>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                <div className="bg-slate-50 rounded-lg p-4">
+                                <div className="bg-slate-50 rounded-lg p-4 border border-slate-100">
                                     <div className="flex items-center gap-2 mb-2">
-                                        <Package className="w-4 h-4 text-slate-500" />
-                                        <span className="text-xs font-semibold text-slate-500 uppercase">Volume</span>
+                                        <Package className="w-4 h-4 text-teal-600" />
+                                        <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Volume</span>
                                     </div>
-                                    <p className="text-sm text-slate-700">{supplier.capabilities.volume}</p>
+                                    <p className="text-slate-800 font-medium">{supplier.capabilities.volume}</p>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4">
+                                <div className="bg-slate-50 rounded-lg p-4 border border-slate-100">
                                     <div className="flex items-center gap-2 mb-2">
-                                        <Clock className="w-4 h-4 text-slate-500" />
-                                        <span className="text-xs font-semibold text-slate-500 uppercase">Lead Time</span>
+                                        <Clock className="w-4 h-4 text-teal-600" />
+                                        <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Lead Time</span>
                                     </div>
-                                    <p className="text-sm text-slate-700">{supplier.capabilities.leadTime}</p>
+                                    <p className="text-slate-800 font-medium">{supplier.capabilities.leadTime}</p>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4">
+                                <div className="bg-slate-50 rounded-lg p-4 border border-slate-100">
                                     <div className="flex items-center gap-2 mb-2">
-                                        <Building2 className="w-4 h-4 text-slate-500" />
-                                        <span className="text-xs font-semibold text-slate-500 uppercase">Inventory</span>
+                                        <Building2 className="w-4 h-4 text-teal-600" />
+                                        <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Inventory</span>
                                     </div>
-                                    <p className="text-sm text-slate-700">{supplier.capabilities.inventory}</p>
+                                    <p className="text-slate-800 font-medium">{supplier.capabilities.inventory}</p>
                                 </div>
-                                <div className="bg-slate-50 rounded-lg p-4">
+                                <div className="bg-slate-50 rounded-lg p-4 border border-slate-100">
                                     <div className="flex items-center gap-2 mb-2">
-                                        <Truck className="w-4 h-4 text-slate-500" />
-                                        <span className="text-xs font-semibold text-slate-500 uppercase">Logistics</span>
+                                        <Truck className="w-4 h-4 text-teal-600" />
+                                        <span className="text-xs font-semibold text-slate-500 uppercase tracking-wider">Logistics</span>
                                     </div>
-                                    <p className="text-sm text-slate-700">{supplier.capabilities.logistics}</p>
+                                    <p className="text-slate-800 font-medium">{supplier.capabilities.logistics}</p>
                                 </div>
                             </div>
                         </div>
 
                         {/* Services */}
-                        <div className="bg-white rounded-xl border shadow-sm p-6">
-                            <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                                <Briefcase className="w-5 h-5 text-emerald-600" />
+                        <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6 lg:p-8">
+                            <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                                <div className="h-10 w-10 rounded-lg bg-emerald-100 flex items-center justify-center">
+                                    <Briefcase className="w-5 h-5 text-emerald-600" />
+                                </div>
                                 Services
                             </h2>
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                                 {supplier.services.map((service, idx) => (
-                                    <div key={idx} className="flex items-start gap-2 text-sm text-slate-600">
-                                        <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                                        <span>{service}</span>
+                                    <div key={idx} className="flex items-start gap-3 p-3 bg-slate-50 rounded-lg">
+                                        <CheckCircle2 className="w-5 h-5 text-emerald-500 mt-0.5 flex-shrink-0" />
+                                        <span className="text-slate-700">{service}</span>
                                     </div>
                                 ))}
                             </div>
@@ -271,31 +289,31 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
 
                         {/* Strengths & Gaps */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div className="bg-emerald-50 rounded-xl border border-emerald-200 p-6">
-                                <h3 className="font-bold text-emerald-900 mb-3 flex items-center gap-2">
-                                    <Star className="w-5 h-5" />
+                            <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-xl border border-emerald-200 p-6">
+                                <h3 className="font-bold text-emerald-900 mb-4 flex items-center gap-2">
+                                    <Star className="w-5 h-5 text-emerald-600" />
                                     Key Strengths
                                 </h3>
-                                <ul className="space-y-2">
+                                <ul className="space-y-3">
                                     {supplier.strengths.slice(0, 6).map((strength, idx) => (
-                                        <li key={idx} className="flex items-start gap-2 text-sm text-emerald-800">
-                                            <CheckCircle className="w-4 h-4 text-emerald-500 mt-0.5 shrink-0" />
-                                            <span>{strength}</span>
+                                        <li key={idx} className="flex items-start gap-3">
+                                            <CheckCircle2 className="w-4 h-4 text-emerald-600 mt-0.5 flex-shrink-0" />
+                                            <span className="text-emerald-900 text-sm leading-relaxed">{strength}</span>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
 
-                            <div className="bg-amber-50 rounded-xl border border-amber-200 p-6">
-                                <h3 className="font-bold text-amber-900 mb-3 flex items-center gap-2">
-                                    <AlertTriangle className="w-5 h-5" />
+                            <div className="bg-gradient-to-br from-amber-50 to-orange-50 rounded-xl border border-amber-200 p-6">
+                                <h3 className="font-bold text-amber-900 mb-4 flex items-center gap-2">
+                                    <AlertTriangle className="w-5 h-5 text-amber-600" />
                                     Known Gaps
                                 </h3>
-                                <ul className="space-y-2">
+                                <ul className="space-y-3">
                                     {supplier.gaps.slice(0, 6).map((gap, idx) => (
-                                        <li key={idx} className="flex items-start gap-2 text-sm text-amber-800">
-                                            <AlertTriangle className="w-4 h-4 text-amber-500 mt-0.5 shrink-0" />
-                                            <span>{gap}</span>
+                                        <li key={idx} className="flex items-start gap-3">
+                                            <AlertTriangle className="w-4 h-4 text-amber-600 mt-0.5 flex-shrink-0" />
+                                            <span className="text-amber-900 text-sm leading-relaxed">{gap}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -304,15 +322,17 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
 
                         {/* Project Examples */}
                         {supplier.projectExamples && supplier.projectExamples.length > 0 && (
-                            <div className="bg-white rounded-xl border shadow-sm p-6">
-                                <h2 className="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2">
-                                    <Award className="w-5 h-5 text-purple-600" />
+                            <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6 lg:p-8">
+                                <h2 className="text-xl font-bold text-slate-900 mb-6 flex items-center gap-3">
+                                    <div className="h-10 w-10 rounded-lg bg-purple-100 flex items-center justify-center">
+                                        <Award className="w-5 h-5 text-purple-600" />
+                                    </div>
                                     Project Examples
                                 </h2>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                                     {supplier.projectExamples.map((project, idx) => (
-                                        <div key={idx} className="bg-slate-50 rounded-lg p-3 text-sm text-slate-700">
-                                            {project}
+                                        <div key={idx} className="bg-slate-50 rounded-lg p-4 border border-slate-100">
+                                            <p className="text-slate-700">{project}</p>
                                         </div>
                                     ))}
                                 </div>
@@ -323,37 +343,38 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
                     {/* Sidebar */}
                     <div className="space-y-6">
                         {/* Hospitality Readiness */}
-                        <div className="bg-white rounded-xl border shadow-sm p-6">
+                        <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
                             <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
-                                <Shield className="w-5 h-5 text-blue-600" />
+                                <Shield className="w-5 h-5 text-teal-600" />
                                 Hospitality Readiness
                             </h3>
                             <div className="mb-4">
                                 <TierBadge tier={supplier.hospitalityReadiness.tier} />
-                                <p className="text-sm text-slate-600 mt-2">{supplier.hospitalityReadiness.score}</p>
+                                <p className="text-sm text-slate-600 mt-3 leading-relaxed">{supplier.hospitalityReadiness.score}</p>
                             </div>
-                            <div className="space-y-3">
-                                <div>
-                                    <h4 className="text-xs font-semibold text-slate-500 uppercase mb-2">Hospitality Strengths</h4>
-                                    <ul className="space-y-1">
-                                        {supplier.hospitalityReadiness.strengths.slice(0, 4).map((s, idx) => (
-                                            <li key={idx} className="text-xs text-slate-600 flex items-start gap-1.5">
-                                                <CheckCircle className="w-3 h-3 text-emerald-500 mt-0.5 shrink-0" />
-                                                <span>{s}</span>
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
+                            <div className="pt-4 border-t border-slate-100">
+                                <h4 className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-3">Hospitality Strengths</h4>
+                                <ul className="space-y-2">
+                                    {supplier.hospitalityReadiness.strengths.slice(0, 4).map((s, idx) => (
+                                        <li key={idx} className="text-sm text-slate-600 flex items-start gap-2">
+                                            <CheckCircle2 className="w-4 h-4 text-teal-500 mt-0.5 flex-shrink-0" />
+                                            <span>{s}</span>
+                                        </li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
 
                         {/* Best For */}
-                        <div className="bg-white rounded-xl border shadow-sm p-6">
-                            <h3 className="font-bold text-slate-900 mb-3">Best For</h3>
-                            <ul className="space-y-2">
+                        <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
+                            <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                                <Recycle className="w-5 h-5 text-teal-600" />
+                                Best For
+                            </h3>
+                            <ul className="space-y-3">
                                 {supplier.bestFor.map((item, idx) => (
-                                    <li key={idx} className="text-sm text-slate-600 flex items-start gap-2">
-                                        <CheckCircle className="w-4 h-4 text-blue-500 mt-0.5 shrink-0" />
+                                    <li key={idx} className="text-sm text-slate-700 flex items-start gap-3 p-3 bg-slate-50 rounded-lg">
+                                        <CheckCircle2 className="w-4 h-4 text-teal-500 mt-0.5 flex-shrink-0" />
                                         <span>{item}</span>
                                     </li>
                                 ))}
@@ -361,20 +382,20 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
                         </div>
 
                         {/* Pricing */}
-                        <div className="bg-white rounded-xl border shadow-sm p-6">
+                        <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
                             <h3 className="font-bold text-slate-900 mb-3">Pricing</h3>
-                            <p className="text-sm text-slate-600">{supplier.pricing}</p>
+                            <p className="text-slate-700 leading-relaxed">{supplier.pricing}</p>
                         </div>
 
                         {/* Certifications */}
                         {supplier.certifications && supplier.certifications.length > 0 && (
-                            <div className="bg-white rounded-xl border shadow-sm p-6">
-                                <h3 className="font-bold text-slate-900 mb-3">Certifications</h3>
-                                <div className="space-y-2">
+                            <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
+                                <h3 className="font-bold text-slate-900 mb-4">Certifications</h3>
+                                <div className="flex flex-wrap gap-2">
                                     {supplier.certifications.map((cert, idx) => (
-                                        <div key={idx} className="text-xs text-slate-600 bg-slate-50 px-2 py-1.5 rounded">
+                                        <span key={idx} className="text-xs text-slate-700 bg-slate-100 px-3 py-1.5 rounded-full font-medium">
                                             {cert}
-                                        </div>
+                                        </span>
                                     ))}
                                 </div>
                             </div>
@@ -382,29 +403,29 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
 
                         {/* Sources */}
                         {supplier.sourceRefs && supplier.sourceRefs.length > 0 && (
-                            <div className="bg-white rounded-xl border shadow-sm p-6">
+                            <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
                                 <SourceReferences sourceRefs={supplier.sourceRefs} />
                             </div>
                         )}
                     </div>
                 </div>
 
-                {/* CTA */}
-                <div className="mt-12 bg-slate-900 rounded-2xl p-8 text-white">
-                    <div className="flex flex-wrap items-center justify-between gap-6">
+                {/* CTA Footer */}
+                <div className="mt-12 bg-gradient-to-br from-slate-800 to-teal-900 rounded-2xl p-8 lg:p-10 text-white">
+                    <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
                         <div>
                             <h2 className="text-xl font-bold mb-2">Ready to Connect?</h2>
-                            <p className="text-slate-300 text-sm">
+                            <p className="text-slate-300">
                                 Contact {supplier.name} directly or explore related scenarios for your project.
                             </p>
                         </div>
-                        <div className="flex flex-wrap gap-4">
+                        <div className="flex flex-wrap gap-3">
                             {supplier.contact.website && (
                                 <a
                                     href={supplier.contact.website}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-2.5 rounded-lg font-medium hover:bg-slate-100 transition-colors text-sm"
+                                    className="inline-flex items-center gap-2 bg-white text-slate-900 px-5 py-2.5 rounded-lg font-semibold hover:bg-slate-100 transition-colors text-sm"
                                 >
                                     Contact Supplier
                                     <ExternalLink className="w-4 h-4" />
@@ -412,9 +433,10 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
                             )}
                             <Link
                                 href="/scenarios"
-                                className="inline-flex items-center gap-2 bg-slate-800 text-white px-5 py-2.5 rounded-lg font-medium hover:bg-slate-700 transition-colors text-sm"
+                                className="inline-flex items-center gap-2 bg-teal-500 text-white px-5 py-2.5 rounded-lg font-semibold hover:bg-teal-400 transition-colors text-sm"
                             >
                                 View Scenarios
+                                <ArrowRight className="w-4 h-4" />
                             </Link>
                         </div>
                     </div>
