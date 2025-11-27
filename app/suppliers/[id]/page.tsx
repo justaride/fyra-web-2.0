@@ -89,6 +89,23 @@ export async function generateStaticParams() {
     }));
 }
 
+// Professional tier indicator using dots instead of emoji stars
+function TierIndicator({ count, color }: { count: number; color: string }) {
+    return (
+        <div className="flex gap-0.5">
+            {[1, 2, 3].map((i) => (
+                <div
+                    key={i}
+                    className={cn(
+                        "w-2 h-2 rounded-full",
+                        i <= count ? color : "bg-slate-200"
+                    )}
+                />
+            ))}
+        </div>
+    );
+}
+
 function TierBadge({ tier }: { tier: string }) {
     const tierNum = tier.includes('1') ? 1 : tier.includes('2') ? 2 : 3;
     const styles = {
@@ -96,15 +113,15 @@ function TierBadge({ tier }: { tier: string }) {
         2: 'bg-blue-100 text-blue-800 ring-blue-600/20',
         3: 'bg-amber-100 text-amber-800 ring-amber-600/20'
     };
-    const icons = {
-        1: '★★★',
-        2: '★★',
-        3: '★'
+    const dotColors = {
+        1: 'bg-teal-500',
+        2: 'bg-blue-500',
+        3: 'bg-amber-500'
     };
 
     return (
-        <span className={cn("inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-semibold ring-1 ring-inset", styles[tierNum as keyof typeof styles])}>
-            <span className="text-xs">{icons[tierNum as keyof typeof icons]}</span>
+        <span className={cn("inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-sm font-semibold ring-1 ring-inset", styles[tierNum as keyof typeof styles])}>
+            <TierIndicator count={4 - tierNum} color={dotColors[tierNum as keyof typeof dotColors]} />
             {tier}
         </span>
     );

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { Building, MapPin, Star, Users, ExternalLink, ChevronDown, ChevronUp, Briefcase, Shield, Leaf, Flame, Award } from 'lucide-react';
+import { Building, MapPin, Users, ExternalLink, ChevronDown, ChevronUp, Briefcase, Leaf, Flame, Award } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 interface FeaturedProject {
@@ -79,17 +79,39 @@ interface EnhancedConsultantCardProps {
     consultant: EnhancedConsultant;
 }
 
-function RatingStars({ rating }: { rating: string }) {
+// Professional rating indicator using filled/empty dots
+function RatingIndicator({ rating }: { rating: string }) {
+    // Parse star count from rating string (handles both ★/☆ format and text like "HIGHEST")
+    let filled = 0;
+    let total = 5;
+
+    // Count filled stars
     const starCount = (rating.match(/★/g) || []).length;
     const emptyCount = (rating.match(/☆/g) || []).length;
 
+    if (starCount > 0 || emptyCount > 0) {
+        filled = starCount;
+        total = starCount + emptyCount;
+    } else {
+        // Parse text ratings
+        if (rating.includes('HIGHEST') || rating.includes('EXCELLENT')) filled = 5;
+        else if (rating.includes('VERY HIGH') || rating.includes('STRONG')) filled = 4;
+        else if (rating.includes('HIGH')) filled = 3;
+        else if (rating.includes('MEDIUM') || rating.includes('STANDARD') || rating.includes('EMERGING')) filled = 3;
+        else if (rating.includes('LIMITED') || rating.includes('DEVELOPING')) filled = 2;
+        else filled = 1;
+    }
+
     return (
         <div className="flex items-center gap-0.5">
-            {[...Array(starCount)].map((_, i) => (
-                <Star key={`full-${i}`} className="w-3 h-3 text-amber-400 fill-amber-400" />
-            ))}
-            {[...Array(emptyCount)].map((_, i) => (
-                <Star key={`empty-${i}`} className="w-3 h-3 text-slate-300" />
+            {[...Array(total)].map((_, i) => (
+                <div
+                    key={i}
+                    className={cn(
+                        "w-1.5 h-4 rounded-sm",
+                        i < filled ? "bg-teal-500" : "bg-slate-200"
+                    )}
+                />
             ))}
         </div>
     );
@@ -116,7 +138,7 @@ export function EnhancedConsultantCard({ consultant }: EnhancedConsultantCardPro
                     <div>
                         <div className="flex items-center gap-2 mb-1">
                             <h3 className="text-xl font-bold text-slate-900">{consultant.name}</h3>
-                            <RatingStars rating={consultant.priority} />
+                            <RatingIndicator rating={consultant.priority} />
                         </div>
                         <p className="text-sm font-medium text-slate-600">{consultant.tagline}</p>
                     </div>
@@ -163,28 +185,28 @@ export function EnhancedConsultantCard({ consultant }: EnhancedConsultantCardPro
                                 <Leaf className="w-3.5 h-3.5 text-emerald-500" />
                                 <span className="text-xs font-medium text-slate-700">Circular Economy</span>
                             </div>
-                            <RatingStars rating={consultant.sustainability.circularEconomy.rating} />
+                            <RatingIndicator rating={consultant.sustainability.circularEconomy.rating} />
                         </div>
                         <div className="bg-slate-50 rounded-lg p-3">
                             <div className="flex items-center gap-2 mb-1">
                                 <Award className="w-3.5 h-3.5 text-blue-500" />
                                 <span className="text-xs font-medium text-slate-700">Certifications</span>
                             </div>
-                            <RatingStars rating={consultant.sustainability.certifications.rating} />
+                            <RatingIndicator rating={consultant.sustainability.certifications.rating} />
                         </div>
                         <div className="bg-slate-50 rounded-lg p-3">
                             <div className="flex items-center gap-2 mb-1">
                                 <Flame className="w-3.5 h-3.5 text-orange-500" />
                                 <span className="text-xs font-medium text-slate-700">Fire Safety</span>
                             </div>
-                            <RatingStars rating={consultant.sustainability.fireSafety.rating} />
+                            <RatingIndicator rating={consultant.sustainability.fireSafety.rating} />
                         </div>
                         <div className="bg-slate-50 rounded-lg p-3">
                             <div className="flex items-center gap-2 mb-1">
                                 <Building className="w-3.5 h-3.5 text-purple-500" />
                                 <span className="text-xs font-medium text-slate-700">Hospitality</span>
                             </div>
-                            <RatingStars rating={consultant.hospitalityProjects.rating} />
+                            <RatingIndicator rating={consultant.hospitalityProjects.rating} />
                         </div>
                     </div>
                 </div>
@@ -280,7 +302,7 @@ export function EnhancedConsultantCard({ consultant }: EnhancedConsultantCardPro
                                 <div className="flex items-center gap-2 mb-1">
                                     <Leaf className="w-3.5 h-3.5 text-emerald-500" />
                                     <span className="text-xs font-semibold text-slate-700">Circular Economy</span>
-                                    <RatingStars rating={consultant.sustainability.circularEconomy.rating} />
+                                    <RatingIndicator rating={consultant.sustainability.circularEconomy.rating} />
                                 </div>
                                 <p className="text-xs text-slate-600">{consultant.sustainability.circularEconomy.description}</p>
                             </div>
@@ -288,7 +310,7 @@ export function EnhancedConsultantCard({ consultant }: EnhancedConsultantCardPro
                                 <div className="flex items-center gap-2 mb-1">
                                     <Flame className="w-3.5 h-3.5 text-orange-500" />
                                     <span className="text-xs font-semibold text-slate-700">Fire Safety</span>
-                                    <RatingStars rating={consultant.sustainability.fireSafety.rating} />
+                                    <RatingIndicator rating={consultant.sustainability.fireSafety.rating} />
                                 </div>
                                 <p className="text-xs text-slate-600">{consultant.sustainability.fireSafety.description}</p>
                             </div>

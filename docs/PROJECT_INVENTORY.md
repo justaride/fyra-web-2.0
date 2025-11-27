@@ -1,8 +1,8 @@
 # FYRA CIRCULAR PLATFORM - Prosjektinventar
 
 **Dato:** 2025-11-27
-**Versjon:** 2.0
-**Status:** Fase 1 Komplett - Klar for Fase 2
+**Versjon:** 2.1
+**Status:** Design Refresh Komplett - Live på GitHub Pages
 
 ---
 
