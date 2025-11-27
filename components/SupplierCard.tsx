@@ -1,4 +1,5 @@
-import { MapPin, Star, Truck, CheckCircle, AlertTriangle } from "lucide-react";
+import Link from "next/link";
+import { MapPin, Star, Truck, CheckCircle, AlertTriangle, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Supplier {
@@ -23,7 +24,10 @@ interface SupplierCardProps {
 
 export function SupplierCard({ supplier, className }: SupplierCardProps) {
     return (
-        <div className={cn("group rounded-xl border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-200 flex flex-col h-full", className)}>
+        <Link
+            href={`/suppliers/${supplier.id}`}
+            className={cn("group rounded-xl border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-200 flex flex-col h-full", className)}
+        >
             <div className="p-6 space-y-4 flex-1">
                 <div className="flex justify-between items-start gap-4">
                     <div>
@@ -127,6 +131,13 @@ export function SupplierCard({ supplier, className }: SupplierCardProps) {
                     </ul>
                 </div>
             </div>
-        </div>
+
+            {/* View Details Footer */}
+            <div className="bg-slate-50 p-3 border-t text-center rounded-b-xl">
+                <span className="text-xs font-medium text-blue-600 group-hover:text-blue-800 flex items-center justify-center gap-1 w-full transition-colors">
+                    View Full Profile <ArrowUpRight className="w-3 h-3" />
+                </span>
+            </div>
+        </Link>
     );
 }

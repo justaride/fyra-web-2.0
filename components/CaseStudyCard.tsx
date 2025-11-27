@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MapPin, Calendar, Building, ArrowUpRight, CheckCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -25,7 +26,10 @@ export function CaseStudyCard({ study, className }: CaseStudyCardProps) {
     const chain = study.details.chain || study.details.Chain || "";
 
     return (
-        <div className={cn("group rounded-xl border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-200 flex flex-col h-full overflow-hidden", className)}>
+        <Link
+            href={`/case-studies/${study.id}`}
+            className={cn("group rounded-xl border bg-card text-card-foreground shadow-sm hover:shadow-md transition-all duration-200 flex flex-col h-full overflow-hidden", className)}
+        >
             <div className="p-6 flex-1 flex flex-col">
                 <div className="flex justify-between items-start gap-4 mb-2">
                     <div>
@@ -82,10 +86,10 @@ export function CaseStudyCard({ study, className }: CaseStudyCardProps) {
             </div>
 
             <div className="bg-slate-50 p-3 border-t text-center">
-                <button className="text-xs font-medium text-blue-600 hover:text-blue-800 flex items-center justify-center gap-1 w-full transition-colors">
+                <span className="text-xs font-medium text-blue-600 group-hover:text-blue-800 flex items-center justify-center gap-1 w-full transition-colors">
                     View Full Case Study <ArrowUpRight className="w-3 h-3" />
-                </button>
+                </span>
             </div>
-        </div>
+        </Link>
     );
 }
