@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink } from "lucide-react";
+import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
 import Link from 'next/link';
@@ -83,6 +83,27 @@ async function getFireSafety(): Promise<FireSafetyData> {
     return JSON.parse(fileContents);
 }
 
+// Professional tier icon component replacing emoji icons
+function TierIcon({ tier, color }: { tier: number; color: string }) {
+    const iconClasses = cn(
+        "w-7 h-7",
+        color === 'emerald' ? "text-emerald-600" :
+        color === 'yellow' ? "text-yellow-600" :
+        "text-red-600"
+    );
+
+    switch (tier) {
+        case 1:
+            return <ShieldCheck className={iconClasses} />;
+        case 2:
+            return <AlertTriangle className={iconClasses} />;
+        case 3:
+            return <ShieldAlert className={iconClasses} />;
+        default:
+            return <CircleAlert className={iconClasses} />;
+    }
+}
+
 function FireSafetyTierCard({ tier }: { tier: FireSafetyTier }) {
     const colorClasses = {
         emerald: {
@@ -115,7 +136,14 @@ function FireSafetyTierCard({ tier }: { tier: FireSafetyTier }) {
             <div className={cn("p-5", colors.bg)}>
                 <div className="flex items-center justify-between mb-3">
                     <div className="flex items-center gap-3">
-                        <span className="text-2xl">{tier.icon}</span>
+                        <div className={cn(
+                            "p-2 rounded-xl",
+                            tier.color === 'emerald' ? "bg-emerald-100" :
+                            tier.color === 'yellow' ? "bg-yellow-100" :
+                            "bg-red-100"
+                        )}>
+                            <TierIcon tier={tier.tier} color={tier.color} />
+                        </div>
                         <div>
                             <span className={cn("px-2 py-0.5 rounded-full text-xs font-bold", colors.badge)}>
                                 TIER {tier.tier}
