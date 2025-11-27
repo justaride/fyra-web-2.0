@@ -19,7 +19,7 @@
 | P5 | Source Library | **DONE** | `9e00c1a` |
 | P6 | Templates/Downloads | **DONE** | `145bfed` |
 | - | JSON-LD Structured Data | **DONE** | `145bfed` |
-| - | Mobile Navigation Menu | **DONE** | pending |
+| - | Mobile Navigation Menu | **DONE** | `d0f44d7` |
 | - | Implementation Plan Doc | **DONE** | `94ca164` |
 
 ### In Progress / Remaining
@@ -100,6 +100,7 @@
 ## GIT HISTORY
 
 ```
+d0f44d7 feat: Add responsive mobile navigation menu
 315de54 docs: Update progress tracking with completed items
 145bfed feat: Add templates section and JSON-LD structured data
 34a0d6b feat: Add detail pages for suppliers and case studies
