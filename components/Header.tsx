@@ -34,7 +34,7 @@ export function Header({ supplierCount }: HeaderProps) {
 
                     {/* Desktop Navigation */}
                     <nav className="hidden lg:flex items-center gap-1 text-sm font-medium">
-                        <NavLink href="/">Suppliers</NavLink>
+                        <NavLink href="/suppliers">Suppliers</NavLink>
                         <NavLink href="/experts">Experts</NavLink>
                         <NavLink href="/scenarios">Scenarios</NavLink>
                         <NavLink href="/case-studies">Case Studies</NavLink>
