@@ -11,10 +11,13 @@
 ### Primære Datakilder (Beriket)
 | Fil | Status | Datapunkter | Sist oppdatert |
 |-----|--------|-------------|----------------|
-| `consultants.json` | ✅ BERIKET | 11 konsulenter, 30+ kontakter, scoring | 2025-11-27 |
+| `consultants.json` | ⚠️ REVERTERT | 5 konsulenter (original data) | 2025-11-27 |
 | `suppliers_enhanced.json` | ✅ BERIKET | 15 leverandører (+2 nye), hospitality tiers | 2025-11-27 |
 | `caseStudies_clean.json` | ✅ BERIKET | 11 hoteller (+2 nye), tier/relevans scoring | 2025-11-27 |
 | `certifications.json` | ✅ KOMPLETT | 8 sertifiseringer | - |
+
+**MERKNAD:** consultants.json ble revertert pga. inkompatibilitet med ConsultantCard.tsx.
+Berikede data er tilgjengelige i `/docs/MIRO_DOCS_FINDINGS.md` for fremtidig implementering.
 
 ### Sekundære Datakilder
 | Fil | Status | Innhold |
@@ -114,45 +117,43 @@ TOTALT:            8.0/10
 |---------|--------|
 | ✅ Berike suppliers_enhanced.json | FERDIG - 15 leverandører med hospitality tiers |
 | ✅ Berike caseStudies_clean.json | FERDIG - 11 cases med Fyra relevans scores |
-| ✅ Berike consultants.json | FERDIG - 11 konsulenter med kontakter |
+| ⚠️ Berike consultants.json | REVERTERT - Build-feil, data i MIRO_DOCS_FINDINGS.md |
+| ✅ Deploy til GitHub Pages | FERDIG - https://justaride.github.io/fyra-web-2.0/ |
 
 ### Gjenstående til 9/10
 | Oppgave | Prioritet |
 |---------|-----------|
+| Oppdatere ConsultantCard.tsx for contacts-array | HØY |
+| Integrere berikede konsulentdata | HØY |
 | Verifisere kontaktinfo (email/telefon) | MEDIUM |
-| Legge til BVB spec-maler | LAV |
 | Rydde opp legacy/duplikat filer | LAV |
 
 ---
 
-## 6. NESTE PROSESS - FASE 2
+## 6. NESTE PROSESS - FASE 3
 
-### 6.1 Databerikelse (Prioritet 1)
+### 6.1 Frontend-oppdatering (Prioritet 1)
 
-**suppliers_enhanced.json:**
-- Legge til hospitality-nivåer fra PROMPT 2
-- Legge til kontaktinfo
-- Legge til volum-kapasitet
-- Legge til branntest-kapabilitet
+**ConsultantCard.tsx oppdatering:**
+- Endre fra `contact` (objekt) til `contacts` (array)
+- Støtte visning av flere kontakter per konsulent
+- Legge til scoring-visning
 
-**caseStudies_clean.json:**
-- Legge til dypere profiler fra PROMPT 6
-- Legge til arkitekt/designer kontakter
-- Legge til sirkulære tiltak (kvantifisert)
-- Legge til Fyra relevance score
+**Etter komponent-oppdatering:**
+- Integrere berikede konsulentdata fra MIRO_DOCS_FINDINGS.md
+- Oppdatere consultants.json med 11 konsulenter
 
-### 6.2 Kodeintegrering (Prioritet 2)
-
-- Oppdatere Experts-side til å bruke ny scoring
-- Legge til filter på hospitality-erfaring
-- Vise kontaktinfo på kort
-- Implementere sammenligning-funksjon
-
-### 6.3 Kvalitetssikring (Prioritet 3)
+### 6.2 Kvalitetssikring (Prioritet 2)
 
 - Verifisere alle email-adresser
 - Sjekke at alle sourceRefs peker til gyldige kilder
 - Teste alle lenker i templates
+
+### 6.3 Fremtidige forbedringer
+
+- Søkefunksjonalitet på tvers av alt innhold
+- Leverandør-sammenligningsverktøy
+- Prosjektkostnadskalkulator
 
 ---
 
@@ -160,12 +161,13 @@ TOTALT:            8.0/10
 
 For neste sesjon:
 
-- [ ] Les dette dokumentet først
-- [ ] Sjekk CRITICAL_ANALYSIS.md for bakgrunn
-- [ ] Sjekk MIRO_DOCS_FINDINGS.md for ekstraherte data
-- [ ] Start med suppliers_enhanced.json berikelse
-- [ ] Deretter caseStudies_clean.json
-- [ ] Til slutt frontend-oppdateringer
+- [x] Les dette dokumentet først
+- [x] Sjekk CRITICAL_ANALYSIS.md for bakgrunn
+- [x] Sjekk MIRO_DOCS_FINDINGS.md for ekstraherte data
+- [x] Berike suppliers_enhanced.json ✅ FERDIG
+- [x] Berike caseStudies_clean.json ✅ FERDIG
+- [ ] Oppdatere ConsultantCard.tsx for contacts-støtte
+- [ ] Integrere berikede konsulentdata
 
 ---
 

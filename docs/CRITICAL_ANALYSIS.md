@@ -547,13 +547,19 @@ TOTALT:            6.75/10
 
 ### 2025-11-27 - Fase 2 Komplett: Databerikelse
 
-**STATUS: ✅ FULLFØRT**
+**STATUS: ✅ DELVIS FULLFØRT**
 
-Alle primære datafiler systematisk beriket:
-- ✅ `consultants.json`: 5 → 11 konsulenter, 30+ kontakter, scoring
+Datafiler systematisk beriket:
+- ⚠️ `consultants.json`: REVERTERT til 5 konsulenter (pga. build-feil - se merknad under)
 - ✅ `suppliers_enhanced.json`: 13 → 15 leverandører (+Alsberg Studio, +Cirkulär Interiör)
 - ✅ `caseStudies_clean.json`: 9 → 11 cases (+Akademihotellet, +Blique), tier/relevans system
 - ✅ Filbruk kartlagt: `consultants_enhanced.json` + `consultants.json` brukes begge
+
+**MERKNAD om consultants.json:**
+Konsulent-berikelsen ble revertert fordi ny datastruktur (`contacts` array) var inkompatibel med
+eksisterende `ConsultantCard.tsx` komponent som forventer `contact` objekt.
+Ekstraherte data fra MIRO DOCS ligger fortsatt i `/docs/MIRO_DOCS_FINDINGS.md` for fremtidig implementering.
+Krever oppdatering av frontend-komponent før data kan integreres.
 
 #### Oppdatert Vurdering (Post-Fase 2):
 ```
@@ -598,10 +604,12 @@ TOTAL FORBEDRING: +2.25 poeng
 
 Plattformen er nå **produksjonsklar** med:
 - 15 leverandører med hospitality readiness scoring
-- 11 konsulenter med kontaktinfo og approach-strategier
+- 5 konsulenter (original data - berikelse tilgjengelig i MIRO_DOCS_FINDINGS.md)
 - 11 case studies med tier-klassifisering og Fyra-relevans
 - 8 sertifiseringssystemer dokumentert
 - Komplett dokumentasjonsarkiv
+
+**GitHub Pages:** https://justaride.github.io/fyra-web-2.0/
 
 ---
 
