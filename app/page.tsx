@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
+import { AnimatedStats } from '@/components/AnimatedStats';
 import {
   Recycle,
   Building2,
@@ -182,21 +183,12 @@ export default async function Home() {
               for reuse-first hotel projects.
             </p>
 
-            {/* Quick stats */}
-            <div className="flex flex-wrap justify-center gap-8 text-sm">
-              <div className="flex items-center gap-2">
-                <Building2 className="w-4 h-4 text-teal-400" />
-                <span><strong>{suppliers.length}</strong> Verified Suppliers</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Hotel className="w-4 h-4 text-teal-400" />
-                <span><strong>{caseStudies.length}</strong> Case Studies</span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Users className="w-4 h-4 text-teal-400" />
-                <span><strong>{consultantsCount}</strong> Expert Consultants</span>
-              </div>
-            </div>
+            {/* Quick stats - animated */}
+            <AnimatedStats
+              supplierCount={suppliers.length}
+              caseStudyCount={caseStudies.length}
+              consultantCount={consultantsCount}
+            />
           </div>
         </div>
       </section>

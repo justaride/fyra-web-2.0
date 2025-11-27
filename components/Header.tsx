@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { MobileNav } from './MobileNav';
 import { Recycle } from 'lucide-react';
+import { ThemeToggle } from './ThemeToggle';
 
 interface HeaderProps {
     supplierCount?: number;
@@ -47,16 +48,17 @@ export function Header({ supplierCount }: HeaderProps) {
                         <NavLink href="/about">About</NavLink>
                     </nav>
 
-                    {/* Right side: Supplier count (desktop) + Mobile menu */}
-                    <div className="flex items-center gap-3">
+                    {/* Right side: Supplier count (desktop) + Theme toggle + Mobile menu */}
+                    <div className="flex items-center gap-2">
                         {supplierCount !== undefined && (
                             <div className="hidden sm:block">
-                                <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3 py-1.5 text-xs font-semibold text-teal-700 ring-1 ring-inset ring-teal-600/20">
+                                <span className="inline-flex items-center gap-1.5 rounded-full bg-teal-50 px-3 py-1.5 text-xs font-semibold text-teal-700 ring-1 ring-inset ring-teal-600/20 dark:bg-teal-900/30 dark:text-teal-300 dark:ring-teal-700">
                                     <span className="h-1.5 w-1.5 rounded-full bg-teal-500 animate-pulse" />
                                     {supplierCount} Verified Partners
                                 </span>
                             </div>
                         )}
+                        <ThemeToggle />
                         <MobileNav />
                     </div>
                 </div>
