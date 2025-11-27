@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Header } from '@/components/Header';
+import { BreadcrumbBar } from '@/components/Breadcrumb';
 import Link from 'next/link';
 import {
     FileText,
@@ -71,6 +72,7 @@ export default async function TemplatesPage() {
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
+            <BreadcrumbBar />
 
             <div className="container mx-auto px-4 py-8">
                 {/* Hero Section */}

@@ -3,6 +3,7 @@ import path from 'path';
 import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert, Landmark, Scale, Lightbulb, TrendingUp, BookOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
+import { BreadcrumbBar } from '@/components/Breadcrumb';
 import Link from 'next/link';
 
 interface FireSafetyTier {
@@ -296,6 +297,7 @@ export default async function RegulationsPage() {
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
+            <BreadcrumbBar />
 
             <div className="container mx-auto px-4 py-8">
                 {/* Page Header */}

@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Header } from '@/components/Header';
+import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { Clock, AlertTriangle, CheckCircle, Building2, Flame, Globe, Sparkles, ArrowRight, Info, Link as LinkIcon } from 'lucide-react';
 import Link from 'next/link';
 
@@ -264,6 +265,7 @@ export default async function ScenariosPage() {
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
+            <BreadcrumbBar />
 
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-green-900 text-white py-16">

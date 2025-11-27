@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Header } from '@/components/Header';
+import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { EnhancedConsultantCard } from '@/components/EnhancedConsultantCard';
 import { ConsultantCard } from '@/components/ConsultantCard';
 import { Users, ShieldCheck, Lightbulb, Building2, CheckCircle, ArrowRight } from 'lucide-react';
@@ -47,6 +48,7 @@ export default async function ExpertsPage() {
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
+            <BreadcrumbBar />
 
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-purple-900 text-white py-16">

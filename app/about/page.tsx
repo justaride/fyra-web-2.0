@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Header } from '@/components/Header';
+import { BreadcrumbBar } from '@/components/Breadcrumb';
 import {
     Award, Building2, Users, Leaf, Globe, Hotel, Landmark,
     Trophy, Calendar, MapPin, ArrowRight, ExternalLink,
@@ -124,6 +125,7 @@ export default async function AboutPage() {
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
+            <BreadcrumbBar />
 
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 text-white py-20">

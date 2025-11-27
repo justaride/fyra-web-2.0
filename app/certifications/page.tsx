@@ -3,6 +3,7 @@ import path from 'path';
 import { Award, Building2, Leaf, Recycle, CheckCircle, AlertCircle, ArrowRight, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
+import { BreadcrumbBar } from '@/components/Breadcrumb';
 
 interface Certification {
     id: string;
@@ -106,6 +107,7 @@ export default async function CertificationsPage() {
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
+            <BreadcrumbBar />
 
             {/* Hero Section */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white py-16">

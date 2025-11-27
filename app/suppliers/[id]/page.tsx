@@ -1,10 +1,10 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Header } from '@/components/Header';
+import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import {
-    ArrowLeft,
     MapPin,
     Phone,
     Mail,
@@ -158,17 +158,9 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
         <main className="min-h-screen bg-slate-50">
             <JsonLd data={jsonLdData} />
             <Header />
+            <BreadcrumbBar currentTitle={supplier.name} />
 
             <div className="container mx-auto px-4 py-8 max-w-6xl">
-                {/* Back Link */}
-                <Link
-                    href="/"
-                    className="inline-flex items-center gap-2 text-slate-500 hover:text-teal-600 mb-6 text-sm font-medium transition-colors"
-                >
-                    <ArrowLeft className="w-4 h-4" />
-                    Back to Suppliers
-                </Link>
-
                 {/* Hero Section */}
                 <div className="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden mb-8">
                     <div className="bg-gradient-to-br from-slate-800 via-slate-900 to-teal-900 text-white p-8 lg:p-10">

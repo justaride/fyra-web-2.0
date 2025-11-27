@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import SupplierDirectory from '@/components/SupplierDirectory';
 import { Header } from '@/components/Header';
+import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { Building2, MapPin, CheckCircle, Globe, Scale } from 'lucide-react';
 import { ComparisonProvider } from '@/lib/ComparisonContext';
 import { ComparisonBar } from '@/components/ComparisonBar';
@@ -30,6 +31,7 @@ export default async function SuppliersPage() {
     <ComparisonProvider>
       <main className="min-h-screen bg-slate-50 font-sans">
         <Header supplierCount={suppliers.length} />
+        <BreadcrumbBar />
 
         {/* Hero Section */}
         <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-teal-900 text-white py-16">

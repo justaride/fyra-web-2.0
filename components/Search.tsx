@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { useRouter } from 'next/navigation';
-import Fuse from 'fuse.js';
+import Fuse, { type FuseResult } from 'fuse.js';
 import { Search as SearchIcon, X, MapPin, Building2, Hotel, Users } from 'lucide-react';
 import {
   SearchableItem,
@@ -22,7 +22,7 @@ interface SearchProps {
 
 export function Search({ suppliers, caseStudies, consultants }: SearchProps) {
   const [query, setQuery] = useState('');
-  const [results, setResults] = useState<Fuse.FuseResult<SearchableItem>[]>([]);
+  const [results, setResults] = useState<FuseResult<SearchableItem>[]>([]);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const inputRef = useRef<HTMLInputElement>(null);

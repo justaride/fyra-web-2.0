@@ -1,4 +1,4 @@
-import Fuse from 'fuse.js';
+import Fuse, { type IFuseOptions } from 'fuse.js';
 
 // Types for searchable items
 export interface SearchableItem {
@@ -14,17 +14,18 @@ export interface SearchableItem {
 
 // Transform suppliers to searchable items
 export function transformSuppliers(suppliers: any[]): SearchableItem[] {
+  if (!Array.isArray(suppliers)) return [];
   return suppliers.map((s) => ({
-    id: s.id,
+    id: s.id || '',
     type: 'supplier' as const,
-    title: s.name,
+    title: s.name || '',
     description: s.description?.slice(0, 200) || '',
     location: typeof s.location === 'string' ? s.location : s.mapLocations?.[0]?.address || '',
     url: `/suppliers#${s.id}`,
     tier: s.hospitalityReadiness?.tier,
     tags: [
-      ...(s.services?.slice(0, 3) || []),
-      ...(s.certifications?.slice(0, 2) || []),
+      ...(Array.isArray(s.services) ? s.services.slice(0, 3) : []),
+      ...(Array.isArray(s.certifications) ? s.certifications.slice(0, 2) : []),
       s.hospitalityReadiness?.tier,
     ].filter(Boolean),
   }));
@@ -32,44 +33,46 @@ export function transformSuppliers(suppliers: any[]): SearchableItem[] {
 
 // Transform case studies to searchable items
 export function transformCaseStudies(caseStudies: any[]): SearchableItem[] {
+  if (!Array.isArray(caseStudies)) return [];
   return caseStudies.map((c) => ({
-    id: c.id,
+    id: c.id || '',
     type: 'case-study' as const,
-    title: c.title || c.details?.name,
-    description: c.details?.scope || c.circularFeatures?.join(', ') || '',
-    location: c.location,
+    title: c.title || c.details?.name || '',
+    description: c.details?.scope || (Array.isArray(c.circularFeatures) ? c.circularFeatures.join(', ') : '') || '',
+    location: c.location || '',
     url: `/case-studies#${c.id}`,
     tier: c.tier,
     tags: [
       c.tier,
       c.type,
       c.details?.category,
-      ...(c.circularFeatures?.slice(0, 2) || []),
+      ...(Array.isArray(c.circularFeatures) ? c.circularFeatures.slice(0, 2) : []),
     ].filter(Boolean),
   }));
 }
 
 // Transform consultants to searchable items
 export function transformConsultants(consultants: any[]): SearchableItem[] {
+  if (!Array.isArray(consultants)) return [];
   return consultants.map((c) => ({
-    id: c.id,
+    id: c.id || '',
     type: 'expert' as const,
-    title: c.name,
+    title: c.name || '',
     description: c.description?.slice(0, 200) || '',
-    location: Array.isArray(c.locations) ? c.locations.join(', ') : c.locations,
+    location: Array.isArray(c.locations) ? c.locations.join(', ') : (c.locations || ''),
     url: `/experts#${c.id}`,
     tier: c.tier,
     tags: [
       c.tier,
       c.category,
       c.role,
-      ...(c.services?.slice(0, 2) || []),
+      ...(Array.isArray(c.services) ? c.services.slice(0, 2) : []),
     ].filter(Boolean),
   }));
 }
 
 // Fuse.js options optimized for fuzzy search
-export const fuseOptions: Fuse.IFuseOptions<SearchableItem> = {
+export const fuseOptions: IFuseOptions<SearchableItem> = {
   keys: [
     { name: 'title', weight: 0.4 },
     { name: 'description', weight: 0.25 },
