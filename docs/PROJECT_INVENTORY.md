@@ -1,12 +1,12 @@
 # FYRA CIRCULAR PLATFORM - Prosjektinventar
 
 **Dato:** 2025-11-27
-**Versjon:** 2.4
-**Status:** NCH Contract Alignment - Obj 5 Integration pågår
+**Versjon:** 2.5
+**Status:** Alle NCH Kontraktmål Fullført - Live på GitHub Pages
 
 ---
 
-## 0. NCH-FYRA KONTRAKTMÅL
+## 0. NCH-FYRA KONTRAKTMÅL ✅ KOMPLETT
 
 Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 
@@ -15,11 +15,11 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 | Obj 2 | Segment Analysis | `/suppliers`, `/experts`, `/case-studies` | ✅ Sterk |
 | Obj 3 | Nordic Upscaling Strategy | `/regulations`, `/scenarios`, `/specifications` | ✅ God |
 | Obj 4 | Implementation Support | `/templates`, kontakter | ✅ Medium |
-| Obj 5 | Public Procurement Best Practice | `/regulations` utvidelse | 🔄 Pågår |
+| Obj 5 | Public Procurement Best Practice | `/regulations` (Public Procurement seksjon) | ✅ **Komplett** |
 
 ---
 
-## 1. DATAFILER (15 filer)
+## 1. DATAFILER (16 filer)
 
 ### Primære Datakilder (Beriket)
 | Fil | Status | Datapunkter | Sist oppdatert |
@@ -28,6 +28,7 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 | `suppliers_enhanced.json` | ✅ BERIKET | 15 leverandører (+2 nye), hospitality tiers | 2025-11-27 |
 | `caseStudies_clean.json` | ✅ BERIKET | 11 hoteller (+2 nye), tier/relevans scoring | 2025-11-27 |
 | `certifications.json` | ✅ KOMPLETT | 8 sertifiseringer | - |
+| `public_procurement.json` | ✅ **NY** | 7 seksjoner (LOU, LCC, etc.) | 2025-11-27 |
 
 **MERKNAD:** consultants.json ble revertert pga. inkompatibilitet med ConsultantCard.tsx.
 Berikede data er tilgjengelige i `/docs/MIRO_DOCS_FINDINGS.md` for fremtidig implementering.
@@ -61,9 +62,9 @@ Berikede data er tilgjengelige i `/docs/MIRO_DOCS_FINDINGS.md` for fremtidig imp
 | `CRITICAL_ANALYSIS.md` | Kvalitetsanalyse & gap-vurdering | ✅ OPPDATERT |
 | `MIRO_DOCS_FINDINGS.md` | Sammendrag av MIRO research | ✅ NY |
 | `IMPLEMENTATION_PLAN.md` | Implementeringsplan | ✅ OK |
-| `PROGRESS.md` | Fremdriftslogg | ✅ OPPDATERT Session 5 |
+| `PROGRESS.md` | Fremdriftslogg | ✅ OPPDATERT Session 6 |
 | `DATA_COVERAGE_REPORT.md` | Datadekningsrapport | ✅ OK |
-| `PROJECT_INVENTORY.md` | Dette dokumentet | ✅ v2.2 |
+| `PROJECT_INVENTORY.md` | Dette dokumentet | ✅ v2.5 |
 
 ---
 
@@ -76,7 +77,7 @@ Berikede data er tilgjengelige i `/docs/MIRO_DOCS_FINDINGS.md` for fremtidig imp
 | Suppliers Directory | `/suppliers` | suppliers_enhanced.json | ✅ Hero + stats |
 | Experts | `/experts` | consultants.json | ✅ Hero + insight callout |
 | Case Studies | `/case-studies` | caseStudies_clean.json | ✅ Hero + stats |
-| Regulations | `/regulations` | regulations_filtered.json | ✅ Icons oppdatert |
+| Regulations | `/regulations` | regulations_filtered.json + public_procurement.json | ✅ **+Obj 5 seksjon** |
 | Certifications | `/certifications` | certifications.json | ✅ Hero + insight |
 | Specifications | `/specifications` | specifications.json | ✅ Hero + guidance |
 | Scenarios | `/scenarios` | scenarios.json | ✅ Hero + stats |
@@ -137,16 +138,26 @@ Etablert mønster for hovedsider:
 
 ## 6. KVALITETSSTATUS
 
-### Nåværende vurdering (Post Session 5 - UX Pass Complete)
+### Nåværende vurdering (Post Session 6 - All Objectives Complete)
 ```
 Datakvalitet:      8/10  (uendret)
 Actionability:     8/10  (uendret)
-Completeness:      8/10  (uendret)
+Completeness:      9/10  (+1 - Obj 5 complete)
 Verification:      8/10  (uendret)
-Design/UX:        10/10  (+3 fra baseline - full consistency)
+Design/UX:        10/10  (full consistency)
+Contract Align:   10/10  (+NEW - all objectives covered)
 ────────────────────────
-TOTALT:            8.4/10
+TOTALT:            8.8/10
 ```
+
+### Fullført Session 6
+| Oppgave | Status |
+|---------|--------|
+| ✅ NCH Contract Review | FERDIG - Alle mål kartlagt |
+| ✅ Obj 5 Integration | FERDIG - Public Procurement seksjon |
+| ✅ public_procurement.json | FERDIG - 7 seksjoner med LOU data |
+| ✅ /regulations oppdatert | FERDIG - Ny indigo seksjon |
+| ✅ Dokumentasjon oppdatert | FERDIG - PROGRESS + INVENTORY |
 
 ### Fullført Session 5
 | Oppgave | Status |
@@ -177,22 +188,28 @@ TOTALT:            8.4/10
 
 ---
 
-## 8. NESTE PROSESS - SESSION 6
+## 8. SESSION 6 FULLFØRT
 
-### 8.1 Obj 5: Offentlig Anskaffelse 🔄 PÅGÅR
-Integrere innhold fra PROMPT 3 research om LOU (Lagen om offentlig upphandling):
-1. LOU-rammeverket for sirkulær bygg
-2. Hållbarhetskrav i anbudsprosesser
-3. Livscykelkostnad (LCC) som evalueringsmetode
-4. Innovativ upphandling mekanismer
-5. Relevans for private hotellprosjekter
+### 8.1 Obj 5: Offentlig Anskaffelse ✅ KOMPLETT
+Integrert innhold fra PROMPT 3 research om LOU (Lagen om offentlig upphandling):
 
-**Kilde:** PROMPT 3 Perplexity output, seksjon 10
+**Ny datafil:** `public_procurement.json` med 7 seksjoner:
+1. LOU Framework (2016:1145)
+2. Sustainability Criteria in Tenders
+3. Lifecycle Cost (LCC) Evaluation
+4. Innovation Procurement
+5. Private Hotel Relevance
+6. Future Regulatory Outlook
+7. Practical Guidance for Fyra
+
+**UI:** Ny seksjon på `/regulations` med indigo accent, grid layout, og eksterne ressurslenker.
+
+**Commit:** `79cfcbf`
 
 ### 8.2 UX Consistency Audit ✅ FULLFØRT
 **FERDIG:** Alle 6 sider har nå hero sections med konsistent design.
 
-### 8.3 Consultant Integration (Prioritet 2)
+### 8.3 Consultant Integration (Prioritet 1 - Gjenværende)
 - Oppdatere ConsultantCard.tsx for contacts-array
 - Integrere berikede konsulentdata
 
@@ -210,9 +227,10 @@ For neste sesjon:
 - [x] Les PROGRESS.md for session 5 changes
 - [x] Sjekk design system i PROGRESS.md
 - [x] Gjennomfør UX audit på gjenværende sider ✅
+- [x] Implementere Obj 5 (Public Procurement) ✅
 - [ ] Oppdatere ConsultantCard.tsx for contacts-støtte
 - [ ] Integrere berikede konsulentdata
 
 ---
 
-*Generert: 2025-11-27 Session 6 (Obj 5 Integration) | Fyra Circular Platform v2.4*
+*Generert: 2025-11-27 Session 6 (Obj 5 Complete) | Fyra Circular Platform v2.5*
