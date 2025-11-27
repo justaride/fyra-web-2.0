@@ -3,7 +3,7 @@
     "version": "1.0",
     "lastUpdated": "2025-01-26",
     "description": "Central source registry for Fyra Circular Platform. All data entities reference sources by ID for traceability and verification.",
-    "totalSources": 85
+    "totalSources": 100
   },
   "sources": [
     {
@@ -791,6 +791,146 @@
       "language": "sv",
       "verifies": ["nollco2_certification"],
       "keyFacts": ["Net-zero carbon certification", "Swedish system", "Building lifecycle"]
+    },
+    {
+      "id": "ohboy_website",
+      "title": "Ohboy Hotel - Sustainable Hotel Page",
+      "url": "https://ohboy.se/en/sustainable-hotel/",
+      "type": "company_website",
+      "publisher": "Ohboy Hotel",
+      "language": "en",
+      "verifies": ["ohboy_hotel_malmo"],
+      "keyFacts": ["Green brutalism architecture", "Locally sourced materials", "Bespoke furniture by Lisa Hilland and Mats Theselius", "Zero-waste operations", "Sustainable mobility focus"]
+    },
+    {
+      "id": "siegel_ohboy",
+      "title": "Cykelhuset Ohboy - Siegel Arkitekter",
+      "url": "https://www.siegel.nu/en/home/ohboy/",
+      "type": "project_page",
+      "publisher": "Hauschild + Siegel Arkitekter",
+      "language": "en",
+      "verifies": ["ohboy_hotel_malmo"],
+      "keyFacts": ["Principal Architect: Cord Siegel", "Senior Architects: Anders Gustafsson, Martin Stavenow Svensson", "Sustainable mobility pilot project", "Hotel + apartments concept"]
+    },
+    {
+      "id": "ekstrands_ohboy",
+      "title": "Cykelhuset Ohboy Malmö - Ekstrands Windows Project",
+      "url": "https://www.ekstrands.com/en/windows/unique-projects/cykelhuset-ohboy-malmoe/",
+      "type": "project_page",
+      "publisher": "Ekstrands",
+      "language": "en",
+      "verifies": ["ohboy_hotel_malmo"],
+      "keyFacts": ["Unique window project", "Green brutalism design", "Award-winning architecture"]
+    },
+    {
+      "id": "archdaily_gsh",
+      "title": "3XN Designs Denmark's First Climate-Positive Hotel on Bornholm",
+      "url": "https://www.archdaily.com/950630/3xn-designs-denmarks-first-climate-positive-hotel-on-the-island-of-bornholm",
+      "type": "news_article",
+      "publisher": "ArchDaily",
+      "language": "en",
+      "verifies": ["hotel_green_solution_house_bornholm"],
+      "keyFacts": ["Climate-positive building", "3XN/GXN architects", "All-wood construction", "Components designed for disassembly", "Wood waste upcycled to furniture", "Living lab concept"]
+    },
+    {
+      "id": "greensolutionhouse_website",
+      "title": "Green Solution House - Official Website",
+      "url": "https://greensolutionhouse.dk/",
+      "type": "company_website",
+      "publisher": "Hotel Green Solution House",
+      "language": "en",
+      "verifies": ["hotel_green_solution_house_bornholm"],
+      "keyFacts": ["Bornholm Denmark", "59 rooms total", "Climate-positive hotel", "Living lab for circular innovation", "Trine Richter - Hotel Director"]
+    },
+    {
+      "id": "hoteldesigns_hermank",
+      "title": "Inside Denmark's First Chemical-Free Hotel",
+      "url": "https://hoteldesigns.net/editors-picks/mini-view-inside-denmarks-first-chemical-free-hotel/",
+      "type": "news_article",
+      "publisher": "Hotel Designs",
+      "language": "en",
+      "verifies": ["hotel_herman_k_brochner_hotels"],
+      "keyFacts": ["First chemical-free hotel in Denmark", "Innovative cleaning technology", "Brutalist architecture transformation"]
+    },
+    {
+      "id": "thespaces_hermank",
+      "title": "Copenhagen Transformer Station Reborn as Hotel Herman K",
+      "url": "https://thespaces.com/copenhagen-transformer-station-is-reborn-as-hotel-herman-k/",
+      "type": "news_article",
+      "publisher": "The Spaces",
+      "language": "en",
+      "verifies": ["hotel_herman_k_brochner_hotels"],
+      "keyFacts": ["1963 transformer station adaptive reuse", "Hans Christian Hansen original architect", "Lise Egenius General Manager"]
+    },
+    {
+      "id": "hermank_website",
+      "title": "Hotel Herman K - Official Website",
+      "url": "https://hermank.dk/?lang=en",
+      "type": "company_website",
+      "publisher": "Hotel Herman K / Brøchner Hotels",
+      "language": "en",
+      "verifies": ["hotel_herman_k_brochner_hotels"],
+      "keyFacts": ["Copenhagen boutique hotel", "Chemical-free operations", "Brøchner Hotels collection"]
+    },
+    {
+      "id": "hotelnewsresource_hermank",
+      "title": "Hotel Herman K Copenhagen Opening",
+      "url": "https://www.hotelnewsresource.com/article101053.html",
+      "type": "news_article",
+      "publisher": "Hotel News Resource",
+      "language": "en",
+      "verifies": ["hotel_herman_k_brochner_hotels"],
+      "keyFacts": ["Brøchner Hotels design team", "Hotel opening coverage"]
+    },
+    {
+      "id": "brochner_sustainability",
+      "title": "Brøchner Hotels - Sustainable Ways",
+      "url": "https://www.brochner-hotels.com/sustainable-ways",
+      "type": "company_website",
+      "publisher": "Brøchner Hotels",
+      "language": "en",
+      "verifies": ["hotel_herman_k_brochner_hotels", "hotel_ottilia_brochner_hotels"],
+      "keyFacts": ["4 Copenhagen hotels", "Sustainability commitment", "Green Key certified", "Adaptive reuse focus"]
+    },
+    {
+      "id": "selectedbyrg_ottilia",
+      "title": "Hotel Ottilia - Selected by RG",
+      "url": "https://www.selectedbyrg.com/blog/ottilia",
+      "type": "news_article",
+      "publisher": "Selected by RG",
+      "language": "en",
+      "verifies": ["hotel_ottilia_brochner_hotels"],
+      "keyFacts": ["Carlsberg City district", "Former brewery adaptive reuse", "Wine hour tradition"]
+    },
+    {
+      "id": "brochner_ottilia",
+      "title": "Ottilia Heritage - Brøchner Hotels",
+      "url": "https://www.brochner-hotels.com/our-locations/ottilia-heritage",
+      "type": "company_website",
+      "publisher": "Brøchner Hotels",
+      "language": "en",
+      "verifies": ["hotel_ottilia_brochner_hotels"],
+      "keyFacts": ["Custom furniture", "Repurposing focus", "Heritage preservation", "Carlsberg brewery conversion"]
+    },
+    {
+      "id": "northabroad_copenhagen",
+      "title": "Best Sustainable Hotels in Copenhagen",
+      "url": "https://northabroad.com/best-sustainable-hotels-copenhagen/",
+      "type": "news_article",
+      "publisher": "North Abroad",
+      "language": "en",
+      "verifies": ["hotel_ottilia_brochner_hotels", "hotel_herman_k_brochner_hotels"],
+      "keyFacts": ["Vintage furniture", "Long-lasting materials", "Brøchner Hotels sustainability practices"]
+    },
+    {
+      "id": "greenkey_hermank",
+      "title": "Copenhagen Hotel Says No to Chemicals",
+      "url": "https://www.green-key.dk/en/news/from-denmark/2018/new-copenhagen-hotel-says-no-to-chemicals/",
+      "type": "news_article",
+      "publisher": "Green Key Denmark",
+      "language": "en",
+      "verifies": ["hotel_herman_k_brochner_hotels"],
+      "keyFacts": ["Green Key certification", "Chemical-free hotel concept", "Sustainability innovation"]
     }
   ],
   "sourceTypes": {

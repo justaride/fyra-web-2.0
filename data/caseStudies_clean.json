@@ -66,23 +66,32 @@
     "details": {
       "name": "Ohboy Hotel",
       "role": "Architect, developer, AND hotel operator (rare triple role)",
-      "hotel website": "",
-      "malmö positioning": "Design hotel with sustainability story"
+      "hotel website": "ohboy.se",
+      "malmö positioning": "Design hotel with sustainability story",
+      "email": "info@ohboy.se",
+      "address": "Lilla Varvsgatan 24, 211 75 Malmö",
+      "principal architect": "Cord Siegel (Hauschild + Siegel)",
+      "furniture designers": "Lisa Hilland, Mats Theselius",
+      "senior architects": "Anders Gustafsson, Martin Stavenow Svensson"
     },
     "chain": "⚠️ VERY LOW",
-    "location": "Davidshallstorg 12, Malmö, Sweden",
-    "size": "74 rooms",
-    "year": "2016-2018",
+    "location": "Malmö, Västra Hamnen",
+    "size": "31 rooms + 55 rental apartments",
+    "year": "2017",
     "category": "Design boutique / Mid-upscale",
     "website": "ohboy.se",
     "phone": "+46 40-85606",
-    "scope": "NEW BUILD with integrated sustainability from design phase",
+    "scope": "NEW BUILD with integrated sustainability - Green brutalism architecture showcasing sustainable mobility concept",
     "notes": [
-      "Malmö example - Proves sustainable design hotels work in Sweden's 3rd largest city",
-      "Operational sustainability - Zero-waste breakfast = operational example for other hotels"
+      "Green brutalism architecture meets lush greenery on balconies, facades, roofs",
+      "Bespoke furniture by Lisa Hilland and Mats Theselius",
+      "Local materials - Staircase and interior by Branders Snickeri using locally sourced ash wood from northern Skåne",
+      "Pilot project for reducing car use - adapted for smart mobility (cycling, walking, public transport)",
+      "Loaner bicycles, delivery boxes, communal gardens, tool stations",
+      "Hotel rooms with own entrances fostering vibrant street life"
     ],
-    "year_verified": 2018,
-    "sourceRefs": []
+    "year_verified": 2017,
+    "sourceRefs": ["ohboy_website", "siegel_ohboy", "ekstrands_ohboy"]
   },
   {
     "id": "hotel_green_solution_house_bornholm",
@@ -95,24 +104,28 @@
       "scope": "COMPREHENSIVE - CLIMATE-POSITIVE DESIGN - Most intensive circular hotel in Nordics",
       "contact": "Via hotel website greensolutionhouse.dk",
       "known for": "Willing to share learnings (hotel = living lab)",
-      "trine richter (hotel director)": "Via greensolutionhouse.dk contact"
+      "trine richter (hotel director)": "Via greensolutionhouse.dk contact",
+      "architect firm": "3XN/GXN",
+      "lead architect": "Kasper Guldager Jensen (GXN founder)"
     },
     "chain": "20-30% circular content using GSH approach",
-    "location": "Copenhagen, Denmark",
+    "location": "Bornholm, Denmark",
     "size": "35 rooms (original 2015) + 24 rooms (2021 extension) = 59 rooms total",
     "year": "2013-2015 (original), 2019-2021 (extension)",
-    "website": "upchair.dk",
+    "website": "greensolutionhouse.dk",
     "phone": "Via website",
     "notes": [
+      "Denmark's first climate-positive hotel building",
+      "All-wood construction eliminating steel/concrete emissions",
+      "Components designed for easy disassembly and reuse",
+      "Wood waste offcuts upcycled into bespoke furniture and interior surfaces",
       "Living lab - Hotel tests circular innovations for industry",
-      "Trine Richter - Hotel Director ← KEY CONTACT",
-      "Climate-positive - Only hotel documented as removing more CO2 than construction emitted",
-      "LIVING LAB MODEL - Shows hotel can be R&D platform (potential Fyra client value-add)",
-      "Contact Trine Richter (Hotel Director) - PRIORITY CONTACT"
+      "Trine Richter - Hotel Director",
+      "Climate-positive - Removes more CO2 than construction emitted"
     ],
-    "architect": "Kasper Guldager Jensen ← CIRCULAR ECONOMY EXPERT",
+    "architect": "Kasper Guldager Jensen (3XN/GXN)",
     "year_verified": 2021,
-    "sourceRefs": []
+    "sourceRefs": ["archdaily_gsh", "greensolutionhouse_website"]
   },
   {
     "id": "villa_copenhagen_earth_suite",
@@ -155,41 +168,34 @@
     "type": "Hotel Case Study",
     "details": {
       "name": "Hotel Herman K",
-      "chain": "Brøchner Hotels (Danish boutique collection - 8 hotels)",
+      "chain": "Brøchner Hotels (Danish boutique collection - 4 Copenhagen hotels)",
       "built": "Hotel conversion of 1963 transformer station (industrial adaptive reuse)",
       "eier/operatør": "Brøchner Hotels (Danish family-owned)",
-      "website": "brochner-hotels.com",
+      "website": "hermank.dk",
       "phone": "Via Brøchner Hotels website",
       "scope": "ADAPTIVE REUSE + CHEMICAL-FREE DESIGN - Denmark's first chemical-free hotel",
-      "portfolio": "8 hotels in Copenhagen area",
-      "hotel-specific": "",
-      "hotel manager": "Lise Egenius (as of research date)",
-      "contact": "Via hotel",
-      "torben brøchner (founder/owner)": "Via brochner-hotels.com",
-      "brøchner hotels sustainability team": "Via corporate contact",
-      "lise egenius (general manager)": "Via hotel contact",
-      "linkedin": "Searchable \"Lise Egenius Hotel Herman K\"",
-      "repeat guests": "High (boutique hotel loyalty)",
-      "client pitch": "\"Denmark's first chemical-free hotel: health + sustainability premium positioning\"",
-      "swedish opportunity": "No documented \"chemical-free hotel\" in Sweden yet (Fyra could pioneer)"
+      "portfolio": "4 hotels in Copenhagen",
+      "hotel manager": "Lise Egenius (General Manager)",
+      "original architect": "Hans Christian Hansen (1963 building)",
+      "adaptive reuse": "Brøchner Hotels design team",
+      "contact": "Via brochner-hotels.com",
+      "certifications": "Green Key"
     },
-    "location": "Helgolandsgade 15, Copenhagen, Denmark",
-    "size": "~75-80 rooms (estimated - exact count not confirmed in sources)",
-    "year": "2016-2018",
-    "category": "Design boutique / Mid-upscale",
+    "location": "Copenhagen, Denmark",
+    "size": "31 rooms",
+    "year": "2018",
+    "category": "Luxury Boutique / Mid-upscale",
     "notes": [
-      "Brøchner Hotels - Danish boutique hotel collection",
-      "Brøchner Hotels in-house design team (likely)",
-      "Brøchner portfolio - Learnings applicable to other 7 hotels",
-      "Brøchner Hotels has 8 properties - Model can replicate across portfolio",
-      "Brøchner's 8 hotels - Could become chain-wide standard",
-      "Health-focused brands - Wellness hotels could adopt",
-      "BRØCHNER PORTFOLIO - 8 hotels = scalability potential",
-      "Contact Lise Egenius (GM) or Brøchner Hotels - PRIORITY CONTACT"
+      "Denmark's first chemical-free hotel - innovative cleaning technology eliminates chemicals",
+      "Adaptive reuse of 1963 transformer station - brutalist architecture transformation",
+      "Brøchner Hotels portfolio approach - replicable circular strategies across properties",
+      "Green Key certified",
+      "General Manager: Lise Egenius",
+      "Health-focused positioning - wellness hotels could adopt model"
     ],
     "chain": "⭐⭐⭐ MEDIUM-HIGH",
-    "year_verified": 2018,
-    "sourceRefs": []
+    "year_verified": 2022,
+    "sourceRefs": ["hoteldesigns_hermank", "thespaces_hermank", "hermank_website", "hotelnewsresource_hermank", "brochner_sustainability", "greenkey_hermank"]
   },
   {
     "id": "hotel_ottilia_brochner_hotels",
@@ -199,23 +205,27 @@
       "name": "Hotel Ottilia",
       "chain": "Brøchner Hotels (same ownership as Herman K)",
       "eier/operatør": "Brøchner Hotels",
-      "website": "brochner-hotels.com/ottilia",
-      "scope": "ADAPTIVE REUSE - Historic brewery → hotel",
+      "website": "brochner-hotels.com/our-locations/ottilia-heritage",
+      "scope": "ADAPTIVE REUSE - Historic Carlsberg brewery → boutique hotel",
       "contact": "Via brochner-hotels.com",
-      "brøchner hotels": "Via brochner-hotels.com (same contact as Herman K)"
+      "design approach": "Custom furniture with repurposing focus",
+      "heritage": "Former brewery adaptive reuse"
     },
-    "location": "Bryggervangen 2, Copenhagen, Denmark (Carlsberg City district)",
+    "location": "Carlsberg City district, Copenhagen, Denmark",
     "size": "~155 rooms",
-    "year": "2016-2018",
+    "year": "2018",
     "category": "Design boutique / Mid-upscale",
     "phone": "Via website",
     "notes": [
-      "Brøchner Hotels (same as Herman K)",
-      "Competitive area - Carlsberg City has multiple hotels (differentiation challenge)",
-      "Portfolio context - Shows Brøchner Hotels' consistent approach across properties"
+      "Adaptive reuse of historic Carlsberg brewery buildings",
+      "Custom-designed furniture with repurposing focus",
+      "Vintage furniture and long-lasting materials throughout",
+      "Wine hour tradition (17:00-18:00 complimentary wine in lobby)",
+      "Green Key certified",
+      "Brøchner Hotels portfolio approach - consistent sustainability across properties"
     ],
     "year_verified": 2018,
-    "sourceRefs": []
+    "sourceRefs": ["selectedbyrg_ottilia", "brochner_ottilia", "brochner_sustainability", "northabroad_copenhagen"]
   },
   {
     "id": "clarion_hotel_the_hub_oslo",
