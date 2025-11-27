@@ -1041,6 +1041,96 @@
       "language": "en",
       "verifies": ["ett_hem_stockholm"],
       "keyFacts": ["Ilse Crawford design coverage", "Arts & Crafts building", "Residential hotel concept"]
+    },
+    {
+      "id": "akademihotellet_website",
+      "title": "Akademihotellet Uppsala - Official Website",
+      "url": "https://www.akademihotellet.se/",
+      "type": "company_website",
+      "publisher": "Akademihotellet",
+      "language": "sv",
+      "verifies": ["akademihotellet_uppsala"],
+      "keyFacts": ["Historic boutique hotel", "Uppsala city center", "Museum furniture partnership"]
+    },
+    {
+      "id": "clarion_hub_website",
+      "title": "Clarion Hotel The Hub - Official Website",
+      "url": "https://www.nordicchoicehotels.com/hotels/norway/oslo/clarion-hotel-the-hub/",
+      "type": "company_website",
+      "publisher": "Nordic Choice Hotels",
+      "language": "en",
+      "verifies": ["clarion_hotel_the_hub_oslo"],
+      "keyFacts": ["423 rooms", "Mass timber construction", "BREEAM Excellent"]
+    },
+    {
+      "id": "archdaily_clarion_hub",
+      "title": "Clarion Hotel The Hub / Snøhetta",
+      "url": "https://www.archdaily.com/961156/clarion-hotel-the-hub-snohetta",
+      "type": "news_article",
+      "publisher": "ArchDaily",
+      "language": "en",
+      "verifies": ["clarion_hotel_the_hub_oslo"],
+      "keyFacts": ["Snøhetta architecture", "Timber construction details", "1,300 tonnes CO2 stored"]
+    },
+    {
+      "id": "thon_hotel_website",
+      "title": "Thon Hotel Oslo Airport - Official Website",
+      "url": "https://www.thonhotels.com/hotels/norway/oslo/thon-hotel-oslo-airport/",
+      "type": "company_website",
+      "publisher": "Thon Hotels",
+      "language": "en",
+      "verifies": ["thon_hotel_oslo_airport_gardermoen"],
+      "keyFacts": ["500 rooms", "Norway's largest conference hotel", "ISO 14001 certified"]
+    },
+    {
+      "id": "skeppsholmen_website",
+      "title": "Hotel Skeppsholmen - Official Website",
+      "url": "https://www.hotelskeppsholmen.se/",
+      "type": "company_website",
+      "publisher": "Nobis Hospitality Group",
+      "language": "sv",
+      "verifies": ["hotel_skeppsholmen_stockholm"],
+      "keyFacts": ["1699 heritage building", "78 rooms", "Byggnadsminne listed"]
+    },
+    {
+      "id": "dezeen_skeppsholmen",
+      "title": "Hotel Skeppsholmen by Claesson Koivisto Rune",
+      "url": "https://www.dezeen.com/2009/09/08/hotel-skeppsholmen-by-claesson-koivisto-rune/",
+      "type": "news_article",
+      "publisher": "Dezeen",
+      "language": "en",
+      "verifies": ["hotel_skeppsholmen_stockholm"],
+      "keyFacts": ["Swedish architecture coverage", "Historic preservation", "Karolinska barracks conversion"]
+    },
+    {
+      "id": "ottilia_website",
+      "title": "Hotel Ottilia - Official Website",
+      "url": "https://www.brochner-hotels.com/our-locations/ottilia-heritage",
+      "type": "company_website",
+      "publisher": "Brøchner Hotels",
+      "language": "en",
+      "verifies": ["hotel_ottilia_brochner_hotels"],
+      "keyFacts": ["155 rooms", "Carlsberg City district", "Former brewery adaptive reuse"]
+    },
+    {
+      "id": "villa_copenhagen_website",
+      "title": "Villa Copenhagen - Official Website",
+      "url": "https://www.villacopenhagen.com/",
+      "type": "company_website",
+      "publisher": "Nordic Hotels & Resorts",
+      "language": "en",
+      "verifies": ["villa_copenhagen_earth_suite"],
+      "keyFacts": ["390 rooms", "Earth Suite showcase", "Historic post office building"]
+    },
+    {
+      "id": "downtown_camper_website",
+      "title": "Downtown Camper by Scandic - Official Website",
+      "url": "https://www.scandichotels.com/hotels/sweden/stockholm/downtown-camper-by-scandic",
+      "type": "company_website",
+      "publisher": "Scandic Hotels",
+      "language": "en",
+      "verifies": ["downtown_camper_by_scandic"],
+      "keyFacts": ["494 rooms", "LEED Gold certified", "Urban camping concept"]
     }
   ],
   "sourceTypes": {

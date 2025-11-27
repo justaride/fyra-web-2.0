@@ -53,7 +53,7 @@
     "chain": "Independent",
     "chainPotential": "Model replicable - 20-30% circular content achievable",
     "year_verified": 2021,
-    "sourceRefs": ["archdaily_gsh", "greensolutionhouse_website", "prompt6_chatgpt"]
+    "sourceRefs": ["archdaily_gsh", "greensolutionhouse_website"]
   },
   {
     "id": "scandic_go_concept",
@@ -100,7 +100,7 @@
     "chain": "Scandic Hotels Group",
     "chainPotential": "MAXIMUM - 280+ properties for rollout",
     "year_verified": 2024,
-    "sourceRefs": ["scandic_sustainability", "nordic_swan_hotels", "prompt6_chatgpt"]
+    "sourceRefs": ["scandic_sustainability", "nordic_swan_hotels"]
   },
   {
     "id": "villa_copenhagen_earth_suite",
@@ -145,7 +145,7 @@
     "chain": "Nordic Hotels & Resorts",
     "chainPotential": "MEDIUM - showcase approach scalable",
     "year_verified": 2020,
-    "sourceRefs": ["materdesign_website", "strawberry_sustainability", "prompt6_chatgpt"]
+    "sourceRefs": ["materdesign_website", "strawberry_sustainability", "villa_copenhagen_website"]
   },
   {
     "id": "akademihotellet_uppsala",
@@ -181,7 +181,7 @@
     "chain": "Independent",
     "chainPotential": "LOW - unique partnership",
     "year_verified": 2019,
-    "sourceRefs": ["prompt6_chatgpt"]
+    "sourceRefs": ["akademihotellet_website"]
   },
   {
     "id": "downtown_camper_by_scandic",
@@ -221,7 +221,7 @@
     "chain": "Scandic Hotels Group",
     "chainPotential": "HIGH - 280+ properties",
     "year_verified": 2018,
-    "sourceRefs": ["scandic_sustainability", "nordic_swan_hotels"]
+    "sourceRefs": ["scandic_sustainability", "nordic_swan_hotels", "downtown_camper_website"]
   },
   {
     "id": "ohboy_hotel_malmo",
@@ -269,7 +269,7 @@
     "chain": "Independent",
     "chainPotential": "LOW - boutique model",
     "year_verified": 2017,
-    "sourceRefs": ["ohboy_website", "siegel_ohboy", "prompt6_chatgpt"]
+    "sourceRefs": ["ohboy_website", "siegel_ohboy"]
   },
   {
     "id": "hotel_herman_k_brochner_hotels",
@@ -309,7 +309,7 @@
     "chain": "Brøchner Hotels",
     "chainPotential": "MEDIUM-HIGH - 4 property portfolio",
     "year_verified": 2022,
-    "sourceRefs": ["hermank_website", "brochner_sustainability", "prompt6_chatgpt"]
+    "sourceRefs": ["hermank_website", "brochner_sustainability"]
   },
   {
     "id": "blique_by_nobis",
@@ -415,7 +415,7 @@
     "chain": "Nordic Choice Hotels / Strawberry",
     "chainPotential": "HIGH - 200+ properties",
     "year_verified": 2020,
-    "sourceRefs": ["strawberry_sustainability"]
+    "sourceRefs": ["strawberry_sustainability", "clarion_hub_website", "archdaily_clarion_hub"]
   },
   {
     "id": "hotel_ottilia_brochner_hotels",
@@ -448,7 +448,7 @@
     "chain": "Brøchner Hotels",
     "chainPotential": "MEDIUM - portfolio approach",
     "year_verified": 2018,
-    "sourceRefs": ["brochner_sustainability"]
+    "sourceRefs": ["brochner_sustainability", "ottilia_website"]
   },
   {
     "id": "thon_hotel_oslo_airport_gardermoen",
@@ -481,7 +481,7 @@
     "chain": "Thon Hotels",
     "chainPotential": "HIGH - ~80 properties",
     "year_verified": 2019,
-    "sourceRefs": ["iso_14001"]
+    "sourceRefs": ["iso_14001", "thon_hotel_website"]
   },
   {
     "id": "hotel_skeppsholmen_stockholm",
@@ -535,7 +535,7 @@
     "chain": "Nobis Hospitality Group",
     "chainPotential": "LOW - unique heritage asset",
     "year_verified": 2009,
-    "sourceRefs": ["nobis_website"]
+    "sourceRefs": ["nobis_website", "skeppsholmen_website", "dezeen_skeppsholmen"]
   },
   {
     "id": "hobo_hotel_stockholm",
