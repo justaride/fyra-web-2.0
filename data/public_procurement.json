@@ -1,0 +1,250 @@
+{
+  "id": "publicProcurement",
+  "title": "Public Procurement & Circular Economy",
+  "titleNO": "Offentlig Anskaffelse & Sirkulær Økonomi",
+  "description": "Understanding Swedish public procurement (LOU) and how circular construction principles apply - relevant for public projects and as benchmarks for private hotel developments.",
+  "descriptionNO": "Forståelse av svensk offentlig anskaffelse (LOU) og hvordan sirkulære byggeprinsipper anvendes - relevant for offentlige prosjekter og som referanse for private hotellutvikling.",
+  "sections": [
+    {
+      "id": "louFramework",
+      "title": "LOU Framework (Lagen om offentlig upphandling)",
+      "items": [
+        {
+          "title": "LOU 2016:1145",
+          "description": "Swedish public procurement law - allows and encourages sustainability and innovation criteria in tenders. Contracting authorities can weight environmental and social factors.",
+          "scope": "National (Sweden)",
+          "confidence": "High",
+          "actionable": true
+        },
+        {
+          "title": "Upphandlingsmyndigheten Guidance",
+          "description": "Sweden's Public Procurement Authority has issued specific guidance on circular procurement, encouraging life-cycle cost and durability criteria in construction projects.",
+          "scope": "National (Sweden)",
+          "confidence": "High",
+          "source": "upphandlingsmyndigheten.se",
+          "actionable": true
+        },
+        {
+          "title": "Riksrevisionen Assessment",
+          "description": "Sweden's National Audit Office emphasizes using procurement as a tool for circular economy transition, with recommendations for improved sustainability requirements.",
+          "scope": "National (Sweden)",
+          "confidence": "High",
+          "source": "riksrevisionen.se"
+        }
+      ]
+    },
+    {
+      "id": "sustainabilityCriteria",
+      "title": "Sustainability Criteria in Tenders",
+      "items": [
+        {
+          "title": "Specification Requirements",
+          "description": "Public tenders can specify functional requirements that favor sustainable solutions: recycled content minimums, durability standards, repairability requirements.",
+          "examples": [
+            "Minimum 30% recycled content in furniture",
+            "10-year durability warranty requirement",
+            "Modular design for easy component replacement"
+          ],
+          "actionable": true
+        },
+        {
+          "title": "Evaluation Criteria Weighting",
+          "description": "Sustainability can be weighted as a quality criterion alongside price. Common weightings: 60% price / 40% quality (including sustainability).",
+          "insight": "Opens door for circular procurement without defaulting to 'new only' - educates contractors on evaluation criteria.",
+          "actionable": true
+        },
+        {
+          "title": "Environmental Requirements",
+          "description": "Can include: climate footprint calculations, material origin documentation, end-of-life planning, chemical content restrictions (SVHC-free).",
+          "scope": "EU / International",
+          "confidence": "High"
+        },
+        {
+          "title": "Social Requirements",
+          "description": "Can include: Fair Trade certification, ILO convention compliance, local employment targets, accessibility standards.",
+          "scope": "EU / International",
+          "confidence": "Medium"
+        }
+      ]
+    },
+    {
+      "id": "lifecycleCost",
+      "title": "Lifecycle Cost (LCC) Evaluation",
+      "items": [
+        {
+          "title": "LCC Methodology",
+          "description": "LCC calculation is explicitly permitted under LOU. Includes: acquisition cost, operating/maintenance costs, energy costs, end-of-life/disposal costs.",
+          "advantage": "Circular furniture often has lower LCC when durability and maintenance are factored in.",
+          "actionable": true
+        },
+        {
+          "title": "LCC Components for Furniture",
+          "description": "1) Purchase price 2) Installation 3) Maintenance over lifespan 4) Energy (if applicable) 5) Replacement frequency 6) End-of-life disposal or resale value.",
+          "insight": "Reused furniture can show 30-50% lower LCC when resale value and extended lifespan are included.",
+          "actionable": true
+        },
+        {
+          "title": "Documentation Requirements",
+          "description": "For LCC bids: provide calculations with assumptions clearly stated, warranty terms, maintenance schedules, expected lifespan with evidence.",
+          "actionable": true
+        }
+      ]
+    },
+    {
+      "id": "innovationProcurement",
+      "title": "Innovation Procurement",
+      "items": [
+        {
+          "title": "Innovationspartnerskap",
+          "description": "Public-private partnership model where authority and supplier develop solutions together. Ideal for developing new circular furniture solutions with long-term offtake agreements.",
+          "scope": "EU / International",
+          "confidence": "Medium",
+          "actionable": true
+        },
+        {
+          "title": "Pre-Commercial Procurement",
+          "description": "Procurement of R&D services before commercial deployment. Can fund development of circular product testing, material passport systems, or refurbishment processes.",
+          "scope": "EU / International",
+          "confidence": "Medium"
+        },
+        {
+          "title": "Circular Economy Pilots",
+          "description": "Several Swedish municipalities have identified circular construction as a priority area for innovation procurement, creating market opportunities.",
+          "examples": [
+            "Gothenburg: Cirkulära Göteborg program",
+            "Stockholm: Storstadsöverenskommelse för cirkulärt byggande 2030",
+            "Malmö: Municipal sustainability targets"
+          ],
+          "actionable": true
+        }
+      ]
+    },
+    {
+      "id": "privateHotelRelevance",
+      "title": "Relevance for Private Hotel Projects",
+      "items": [
+        {
+          "title": "LOU Does Not Apply to Private Projects",
+          "description": "Private hotel developments are not bound by LOU. However, public sector standards increasingly influence private market expectations.",
+          "scope": "National (Sweden)",
+          "confidence": "High"
+        },
+        {
+          "title": "Indirect Market Influence",
+          "description": "Public procurement criteria set benchmarks that spread to private sector through: investor ESG requirements, hotel chain policies, tenant expectations in mixed-use developments.",
+          "insight": "Private developers often voluntarily align with public standards for market positioning.",
+          "actionable": true
+        },
+        {
+          "title": "PPP and Joint Ventures",
+          "description": "Public-private partnerships or municipal joint ventures may require LOU-style compliance. Common in: conference hotels, tourism infrastructure, urban development zones.",
+          "scope": "National (Sweden)",
+          "confidence": "Medium"
+        },
+        {
+          "title": "Hotel Chain Alignment",
+          "description": "Major chains like Scandic already prioritize recycled and reusable materials, aligning with public procurement direction without legal requirement.",
+          "source": "scandichotelsgroup.com",
+          "actionable": true
+        }
+      ]
+    },
+    {
+      "id": "futureOutlook",
+      "title": "Future Regulatory Outlook",
+      "items": [
+        {
+          "title": "TMF Report (October 2025)",
+          "description": "Trä- och Möbelföretagen (TMF) recommends changes to LOU: weight quality and circularity higher, require longer lifespan and reuse provisions in public tenders.",
+          "source": "tn.se",
+          "confidence": "High",
+          "timeline": "2025-2027"
+        },
+        {
+          "title": "Mandatory Reuse Plans",
+          "description": "Finland already requires material inventory and reuse plans before demolition. Sweden may follow with similar requirements for renovation permits within 2-4 years.",
+          "scope": "Nordic",
+          "confidence": "Medium",
+          "timeline": "2026-2028"
+        },
+        {
+          "title": "Climate Declarations Extension",
+          "description": "Current klimatdeklaration applies only to new construction. Expected expansion to major renovations, which would favor circular approaches.",
+          "scope": "National (Sweden)",
+          "confidence": "Medium",
+          "timeline": "2025-2027"
+        }
+      ]
+    },
+    {
+      "id": "practicalGuidance",
+      "title": "Practical Guidance for Fyra",
+      "items": [
+        {
+          "title": "Public Project Preparation",
+          "description": "For publicly financed hotels or PPP projects: prepare formal documentation of recycled content, material certifications, and environmental performance.",
+          "checklist": [
+            "Material passport for all reused items",
+            "Fire safety certifications (EN 1021-1/2)",
+            "SVHC declarations",
+            "LCC calculations with assumptions",
+            "EPD or equivalent environmental documentation"
+          ],
+          "actionable": true
+        },
+        {
+          "title": "Voluntary Alignment Benefits",
+          "description": "Adopting public procurement standards voluntarily provides: quality assurance framework, market differentiation, future-proofing against regulatory changes.",
+          "actionable": true
+        },
+        {
+          "title": "Municipal Circular Programs",
+          "description": "Leverage local circular economy initiatives: Gothenburg's upphandlingsmallar, Stockholm's pilot programs, regional sustainability networks.",
+          "recommendation": "Gothenburg has most developed circular procurement tools - ideal for pilot projects.",
+          "actionable": true
+        },
+        {
+          "title": "Documentation as Competitive Advantage",
+          "description": "Even for private projects, LOU-style documentation demonstrates quality and builds trust with clients, investors, and insurers.",
+          "actionable": true
+        }
+      ]
+    }
+  ],
+  "keyResources": [
+    {
+      "name": "Upphandlingsmyndigheten - Circular Procurement Guide",
+      "url": "https://www.upphandlingsmyndigheten.se/om-hallbar-upphandling/miljomassigt-hallbar-upphandling/upphandling-for-att-framja-cirkular-ekonomi/",
+      "type": "Government Guide"
+    },
+    {
+      "name": "TMF Report: Så sluts cirkeln",
+      "url": "https://www.tn.se/hallbarhet/41275/ny-rapport-offentlig-upphandling-maste-bli-mer-cirkular/",
+      "type": "Industry Report"
+    },
+    {
+      "name": "Storstadsöverenskommelse för cirkulärt byggande 2030",
+      "url": "https://goteborg.se/wps/wcm/connect/5ef28a12-8115-4ee4-bf8e-6d015eaebbcb/Slutpresentation+Storstads%C3%B6verenskommelse+f%C3%B6r+cirkul%C3%A4rt+byggande+2030_f%C3%B6rstudie.pdf",
+      "type": "Municipal Initiative"
+    },
+    {
+      "name": "Riksrevisionen - Environmental Sustainability in Public Procurement",
+      "url": "https://www.riksrevisionen.se/granskningar/granskningsrapporter/2022/miljomassig-hallbarhet-vid-statlig-upphandling---pa-ratt-vag-men-langt-kvar.html",
+      "type": "Government Audit"
+    }
+  ],
+  "sourceRefs": [
+    {
+      "id": "prompt3-perplexity",
+      "title": "PROMPT 3 Deep Research - Perplexity Output",
+      "type": "research",
+      "reliability": "Primary Research"
+    },
+    {
+      "id": "prompt3-chatgpt",
+      "title": "PROMPT 3 Deep Research - ChatGPT Output",
+      "type": "research",
+      "reliability": "Primary Research"
+    }
+  ]
+}

@@ -1,8 +1,31 @@
 # FYRA CIRCULAR PLATFORM - IMPLEMENTATION PROGRESS
 
-**Last Updated:** 2025-11-27 (Session 5 - Full UX Consistency Pass)
-**Current State:** 100% Complete - LIVE on GitHub Pages
+**Last Updated:** 2025-11-27 (Session 6 - NCH Contract Alignment & Obj 5 Integration)
+**Current State:** Phase 2 - Contract Objective Alignment
 **Deployment:** https://justaride.github.io/fyra-web-2.0/
+
+---
+
+## NCH-FYRA CONTRACT ALIGNMENT
+
+This platform serves as the deliverable for the Nordic Circular Hotspot (NCH) - Fyra collaboration agreement.
+
+### Contract Objectives Coverage
+
+| Objective | Description | Platform Coverage | Status |
+|-----------|-------------|-------------------|--------|
+| Obj 2 | Segment Analysis | `/suppliers`, `/experts`, `/case-studies`, `/certifications` | ✅ Strong |
+| Obj 3 | Nordic Upscaling Strategy | `/regulations`, `/scenarios`, `/specifications` | ✅ Good |
+| Obj 4 | Implementation Support | `/templates`, contact info, consultant network | ✅ Medium |
+| Obj 5 | Public Procurement Best Practice | **NEW: `/regulations` expansion** | 🔄 In Progress |
+
+### Session 6 Focus: Obj 5 Integration
+Adding public procurement (offentlig anskaffelse) content from PROMPT 3 research:
+- LOU (2016:1145) framework for circular procurement
+- Sustainability criteria in public tenders
+- Lifecycle cost (LCC) evaluation benefits
+- Innovation procurement mechanisms
+- Relevance for private hotel projects
 
 ---
 
@@ -26,6 +49,7 @@
 | - | **Symbol System (Emoji→Icons)** | **DONE** | `316e4b0`, `aba753f` |
 | - | **Landing Page Redesign** | **DONE** | `d9354cf` |
 | - | **UX Consistency Pass (All Pages)** | **DONE** | `342ecd9` |
+| - | **Obj 5: Public Procurement** | **IN PROGRESS** | Session 6 |
 
 ---
 
@@ -172,10 +196,34 @@ Added professional hero sections to all 6 remaining pages:
 
 ---
 
+## SESSION 6 CHANGES (2025-11-27)
+
+### NCH Contract Review
+Reviewed collaboration agreement between NCH and Fyra to align platform with contract objectives.
+Key finding: **Obj 5 (Public Procurement Best Practice)** was missing from platform.
+
+### Obj 5 Integration Plan
+Source: PROMPT 3 research (Perplexity output, section 10: "Offentlig upphandling")
+
+**Content to integrate:**
+1. LOU (2016:1145) - Swedish public procurement framework
+2. Sustainability criteria in tender processes
+3. Lifecycle cost (LCC) as evaluation method
+4. Innovation procurement (innovationspartnerskap, pre-commercial)
+5. Practical relevance for private hotel projects
+
+**Implementation approach:**
+- Add new "Public Procurement" category to `/regulations` page
+- Create `public_procurement.json` data file
+- Extract actionable guidance from research
+
+---
+
 ## IN PROGRESS / REMAINING
 
 | Priority | Section | Status | Notes |
 |----------|---------|--------|-------|
+| **HIGH** | **Obj 5: Public Procurement** | **IN PROGRESS** | Adding LOU/procurement content from PROMPT 3 |
 | HIGH | Consultant Data Integration | BLOCKED | Requires ConsultantCard.tsx update for contacts array |
 | ~~MEDIUM~~ | ~~Page UX Audit~~ | **DONE** | ~~Ensure all pages follow landing page design standards~~ |
 | LOW | Search Functionality | NOT STARTED | Future enhancement |

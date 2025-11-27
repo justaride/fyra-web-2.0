@@ -1,8 +1,21 @@
 # FYRA CIRCULAR PLATFORM - Prosjektinventar
 
 **Dato:** 2025-11-27
-**Versjon:** 2.3
-**Status:** Full UX Consistency Pass Komplett - Live på GitHub Pages
+**Versjon:** 2.4
+**Status:** NCH Contract Alignment - Obj 5 Integration pågår
+
+---
+
+## 0. NCH-FYRA KONTRAKTMÅL
+
+Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
+
+| Mål | Beskrivelse | Dekning | Status |
+|-----|-------------|---------|--------|
+| Obj 2 | Segment Analysis | `/suppliers`, `/experts`, `/case-studies` | ✅ Sterk |
+| Obj 3 | Nordic Upscaling Strategy | `/regulations`, `/scenarios`, `/specifications` | ✅ God |
+| Obj 4 | Implementation Support | `/templates`, kontakter | ✅ Medium |
+| Obj 5 | Public Procurement Best Practice | `/regulations` utvidelse | 🔄 Pågår |
 
 ---
 
@@ -164,22 +177,26 @@ TOTALT:            8.4/10
 
 ---
 
-## 8. NESTE PROSESS - FASE 4
+## 8. NESTE PROSESS - SESSION 6
 
-### 8.1 UX Consistency Audit ✅ FULLFØRT
-~~Følgende sider bør evalueres mot landing page mønsteret:~~
-~~1. Legge til hero sections der det mangler~~
-~~2. Sikre konsistent visuell hierarki~~
-~~3. Fjerne gjenværende emojis i data~~
-~~4. Legge til pathway/CTA elements~~
+### 8.1 Obj 5: Offentlig Anskaffelse 🔄 PÅGÅR
+Integrere innhold fra PROMPT 3 research om LOU (Lagen om offentlig upphandling):
+1. LOU-rammeverket for sirkulær bygg
+2. Hållbarhetskrav i anbudsprosesser
+3. Livscykelkostnad (LCC) som evalueringsmetode
+4. Innovativ upphandling mekanismer
+5. Relevans for private hotellprosjekter
 
+**Kilde:** PROMPT 3 Perplexity output, seksjon 10
+
+### 8.2 UX Consistency Audit ✅ FULLFØRT
 **FERDIG:** Alle 6 sider har nå hero sections med konsistent design.
 
-### 8.2 Consultant Integration (Prioritet 1 - Gjenværende)
+### 8.3 Consultant Integration (Prioritet 2)
 - Oppdatere ConsultantCard.tsx for contacts-array
 - Integrere berikede konsulentdata
 
-### 8.3 Fremtidige forbedringer
+### 8.4 Fremtidige forbedringer
 - Søkefunksjonalitet på tvers av alt innhold
 - Leverandør-sammenligningsverktøy
 - Prosjektkostnadskalkulator
@@ -198,4 +215,4 @@ For neste sesjon:
 
 ---
 
-*Generert: 2025-11-27 Session 5 (UX Pass Complete) | Fyra Circular Platform v2.3*
+*Generert: 2025-11-27 Session 6 (Obj 5 Integration) | Fyra Circular Platform v2.4*

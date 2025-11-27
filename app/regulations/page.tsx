@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert } from "lucide-react";
+import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert, Landmark, Scale, Lightbulb, TrendingUp, BookOpen } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
 import Link from 'next/link';
@@ -71,6 +71,43 @@ interface FireSafetyData {
     }>;
 }
 
+interface ProcurementItem {
+    title: string;
+    description: string;
+    scope?: string;
+    confidence?: string;
+    source?: string;
+    actionable?: boolean;
+    examples?: string[];
+    insight?: string;
+    advantage?: string;
+    checklist?: string[];
+    recommendation?: string;
+    timeline?: string;
+}
+
+interface ProcurementSection {
+    id: string;
+    title: string;
+    items: ProcurementItem[];
+}
+
+interface ProcurementResource {
+    name: string;
+    url: string;
+    type: string;
+}
+
+interface PublicProcurementData {
+    id: string;
+    title: string;
+    titleNO: string;
+    description: string;
+    descriptionNO: string;
+    sections: ProcurementSection[];
+    keyResources: ProcurementResource[];
+}
+
 async function getRegulations() {
     const filePath = path.join(process.cwd(), 'data', 'regulations_filtered.json');
     const fileContents = await fs.readFile(filePath, 'utf8');
@@ -79,6 +116,12 @@ async function getRegulations() {
 
 async function getFireSafety(): Promise<FireSafetyData> {
     const filePath = path.join(process.cwd(), 'data', 'fire_safety.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getPublicProcurement(): Promise<PublicProcurementData> {
+    const filePath = path.join(process.cwd(), 'data', 'public_procurement.json');
     const fileContents = await fs.readFile(filePath, 'utf8');
     return JSON.parse(fileContents);
 }
@@ -234,9 +277,21 @@ function FireSafetyTierCard({ tier }: { tier: FireSafetyTier }) {
     );
 }
 
+// Section icon mapping for procurement
+const procurementIconMap: Record<string, React.ReactNode> = {
+    'louFramework': <Landmark className="w-5 h-5" />,
+    'sustainabilityCriteria': <Scale className="w-5 h-5" />,
+    'lifecycleCost': <TrendingUp className="w-5 h-5" />,
+    'innovationProcurement': <Lightbulb className="w-5 h-5" />,
+    'privateHotelRelevance': <Building2 className="w-5 h-5" />,
+    'futureOutlook': <Clock className="w-5 h-5" />,
+    'practicalGuidance': <CheckCircle className="w-5 h-5" />,
+};
+
 export default async function RegulationsPage() {
     const regulations = await getRegulations();
     const fireSafety = await getFireSafety();
+    const publicProcurement = await getPublicProcurement();
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
@@ -398,6 +453,133 @@ export default async function RegulationsPage() {
                             </div>
                         </div>
                     )}
+                </section>
+
+                {/* Public Procurement Section (Obj 5) */}
+                <section className="mb-16">
+                    <div className="flex items-center gap-3 mb-6">
+                        <div className="p-2 bg-indigo-100 rounded-lg">
+                            <Landmark className="w-6 h-6 text-indigo-600" />
+                        </div>
+                        <div>
+                            <h2 className="text-2xl font-bold text-slate-900">{publicProcurement.title}</h2>
+                            <p className="text-sm text-slate-500">LOU Framework & Circular Procurement Best Practices</p>
+                        </div>
+                    </div>
+
+                    {/* Introduction */}
+                    <div className="bg-gradient-to-br from-indigo-800 to-indigo-900 rounded-2xl p-6 mb-8 text-white">
+                        <h3 className="text-lg font-bold mb-3 flex items-center gap-2">
+                            <Scale className="w-5 h-5" />
+                            Why This Matters for Private Hotels
+                        </h3>
+                        <p className="text-indigo-200 text-sm mb-4">{publicProcurement.description}</p>
+                        <div className="bg-white/10 rounded-lg p-4">
+                            <p className="text-xs text-indigo-100">
+                                <strong>Key Insight:</strong> While LOU doesn&apos;t apply to private projects, public procurement standards increasingly influence private market expectations through investor ESG requirements, hotel chain policies, and municipal partnerships.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Procurement Sections Grid */}
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                        {publicProcurement.sections.slice(0, 4).map((section) => (
+                            <div key={section.id} className="bg-white rounded-xl border shadow-sm overflow-hidden">
+                                <div className="bg-indigo-50 px-5 py-4 border-b flex items-center gap-3">
+                                    <div className="p-1.5 bg-indigo-100 rounded-lg text-indigo-600">
+                                        {procurementIconMap[section.id] || <FileText className="w-5 h-5" />}
+                                    </div>
+                                    <h3 className="font-semibold text-slate-900">{section.title}</h3>
+                                </div>
+                                <div className="p-5 space-y-4">
+                                    {section.items.slice(0, 3).map((item, idx) => (
+                                        <div key={idx} className="border-b border-slate-100 pb-3 last:border-0 last:pb-0">
+                                            <div className="flex items-start justify-between gap-2 mb-1">
+                                                <h4 className="text-sm font-medium text-slate-900">{item.title}</h4>
+                                                {item.actionable && (
+                                                    <span className="shrink-0 px-2 py-0.5 bg-emerald-100 text-emerald-700 text-[10px] font-medium rounded-full">
+                                                        Actionable
+                                                    </span>
+                                                )}
+                                            </div>
+                                            <p className="text-xs text-slate-600 leading-relaxed">{item.description}</p>
+                                            {item.insight && (
+                                                <p className="text-xs text-indigo-600 mt-2 italic">{item.insight}</p>
+                                            )}
+                                            {item.examples && (
+                                                <div className="flex flex-wrap gap-1 mt-2">
+                                                    {item.examples.slice(0, 2).map((ex, i) => (
+                                                        <span key={i} className="px-2 py-0.5 bg-slate-100 text-slate-600 text-[10px] rounded">
+                                                            {ex}
+                                                        </span>
+                                                    ))}
+                                                </div>
+                                            )}
+                                        </div>
+                                    ))}
+                                    {section.items.length > 3 && (
+                                        <p className="text-xs text-slate-400 pt-2">+{section.items.length - 3} more items</p>
+                                    )}
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Practical Guidance Highlight */}
+                    {publicProcurement.sections.find(s => s.id === 'practicalGuidance') && (
+                        <div className="bg-emerald-50 rounded-xl border border-emerald-200 p-6 mb-8">
+                            <h3 className="font-bold text-emerald-900 mb-4 flex items-center gap-2">
+                                <CheckCircle className="w-5 h-5" />
+                                Practical Guidance for Fyra Projects
+                            </h3>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                {publicProcurement.sections.find(s => s.id === 'practicalGuidance')?.items.map((item, idx) => (
+                                    <div key={idx} className="bg-white rounded-lg p-4 border border-emerald-100">
+                                        <h4 className="font-semibold text-slate-900 text-sm mb-2">{item.title}</h4>
+                                        <p className="text-xs text-slate-600 mb-2">{item.description}</p>
+                                        {item.checklist && (
+                                            <ul className="space-y-1 mt-2">
+                                                {item.checklist.slice(0, 3).map((check, i) => (
+                                                    <li key={i} className="text-xs text-slate-600 flex items-center gap-1.5">
+                                                        <CheckCircle className="w-3 h-3 text-emerald-500 shrink-0" />
+                                                        {check}
+                                                    </li>
+                                                ))}
+                                            </ul>
+                                        )}
+                                        {item.recommendation && (
+                                            <p className="text-xs text-emerald-700 mt-2 font-medium">{item.recommendation}</p>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    )}
+
+                    {/* Key Resources */}
+                    <div className="bg-white rounded-xl border shadow-sm p-6">
+                        <h3 className="font-bold text-slate-900 mb-4 flex items-center gap-2">
+                            <BookOpen className="w-5 h-5 text-indigo-600" />
+                            Key Resources
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            {publicProcurement.keyResources.map((resource, idx) => (
+                                <a
+                                    key={idx}
+                                    href={resource.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center justify-between p-3 bg-slate-50 rounded-lg hover:bg-indigo-50 transition-colors group"
+                                >
+                                    <div>
+                                        <p className="text-sm font-medium text-slate-900 group-hover:text-indigo-700">{resource.name}</p>
+                                        <p className="text-xs text-slate-500">{resource.type}</p>
+                                    </div>
+                                    <ExternalLink className="w-4 h-4 text-slate-400 group-hover:text-indigo-600" />
+                                </a>
+                            ))}
+                        </div>
+                    </div>
                 </section>
 
                 {/* Other Regulations */}
