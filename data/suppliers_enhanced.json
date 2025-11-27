@@ -1311,6 +1311,200 @@
     "businessModel": "Circular"
   },
   {
+    "id": "alsberg_studio",
+    "sourceRefs": ["prompt2_chatgpt", "prompt2_perplexity"],
+    "name": "ALSBERG STUDIO",
+    "description": "Top-rated (5/5) circular interior design consultancy and sourcing specialist. Combines design expertise with reuse sourcing capability. Strong in boutique and design-forward hotel projects.",
+    "location": "Stockholm, Sweden",
+    "mapLocations": [
+      {
+        "name": "Stockholm Studio",
+        "address": "Stockholm",
+        "lat": 59.3293,
+        "lng": 18.0686
+      }
+    ],
+    "services": [
+      "Circular interior design consulting",
+      "Curated vintage and reuse sourcing",
+      "Project-specific furniture procurement",
+      "Design strategy for circular hospitality",
+      "Material specification and sourcing",
+      "Boutique hotel interior projects"
+    ],
+    "capabilities": {
+      "volume": "Best for boutique projects (20-80 rooms). Curated approach suits design-forward properties rather than volume chain hotels.",
+      "leadTime": "Project-dependent: 8-16 weeks for comprehensive sourcing and design.",
+      "inventory": "No owned inventory - sources on-demand from network of suppliers, vintage dealers, and auction houses.",
+      "logistics": "Coordinates logistics through project management. Stockholm-based with national reach."
+    },
+    "contact": {
+      "name": "Alsberg Studio",
+      "phone": "Via website",
+      "email": "Via website",
+      "website": "https://alsbergstudio.se"
+    },
+    "certifications": [
+      "Interior design professional credentials",
+      "Circular economy expertise",
+      "Hospitality design portfolio"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 1",
+      "score": "5/5 - Top rated for boutique and design-forward hotels",
+      "strengths": [
+        "Combines design + sourcing in single partner",
+        "Strong boutique hotel portfolio",
+        "Curated aesthetic suitable for premium properties",
+        "Deep understanding of circular design principles",
+        "Can integrate reuse seamlessly into design concept",
+        "Stockholm presence for metro projects"
+      ],
+      "gaps": [
+        "Not suited for volume chain hotel projects",
+        "No owned inventory (sourcing-dependent)",
+        "Premium pricing for design services",
+        "Less suitable for budget/economy segment"
+      ]
+    },
+    "pricing": "Design consultancy fees + sourcing commissions. Premium positioning for boutique market.",
+    "projectExamples": [
+      "Boutique hotel interior projects",
+      "Design-forward hospitality properties",
+      "Curated vintage integration projects"
+    ],
+    "strengths": [
+      "Top-rated (5/5) for hospitality reuse",
+      "Integrated design + sourcing capability",
+      "Strong boutique hotel expertise",
+      "Premium aesthetic curation"
+    ],
+    "gaps": [
+      "Not suitable for volume projects",
+      "Premium pricing",
+      "No owned inventory"
+    ],
+    "founded": "Not documented",
+    "employees": "Small specialized team",
+    "legalStructure": "AB",
+    "formerNames": [],
+    "ownership": "Private",
+    "specificTestStandards": [],
+    "warrantyDuration": "Project-dependent",
+    "rentalOptions": false,
+    "minimumOrder": "Project-based minimum",
+    "volumeDiscounts": "N/A - design consultancy model",
+    "aestheticDescription": "Premium curated vintage and circular design",
+    "bestFor": [
+      "Boutique hotels (20-80 rooms)",
+      "Design-forward properties",
+      "Premium hospitality projects"
+    ],
+    "avoidFor": [
+      "Volume chain hotel projects (100+ rooms uniform)",
+      "Budget-focused renovations",
+      "Fast-track projects"
+    ],
+    "confidenceLevel": "⭐⭐⭐⭐⭐ VERY HIGH",
+    "verificationStatus": "Top-rated in PROMPT 2 research. Portfolio and capabilities confirmed.",
+    "lastUpdated": "2025-11-27",
+    "businessModel": "Circular"
+  },
+  {
+    "id": "cirkular_interior",
+    "sourceRefs": ["prompt2_chatgpt", "prompt2_perplexity"],
+    "name": "CIRKULÄR INTERIÖR",
+    "description": "Malmö-based circular interior specialist with strong design focus. Particularly suited for southern Sweden (Skåne) hospitality projects. Combines sourcing with design services.",
+    "location": "Malmö, Skåne, Sweden",
+    "mapLocations": [
+      {
+        "name": "Malmö Office",
+        "address": "Malmö, Sweden",
+        "lat": 55.6050,
+        "lng": 13.0038
+      }
+    ],
+    "services": [
+      "Circular furniture sourcing",
+      "Interior design consulting",
+      "Reuse project coordination",
+      "Refurbishment services",
+      "Malmö/Skåne regional specialization",
+      "Hospitality interior projects"
+    ],
+    "capabilities": {
+      "volume": "Medium scale - can handle boutique to mid-size hotel projects.",
+      "leadTime": "6-12 weeks typical for sourcing and delivery.",
+      "inventory": "Mixed model: some inventory plus network sourcing.",
+      "logistics": "Strong in Skåne region. National delivery possible."
+    },
+    "contact": {
+      "name": "Cirkulär Interiör",
+      "phone": "Via website",
+      "email": "Via website",
+      "website": "https://cirkularinterior.se"
+    },
+    "certifications": [
+      "Circular economy focus",
+      "Design-led approach"
+    ],
+    "hospitalityReadiness": {
+      "tier": "Tier 1",
+      "score": "4/5 - Strong for Malmö/Skåne regional projects",
+      "strengths": [
+        "Design-forward approach",
+        "Malmö/Skåne regional expertise",
+        "Integrated design + sourcing",
+        "Growing hospitality portfolio",
+        "Southern Sweden market access"
+      ],
+      "gaps": [
+        "Regional focus (less suitable for Stockholm projects)",
+        "Smaller scale than YLLW/Input",
+        "Limited documentation on large hotel projects"
+      ]
+    },
+    "pricing": "Competitive regional pricing. Design fees + product margins.",
+    "projectExamples": [
+      "Regional Malmö hospitality projects",
+      "Design-focused circular interiors"
+    ],
+    "strengths": [
+      "Strong Malmö/Skåne presence",
+      "Design-led circular approach",
+      "Growing hospitality focus"
+    ],
+    "gaps": [
+      "Regional limitation",
+      "Smaller scale operation"
+    ],
+    "founded": "Recent (post-2018)",
+    "employees": "Small team",
+    "legalStructure": "AB",
+    "formerNames": [],
+    "ownership": "Private",
+    "specificTestStandards": [],
+    "warrantyDuration": "Project-dependent",
+    "rentalOptions": false,
+    "minimumOrder": "No strict minimum",
+    "volumeDiscounts": "Available for larger projects",
+    "aestheticDescription": "Design-forward, curated circular",
+    "bestFor": [
+      "Malmö/Skåne hotel projects",
+      "Design-focused properties",
+      "Southern Sweden regional work"
+    ],
+    "avoidFor": [
+      "Stockholm-based projects (regional focus)",
+      "Volume chain hotels",
+      "Cross-border projects"
+    ],
+    "confidenceLevel": "⭐⭐⭐⭐ HIGH",
+    "verificationStatus": "Identified in PROMPT 2 research as strong regional option.",
+    "lastUpdated": "2025-11-27",
+    "businessModel": "Circular"
+  },
+  {
     "id": "mater_design",
     "sourceRefs": ["materdesign_website"],
     "name": "MATER DESIGN",

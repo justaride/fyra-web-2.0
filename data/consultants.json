@@ -5,58 +5,257 @@
         "role": "Strategic Knowledge Partner",
         "tier": "Primary",
         "category": "Architecture & Sustainability",
-        "description": "Scandinavia's leading architectural practice with deep expertise in circular hospitality and zero-energy buildings.",
+        "description": "Scandinavia's leading architectural practice with deep expertise in circular hospitality and zero-energy buildings. Pioneer in sustainability R&D with 'Aktiv kostnads- och klimatstyrning' methodology.",
         "locations": [
             "Stockholm",
             "Gothenburg",
             "Malmö",
             "Umeå"
         ],
+        "employees": "1200+",
         "services": [
             "Circular Interior Architecture",
             "LCA (Life Cycle Assessment)",
             "BREEAM/Miljöbyggnad Certification",
-            "Zero-Energy Design"
+            "Zero-Energy Design",
+            "Generalkonsult (Integrated PM + Design)"
         ],
         "keyProjects": [
-            "House of Choice (Zero-energy hotel)",
-            "Sara Kulturhus (Timber hotel)",
-            "Blique by Nobis"
+            "House of Choice (Zero-energy hotel, Uppsala)",
+            "Sara Kulturhus (20-floor timber hotel, Skellefteå)",
+            "Blique by Nobis (Warehouse conversion)",
+            "The Wood Hotel (Timber construction)"
         ],
-        "contact": {
-            "name": "Raimo Joss",
-            "title": "Lead Architect Hospitality Sustainability",
-            "email": "raimo.joss@white.se",
-            "phone": "+46 8 402 26 59"
+        "scoring": {
+            "hospitalityExperience": 5,
+            "circularCompetence": 5,
+            "pmCapacity": 4,
+            "geographicMatch": 5,
+            "regulatoryExpertise": 4,
+            "costLevel": 3,
+            "overallScore": 4.3
         },
+        "contacts": [
+            {
+                "name": "Raimo Joss",
+                "title": "Lead Architect Hospitality Sustainability",
+                "email": "raimo.joss@white.se",
+                "phone": "+46 8 402 26 59",
+                "focus": "Hospitality sustainability projects"
+            },
+            {
+                "name": "Rickard Nygren",
+                "title": "Sustainability Strategist",
+                "phone": "+46 8 402 25 29",
+                "focus": "Circularity strategy"
+            },
+            {
+                "name": "Petter Wesslander",
+                "title": "Project Architect",
+                "focus": "House of Choice lead"
+            },
+            {
+                "name": "Oskar Norelius",
+                "title": "Senior Architect",
+                "focus": "Sara Kulturhus"
+            },
+            {
+                "name": "Robert Schmitz",
+                "title": "Senior Architect",
+                "focus": "Sara Kulturhus"
+            },
+            {
+                "name": "Anna Graaf",
+                "title": "Circular Economy Specialist",
+                "phone": "+46 31 60 86 28",
+                "location": "Gothenburg"
+            },
+            {
+                "name": "Hanna Plato",
+                "title": "Sustainability Consultant",
+                "phone": "+46 8 402 25 04",
+                "location": "Stockholm"
+            },
+            {
+                "name": "Elin Hammarsten",
+                "title": "Circular Design Lead"
+            },
+            {
+                "name": "Taiga Koponen",
+                "title": "Sustainability Architect"
+            }
+        ],
         "website": "https://whitearkitekter.com",
-        "collaborationType": "Knowledge Exchange Partnership"
+        "collaborationType": "Knowledge Exchange Partnership",
+        "methodology": "Aktiv kostnads- och klimatstyrning (Active cost and climate management)",
+        "certifications": ["LEED AP", "BREEAM Assessor", "SGBC Member"],
+        "sourceRefs": ["prompt1_chatgpt", "prompt1_gemini"]
+    },
+    {
+        "id": "sweco",
+        "name": "Sweco",
+        "role": "Technical Consultant",
+        "tier": "Primary",
+        "category": "Engineering & Design",
+        "description": "Europe's leading engineering and architecture consultancy with strong technical capabilities in adaptive reuse. Proprietary C3 (Carbon Cost Compass) tool for LCA integration.",
+        "locations": [
+            "Nationwide (50+ offices in Sweden)"
+        ],
+        "employees": "18000+ (Nordic)",
+        "services": [
+            "Structural Engineering",
+            "Energy Optimization",
+            "Circular Material Management",
+            "C3 Carbon Cost Compass",
+            "Adaptive Reuse Engineering"
+        ],
+        "keyProjects": [
+            "Blique by Nobis",
+            "Multiple Scandic renovations",
+            "Quality Hotel Globe"
+        ],
+        "scoring": {
+            "hospitalityExperience": 4,
+            "circularCompetence": 4,
+            "pmCapacity": 5,
+            "geographicMatch": 5,
+            "regulatoryExpertise": 5,
+            "costLevel": 3,
+            "overallScore": 4.3
+        },
+        "contacts": [
+            {
+                "name": "Anna Joelsson",
+                "title": "Sustainability Director",
+                "email": "anna.joelsson@sweco.se",
+                "focus": "Circular construction"
+            },
+            {
+                "name": "Magnus Höij",
+                "title": "Head of Architecture",
+                "focus": "Commercial projects"
+            },
+            {
+                "name": "Anders Erikols",
+                "title": "Senior Engineer",
+                "focus": "Hospitality technical"
+            },
+            {
+                "name": "Jan-Ove Fogelberg",
+                "title": "Project Director",
+                "focus": "Large-scale renovations"
+            }
+        ],
+        "website": "https://sweco.se",
+        "collaborationType": "Project-Specific",
+        "tools": ["C3 (Carbon Cost Compass)", "BIM", "LCA Software"],
+        "certifications": ["ISO 14001", "BREEAM Assessor"],
+        "sourceRefs": ["prompt1_chatgpt", "prompt1_gemini"]
     },
     {
         "id": "forsen-ab",
         "name": "Forsen AB",
         "role": "Tactical PM Partner",
-        "tier": "Secondary",
+        "tier": "Primary",
         "category": "Project Management",
-        "description": "Independent project management firm specializing in construction management and regulatory navigation for complex renovations.",
+        "description": "Independent project management firm specializing in construction management and regulatory navigation for complex renovations. Strong hospitality track record with hotel chains.",
         "locations": [
             "Nationwide (Luleå to Malmö)"
         ],
+        "employees": "400+",
         "services": [
             "Construction Management (CM)",
             "PBL Permit Coordination",
             "Regulatory Compliance",
-            "Cost Management"
+            "Cost Management",
+            "Tender Management",
+            "Quality Assurance"
         ],
         "keyProjects": [
-            "Clarion Hotel Amaranten",
-            "Grow Hotel Solna"
+            "Clarion Hotel Amaranten (major renovation)",
+            "Grow Hotel Solna",
+            "Multiple Scandic projects",
+            "Nordic Choice renovations"
         ],
-        "contact": {
-            "title": "Hospitality PM Lead",
-            "website": "forsen.com"
+        "scoring": {
+            "hospitalityExperience": 5,
+            "circularCompetence": 3,
+            "pmCapacity": 5,
+            "geographicMatch": 5,
+            "regulatoryExpertise": 5,
+            "costLevel": 4,
+            "overallScore": 4.5
         },
-        "collaborationType": "Strategic PM Partnership"
+        "contacts": [
+            {
+                "name": "Leif Hernborg",
+                "title": "Hotels Lead / Senior PM",
+                "focus": "Hospitality sector lead"
+            },
+            {
+                "name": "Erik Öfverholm",
+                "title": "Project Director",
+                "focus": "Complex renovations"
+            },
+            {
+                "name": "Jeanette Andersson",
+                "title": "Senior Project Manager",
+                "focus": "Hotel projects"
+            }
+        ],
+        "website": "https://forsen.com",
+        "collaborationType": "Strategic PM Partnership",
+        "sourceRefs": ["prompt1_chatgpt", "prompt1_gemini"]
+    },
+    {
+        "id": "hifab",
+        "name": "Hifab",
+        "role": "Project Management",
+        "tier": "Secondary",
+        "category": "Project Management",
+        "description": "Project management firm with emerging circular competence and strong adaptive reuse experience. Growing sustainability practice.",
+        "locations": [
+            "15 Offices Nationwide"
+        ],
+        "employees": "250+",
+        "services": [
+            "Project Management",
+            "Adaptive Reuse Coordination",
+            "Procurement Management",
+            "Sustainability Advisory"
+        ],
+        "keyProjects": [
+            "Hotel Oden (Adaptive Reuse)"
+        ],
+        "scoring": {
+            "hospitalityExperience": 4,
+            "circularCompetence": 3,
+            "pmCapacity": 4,
+            "geographicMatch": 4,
+            "regulatoryExpertise": 4,
+            "costLevel": 4,
+            "overallScore": 3.8
+        },
+        "contacts": [
+            {
+                "name": "Nicke Rydgren",
+                "title": "CEO",
+                "focus": "Strategic partnerships"
+            },
+            {
+                "name": "Christian Horn",
+                "title": "Business Area Manager",
+                "focus": "Commercial properties"
+            },
+            {
+                "name": "Anna Larsson",
+                "title": "Project Manager",
+                "focus": "Sustainability projects"
+            }
+        ],
+        "website": "https://hifab.se",
+        "collaborationType": "Project-Specific",
+        "sourceRefs": ["prompt1_chatgpt", "prompt1_gemini"]
     },
     {
         "id": "kompanjonen",
@@ -64,7 +263,7 @@
         "role": "Sourcing Specialist",
         "tier": "Specialist",
         "category": "Sourcing & Reuse Strategy",
-        "description": "Dedicated circular economy consultancy focused on sourcing unique reused items and managing compliance documentation.",
+        "description": "Dedicated circular economy consultancy focused on sourcing unique reused items and managing compliance documentation. Key player in the Swedish reuse ecosystem.",
         "locations": [
             "Stockholm"
         ],
@@ -72,56 +271,184 @@
             "Specialized Sourcing",
             "Fire Testing Coordination",
             "Regulatory Documentation",
-            "Reuse Logistics"
+            "Reuse Logistics",
+            "Material Passport Development"
         ],
         "keyProjects": [
             "Fabege Pilot (Återbrukshubben)",
-            "CCBuild Marketplace Integration"
+            "CCBuild Marketplace Integration",
+            "Multiple office reuse projects"
         ],
-        "contact": {
-            "name": "Per Håkansson",
-            "title": "CEO",
-            "website": "dackeconsulting.com"
+        "scoring": {
+            "hospitalityExperience": 2,
+            "circularCompetence": 5,
+            "pmCapacity": 2,
+            "geographicMatch": 3,
+            "regulatoryExpertise": 4,
+            "costLevel": 4,
+            "overallScore": 3.3
         },
-        "collaborationType": "Subcontractor / Specialist"
+        "contacts": [
+            {
+                "name": "Per Håkansson",
+                "title": "CEO",
+                "website": "dackeconsulting.com"
+            }
+        ],
+        "website": "https://kompanjonen.se",
+        "collaborationType": "Subcontractor / Specialist",
+        "sourceRefs": ["prompt1_chatgpt"]
     },
     {
-        "id": "sweco",
-        "name": "Sweco",
+        "id": "afry",
+        "name": "AFRY",
         "role": "Technical Consultant",
-        "tier": "Reserve",
-        "category": "Engineering & Design",
-        "description": "Europe's leading engineering and architecture consultancy with strong technical capabilities in adaptive reuse.",
+        "tier": "Secondary",
+        "category": "Engineering & Sustainability",
+        "description": "International engineering company with strong energy and environmental expertise. Good for complex technical sustainability challenges.",
         "locations": [
             "Nationwide"
         ],
+        "employees": "17000+ (Global)",
         "services": [
-            "Structural Engineering",
-            "Energy Optimization",
-            "Circular Material Management"
+            "Energy Engineering",
+            "Environmental Consulting",
+            "LCA Analysis",
+            "Building Physics"
         ],
         "keyProjects": [
-            "Blique by Nobis"
+            "Various commercial renovations"
         ],
-        "collaborationType": "Project-Specific"
+        "scoring": {
+            "hospitalityExperience": 3,
+            "circularCompetence": 4,
+            "pmCapacity": 3,
+            "geographicMatch": 5,
+            "regulatoryExpertise": 4,
+            "costLevel": 3,
+            "overallScore": 3.7
+        },
+        "website": "https://afry.com",
+        "collaborationType": "Project-Specific",
+        "sourceRefs": ["prompt1_chatgpt"]
     },
     {
-        "id": "hifab",
-        "name": "Hifab",
-        "role": "Project Management",
-        "tier": "Reserve",
-        "category": "Project Management",
-        "description": "Project management firm with emerging circular competence and strong adaptive reuse experience.",
+        "id": "wsp",
+        "name": "WSP",
+        "role": "Technical Consultant",
+        "tier": "Secondary",
+        "category": "Engineering & Advisory",
+        "description": "Global consultancy with broad capabilities. Strong in regulatory compliance and building certification.",
         "locations": [
-            "15 Offices Nationwide"
+            "Nationwide"
+        ],
+        "employees": "10000+ (Nordic)",
+        "services": [
+            "Building Certification (BREEAM, LEED)",
+            "Environmental Due Diligence",
+            "Energy Optimization",
+            "Circular Economy Advisory"
+        ],
+        "scoring": {
+            "hospitalityExperience": 4,
+            "circularCompetence": 4,
+            "pmCapacity": 4,
+            "geographicMatch": 5,
+            "regulatoryExpertise": 5,
+            "costLevel": 3,
+            "overallScore": 4.2
+        },
+        "website": "https://wsp.com",
+        "collaborationType": "Project-Specific",
+        "sourceRefs": ["prompt1_chatgpt"]
+    },
+    {
+        "id": "arup",
+        "name": "Arup",
+        "role": "Global Expert",
+        "tier": "Reserve",
+        "category": "Engineering & Design",
+        "description": "Global engineering firm with pioneering circular economy research. Best for flagship projects requiring international expertise.",
+        "locations": [
+            "Stockholm (limited)"
         ],
         "services": [
-            "Project Management",
-            "Adaptive Reuse Coordination"
+            "Circular Economy Strategy",
+            "Structural Innovation",
+            "Sustainability Consulting",
+            "Design for Disassembly"
+        ],
+        "scoring": {
+            "hospitalityExperience": 3,
+            "circularCompetence": 5,
+            "pmCapacity": 3,
+            "geographicMatch": 2,
+            "regulatoryExpertise": 3,
+            "costLevel": 2,
+            "overallScore": 3.0
+        },
+        "website": "https://arup.com",
+        "collaborationType": "Flagship Projects Only",
+        "sourceRefs": ["prompt1_chatgpt"]
+    },
+    {
+        "id": "yllw-consultancy",
+        "name": "Yllw (Konsult)",
+        "role": "FF&E Specialist",
+        "tier": "Specialist",
+        "category": "Furniture & Interiors",
+        "description": "Circular furniture specialist recommended for hybrid strategy. Strong in FF&E circular economy but limited PM capacity.",
+        "locations": [
+            "Gothenburg"
+        ],
+        "services": [
+            "FF&E Circular Strategy",
+            "Furniture Refurbishment",
+            "Material Sourcing",
+            "Take-back Programs"
+        ],
+        "scoring": {
+            "hospitalityExperience": 3,
+            "circularCompetence": 5,
+            "pmCapacity": 2,
+            "geographicMatch": 4,
+            "regulatoryExpertise": 3,
+            "costLevel": 4,
+            "overallScore": 3.5
+        },
+        "website": "https://yllw.se",
+        "collaborationType": "FF&E Specialist Partner",
+        "insight": "Recommended by Gemini for hybrid strategy: Combine with traditional PM for best results",
+        "sourceRefs": ["prompt1_gemini"]
+    },
+    {
+        "id": "3xn-gxn",
+        "name": "3XN/GXN",
+        "role": "Innovation Partner",
+        "tier": "Reference",
+        "category": "Architecture & Research",
+        "description": "Danish architecture firm with GXN innovation lab. Pioneers in circular building design. Key contact for case study knowledge.",
+        "locations": [
+            "Copenhagen"
+        ],
+        "services": [
+            "Circular Building Design",
+            "Design for Disassembly",
+            "Research & Development",
+            "Material Innovation"
         ],
         "keyProjects": [
-            "Hotel Oden (Adaptive Reuse)"
+            "Hotel Green Solution House (Climate-positive hotel)"
         ],
-        "collaborationType": "Project-Specific"
+        "contacts": [
+            {
+                "name": "Kasper Guldager Jensen",
+                "title": "Partner, GXN Founder",
+                "focus": "Circular economy research"
+            }
+        ],
+        "website": "https://gxn.3xn.com",
+        "collaborationType": "Knowledge Partner / Reference",
+        "sourceRefs": ["prompt6_chatgpt"]
     }
 ]
