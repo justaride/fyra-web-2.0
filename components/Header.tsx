@@ -20,6 +20,7 @@ export function Header({ supplierCount }: HeaderProps) {
                     <nav className="hidden lg:flex items-center gap-5 text-sm font-medium text-slate-600">
                         <Link href="/" className="hover:text-slate-900 transition-colors">Suppliers</Link>
                         <Link href="/experts" className="hover:text-slate-900 transition-colors">Experts</Link>
+                        <Link href="/scenarios" className="hover:text-slate-900 transition-colors">Scenarios</Link>
                         <Link href="/case-studies" className="hover:text-slate-900 transition-colors">Case Studies</Link>
                         <span className="text-slate-300">|</span>
                         <Link href="/regulations" className="hover:text-slate-900 transition-colors">Regulations</Link>
