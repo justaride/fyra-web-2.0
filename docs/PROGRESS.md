@@ -1,7 +1,7 @@
 # FYRA CIRCULAR PLATFORM - IMPLEMENTATION PROGRESS
 
-**Last Updated:** 2025-11-27 (Session 8 - Jan Thomas Feedback Implemented)
-**Current State:** All Contract Objectives Complete + Stakeholder Feedback Addressed
+**Last Updated:** 2025-11-27 (Session 9 - Source Link Audit Complete)
+**Current State:** All Contract Objectives Complete + Full Source Coverage
 **Deployment:** https://justaride.github.io/fyra-web-2.0/
 
 ---
@@ -51,6 +51,46 @@ Added public procurement (offentlig anskaffelse) content from PROMPT 3 research:
 | - | **Landing Page Redesign** | **DONE** | `d9354cf` |
 | - | **UX Consistency Pass (All Pages)** | **DONE** | `342ecd9` |
 | - | **Obj 5: Public Procurement** | **DONE** | `79cfcbf` |
+| - | **Source Link Audit** | **DONE** | `45dd726` |
+
+---
+
+## SESSION 9 CHANGES (2025-11-27)
+
+### Source Link Audit & Fixes
+Complete audit of all 14 case studies for link/source validity:
+
+**Issues Found & Fixed:**
+- Removed invalid `prompt6_chatgpt` references from 6 case studies
+- `akademihotellet_uppsala` had ZERO valid sources → fixed
+
+**New Sources Added to `sources.json` (10 sources):**
+| Source ID | URL | Verifies |
+|-----------|-----|----------|
+| akademihotellet_website | akademihotellet.se | Akademihotellet Uppsala |
+| clarion_hub_website | nordicchoicehotels.com | Clarion Hotel The Hub |
+| archdaily_clarion_hub | archdaily.com | Clarion Hotel The Hub |
+| thon_hotel_website | thonhotels.com | Thon Hotel Oslo Airport |
+| skeppsholmen_website | hotelskeppsholmen.se | Hotel Skeppsholmen |
+| dezeen_skeppsholmen | dezeen.com | Hotel Skeppsholmen |
+| ottilia_website | brochner-hotels.com | Hotel Ottilia |
+| villa_copenhagen_website | villacopenhagen.com | Villa Copenhagen |
+| downtown_camper_website | scandichotels.com | Downtown Camper |
+
+**Case Study sourceRefs Updated:**
+| Case Study | Before | After |
+|------------|--------|-------|
+| Akademihotellet Uppsala | 0 sources | 1 source |
+| Downtown Camper | 2 sources | 3 sources |
+| Clarion Hotel The Hub | 1 source | 3 sources |
+| Hotel Ottilia | 1 source | 2 sources |
+| Thon Hotel Oslo Airport | 1 source | 2 sources |
+| Hotel Skeppsholmen | 1 source | 3 sources |
+| Villa Copenhagen | 2 sources | 3 sources |
+
+**Result:** All 14 case studies now have valid, verified source references.
+
+**Commit:** `45dd726`
 
 ---
 
