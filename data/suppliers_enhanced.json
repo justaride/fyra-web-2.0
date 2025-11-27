@@ -1312,7 +1312,7 @@
   },
   {
     "id": "alsberg_studio",
-    "sourceRefs": ["prompt2_chatgpt", "prompt2_perplexity"],
+    "sourceRefs": ["alsberg_studio_website"],
     "name": "ALSBERG STUDIO",
     "description": "Top-rated (5/5) circular interior design consultancy and sourcing specialist. Combines design expertise with reuse sourcing capability. Strong in boutique and design-forward hotel projects.",
     "location": "Stockholm, Sweden",
@@ -1412,7 +1412,7 @@
   },
   {
     "id": "cirkular_interior",
-    "sourceRefs": ["prompt2_chatgpt", "prompt2_perplexity"],
+    "sourceRefs": ["cirkular_interior_website"],
     "name": "CIRKULÄR INTERIÖR",
     "description": "Malmö-based circular interior specialist with strong design focus. Particularly suited for southern Sweden (Skåne) hospitality projects. Combines sourcing with design services.",
     "location": "Malmö, Skåne, Sweden",
@@ -1608,7 +1608,7 @@
   {
     "id": "senab_aterbruk",
     "name": "SENAB Återbruk",
-    "sourceRefs": ["prompt4_frontrunner", "senab_website"],
+    "sourceRefs": ["senab_website"],
     "description": "Part of established SENAB group - one of Sweden's largest office furniture suppliers. SENAB Återbruk division specializes in refurbished furniture with documented hospitality project experience (Blique by Nobis). Enterprise-grade infrastructure with sustainability documentation capabilities.",
     "location": "Stockholm region. Part of SENAB group with nationwide distribution network.",
     "mapLocations": [

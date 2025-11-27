@@ -3,7 +3,7 @@
     "version": "1.0",
     "lastUpdated": "2025-01-26",
     "description": "Central source registry for Fyra Circular Platform. All data entities reference sources by ID for traceability and verification.",
-    "totalSources": 106
+    "totalSources": 119
   },
   "sources": [
     {
@@ -1131,6 +1131,36 @@
       "language": "en",
       "verifies": ["downtown_camper_by_scandic"],
       "keyFacts": ["494 rooms", "LEED Gold certified", "Urban camping concept"]
+    },
+    {
+      "id": "alsberg_studio_website",
+      "title": "Alsberg Studio - Official Website",
+      "url": "https://alsbergstudio.se",
+      "type": "company_website",
+      "publisher": "Alsberg Studio",
+      "language": "sv",
+      "verifies": ["alsberg_studio"],
+      "keyFacts": ["Stockholm-based circular interior design consultancy", "Boutique hotel expertise", "Curated vintage sourcing"]
+    },
+    {
+      "id": "cirkular_interior_website",
+      "title": "Cirkulär Interiör - Official Website",
+      "url": "https://cirkularinterior.se",
+      "type": "company_website",
+      "publisher": "Cirkulär Interiör",
+      "language": "sv",
+      "verifies": ["cirkular_interior"],
+      "keyFacts": ["Malmö-based circular interior specialist", "Southern Sweden focus", "Design-led furniture sourcing"]
+    },
+    {
+      "id": "senab_website",
+      "title": "SENAB Återbruk - Official Website",
+      "url": "https://senab.com/aterbruk",
+      "type": "company_website",
+      "publisher": "SENAB Group",
+      "language": "sv",
+      "verifies": ["senab_aterbruk"],
+      "keyFacts": ["Part of established SENAB Group", "Blique by Nobis supplier", "Enterprise-scale refurbishment"]
     }
   ],
   "sourceTypes": {
