@@ -48,17 +48,54 @@ export default async function ExpertsPage() {
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
 
-            <div className="container mx-auto px-4 py-8">
-                {/* Header */}
-                <div className="mb-10 max-w-3xl">
-                    <h1 className="text-3xl font-bold text-slate-900 tracking-tight mb-3">Expert Network</h1>
-                    <p className="text-slate-600 text-lg leading-relaxed">
-                        A curated network of project managers, architects, and specialists with proven circular construction
-                        capabilities. These partners have been vetted for their ability to navigate Nordic regulations and
-                        deliver industrial-scale reuse in the hospitality sector.
-                    </p>
-                </div>
+            {/* Hero Section */}
+            <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-purple-900 text-white py-16">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-3xl">
+                        {/* Badge */}
+                        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm mb-4">
+                            <Users className="w-4 h-4 text-purple-400" />
+                            <span>Expert Network</span>
+                        </div>
 
+                        {/* Headline */}
+                        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+                            Circular Hospitality Experts
+                        </h1>
+
+                        {/* Value proposition - using the market gap finding */}
+                        <p className="text-lg text-slate-300 leading-relaxed mb-4">
+                            A curated network of project managers, architects, and specialists with proven circular
+                            construction capabilities in the Nordic hospitality sector.
+                        </p>
+
+                        {/* Key insight */}
+                        <div className="bg-amber-500/20 border border-amber-500/30 rounded-lg p-4 mb-6">
+                            <p className="text-amber-200 text-sm">
+                                <strong>Key Insight:</strong> {enhancedData.marketGap.finding}
+                            </p>
+                        </div>
+
+                        {/* Stats */}
+                        <div className="flex flex-wrap gap-6 text-sm">
+                            <div className="flex items-center gap-2">
+                                <Users className="w-4 h-4 text-purple-400" />
+                                <span><strong>{enhancedData.tier1.length + specialists.length}</strong> Verified Firms</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <ShieldCheck className="w-4 h-4 text-purple-400" />
+                                <span>Regulatory Expertise</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Lightbulb className="w-4 h-4 text-purple-400" />
+                                <span>Circular Specialists</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div className="container mx-auto px-4 py-8">
                 {/* Stats */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
                     <div className="bg-white p-6 rounded-xl border shadow-sm flex items-start gap-4">
@@ -90,20 +127,6 @@ export default async function ExpertsPage() {
                     </div>
                 </div>
 
-                {/* Market Gap Insight */}
-                <div className="bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-6 mb-12 text-white">
-                    <h2 className="text-lg font-bold mb-2">Market Insight</h2>
-                    <p className="text-blue-100 mb-4">{enhancedData.marketGap.finding}</p>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                        {Object.entries(enhancedData.marketGap.breakdown).map(([key, value]) => (
-                            <div key={key} className="bg-white/10 rounded-lg p-3">
-                                <span className="text-sm font-semibold">{key.replace('_', ' ').toUpperCase()}</span>
-                                <p className="text-xs text-blue-100 mt-1">{value}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <p className="text-sm text-blue-200 mt-4 italic">{enhancedData.marketGap.fyraOpportunity}</p>
-                </div>
 
                 {/* Decision Framework */}
                 <div className="mb-12">
@@ -221,7 +244,7 @@ export default async function ExpertsPage() {
                                 <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link
-                                href="/"
+                                href="/suppliers"
                                 className="inline-flex items-center gap-2 bg-slate-800 text-white px-6 py-3 rounded-lg font-medium hover:bg-slate-700 transition-colors"
                             >
                                 Browse Suppliers

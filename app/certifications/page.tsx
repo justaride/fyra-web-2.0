@@ -107,39 +107,52 @@ export default async function CertificationsPage() {
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
 
-            <div className="container mx-auto px-4 py-8">
-                <div className="mb-8 max-w-4xl">
-                    <h2 className="text-2xl font-bold text-slate-900">Hotel Certifications & Sustainability Systems</h2>
-                    <p className="text-slate-600 mt-2">
-                        Comprehensive mapping of certifications used in Sweden and the Nordics, with focus on interior design and circular economy criteria.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                        <span className="inline-flex items-center gap-1.5 text-xs bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full border border-blue-200">
-                            <Building2 className="w-3 h-3" /> Operational
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 text-xs bg-amber-50 text-amber-700 px-2.5 py-1 rounded-full border border-amber-200">
-                            <Award className="w-3 h-3" /> Building
-                        </span>
-                        <span className="inline-flex items-center gap-1.5 text-xs bg-green-50 text-green-700 px-2.5 py-1 rounded-full border border-green-200">
-                            <Recycle className="w-3 h-3" /> Product
-                        </span>
-                    </div>
-                </div>
+            {/* Hero Section */}
+            <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-amber-900 text-white py-16">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-3xl">
+                        {/* Badge */}
+                        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm mb-4">
+                            <Award className="w-4 h-4 text-amber-400" />
+                            <span>Certifications</span>
+                        </div>
 
-                {/* Key Finding Banner */}
-                <div className="mb-8 bg-amber-50 border border-amber-200 rounded-xl p-4">
-                    <div className="flex gap-3">
-                        <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
-                        <div>
-                            <h3 className="font-semibold text-amber-900 text-sm">Key Finding</h3>
-                            <p className="text-amber-800 text-sm mt-1">
-                                Most hotel certifications focus primarily on <strong>operations</strong> (energy, water, waste during use),
-                                not on design and material selection. This creates a significant opportunity to position circular interior
-                                design where certifications are weak.
+                        {/* Headline */}
+                        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+                            Hotel Certifications & Sustainability Systems
+                        </h1>
+
+                        {/* Value proposition */}
+                        <p className="text-lg text-slate-300 leading-relaxed mb-4">
+                            Comprehensive mapping of certifications used in Sweden and the Nordics,
+                            with focus on interior design and circular economy criteria.
+                        </p>
+
+                        {/* Key insight */}
+                        <div className="bg-amber-500/20 border border-amber-500/30 rounded-lg p-4 mb-6">
+                            <p className="text-amber-200 text-sm">
+                                <strong>Key Finding:</strong> Most hotel certifications focus on operations (energy, water, waste),
+                                not design and material selection. This creates a significant opportunity for circular interior design.
                             </p>
+                        </div>
+
+                        {/* Category badges */}
+                        <div className="flex flex-wrap gap-3">
+                            <span className="inline-flex items-center gap-1.5 text-xs bg-white/10 text-white px-3 py-1.5 rounded-full">
+                                <Building2 className="w-3 h-3" /> Operational
+                            </span>
+                            <span className="inline-flex items-center gap-1.5 text-xs bg-white/10 text-white px-3 py-1.5 rounded-full">
+                                <Award className="w-3 h-3" /> Building
+                            </span>
+                            <span className="inline-flex items-center gap-1.5 text-xs bg-white/10 text-white px-3 py-1.5 rounded-full">
+                                <Recycle className="w-3 h-3" /> Product
+                            </span>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <div className="container mx-auto px-4 py-8">
 
                 {/* Certifications Grid */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">

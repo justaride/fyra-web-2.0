@@ -132,14 +132,57 @@ export default async function SpecificationsPage() {
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
 
-            <div className="container mx-auto px-4 py-8">
-                {/* Page Header */}
-                <div className="mb-8 max-w-4xl">
-                    <h2 className="text-2xl font-bold text-slate-900">Specification Guide for Circular Materials</h2>
-                    <p className="text-slate-600 mt-2">
-                        Navigate the BVB system and use specification templates to document reused and circular products in Swedish hotel projects.
-                    </p>
+            {/* Hero Section */}
+            <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 text-white py-16">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-3xl">
+                        {/* Badge */}
+                        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm mb-4">
+                            <FileText className="w-4 h-4 text-blue-400" />
+                            <span>Specifications</span>
+                        </div>
+
+                        {/* Headline */}
+                        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+                            Specification Guide for Circular Materials
+                        </h1>
+
+                        {/* Value proposition */}
+                        <p className="text-lg text-slate-300 leading-relaxed mb-4">
+                            Navigate the BVB system and use specification templates to document reused
+                            and circular products in Swedish hotel projects. Ensure compliance with
+                            fire safety and sustainability standards.
+                        </p>
+
+                        {/* Quick nav hint */}
+                        <div className="bg-blue-500/20 border border-blue-500/30 rounded-lg p-4 mb-6">
+                            <p className="text-blue-200 text-sm">
+                                <strong>Start Here:</strong> The BVB (Byggvarubedömningen) system is Sweden&apos;s
+                                leading building product assessment tool. Below you&apos;ll find rating criteria,
+                                specification templates, and equivalency pathways for circular products.
+                            </p>
+                        </div>
+
+                        {/* Stats */}
+                        <div className="flex flex-wrap gap-6 text-sm">
+                            <div className="flex items-center gap-2">
+                                <FileText className="w-4 h-4 text-blue-400" />
+                                <span><strong>4</strong> Product Categories</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Recycle className="w-4 h-4 text-blue-400" />
+                                <span><strong>3</strong> Equivalency Pathways</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Flame className="w-4 h-4 text-blue-400" />
+                                <span>Fire Safety Compliance</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            <div className="container mx-auto px-4 py-8">
 
                 {/* BVB System Overview */}
                 <section className="mb-12">

@@ -265,16 +265,48 @@ export default async function ScenariosPage() {
         <main className="min-h-screen bg-slate-50 font-sans">
             <Header />
 
-            <div className="container mx-auto px-4 py-8">
-                {/* Header */}
-                <div className="mb-10 max-w-3xl">
-                    <h1 className="text-3xl font-bold text-slate-900 tracking-tight mb-3">Project Scenarios</h1>
-                    <p className="text-slate-600 text-lg leading-relaxed">
-                        Tailored guidance for common circular hospitality project types. Each scenario includes recommended
-                        partners, timelines, costs, and risk mitigation strategies based on real Nordic project experience.
-                    </p>
-                </div>
+            {/* Hero Section */}
+            <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-green-900 text-white py-16">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-3xl">
+                        {/* Badge */}
+                        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-1.5 rounded-full text-sm mb-4">
+                            <Sparkles className="w-4 h-4 text-green-400" />
+                            <span>Project Scenarios</span>
+                        </div>
 
+                        {/* Headline */}
+                        <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight">
+                            Project Scenario Guides
+                        </h1>
+
+                        {/* Value proposition */}
+                        <p className="text-lg text-slate-300 leading-relaxed mb-6">
+                            Tailored guidance for common circular hospitality project types. Each scenario
+                            includes recommended partners, timelines, costs, and risk mitigation strategies
+                            based on real Nordic project experience.
+                        </p>
+
+                        {/* Stats */}
+                        <div className="flex flex-wrap gap-6 text-sm">
+                            <div className="flex items-center gap-2">
+                                <Building2 className="w-4 h-4 text-green-400" />
+                                <span><strong>{scenarios.length}</strong> Scenarios</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <Clock className="w-4 h-4 text-green-400" />
+                                <span>Timeline Guidance</span>
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <AlertTriangle className="w-4 h-4 text-green-400" />
+                                <span>Risk Mitigation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div className="container mx-auto px-4 py-8">
                 {/* Quick Navigation */}
                 <div className="flex flex-wrap gap-2 mb-8">
                     {scenarios.map((scenario) => (
@@ -307,7 +339,7 @@ export default async function ScenariosPage() {
                     </p>
                     <div className="flex flex-wrap justify-center gap-4">
                         <Link
-                            href="/"
+                            href="/suppliers"
                             className="inline-flex items-center gap-2 bg-white text-blue-600 px-6 py-3 rounded-lg font-medium hover:bg-blue-50 transition-colors"
                         >
                             Browse Suppliers
