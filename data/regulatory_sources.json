@@ -1,0 +1,423 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2025-11-28",
+    "lastVerified": "2025-11-28",
+    "description": "Master file of verified regulatory sources for Nordic circular construction"
+  },
+  "sources": [
+    {
+      "id": "bbr-fire-safety",
+      "name": "Boverkets byggregler - Brandskydd",
+      "nameEN": "Swedish Building Regulations - Fire Safety",
+      "shortName": "BBR Kap 5",
+      "type": "regulation",
+      "jurisdiction": "SE",
+      "category": "fire_safety",
+      "officialUrl": "https://www.boverket.se/sv/PBL-kunskapsbanken/regler-om-byggande/brandskydd/",
+      "description": "Swedish fire safety regulations for buildings, including requirements for hotels (Verksamhetsklass 4)",
+      "descriptionNO": "Svenske brannkrav for bygninger, inkludert krav til hoteller (Vk4)",
+      "keyExcerpts": [
+        {
+          "section": "BBR 5:3",
+          "text": "Verksamhetsklass 4 omfattar lokaler avsedda för övernattning mer än tillfälligt",
+          "relevance": "Hotels classified as Vk4 - persons unfamiliar with building who sleep there"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "Main fire safety overview page in PBL-kunskapsbanken"
+      },
+      "relatedSources": ["bbr-verksamhetsklasser", "lou-2016-1145"],
+      "icon": "ShieldCheck",
+      "color": "rose"
+    },
+    {
+      "id": "bbr-verksamhetsklasser",
+      "name": "Verksamhetsklasser",
+      "nameEN": "Activity Classes",
+      "shortName": "Vk1-Vk6",
+      "type": "regulation",
+      "jurisdiction": "SE",
+      "category": "fire_safety",
+      "officialUrl": "https://www.boverket.se/sv/PBL-kunskapsbanken/regler-om-byggande/brandskydd/dimensionerande-forutsattningar/verksamhetsklasser/",
+      "description": "Classification system for buildings based on fire safety requirements",
+      "descriptionNO": "Klassifiseringssystem for bygninger basert på brannkrav",
+      "keyExcerpts": [
+        {
+          "section": "Vk4",
+          "text": "Hotell m.m. - Lokaler avsedda för människor som sover utan goda möjligheter att själva sätta sig i säkerhet",
+          "relevance": "Hotels fall under Vk4 - guests unfamiliar with evacuation routes"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "Detailed page explaining all 6 activity classes"
+      },
+      "relatedSources": ["bbr-fire-safety"],
+      "icon": "Building2",
+      "color": "rose"
+    },
+    {
+      "id": "lou-2016-1145",
+      "name": "Lag (2016:1145) om offentlig upphandling",
+      "nameEN": "Swedish Public Procurement Act",
+      "shortName": "LOU",
+      "type": "law",
+      "jurisdiction": "SE",
+      "category": "procurement",
+      "officialUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-20161145-om-offentlig-upphandling_sfs-2016-1145/",
+      "description": "Swedish law governing public procurement, including sustainability criteria options",
+      "descriptionNO": "Svensk lov om offentlige anskaffelser, inkludert bærekraftskriterier",
+      "keyExcerpts": [
+        {
+          "section": "4 kap",
+          "text": "Upphandlande myndigheter får ställa miljökrav och sociala krav",
+          "relevance": "Enables sustainability requirements in public tenders"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "Official Riksdag page, updated through SFS 2025:360"
+      },
+      "relatedSources": ["upphandlingsmyndigheten"],
+      "icon": "Scale",
+      "color": "indigo"
+    },
+    {
+      "id": "upphandlingsmyndigheten",
+      "name": "Upphandlingsmyndigheten",
+      "nameEN": "Swedish National Agency for Public Procurement",
+      "shortName": "UHM",
+      "type": "guideline",
+      "jurisdiction": "SE",
+      "category": "procurement",
+      "officialUrl": "https://www.upphandlingsmyndigheten.se/",
+      "criteriaUrl": "https://www.upphandlingsmyndigheten.se/kriterietjansten/",
+      "description": "Government agency providing guidance on sustainable public procurement",
+      "descriptionNO": "Statlig myndighet med veiledning om bærekraftige offentlige anskaffelser",
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "Main agency page with Kriterietjänsten for sustainability criteria"
+      },
+      "relatedSources": ["lou-2016-1145"],
+      "icon": "FileSearch",
+      "color": "indigo"
+    },
+    {
+      "id": "en-13501-1",
+      "name": "SS-EN 13501-1 Brandklassificering",
+      "nameEN": "EN 13501-1 Fire Classification",
+      "shortName": "EN 13501-1",
+      "type": "standard",
+      "jurisdiction": "EU",
+      "category": "fire_safety",
+      "officialUrl": "https://www.sis.se/",
+      "purchaseUrl": "https://www.sis.se/sok/?query=EN+13501-1",
+      "description": "European standard for fire classification of construction products (Euroclass A1-F)",
+      "descriptionNO": "Europeisk standard for brannklassifisering av byggevarer (Euroklasse A1-F)",
+      "keyExcerpts": [
+        {
+          "section": "Euroclass system",
+          "text": "Classes A1, A2 (non-combustible), B, C, D, E, F (combustible)",
+          "relevance": "Wood is Class D - combustible but with predictable behavior"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "Paid standard available through SIS (Swedish Standards Institute)"
+      },
+      "relatedSources": ["bbr-fire-safety", "en-1021-1"],
+      "icon": "Flame",
+      "color": "orange"
+    },
+    {
+      "id": "en-1021-1",
+      "name": "SS-EN 1021-1/2 Möbelbrandtest",
+      "nameEN": "EN 1021-1/2 Furniture Fire Testing",
+      "shortName": "EN 1021",
+      "type": "standard",
+      "jurisdiction": "EU",
+      "category": "fire_safety",
+      "officialUrl": "https://www.sis.se/",
+      "purchaseUrl": "https://www.sis.se/sok/?query=EN+1021",
+      "description": "European standard for furniture fire testing - cigarette and match tests",
+      "descriptionNO": "Europeisk standard for branntest av møbler - sigarett- og fyrstikktest",
+      "keyExcerpts": [
+        {
+          "section": "EN 1021-1",
+          "text": "Smouldering cigarette ignition source",
+          "relevance": "Basic fire test for upholstered furniture in hotels"
+        },
+        {
+          "section": "EN 1021-2",
+          "text": "Match flame equivalent ignition source",
+          "relevance": "Higher fire test requirement for high-hazard areas"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "Paid standard available through SIS"
+      },
+      "relatedSources": ["en-13501-1", "bs-5852"],
+      "icon": "Flame",
+      "color": "orange"
+    },
+    {
+      "id": "bs-5852",
+      "name": "BS 5852 Crib Testing",
+      "nameEN": "BS 5852 Crib Fire Test",
+      "shortName": "BS 5852",
+      "type": "standard",
+      "jurisdiction": "International",
+      "category": "fire_safety",
+      "officialUrl": "https://www.bsigroup.com/",
+      "description": "British standard for upholstered furniture fire testing - Crib 5 is highest level",
+      "descriptionNO": "Britisk standard for branntest av stoppede møbler - Crib 5 er høyeste nivå",
+      "keyExcerpts": [
+        {
+          "section": "Crib 5",
+          "text": "Wooden crib ignition source - highest severity furniture test",
+          "relevance": "Required for high-hazard public areas in some specifications"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "British Standard - NOT part of Euroclass system"
+      },
+      "relatedSources": ["en-1021-1"],
+      "icon": "Flame",
+      "color": "orange"
+    },
+    {
+      "id": "nordic-swan-hotels",
+      "name": "Svanen - Hotell, restaurang & konferens",
+      "nameEN": "Nordic Swan Ecolabel - Hotels",
+      "shortName": "Nordic Swan",
+      "type": "certification",
+      "jurisdiction": "Nordic",
+      "category": "environmental",
+      "officialUrl": "https://www.svanen.se/kategorier/hotell-restaurang-och-matbutik/",
+      "criteriaUrl": "https://www.svanen.se/bli-svanenmarkt/kriterier-ansokan-avgifter/",
+      "applicationUrl": "https://applications.nordic-ecolabel.org/",
+      "description": "Nordic Ecolabel criteria for hotels, restaurants, and conference facilities",
+      "descriptionNO": "Nordisk miljømerke for hoteller, restauranter og konferanselokaler",
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "Main hospitality category page, criteria available through portal"
+      },
+      "relatedSources": ["green-key", "miljobyggnad"],
+      "icon": "Leaf",
+      "color": "green"
+    },
+    {
+      "id": "miljobyggnad",
+      "name": "Miljöbyggnad",
+      "nameEN": "Environmental Building (Sweden)",
+      "shortName": "MB",
+      "type": "certification",
+      "jurisdiction": "SE",
+      "category": "environmental",
+      "officialUrl": "https://www.sgbc.se/certifiering/miljobyggnad/",
+      "description": "Swedish environmental certification for buildings - levels Brons, Silver, Guld",
+      "descriptionNO": "Svensk miljøsertifisering for bygninger - nivåer Bronse, Sølv, Gull",
+      "keyExcerpts": [
+        {
+          "section": "MB4.0/4.1",
+          "text": "Current criteria version with transition period",
+          "relevance": "Latest version addressing circular economy aspects"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "SGBC official page, manuals available for purchase"
+      },
+      "relatedSources": ["leed", "breeam"],
+      "icon": "Building2",
+      "color": "green"
+    },
+    {
+      "id": "leed",
+      "name": "LEED - Leadership in Energy and Environmental Design",
+      "nameEN": "LEED Certification",
+      "shortName": "LEED",
+      "type": "certification",
+      "jurisdiction": "International",
+      "category": "environmental",
+      "officialUrl": "https://www.usgbc.org/leed",
+      "criteriaUrl": "https://www.usgbc.org/credits",
+      "description": "International green building certification - Certified, Silver, Gold, Platinum levels",
+      "descriptionNO": "Internasjonal grønn byggsertifisering - Certified, Silver, Gold, Platinum nivåer",
+      "keyExcerpts": [
+        {
+          "section": "Rating Systems",
+          "text": "BD+C (new), ID+C (interiors), O+M (operations), ND (neighborhoods)",
+          "relevance": "ID+C relevant for hotel interior renovations"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "USGBC official page with credit library"
+      },
+      "relatedSources": ["breeam", "miljobyggnad"],
+      "icon": "Award",
+      "color": "emerald"
+    },
+    {
+      "id": "breeam",
+      "name": "BREEAM - Building Research Establishment",
+      "nameEN": "BREEAM Certification",
+      "shortName": "BREEAM",
+      "type": "certification",
+      "jurisdiction": "International",
+      "category": "environmental",
+      "officialUrl": "https://www.breeam.com/",
+      "description": "UK-origin international sustainable building certification - Pass, Good, Very Good, Excellent, Outstanding",
+      "descriptionNO": "Britisk-opprinnelig internasjonal bærekraftsertifisering - Pass, Good, Very Good, Excellent, Outstanding",
+      "keyExcerpts": [
+        {
+          "section": "Schemes",
+          "text": "New Construction, In-Use, Refurbishment and Fit-Out",
+          "relevance": "Refurbishment scheme relevant for hotel renovations"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "BRE official page with downloadable technical manuals"
+      },
+      "relatedSources": ["leed", "miljobyggnad"],
+      "icon": "Award",
+      "color": "emerald"
+    },
+    {
+      "id": "green-key",
+      "name": "Green Key International",
+      "nameEN": "Green Key Certification",
+      "shortName": "Green Key",
+      "type": "certification",
+      "jurisdiction": "International",
+      "category": "environmental",
+      "officialUrl": "https://www.greenkey.global/",
+      "criteriaUrl": "https://www.greenkey.global/criteria",
+      "applicationUrl": "https://www.greenkey.global/application-process",
+      "description": "Leading hospitality sustainability certification - 8,000+ establishments in 90+ countries",
+      "descriptionNO": "Ledende bærekraftsertifisering for gjestfrihet - 8000+ virksomheter i 90+ land",
+      "keyExcerpts": [
+        {
+          "section": "Criteria 2022-2026",
+          "text": "13 criteria areas with imperative and guideline requirements",
+          "relevance": "Hotel-specific criteria with annual verification"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "FEE-operated certification, PDF criteria available"
+      },
+      "relatedSources": ["nordic-swan-hotels"],
+      "icon": "Key",
+      "color": "green"
+    },
+    {
+      "id": "iso-14001",
+      "name": "ISO 14001:2015 Environmental Management",
+      "nameEN": "ISO 14001 Environmental Management System",
+      "shortName": "ISO 14001",
+      "type": "standard",
+      "jurisdiction": "International",
+      "category": "environmental",
+      "officialUrl": "https://www.iso.org/standard/60857.html",
+      "purchaseUrl": "https://www.iso.org/standard/60857.html",
+      "description": "International standard for environmental management systems",
+      "descriptionNO": "Internasjonal standard for miljøstyringssystemer",
+      "keyExcerpts": [
+        {
+          "section": "Requirements",
+          "text": "Environmental management systems - Requirements with guidance for use",
+          "relevance": "Framework for organizational environmental management"
+        }
+      ],
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "ISO official page, CHF 155 for PDF"
+      },
+      "relatedSources": ["miljobyggnad"],
+      "icon": "FileCheck",
+      "color": "blue"
+    },
+    {
+      "id": "rise-fire-testing",
+      "name": "RISE Fire Testing Services",
+      "nameEN": "RISE Research Institutes of Sweden - Fire",
+      "shortName": "RISE",
+      "type": "guideline",
+      "jurisdiction": "SE",
+      "category": "fire_safety",
+      "officialUrl": "https://www.ri.se/",
+      "description": "Swedish research institute offering fire testing and certification services",
+      "descriptionNO": "Svensk forskningsinstitutt som tilbyr branntest og sertifiseringstjenester",
+      "verification": {
+        "lastChecked": "2025-11-28",
+        "checkedBy": "manual",
+        "urlValid": true,
+        "notes": "Main RISE page - fire research section accessible through navigation"
+      },
+      "contactInfo": {
+        "phone": "+46 10-516 50 00",
+        "email": "info@ri.se",
+        "address": "Box 14092, 400 20 Göteborg"
+      },
+      "relatedSources": ["en-13501-1", "en-1021-1"],
+      "icon": "FlaskConical",
+      "color": "rose"
+    }
+  ],
+  "categories": {
+    "fire_safety": {
+      "name": "Fire Safety",
+      "nameNO": "Brannsikkerhet",
+      "description": "Building and furniture fire safety regulations and testing",
+      "icon": "Flame",
+      "color": "rose"
+    },
+    "procurement": {
+      "name": "Public Procurement",
+      "nameNO": "Offentlige anskaffelser",
+      "description": "Laws and guidelines for sustainable public purchasing",
+      "icon": "Scale",
+      "color": "indigo"
+    },
+    "environmental": {
+      "name": "Environmental Certification",
+      "nameNO": "Miljøsertifisering",
+      "description": "Building and hospitality sustainability certifications",
+      "icon": "Leaf",
+      "color": "green"
+    }
+  }
+}
