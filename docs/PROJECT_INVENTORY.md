@@ -1,8 +1,8 @@
 # FYRA CIRCULAR PLATFORM - Prosjektinventar
 
 **Dato:** 2025-11-28
-**Versjon:** 3.1
-**Status:** ✅ LEVERINGSKLAR - Sprint 10 komplett (Regulatory Audit + Icon Cleanup)
+**Versjon:** 3.2
+**Status:** ✅ LEVERINGSKLAR - Sprint 11 planlagt (Regulatory Sources)
 
 ---
 
@@ -51,17 +51,18 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 
 ---
 
-## 2. DOKUMENTASJON (7 filer)
+## 2. DOKUMENTASJON (8 filer)
 
 | Fil | Formål | Status |
 |-----|--------|--------|
 | `CRITICAL_ANALYSIS.md` | Kvalitetsanalyse & gap-vurdering | ✅ OPPDATERT |
 | `MIRO_DOCS_FINDINGS.md` | Sammendrag av MIRO research | ✅ NY |
 | `IMPLEMENTATION_PLAN.md` | Implementeringsplan | ✅ OK |
-| `PROGRESS.md` | Fremdriftslogg | ✅ OPPDATERT Session 10 |
+| `PROGRESS.md` | Fremdriftslogg | ✅ OPPDATERT Sprint 11 |
 | `DATA_COVERAGE_REPORT.md` | Datadekningsrapport | ✅ OPPDATERT Session 10 |
 | `DESIGN_ENHANCEMENT_PLAN.md` | Fremtidige designforbedringer | ✅ NY Session 10 |
-| `PROJECT_INVENTORY.md` | Dette dokumentet | ✅ v3.1 |
+| `REGULATORY_SOURCES_PLAN.md` | Sprint 11 implementeringsplan | ✅ NY Sprint 11 |
+| `PROJECT_INVENTORY.md` | Dette dokumentet | ✅ v3.2 |
 
 ---
 
@@ -285,7 +286,48 @@ Integrert innhold fra PROMPT 3 research om LOU (Lagen om offentlig upphandling):
 
 ---
 
-## 10. SESSION 10 ENDRINGER (Siste)
+## 10. SPRINT 11 PLANLEGGING (Regulatory Sources)
+
+### Oversikt
+Omfattende regulatory source verification system med offisielle lenker, PDF-nedlastinger, juridisk tekst og interaktive UI-komponenter.
+
+**Plandokument:** `docs/REGULATORY_SOURCES_PLAN.md`
+
+### 5 Faser med Fail-Safes
+| Fase | Beskrivelse | Fail-Safe |
+|------|-------------|-----------|
+| 1 | Data Schema & Source Research | Ingen UI-endringer |
+| 2 | Data Enhancement | JSON backup/rollback |
+| 3 | Component Development | Feature flag |
+| 4 | Page Integration | Inkrementell deploy |
+| 5 | Testing & Polish | Final QA |
+
+### Nye Komponenter (planlagt)
+| Komponent | Formål |
+|-----------|--------|
+| `RegulatorySourceCard.tsx` | Vise regulatory source med lenker |
+| `LegalExcerpt.tsx` | Collapsible juridisk tekst |
+| `SourceVerificationBadge.tsx` | Verifikasjonsstatus |
+| `PDFDownloadButton.tsx` | Konsistent PDF-nedlasting UI |
+| `RegulatoryQuickRef.tsx` | Inline tooltip for referanser |
+
+### Nye Datafiler (planlagt)
+| Fil | Innhold |
+|-----|---------|
+| `regulatory_sources.json` | Master-fil for alle verifiserte regulatory sources |
+
+### Offisielle Kilder å Verifisere
+- BBR (Boverkets byggregler) - boverket.se
+- LOU 2016:1145 (Lagen om offentlig upphandling) - riksdagen.se
+- EN 13501-1, EN 1021-1/2 (Euroclass, fire testing) - sis.se
+- Nordic Swan Hotels kriterier - svanen.se
+- LEED, BREEAM, Miljöbyggnad - usgbc.org, breeam.com, sgbc.se
+
+**Status:** Planlegging komplett, klar for Phase 1
+
+---
+
+## 11. SESSION 10 ENDRINGER
 
 ### Map Redesign - Premium Dark Nordic Theme
 | Før | Etter |
@@ -351,4 +393,4 @@ Arkivert til `data/_archive/`:
 
 ---
 
-*Generert: 2025-11-28 Sprint 10 (Regulatory Audit + Icon Cleanup) | Fyra Circular Platform v3.1*
+*Generert: 2025-11-28 Sprint 11 Planning (Regulatory Sources) | Fyra Circular Platform v3.2*
