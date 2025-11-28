@@ -142,7 +142,13 @@
       "costRange": "18,000-60,000 SEK",
       "timeline": "3-8 weeks",
       "website": "https://www.ri.se",
-      "contact": "Via website"
+      "contact": "Via website",
+      "sourceLinks": {
+        "regulatorySourceId": "rise-fire-testing",
+        "phone": "+46 10-516 50 00",
+        "email": "info@ri.se",
+        "lastVerified": "2025-11-28"
+      }
     },
     {
       "name": "SP",
@@ -197,7 +203,13 @@
           "Typically B-s1,d0 for corridor walls/ceilings (varies by building class)",
           "Minimum D-s2,d0 for guest room surfaces",
           "Sprinkler systems may support alternative compliance (case-by-case)"
-        ]
+        ],
+        "sourceLinks": {
+          "regulatorySourceIds": ["bbr-fire-safety", "bbr-verksamhetsklasser"],
+          "officialUrl": "https://www.boverket.se/sv/PBL-kunskapsbanken/regler-om-byggande/brandskydd/",
+          "verksamhetsklasserUrl": "https://www.boverket.se/sv/PBL-kunskapsbanken/regler-om-byggande/brandskydd/dimensionerande-forutsattningar/verksamhetsklasser/",
+          "lastVerified": "2025-11-28"
+        }
       }
     ],
     "authorities": [

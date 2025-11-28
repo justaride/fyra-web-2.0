@@ -4,6 +4,21 @@
   "titleNO": "Offentlig Anskaffelse & Sirkulær Økonomi",
   "description": "Understanding Swedish public procurement (LOU) and how circular construction principles apply - relevant for public projects and as benchmarks for private hotel developments.",
   "descriptionNO": "Forståelse av svensk offentlig anskaffelse (LOU) og hvordan sirkulære byggeprinsipper anvendes - relevant for offentlige prosjekter og som referanse for private hotellutvikling.",
+  "legalRefs": {
+    "regulatorySourceIds": ["lou-2016-1145", "upphandlingsmyndigheten"],
+    "primaryLaw": {
+      "name": "LOU 2016:1145",
+      "officialUrl": "https://www.riksdagen.se/sv/dokument-och-lagar/dokument/svensk-forfattningssamling/lag-20161145-om-offentlig-upphandling_sfs-2016-1145/",
+      "lastUpdated": "SFS 2025:360",
+      "lastVerified": "2025-11-28"
+    },
+    "guidanceAuthority": {
+      "name": "Upphandlingsmyndigheten",
+      "officialUrl": "https://www.upphandlingsmyndigheten.se/",
+      "criteriaService": "https://www.upphandlingsmyndigheten.se/kriterietjansten/",
+      "lastVerified": "2025-11-28"
+    }
+  },
   "sections": [
     {
       "id": "louFramework",

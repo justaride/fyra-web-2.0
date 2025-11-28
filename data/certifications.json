@@ -79,6 +79,12 @@
       "challenge": "Limited specificity about circular design, modularity, or material passports."
     },
     "website": "https://www.nordic-swan-ecolabel.org",
+    "officialDocs": {
+      "regulatorySourceId": "nordic-swan-hotels",
+      "criteriaUrl": "https://www.svanen.se/kategorier/hotell-restaurang-och-matbutik/",
+      "applicationUrl": "https://applications.nordic-ecolabel.org/",
+      "lastVerified": "2025-11-28"
+    },
     "sourceRefs": [
       "nordic_swan_hotels"
     ]
@@ -166,6 +172,11 @@
       "challenge": "Expensive. Limited furniture/textile specificity. Focus on new construction."
     },
     "website": "https://www.usgbc.org/leed",
+    "officialDocs": {
+      "regulatorySourceId": "leed",
+      "criteriaUrl": "https://www.usgbc.org/credits",
+      "lastVerified": "2025-11-28"
+    },
     "sourceRefs": [
       "leed_website"
     ]
@@ -252,6 +263,11 @@
       "challenge": "Costly. Limited interior/furniture specificity."
     },
     "website": "https://www.breeam.com",
+    "officialDocs": {
+      "regulatorySourceId": "breeam",
+      "criteriaUrl": "https://www.breeam.com/",
+      "lastVerified": "2025-11-28"
+    },
     "sourceRefs": [
       "breeam_website"
     ]
@@ -336,6 +352,12 @@
       "challenge": "Limited hotel adoption. Focus on building-level, not interior-specific."
     },
     "website": "https://www.sgbc.se/certifiering/miljobyggnad/",
+    "officialDocs": {
+      "regulatorySourceId": "miljobyggnad",
+      "criteriaUrl": "https://www.sgbc.se/certifiering/miljobyggnad/",
+      "currentVersion": "MB4.0/4.1",
+      "lastVerified": "2025-11-28"
+    },
     "sourceRefs": [
       "miljobyggnad_website",
       "sgbc_membership"
@@ -411,6 +433,13 @@
       "challenge": "Minimal relevance for interior design and materials."
     },
     "website": "https://www.greenkey.global",
+    "officialDocs": {
+      "regulatorySourceId": "green-key",
+      "criteriaUrl": "https://www.greenkey.global/criteria",
+      "applicationUrl": "https://www.greenkey.global/application-process",
+      "criteriaVersion": "2022-2026",
+      "lastVerified": "2025-11-28"
+    },
     "sourceRefs": [
       "green_key_website"
     ]
@@ -576,6 +605,13 @@
       "challenge": "No specific interior or material requirements."
     },
     "website": "https://www.iso.org/standard/60857.html",
+    "officialDocs": {
+      "regulatorySourceId": "iso-14001",
+      "standardUrl": "https://www.iso.org/standard/60857.html",
+      "purchasePrice": "CHF 155",
+      "currentVersion": "ISO 14001:2015",
+      "lastVerified": "2025-11-28"
+    },
     "sourceRefs": [
       "iso_14001"
     ]
