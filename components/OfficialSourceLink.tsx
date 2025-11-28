@@ -15,6 +15,7 @@ export default function OfficialSourceLink({
   type = 'primary',
   size = 'md'
 }: OfficialSourceLinkProps) {
+  if (!url) return null;
   const isPdf = type === 'pdf' || url.toLowerCase().endsWith('.pdf');
 
   const baseClasses = "inline-flex items-center gap-2 font-medium transition-colors";

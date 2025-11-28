@@ -1,12 +1,13 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert, Landmark, Scale, Lightbulb, TrendingUp, BookOpen, Hammer, ClipboardCheck, Sparkles, Eye, EyeOff, Zap, X } from "lucide-react";
+import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert, Landmark, Scale, Lightbulb, TrendingUp, BookOpen, Hammer, ClipboardCheck, Sparkles, Eye, EyeOff, Zap, X, FileSearch } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import Link from 'next/link';
 import { ChartWrapper, CostTimelineScatter, EnforcementHeatmap } from '@/components/charts';
+import RegulatorySourceCard from '@/components/RegulatorySourceCard';
 
 interface FireSafetyTier {
     tier: number;
@@ -165,6 +166,42 @@ interface RegulatoryPracticeData {
     };
 }
 
+interface RegulatorySource {
+    id: string;
+    name: string;
+    nameEN?: string;
+    shortName: string;
+    type: string;
+    jurisdiction: string;
+    category: string;
+    officialUrl: string;
+    pdfUrl?: string;
+    purchaseUrl?: string;
+    criteriaUrl?: string;
+    description: string;
+    keyExcerpts?: {
+        section: string;
+        text: string;
+        relevance: string;
+    }[];
+    verification: {
+        lastChecked: string;
+        urlValid: boolean;
+    };
+    icon: string;
+    color: string;
+}
+
+interface RegulatorySources {
+    metadata: {
+        version: string;
+        created: string;
+        lastVerified: string;
+    };
+    sources: RegulatorySource[];
+    categories: Record<string, { name: string; description: string; icon: string; color: string }>;
+}
+
 async function getRegulations() {
     const filePath = path.join(process.cwd(), 'data', 'regulations_filtered.json');
     const fileContents = await fs.readFile(filePath, 'utf8');
@@ -185,6 +222,12 @@ async function getPublicProcurement(): Promise<PublicProcurementData> {
 
 async function getRegulatoryPractice(): Promise<RegulatoryPracticeData> {
     const filePath = path.join(process.cwd(), 'data', 'regulatory_practice.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getRegulatorySources(): Promise<RegulatorySources> {
+    const filePath = path.join(process.cwd(), 'data', 'regulatory_sources.json');
     const fileContents = await fs.readFile(filePath, 'utf8');
     return JSON.parse(fileContents);
 }
@@ -374,6 +417,11 @@ export default async function RegulationsPage() {
     const fireSafety = await getFireSafety();
     const publicProcurement = await getPublicProcurement();
     const regulatoryPractice = await getRegulatoryPractice();
+    const regulatorySources = await getRegulatorySources();
+
+    // Filter sources by category for different sections
+    const fireSafetySources = regulatorySources.sources.filter(s => s.category === 'fire_safety');
+    const procurementSources = regulatorySources.sources.filter(s => s.category === 'procurement');
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
@@ -1071,6 +1119,73 @@ export default async function RegulationsPage() {
                                 </div>
                             </div>
                         ))}
+                    </div>
+                </section>
+
+                {/* Official Regulatory Sources Section */}
+                <section className="mb-16">
+                    <div className="flex items-center gap-3 mb-6">
+                        <div className="p-2 bg-teal-100 rounded-lg">
+                            <FileSearch className="w-6 h-6 text-teal-600" />
+                        </div>
+                        <div>
+                            <h2 className="text-2xl font-bold text-slate-900">Official Regulatory Sources</h2>
+                            <p className="text-sm text-slate-500">Verified links to primary regulatory documents and standards</p>
+                        </div>
+                    </div>
+
+                    {/* Fire Safety Sources */}
+                    <div className="mb-8">
+                        <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center gap-2">
+                            <Flame className="w-5 h-5 text-rose-600" />
+                            Fire Safety Standards & Regulations
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {fireSafetySources.slice(0, 4).map((source) => (
+                                <RegulatorySourceCard
+                                    key={source.id}
+                                    source={source}
+                                    showExcerpts={true}
+                                />
+                            ))}
+                        </div>
+                        {fireSafetySources.length > 4 && (
+                            <div className="mt-4 grid grid-cols-2 md:grid-cols-4 gap-2">
+                                {fireSafetySources.slice(4).map((source) => (
+                                    <RegulatorySourceCard
+                                        key={source.id}
+                                        source={source}
+                                        compact={true}
+                                    />
+                                ))}
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Procurement Sources */}
+                    <div>
+                        <h3 className="text-lg font-semibold text-slate-800 mb-4 flex items-center gap-2">
+                            <Scale className="w-5 h-5 text-indigo-600" />
+                            Public Procurement & Sustainability Criteria
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {procurementSources.map((source) => (
+                                <RegulatorySourceCard
+                                    key={source.id}
+                                    source={source}
+                                    showExcerpts={true}
+                                />
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Source disclaimer */}
+                    <div className="mt-6 p-4 bg-slate-100 rounded-lg border border-slate-200">
+                        <p className="text-xs text-slate-600">
+                            <strong>Verification Notice:</strong> All URLs verified {regulatorySources.metadata.lastVerified}.
+                            Official regulatory documents may be updated periodically.
+                            Always verify current requirements directly with regulatory authorities.
+                        </p>
                     </div>
                 </section>
 
