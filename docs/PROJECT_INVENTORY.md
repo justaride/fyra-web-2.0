@@ -19,7 +19,7 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 
 ---
 
-## 1. DATAFILER (13 aktive filer)
+## 1. DATAFILER (14 aktive filer)
 
 ### Primære Datakilder
 | Fil | Status | Datapunkter |
@@ -28,14 +28,15 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 | `consultants_enhanced.json` | ✅ AKTIV | 3 Tier-1 PMs |
 | `suppliers_enhanced.json` | ✅ BERIKET | 16 leverandører, hospitality tiers |
 | `caseStudies_clean.json` | ✅ BERIKET | 14 hoteller, tier/relevans scoring |
-| `certifications.json` | ✅ KOMPLETT | 8 sertifiseringer |
-| `public_procurement.json` | ✅ KOMPLETT | 7 seksjoner (LOU, LCC, etc.) |
+| `certifications.json` | ✅ BERIKET Sprint 11 | 8 sertifiseringer + officialDocs |
+| `public_procurement.json` | ✅ BERIKET Sprint 11 | 7 seksjoner + legalRefs |
+| `regulatory_sources.json` | ✅ NY Sprint 11 | 14 verifiserte kilder |
 
 ### Sekundære Datakilder
 | Fil | Status | Innhold |
 |-----|--------|---------|
 | `regulations_filtered.json` | ✅ OK | Regulatory framework |
-| `fire_safety.json` | ✅ BERIKET | Brannkrav, testlabber, kostnadsmatrise |
+| `fire_safety.json` | ✅ BERIKET Sprint 11 | Brannkrav + sourceLinks, testlabber |
 | `specifications.json` | ✅ OK | BVB spesifikasjoner |
 | `templates.json` | ✅ OK | 6 downloadable maler |
 | `sources.json` | ✅ BERIKET | 119 verifiserte kilder |
