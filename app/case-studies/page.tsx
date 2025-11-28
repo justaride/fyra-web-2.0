@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { CaseStudyCard } from '@/components/CaseStudyCard';
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { BookOpen, Hotel, MapPin, Award } from 'lucide-react';
 
@@ -78,6 +79,8 @@ export default async function CaseStudiesPage() {
                     ))}
                 </div>
             </div>
+
+            <Footer />
         </main>
     );
 }

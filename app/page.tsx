@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import { AnimatedStats } from '@/components/AnimatedStats';
 import {
   Recycle,
@@ -517,26 +518,26 @@ export default async function Home() {
       </section>
 
       {/* CTA */}
-      <section className="py-16 bg-slate-900 text-white">
+      <section className="py-16 bg-gradient-to-br from-teal-600 to-teal-700 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Ready to start your circular project?
           </h2>
-          <p className="text-slate-400 mb-8 max-w-xl mx-auto">
+          <p className="text-teal-100 mb-8 max-w-xl mx-auto">
             Browse our supplier directory or connect with expert consultants
             to begin your sustainable hospitality journey.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               href="/suppliers"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-teal-500 text-white rounded-lg font-medium hover:bg-teal-600 transition-colors shadow-lg shadow-teal-500/25"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-white text-teal-700 rounded-lg font-semibold hover:bg-teal-50 transition-colors shadow-lg"
             >
               <Building2 className="w-5 h-5" />
               Browse Suppliers
             </Link>
             <Link
               href="/experts"
-              className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 text-white rounded-lg font-medium hover:bg-white/20 transition-colors"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-teal-800/50 text-white rounded-lg font-medium hover:bg-teal-800 transition-colors border border-white/20"
             >
               <Users className="w-5 h-5" />
               Find Consultants
@@ -544,6 +545,9 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }

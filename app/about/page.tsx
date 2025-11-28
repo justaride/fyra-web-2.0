@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import path from 'path';
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import {
     Award, Building2, Users, Leaf, Globe, Hotel, Landmark,
@@ -655,6 +656,8 @@ export default async function AboutPage() {
                     </div>
                 </section>
             </div>
+
+            <Footer />
         </main>
     );
 }

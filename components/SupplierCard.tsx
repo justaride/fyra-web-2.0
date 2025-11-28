@@ -114,8 +114,8 @@ export function SupplierCard({ supplier, className }: SupplierCardProps) {
                     {/* Nordic Capability Highlight */}
                     <div className="bg-slate-50 rounded-lg p-3 border border-slate-100">
                         <div className="flex justify-between items-start mb-1.5">
-                            <h4 className="text-[10px] font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
-                                <Truck className="w-3 h-3" /> Nordic Infrastructure
+                            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 flex items-center gap-1.5">
+                                <Truck className="w-3.5 h-3.5" /> Nordic Infrastructure
                             </h4>
                             <span className={cn(
                                 "text-[10px] uppercase font-bold px-1.5 py-0.5 rounded border",
@@ -132,7 +132,7 @@ export function SupplierCard({ supplier, className }: SupplierCardProps) {
                     </div>
 
                     <div className="pt-2">
-                        <h4 className="text-[10px] font-bold uppercase tracking-wider text-slate-500 mb-2">Core Services</h4>
+                        <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Core Services</h4>
                         <div className="flex flex-wrap gap-1.5">
                             {supplier.services.slice(0, 4).map((service, i) => (
                                 <span key={i} className="inline-flex items-center rounded-md bg-white border border-slate-200 px-2 py-1 text-xs font-medium text-slate-700 shadow-sm">

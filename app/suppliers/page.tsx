@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import SupplierDirectory from '@/components/SupplierDirectory';
 import { Header } from '@/components/Header';
+import { Footer } from '@/components/Footer';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { Building2, MapPin, CheckCircle, Globe, Scale } from 'lucide-react';
 import { ComparisonProvider } from '@/lib/ComparisonContext';
@@ -88,6 +89,8 @@ export default async function SuppliersPage() {
         {/* Comparison components */}
         <ComparisonBar />
         <ComparisonTable />
+
+        <Footer />
       </main>
     </ComparisonProvider>
   );
