@@ -21,6 +21,8 @@
 - Created data validation script (`scripts/validate-chart-data.js`)
 - Added source reference for internal research documents
 - 100% source coverage verified for all chart data
+- **SSR Fix:** Added mounted state check to Recharts components for static export compatibility
+- Commits: `50e2cc2` (charts), `bd49713` (docs), `d8e4985` (SSR fix)
 
 ### Sprint 8: Printable Report (2025-11-28)
 - Created `/report` route with full platform documentation
@@ -467,6 +469,9 @@ All core deliverables complete. Future enhancements are optional.
 ## GIT HISTORY
 
 ```
+d8e4985 fix: Add client-side rendering check for Recharts components
+bd49713 docs: Update documentation with Sprint 9 visualizations
+50e2cc2 feat: Add Sprint 9 data visualizations (charts + validation)
 79cfcbf feat: Add Public Procurement section (NCH Obj 5)
 0a6e9d6 docs: Update project documentation with UX Consistency Pass
 342ecd9 feat: Add consistent hero sections to all pages (UX Option A)
