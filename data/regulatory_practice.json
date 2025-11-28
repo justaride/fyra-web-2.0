@@ -1,0 +1,193 @@
+{
+  "regulatoryPractice": {
+    "title": "Regulatory Practice vs Written Law",
+    "subtitle": "Understanding what's actually enforced in Nordic hotel renovations",
+    "description": "A practical guide to the gap between written regulations and enforcement reality. Based on industry consultations and project experience.",
+    "enforcementLevels": [
+      {
+        "category": "Fire Safety (Walls/Ceilings)",
+        "regulation": "BBR Ch.5 - B-s1,d0 Euroclass",
+        "writtenRequirement": "All wall/ceiling surfaces in hotels must meet B-s1,d0",
+        "enforcementLevel": "high",
+        "enforcementDescription": "Strictly enforced - Fire authority inspects. Project stoppage without compliance.",
+        "practicalNotes": "No flexibility. Always test or get certified materials.",
+        "riskIfIgnored": "Cannot get slutbesked (final clearance)",
+        "fyraRecommendation": "Always comply. Budget for testing."
+      },
+      {
+        "category": "Fire Safety (Furniture)",
+        "regulation": "EN 1021-1/2 (Upholstered)",
+        "writtenRequirement": "Upholstered furniture in public areas must meet EN 1021-1 minimum",
+        "enforcementLevel": "medium",
+        "enforcementDescription": "Insurance-driven more than authority-driven. Insurers may require documentation.",
+        "practicalNotes": "Many hotels operate with mixed compliance. Insurance is the real enforcer.",
+        "riskIfIgnored": "Insurance premium increase 10-30% or coverage denial",
+        "fyraRecommendation": "Prioritize high-traffic public areas. Guest rooms less scrutinized."
+      },
+      {
+        "category": "Building Permit",
+        "regulation": "PBL (Plan- och Bygglagen)",
+        "writtenRequirement": "Building permit required for structural changes, facade changes, use changes",
+        "enforcementLevel": "medium",
+        "enforcementDescription": "Required for structural work. Interior FF&E rarely requires permit.",
+        "practicalNotes": "Pure interior renovation (furniture, finishes) typically permit-exempt.",
+        "riskIfIgnored": "Municipal enforcement if structural work discovered",
+        "fyraRecommendation": "Interior-only projects can often proceed without permit. Verify scope."
+      },
+      {
+        "category": "Accessibility",
+        "regulation": "BBR Ch.3 - HIN2",
+        "writtenRequirement": "Public buildings must be accessible. Hotels need accessible rooms.",
+        "enforcementLevel": "medium",
+        "enforcementDescription": "Checked at building permit stage. Less scrutiny for interior updates.",
+        "practicalNotes": "Existing hotels grandfathered unless major renovation triggers compliance.",
+        "riskIfIgnored": "Required only if permit-triggering work",
+        "fyraRecommendation": "Check if renovation scope triggers accessibility upgrade requirements."
+      },
+      {
+        "category": "CE Marking (Products)",
+        "regulation": "EU Construction Products Regulation",
+        "writtenRequirement": "Construction products must have CE marking and DoP",
+        "enforcementLevel": "low",
+        "enforcementDescription": "Rarely checked for furniture/loose items. More relevant for fixed installations.",
+        "practicalNotes": "Furniture typically not CE-marked unless built-in. Focus on fire certs instead.",
+        "riskIfIgnored": "Minimal for loose furniture",
+        "fyraRecommendation": "CE marking less relevant than fire certification for FF&E."
+      },
+      {
+        "category": "EPD/Environmental Declarations",
+        "regulation": "Voluntary (becoming expected)",
+        "writtenRequirement": "No legal requirement, but increasingly expected in public procurement",
+        "enforcementLevel": "low",
+        "enforcementDescription": "Currently voluntary. Growing expectation from ESG-focused clients.",
+        "practicalNotes": "Private hotels rarely require. Public sector projects increasingly demand.",
+        "riskIfIgnored": "May lose competitive advantage in ESG-sensitive projects",
+        "fyraRecommendation": "Nice-to-have. Focus on fire compliance first."
+      },
+      {
+        "category": "Material Passports",
+        "regulation": "EU Circular Economy (incoming)",
+        "writtenRequirement": "Digital product passports required by 2027 for some product categories",
+        "enforcementLevel": "future",
+        "enforcementDescription": "Not yet enforced. Regulations being developed.",
+        "practicalNotes": "Prepare documentation now for future requirements. Early adopter advantage.",
+        "riskIfIgnored": "None currently. Strategic disadvantage in 2-3 years",
+        "fyraRecommendation": "Start building material passport capability now."
+      }
+    ]
+  },
+  "interiorRenovation": {
+    "title": "Interior Renovation Pathway",
+    "subtitle": "Lower-burden approach for FF&E updates",
+    "description": "Interior-only renovations (furniture, finishes, equipment) typically avoid building permit requirements and have simplified compliance paths.",
+    "advantages": [
+      {
+        "title": "No Building Permit Required",
+        "description": "Pure interior changes (furniture, finishes, non-structural elements) typically don't trigger building permit requirements",
+        "savings": "6-12 weeks and 50,000-150,000 SEK in permit process"
+      },
+      {
+        "title": "No Accessibility Upgrade Trigger",
+        "description": "Interior-only work doesn't trigger mandatory accessibility improvements required for major renovations",
+        "savings": "Potentially 500,000+ SEK in accessibility upgrades"
+      },
+      {
+        "title": "Existing Fire Systems Sufficient",
+        "description": "If building's sprinklers, alarms, and compartmentation are current, furniture swap doesn't require system updates",
+        "savings": "No fire system engineering required"
+      },
+      {
+        "title": "Simplified Insurance Process",
+        "description": "Furniture updates with fire certification typically only require insurer notification, not re-underwriting",
+        "savings": "Faster project timeline"
+      }
+    ],
+    "scopeGuidelines": {
+      "included": [
+        "Furniture replacement (beds, chairs, sofas, tables, desks)",
+        "Soft furnishings (curtains, rugs, bedding)",
+        "Lighting fixtures (if not touching electrical infrastructure)",
+        "Wall art and decorative elements",
+        "Non-structural partitions (if temporary/movable)",
+        "Flooring overlay (if not affecting floor levels)"
+      ],
+      "excluded": [
+        "Structural wall removal or addition",
+        "Facade changes (windows, cladding)",
+        "MEP system modifications (plumbing, HVAC, electrical mains)",
+        "Fire compartment changes",
+        "Change of use (e.g., office to hotel)",
+        "Adding rooms or floor area"
+      ],
+      "grayArea": [
+        "Fixed joinery (built-in wardrobes) - usually OK",
+        "Kitchen equipment replacement - depends on ventilation impact",
+        "Bathroom fixture replacement - OK if no plumbing changes",
+        "Door replacement - OK if fire rating maintained",
+        "Electrical outlet addition - minor works, varies by municipality"
+      ]
+    },
+    "complianceChecklist": [
+      {
+        "item": "Verify scope is interior-only",
+        "action": "Document that no structural, facade, or MEP changes planned",
+        "priority": "high"
+      },
+      {
+        "item": "Fire certification for upholstered items",
+        "action": "Obtain EN 1021-1/2 test reports or manufacturer certifications",
+        "priority": "high"
+      },
+      {
+        "item": "Wall/ceiling material compliance",
+        "action": "Verify any new wall coverings meet B-s1,d0 if in escape routes",
+        "priority": "high"
+      },
+      {
+        "item": "Notify insurer",
+        "action": "Send project summary and fire certification plan to insurer",
+        "priority": "medium"
+      },
+      {
+        "item": "Check lease/property restrictions",
+        "action": "Review lease terms for landlord approval requirements",
+        "priority": "medium"
+      },
+      {
+        "item": "Document material provenance",
+        "action": "Keep records of sourcing for warranty and future resale",
+        "priority": "low"
+      }
+    ],
+    "projectTypes": [
+      {
+        "type": "Quick Refresh",
+        "description": "Soft furnishings, art, accessories only",
+        "timeline": "2-4 weeks",
+        "compliance": "Minimal - just fire certs for upholstery",
+        "permitRequired": false
+      },
+      {
+        "type": "Room Renovation",
+        "description": "Full furniture swap, new curtains, minor finishes",
+        "timeline": "4-8 weeks",
+        "compliance": "Fire certs, verify floor finishes, insurer notification",
+        "permitRequired": false
+      },
+      {
+        "type": "Lobby/Public Area Update",
+        "description": "Furniture, lighting, decorative elements",
+        "timeline": "4-12 weeks",
+        "compliance": "Higher scrutiny - all items need fire documentation",
+        "permitRequired": false
+      },
+      {
+        "type": "Full Interior Overhaul",
+        "description": "All rooms + public areas, may include joinery",
+        "timeline": "12-24 weeks",
+        "compliance": "Comprehensive fire package, may need fire engineer sign-off",
+        "permitRequired": "Unlikely unless touching structure"
+      }
+    ]
+  }
+}

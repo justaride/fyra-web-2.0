@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert, Landmark, Scale, Lightbulb, TrendingUp, BookOpen } from "lucide-react";
+import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert, Landmark, Scale, Lightbulb, TrendingUp, BookOpen, Hammer, ClipboardCheck, Sparkles, Eye, EyeOff, Zap, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
@@ -109,6 +109,59 @@ interface PublicProcurementData {
     keyResources: ProcurementResource[];
 }
 
+interface EnforcementLevel {
+    category: string;
+    regulation: string;
+    writtenRequirement: string;
+    enforcementLevel: 'high' | 'medium' | 'low' | 'future';
+    enforcementDescription: string;
+    practicalNotes: string;
+    riskIfIgnored: string;
+    fyraRecommendation: string;
+}
+
+interface RenovationAdvantage {
+    title: string;
+    description: string;
+    savings: string;
+}
+
+interface ChecklistItem {
+    item: string;
+    action: string;
+    priority: 'high' | 'medium' | 'low';
+}
+
+interface ProjectType {
+    type: string;
+    description: string;
+    timeline: string;
+    compliance: string;
+    permitRequired: boolean | string;
+}
+
+interface RegulatoryPracticeData {
+    regulatoryPractice: {
+        title: string;
+        subtitle: string;
+        description: string;
+        enforcementLevels: EnforcementLevel[];
+    };
+    interiorRenovation: {
+        title: string;
+        subtitle: string;
+        description: string;
+        advantages: RenovationAdvantage[];
+        scopeGuidelines: {
+            included: string[];
+            excluded: string[];
+            grayArea: string[];
+        };
+        complianceChecklist: ChecklistItem[];
+        projectTypes: ProjectType[];
+    };
+}
+
 async function getRegulations() {
     const filePath = path.join(process.cwd(), 'data', 'regulations_filtered.json');
     const fileContents = await fs.readFile(filePath, 'utf8');
@@ -125,6 +178,30 @@ async function getPublicProcurement(): Promise<PublicProcurementData> {
     const filePath = path.join(process.cwd(), 'data', 'public_procurement.json');
     const fileContents = await fs.readFile(filePath, 'utf8');
     return JSON.parse(fileContents);
+}
+
+async function getRegulatoryPractice(): Promise<RegulatoryPracticeData> {
+    const filePath = path.join(process.cwd(), 'data', 'regulatory_practice.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+// Enforcement level badge component
+function EnforcementBadge({ level }: { level: string }) {
+    const config = {
+        high: { bg: 'bg-red-100', text: 'text-red-700', border: 'border-red-200', icon: Eye, label: 'Strictly Enforced' },
+        medium: { bg: 'bg-amber-100', text: 'text-amber-700', border: 'border-amber-200', icon: Eye, label: 'Moderately Enforced' },
+        low: { bg: 'bg-emerald-100', text: 'text-emerald-700', border: 'border-emerald-200', icon: EyeOff, label: 'Rarely Checked' },
+        future: { bg: 'bg-indigo-100', text: 'text-indigo-700', border: 'border-indigo-200', icon: Clock, label: 'Coming Soon' },
+    };
+    const c = config[level as keyof typeof config] || config.medium;
+    const Icon = c.icon;
+    return (
+        <span className={cn("inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-medium border", c.bg, c.text, c.border)}>
+            <Icon className="w-3.5 h-3.5" />
+            {c.label}
+        </span>
+    );
 }
 
 // Professional tier icon component replacing emoji icons
@@ -293,6 +370,7 @@ export default async function RegulationsPage() {
     const regulations = await getRegulations();
     const fireSafety = await getFireSafety();
     const publicProcurement = await getPublicProcurement();
+    const regulatoryPractice = await getRegulatoryPractice();
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
@@ -536,6 +614,262 @@ export default async function RegulationsPage() {
                             </div>
                         </div>
                     )}
+                </section>
+
+                {/* Regulatory Practice Section */}
+                <section className="mb-16">
+                    <div className="flex items-center gap-3 mb-6">
+                        <div className="p-2 bg-purple-100 rounded-lg">
+                            <Eye className="w-6 h-6 text-purple-600" />
+                        </div>
+                        <div>
+                            <h2 className="text-2xl font-bold text-slate-900">{regulatoryPractice.regulatoryPractice.title}</h2>
+                            <p className="text-sm text-slate-500">{regulatoryPractice.regulatoryPractice.subtitle}</p>
+                        </div>
+                    </div>
+
+                    {/* Introduction */}
+                    <div className="bg-gradient-to-br from-purple-800 to-purple-900 rounded-2xl p-6 mb-8 text-white">
+                        <p className="text-purple-200 text-sm mb-4">{regulatoryPractice.regulatoryPractice.description}</p>
+                        <div className="bg-white/10 rounded-lg p-4">
+                            <p className="text-xs text-purple-100">
+                                <strong>Key Insight:</strong> Understanding enforcement reality helps you prioritize compliance efforts and budget. Fire safety is non-negotiable; EPDs are nice-to-have.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Enforcement Levels Table */}
+                    <div className="bg-white rounded-xl border shadow-sm overflow-hidden mb-8">
+                        <div className="overflow-x-auto">
+                            <table className="w-full text-sm">
+                                <thead>
+                                    <tr className="bg-slate-50 border-b">
+                                        <th className="text-left py-4 px-5 font-semibold text-slate-600">Category</th>
+                                        <th className="text-left py-4 px-5 font-semibold text-slate-600">Regulation</th>
+                                        <th className="text-left py-4 px-5 font-semibold text-slate-600">Enforcement</th>
+                                        <th className="text-left py-4 px-5 font-semibold text-slate-600 hidden lg:table-cell">Risk if Ignored</th>
+                                        <th className="text-left py-4 px-5 font-semibold text-slate-600 hidden xl:table-cell">Fyra Recommendation</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {regulatoryPractice.regulatoryPractice.enforcementLevels.map((item, idx) => (
+                                        <tr key={idx} className="border-b border-slate-100 hover:bg-slate-50">
+                                            <td className="py-4 px-5">
+                                                <span className="font-medium text-slate-900">{item.category}</span>
+                                            </td>
+                                            <td className="py-4 px-5">
+                                                <span className="text-xs font-mono bg-slate-100 text-slate-700 px-2 py-1 rounded">{item.regulation}</span>
+                                            </td>
+                                            <td className="py-4 px-5">
+                                                <EnforcementBadge level={item.enforcementLevel} />
+                                                <p className="text-xs text-slate-500 mt-2">{item.enforcementDescription}</p>
+                                            </td>
+                                            <td className="py-4 px-5 hidden lg:table-cell">
+                                                <span className={cn(
+                                                    "text-xs",
+                                                    item.enforcementLevel === 'high' ? 'text-red-600 font-medium' : 'text-slate-600'
+                                                )}>
+                                                    {item.riskIfIgnored}
+                                                </span>
+                                            </td>
+                                            <td className="py-4 px-5 hidden xl:table-cell">
+                                                <span className="text-xs text-purple-700 font-medium">{item.fyraRecommendation}</span>
+                                            </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    {/* Mobile-friendly cards for enforcement details */}
+                    <div className="lg:hidden space-y-4 mb-8">
+                        {regulatoryPractice.regulatoryPractice.enforcementLevels.map((item, idx) => (
+                            <div key={idx} className="bg-white rounded-xl border shadow-sm p-5">
+                                <div className="flex items-start justify-between mb-3">
+                                    <h4 className="font-semibold text-slate-900">{item.category}</h4>
+                                    <EnforcementBadge level={item.enforcementLevel} />
+                                </div>
+                                <p className="text-xs font-mono bg-slate-100 text-slate-700 px-2 py-1 rounded inline-block mb-3">{item.regulation}</p>
+                                <p className="text-sm text-slate-600 mb-3">{item.practicalNotes}</p>
+                                <div className="pt-3 border-t border-slate-100 space-y-2">
+                                    <div>
+                                        <span className="text-xs text-slate-500">Risk if ignored:</span>
+                                        <p className={cn(
+                                            "text-sm",
+                                            item.enforcementLevel === 'high' ? 'text-red-600 font-medium' : 'text-slate-700'
+                                        )}>{item.riskIfIgnored}</p>
+                                    </div>
+                                    <div>
+                                        <span className="text-xs text-slate-500">Fyra says:</span>
+                                        <p className="text-sm text-purple-700 font-medium">{item.fyraRecommendation}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Interior Renovation Pathway Section */}
+                <section className="mb-16">
+                    <div className="flex items-center gap-3 mb-6">
+                        <div className="p-2 bg-teal-100 rounded-lg">
+                            <Hammer className="w-6 h-6 text-teal-600" />
+                        </div>
+                        <div>
+                            <h2 className="text-2xl font-bold text-slate-900">{regulatoryPractice.interiorRenovation.title}</h2>
+                            <p className="text-sm text-slate-500">{regulatoryPractice.interiorRenovation.subtitle}</p>
+                        </div>
+                    </div>
+
+                    {/* Introduction */}
+                    <div className="bg-gradient-to-br from-teal-800 to-teal-900 rounded-2xl p-6 mb-8 text-white">
+                        <p className="text-teal-200 text-sm mb-4">{regulatoryPractice.interiorRenovation.description}</p>
+                        <div className="bg-white/10 rounded-lg p-4">
+                            <p className="text-xs text-teal-100">
+                                <strong>The Fyra Advantage:</strong> Interior-focused FF&E updates typically avoid building permit requirements, reducing both timeline and cost significantly.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Advantages Grid */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                        {regulatoryPractice.interiorRenovation.advantages.map((advantage, idx) => (
+                            <div key={idx} className="bg-white rounded-xl border shadow-sm p-5">
+                                <div className="flex items-start gap-3">
+                                    <div className="p-2 bg-teal-100 rounded-lg shrink-0">
+                                        <Zap className="w-5 h-5 text-teal-600" />
+                                    </div>
+                                    <div>
+                                        <h4 className="font-semibold text-slate-900 mb-1">{advantage.title}</h4>
+                                        <p className="text-sm text-slate-600 mb-2">{advantage.description}</p>
+                                        <span className="inline-flex items-center gap-1 px-2 py-1 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-full">
+                                            <CheckCircle className="w-3 h-3" />
+                                            {advantage.savings}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+
+                    {/* Scope Guidelines */}
+                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+                        {/* Included */}
+                        <div className="bg-emerald-50 rounded-xl border border-emerald-200 p-5">
+                            <h4 className="font-semibold text-emerald-900 mb-3 flex items-center gap-2">
+                                <CheckCircle className="w-5 h-5" />
+                                Typically Included (No Permit)
+                            </h4>
+                            <ul className="space-y-2">
+                                {regulatoryPractice.interiorRenovation.scopeGuidelines.included.map((item, idx) => (
+                                    <li key={idx} className="text-sm text-emerald-800 flex items-start gap-2">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 mt-2 shrink-0" />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Excluded */}
+                        <div className="bg-red-50 rounded-xl border border-red-200 p-5">
+                            <h4 className="font-semibold text-red-900 mb-3 flex items-center gap-2">
+                                <X className="w-5 h-5" />
+                                Requires Permit
+                            </h4>
+                            <ul className="space-y-2">
+                                {regulatoryPractice.interiorRenovation.scopeGuidelines.excluded.map((item, idx) => (
+                                    <li key={idx} className="text-sm text-red-800 flex items-start gap-2">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-red-500 mt-2 shrink-0" />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        {/* Gray Area */}
+                        <div className="bg-amber-50 rounded-xl border border-amber-200 p-5">
+                            <h4 className="font-semibold text-amber-900 mb-3 flex items-center gap-2">
+                                <AlertTriangle className="w-5 h-5" />
+                                Gray Area (Verify)
+                            </h4>
+                            <ul className="space-y-2">
+                                {regulatoryPractice.interiorRenovation.scopeGuidelines.grayArea.map((item, idx) => (
+                                    <li key={idx} className="text-sm text-amber-800 flex items-start gap-2">
+                                        <span className="w-1.5 h-1.5 rounded-full bg-amber-500 mt-2 shrink-0" />
+                                        {item}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
+                    </div>
+
+                    {/* Project Types */}
+                    <div className="bg-white rounded-xl border shadow-sm p-6 mb-8">
+                        <h3 className="font-bold text-slate-900 mb-4">Project Types & Compliance Requirements</h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4">
+                            {regulatoryPractice.interiorRenovation.projectTypes.map((project, idx) => (
+                                <div key={idx} className="bg-slate-50 rounded-lg p-4">
+                                    <h4 className="font-semibold text-slate-900 mb-1">{project.type}</h4>
+                                    <p className="text-xs text-slate-500 mb-3">{project.description}</p>
+                                    <div className="space-y-2 text-xs">
+                                        <div className="flex items-center justify-between">
+                                            <span className="text-slate-500">Timeline</span>
+                                            <span className="font-medium text-slate-700">{project.timeline}</span>
+                                        </div>
+                                        <div className="flex items-center justify-between">
+                                            <span className="text-slate-500">Permit</span>
+                                            <span className={cn(
+                                                "font-medium",
+                                                project.permitRequired === false ? "text-emerald-600" : "text-amber-600"
+                                            )}>
+                                                {project.permitRequired === false ? "Not Required" : String(project.permitRequired)}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p className="text-xs text-slate-600 mt-3 pt-3 border-t border-slate-200">{project.compliance}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* Compliance Checklist */}
+                    <div className="bg-teal-50 rounded-xl border border-teal-200 p-6">
+                        <h3 className="font-bold text-teal-900 mb-4 flex items-center gap-2">
+                            <ClipboardCheck className="w-5 h-5" />
+                            Interior Renovation Compliance Checklist
+                        </h3>
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            {regulatoryPractice.interiorRenovation.complianceChecklist.map((item, idx) => (
+                                <div key={idx} className="bg-white rounded-lg p-4 border border-teal-100">
+                                    <div className="flex items-start gap-3">
+                                        <div className={cn(
+                                            "p-1 rounded shrink-0",
+                                            item.priority === 'high' ? 'bg-red-100' :
+                                            item.priority === 'medium' ? 'bg-amber-100' : 'bg-slate-100'
+                                        )}>
+                                            <CheckCircle className={cn(
+                                                "w-4 h-4",
+                                                item.priority === 'high' ? 'text-red-600' :
+                                                item.priority === 'medium' ? 'text-amber-600' : 'text-slate-500'
+                                            )} />
+                                        </div>
+                                        <div>
+                                            <h4 className="font-medium text-slate-900 text-sm">{item.item}</h4>
+                                            <p className="text-xs text-slate-600 mt-1">{item.action}</p>
+                                            <span className={cn(
+                                                "inline-block mt-2 px-2 py-0.5 text-[10px] font-medium rounded-full",
+                                                item.priority === 'high' ? 'bg-red-100 text-red-700' :
+                                                item.priority === 'medium' ? 'bg-amber-100 text-amber-700' : 'bg-slate-100 text-slate-600'
+                                            )}>
+                                                {item.priority.toUpperCase()} PRIORITY
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
                 </section>
 
                 {/* Public Procurement Section (Obj 5) */}
