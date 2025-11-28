@@ -261,13 +261,127 @@ ul.checklist li {
 
 /* Print styles */
 @media print {
-  .no-print {
+  .no-print,
+  .print\:hidden {
     display: none !important;
   }
 
   body {
-    background: white;
-    color: black;
+    background: white !important;
+    color: black !important;
+    font-size: 11pt !important;
+    line-height: 1.4 !important;
+  }
+
+  /* Page setup */
+  @page {
+    size: A4;
+    margin: 2cm 1.5cm;
+  }
+
+  @page :first {
+    margin-top: 0;
+  }
+
+  /* Page breaks */
+  .print\:page-break-after-always {
+    page-break-after: always !important;
+  }
+
+  .print\:page-break-before-always {
+    page-break-before: always !important;
+  }
+
+  .print\:page-break-inside-avoid {
+    page-break-inside: avoid !important;
+  }
+
+  /* Remove shadows and backgrounds for print */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* Ensure borders print */
+  .border,
+  .border-slate-200,
+  .border-slate-300 {
+    border-color: #d1d5db !important;
+  }
+
+  /* Make sure backgrounds print */
+  .bg-slate-50,
+  .bg-slate-100 {
+    background-color: #f9fafb !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-teal-100,
+  .bg-teal-50 {
+    background-color: #ccfbf1 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-blue-100 {
+    background-color: #dbeafe !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  .bg-amber-100 {
+    background-color: #fef3c7 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Print link URLs */
+  a[href]:after {
+    content: none !important;
+  }
+
+  /* Typography adjustments */
+  h1 { font-size: 24pt !important; }
+  h2 { font-size: 18pt !important; }
+  h3 { font-size: 14pt !important; }
+  h4 { font-size: 12pt !important; }
+
+  /* Ensure text colors */
+  .text-slate-900 { color: #111827 !important; }
+  .text-slate-700 { color: #374151 !important; }
+  .text-slate-600 { color: #4b5563 !important; }
+  .text-slate-500 { color: #6b7280 !important; }
+  .text-teal-600 { color: #0d9488 !important; }
+  .text-teal-700 { color: #0f766e !important; }
+
+  /* Table styling for print */
+  table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+  }
+
+  th, td {
+    border: 1px solid #d1d5db !important;
+    padding: 8px !important;
+  }
+
+  th {
+    background-color: #f3f4f6 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Optimize images */
+  img {
+    max-width: 100% !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* Cards should not break */
+  .rounded-lg,
+  .rounded-xl {
+    page-break-inside: avoid !important;
   }
 }
 
