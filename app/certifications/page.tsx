@@ -1,11 +1,12 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { Award, Building2, Leaf, Recycle, CheckCircle, AlertCircle, ArrowRight, ExternalLink, FileCheck } from "lucide-react";
+import { Award, Building2, Leaf, Recycle, CheckCircle, AlertCircle, ArrowRight, ExternalLink, FileCheck, FileSearch } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import SourceVerificationBadge from '@/components/SourceVerificationBadge';
 import OfficialSourceLink from '@/components/OfficialSourceLink';
+import RegulatorySourceCard from '@/components/RegulatorySourceCard';
 
 interface Certification {
     id: string;
@@ -54,10 +55,35 @@ interface Certification {
     };
 }
 
+interface RegulatorySource {
+    id: string;
+    name: string;
+    shortName: string;
+    type: string;
+    jurisdiction: string;
+    category: string;
+    officialUrl: string;
+    pdfUrl?: string;
+    purchaseUrl?: string;
+    criteriaUrl?: string;
+    description: string;
+    keyExcerpts?: { section: string; text: string; relevance: string }[];
+    verification: { lastChecked: string; urlValid: boolean };
+    icon: string;
+    color: string;
+}
+
 async function getCertifications(): Promise<Certification[]> {
     const filePath = path.join(process.cwd(), 'data', 'certifications.json');
     const fileContents = await fs.readFile(filePath, 'utf8');
     return JSON.parse(fileContents);
+}
+
+async function getEnvironmentalSources(): Promise<RegulatorySource[]> {
+    const filePath = path.join(process.cwd(), 'data', 'regulatory_sources.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    const data = JSON.parse(fileContents);
+    return data.sources.filter((s: RegulatorySource) => s.category === 'environmental');
 }
 
 function getTypeIcon(type: string) {
@@ -109,6 +135,7 @@ function RelevanceStars({ score }: { score: number }) {
 
 export default async function CertificationsPage() {
     const certifications = await getCertifications();
+    const environmentalSources = await getEnvironmentalSources();
 
     // Sort by relevance score
     const sortedCertifications = [...certifications].sort((a, b) => b.relevanceScore - a.relevanceScore);
@@ -393,6 +420,28 @@ export default async function CertificationsPage() {
                         </table>
                     </div>
                 </div>
+
+                {/* Official Environmental Sources Section */}
+                <section className="mt-12">
+                    <div className="flex items-center gap-3 mb-6">
+                        <div className="p-2 bg-emerald-100 rounded-lg">
+                            <FileSearch className="w-6 h-6 text-emerald-600" />
+                        </div>
+                        <div>
+                            <h2 className="text-xl font-bold text-slate-900">Official Certification Sources</h2>
+                            <p className="text-sm text-slate-500">Verified links to certification criteria and application portals</p>
+                        </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {environmentalSources.map((source) => (
+                            <RegulatorySourceCard
+                                key={source.id}
+                                source={source}
+                                compact={true}
+                            />
+                        ))}
+                    </div>
+                </section>
             </div>
         </main>
     );

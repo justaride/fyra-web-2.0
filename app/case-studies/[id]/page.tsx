@@ -23,6 +23,7 @@ import {
     Linkedin
 } from 'lucide-react';
 import SourceReferences from '@/components/SourceReferences';
+import SourceVerificationBadge from '@/components/SourceVerificationBadge';
 import { JsonLd, generateArticleSchema } from '@/components/JsonLd';
 
 interface CaseStudyContact {
@@ -466,6 +467,13 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
                         {/* Sources */}
                         {study.sourceRefs && study.sourceRefs.length > 0 && (
                             <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
+                                <div className="flex items-center justify-between mb-4">
+                                    <h3 className="font-bold text-slate-900">Sources</h3>
+                                    <SourceVerificationBadge
+                                        lastVerified="2025-11-28"
+                                        compact={true}
+                                    />
+                                </div>
                                 <SourceReferences sourceRefs={study.sourceRefs} />
                             </div>
                         )}
