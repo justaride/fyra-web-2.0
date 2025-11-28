@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import {
   RadarChart,
   PolarGrid,
@@ -103,7 +104,21 @@ export function SupplierRadar({
   supplier,
   height = 300
 }: SupplierRadarProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const data = transformSupplierToRadar(supplier);
+
+  if (!mounted) {
+    return (
+      <div style={{ width: '100%', height }} className="flex items-center justify-center bg-slate-50 rounded-lg">
+        <div className="text-slate-400 text-sm">Loading chart...</div>
+      </div>
+    );
+  }
 
   return (
     <ResponsiveContainer width="100%" height={height}>

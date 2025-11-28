@@ -1,5 +1,6 @@
 'use client';
 
+import { useState, useEffect } from 'react';
 import {
   ScatterChart,
   Scatter,
@@ -79,6 +80,12 @@ export function CostTimelineScatter({
   tiers,
   height = 300
 }: CostTimelineScatterProps) {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
   const data: ScatterDataPoint[] = tiers.map(tier => ({
     name: tier.name,
     tier: tier.tier,
@@ -88,6 +95,14 @@ export function CostTimelineScatter({
     timelineText: tier.timeline,
     riskLevel: tier.riskLevel
   }));
+
+  if (!mounted) {
+    return (
+      <div style={{ width: '100%', height }} className="flex items-center justify-center bg-slate-50 rounded-lg">
+        <div className="text-slate-400 text-sm">Loading chart...</div>
+      </div>
+    );
+  }
 
   return (
     <ResponsiveContainer width="100%" height={height}>
