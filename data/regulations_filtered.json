@@ -106,25 +106,25 @@
         "confidence": "Medium"
       },
       {
-        "title": "├─ Original manufacturer fire certificate → ✓ BEST",
+        "title": "├─ Original manufacturer fire certificate - [OK] BEST",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "├─ RISE/SP test report (EN 1021-1/2, EN 13501-1) → ✓ ACCEPTABLE",
+        "title": "├─ RISE/SP test report (EN 1021-1/2, EN 13501-1) - [OK] ACCEPTABLE",
         "description": "",
         "scope": "EU / International",
         "confidence": "High"
       },
       {
-        "title": "├─ Fire retardant treatment certificate → ✓ ACCEPTABLE",
+        "title": "├─ Fire retardant treatment certificate - [OK] ACCEPTABLE",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "├─ Performance-based equivalency (fire engineer letter) → ✓ MAY WORK (verify with authority)",
+        "title": "├─ Performance-based equivalency (fire engineer letter) - [OK] MAY WORK (verify with authority)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -364,7 +364,7 @@
         "confidence": "Medium"
       },
       {
-        "title": "SECTION 4: FIRE SAFETY CERTIFICATION ⚠️ CRITICAL",
+        "title": "SECTION 4: FIRE SAFETY CERTIFICATION [WARNING] CRITICAL",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -473,12 +473,12 @@
       },
       {
         "title": "What Räddningstjänsten Inspects:",
-        "description": "✓ Fire alarm and detection systems ✓ Sprinkler systems (if installed) ✓ Fire extinguishers ✓ Escape route signage and lighting ✓ Fire doors (self-closing, no obstructions) ✓ Corridor width clearances",
+        "description": "[OK] Fire alarm and detection systems [OK] Sprinkler systems (if installed) [OK] Fire extinguishers [OK] Escape route signage and lighting [OK] Fire doors (self-closing, no obstructions) [OK] Corridor width clearances",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "⚠️ Loose furnishings: Rarely inspected UNLESS complaint or after incident",
+        "title": "[WARNING] Loose furnishings: Rarely inspected UNLESS complaint or after incident",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -568,7 +568,7 @@
         "confidence": "Medium"
       },
       {
-        "title": "📋 FIRE SAFETY PLAN:",
+        "title": "[CHECKLIST] FIRE SAFETY PLAN:",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -839,8 +839,8 @@
         "confidence": "Medium"
       },
       {
-        "title": "✓ Fire Classification: Solid oak ≥40mm thickness = Euroclass D-s2,d0 inherent performance (acceptabl...",
-        "description": "✓ Fire Classification: Solid oak ≥40mm thickness = Euroclass D-s2,d0 inherent performance (acceptable for guest room use per BBR 5:223)",
+        "title": "[OK] Fire Classification: Solid oak ≥40mm thickness = Euroclass D-s2,d0 inherent performance (acceptabl...",
+        "description": "[OK] Fire Classification: Solid oak ≥40mm thickness = Euroclass D-s2,d0 inherent performance (acceptable for guest room use per BBR 5:223)",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
@@ -1414,7 +1414,7 @@
         "confidence": "High"
       },
       {
-        "title": "├─ YES + Documentation available → ✓ PROCEED (verify with insurance)",
+        "title": "├─ YES + Documentation available - [OK] PROCEED (verify with insurance)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -1504,7 +1504,7 @@
         "confidence": "Medium"
       },
       {
-        "title": "├─ YES (YLLW, Input, RP level) → ✓ Use their documentation",
+        "title": "├─ YES (YLLW, Input, RP level) - [OK] Use their documentation",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -1522,25 +1522,25 @@
         "confidence": "Medium"
       },
       {
-        "title": "✓ Supplier commercial invoice (proves \"product\" not \"waste\")",
+        "title": "[OK] Supplier commercial invoice (proves \"product\" not \"waste\")",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "✓ Material composition declaration",
+        "title": "[OK] Material composition declaration",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "✓ Visual inspection report (condition grading)",
+        "title": "[OK] Visual inspection report (condition grading)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "✓ Hazardous material screening (especially pre-1980 items)",
+        "title": "[OK] Hazardous material screening (especially pre-1980 items)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -1552,19 +1552,19 @@
         "confidence": "Medium"
       },
       {
-        "title": "├─ Engineering assessment letter → ✓ For structural reuse",
+        "title": "├─ Engineering assessment letter - [OK] For structural reuse",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "├─ Manufacturer warranty/lifetime specs → ✓ For commercial furniture",
+        "title": "├─ Manufacturer warranty/lifetime specs - [OK] For commercial furniture",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "├─ Supplier 3-year warranty (YLLW model) → ✓ GOOD",
+        "title": "├─ Supplier 3-year warranty (YLLW model) - [OK] GOOD",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -1607,7 +1607,7 @@
       },
       {
         "title": "CONDITION CRITERIA:",
-        "description": "✓ Fabric original (or identical replacement from same manufacturer) ✓ Foam/padding unaltered ✓ Structure intact (no repairs changing fire behavior) ✗ Reupholstered = NEW TESTING REQUIRED ✗ Foam replaced = NEW TESTING REQUIRED",
+        "description": "[OK] Fabric original (or identical replacement from same manufacturer) [OK] Foam/padding unaltered [OK] Structure intact (no repairs changing fire behavior) [X] Reupholstered = NEW TESTING REQUIRED [X] Foam replaced = NEW TESTING REQUIRED",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
@@ -1918,8 +1918,8 @@
         "confidence": "Medium"
       },
       {
-        "title": "✓ Recycled Content (% by weight) ✓ Recyclability (ease of material separation) ✓ Material Passport (...",
-        "description": "✓ Recycled Content (% by weight) ✓ Recyclability (ease of material separation) ✓ Material Passport (documentation enabling future reuse) ✓ Take-Back Programs (supplier offers end-of-life collection) ✓ Durability (design life exceeding standard) ✓ Repair/Refurbishment (spare parts availability)",
+        "title": "[OK] Recycled Content (% by weight) [OK] Recyclability (ease of material separation) [OK] Material Passport (...",
+        "description": "[OK] Recycled Content (% by weight) [OK] Recyclability (ease of material separation) [OK] Material Passport (documentation enabling future reuse) [OK] Take-Back Programs (supplier offers end-of-life collection) [OK] Durability (design life exceeding standard) [OK] Repair/Refurbishment (spare parts availability)",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
@@ -2021,7 +2021,7 @@
       },
       {
         "title": "This language:",
-        "description": "✓ Opens door for circular procurement ✓ Maintains environmental standards ✓ Doesn't default to \"new only\" ✓ Educates contractors on evaluation criteria",
+        "description": "[OK] Opens door for circular procurement [OK] Maintains environmental standards [OK] Doesn't default to \"new only\" [OK] Educates contractors on evaluation criteria",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
@@ -2075,7 +2075,7 @@
       },
       {
         "title": "Why This Works:",
-        "description": "✓ Clear performance requirements (fire, durability, dimensions) ✓ Allows contractor creativity (new OR reused) ✓ Evaluation criteria transparent ✓ Sustainability weighted but not mandatory (reduces risk of bid protests)",
+        "description": "[OK] Clear performance requirements (fire, durability, dimensions) [OK] Allows contractor creativity (new OR reused) [OK] Evaluation criteria transparent [OK] Sustainability weighted but not mandatory (reduces risk of bid protests)",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
@@ -2332,13 +2332,13 @@
         "confidence": "Medium"
       },
       {
-        "title": "✓ Documentation complete",
+        "title": "[OK] Documentation complete",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "✓ Cleanliness standard met (hotel-grade)",
+        "title": "[OK] Cleanliness standard met (hotel-grade)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -2362,13 +2362,13 @@
         "confidence": "Medium"
       },
       {
-        "title": "✓ PROCEED if ≥75% boxes checked",
+        "title": "[OK] PROCEED if ≥75% boxes checked",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "⚠️ PROCEED WITH CAUTION if 50-75% (increased risk/cost)",
+        "title": "[WARNING] PROCEED WITH CAUTION if 50-75% (increased risk/cost)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -2392,13 +2392,13 @@
         "confidence": "Medium"
       },
       {
-        "title": "✓ PROCEED if ≥80% boxes checked (wood furniture = low-risk category)",
+        "title": "[OK] PROCEED if ≥80% boxes checked (wood furniture = low-risk category)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "⚠️ PROCEED WITH CAUTION if 60-80%",
+        "title": "[WARNING] PROCEED WITH CAUTION if 60-80%",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -2818,7 +2818,7 @@
         "confidence": "Medium"
       },
       {
-        "title": "📋 SAMPLE DOCUMENTATION:",
+        "title": "[CHECKLIST] SAMPLE DOCUMENTATION:",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "High"
@@ -2842,7 +2842,7 @@
         "confidence": "Medium"
       },
       {
-        "title": "📋 QUESTIONS TO ASK:",
+        "title": "[CHECKLIST] QUESTIONS TO ASK:",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -2866,25 +2866,25 @@
         "confidence": "Medium"
       },
       {
-        "title": "✓ Maintain complete documentation (fire certs, inspection reports, warranties)",
+        "title": "[OK] Maintain complete documentation (fire certs, inspection reports, warranties)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "✓ Regular maintenance inspections (quarterly for high-use items)",
+        "title": "[OK] Regular maintenance inspections (quarterly for high-use items)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "✓ Remove items showing significant wear BEFORE failure",
+        "title": "[OK] Remove items showing significant wear BEFORE failure",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "✓ Incident response plan (document, photograph, preserve evidence)",
+        "title": "[OK] Incident response plan (document, photograph, preserve evidence)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
@@ -3124,13 +3124,13 @@
         "confidence": "High"
       },
       {
-        "title": "REALITY: ✓ Structural/building systems inspections: Highly enforced, BUT reused interiors rarely structural ✓ Fire authority inspections: Focus on systems (alarms, sprinklers, doors), NOT furniture ✓ Loose furnishings: Virtually NEVER inspected by authorities (insurance is real concern)",
+        "title": "REALITY: [OK] Structural/building systems inspections: Highly enforced, BUT reused interiors rarely structural [OK] Fire authority inspections: Focus on systems (alarms, sprinklers, doors), NOT furniture [OK] Loose furnishings: Virtually NEVER inspected by authorities (insurance is real concern)",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "Medium"
       },
       {
-        "title": "REALITY: ✓ Standard hospitality policies cover furniture meeting fire standards (new OR reused) ✓ NO premium increase if properly certified ✓ Key = DOCUMENTATION, not material age",
+        "title": "REALITY: [OK] Standard hospitality policies cover furniture meeting fire standards (new OR reused) [OK] NO premium increase if properly certified [OK] Key = DOCUMENTATION, not material age",
         "description": "",
         "scope": "National (Sweden)",
         "confidence": "High"

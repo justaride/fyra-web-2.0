@@ -3,6 +3,7 @@ import path from 'path';
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { Clock, AlertTriangle, CheckCircle, Building2, Flame, Globe, Sparkles, ArrowRight, Info, Link as LinkIcon } from 'lucide-react';
+import type { ReactNode } from 'react';
 import Link from 'next/link';
 
 interface Supplier {
@@ -68,12 +69,20 @@ interface Scenario {
     }>;
 }
 
-const iconMap: Record<string, React.ReactNode> = {
+const iconMap: Record<string, ReactNode> = {
     'rush_project': <Flame className="w-6 h-6" />,
     'large_hotel': <Building2 className="w-6 h-6" />,
     'boutique_hotel': <Sparkles className="w-6 h-6" />,
     'cross_border': <Globe className="w-6 h-6" />,
     'fire_critical': <AlertTriangle className="w-6 h-6" />,
+};
+
+const navIconMap: Record<string, ReactNode> = {
+    'rush_project': <Flame className="w-3 h-3" />,
+    'large_hotel': <Building2 className="w-3 h-3" />,
+    'boutique_hotel': <Sparkles className="w-3 h-3" />,
+    'cross_border': <Globe className="w-3 h-3" />,
+    'fire_critical': <AlertTriangle className="w-3 h-3" />,
 };
 
 const colorMap: Record<string, string> = {
@@ -102,7 +111,6 @@ function ScenarioCard({ scenario }: { scenario: Scenario }) {
                     <div className="p-2 bg-white/20 rounded-lg">
                         {icon}
                     </div>
-                    <span className="text-3xl">{scenario.icon}</span>
                 </div>
                 <h3 className="text-xl font-bold mb-1">{scenario.title}</h3>
                 <p className="text-white/90 text-sm">{scenario.description}</p>
@@ -343,16 +351,21 @@ export default async function ScenariosPage() {
             <div className="container mx-auto px-4 py-8">
                 {/* Quick Navigation */}
                 <div className="flex flex-wrap gap-2 mb-8">
-                    {scenarios.map((scenario) => (
-                        <a
-                            key={scenario.id}
-                            href={`#${scenario.id}`}
-                            className="inline-flex items-center gap-2 px-3 py-1.5 bg-white border rounded-full text-sm hover:bg-slate-50 transition-colors"
-                        >
-                            <span>{scenario.icon}</span>
-                            <span className="font-medium text-slate-700">{scenario.title}</span>
-                        </a>
-                    ))}
+                    {scenarios.map((scenario) => {
+                        const navColor = colorMap[scenario.id] || 'bg-slate-500';
+                        return (
+                            <a
+                                key={scenario.id}
+                                href={`#${scenario.id}`}
+                                className="inline-flex items-center gap-2 px-3 py-1.5 bg-white border rounded-full text-sm hover:bg-slate-50 transition-colors"
+                            >
+                                <span className={`${navColor} text-white p-1.5 rounded w-5 h-5 flex items-center justify-center`}>
+                                    {navIconMap[scenario.id] || <Building2 className="w-3 h-3" />}
+                                </span>
+                                <span className="font-medium text-slate-700">{scenario.title}</span>
+                            </a>
+                        );
+                    })}
                 </div>
 
                 {/* Scenarios Grid */}

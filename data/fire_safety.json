@@ -31,7 +31,7 @@
       "costRange": "0-5,000 SEK",
       "timeline": "1-2 weeks",
       "riskLevel": "low",
-      "icon": "✅",
+      "icon": "ShieldCheck",
       "color": "emerald"
     },
     {
@@ -70,7 +70,7 @@
       "strategy": "YLLW reupholsters with Kvadrat, Gabriel, Maharam fire-rated contract fabrics (EN 1021-1/2 certified). Textile test certificate supports compliance; final furniture configuration may require verification. Frame reuse + compliant textile = typically accepted.",
       "strategyNO": "YLLW remøblerer med Kvadrat, Gabriel, Maharam brannsikre kontrakt-tekstiler (EN 1021-1/2 sertifisert). Testsertifikat fra tekstil-leverandør tilfredsstiller krav. Ramme-gjenbruk + godkjent tekstil = godkjent system.",
       "riskLevel": "medium",
-      "icon": "⚠️",
+      "icon": "AlertTriangle",
       "color": "yellow"
     },
     {
@@ -125,7 +125,7 @@
         }
       ],
       "riskLevel": "high",
-      "icon": "🚨",
+      "icon": "ShieldAlert",
       "color": "red"
     }
   ],

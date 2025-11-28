@@ -159,7 +159,7 @@
       "Hotel bed frames (critical gap - not stocked)",
       "Small boutique projects (<20 items) - may be deprioritized"
     ],
-    "confidenceLevel": "⭐⭐⭐⭐⭐ VERY HIGH",
+    "confidenceLevel": "5/5 VERY HIGH",
     "verificationStatus": "Multi-source verified for major claims. 30% annual growth rate documented. Hospitality service line explicit on website. Nobis project confirmed multiple sources.",
     "lastUpdated": "2024-2025",
     "businessModel": "Circular"
@@ -322,7 +322,7 @@
       "Projects without documented hospitality experience validation",
       "Fire safety-critical projects where proactive coordination is essential (less systematic than YLLW)"
     ],
-    "confidenceLevel": "⭐⭐⭐⭐ HIGH",
+    "confidenceLevel": "4/5 HIGH",
     "verificationStatus": "Multi-source verified for organizational scale and E.ON project. Specific current Greenified inventory needs platform check. Exact hospitality project list requires direct contact.",
     "lastUpdated": "2024-2025",
     "businessModel": "Hybrid"
@@ -476,7 +476,7 @@
       "Projects requiring systematic fire safety documentation",
       "Projects needing premium aesthetics"
     ],
-    "confidenceLevel": "⭐⭐⭐ MEDIUM-HIGH",
+    "confidenceLevel": "3/5 MEDIUM-HIGH",
     "verificationStatus": "Company website and scale verifiable. ~30 years operation confirmed multiple sources. Hospitality-specific capabilities need confirmation.",
     "lastUpdated": "2024-2025",
     "businessModel": "Circular"
@@ -609,7 +609,7 @@
       "Projects needing single-source supplier",
       "Budget-constrained projects (15-25% consultant fees add cost)"
     ],
-    "confidenceLevel": "⭐⭐⭐ MEDIUM-HIGH",
+    "confidenceLevel": "3/5 MEDIUM-HIGH",
     "verificationStatus": "Role and specialization verified. Fabege partnership documented. Compliance specialization confirmed. Specific project portfolio and pricing require direct contact.",
     "lastUpdated": "2024-2025",
     "businessModel": "Circular"
@@ -750,7 +750,7 @@
       "Fire safety compliance-critical projects",
       "Projects requiring premium aesthetics"
     ],
-    "confidenceLevel": "⭐⭐⭐ MEDIUM",
+    "confidenceLevel": "3/5 MEDIUM",
     "verificationStatus": "Geographic coverage verified (8 locations). Hospitality-specific capabilities unclear. Documentation/testing services need confirmation.",
     "lastUpdated": "2024-2025",
     "businessModel": "Circular"
@@ -877,7 +877,7 @@
       "Cross-border Finland shipping (heavy materials cost-prohibitive)",
       "Fast-track projects (demolition-dependent sourcing creates unpredictable lead times)"
     ],
-    "confidenceLevel": "⭐⭐⭐ MEDIUM",
+    "confidenceLevel": "3/5 MEDIUM",
     "verificationStatus": "Scale and focus area verified (5,000 m² warehouse). Hospitality-specific capabilities unknown. Documentation processes unclear.",
     "lastUpdated": "2024-2025",
     "businessModel": "Circular"
@@ -990,7 +990,7 @@
       "Fire safety compliance projects",
       "Fast-track projects (individual seller negotiation time-intensive)"
     ],
-    "confidenceLevel": "⭐⭐⭐ MEDIUM",
+    "confidenceLevel": "3/5 MEDIUM",
     "verificationStatus": "Platform model and premium brands verified. Specific inventory variable by sellers. No systematic testing or warranties.",
     "lastUpdated": "2024-2025",
     "businessModel": "Circular"
@@ -1102,7 +1102,7 @@
       "Fast-track projects (restoration adds weeks)",
       "Fire safety compliance projects"
     ],
-    "confidenceLevel": "⭐⭐ MEDIUM-LOW",
+    "confidenceLevel": "2/5 MEDIUM-LOW",
     "verificationStatus": "Regional Göteborg presence confirmed. As-is sales model typical of salvage yards. Specific current inventory unpredictable.",
     "lastUpdated": "2024-2025",
     "businessModel": "Circular"
@@ -1198,7 +1198,7 @@
       "High-design boutique areas",
       "Projects requiring custom refurbishment"
     ],
-    "confidenceLevel": "⭐⭐⭐ HIGH (for what it is)",
+    "confidenceLevel": "3/5 HIGH (for what it is)",
     "verificationStatus": "Retailer status verified. Reuse section active and visible online.",
     "lastUpdated": "2024-2025",
     "businessModel": "Hybrid"
@@ -1238,7 +1238,7 @@
     ],
     "hospitalityReadiness": {
       "tier": "Tier 3",
-      "score": "⭐⭐ LOW-MEDIUM for building materials only",
+      "score": "2/5 LOW-MEDIUM for building materials only",
       "strengths": [
         "Long-established Malmö presence (20+ years)",
         "Building materials complement furniture suppliers",
@@ -1296,7 +1296,7 @@
       "Cross-border shipping",
       "Fast-track projects"
     ],
-    "confidenceLevel": "⭐⭐ MEDIUM-LOW",
+    "confidenceLevel": "2/5 MEDIUM-LOW",
     "verificationStatus": "20+ year history and Malmö presence verified. Specific capabilities require direct contact.",
     "lastUpdated": "2024-2025",
     "businessModel": "Circular"
@@ -1387,7 +1387,7 @@
       "Standard hotel fit-outs",
       "Projects requiring certified fire-rated materials"
     ],
-    "confidenceLevel": "⭐⭐ MEDIUM (Startup)",
+    "confidenceLevel": "2/5 MEDIUM (Startup)",
     "verificationStatus": "Startup status and focus verified via website and research. Specific inventory needs real-time check.",
     "lastUpdated": "2024-2025",
     "businessModel": "Circular"
@@ -1489,7 +1489,7 @@
       "Budget-focused renovations",
       "Fast-track projects"
     ],
-    "confidenceLevel": "⭐⭐⭐⭐⭐ VERY HIGH",
+    "confidenceLevel": "5/5 VERY HIGH",
     "verificationStatus": "Top-rated in PROMPT 2 research. Portfolio and capabilities confirmed.",
     "lastUpdated": "2025-11-27",
     "businessModel": "Circular"
@@ -1585,7 +1585,7 @@
       "Volume chain hotels",
       "Cross-border projects"
     ],
-    "confidenceLevel": "⭐⭐⭐⭐ HIGH",
+    "confidenceLevel": "4/5 HIGH",
     "verificationStatus": "Identified in PROMPT 2 research as strong regional option.",
     "lastUpdated": "2025-11-27",
     "businessModel": "Circular"
@@ -1596,10 +1596,10 @@
       "materdesign_website"
     ],
     "name": "MATER DESIGN",
-    "description": "⚠️ MANUFACTURER (NOT REUSE OPERATOR): Copenhagen-based designer manufacturer producing NEW furniture from recycled materials (upcycled products). Known for ocean plastic chairs and coffee waste-based furniture. Relevant for clients wanting 'circular materials' but NOT reused furniture. Included for reference as Copenhagen hospitality supplier but does not fit Fyra's B2B reuse focus.",
+    "description": "[NOTE: MANUFACTURER, NOT REUSE OPERATOR] Copenhagen-based designer manufacturer producing NEW furniture from recycled materials (upcycled products). Known for ocean plastic chairs and coffee waste-based furniture. Relevant for clients wanting 'circular materials' but NOT reused furniture. Included for reference as Copenhagen hospitality supplier but does not fit Fyra's B2B reuse focus.",
     "location": "Copenhagen, Denmark",
     "services": [
-      "⚠️ MANUFACTURES NEW FURNITURE from recycled materials",
+      "[NOTE] MANUFACTURES NEW FURNITURE from recycled materials",
       "Upcycled designer furniture production",
       "Ocean plastic furniture (Nova Sea chair)",
       "Coffee waste-based furniture lines",
@@ -1607,7 +1607,7 @@
       "International export capabilities"
     ],
     "capabilities": {
-      "volume": "✅ Contract quantities proven. Villa Copenhagen project (~390 rooms) demonstrates hospitality scale capability.",
+      "volume": "Contract quantities proven. Villa Copenhagen project (~390 rooms) demonstrates hospitality scale capability.",
       "leadTime": "Manufacturing lead times (not reuse sourcing). Likely 8-16 weeks for custom production runs.",
       "inventory": "NEW PRODUCTS from recycled materials - not secondhand/reused inventory. Designer furniture manufacturing.",
       "logistics": "International export capability. Denmark to Sweden feasible via Öresund bridge."
@@ -1625,7 +1625,7 @@
     ],
     "hospitalityReadiness": {
       "tier": "Not Applicable (Manufacturer)",
-      "score": "⭐⭐⭐⭐ HIGH for NEW furniture from recycled materials (NOT for B2B reuse)",
+      "score": "4/5 HIGH for NEW furniture from recycled materials (NOT for B2B reuse)",
       "strengths": [
         "Proven luxury hospitality experience (Villa Copenhagen 390-room hotel)",
         "Designer quality aesthetic suitable for premium hotels",
@@ -1635,7 +1635,7 @@
         "Strong sustainability credentials"
       ],
       "gaps": [
-        "⚠️ CRITICAL: NOT a reuse operator - manufactures NEW products",
+        "[CRITICAL] NOT a reuse operator - manufactures NEW products",
         "Does not provide secondhand/refurbished furniture",
         "Premium designer pricing (not cost-competitive with reuse)",
         "Manufacturing model incompatible with Fyra's reuse focus",
@@ -1656,7 +1656,7 @@
       "Copenhagen location strategic for Danish projects"
     ],
     "gaps": [
-      "⚠️ NOT A REUSE OPERATOR - fundamental incompatibility with Fyra's model",
+      "[NOTE] NOT A REUSE OPERATOR - fundamental incompatibility with Fyra's model",
       "Manufactures new products (not secondhand)",
       "Premium pricing not cost-competitive with reused furniture",
       "Different circular economy segment (material recycling vs. product reuse)",
@@ -1677,18 +1677,18 @@
     "volumeDiscounts": "Likely available for large hospitality projects",
     "aestheticDescription": "Premium Danish designer furniture - modern/contemporary aesthetic with sustainability story",
     "bestFor": [
-      "⚠️ NOT FOR REUSE PROJECTS",
+      "[NOTE] NOT FOR REUSE PROJECTS",
       "Clients wanting NEW furniture from recycled materials",
       "Premium Danish hospitality projects with strong sustainability marketing",
       "Projects where 'circular materials' story valued over cost savings"
     ],
     "avoidFor": [
-      "⚠️ ANY REUSE-FOCUSED PROJECT",
+      "[NOTE] ANY REUSE-FOCUSED PROJECT",
       "Budget-conscious hotel renovations",
       "Projects seeking cost savings through secondhand furniture",
       "Fyra's core B2B reuse operator network"
     ],
-    "confidenceLevel": "⭐⭐⭐⭐ HIGH for manufacturer capabilities",
+    "confidenceLevel": "4/5 HIGH for manufacturer capabilities",
     "verificationStatus": "Villa Copenhagen project verified. Designer manufacturer status clear. NOT suitable for B2B reuse operator list.",
     "lastUpdated": "2024-2025",
     "businessModel": "Hybrid"

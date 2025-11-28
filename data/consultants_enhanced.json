@@ -3,7 +3,7 @@
     {
       "id": "forsen_ab",
       "name": "FORSEN AB",
-      "priority": "★★★★★ HIGHEST",
+      "priority": "5/5 HIGHEST",
       "tagline": "Hospitality PM Specialist with Construction Management Expertise",
       "description": "Sweden's leading independent project and construction management company with proven hospitality track record and circular material procurement experience. Only consultant with 10+ documented hotel projects AND Construction Management expertise enabling flexible circular procurement.",
       "headquarters": "Stockholm, Sweden",
@@ -28,7 +28,7 @@
       "certification": "PBL Inspector (kontrollansvarig) certified - can sign off on building permits",
       "hospitalityProjects": {
         "count": "10+",
-        "rating": "★★★★★",
+        "rating": "5/5",
         "description": "Industry leader in Swedish Construction Management with recognized hospitality PM specialty",
         "featured": [
           {
@@ -74,7 +74,7 @@
       },
       "sustainability": {
         "circularEconomy": {
-          "rating": "★★★☆☆ EMERGING",
+          "rating": "3/5 EMERGING",
           "description": "Historically <15% reuse typical but actively integrating circular principles. Key strength: CM contracting expertise enables flexibility for circular procurement.",
           "demonstrated": [
             "Grow Hotel: Wrote reuse requirements into CM contracts; demonstrated procurement of reclaimed materials",
@@ -82,7 +82,7 @@
           ]
         },
         "lca": {
-          "rating": "★★☆☆☆ LIMITED",
+          "rating": "2/5 LIMITED",
           "description": "Relies on external environmental consultants. Can coordinate LCA but doesn't perform in-house."
         },
         "certifications": {
@@ -90,11 +90,11 @@
           "description": "No specific certification specialists on staff. Would partner with external certification consultants (e.g., Piacon)."
         },
         "fireSafety": {
-          "rating": "★★★☆☆ STANDARD",
+          "rating": "3/5 STANDARD",
           "description": "Standard PM compliance tracking. No specialized reuse material fire testing expertise documented. Would coordinate with testing labs (RISE) but not expert themselves."
         },
         "supplyChain": {
-          "rating": "★★☆☆☆ DEVELOPING",
+          "rating": "2/5 DEVELOPING",
           "description": "No established reuse supplier network documented. Gap: Fyra would need to provide or identify reuse suppliers. Can write requirements into contracts once suppliers identified."
         }
       },
@@ -186,7 +186,7 @@
     {
       "id": "sweco_ab",
       "name": "SWECO",
-      "priority": "★★★★☆ VERY HIGH",
+      "priority": "4/5 VERY HIGH",
       "tagline": "Multidisciplinary Powerhouse with Proven Circular Economy ROI",
       "description": "Largest A&E consultancy in Europe with quantified circular economy success. Blique by Nobis project achieved €8.6M materials reused and 3,600 tons CO₂ saved. Full-service architecture + engineering + sustainability + PM under one roof.",
       "headquarters": "Stockholm, Sweden",
@@ -222,7 +222,7 @@
       ],
       "hospitalityProjects": {
         "count": "3-5 major projects",
-        "rating": "★★★☆☆",
+        "rating": "3/5",
         "description": "Strong office/commercial portfolio transferable to hospitality",
         "featured": [
           {
@@ -248,7 +248,7 @@
       },
       "sustainability": {
         "circularEconomy": {
-          "rating": "★★★★☆ HIGH",
+          "rating": "4/5 HIGH",
           "description": "30-50% reuse achieved in some projects (Blique demonstrates high end of range). Systematic approach using C3 tool (Carbon Cost Compass) for LCA. Published guidance on reuse coordination. Corporate commitment: Science-based climate targets; 2045 net-zero goal.",
           "tools": [
             "C3 (Carbon Cost Compass): LCA tool for quantifying carbon + cost impacts",
@@ -257,19 +257,19 @@
           ]
         },
         "lca": {
-          "rating": "★★★★★ EXCELLENT",
+          "rating": "5/5 EXCELLENT",
           "description": "In-house LCA specialists. C3 tool for project-specific analysis. Climate declaration experience. Can quantify embodied carbon savings (as demonstrated in Blique)."
         },
         "certifications": {
-          "rating": "★★★★★ EXCELLENT",
+          "rating": "5/5 EXCELLENT",
           "description": "Dozens of certified LEED/BREEAM/Miljöbyggnad assessors. Achieved LEED Gold (Blique), Nordic Swan. Sweden Green Building Council (SGBC) members. Can manage full certification process."
         },
         "fireSafety": {
-          "rating": "★★★☆☆ ENGINEERING CAPACITY",
+          "rating": "3/5 ENGINEERING CAPACITY",
           "description": "Engineering capability exists (MEP division). Specific reuse material fire testing not explicitly documented. Likely can coordinate but not specialist like RISE lab."
         },
         "bvb": {
-          "rating": "★★★★☆ STRONG",
+          "rating": "4/5 STRONG",
           "description": "Active in SGBC development of BVB standards. Understands BVB assessment framework. Can align circular materials with BVB requirements."
         }
       },
@@ -374,7 +374,7 @@
     {
       "id": "hifab_ab",
       "name": "HIFAB AB",
-      "priority": "★★★★☆ HIGH",
+      "priority": "4/5 HIGH",
       "tagline": "Established PM with 70 Years Experience and Growing Sustainability Practice",
       "description": "Sweden's established project management and owner's advisory firm with 70+ years experience and 400 employees across 15 offices nationwide. Pure PM focus (does NOT do design) makes natural partner for Fyra. Known for cost-effective, reliable execution with growing energy/sustainability practice.",
       "headquarters": "Stockholm, Sweden",
@@ -417,7 +417,7 @@
       ],
       "hospitalityProjects": {
         "count": "5-10 projects over 70-year history",
-        "rating": "★★★☆☆",
+        "rating": "3/5",
         "description": "PM roles for hotel and tourism-related builds. Systematic PM approach vs. specialized hospitality focus. Less hospitality depth than Forsen's 10+ hotels but solid track record.",
         "featured": [
           {
@@ -449,24 +449,24 @@
       },
       "sustainability": {
         "circularEconomy": {
-          "rating": "★★☆☆☆ EMERGING/GROWING",
+          "rating": "2/5 EMERGING/GROWING",
           "description": "Historically NOT sustainability specialist firm. <15% reuse typical in past projects. RECENT DEVELOPMENT: Integrating energy/climate advisory into PM services. CEO focus on energy strategy signals top-down sustainability commitment.",
           "energyFocus": "Growing expertise in energy-efficient buildings and operations. Strengthening operational optimization capability. Advisory division developing climate consulting."
         },
         "lca": {
-          "rating": "★☆☆☆☆ LIMITED",
+          "rating": "1/5 LIMITED",
           "description": "Would rely on external environmental consultant. Growing capability via energy/climate advisory integration."
         },
         "certifications": {
-          "rating": "★☆☆☆☆ EXTERNAL PARTNER REQUIRED",
+          "rating": "1/5 EXTERNAL PARTNER REQUIRED",
           "description": "Not sustainability-specialist firm. Would require external certification consultant (e.g., Piacon) for LEED/BREEAM."
         },
         "fireSafety": {
-          "rating": "★★★★☆ STRONG",
+          "rating": "4/5 STRONG",
           "description": "70+ years navigating Swedish building rules = very good BBR knowledge. No issues handling compliance tracking. Standard PM capability."
         },
         "regulatory": {
-          "rating": "★★★★★ EXCELLENT",
+          "rating": "5/5 EXCELLENT",
           "description": "BBR: Very good (70+ years). Municipal Processes: 15 offices = broad municipal relationships nationwide. Permits: Standard PM coordination. Work Environment (Arbetsmiljöverket): Internal routines for construction site safety."
         }
       },
@@ -633,9 +633,9 @@
   "marketGap": {
     "finding": "NO Swedish consultant specializes in hospitality + circularity + whole-project PM simultaneously",
     "breakdown": {
-      "forsen": "Hospitality + PM ✓ | Circularity ★★★☆☆",
-      "sweco": "PM + Circularity ✓ | Hospitality ★★★☆☆",
-      "hifab": "PM + Hospitality ✓ | Circularity ★★☆☆☆"
+      "forsen": "Hospitality + PM [OK] | Circularity 3/5",
+      "sweco": "PM + Circularity [OK] | Hospitality 3/5",
+      "hifab": "PM + Hospitality [OK] | Circularity 2/5"
     },
     "fyraOpportunity": "BE the hospitality circular specialist who partners with Swedish PMs rather than competes"
   }
