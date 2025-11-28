@@ -1,12 +1,35 @@
 # FYRA CIRCULAR PLATFORM - IMPLEMENTATION PROGRESS
 
-**Last Updated:** 2025-11-28 (Sprint 11 Complete)
+**Last Updated:** 2025-11-28 (Sprint 12 Complete)
 **Current State:** ✅ LIVE - 49 Static Pages
 **Deployment:** https://justaride.github.io/fyra-web-2.0/
 
 ---
 
 ## SPRINT LOG (November 2025)
+
+### Sprint 12: Source Verification Integration (2025-11-28) - COMPLETE
+Extended source verification system to certifications and case studies pages.
+
+#### Sprint 12A: Environmental Sources in Certifications ✅ COMPLETE
+- Added "Official Certification Sources" section to `/certifications`
+- RegulatorySourceCard components for environmental category sources
+- Filters `regulatory_sources.json` to display certification criteria links
+
+#### Sprint 12B: Case Studies Source Verification ✅ COMPLETE
+- Added SourceVerificationBadge to case study detail pages (`/case-studies/[id]`)
+- Added verification notice to case studies listing page
+- "100% Sources Verified" stat added to hero section
+- All 14 case studies display verification timestamp (2025-11-28)
+
+**Files Modified:**
+- `app/certifications/page.tsx` - Environmental sources section
+- `app/case-studies/page.tsx` - Verification notice + hero stat
+- `app/case-studies/[id]/page.tsx` - SourceVerificationBadge integration
+
+**Commit:** `5818ae6` - feat(sprint-12): Add source verification to certifications and case studies
+
+---
 
 ### Sprint 11: Regulatory Fact-Check & Source System (2025-11-28) - COMPLETE
 Comprehensive regulatory source verification system with official links, PDFs, legal text excerpts, and interactive UI.
