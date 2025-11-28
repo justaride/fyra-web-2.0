@@ -18,7 +18,8 @@ import {
   Sparkles,
   CheckCircle,
   TrendingUp,
-  Hotel
+  Hotel,
+  Download
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -197,6 +198,23 @@ export default async function Home() {
               caseStudyCount={caseStudies.length}
               consultantCount={consultantsCount}
             />
+
+            {/* Download Report CTA */}
+            <div className="mt-8">
+              <Link
+                href="/report"
+                className="inline-flex items-center gap-3 px-6 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl hover:bg-white/20 transition-all group"
+              >
+                <div className="w-10 h-10 bg-teal-500 rounded-lg flex items-center justify-center">
+                  <Download className="w-5 h-5 text-white" />
+                </div>
+                <div className="text-left">
+                  <div className="font-semibold text-white">Download Full Report</div>
+                  <div className="text-sm text-slate-300">Get the complete platform as PDF</div>
+                </div>
+                <ArrowRight className="w-5 h-5 text-white/70 group-hover:translate-x-1 transition-transform ml-2" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
