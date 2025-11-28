@@ -41,6 +41,7 @@ The Fyra Circular Platform provides Nordic hotels with a comprehensive resource 
 - **Styling:** Tailwind CSS 4
 - **Icons:** Lucide React
 - **Maps:** Leaflet (supplier locations)
+- **Charts:** Recharts (data visualizations)
 - **Deployment:** GitHub Pages (static export)
 
 ---
@@ -133,6 +134,13 @@ npm run build
 ---
 
 ## Recent Updates (November 2025)
+
+### Sprint 9 - Data Visualizations
+- **Chart Components** - Added Recharts-based visualizations
+- **Supplier Radar** - 6-axis capability profile on supplier detail pages
+- **Fire Safety Charts** - Cost vs timeline scatter plot on regulations page
+- **Enforcement Heatmap** - Visual matrix of regulatory enforcement levels
+- **Data Validation** - Script to verify all data points have source references
 
 ### Sprint 8 - Printable Report
 - **Full Report Page** (`/report`) - Comprehensive PDF-ready documentation

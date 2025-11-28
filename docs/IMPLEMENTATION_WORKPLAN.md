@@ -483,20 +483,20 @@ console.log('✓ All chart data is properly sourced');
 
 ## IMPLEMENTATION CHECKLIST
 
-### Sprint 9: Foundation + Quick Wins
-- [ ] Install recharts
-- [ ] Create `components/charts/` directory
-- [ ] Create ChartWrapper component
-- [ ] Implement SupplierRadar component
-- [ ] Add radar to `/suppliers/[id]` page
-- [ ] Implement CostTimelineScatter
-- [ ] Add scatter to `/regulations` page
-- [ ] Implement EnforcementHeatmap
-- [ ] Add heatmap to `/regulations` page
-- [ ] Create data validation script
-- [ ] Run validation, fix any missing sources
-- [ ] Test print output for `/report`
-- [ ] Commit and push
+### Sprint 9: Foundation + Quick Wins ✅ COMPLETED
+- [x] Install recharts
+- [x] Create `components/charts/` directory
+- [x] Create ChartWrapper component
+- [x] Implement SupplierRadar component
+- [x] Add radar to `/suppliers/[id]` page
+- [x] Implement CostTimelineScatter
+- [x] Add scatter to `/regulations` page
+- [x] Implement EnforcementHeatmap
+- [x] Add heatmap to `/regulations` page
+- [x] Create data validation script
+- [x] Run validation, fix any missing sources
+- [x] Test print output for `/report`
+- [x] Commit and push (commit `50e2cc2`)
 
 ### Sprint 10: Medium Effort
 - [ ] Implement CaseStudyTimeline
