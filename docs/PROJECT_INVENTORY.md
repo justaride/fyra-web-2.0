@@ -1,8 +1,8 @@
 # FYRA CIRCULAR PLATFORM - Prosjektinventar
 
 **Dato:** 2025-11-28
-**Versjon:** 3.2
-**Status:** ✅ LEVERINGSKLAR - Sprint 11 planlagt (Regulatory Sources)
+**Versjon:** 3.3
+**Status:** ✅ LEVERINGSKLAR - Sprint 11 KOMPLETT (Regulatory Sources)
 
 ---
 
@@ -97,6 +97,13 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 ---
 
 ## 4. KOMPONENT-STATUS
+
+### Oppdatert Sprint 11
+| Komponent | Beskrivelse | Status |
+|-----------|-------------|--------|
+| `SourceVerificationBadge.tsx` | Viser verifiseringsstatus (fresh/recent/stale) | ✅ NY |
+| `OfficialSourceLink.tsx` | Knapp for offisielle kilder med PDF-støtte | ✅ NY |
+| `RegulatorySourceCard.tsx` | Kort for regulatoriske kilder med excerpts | ✅ NY |
 
 ### Oppdatert Session 5
 | Komponent | Endring | Status |
