@@ -1,7 +1,7 @@
 # FYRA CIRCULAR PLATFORM - DATA COVERAGE REPORT
 
 **Generated:** 2025-11-27
-**Last Updated:** 2025-11-27 (Session 10 - Final Delivery)
+**Last Updated:** 2025-11-28 (Sprint 11 - Regulatory Sources)
 **Purpose:** Critical analysis of data completeness, source verification, and contact information coverage
 
 ---
@@ -14,10 +14,12 @@
 | Case Studies | 14 | 14 | 100% | ✅ +4 new (Blique, Skeppsholmen, Hobo, Ett Hem) |
 | Consultants (Enhanced) | 3 | 3 | 100% | ✅ +phone/emails |
 | Consultants (Simple) | 5 | 2 | 40% | - |
-| Fire Safety Data | 3 tiers | + costs/timelines | 100% | ✅ +disclaimers |
+| Fire Safety Data | 3 tiers | + costs/timelines | 100% | ✅ +sourceLinks (Sprint 11) |
+| Regulatory Sources | 14 | 14 | 100% | ✅ NEW Sprint 11 |
+| Certifications | 8 | 8 | 100% | ✅ +officialDocs (Sprint 11) |
 | Sources Registry | 119 | 119 | 100% | ✅ +13 sources (Session 9-10) |
 
-**Overall Assessment:** ✅ COMPLETE. All major data gaps resolved. Platform enriched with quantified metrics (€8.6M Blique), fire testing costs, municipal timelines, and Jan Thomas feedback addressed with disclaimers and `whyIncluded` justifications.
+**Overall Assessment:** ✅ COMPLETE. All major data gaps resolved. Sprint 11 added verified regulatory source links with verification badges, official documentation for certifications, and source links for fire safety regulations.
 
 ---
 
