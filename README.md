@@ -12,13 +12,14 @@ The Fyra Circular Platform provides Nordic hotels with a comprehensive resource 
 
 ### Key Features
 
-- **Supplier Directory** - 16 verified circular furniture/materials suppliers with hospitality readiness tiers
+- **Supplier Directory** - 13 verified circular furniture/materials suppliers with hospitality readiness tiers, B2B filters, and comparison tool
 - **Case Studies** - 14 Nordic hotel projects with quantified sustainability metrics
-- **Expert Network** - Tier-1 consultants (Forsen, Sweco, Hifab) with contact information
-- **Fire Safety Guidance** - BBR compliance tiers, testing costs, municipal timelines
+- **Expert Network** - Tier-1 consultants (Forsen, Sweco, Hifab) with decision framework
+- **Regulatory Compass** - Fire safety, building codes, enforcement levels by country
 - **Scenario Guides** - 5 project scenarios with regulatory pathways
 - **BVB Specifications** - Material assessment templates and equivalency framework
 - **Sustainability Certifications** - Nordic Swan, LEED, BREEAM comparison
+- **Printable Report** - Full platform documentation as PDF-ready page (`/report`)
 
 ---
 
@@ -53,22 +54,27 @@ fyra-web-2.0/
 │   ├── suppliers/         # Supplier directory + detail pages
 │   ├── case-studies/      # Hotel case studies + detail pages
 │   ├── experts/           # Consultant network
-│   ├── regulations/       # Fire safety + public procurement
+│   ├── regulations/       # Regulatory compass (fire, building codes)
 │   ├── scenarios/         # Project scenario guides
 │   ├── certifications/    # Sustainability certifications
 │   ├── specifications/    # BVB specifications
 │   ├── templates/         # Downloadable templates
+│   ├── report/            # Printable full report
 │   └── about/             # Fyra company profile
 ├── components/            # Shared React components
-├── data/                  # JSON data files
+│   ├── Header.tsx         # Navigation header
+│   ├── Footer.tsx         # Site-wide footer
+│   ├── SupplierCard.tsx   # Supplier display card
+│   ├── ComparisonBar.tsx  # Supplier comparison tool
+│   └── ...
+├── data/                  # JSON data files (14 files)
 │   ├── suppliers_enhanced.json
 │   ├── caseStudies_clean.json
 │   ├── consultants_enhanced.json
-│   ├── fire_safety.json
-│   ├── public_procurement.json
+│   ├── regulatory_practice.json
 │   └── ...
 ├── docs/                  # Project documentation
-└── lib/                   # Utility functions
+└── lib/                   # Utility functions + context
 ```
 
 ---
@@ -77,16 +83,18 @@ fyra-web-2.0/
 
 | File | Records | Description |
 |------|---------|-------------|
-| `suppliers_enhanced.json` | 16 | B2B circular suppliers with hospitality tiers |
+| `suppliers_enhanced.json` | 13 | B2B circular suppliers with hospitality tiers |
 | `caseStudies_clean.json` | 14 | Nordic hotel case studies with metrics |
-| `consultants_enhanced.json` | 3 | Tier-1 PM consultants with contacts |
+| `consultants_enhanced.json` | 3 | Tier-1 PM consultants with decision framework |
 | `consultants.json` | 5 | Specialist consultants |
 | `fire_safety.json` | 3 tiers | BBR compliance, testing costs, timelines |
+| `regulatory_practice.json` | 4 countries | Enforcement levels by jurisdiction |
 | `public_procurement.json` | 7 sections | LOU framework, LCC evaluation |
 | `certifications.json` | 8 | Sustainability certification comparison |
+| `specifications.json` | - | BVB system, templates |
 | `scenarios.json` | 5 | Project scenario guides |
 | `templates.json` | 6 | Downloadable form templates |
-| `sources.json` | 106 | Verified source references |
+| `sources.json` | 106+ | Verified source references |
 
 ---
 
@@ -124,20 +132,31 @@ npm run build
 
 ---
 
-## Recent Updates (Session 7-8)
+## Recent Updates (November 2025)
 
-### Jan Thomas Feedback Implementation
-1. **NCH Mapping** - Added "Platform Guide" section to About page linking objectives to pages
-2. **Scenarios Context** - Added explanatory block clarifying scenarios vs regulations
-3. **Case Study Justification** - Added `whyIncluded` field for pre-2018 case studies
-4. **Regulatory Disclaimers** - Added verification notes to fire testing costs/timelines
-5. **Fire Safety UX** - Collapsible section for detailed testing cost matrix
+### Sprint 8 - Printable Report
+- **Full Report Page** (`/report`) - Comprehensive PDF-ready documentation
+- **Print CSS** - A4 page setup, page breaks, optimized typography
+- **Table of Contents** - 8 chapters covering all platform content
 
-### Data Enrichments
-- **Blique by Nobis** - Flagship case study with €8.6M materials reused, 3,600t CO2 saved
-- **3 New Case Studies** - Hotel Skeppsholmen, Hobo Hotel, Ett Hem
-- **SENAB Supplier** - Added with Blique by Nobis project reference
-- **Fire Safety Data** - Testing cost matrix, municipal approval timelines
+### Sprint 7 - UX/UI Improvements
+- **Footer Component** - Site-wide navigation and branding
+- **Text Readability** - Increased minimum sizes (12px base)
+- **Card Enhancements** - Tier-based gradient headers for visual variety
+
+### Sprint 6 - Regulatory Practice
+- **Enforcement Levels** - Country-by-country comparison (SE, NO, DK, FI)
+- **Interior Renovation Pathway** - Simplified compliance for FF&E changes
+
+### Sprint 5 - B2B Readiness Filters
+- **Supplier Filters** - Stock availability, volume capacity, SLA guarantee
+- **Comparison Tool** - Side-by-side supplier comparison (up to 4)
+
+### Earlier Sprints (1-4)
+- Initial MVP with all data integration
+- Client-side search functionality
+- Breadcrumb navigation
+- Map/list view toggle
 
 ---
 
@@ -179,4 +198,4 @@ Proprietary - NCH/Fyra Collaboration
 
 ---
 
-*Built with Next.js • Data verified 2025-11*
+*Built with Next.js 16 • 49 static pages • Data verified November 2025*
