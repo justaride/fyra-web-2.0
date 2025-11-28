@@ -1,12 +1,42 @@
 # FYRA CIRCULAR PLATFORM - IMPLEMENTATION PROGRESS
 
-**Last Updated:** 2025-11-28 (Sprint 9 - Data Visualizations)
+**Last Updated:** 2025-11-28 (Sprint 10 - Regulatory Accuracy Audit)
 **Current State:** ✅ LIVE - 49 Static Pages
 **Deployment:** https://justaride.github.io/fyra-web-2.0/
 
 ---
 
 ## SPRINT LOG (November 2025)
+
+### Sprint 10: Regulatory Accuracy Audit (2025-11-28) - PRIORITY 1 & 2 COMPLETE
+External expert analysis identified 36 corrections needed on `/regulations` page.
+**Tracking document:** `docs/REGULATORY_AUDIT.md`
+**Source analysis:** `/Users/gabrielboen/Downloads/A. Fire Safety Tier System _ Hotel Classification.md`
+
+**Completed corrections (Priority 1 - Critical Factual Errors):**
+- [x] FS-01: "Strictest" → "Stringent" (Vk5 care is stricter than Vk4 hotels)
+- [x] FS-04: Wood is combustible (Euroclass D), not "fire-resistant" - corrected to "predictable charring behavior"
+- [x] FS-07: BS 5852 is British, NOT Euroclass - clarified terminology
+- [x] AR-06: Hotels are Vk4, not samlingslokaler - verified not present in codebase
+
+**Completed corrections (Priority 2 - Overly Absolute Statements):**
+- [x] FS-05: MSDS only → Added developer verification responsibility
+- [x] FS-06: Test certificate = approved → Added "may require verification" nuance
+- [x] FS-09: Guest rooms → Added "must meet overall fire safety strategy"
+- [x] FS-10: Sprinkler equivalence → Changed to "case-by-case via analytisk dimensionering"
+- [x] FS-11: Precedents → Changed to "project-specific approvals"
+
+**Sources verified:**
+- Boverket Verksamhetsklasser (FS-01, AR-06)
+- EN 13501-1 Euroclass system (FS-04)
+- BS 5852 British Standard (FS-07)
+
+**Files modified:**
+- `app/regulations/page.tsx` (line 412)
+- `data/fire_safety.json` (multiple fields)
+- `docs/REGULATORY_AUDIT.md` (tracking)
+
+**Remaining:** Priority 3-7 items (clarifications, insurance percentages, etc.) - see REGULATORY_AUDIT.md
 
 ### Sprint 9: Data Visualizations (2025-11-28)
 - Added Recharts library for React-based data visualizations

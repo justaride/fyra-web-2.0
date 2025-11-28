@@ -4,11 +4,11 @@
       "tier": 1,
       "name": "Low-Risk Reuse",
       "nameNO": "Lav-Risiko Gjenbruk",
-      "description": "Minimal testing required - inherently non-combustible or naturally fire-resistant materials",
+      "description": "Minimal testing required - inherently non-combustible materials or wood with predictable charring behavior",
       "descriptionNO": "Minimal testing påkrevd - iboende ikke-brennbare eller naturlig brannsikre materialer",
       "productTypes": [
         "Metal/glass furniture (inherently non-combustible)",
-        "Solid wood furniture (thick hardwood = naturally fire-resistant)",
+        "Solid wood furniture (thick sections char predictably, low flame spread)",
         "Concrete/stone décor"
       ],
       "productTypesNO": [
@@ -18,7 +18,7 @@
       ],
       "placement": "All fire-critical areas (lobbies, corridors, restaurants)",
       "placementNO": "Alle brannkritiske områder (lobbyer, korridorer, restauranter)",
-      "testingRequired": "Material Safety Data Sheets (MSDS) only - no flame testing needed",
+      "testingRequired": "Material Safety Data Sheets (MSDS) typically sufficient; developer responsible for verifying material compliance",
       "testingRequiredNO": "Kun Material Safety Data Sheets (MSDS) - ingen flammetesting",
       "operators": [
         "YLLW Factory",
@@ -67,7 +67,7 @@
       "costRange": "18,000-30,000 SEK",
       "timeline": "8-12 weeks (refurbishment + fabric procurement)",
       "timelineNO": "8-12 uker (remøblering + tekstilinnkjøp)",
-      "strategy": "YLLW reupholsters with Kvadrat, Gabriel, Maharam fire-rated contract fabrics (EN 1021-1/2 certified). Test certificate from textile supplier satisfies requirement. Frame reuse + compliant textile = approved system.",
+      "strategy": "YLLW reupholsters with Kvadrat, Gabriel, Maharam fire-rated contract fabrics (EN 1021-1/2 certified). Textile test certificate supports compliance; final furniture configuration may require verification. Frame reuse + compliant textile = typically accepted.",
       "strategyNO": "YLLW remøblerer med Kvadrat, Gabriel, Maharam brannsikre kontrakt-tekstiler (EN 1021-1/2 sertifisert). Testsertifikat fra tekstil-leverandør tilfredsstiller krav. Ramme-gjenbruk + godkjent tekstil = godkjent system.",
       "riskLevel": "medium",
       "icon": "⚠️",
@@ -93,7 +93,7 @@
       "placementNO": "UNNGÅ i fluktveier; bruk i gjesteværelser isteden",
       "placementWarning": "BBR requires B-s1,d0 for corridor walls/ceilings; upholstered furniture in corridors discouraged",
       "placementWarningNO": "BBR krever B-s1,d0 for korridor-vegger/tak; polstret møbler i korridorer frarådes",
-      "testingRequired": "Full Euroclass BS 5852 Crib 5 (high-hazard)",
+      "testingRequired": "BS 5852 Crib 5 testing (British standard for high-hazard upholstery)",
       "testingRequiredNO": "Full Euroclass BS 5852 Crib 5 (høy-risiko)",
       "testingStandards": [
         "BS 5852 Crib 5",
@@ -110,17 +110,17 @@
       "alternatives": [
         {
           "strategy": "Guest Rooms",
-          "description": "Lower fire requirements (D-s2,d0 for surfaces; loose furniture = no specific Euroclass)",
+          "description": "Lower surface requirements (minimum D-s2,d0); loose furniture often not classified but must meet overall fire safety strategy",
           "descriptionNO": "Lavere brannkrav (D-s2,d0 for overflater; løse møbler = ingen spesifikk Euroclass)"
         },
         {
           "strategy": "Sprinkler Compensation",
-          "description": "Buildings with full sprinkler systems = relaxed furniture requirements (equivalence approach)",
+          "description": "Buildings with full sprinkler systems may apply for alternative compliance via analytisk dimensionering (case-by-case)",
           "descriptionNO": "Bygninger med fullstendig sprinkler-system = lempede møbelkrav (ekvivalens-tilnærming)"
         },
         {
           "strategy": "Precedent",
-          "description": "Ett Hem, Hobo Hotel used vintage upholstered furniture via sprinkler + compartmentation strategy",
+          "description": "Ett Hem, Hobo Hotel obtained project-specific approvals for vintage furniture; each case evaluated individually",
           "descriptionNO": "Ett Hem, Hobo Hotel brukte vintage polstret møbler via sprinkler + seksjonerings-strategi"
         }
       ],

@@ -409,7 +409,7 @@ export default async function RegulationsPage() {
                     {/* BBR Overview */}
                     <div className="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-6 mb-8 text-white">
                         <h3 className="text-lg font-bold mb-4">Hotel Classification: Verksamhetsklass 4</h3>
-                        <p className="text-slate-300 text-sm mb-4">Hotels fall under the strictest fire requirements in Swedish building regulations.</p>
+                        <p className="text-slate-300 text-sm mb-4">Hotels fall under stringent fire requirements (Verksamhetsklass 4) in Swedish building regulations, with guests assumed capable of self-evacuation.</p>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                             {fireSafety.complianceFramework.regulations[0]?.keyRequirements.map((req, idx) => (
                                 <div key={idx} className="bg-white/10 rounded-lg p-3">
