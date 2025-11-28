@@ -1161,6 +1161,17 @@
       "language": "sv",
       "verifies": ["senab_aterbruk"],
       "keyFacts": ["Part of established SENAB Group", "Blique by Nobis supplier", "Enterprise-scale refurbishment"]
+    },
+    {
+      "id": "prompt5_regulatory_guide",
+      "title": "NCH-Fyra Research: Regulatory Guide for Circular Hotel Interiors",
+      "url": "internal://research/prompt5",
+      "type": "research_report",
+      "publisher": "Fyra / NCH Collaboration",
+      "date": "2025-01",
+      "language": "en",
+      "verifies": ["fire_safety_data", "regulatory_practice"],
+      "keyFacts": ["BBR Chapter 5 fire safety analysis", "EN 1021 testing requirements", "Nordic enforcement level mapping", "Interior renovation compliance paths"]
     }
   ],
   "sourceTypes": {

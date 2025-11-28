@@ -6,6 +6,7 @@ import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import Link from 'next/link';
+import { ChartWrapper, CostTimelineScatter, EnforcementHeatmap } from '@/components/charts';
 
 interface FireSafetyTier {
     tier: number;
@@ -71,6 +72,7 @@ interface FireSafetyData {
         approach: string;
         outcome: string;
     }>;
+    sourceRefs?: string[];
 }
 
 interface ProcurementItem {
@@ -424,6 +426,17 @@ export default async function RegulationsPage() {
                         ))}
                     </div>
 
+                    {/* Cost-Timeline Visualization */}
+                    <div className="mb-8">
+                        <ChartWrapper
+                            title="Fire Safety Testing: Cost vs Timeline"
+                            subtitle="Visual comparison of testing requirements by tier"
+                            sourceRefs={fireSafety.sourceRefs}
+                        >
+                            <CostTimelineScatter tiers={fireSafety.tiers} height={320} />
+                        </ChartWrapper>
+                    </div>
+
                     {/* Cost Implications */}
                     <div className="bg-white rounded-xl border shadow-sm p-6 mb-8">
                         <h3 className="font-bold text-slate-900 mb-4">Cost Implications by Tier</h3>
@@ -637,6 +650,19 @@ export default async function RegulationsPage() {
                                 <strong>Key Insight:</strong> Understanding enforcement reality helps you prioritize compliance efforts and budget. Fire safety is non-negotiable; EPDs are nice-to-have.
                             </p>
                         </div>
+                    </div>
+
+                    {/* Enforcement Heatmap Visualization */}
+                    <div className="mb-8">
+                        <ChartWrapper
+                            title="Enforcement Level Overview"
+                            subtitle="At-a-glance view of regulatory compliance priority"
+                        >
+                            <EnforcementHeatmap
+                                data={regulatoryPractice.regulatoryPractice.enforcementLevels}
+                                showDescriptions={true}
+                            />
+                        </ChartWrapper>
                     </div>
 
                     {/* Enforcement Levels Table */}

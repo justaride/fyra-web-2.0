@@ -27,6 +27,7 @@ import {
 import SourceReferences from '@/components/SourceReferences';
 import { cn } from '@/lib/utils';
 import { JsonLd, generateLocalBusinessSchema } from '@/components/JsonLd';
+import { ChartWrapper, SupplierRadar } from '@/components/charts';
 
 interface Supplier {
     id: string;
@@ -53,6 +54,16 @@ interface Supplier {
         strengths: string[];
         gaps: string[];
     };
+    b2bReadiness?: {
+        stockAvailable?: boolean;
+        sourcingService?: boolean;
+        volumeCapacity?: string;
+        slaGuarantee?: boolean;
+        leadTimeStock?: string;
+        leadTimeSourcing?: string;
+        hotelProjectCapacity?: string;
+    };
+    regions?: string[];
     pricing: string;
     projectExamples: string[];
     strengths: string[];
@@ -373,6 +384,15 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
                                 </ul>
                             </div>
                         </div>
+
+                        {/* Capability Profile Radar */}
+                        <ChartWrapper
+                            title="Capability Profile"
+                            subtitle="Multi-dimensional assessment"
+                            sourceRefs={supplier.sourceRefs}
+                        >
+                            <SupplierRadar supplier={supplier} height={280} />
+                        </ChartWrapper>
 
                         {/* Best For */}
                         <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6">
