@@ -46,6 +46,24 @@ External expert analysis identified 36 corrections needed on `/regulations` page
 
 **Status:** All 36 identified issues addressed
 
+### Sprint 10b: Icon System Cleanup (2025-11-28) - COMPLETE
+Replaced all remaining emojis with professional Lucide icons and text markers.
+
+**Files modified:**
+- `app/scenarios/page.tsx` - Icon map using Lucide components (Flame, Building2, Sparkles, Globe, AlertTriangle)
+- `data/scenarios.json` - Icon fields changed from emoji to Lucide icon names
+- `data/fire_safety.json` - Tier icons → ShieldCheck, AlertTriangle, ShieldAlert
+- `data/suppliers_enhanced.json` - Star ratings → "5/5" format, warnings → [NOTE], [WARNING]
+- `data/consultants_enhanced.json` - Star ratings → numeric format, checkmarks → [OK]
+- `data/regulations_filtered.json` - Emojis → professional text markers [OK], [WARNING], [CHECKLIST]
+
+**Technical changes:**
+- Added `navIconMap` for smaller navigation icons
+- Used `ReactNode` type for icon maps
+- Build verified passing
+
+**Commit:** `8807425`
+
 ### Sprint 9: Data Visualizations (2025-11-28)
 - Added Recharts library for React-based data visualizations
 - Created reusable chart components:
@@ -507,6 +525,9 @@ All core deliverables complete. Future enhancements are optional.
 ## GIT HISTORY
 
 ```
+8807425 refactor: Replace emojis with professional Lucide icons
+d0451dc fix: Complete regulatory accuracy audit (Priority 3-7)
+f6df21e fix: Correct fire safety regulatory accuracy (Priority 1 & 2)
 d8e4985 fix: Add client-side rendering check for Recharts components
 bd49713 docs: Update documentation with Sprint 9 visualizations
 50e2cc2 feat: Add Sprint 9 data visualizations (charts + validation)

@@ -193,14 +193,19 @@ This document tracks verification of sources and implementation of corrections.
 
 ## IMPLEMENTATION CHECKLIST
 
-After source verification:
-1. [ ] Update `fire_safety.json` with corrected tier descriptions
-2. [ ] Update `regulatory_practice.json` with nuanced statements
-3. [ ] Update `public_procurement.json` with example language
-4. [ ] Update `app/regulations/page.tsx` text content
-5. [ ] Add disclaimers where appropriate
-6. [ ] Build and test
-7. [ ] Commit and push
+All items completed 2025-11-28:
+1. [x] Update `fire_safety.json` with corrected tier descriptions
+2. [x] Update `regulatory_practice.json` with nuanced statements
+3. [x] Update `public_procurement.json` with example language
+4. [x] Update `app/regulations/page.tsx` text content
+5. [x] Add disclaimers where appropriate
+6. [x] Build and test
+7. [x] Commit and push
+
+**Commits:**
+- `f6df21e` - Priority 1 & 2 corrections
+- `d0451dc` - Priority 3-7 corrections
+- `8807425` - Icon system cleanup (emojis → Lucide)
 
 ---
 

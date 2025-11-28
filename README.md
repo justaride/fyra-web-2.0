@@ -135,6 +135,12 @@ npm run build
 
 ## Recent Updates (November 2025)
 
+### Sprint 10 - Regulatory Accuracy & Icon Cleanup (2025-11-28)
+- **Regulatory Audit** - 36 corrections from external expert review implemented
+- **Icon System Cleanup** - Replaced all emojis with professional Lucide icons
+- **Data Files Cleaned** - Converted emoji ratings to numeric format (5/5)
+- **Fire Safety Updates** - Corrected Euroclass terminology, BS 5852 clarification
+
 ### Sprint 9 - Data Visualizations
 - **Chart Components** - Added Recharts-based visualizations
 - **Supplier Radar** - 6-axis capability profile on supplier detail pages
