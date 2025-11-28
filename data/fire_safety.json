@@ -194,9 +194,9 @@
         "applicabilityNO": "All svensk hotell-bygging og renovering",
         "keyRequirements": [
           "Verksamhetsklass 4 for hotels",
-          "B-s1,d0 for corridor walls/ceilings",
-          "D-s2,d0 for guest room surfaces",
-          "Sprinkler systems may allow equivalence approaches"
+          "Typically B-s1,d0 for corridor walls/ceilings (varies by building class)",
+          "Minimum D-s2,d0 for guest room surfaces",
+          "Sprinkler systems may support alternative compliance (case-by-case)"
         ]
       }
     ],

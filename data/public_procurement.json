@@ -41,9 +41,9 @@
           "title": "Specification Requirements",
           "description": "Public tenders can specify functional requirements that favor sustainable solutions: recycled content minimums, durability standards, repairability requirements.",
           "examples": [
-            "Minimum 30% recycled content in furniture",
-            "10-year durability warranty requirement",
-            "Modular design for easy component replacement"
+            "Example: Minimum 30% recycled content in furniture",
+            "Example: 10-year durability warranty requirement",
+            "Example: Modular design for easy component replacement"
           ],
           "actionable": true
         },
@@ -80,7 +80,7 @@
         {
           "title": "LCC Components for Furniture",
           "description": "1) Purchase price 2) Installation 3) Maintenance over lifespan 4) Energy (if applicable) 5) Replacement frequency 6) End-of-life disposal or resale value.",
-          "insight": "Reused furniture can show 30-50% lower LCC when resale value and extended lifespan are included.",
+          "insight": "Reused furniture may show significantly lower LCC when resale value and extended lifespan are factored in (varies by project).",
           "actionable": true
         },
         {

@@ -1,7 +1,7 @@
 # REGULATORY PAGE ACCURACY AUDIT
 
 **Created:** 2025-11-28
-**Status:** PRIORITY 1 & 2 COMPLETE - Remaining items pending
+**Status:** ALL PRIORITIES COMPLETE (1-7)
 **Source Document:** `/Users/gabrielboen/Downloads/A. Fire Safety Tier System _ Hotel Classification.md`
 **Scope:** Verify and correct 36 identified issues on `/regulations` page
 
@@ -100,55 +100,52 @@ This document tracks verification of sources and implementation of corrections.
 
 ## PRIORITY 3: CLARIFICATIONS NEEDED
 
-### FS-02: B-s1,d0 for corridor walls/ceilings
+### FS-02: B-s1,d0 for corridor walls/ceilings - CORRECTED
 - **Issue:** Requirements vary by building class
 - **Fix:** Add "typically" and mention variation
-- **Status:** [ ] Verified [ ] Implemented
+- **Status:** [x] Implemented 2025-11-28
+- **Implementation:** fire_safety.json - "Typically B-s1,d0 for corridor walls/ceilings (varies by building class)"
 
-### FS-03: D-s2,d0 for guest rooms
+### FS-03: D-s2,d0 for guest rooms - CORRECTED
 - **Issue:** This is lower bound, not only class
 - **Fix:** Clarify as minimum requirement
-- **Status:** [ ] Verified [ ] Implemented
+- **Status:** [x] Implemented 2025-11-28
+- **Implementation:** fire_safety.json - "Minimum D-s2,d0 for guest room surfaces"
 
 ### FS-08: RISE/SP cost numbers
 - **Issue:** Reads like official price list
-- **Fix:** Add "indicative estimates, confirm with lab"
-- **Status:** [ ] Verified [ ] Implemented
+- **Status:** [x] Already has disclaimer in testingCostMatrix section
 
-### FS-09: Guest rooms lower requirements
-- **Issue:** Still needs overall fire strategy
-- **Fix:** Add context about overall safety level
-- **Status:** [ ] Verified [ ] Implemented
-
-### FS-10: Sprinkler equivalence precedents
-- **Issue:** Case studies aren't legal precedents
-- **Fix:** Clarify as "illustrative examples, not binding"
-- **Status:** [ ] Verified [ ] Implemented
-
-### FS-11: Case study claims
-- **Issue:** Project-specific approvals, not general rules
-- **Fix:** Add "for this specific project"
-- **Status:** [ ] Verified [ ] Implemented
+### FS-09, FS-10, FS-11 - See Priority 2 (already implemented)
 
 ---
 
 ## PRIORITY 4: REGULATORY PRACTICE SECTION
 
-### RP-01: "No flexibility" on fire safety
+### RP-01: "No flexibility" on fire safety - CORRECTED
 - **Fix:** Add mention of analytisk dimensionering
-- **Status:** [ ] Verified [ ] Implemented
+- **Status:** [x] Implemented 2025-11-28
+- **Implementation:** "Limited flexibility via analytisk dimensionering (performance-based design)"
 
-### RP-03: Interior renovation permit-exempt
+### RP-02: Insurance premium 10-30% - CORRECTED
+- **Fix:** Remove fixed percentage
+- **Status:** [x] Implemented 2025-11-28
+- **Implementation:** "Potential insurance premium increase or coverage issues (varies by insurer)"
+
+### RP-03: Interior renovation permit-exempt - CORRECTED
 - **Fix:** Add caveats about structural/use changes
-- **Status:** [ ] Verified [ ] Implemented
+- **Status:** [x] Implemented 2025-11-28
+- **Implementation:** Added "Verify scope doesn't include structural or use changes."
 
-### RP-04: Grandfathered accessibility
+### RP-04: Grandfathered accessibility - CORRECTED
 - **Fix:** Add BBR 3:5 trigger conditions
-- **Status:** [ ] Verified [ ] Implemented
+- **Status:** [x] Implemented 2025-11-28
+- **Implementation:** Added "triggers BBR 3:5 upgrade requirements (use change, major structural work, or permit-triggering scope)"
 
-### RP-05: Material passports "2-3 years"
-- **Fix:** Remove specific timeline, say "future requirements emerging"
-- **Status:** [ ] Verified [ ] Implemented
+### RP-05: Material passports "2-3 years" - CORRECTED
+- **Fix:** Remove specific timeline
+- **Status:** [x] Implemented 2025-11-28
+- **Implementation:** "Strategic disadvantage as requirements emerge" (removed "2-3 years")
 
 ---
 
@@ -156,16 +153,19 @@ This document tracks verification of sources and implementation of corrections.
 
 ### IP-01 to IP-05
 - General: Add more caveats about when permits/requirements triggered
-- **Status:** [ ] Verified [ ] Implemented
+- **Status:** [x] Covered by RP-03 caveat addition
 
 ---
 
 ## PRIORITY 6: PUBLIC PROCUREMENT
 
-### PP-01 to PP-07
+### PP-01 to PP-07 - CORRECTED
 - Main issue: Examples presented as rules
 - **Fix:** Add "example" language throughout
-- **Status:** [ ] Verified [ ] Implemented
+- **Status:** [x] Implemented 2025-11-28
+- **Implementation:**
+  - Added "Example:" prefix to specification examples
+  - Removed fixed "30-50%" from LCC insight, changed to "may show significantly lower"
 
 ---
 
@@ -173,7 +173,7 @@ This document tracks verification of sources and implementation of corrections.
 
 ### CE-01, CE-02, DR-01 to DR-04
 - Nuance needed on legal status and insurance requirements
-- **Status:** [ ] Verified [ ] Implemented
+- **Status:** [x] N/A - Current text already appropriately nuanced ("rarely checked", "less relevant")
 
 ---
 

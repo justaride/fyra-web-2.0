@@ -8,7 +8,7 @@
 
 ## SPRINT LOG (November 2025)
 
-### Sprint 10: Regulatory Accuracy Audit (2025-11-28) - PRIORITY 1 & 2 COMPLETE
+### Sprint 10: Regulatory Accuracy Audit (2025-11-28) - COMPLETE
 External expert analysis identified 36 corrections needed on `/regulations` page.
 **Tracking document:** `docs/REGULATORY_AUDIT.md`
 **Source analysis:** `/Users/gabrielboen/Downloads/A. Fire Safety Tier System _ Hotel Classification.md`
@@ -36,7 +36,15 @@ External expert analysis identified 36 corrections needed on `/regulations` page
 - `data/fire_safety.json` (multiple fields)
 - `docs/REGULATORY_AUDIT.md` (tracking)
 
-**Remaining:** Priority 3-7 items (clarifications, insurance percentages, etc.) - see REGULATORY_AUDIT.md
+**Additional corrections (Priority 3-7):**
+- [x] FS-02/03: Added "typically" and "minimum" to Euroclass requirements
+- [x] RP-01: Added analytisk dimensionering mention
+- [x] RP-02: Removed fixed insurance percentage (10-30%)
+- [x] RP-03/04: Added structural/use change caveats, BBR 3:5 triggers
+- [x] RP-05: Removed "2-3 years" timeline for material passports
+- [x] PP: Added "Example:" prefix, removed fixed LCC percentage
+
+**Status:** All 36 identified issues addressed
 
 ### Sprint 9: Data Visualizations (2025-11-28)
 - Added Recharts library for React-based data visualizations

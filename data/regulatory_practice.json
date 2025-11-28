@@ -10,7 +10,7 @@
         "writtenRequirement": "All wall/ceiling surfaces in hotels must meet B-s1,d0",
         "enforcementLevel": "high",
         "enforcementDescription": "Strictly enforced - Fire authority inspects. Project stoppage without compliance.",
-        "practicalNotes": "No flexibility. Always test or get certified materials.",
+        "practicalNotes": "Limited flexibility via analytisk dimensionering (performance-based design). Standard path: test or get certified materials.",
         "riskIfIgnored": "Cannot get slutbesked (final clearance)",
         "fyraRecommendation": "Always comply. Budget for testing."
       },
@@ -21,7 +21,7 @@
         "enforcementLevel": "medium",
         "enforcementDescription": "Insurance-driven more than authority-driven. Insurers may require documentation.",
         "practicalNotes": "Many hotels operate with mixed compliance. Insurance is the real enforcer.",
-        "riskIfIgnored": "Insurance premium increase 10-30% or coverage denial",
+        "riskIfIgnored": "Potential insurance premium increase or coverage issues (varies by insurer)",
         "fyraRecommendation": "Prioritize high-traffic public areas. Guest rooms less scrutinized."
       },
       {
@@ -30,7 +30,7 @@
         "writtenRequirement": "Building permit required for structural changes, facade changes, use changes",
         "enforcementLevel": "medium",
         "enforcementDescription": "Required for structural work. Interior FF&E rarely requires permit.",
-        "practicalNotes": "Pure interior renovation (furniture, finishes) typically permit-exempt.",
+        "practicalNotes": "Pure interior renovation (furniture, finishes) typically permit-exempt. Verify scope doesn't include structural or use changes.",
         "riskIfIgnored": "Municipal enforcement if structural work discovered",
         "fyraRecommendation": "Interior-only projects can often proceed without permit. Verify scope."
       },
@@ -40,7 +40,7 @@
         "writtenRequirement": "Public buildings must be accessible. Hotels need accessible rooms.",
         "enforcementLevel": "medium",
         "enforcementDescription": "Checked at building permit stage. Less scrutiny for interior updates.",
-        "practicalNotes": "Existing hotels grandfathered unless major renovation triggers compliance.",
+        "practicalNotes": "Existing hotels grandfathered unless major renovation triggers BBR 3:5 upgrade requirements (use change, major structural work, or permit-triggering scope).",
         "riskIfIgnored": "Required only if permit-triggering work",
         "fyraRecommendation": "Check if renovation scope triggers accessibility upgrade requirements."
       },
@@ -71,7 +71,7 @@
         "enforcementLevel": "future",
         "enforcementDescription": "Not yet enforced. Regulations being developed.",
         "practicalNotes": "Prepare documentation now for future requirements. Early adopter advantage.",
-        "riskIfIgnored": "None currently. Strategic disadvantage in 2-3 years",
+        "riskIfIgnored": "None currently. Strategic disadvantage as requirements emerge",
         "fyraRecommendation": "Start building material passport capability now."
       }
     ]
