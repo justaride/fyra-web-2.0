@@ -487,7 +487,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* About Fyra - Brief */}
+      {/* About - Brief */}
       <section className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
@@ -495,37 +495,37 @@ export default async function Home() {
               <div className="flex flex-col md:flex-row items-start gap-8">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-2xl flex items-center justify-center text-white text-2xl font-bold shadow-lg shadow-teal-500/25">
-                    F
+                    NCC
                   </div>
                 </div>
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold text-slate-900 mb-3">
-                    Built by Fyra
+                    Built for Fyra
                   </h2>
                   <p className="text-slate-600 leading-relaxed mb-4">
-                    Fyra is a Helsinki-based interior architecture studio with 15+ years of experience
-                    in hospitality design. As pioneers in circular economy methodology, we created this
-                    platform to share our knowledge and connect the Nordic circular construction ecosystem.
+                    This platform is developed by <strong>Nordic Circular Hotspot</strong> and <strong>Natural State</strong> as
+                    part of the <strong>Nordic Circular Construction</strong> project. Created specifically for Fyra,
+                    a Helsinki-based interior architecture studio pioneering circular economy methodology in hospitality design.
                   </p>
                   <div className="flex flex-wrap gap-3 mb-6">
                     <span className="inline-flex items-center gap-1 px-3 py-1 bg-white border rounded-full text-xs text-slate-600">
                       <CheckCircle className="w-3 h-3 text-green-500" />
-                      Green Building Council Finland
+                      Nordic Circular Hotspot
                     </span>
                     <span className="inline-flex items-center gap-1 px-3 py-1 bg-white border rounded-full text-xs text-slate-600">
                       <CheckCircle className="w-3 h-3 text-green-500" />
-                      Finnish Circular Economy Green Deal
+                      Natural State
                     </span>
                     <span className="inline-flex items-center gap-1 px-3 py-1 bg-white border rounded-full text-xs text-slate-600">
                       <CheckCircle className="w-3 h-3 text-green-500" />
-                      Multiple International Awards
+                      Nordic Circular Construction
                     </span>
                   </div>
                   <Link
                     href="/about"
                     className="inline-flex items-center gap-2 text-teal-600 font-medium hover:text-teal-700"
                   >
-                    Learn more about Fyra
+                    Learn more
                     <ArrowRight className="w-4 h-4" />
                   </Link>
                 </div>

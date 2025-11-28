@@ -128,7 +128,44 @@ export default async function AboutPage() {
             <Header />
             <BreadcrumbBar />
 
-            {/* Hero Section */}
+            {/* Platform Credits */}
+            <section className="bg-gradient-to-br from-teal-900 via-teal-800 to-slate-900 text-white py-12">
+                <div className="container mx-auto px-4">
+                    <div className="max-w-4xl mx-auto">
+                        <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8 border border-white/20">
+                            <div className="flex items-start gap-4 mb-4">
+                                <div className="w-12 h-12 bg-teal-500 rounded-lg flex items-center justify-center text-white font-bold shrink-0">
+                                    NCC
+                                </div>
+                                <div>
+                                    <h2 className="text-xl font-bold mb-2">About This Platform</h2>
+                                    <p className="text-teal-100 text-sm leading-relaxed">
+                                        This platform is developed by <strong className="text-white">Nordic Circular Hotspot</strong> and <strong className="text-white">Natural State</strong> as
+                                        part of the <strong className="text-white">Nordic Circular Construction</strong> project.
+                                        Created as a knowledge hub for Fyra to support their circular hospitality design work.
+                                    </p>
+                                </div>
+                            </div>
+                            <div className="flex flex-wrap gap-3 mt-4 pt-4 border-t border-white/20">
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
+                                    <CheckCircle className="w-4 h-4 text-teal-400" />
+                                    Nordic Circular Hotspot
+                                </span>
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
+                                    <CheckCircle className="w-4 h-4 text-teal-400" />
+                                    Natural State
+                                </span>
+                                <span className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-white/10 rounded-full text-sm">
+                                    <CheckCircle className="w-4 h-4 text-teal-400" />
+                                    Nordic Circular Construction
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* Fyra Profile Hero */}
             <section className="bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 text-white py-20">
                 <div className="container mx-auto px-4">
                     <div className="max-w-4xl mx-auto text-center">
@@ -136,6 +173,7 @@ export default async function AboutPage() {
                             <Sparkles className="w-4 h-4 text-amber-400" />
                             <span>{profile.company.tagline}</span>
                         </div>
+                        <p className="text-sm text-blue-300 mb-4">Platform built for</p>
                         <h1 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
                             {profile.company.name}
                         </h1>
