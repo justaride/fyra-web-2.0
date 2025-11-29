@@ -7,6 +7,7 @@ import { EnhancedConsultantCard } from '@/components/EnhancedConsultantCard';
 import { ConsultantCard } from '@/components/ConsultantCard';
 import { Users, ShieldCheck, Lightbulb, Building2, CheckCircle, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
+import SourceVerificationBadge from '@/components/SourceVerificationBadge';
 
 interface DecisionCriteria {
     when: string[];
@@ -39,16 +40,32 @@ async function getBasicConsultants() {
     return JSON.parse(fileContents);
 }
 
+async function getSuppliers() {
+    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getCaseStudies() {
+    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
 export default async function ExpertsPage() {
-    const enhancedData = await getEnhancedConsultants();
-    const basicConsultants = await getBasicConsultants();
+    const [enhancedData, basicConsultants, suppliers, caseStudies] = await Promise.all([
+        getEnhancedConsultants(),
+        getBasicConsultants(),
+        getSuppliers(),
+        getCaseStudies(),
+    ]);
 
     // Get specialist consultants from basic data (Kompanjonen, etc.)
     const specialists = basicConsultants.filter((c: any) => c.tier === 'Specialist');
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
-            <Header />
+            <Header searchData={{ suppliers, caseStudies, consultants: enhancedData.tier1 }} />
             <BreadcrumbBar />
 
             {/* Hero Section */}
@@ -80,7 +97,7 @@ export default async function ExpertsPage() {
                         </div>
 
                         {/* Stats */}
-                        <div className="flex flex-wrap gap-6 text-sm">
+                        <div className="flex flex-wrap items-center gap-6 text-sm">
                             <div className="flex items-center gap-2">
                                 <Users className="w-4 h-4 text-purple-400" />
                                 <span><strong>{enhancedData.tier1.length + specialists.length}</strong> Verified Firms</span>
@@ -93,6 +110,7 @@ export default async function ExpertsPage() {
                                 <Lightbulb className="w-4 h-4 text-purple-400" />
                                 <span>Circular Specialists</span>
                             </div>
+                            <SourceVerificationBadge lastVerified="2025-11-28" />
                         </div>
                     </div>
                 </div>

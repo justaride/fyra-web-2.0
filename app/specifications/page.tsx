@@ -106,6 +106,24 @@ async function getSpecifications(): Promise<SpecificationsData> {
     return JSON.parse(fileContents);
 }
 
+async function getSuppliers() {
+    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getCaseStudies() {
+    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getConsultants() {
+    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
 function getCategoryIcon(category: string) {
     switch (category) {
         case 'Furniture': return <Armchair className="w-5 h-5" />;
@@ -126,12 +144,17 @@ function getRatingColor(color: string) {
 }
 
 export default async function SpecificationsPage() {
-    const data = await getSpecifications();
+    const [data, suppliers, caseStudies, consultants] = await Promise.all([
+        getSpecifications(),
+        getSuppliers(),
+        getCaseStudies(),
+        getConsultants(),
+    ]);
     const { bvbSystem, specificationTemplates, equivalencyFramework, fireTestingResources } = data;
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
-            <Header />
+            <Header searchData={{ suppliers, caseStudies, consultants }} />
             <BreadcrumbBar />
 
             {/* Hero Section */}

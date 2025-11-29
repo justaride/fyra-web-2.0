@@ -99,6 +99,24 @@ async function getScenarios(): Promise<Scenario[]> {
     return JSON.parse(fileContents);
 }
 
+async function getSuppliers() {
+    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getCaseStudies() {
+    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getConsultants() {
+    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
 function ScenarioCard({ scenario }: { scenario: Scenario }) {
     const bgColor = colorMap[scenario.id] || 'bg-slate-500';
     const icon = iconMap[scenario.id] || <Building2 className="w-6 h-6" />;
@@ -268,11 +286,16 @@ function ScenarioCard({ scenario }: { scenario: Scenario }) {
 }
 
 export default async function ScenariosPage() {
-    const scenarios = await getScenarios();
+    const [scenarios, suppliers, caseStudies, consultants] = await Promise.all([
+        getScenarios(),
+        getSuppliers(),
+        getCaseStudies(),
+        getConsultants(),
+    ]);
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
-            <Header />
+            <Header searchData={{ suppliers, caseStudies, consultants }} />
             <BreadcrumbBar />
 
             {/* Hero Section */}

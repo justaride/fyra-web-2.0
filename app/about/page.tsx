@@ -108,6 +108,24 @@ async function getProfile(): Promise<FyraProfile> {
     return JSON.parse(fileContents);
 }
 
+async function getSuppliers() {
+    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getCaseStudies() {
+    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getConsultants() {
+    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
 function getExpertiseIcon(icon: string) {
     switch (icon) {
         case 'Hotel': return <Hotel className="w-6 h-6" />;
@@ -119,13 +137,18 @@ function getExpertiseIcon(icon: string) {
 }
 
 export default async function AboutPage() {
-    const profile = await getProfile();
+    const [profile, suppliers, caseStudies, consultants] = await Promise.all([
+        getProfile(),
+        getSuppliers(),
+        getCaseStudies(),
+        getConsultants(),
+    ]);
     const featuredProjects = profile.projects.filter(p => p.featured);
     const currentYear = new Date().getFullYear();
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
-            <Header />
+            <Header searchData={{ suppliers, caseStudies, consultants }} />
             <BreadcrumbBar />
 
             {/* Platform Credits */}

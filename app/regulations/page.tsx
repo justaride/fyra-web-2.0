@@ -232,6 +232,24 @@ async function getRegulatorySources(): Promise<RegulatorySources> {
     return JSON.parse(fileContents);
 }
 
+async function getSuppliers() {
+    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getCaseStudies() {
+    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getConsultants() {
+    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
 // Enforcement level badge component
 function EnforcementBadge({ level }: { level: string }) {
     const config = {
@@ -413,11 +431,16 @@ const procurementIconMap: Record<string, React.ReactNode> = {
 };
 
 export default async function RegulationsPage() {
-    const regulations = await getRegulations();
-    const fireSafety = await getFireSafety();
-    const publicProcurement = await getPublicProcurement();
-    const regulatoryPractice = await getRegulatoryPractice();
-    const regulatorySources = await getRegulatorySources();
+    const [regulations, fireSafety, publicProcurement, regulatoryPractice, regulatorySources, suppliers, caseStudies, consultants] = await Promise.all([
+        getRegulations(),
+        getFireSafety(),
+        getPublicProcurement(),
+        getRegulatoryPractice(),
+        getRegulatorySources(),
+        getSuppliers(),
+        getCaseStudies(),
+        getConsultants(),
+    ]);
 
     // Filter sources by category for different sections
     const fireSafetySources = regulatorySources.sources.filter(s => s.category === 'fire_safety');
@@ -425,7 +448,7 @@ export default async function RegulationsPage() {
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
-            <Header />
+            <Header searchData={{ suppliers, caseStudies, consultants }} />
             <BreadcrumbBar />
 
             <div className="container mx-auto px-4 py-8">

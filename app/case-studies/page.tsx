@@ -19,8 +19,24 @@ async function getCaseStudies(): Promise<CaseStudy[]> {
     return JSON.parse(fileContents);
 }
 
+async function getSuppliers() {
+    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getConsultants() {
+    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
 export default async function CaseStudiesPage() {
-    const caseStudies = await getCaseStudies();
+    const [caseStudies, suppliers, consultants] = await Promise.all([
+        getCaseStudies(),
+        getSuppliers(),
+        getConsultants(),
+    ]);
 
     // Calculate stats
     const flagshipCount = caseStudies.filter(cs => cs.tier === 'Flagship').length;
@@ -28,7 +44,7 @@ export default async function CaseStudiesPage() {
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
-            <Header />
+            <Header searchData={{ suppliers, caseStudies, consultants }} />
             <BreadcrumbBar />
 
             {/* Hero Section */}

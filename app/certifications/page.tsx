@@ -86,6 +86,24 @@ async function getEnvironmentalSources(): Promise<RegulatorySource[]> {
     return data.sources.filter((s: RegulatorySource) => s.category === 'environmental');
 }
 
+async function getSuppliers() {
+    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getCaseStudies() {
+    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
+async function getConsultants() {
+    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
+    const fileContents = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileContents);
+}
+
 function getTypeIcon(type: string) {
     switch (type) {
         case 'Operational': return <Building2 className="w-4 h-4" />;
@@ -134,15 +152,20 @@ function RelevanceStars({ score }: { score: number }) {
 }
 
 export default async function CertificationsPage() {
-    const certifications = await getCertifications();
-    const environmentalSources = await getEnvironmentalSources();
+    const [certifications, environmentalSources, suppliers, caseStudies, consultants] = await Promise.all([
+        getCertifications(),
+        getEnvironmentalSources(),
+        getSuppliers(),
+        getCaseStudies(),
+        getConsultants(),
+    ]);
 
     // Sort by relevance score
     const sortedCertifications = [...certifications].sort((a, b) => b.relevanceScore - a.relevanceScore);
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
-            <Header />
+            <Header searchData={{ suppliers, caseStudies, consultants }} />
             <BreadcrumbBar />
 
             {/* Hero Section */}

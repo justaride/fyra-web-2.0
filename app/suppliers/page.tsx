@@ -6,6 +6,7 @@ import { Footer } from '@/components/Footer';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { Building2, MapPin, CheckCircle, Globe, Scale } from 'lucide-react';
 import { ComparisonProvider } from '@/lib/ComparisonContext';
+import SourceVerificationBadge from '@/components/SourceVerificationBadge';
 import { ComparisonBar } from '@/components/ComparisonBar';
 import { ComparisonTable } from '@/components/ComparisonTable';
 
@@ -21,8 +22,24 @@ async function getSuppliers(): Promise<Supplier[]> {
   return JSON.parse(fileContents);
 }
 
+async function getCaseStudies() {
+  const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
+  const fileContents = await fs.readFile(filePath, 'utf8');
+  return JSON.parse(fileContents);
+}
+
+async function getConsultants() {
+  const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
+  const fileContents = await fs.readFile(filePath, 'utf8');
+  return JSON.parse(fileContents);
+}
+
 export default async function SuppliersPage() {
-  const suppliers = await getSuppliers();
+  const [suppliers, caseStudies, consultants] = await Promise.all([
+    getSuppliers(),
+    getCaseStudies(),
+    getConsultants(),
+  ]);
 
   // Calculate stats
   const provenCount = suppliers.filter(s => s.hospitalityTier === 'Proven').length;
@@ -31,7 +48,10 @@ export default async function SuppliersPage() {
   return (
     <ComparisonProvider>
       <main className="min-h-screen bg-slate-50 font-sans">
-        <Header supplierCount={suppliers.length} />
+        <Header
+          supplierCount={suppliers.length}
+          searchData={{ suppliers, caseStudies, consultants }}
+        />
         <BreadcrumbBar />
 
         {/* Hero Section */}
@@ -57,7 +77,7 @@ export default async function SuppliersPage() {
               </p>
 
               {/* Stats */}
-              <div className="flex flex-wrap gap-6 text-sm">
+              <div className="flex flex-wrap items-center gap-6 text-sm">
                 <div className="flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-teal-400" />
                   <span><strong>{suppliers.length}</strong> Verified Suppliers</span>
@@ -70,6 +90,7 @@ export default async function SuppliersPage() {
                   <Globe className="w-4 h-4 text-teal-400" />
                   <span><strong>{nordicReachCount}</strong> Nordic Reach</span>
                 </div>
+                <SourceVerificationBadge lastVerified="2025-11-28" />
               </div>
 
               {/* Compare hint */}
