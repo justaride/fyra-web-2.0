@@ -29,6 +29,15 @@ Extended source verification system to certifications and case studies pages.
 
 **Commit:** `5818ae6` - feat(sprint-12): Add source verification to certifications and case studies
 
+#### Sprint 12C: Verifiability Audit Report ✅ COMPLETE
+- Created comprehensive `docs/VERIFIABILITY_REPORT.md`
+- Documented 119 sources across 18 categories
+- Page-by-page verification status documented in PROJECT_INVENTORY
+- Identified acknowledged limitations (fire costs = indicative, metrics = self-reported)
+- All regulatory claims traced to official government sources
+
+**Commit:** `0b07b49` - docs: Add comprehensive data verifiability report
+
 ---
 
 ### Sprint 11: Regulatory Fact-Check & Source System (2025-11-28) - COMPLETE
