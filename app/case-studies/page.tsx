@@ -1,42 +1,19 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import { CaseStudyCard } from '@/components/CaseStudyCard';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { BookOpen, Hotel, MapPin, Award, CheckCircle2 } from 'lucide-react';
 import SourceVerificationBadge from '@/components/SourceVerificationBadge';
-
-interface CaseStudy {
-    id: string;
-    tier?: string;
-    location?: string;
-}
-
-async function getCaseStudies(): Promise<CaseStudy[]> {
-    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getSuppliers() {
-    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getConsultants() {
-    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
+import { getCaseStudies, getSuppliers, getConsultantsEnhanced } from '@/lib/data';
+import type { CaseStudy } from '@/lib/types';
 
 export default async function CaseStudiesPage() {
-    const [caseStudies, suppliers, consultants] = await Promise.all([
+    const [caseStudies, suppliers, consultantsData] = await Promise.all([
         getCaseStudies(),
         getSuppliers(),
-        getConsultants(),
+        getConsultantsEnhanced(),
     ]);
+    const consultants = consultantsData.tier1 || [];
 
     // Calculate stats
     const flagshipCount = caseStudies.filter(cs => cs.tier === 'Flagship').length;

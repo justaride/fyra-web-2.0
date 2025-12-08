@@ -121,7 +121,7 @@ async function getCaseStudies() {
 }
 
 async function getConsultants() {
-    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
+    const filePath = path.join(process.cwd(), 'data', 'consultants.json');
     const fileContents = await fs.readFile(filePath, 'utf8');
     return JSON.parse(fileContents);
 }

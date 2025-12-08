@@ -1,5 +1,4 @@
-import { promises as fs } from 'fs';
-import path from 'path';
+import { loadJsonFile, getSuppliers, getCaseStudies, getConsultantsEnhanced } from '@/lib/data';
 import { FileText, CheckCircle, AlertTriangle, Info, Armchair, Shirt, Lightbulb, Hammer, Flame, FlaskConical, Recycle, ArrowRight, ExternalLink, Leaf } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
@@ -100,28 +99,36 @@ interface SpecificationsData {
     };
 }
 
+// Default fallback for specifications
+const DEFAULT_SPECIFICATIONS: SpecificationsData = {
+    bvbSystem: {
+        name: '',
+        description: '',
+        administrator: '',
+        status: '',
+        adoptionRate: '',
+        website: '',
+        ratingSystem: { levels: [] },
+        assessmentProcess: { applicant: '', documentation: [], timeline: '', cost: {} },
+        circularEconomyCriteria: {
+            recycledContent: { criterion: '', recommended: '', accepted: '', notes: '' },
+            recyclability: { criterion: '', recommended: '', accepted: '', toBeAvoided: '' },
+            gaps: []
+        },
+        hospitalitySectorUsage: { adoption: '', alternatives: [], requirement: '' },
+        productCoverage: {},
+        criticalGap: { title: '', issue: '', barriers: [], fyraImplication: '' }
+    },
+    specificationTemplates: [],
+    equivalencyFramework: { title: '', purpose: '', pathways: [] },
+    fireTestingResources: {
+        primaryLab: { name: '', locations: [], contact: '', services: [] },
+        alternativeApproach: { name: '', description: '', cost: '', compliance: '', duration: '' }
+    }
+};
+
 async function getSpecifications(): Promise<SpecificationsData> {
-    const filePath = path.join(process.cwd(), 'data', 'specifications.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getSuppliers() {
-    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getCaseStudies() {
-    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getConsultants() {
-    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadJsonFile('specifications.json', DEFAULT_SPECIFICATIONS);
 }
 
 function getCategoryIcon(category: string) {
@@ -144,12 +151,13 @@ function getRatingColor(color: string) {
 }
 
 export default async function SpecificationsPage() {
-    const [data, suppliers, caseStudies, consultants] = await Promise.all([
+    const [data, suppliers, caseStudies, consultantsData] = await Promise.all([
         getSpecifications(),
         getSuppliers(),
         getCaseStudies(),
-        getConsultants(),
+        getConsultantsEnhanced(),
     ]);
+    const consultants = consultantsData.tier1 || [];
     const { bvbSystem, specificationTemplates, equivalencyFramework, fireTestingResources } = data;
 
     return (

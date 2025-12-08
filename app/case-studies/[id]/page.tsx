@@ -1,6 +1,5 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import { Header } from '@/components/Header';
+import { getCaseStudies as loadCaseStudies } from '@/lib/data';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -72,9 +71,7 @@ interface CaseStudy {
 }
 
 async function getCaseStudies(): Promise<CaseStudy[]> {
-    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadCaseStudies() as Promise<CaseStudy[]>;
 }
 
 async function getCaseStudy(id: string): Promise<CaseStudy | undefined> {
@@ -87,6 +84,46 @@ export async function generateStaticParams() {
     return caseStudies.map((study) => ({
         id: study.id,
     }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const caseStudy = await getCaseStudy(id);
+
+    if (!caseStudy) {
+        return {
+            title: 'Case Study ikke funnet | Fyra Circular Platform',
+        };
+    }
+
+    const tierLabel = caseStudy.tier || 'Reference';
+    const metrics = caseStudy.metrics;
+    const circularHighlight = metrics?.circularContent || metrics?.materialReuse || '';
+
+    return {
+        title: `${caseStudy.title} | ${tierLabel} Case Study | Fyra`,
+        description: `${caseStudy.type} project in ${caseStudy.location}. ${caseStudy.circularFeatures?.slice(0, 3).join(', ') || 'Circular construction example'}`,
+        openGraph: {
+            title: `${caseStudy.title} - Circular Hotel Project`,
+            description: `${caseStudy.type} in ${caseStudy.location}. ${circularHighlight ? `${circularHighlight} circular content.` : 'Sustainable hospitality case study.'}`,
+            type: 'article',
+            locale: 'nb_NO',
+            siteName: 'Fyra Circular Platform',
+        },
+        twitter: {
+            card: 'summary',
+            title: caseStudy.title,
+            description: `${caseStudy.type} - ${caseStudy.location}`,
+        },
+        keywords: [
+            caseStudy.title,
+            'circular hotel',
+            'sustainable hospitality',
+            caseStudy.location,
+            caseStudy.type,
+            ...(caseStudy.circularFeatures?.slice(0, 3) || []),
+        ].join(', '),
+    };
 }
 
 // Tier badge component

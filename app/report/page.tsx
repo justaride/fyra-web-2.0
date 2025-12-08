@@ -24,8 +24,8 @@ async function getAllData() {
         fyraProfile
     ] = await Promise.all([
         loadJson('suppliers_enhanced.json'),
-        loadJson('consultants_enhanced.json'),
         loadJson('consultants.json'),
+        Promise.resolve([]), // consultants.json now contains enhanced data
         loadJson('caseStudies_clean.json'),
         loadJson('regulations_filtered.json'),
         loadJson('certifications.json'),

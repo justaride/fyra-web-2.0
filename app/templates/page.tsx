@@ -1,5 +1,4 @@
-import { promises as fs } from 'fs';
-import path from 'path';
+import { loadJsonFile } from '@/lib/data';
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import Link from 'next/link';
@@ -43,9 +42,7 @@ interface Template {
 }
 
 async function getTemplates(): Promise<Template[]> {
-    const filePath = path.join(process.cwd(), 'data', 'templates.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadJsonFile('templates.json', []);
 }
 
 const categoryIcons: Record<string, React.ReactNode> = {

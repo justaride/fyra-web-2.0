@@ -1,5 +1,3 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert, Landmark, Scale, Lightbulb, TrendingUp, BookOpen, Hammer, ClipboardCheck, Sparkles, Eye, EyeOff, Zap, X, FileSearch } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
@@ -202,52 +200,71 @@ interface RegulatorySources {
     categories: Record<string, { name: string; description: string; icon: string; color: string }>;
 }
 
+import { loadJsonFile, getSuppliers, getCaseStudies, getConsultantsEnhanced } from '@/lib/data';
+
+// Default fallbacks for regulatory data
+const DEFAULT_FIRE_SAFETY: FireSafetyData = {
+    tiers: [],
+    testingLabs: [],
+    fireConsultants: [],
+    complianceFramework: { regulations: [] },
+    costImplications: [],
+    bestPractices: [],
+    precedents: []
+};
+
+const DEFAULT_PUBLIC_PROCUREMENT: PublicProcurementData = {
+    id: '',
+    title: '',
+    titleNO: '',
+    description: '',
+    descriptionNO: '',
+    sections: [],
+    keyResources: []
+};
+
+const DEFAULT_REGULATORY_PRACTICE: RegulatoryPracticeData = {
+    regulatoryPractice: {
+        title: '',
+        subtitle: '',
+        description: '',
+        enforcementLevels: []
+    },
+    interiorRenovation: {
+        title: '',
+        subtitle: '',
+        description: '',
+        advantages: [],
+        scopeGuidelines: { included: [], excluded: [], grayArea: [] },
+        complianceChecklist: [],
+        projectTypes: []
+    }
+};
+
+const DEFAULT_REGULATORY_SOURCES: RegulatorySources = {
+    metadata: { version: '', created: '', lastVerified: '' },
+    sources: [],
+    categories: {}
+};
+
 async function getRegulations() {
-    const filePath = path.join(process.cwd(), 'data', 'regulations_filtered.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadJsonFile('regulations_filtered.json', []);
 }
 
 async function getFireSafety(): Promise<FireSafetyData> {
-    const filePath = path.join(process.cwd(), 'data', 'fire_safety.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadJsonFile('fire_safety.json', DEFAULT_FIRE_SAFETY);
 }
 
 async function getPublicProcurement(): Promise<PublicProcurementData> {
-    const filePath = path.join(process.cwd(), 'data', 'public_procurement.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadJsonFile('public_procurement.json', DEFAULT_PUBLIC_PROCUREMENT);
 }
 
 async function getRegulatoryPractice(): Promise<RegulatoryPracticeData> {
-    const filePath = path.join(process.cwd(), 'data', 'regulatory_practice.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadJsonFile('regulatory_practice.json', DEFAULT_REGULATORY_PRACTICE);
 }
 
 async function getRegulatorySources(): Promise<RegulatorySources> {
-    const filePath = path.join(process.cwd(), 'data', 'regulatory_sources.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getSuppliers() {
-    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getCaseStudies() {
-    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getConsultants() {
-    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadJsonFile('regulatory_sources.json', DEFAULT_REGULATORY_SOURCES);
 }
 
 // Enforcement level badge component
@@ -431,7 +448,7 @@ const procurementIconMap: Record<string, React.ReactNode> = {
 };
 
 export default async function RegulationsPage() {
-    const [regulations, fireSafety, publicProcurement, regulatoryPractice, regulatorySources, suppliers, caseStudies, consultants] = await Promise.all([
+    const [regulations, fireSafety, publicProcurement, regulatoryPractice, regulatorySources, suppliers, caseStudies, consultantsData] = await Promise.all([
         getRegulations(),
         getFireSafety(),
         getPublicProcurement(),
@@ -439,8 +456,9 @@ export default async function RegulationsPage() {
         getRegulatorySources(),
         getSuppliers(),
         getCaseStudies(),
-        getConsultants(),
+        getConsultantsEnhanced(),
     ]);
+    const consultants = consultantsData.tier1 || [];
 
     // Filter sources by category for different sections
     const fireSafetySources = regulatorySources.sources.filter(s => s.category === 'fire_safety');

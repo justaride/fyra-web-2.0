@@ -1,5 +1,3 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { notFound } from 'next/navigation';
@@ -28,6 +26,7 @@ import SourceReferences from '@/components/SourceReferences';
 import { cn } from '@/lib/utils';
 import { JsonLd, generateLocalBusinessSchema } from '@/components/JsonLd';
 import { ChartWrapper, SupplierRadar } from '@/components/charts';
+import { getSuppliers, getCaseStudies, getConsultantsEnhanced, getSources } from '@/lib/data';
 
 interface Supplier {
     id: string;
@@ -82,14 +81,8 @@ interface Supplier {
     }>;
 }
 
-async function getSuppliers(): Promise<Supplier[]> {
-    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
 async function getSupplier(id: string): Promise<Supplier | undefined> {
-    const suppliers = await getSuppliers();
+    const suppliers = await getSuppliers() as Supplier[];
     return suppliers.find(s => s.id === id);
 }
 
@@ -98,6 +91,47 @@ export async function generateStaticParams() {
     return suppliers.map((supplier) => ({
         id: supplier.id,
     }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const supplier = await getSupplier(id);
+
+    if (!supplier) {
+        return {
+            title: 'Leverandør ikke funnet | Fyra Circular Platform',
+        };
+    }
+
+    const tierLabel = supplier.hospitalityReadiness?.tier === 'Tier 1'
+        ? 'Hospitality-Ready'
+        : supplier.hospitalityReadiness?.tier === 'Tier 2'
+        ? 'High Potential'
+        : 'Regional Specialist';
+
+    return {
+        title: `${supplier.name} | ${tierLabel} | Fyra Circular Platform`,
+        description: supplier.description.slice(0, 160),
+        openGraph: {
+            title: `${supplier.name} - Circular Furniture Supplier`,
+            description: supplier.description.slice(0, 160),
+            type: 'website',
+            locale: 'nb_NO',
+            siteName: 'Fyra Circular Platform',
+        },
+        twitter: {
+            card: 'summary',
+            title: supplier.name,
+            description: supplier.description.slice(0, 160),
+        },
+        keywords: [
+            supplier.name,
+            'circular furniture',
+            'sustainable interior',
+            supplier.location,
+            ...supplier.services.slice(0, 5),
+        ].join(', '),
+    };
 }
 
 // Professional tier indicator using dots instead of emoji stars

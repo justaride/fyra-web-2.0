@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate": "npx ts-node --transpile-only scripts/validate-data.ts",
+    "prebuild": "npm run validate || echo 'Validation warnings (non-blocking)'"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",

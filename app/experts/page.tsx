@@ -1,5 +1,3 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
@@ -8,6 +6,7 @@ import { ConsultantCard } from '@/components/ConsultantCard';
 import { Users, ShieldCheck, Lightbulb, Building2, CheckCircle, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 import SourceVerificationBadge from '@/components/SourceVerificationBadge';
+import { getConsultantsEnhanced, getConsultants, getSuppliers, getCaseStudies, loadJsonFile } from '@/lib/data';
 
 interface DecisionCriteria {
     when: string[];
@@ -15,7 +14,7 @@ interface DecisionCriteria {
 }
 
 interface ConsultantsEnhancedData {
-    tier1: any[];
+    tier1: unknown[];
     decisionFramework: {
         useForsen: DecisionCriteria;
         useSweco: DecisionCriteria;
@@ -28,34 +27,10 @@ interface ConsultantsEnhancedData {
     };
 }
 
-async function getEnhancedConsultants(): Promise<ConsultantsEnhancedData> {
-    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getBasicConsultants() {
-    const filePath = path.join(process.cwd(), 'data', 'consultants.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getSuppliers() {
-    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getCaseStudies() {
-    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
 export default async function ExpertsPage() {
     const [enhancedData, basicConsultants, suppliers, caseStudies] = await Promise.all([
-        getEnhancedConsultants(),
-        getBasicConsultants(),
+        loadJsonFile<ConsultantsEnhancedData>('consultants.json', { tier1: [], decisionFramework: { useForsen: { when: [] }, useSweco: { when: [] }, useHifab: { when: [] } }, marketGap: { finding: '', breakdown: {}, fyraOpportunity: '' } }),
+        getConsultants(),
         getSuppliers(),
         getCaseStudies(),
     ]);

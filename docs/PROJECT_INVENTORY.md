@@ -1,8 +1,8 @@
 # FYRA CIRCULAR PLATFORM - Prosjektinventar
 
-**Dato:** 2025-11-28
-**Versjon:** 3.4
-**Status:** ✅ LEVERINGSKLAR - Sprint 12 KOMPLETT (Source Verification + Verifiability Report)
+**Dato:** 2025-12-08
+**Versjon:** 3.8
+**Status:** ✅ LEVERINGSKLAR - Sprint 14 Code Quality KOMPLETT (Alle 3 faser)
 
 ---
 
@@ -19,13 +19,12 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 
 ---
 
-## 1. DATAFILER (14 aktive filer)
+## 1. DATAFILER (13 aktive filer)
 
 ### Primære Datakilder
 | Fil | Status | Datapunkter |
 |-----|--------|-------------|
-| `consultants.json` | ✅ AKTIV | 5 konsulenter |
-| `consultants_enhanced.json` | ✅ AKTIV | 3 Tier-1 PMs |
+| `consultants.json` | ✅ KONSOLIDERT | 3 Tier-1 PMs (enhanced data) |
 | `suppliers_enhanced.json` | ✅ BERIKET | 16 leverandører, hospitality tiers |
 | `caseStudies_clean.json` | ✅ BERIKET | 14 hoteller, tier/relevans scoring |
 | `certifications.json` | ✅ BERIKET Sprint 11 | 8 sertifiseringer + officialDocs |
@@ -49,13 +48,15 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 | `caseStudies.json` | 43KB | Erstattet av caseStudies_clean.json |
 | `regulations.json` | 103KB | Erstattet av regulations_filtered.json |
 | `implementation.json` | 131KB | Ikke brukt av noen side |
+| `consultants_simple.json` | 126 | Konsolidert til consultants.json |
 
 ---
 
-## 2. DOKUMENTASJON (8 filer)
+## 2. DOKUMENTASJON (9 filer)
 
 | Fil | Formål | Status |
 |-----|--------|--------|
+| `ACTION_PLAN.md` | Prioritert handlingsplan for fixes | ✅ NY 2025-12-08 |
 | `CRITICAL_ANALYSIS.md` | Kvalitetsanalyse & gap-vurdering | ✅ OPPDATERT |
 | `MIRO_DOCS_FINDINGS.md` | Sammendrag av MIRO research | ✅ NY |
 | `IMPLEMENTATION_PLAN.md` | Implementeringsplan | ✅ OK |
@@ -99,6 +100,32 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 
 ## 4. KOMPONENT-STATUS
 
+### Oppdatert Sprint 14 (2025-12-08) - KOMPLETT
+| Komponent | Beskrivelse | Status |
+|-----------|-------------|--------|
+| `ErrorBoundary.tsx` | Feilhåndtering med retry og fallback UI | ✅ NY |
+| `EmptyState.tsx` | Tom-tilstand for lister og filter | ✅ NY |
+| `SkipLink.tsx` | Tastaturnavigasjon skip-link | ✅ NY |
+| `SupplierCard.tsx` | Oppdatert til sentral Supplier type | ✅ OPPDATERT |
+| `SupplierDirectory.tsx` | EmptyState + ARIA labels + Code splitting | ✅ OPPDATERT |
+| `JsonLd.tsx` | XSS-sikret med sanitering | ✅ OPPDATERT |
+| `skeletons/MapSkeleton.tsx` | Loading skeleton for Map | ✅ NY |
+| `skeletons/ChartSkeleton.tsx` | Loading skeletons for diagrammer | ✅ NY |
+
+### Nye Lib-filer Sprint 14
+| Fil | Beskrivelse | Status |
+|-----|-------------|--------|
+| `lib/types.ts` | Sentraliserte TypeScript interfaces | ✅ NY |
+| `lib/data.ts` | Sikker JSON-lasting med try-catch | ✅ NY |
+| `scripts/validate-data.ts` | Data-validering (prebuild) | ✅ NY |
+
+### SEO Metadata (generateMetadata)
+| Side | Status |
+|------|--------|
+| `app/suppliers/[id]/page.tsx` | ✅ Dynamisk metadata |
+| `app/case-studies/[id]/page.tsx` | ✅ Dynamisk metadata |
+| `app/templates/[id]/page.tsx` | ✅ Dynamisk metadata |
+
 ### Oppdatert Sprint 11
 | Komponent | Beskrivelse | Status |
 |-----------|-------------|--------|
@@ -117,7 +144,7 @@ Plattformen er leveransen for NCH-Fyra samarbeidsavtalen.
 ### Trenger oppdatering
 | Komponent | Problem | Prioritet |
 |-----------|---------|-----------|
-| `ConsultantCard.tsx` | Støtter ikke contacts-array | HØY |
+| `ConsultantCard.tsx` | Støtter ikke contacts-array | LAV |
 
 ---
 
@@ -445,4 +472,33 @@ Arkivert til `data/_archive/`:
 
 ---
 
-*Generert: 2025-11-28 Sprint 12 Complete | Fyra Circular Platform v3.4 | Full Verifiability Audit*
+---
+
+## 12. PROSJEKTKONSOLIDERING (2025-12-08)
+
+### Mappestruktur Opprydning
+Alle prosjektfiler konsolidert til én mappe:
+
+| Før | Etter |
+|-----|-------|
+| `Project Fyra Web 1.0 /fyra-web-2.0/` | `Fyra Web 2.0/` |
+| `Project Fyra Web 1.0 /fyra-circular-platform/` | SLETTET |
+| `2.0 Project Fyra Web 2.0/` | SLETTET |
+
+### Arkivmappe Opprettet
+Historiske analysefiler flyttet til `arkiv/` (gitignored):
+
+| Mappe | Innhold |
+|-------|---------|
+| `arkiv/analyse/` | Originale MD-analysedokumenter |
+| `arkiv/data-extracts/` | JSON-utdrag fra initial research |
+| `arkiv/*.py` | Data extraction scripts |
+
+### Git Status
+- Branch: `main`
+- Remote: `https://github.com/justaride/fyra-web-2.0.git`
+- Status: Synkronisert med origin
+
+---
+
+*Generert: 2025-12-08 | Oppdatert: 2025-12-08 | Fyra Circular Platform v3.8 | Sprint 14 Code Quality KOMPLETT*

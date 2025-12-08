@@ -1,9 +1,8 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { ArrowLeft } from 'lucide-react';
 import { PrintButton } from '@/components/PrintButton';
+import { getTemplates as loadTemplates } from '@/lib/data';
 
 interface TemplateSection {
     title: string;
@@ -31,9 +30,7 @@ interface Template {
 }
 
 async function getTemplates(): Promise<Template[]> {
-    const filePath = path.join(process.cwd(), 'data', 'templates.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadTemplates() as Promise<Template[]>;
 }
 
 async function getTemplate(id: string): Promise<Template | undefined> {
@@ -46,6 +43,41 @@ export async function generateStaticParams() {
     return templates.map((template) => ({
         id: template.id,
     }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+    const { id } = await params;
+    const template = await getTemplate(id);
+
+    if (!template) {
+        return {
+            title: 'Template ikke funnet | Fyra Circular Platform',
+        };
+    }
+
+    return {
+        title: `${template.title} | ${template.category} Template | Fyra`,
+        description: template.description.slice(0, 160),
+        openGraph: {
+            title: `${template.title} - Professional Template`,
+            description: template.description.slice(0, 160),
+            type: 'website',
+            locale: 'nb_NO',
+            siteName: 'Fyra Circular Platform',
+        },
+        twitter: {
+            card: 'summary',
+            title: template.title,
+            description: template.description.slice(0, 100),
+        },
+        keywords: [
+            template.title,
+            template.category,
+            'circular procurement',
+            'sustainable hospitality',
+            'template',
+        ].join(', '),
+    };
 }
 
 export default async function TemplatePrintPage({ params }: { params: Promise<{ id: string }> }) {

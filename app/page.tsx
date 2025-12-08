@@ -1,5 +1,3 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import Link from 'next/link';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -22,50 +20,8 @@ import {
   Download
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
-
-interface CaseStudy {
-  id: string;
-  title: string;
-  type: string;
-  tier: string;
-  fyraRelevance: number;
-  location: string;
-  size?: string;
-  year?: string;
-  circularFeatures: string[];
-  metrics?: {
-    co2Impact?: string;
-    circularContent?: string;
-    certification?: string;
-  };
-  chain?: string;
-}
-
-interface Supplier {
-  id: string;
-  name: string;
-  tagline: string;
-  headquarters: string;
-  hospitalityTier?: string;
-}
-
-async function getSuppliers(): Promise<Supplier[]> {
-  const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
-}
-
-async function getCaseStudies(): Promise<CaseStudy[]> {
-  const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
-}
-
-async function getConsultants(): Promise<any[]> {
-  const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
-}
+import { getLandingPageData } from '@/lib/data';
+import type { Supplier, CaseStudy, Consultant } from '@/lib/types';
 
 // Relevance score indicator
 function RelevanceScore({ score }: { score: number }) {
@@ -143,9 +99,7 @@ function PathwayCard({
 }
 
 export default async function Home() {
-  const suppliers = await getSuppliers();
-  const caseStudies = await getCaseStudies();
-  const consultants = await getConsultants();
+  const { suppliers, caseStudies, consultants } = await getLandingPageData();
   const consultantsCount = consultants.length;
 
   // Get featured case studies (Flagship tier with high relevance)
@@ -153,9 +107,9 @@ export default async function Home() {
     .filter(cs => cs.tier === 'Flagship' && cs.fyraRelevance >= 4)
     .slice(0, 3);
 
-  // Get top suppliers (hospitality-ready)
+  // Get top suppliers (hospitality-ready - Tier 1 and Tier 2)
   const topSuppliers = suppliers
-    .filter(s => s.hospitalityTier === 'Proven' || s.hospitalityTier === 'Experienced')
+    .filter(s => s.hospitalityReadiness?.tier === 'Tier 1' || s.hospitalityReadiness?.tier === 'Tier 2')
     .slice(0, 4);
 
   return (
@@ -410,18 +364,18 @@ export default async function Home() {
               >
                 <div className="flex items-center gap-2 mb-2">
                   <span className="px-1.5 py-0.5 bg-teal-100 text-teal-700 text-[10px] font-semibold rounded">
-                    {supplier.hospitalityTier}
+                    {supplier.hospitalityReadiness?.tier || 'Tier 3'}
                   </span>
                 </div>
                 <h3 className="font-semibold text-slate-900 group-hover:text-teal-700 mb-1">
                   {supplier.name}
                 </h3>
                 <p className="text-xs text-slate-500 line-clamp-2 mb-2">
-                  {supplier.tagline}
+                  {supplier.description?.slice(0, 100)}...
                 </p>
                 <div className="flex items-center gap-1 text-xs text-slate-400">
                   <MapPin className="w-3 h-3" />
-                  <span>{supplier.headquarters}</span>
+                  <span>{supplier.country}</span>
                 </div>
               </Link>
             ))}

@@ -4,32 +4,7 @@ import Link from "next/link";
 import { MapPin, Star, Truck, CheckCircle, AlertTriangle, ArrowUpRight, Scale, Check } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useComparison } from "@/lib/ComparisonContext";
-
-interface Supplier {
-    id: string;
-    name: string;
-    description: string;
-    location: string;
-    hospitalityReadiness: {
-        tier: string;
-        score: string;
-        strengths: string[];
-        gaps: string[];
-    };
-    confidenceLevel: string;
-    services: string[];
-    capabilities?: {
-        volume?: string;
-        leadTime?: string;
-        inventory?: string;
-        logistics?: string;
-    };
-    certifications?: string[];
-    contact?: {
-        website?: string;
-    };
-    businessModel?: string;
-}
+import type { Supplier } from "@/lib/types";
 
 interface SupplierCardProps {
     supplier: Supplier;
@@ -102,7 +77,7 @@ export function SupplierCard({ supplier, className }: SupplierCardProps) {
                             </span>
                             <div className="flex items-center gap-1 text-xs font-medium text-slate-600 bg-slate-50 px-2 py-0.5 rounded-full border border-slate-100">
                                 <Star className="w-3 h-3 fill-slate-400 text-slate-400" />
-                                {supplier.confidenceLevel.split(' ')[0]}
+                                {supplier.hospitalityReadiness?.score?.split(' ')[0] || 'N/A'}
                             </div>
                         </div>
                     </div>

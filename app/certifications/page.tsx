@@ -1,6 +1,5 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import { Award, Building2, Leaf, Recycle, CheckCircle, AlertCircle, ArrowRight, ExternalLink, FileCheck, FileSearch } from "lucide-react";
+import { loadJsonFile, getSuppliers, getCaseStudies, getConsultantsEnhanced } from '@/lib/data';
 import { cn } from "@/lib/utils";
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
@@ -74,34 +73,15 @@ interface RegulatorySource {
 }
 
 async function getCertifications(): Promise<Certification[]> {
-    const filePath = path.join(process.cwd(), 'data', 'certifications.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadJsonFile('certifications.json', []);
 }
 
 async function getEnvironmentalSources(): Promise<RegulatorySource[]> {
-    const filePath = path.join(process.cwd(), 'data', 'regulatory_sources.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    const data = JSON.parse(fileContents);
+    interface RegSourcesFile {
+        sources: RegulatorySource[];
+    }
+    const data = await loadJsonFile<RegSourcesFile>('regulatory_sources.json', { sources: [] });
     return data.sources.filter((s: RegulatorySource) => s.category === 'environmental');
-}
-
-async function getSuppliers() {
-    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getCaseStudies() {
-    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getConsultants() {
-    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
 }
 
 function getTypeIcon(type: string) {
@@ -152,13 +132,14 @@ function RelevanceStars({ score }: { score: number }) {
 }
 
 export default async function CertificationsPage() {
-    const [certifications, environmentalSources, suppliers, caseStudies, consultants] = await Promise.all([
+    const [certifications, environmentalSources, suppliers, caseStudies, consultantsData] = await Promise.all([
         getCertifications(),
         getEnvironmentalSources(),
         getSuppliers(),
         getCaseStudies(),
-        getConsultants(),
+        getConsultantsEnhanced(),
     ]);
+    const consultants = consultantsData.tier1 || [];
 
     // Sort by relevance score
     const sortedCertifications = [...certifications].sort((a, b) => b.relevanceScore - a.relevanceScore);

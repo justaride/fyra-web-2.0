@@ -1,13 +1,22 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import dynamic from 'next/dynamic';
 import { SupplierCard } from '@/components/SupplierCard';
-import Map from '@/components/Map';
+import { MapSkeleton } from '@/components/skeletons';
 import { Map as MapIcon, List, Filter, Building2, Globe, Sparkles, X, MapPin, Star, Package, Truck } from 'lucide-react';
+
+// Lazy load Map component (~180KB Leaflet bundle)
+const Map = dynamic(() => import('@/components/Map'), {
+    loading: () => <MapSkeleton />,
+    ssr: false,
+});
 import { cn } from '@/lib/utils';
+import { EmptyState } from '@/components/EmptyState';
+import type { Supplier } from '@/lib/types';
 
 interface SupplierDirectoryProps {
-    suppliers: any[];
+    suppliers: Supplier[];
 }
 
 export default function SupplierDirectory({ suppliers }: SupplierDirectoryProps) {
@@ -148,8 +157,8 @@ export default function SupplierDirectory({ suppliers }: SupplierDirectoryProps)
                         <div className="w-px h-6 bg-slate-200 mx-1" />
 
                         {/* Tier Filters */}
-                        <div className="flex items-center gap-1.5">
-                            <span className="text-xs text-slate-400 font-medium mr-1">Tier:</span>
+                        <div className="flex items-center gap-1.5" role="group" aria-label="Filtrer etter leverandør-tier">
+                            <span className="text-xs text-slate-400 font-medium mr-1" id="tier-filter-label">Tier:</span>
                             {(['Tier 1', 'Tier 2', 'Tier 3'] as const).map((tier) => {
                                 const isActive = selectedTiers.includes(tier);
                                 const colorClasses = {
@@ -168,6 +177,8 @@ export default function SupplierDirectory({ suppliers }: SupplierDirectoryProps)
                                     <button
                                         key={tier}
                                         onClick={() => toggleTier(tier)}
+                                        aria-pressed={isActive}
+                                        aria-label={`Filter ${tier}: ${filterCounts[tier]} leverandører`}
                                         className={cn(
                                             "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all duration-200",
                                             colorClasses[tier]
@@ -197,6 +208,8 @@ export default function SupplierDirectory({ suppliers }: SupplierDirectoryProps)
                         {/* Stockholm Filter */}
                         <button
                             onClick={() => setStockholmOnly(!stockholmOnly)}
+                            aria-pressed={stockholmOnly}
+                            aria-label={`Stockholm-filter: ${filterCounts.stockholm} leverandører`}
                             className={cn(
                                 "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all duration-200",
                                 stockholmOnly
@@ -217,6 +230,8 @@ export default function SupplierDirectory({ suppliers }: SupplierDirectoryProps)
                         {/* B2B Readiness Filters */}
                         <button
                             onClick={() => setStockAvailable(!stockAvailable)}
+                            aria-pressed={stockAvailable}
+                            aria-label={`Lager tilgjengelig: ${filterCounts.stockAvailable} leverandører`}
                             className={cn(
                                 "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all duration-200",
                                 stockAvailable
@@ -236,6 +251,8 @@ export default function SupplierDirectory({ suppliers }: SupplierDirectoryProps)
 
                         <button
                             onClick={() => setSourcingService(!sourcingService)}
+                            aria-pressed={sourcingService}
+                            aria-label={`Sourcing-tjeneste: ${filterCounts.sourcingService} leverandører`}
                             className={cn(
                                 "inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border transition-all duration-200",
                                 sourcingService
@@ -243,7 +260,7 @@ export default function SupplierDirectory({ suppliers }: SupplierDirectoryProps)
                                     : 'bg-white text-indigo-700 border-indigo-200 hover:border-indigo-400'
                             )}
                         >
-                            <Truck className="w-3.5 h-3.5" />
+                            <Truck className="w-3.5 h-3.5" aria-hidden="true" />
                             Sourcing
                             <span className={cn(
                                 "px-1.5 py-0.5 rounded-full text-[10px]",
@@ -267,30 +284,42 @@ export default function SupplierDirectory({ suppliers }: SupplierDirectoryProps)
                 </div>
             </div>
 
+            {/* Screen reader announcement for filter results */}
+            <div
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+                className="sr-only"
+            >
+                {`${filteredSuppliers.length} leverandører funnet`}
+            </div>
+
             {/* Content Area */}
             <div className="min-h-[600px]">
                 {viewMode === 'map' ? (
                     <Map suppliers={filteredSuppliers} />
                 ) : (
-                    <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                    <div
+                        className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+                        role="list"
+                        aria-label="Liste over leverandører"
+                    >
                         {filteredSuppliers.map((supplier) => (
                             <SupplierCard key={supplier.id} supplier={supplier} />
                         ))}
 
                         {/* Empty state */}
                         {filteredSuppliers.length === 0 && (
-                            <div className="col-span-full flex flex-col items-center justify-center py-16 text-center">
-                                <div className="w-16 h-16 rounded-full bg-slate-100 flex items-center justify-center mb-4">
-                                    <Filter className="w-8 h-8 text-slate-400" />
-                                </div>
-                                <h3 className="text-lg font-semibold text-slate-900 mb-2">No suppliers match your filters</h3>
-                                <p className="text-sm text-slate-500 mb-4">Try adjusting your filter criteria</p>
-                                <button
-                                    onClick={clearFilters}
-                                    className="inline-flex items-center gap-2 px-4 py-2 bg-slate-900 text-white text-sm font-medium rounded-lg hover:bg-slate-800 transition-colors"
-                                >
-                                    Clear all filters
-                                </button>
+                            <div className="col-span-full">
+                                <EmptyState
+                                    type="filter"
+                                    title="Ingen leverandører funnet"
+                                    description="Ingen leverandører matcher de valgte filtrene. Prøv å fjerne noen filtre."
+                                    action={{
+                                        label: 'Fjern alle filtre',
+                                        onClick: clearFilters
+                                    }}
+                                />
                             </div>
                         )}
                     </div>

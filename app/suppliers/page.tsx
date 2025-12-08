@@ -1,5 +1,3 @@
-import { promises as fs } from 'fs';
-import path from 'path';
 import SupplierDirectory from '@/components/SupplierDirectory';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
@@ -9,41 +7,20 @@ import { ComparisonProvider } from '@/lib/ComparisonContext';
 import SourceVerificationBadge from '@/components/SourceVerificationBadge';
 import { ComparisonBar } from '@/components/ComparisonBar';
 import { ComparisonTable } from '@/components/ComparisonTable';
-
-interface Supplier {
-  id: string;
-  hospitalityTier?: string;
-  nordicReach?: boolean;
-}
-
-async function getSuppliers(): Promise<Supplier[]> {
-  const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
-}
-
-async function getCaseStudies() {
-  const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
-}
-
-async function getConsultants() {
-  const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
-  const fileContents = await fs.readFile(filePath, 'utf8');
-  return JSON.parse(fileContents);
-}
+import { getSuppliers, getCaseStudies, getConsultantsEnhanced } from '@/lib/data';
+import type { Supplier } from '@/lib/types';
 
 export default async function SuppliersPage() {
-  const [suppliers, caseStudies, consultants] = await Promise.all([
+  const [suppliers, caseStudies, consultantsData] = await Promise.all([
     getSuppliers(),
     getCaseStudies(),
-    getConsultants(),
+    getConsultantsEnhanced(),
   ]);
+  const consultants = consultantsData.tier1 || [];
 
   // Calculate stats
-  const provenCount = suppliers.filter(s => s.hospitalityTier === 'Proven').length;
-  const nordicReachCount = suppliers.filter(s => s.nordicReach).length;
+  const provenCount = suppliers.filter(s => s.hospitalityReadiness?.tier === 'Tier 1' || s.hospitalityReadiness?.tier === 'Tier 2').length;
+  const nordicReachCount = suppliers.filter(s => s.regions && s.regions.length > 1).length;
 
   return (
     <ComparisonProvider>

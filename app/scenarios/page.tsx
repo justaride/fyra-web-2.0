@@ -1,5 +1,4 @@
-import { promises as fs } from 'fs';
-import path from 'path';
+import { loadJsonFile, getSuppliers, getCaseStudies, getConsultantsEnhanced } from '@/lib/data';
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { Clock, AlertTriangle, CheckCircle, Building2, Flame, Globe, Sparkles, ArrowRight, Info, Link as LinkIcon } from 'lucide-react';
@@ -94,27 +93,7 @@ const colorMap: Record<string, string> = {
 };
 
 async function getScenarios(): Promise<Scenario[]> {
-    const filePath = path.join(process.cwd(), 'data', 'scenarios.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getSuppliers() {
-    const filePath = path.join(process.cwd(), 'data', 'suppliers_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getCaseStudies() {
-    const filePath = path.join(process.cwd(), 'data', 'caseStudies_clean.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
-}
-
-async function getConsultants() {
-    const filePath = path.join(process.cwd(), 'data', 'consultants_enhanced.json');
-    const fileContents = await fs.readFile(filePath, 'utf8');
-    return JSON.parse(fileContents);
+    return loadJsonFile('scenarios.json', []);
 }
 
 function ScenarioCard({ scenario }: { scenario: Scenario }) {
@@ -286,12 +265,13 @@ function ScenarioCard({ scenario }: { scenario: Scenario }) {
 }
 
 export default async function ScenariosPage() {
-    const [scenarios, suppliers, caseStudies, consultants] = await Promise.all([
+    const [scenarios, suppliers, caseStudies, consultantsData] = await Promise.all([
         getScenarios(),
         getSuppliers(),
         getCaseStudies(),
-        getConsultants(),
+        getConsultantsEnhanced(),
     ]);
+    const consultants = consultantsData.tier1 || [];
 
     return (
         <main className="min-h-screen bg-slate-50 font-sans">
