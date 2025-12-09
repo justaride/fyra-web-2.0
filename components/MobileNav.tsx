@@ -11,8 +11,6 @@ const navLinks = [
     { href: '/case-studies', label: 'Case Studies' },
     { href: '/regulations', label: 'Regulations' },
     { href: '/certifications', label: 'Certifications' },
-    { href: '/specifications', label: 'Specifications' },
-    { href: '/templates', label: 'Templates' },
     { href: '/about', label: 'About' },
 ];
 

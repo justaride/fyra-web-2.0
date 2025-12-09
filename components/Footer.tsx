@@ -11,8 +11,6 @@ const navigation = {
     resources: [
         { name: 'Regulations', href: '/regulations' },
         { name: 'Certifications', href: '/certifications' },
-        { name: 'Specifications', href: '/specifications' },
-        { name: 'Templates', href: '/templates' },
     ],
     company: [
         { name: 'About Fyra', href: '/about' },

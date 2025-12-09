@@ -271,16 +271,37 @@ ul.checklist li {
     color: black !important;
     font-size: 11pt !important;
     line-height: 1.4 !important;
+    counter-reset: page;
   }
 
-  /* Page setup */
+  /* Page setup with page numbers */
   @page {
     size: A4;
-    margin: 2cm 1.5cm;
+    margin: 2cm 1.5cm 2.5cm 1.5cm;
+
+    @bottom-center {
+      content: "Page " counter(page);
+      font-size: 9pt;
+      color: #64748b;
+    }
+
+    @bottom-right {
+      content: "Fyra Circular Platform";
+      font-size: 8pt;
+      color: #94a3b8;
+    }
   }
 
   @page :first {
     margin-top: 0;
+
+    @bottom-center {
+      content: none;
+    }
+
+    @bottom-right {
+      content: none;
+    }
   }
 
   /* Page breaks */

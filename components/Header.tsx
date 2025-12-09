@@ -58,8 +58,6 @@ export function Header({ supplierCount, searchData }: HeaderProps) {
                         <NavDivider />
                         <NavLink href="/regulations">Regulations</NavLink>
                         <NavLink href="/certifications">Certifications</NavLink>
-                        <NavLink href="/specifications">Specs</NavLink>
-                        <NavLink href="/templates">Templates</NavLink>
                         <NavDivider />
                         <NavLink href="/about">About</NavLink>
                     </nav>

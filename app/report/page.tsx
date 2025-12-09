@@ -1,6 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
-import { Building2, Users, BookOpen, Shield, Award, ClipboardList, Recycle, FileText } from 'lucide-react';
+import { Building2, Users, BookOpen, Shield, Award, ClipboardList, Recycle, FileText, Compass, Briefcase, Flame, Sparkles, Globe, ShieldAlert } from 'lucide-react';
 import { PrintControls } from '@/components/PrintControls';
 
 // Data loading functions
@@ -21,7 +21,11 @@ async function getAllData() {
         specifications,
         fireSafety,
         regulatoryPractice,
-        fyraProfile
+        fyraProfile,
+        scenarios,
+        templates,
+        publicProcurement,
+        sourcesData
     ] = await Promise.all([
         loadJson('suppliers_enhanced.json'),
         loadJson('consultants.json'),
@@ -32,7 +36,11 @@ async function getAllData() {
         loadJson('specifications.json'),
         loadJson('fire_safety.json'),
         loadJson('regulatory_practice.json'),
-        loadJson('fyra-profile.json')
+        loadJson('fyra-profile.json'),
+        loadJson('scenarios.json'),
+        loadJson('templates.json'),
+        loadJson('public_procurement.json'),
+        loadJson('sources.json')
     ]);
 
     return {
@@ -45,7 +53,11 @@ async function getAllData() {
         specifications,
         fireSafety,
         regulatoryPractice,
-        fyraProfile
+        fyraProfile,
+        scenarios,
+        templates,
+        publicProcurement,
+        sources: sourcesData
     };
 }
 
@@ -77,13 +89,39 @@ export default async function ReportPage() {
                         <p className="text-2xl text-slate-600 mb-8">
                             Nordic Circular Construction for Hospitality
                         </p>
-                        <div className="text-slate-500 mb-12">
+                        <div className="text-slate-500 mb-8">
                             <p>Comprehensive Research Report</p>
-                            <p className="mt-2">{currentDate}</p>
+                            <p className="mt-2 text-lg font-medium">{currentDate}</p>
                         </div>
-                        <div className="inline-block border-t-2 border-teal-600 pt-8">
+
+                        {/* Data Summary */}
+                        <div className="inline-block bg-slate-50 rounded-lg px-8 py-4 mb-8">
+                            <div className="grid grid-cols-4 gap-6 text-center text-sm">
+                                <div>
+                                    <div className="text-2xl font-bold text-teal-600">{data.suppliers.length}</div>
+                                    <div className="text-slate-500">Suppliers</div>
+                                </div>
+                                <div>
+                                    <div className="text-2xl font-bold text-teal-600">{data.caseStudies.length}</div>
+                                    <div className="text-slate-500">Case Studies</div>
+                                </div>
+                                <div>
+                                    <div className="text-2xl font-bold text-teal-600">{data.scenarios.length}</div>
+                                    <div className="text-slate-500">Scenarios</div>
+                                </div>
+                                <div>
+                                    <div className="text-2xl font-bold text-teal-600">{data.sources?.metadata?.totalSources || 0}</div>
+                                    <div className="text-slate-500">Sources</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="inline-block border-t-2 border-teal-600 pt-6">
                             <p className="text-sm text-slate-500">
                                 Suppliers &bull; Experts &bull; Case Studies &bull; Regulations &bull; Certifications
+                            </p>
+                            <p className="text-xs text-slate-400 mt-2">
+                                Data last updated: {data.sources?.metadata?.lastUpdated || 'N/A'}
                             </p>
                         </div>
                     </div>
@@ -102,7 +140,11 @@ export default async function ReportPage() {
                         <TocItem number="5" title="Regulatory Compass" page="30" subtitle="Fire safety, building codes, standards" />
                         <TocItem number="6" title="Certifications" page="45" subtitle={`${data.certifications.length} certification systems`} />
                         <TocItem number="7" title="Specifications & BVB" page="50" subtitle="Technical requirements" />
-                        <TocItem number="8" title="About Fyra" page="55" />
+                        <TocItem number="8" title="Project Scenarios" page="55" subtitle={`${data.scenarios.length} practical guides`} />
+                        <TocItem number="9" title="Templates & Tools" page="60" subtitle={`${data.templates.length} compliance templates`} />
+                        <TocItem number="10" title="Public Procurement" page="65" subtitle="LOU framework & guidance" />
+                        <TocItem number="11" title="About Fyra" page="70" />
+                        <TocItem number="A" title="Sources & References" page="75" subtitle={`${data.sources?.metadata?.totalSources || 0} verified sources`} />
                     </nav>
                 </section>
 
@@ -443,18 +485,26 @@ export default async function ReportPage() {
                         </div>
                     )}
 
-                    {/* Key Regulations Summary */}
-                    <div className="print:page-break-inside-avoid">
+                    {/* Key Regulations Summary - By Category */}
+                    <div>
                         <h3 className="text-lg font-bold text-slate-900 mb-4">Key Regulations Summary</h3>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            {Array.isArray(data.regulations) && data.regulations.slice(0, 8).map((reg: any, i: number) => (
-                                <div key={i} className="border border-slate-200 rounded p-4">
-                                    <h4 className="font-bold text-slate-900 text-sm">{reg.name || reg.title}</h4>
-                                    <p className="text-xs text-slate-500 mt-1">{reg.country || reg.jurisdiction}</p>
-                                    <p className="text-sm text-slate-600 mt-2">{reg.description?.substring(0, 150)}...</p>
+                        {Array.isArray(data.regulations) && data.regulations.map((category: any) => (
+                            <div key={category.id} className="mb-6 print:page-break-inside-avoid">
+                                <h4 className="font-bold text-slate-800 mb-3 text-sm uppercase tracking-wider">{category.title}</h4>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                                    {category.items?.slice(0, 6).map((reg: any, i: number) => (
+                                        <div key={i} className="border border-slate-200 rounded p-3 text-sm">
+                                            <h5 className="font-medium text-slate-900">{reg.title}</h5>
+                                            <p className="text-xs text-slate-500 mt-1">{reg.scope}</p>
+                                            <p className="text-xs text-slate-600 mt-1 line-clamp-2">{reg.description?.substring(0, 120)}...</p>
+                                        </div>
+                                    ))}
                                 </div>
-                            ))}
-                        </div>
+                                {category.items?.length > 6 && (
+                                    <p className="text-xs text-slate-400 mt-2">+ {category.items.length - 6} more items in this category</p>
+                                )}
+                            </div>
+                        ))}
                     </div>
                 </section>
 
@@ -542,9 +592,138 @@ export default async function ReportPage() {
                     )}
                 </section>
 
-                {/* 8. About Fyra */}
+                {/* 8. Project Scenarios */}
+                <section id="scenarios" className="mb-16 print:page-break-before-always">
+                    <SectionHeader number="8" title="Project Scenarios" icon={<Compass className="w-6 h-6" />} />
+
+                    <p className="text-slate-600 mb-8">
+                        Practical guidance for different hotel renovation scenarios, including recommended suppliers,
+                        timelines, costs, and risk mitigation strategies.
+                    </p>
+
+                    <div className="space-y-8">
+                        {data.scenarios.map((scenario: any) => (
+                            <div key={scenario.id} className="print:page-break-inside-avoid border border-slate-200 rounded-lg p-6">
+                                <div className="flex items-start justify-between mb-4">
+                                    <div>
+                                        <h3 className="text-xl font-bold text-slate-900">{scenario.title}</h3>
+                                        <p className="text-sm text-slate-600 mt-1">{scenario.description}</p>
+                                    </div>
+                                    <span className="px-3 py-1 rounded-full text-xs font-medium bg-green-100 text-green-700">
+                                        {scenario.timeline}
+                                    </span>
+                                </div>
+
+                                <p className="text-sm text-slate-700 mb-4 italic">{scenario.context}</p>
+
+                                {/* Recommended Suppliers */}
+                                <div className="mb-4 bg-slate-50 rounded p-4">
+                                    <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Recommended Suppliers</h4>
+                                    {scenario.recommendedSuppliers?.primary && (
+                                        <div className="mb-2">
+                                            <span className="text-sm font-medium text-teal-700">{scenario.recommendedSuppliers.primary.name}</span>
+                                            <span className="text-xs text-slate-500 ml-2">— {scenario.recommendedSuppliers.primary.rationale}</span>
+                                        </div>
+                                    )}
+                                    {scenario.recommendedSuppliers?.secondary && (
+                                        <div className="text-sm text-slate-600">
+                                            <span className="font-medium">Secondary:</span> {scenario.recommendedSuppliers.secondary.name}
+                                        </div>
+                                    )}
+                                </div>
+
+                                {/* Key Considerations */}
+                                {scenario.keyConsiderations && (
+                                    <div className="mb-4">
+                                        <h4 className="text-xs font-bold uppercase tracking-wider text-slate-500 mb-2">Key Considerations</h4>
+                                        <ul className="text-sm text-slate-600 space-y-1">
+                                            {scenario.keyConsiderations.slice(0, 4).map((item: string, i: number) => (
+                                                <li key={i} className="flex items-start gap-2">
+                                                    <span className="text-teal-500">•</span>
+                                                    <span>{item}</span>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                )}
+
+                                {/* Cost & Timeline */}
+                                <div className="grid grid-cols-2 gap-4 text-xs">
+                                    <div className="bg-blue-50 rounded p-3">
+                                        <span className="text-blue-600 font-medium">Timeline:</span>
+                                        <p className="text-slate-700">{scenario.timeline}</p>
+                                    </div>
+                                    <div className="bg-amber-50 rounded p-3">
+                                        <span className="text-amber-600 font-medium">Est. Cost:</span>
+                                        <p className="text-slate-700">{scenario.estimatedCost}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* 9. Templates & Tools */}
+                <section id="templates" className="mb-16 print:page-break-before-always">
+                    <SectionHeader number="9" title="Templates & Tools" icon={<ClipboardList className="w-6 h-6" />} />
+
+                    <p className="text-slate-600 mb-8">
+                        Practical compliance and documentation templates for circular construction projects.
+                        These tools help streamline procurement, documentation, and regulatory compliance.
+                    </p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {data.templates.map((template: any) => (
+                            <div key={template.id} className="print:page-break-inside-avoid border border-slate-200 rounded-lg p-5">
+                                <div className="flex items-start justify-between mb-3">
+                                    <h3 className="font-bold text-slate-900">{template.title}</h3>
+                                    <span className="text-xs bg-slate-100 text-slate-600 px-2 py-1 rounded">
+                                        {template.category}
+                                    </span>
+                                </div>
+                                <p className="text-sm text-slate-600 mb-4">{template.description}</p>
+
+                                {template.sections && (
+                                    <div className="text-xs text-slate-500">
+                                        <span className="font-medium">Sections:</span>{' '}
+                                        {template.sections.map((s: any) => s.title).join(', ')}
+                                    </div>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* 10. Public Procurement */}
+                <section id="public-procurement" className="mb-16 print:page-break-before-always">
+                    <SectionHeader number="10" title="Public Procurement" icon={<Briefcase className="w-6 h-6" />} />
+
+                    <p className="text-slate-600 mb-8">
+                        Framework for circular procurement in public sector projects, including the Swedish LOU
+                        (Lagen om offentlig upphandling) and Nordic procurement guidelines.
+                    </p>
+
+                    {data.publicProcurement?.sections?.map((section: any) => (
+                        <div key={section.id} className="mb-6 print:page-break-inside-avoid">
+                            <h3 className="text-lg font-bold text-slate-900 mb-3">{section.title}</h3>
+                            <div className="space-y-3">
+                                {section.items?.slice(0, 4).map((item: any, i: number) => (
+                                    <div key={i} className="border border-slate-200 rounded p-4">
+                                        <h4 className="font-medium text-slate-900 text-sm">{item.title}</h4>
+                                        <p className="text-sm text-slate-600 mt-1">{item.description}</p>
+                                        {item.scope && (
+                                            <p className="text-xs text-slate-400 mt-2">Scope: {item.scope}</p>
+                                        )}
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    ))}
+                </section>
+
+                {/* 11. About Fyra */}
                 <section id="about" className="mb-16 print:page-break-before-always">
-                    <SectionHeader number="8" title="About Fyra" icon={<Recycle className="w-6 h-6" />} />
+                    <SectionHeader number="11" title="About Fyra" icon={<Recycle className="w-6 h-6" />} />
 
                     {data.fyraProfile && (
                         <div className="prose prose-slate max-w-none">
@@ -578,6 +757,71 @@ export default async function ReportPage() {
                             )}
                         </div>
                     )}
+                </section>
+
+                {/* Appendix A: Sources & References */}
+                <section id="sources" className="mb-16 print:page-break-before-always">
+                    <SectionHeader number="A" title="Sources & References" icon={<BookOpen className="w-6 h-6" />} />
+
+                    <p className="text-slate-600 mb-6">
+                        All data in this report is verified against primary sources. This appendix lists the
+                        {' '}{data.sources?.metadata?.totalSources || 0} sources referenced throughout the platform.
+                    </p>
+
+                    <div className="bg-slate-50 rounded-lg p-4 mb-8">
+                        <p className="text-sm text-slate-600">
+                            <span className="font-medium">Last Updated:</span> {data.sources?.metadata?.lastUpdated || 'N/A'}
+                        </p>
+                        <p className="text-xs text-slate-500 mt-1">
+                            Sources include official documentation, project pages, press releases, and verified company websites.
+                        </p>
+                    </div>
+
+                    {/* Group sources by type */}
+                    {data.sources?.sources && (() => {
+                        const sourcesByType: Record<string, any[]> = {};
+                        data.sources.sources.forEach((source: any) => {
+                            const type = source.type || 'other';
+                            if (!sourcesByType[type]) sourcesByType[type] = [];
+                            sourcesByType[type].push(source);
+                        });
+
+                        const typeLabels: Record<string, string> = {
+                            'project_page': 'Project Pages',
+                            'press_release': 'Press Releases',
+                            'official_doc': 'Official Documentation',
+                            'service_page': 'Service Pages',
+                            'company_website': 'Company Websites',
+                            'news_article': 'News Articles',
+                            'other': 'Other Sources'
+                        };
+
+                        return Object.entries(sourcesByType).slice(0, 6).map(([type, sources]) => (
+                            <div key={type} className="mb-6 print:page-break-inside-avoid">
+                                <h3 className="text-sm font-bold text-slate-800 uppercase tracking-wider mb-3">
+                                    {typeLabels[type] || type} ({sources.length})
+                                </h3>
+                                <div className="space-y-2 text-xs">
+                                    {sources.slice(0, 10).map((source: any) => (
+                                        <div key={source.id} className="border-l-2 border-slate-200 pl-3 py-1">
+                                            <p className="font-medium text-slate-800">{source.title}</p>
+                                            <p className="text-slate-500">{source.publisher} • {source.url}</p>
+                                        </div>
+                                    ))}
+                                    {sources.length > 10 && (
+                                        <p className="text-slate-400 italic">+ {sources.length - 10} more {typeLabels[type]?.toLowerCase() || 'sources'}</p>
+                                    )}
+                                </div>
+                            </div>
+                        ));
+                    })()}
+
+                    <div className="mt-8 p-4 bg-teal-50 rounded-lg text-sm">
+                        <p className="text-teal-800">
+                            <span className="font-medium">Full source access:</span> All source URLs are verified and accessible
+                            via the online platform at fyra-web-2.0.
+                        </p>
+                    </div>
                 </section>
 
                 {/* Footer */}
