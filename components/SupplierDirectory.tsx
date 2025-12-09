@@ -4,7 +4,7 @@ import { useState, useMemo } from 'react';
 import dynamic from 'next/dynamic';
 import { SupplierCard } from '@/components/SupplierCard';
 import { MapSkeleton } from '@/components/skeletons';
-import { Map as MapIcon, List, Filter, Building2, Globe, Sparkles, X, MapPin, Star, Package, Truck } from 'lucide-react';
+import { Map as MapIcon, List, Filter, Building2, Globe, Sparkles, X, MapPin, Star, Package, Truck, Printer } from 'lucide-react';
 
 // Lazy load Map component (~180KB Leaflet bundle)
 const Map = dynamic(() => import('@/components/Map'), {
@@ -280,8 +280,26 @@ export default function SupplierDirectory({ suppliers }: SupplierDirectoryProps)
                                 Clear
                             </button>
                         )}
+
+                        {/* Print Button */}
+                        <div className="w-px h-6 bg-slate-200 mx-1 hidden lg:block" />
+                        <button
+                            onClick={() => window.print()}
+                            className="hidden lg:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-800 transition-colors print:hidden"
+                            title="Skriv ut leverandørliste"
+                        >
+                            <Printer className="w-3.5 h-3.5" />
+                            Print
+                        </button>
                     </div>
                 </div>
+
+                {/* Print info banner */}
+                {hasActiveFilters && (
+                    <div className="mt-3 pt-3 border-t border-slate-100 text-xs text-slate-500 print:hidden">
+                        Print vil inkludere {filteredSuppliers.length} av {suppliers.length} leverandører basert på aktive filtre.
+                    </div>
+                )}
             </div>
 
             {/* Screen reader announcement for filter results */}

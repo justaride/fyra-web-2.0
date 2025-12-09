@@ -9,6 +9,7 @@ import { ComparisonBar } from '@/components/ComparisonBar';
 import { ComparisonTable } from '@/components/ComparisonTable';
 import { getSuppliers, getCaseStudies, getConsultantsEnhanced } from '@/lib/data';
 import type { Supplier } from '@/lib/types';
+import { PrintableWrapper } from '@/components/PrintableWrapper';
 
 export default async function SuppliersPage() {
   const [suppliers, caseStudies, consultantsData] = await Promise.all([
@@ -81,7 +82,12 @@ export default async function SuppliersPage() {
 
         {/* Directory */}
         <div className="container mx-auto px-4 py-8 pb-32">
-          <SupplierDirectory suppliers={suppliers} />
+          <PrintableWrapper
+            title="Nordic Supplier Directory"
+            subtitle={`${suppliers.length} verifiserte leverandører for sirkulært innkjøp`}
+          >
+            <SupplierDirectory suppliers={suppliers} />
+          </PrintableWrapper>
         </div>
 
         {/* Comparison components */}

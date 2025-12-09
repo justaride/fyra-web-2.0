@@ -11,6 +11,7 @@ import {
     Briefcase, HelpCircle, ChevronDown
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { PrintButton } from '@/components/PrintButton';
 
 interface FyraProfile {
     company: {
@@ -717,6 +718,9 @@ export default async function AboutPage() {
                     </div>
                 </section>
             </div>
+
+            {/* Floating Print Button */}
+            <PrintButton variant="floating" label="Print" />
 
             <Footer />
         </main>

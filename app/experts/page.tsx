@@ -7,6 +7,8 @@ import { Users, ShieldCheck, Lightbulb, Building2, CheckCircle, ArrowRight } fro
 import Link from 'next/link';
 import SourceVerificationBadge from '@/components/SourceVerificationBadge';
 import { getConsultantsEnhanced, getConsultants, getSuppliers, getCaseStudies, loadJsonFile } from '@/lib/data';
+import { PrintableWrapper } from '@/components/PrintableWrapper';
+import { PrintButton } from '@/components/PrintButton';
 
 interface DecisionCriteria {
     when: string[];
@@ -224,7 +226,7 @@ export default async function ExpertsPage() {
                 </div>
 
                 {/* CTA Section */}
-                <div className="mt-12 bg-slate-900 rounded-2xl p-8 text-white">
+                <div className="mt-12 bg-slate-900 rounded-2xl p-8 text-white print:hidden">
                     <div className="max-w-2xl">
                         <h2 className="text-2xl font-bold mb-3">Need Project Support?</h2>
                         <p className="text-slate-300 mb-6">
@@ -249,6 +251,9 @@ export default async function ExpertsPage() {
                         </div>
                     </div>
                 </div>
+
+                {/* Floating Print Button */}
+                <PrintButton variant="floating" label="Print" />
 
                 <Footer />
             </div>

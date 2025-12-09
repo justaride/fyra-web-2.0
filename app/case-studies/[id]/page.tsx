@@ -24,6 +24,7 @@ import {
 import SourceReferences from '@/components/SourceReferences';
 import SourceVerificationBadge from '@/components/SourceVerificationBadge';
 import { JsonLd, generateArticleSchema } from '@/components/JsonLd';
+import { PrintButton } from '@/components/PrintButton';
 
 interface CaseStudyContact {
     name?: string;
@@ -81,9 +82,12 @@ async function getCaseStudy(id: string): Promise<CaseStudy | undefined> {
 
 export async function generateStaticParams() {
     const caseStudies = await getCaseStudies();
-    return caseStudies.map((study) => ({
-        id: study.id,
-    }));
+    // Only generate static pages for visible (non-hidden) case studies
+    return caseStudies
+        .filter((study: any) => !study.hidden)
+        .map((study) => ({
+            id: study.id,
+        }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
@@ -545,6 +549,9 @@ export default async function CaseStudyDetailPage({ params }: { params: Promise<
                     </div>
                 </div>
             </div>
+
+            {/* Floating Print Button */}
+            <PrintButton variant="floating" label="Print" />
         </main>
     );
 }

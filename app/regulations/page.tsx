@@ -1,5 +1,6 @@
 import { Shield, FileText, AlertTriangle, CheckCircle, Info, Flame, Clock, Building2, ArrowRight, ExternalLink, ShieldCheck, ShieldAlert, CircleAlert, Landmark, Scale, Lightbulb, TrendingUp, BookOpen, Hammer, ClipboardCheck, Sparkles, Eye, EyeOff, Zap, X, FileSearch } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { PrintButton } from '@/components/PrintButton';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
@@ -1257,6 +1258,9 @@ export default async function RegulationsPage() {
                     </div>
                 </div>
             </div>
+
+            {/* Floating Print Button */}
+            <PrintButton variant="floating" label="Print" />
 
             <Footer />
         </main>

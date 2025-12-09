@@ -2,6 +2,7 @@ import { promises as fs } from 'fs';
 import path from 'path';
 import { Building2, Users, BookOpen, Shield, Award, ClipboardList, Recycle, FileText, Compass, Briefcase, Flame, Sparkles, Globe, ShieldAlert } from 'lucide-react';
 import { PrintControls } from '@/components/PrintControls';
+import { ReportLayoutWrapper } from '@/components/ReportSidebar';
 
 // Data loading functions
 async function loadJson(filename: string) {
@@ -70,12 +71,13 @@ export default async function ReportPage() {
     });
 
     return (
-        <main className="min-h-screen bg-white print:bg-white">
-            {/* Print Controls - Hidden when printing */}
-            <PrintControls />
+        <ReportLayoutWrapper>
+            <main className="min-h-screen bg-white print:bg-white">
+                {/* Print Controls - Hidden when printing */}
+                <PrintControls />
 
-            {/* Report Content */}
-            <div className="max-w-4xl mx-auto px-8 py-12 print:px-0 print:py-0 print:max-w-none">
+                {/* Report Content */}
+                <div className="max-w-4xl mx-auto px-8 py-12 print:px-0 print:py-0 print:max-w-none">
 
                 {/* Cover Page */}
                 <section className="print:h-[100vh] print:flex print:flex-col print:justify-center mb-16 print:mb-0 print:page-break-after-always">
@@ -102,7 +104,7 @@ export default async function ReportPage() {
                                     <div className="text-slate-500">Suppliers</div>
                                 </div>
                                 <div>
-                                    <div className="text-2xl font-bold text-teal-600">{data.caseStudies.length}</div>
+                                    <div className="text-2xl font-bold text-teal-600">{data.caseStudies.filter((cs: any) => !cs.hidden).length}</div>
                                     <div className="text-slate-500">Case Studies</div>
                                 </div>
                                 <div>
@@ -136,7 +138,7 @@ export default async function ReportPage() {
                         <TocItem number="1" title="Executive Summary" page="3" />
                         <TocItem number="2" title="Supplier Directory" page="4" subtitle={`${data.suppliers.length} verified suppliers`} />
                         <TocItem number="3" title="Expert Network" page="15" subtitle={`${data.consultantsEnhanced.tier1?.length || 0} strategic partners`} />
-                        <TocItem number="4" title="Case Studies" page="20" subtitle={`${data.caseStudies.length} hotel projects`} />
+                        <TocItem number="4" title="Case Studies" page="20" subtitle={`${data.caseStudies.filter((cs: any) => !cs.hidden).length} Swedish projects`} />
                         <TocItem number="5" title="Regulatory Compass" page="30" subtitle="Fire safety, building codes, standards" />
                         <TocItem number="6" title="Certifications" page="45" subtitle={`${data.certifications.length} certification systems`} />
                         <TocItem number="7" title="Specifications & BVB" page="50" subtitle="Technical requirements" />
@@ -345,11 +347,11 @@ export default async function ReportPage() {
                     <SectionHeader number="4" title="Case Studies" icon={<BookOpen className="w-6 h-6" />} />
 
                     <p className="text-slate-600 mb-8">
-                        Real-world examples of circular construction and reuse in the Nordic hospitality sector.
+                        Real-world examples of circular construction and reuse in the Swedish hospitality sector.
                     </p>
 
                     <div className="space-y-8">
-                        {data.caseStudies.map((study: any) => (
+                        {data.caseStudies.filter((cs: any) => !cs.hidden).map((study: any) => (
                             <div key={study.id} className="print:page-break-inside-avoid border border-slate-200 rounded-lg p-6">
                                 <div className="flex items-start justify-between mb-4">
                                     <div>
@@ -824,15 +826,16 @@ export default async function ReportPage() {
                     </div>
                 </section>
 
-                {/* Footer */}
-                <footer className="border-t-2 border-slate-200 pt-8 mt-16 text-center text-sm text-slate-500">
-                    <p className="font-medium text-slate-900 mb-2">Fyra Circular Platform</p>
-                    <p>Nordic Circular Construction for Hospitality</p>
-                    <p className="mt-4">Report generated: {currentDate}</p>
-                    <p className="mt-2">© {new Date().getFullYear()} Fyra. All rights reserved.</p>
-                </footer>
-            </div>
-        </main>
+                    {/* Footer */}
+                    <footer className="border-t-2 border-slate-200 pt-8 mt-16 text-center text-sm text-slate-500">
+                        <p className="font-medium text-slate-900 mb-2">Fyra Circular Platform</p>
+                        <p>Nordic Circular Construction for Hospitality</p>
+                        <p className="mt-4">Report generated: {currentDate}</p>
+                        <p className="mt-2">© {new Date().getFullYear()} Fyra. All rights reserved.</p>
+                    </footer>
+                </div>
+            </main>
+        </ReportLayoutWrapper>
     );
 }
 

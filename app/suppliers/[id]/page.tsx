@@ -27,6 +27,8 @@ import { cn } from '@/lib/utils';
 import { JsonLd, generateLocalBusinessSchema } from '@/components/JsonLd';
 import { ChartWrapper, SupplierRadar } from '@/components/charts';
 import { getSuppliers, getCaseStudies, getConsultantsEnhanced, getSources } from '@/lib/data';
+import { PrintableWrapper } from '@/components/PrintableWrapper';
+import { PrintButton } from '@/components/PrintButton';
 
 interface Supplier {
     id: string;
@@ -505,6 +507,9 @@ export default async function SupplierDetailPage({ params }: { params: Promise<{
                     </div>
                 </div>
             </div>
+
+            {/* Floating Print Button */}
+            <PrintButton variant="floating" label="Print" />
         </main>
     );
 }

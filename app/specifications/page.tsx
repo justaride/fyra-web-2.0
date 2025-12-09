@@ -1,6 +1,7 @@
 import { loadJsonFile, getSuppliers, getCaseStudies, getConsultantsEnhanced } from '@/lib/data';
 import { FileText, CheckCircle, AlertTriangle, Info, Armchair, Shirt, Lightbulb, Hammer, Flame, FlaskConical, Recycle, ArrowRight, ExternalLink, Leaf } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { PrintButton } from '@/components/PrintButton';
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 
@@ -553,6 +554,9 @@ export default async function SpecificationsPage() {
                     </div>
                 </section>
             </div>
+
+            {/* Floating Print Button */}
+            <PrintButton variant="floating" label="Print" />
         </main>
     );
 }

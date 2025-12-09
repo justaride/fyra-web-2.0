@@ -266,12 +266,37 @@ ul.checklist li {
     display: none !important;
   }
 
+  /* Auto-hide navigation elements */
+  header,
+  footer,
+  nav,
+  .sticky,
+  [role="navigation"],
+  [data-print-hide="true"] {
+    display: none !important;
+  }
+
+  /* Show print-only elements */
+  .print\:block {
+    display: block !important;
+  }
+
+  .print\:flex {
+    display: flex !important;
+  }
+
   body {
     background: white !important;
     color: black !important;
     font-size: 11pt !important;
     line-height: 1.4 !important;
     counter-reset: page;
+  }
+
+  /* Reset margins for print content */
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   /* Page setup with page numbers */

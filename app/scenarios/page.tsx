@@ -4,6 +4,7 @@ import { BreadcrumbBar } from '@/components/Breadcrumb';
 import { Clock, AlertTriangle, CheckCircle, Building2, Flame, Globe, Sparkles, ArrowRight, Info, Link as LinkIcon } from 'lucide-react';
 import type { ReactNode } from 'react';
 import Link from 'next/link';
+import { PrintButton } from '@/components/PrintButton';
 
 interface Supplier {
     name: string;
@@ -405,6 +406,9 @@ export default async function ScenariosPage() {
                     </div>
                 </div>
             </div>
+
+            {/* Floating Print Button */}
+            <PrintButton variant="floating" label="Print" />
         </main>
     );
 }

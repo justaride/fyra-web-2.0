@@ -2,6 +2,7 @@ import { loadJsonFile } from '@/lib/data';
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import Link from 'next/link';
+import { PrintButton } from '@/components/PrintButton';
 import {
     FileText,
     Shield,
@@ -350,6 +351,9 @@ export default async function TemplatesPage() {
                     </div>
                 </div>
             </div>
+
+            {/* Floating Print Button */}
+            <PrintButton variant="floating" label="Print" />
         </main>
     );
 }

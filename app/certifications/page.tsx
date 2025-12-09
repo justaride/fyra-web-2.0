@@ -1,6 +1,7 @@
 import { Award, Building2, Leaf, Recycle, CheckCircle, AlertCircle, ArrowRight, ExternalLink, FileCheck, FileSearch } from "lucide-react";
 import { loadJsonFile, getSuppliers, getCaseStudies, getConsultantsEnhanced } from '@/lib/data';
 import { cn } from "@/lib/utils";
+import { PrintButton } from '@/components/PrintButton';
 import { Header } from '@/components/Header';
 import { BreadcrumbBar } from '@/components/Breadcrumb';
 import SourceVerificationBadge from '@/components/SourceVerificationBadge';
@@ -447,6 +448,9 @@ export default async function CertificationsPage() {
                     </div>
                 </section>
             </div>
+
+            {/* Floating Print Button */}
+            <PrintButton variant="floating" label="Print" />
         </main>
     );
 }

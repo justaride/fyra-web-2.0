@@ -6,14 +6,19 @@ import { BookOpen, Hotel, MapPin, Award, CheckCircle2 } from 'lucide-react';
 import SourceVerificationBadge from '@/components/SourceVerificationBadge';
 import { getCaseStudies, getSuppliers, getConsultantsEnhanced } from '@/lib/data';
 import type { CaseStudy } from '@/lib/types';
+import { PrintableWrapper } from '@/components/PrintableWrapper';
+import { PrintButton } from '@/components/PrintButton';
 
 export default async function CaseStudiesPage() {
-    const [caseStudies, suppliers, consultantsData] = await Promise.all([
+    const [allCaseStudies, suppliers, consultantsData] = await Promise.all([
         getCaseStudies(),
         getSuppliers(),
         getConsultantsEnhanced(),
     ]);
     const consultants = consultantsData.tier1 || [];
+
+    // Filter out hidden case studies (non-Swedish)
+    const caseStudies = allCaseStudies.filter((cs: any) => !cs.hidden);
 
     // Calculate stats
     const flagshipCount = caseStudies.filter(cs => cs.tier === 'Flagship').length;
@@ -71,14 +76,19 @@ export default async function CaseStudiesPage() {
 
             {/* Case Studies Grid */}
             <div className="container mx-auto px-4 py-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {caseStudies.map((study: any) => (
-                        <CaseStudyCard key={study.id} study={study} />
-                    ))}
-                </div>
+                <PrintableWrapper
+                    title="Case Studies"
+                    subtitle={`${caseStudies.length} svenske prosjekter med sirkulær implementering`}
+                >
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 print:grid-cols-1 print:gap-4">
+                        {caseStudies.map((study: any) => (
+                            <CaseStudyCard key={study.id} study={study} />
+                        ))}
+                    </div>
+                </PrintableWrapper>
 
                 {/* Verification Notice */}
-                <div className="mt-8 p-4 bg-white rounded-lg border border-slate-200 flex items-center justify-between">
+                <div className="mt-8 p-4 bg-white rounded-lg border border-slate-200 flex items-center justify-between print:hidden">
                     <div className="flex items-center gap-3 text-sm text-slate-600">
                         <CheckCircle2 className="w-5 h-5 text-emerald-500" />
                         <span>All {caseStudies.length} case studies have verified source references</span>
@@ -89,6 +99,9 @@ export default async function CaseStudiesPage() {
                     />
                 </div>
             </div>
+
+            {/* Floating Print Button */}
+            <PrintButton variant="floating" label="Print" />
 
             <Footer />
         </main>

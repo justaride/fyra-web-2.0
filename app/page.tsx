@@ -16,7 +16,6 @@ import {
   Sparkles,
   CheckCircle,
   TrendingUp,
-  Hotel,
   Download
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -99,8 +98,11 @@ function PathwayCard({
 }
 
 export default async function Home() {
-  const { suppliers, caseStudies, consultants } = await getLandingPageData();
+  const { suppliers, caseStudies: allCaseStudies, consultants } = await getLandingPageData();
   const consultantsCount = consultants.length;
+
+  // Filter out hidden case studies (non-Swedish)
+  const caseStudies = allCaseStudies.filter((cs: any) => !cs.hidden);
 
   // Get featured case studies (Flagship tier with high relevance)
   const featuredCaseStudies = caseStudies
@@ -135,7 +137,7 @@ export default async function Home() {
 
             {/* Main headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight">
-              Build Sustainable Hotels
+              Build Sustainable Hospitality
               <span className="block text-teal-400">with Circular Resources</span>
             </h1>
 
@@ -143,7 +145,7 @@ export default async function Home() {
             <p className="text-xl text-slate-300 leading-relaxed mb-8 max-w-2xl mx-auto">
               The B2B knowledge hub for circular construction in Nordic hospitality.
               Find verified suppliers, proven case studies, and regulatory guidance
-              for reuse-first hotel projects.
+              for reuse-first hospitality projects.
             </p>
 
             {/* Quick stats - animated */}
@@ -214,7 +216,7 @@ export default async function Home() {
               href="/case-studies"
               icon={BookOpen}
               title="See Examples"
-              description="Learn from real Nordic hotel projects that successfully implemented circular strategies."
+              description="Learn from real Nordic hospitality projects that successfully implemented circular strategies."
               count={caseStudies.length}
               color="blue"
             />
@@ -246,7 +248,7 @@ export default async function Home() {
                 Featured Case Studies
               </h2>
               <p className="text-slate-600">
-                Flagship Nordic hotel projects leading in circular design.
+                Flagship Nordic hospitality projects leading in circular design.
               </p>
             </div>
             <Link
@@ -343,7 +345,7 @@ export default async function Home() {
                 Hospitality-Ready Suppliers
               </h2>
               <p className="text-slate-600">
-                Verified partners with proven experience in hotel circular projects.
+                Verified partners with proven experience in hospitality circular projects.
               </p>
             </div>
             <Link

@@ -5,6 +5,7 @@
     "type": "Hotel Case Study",
     "tier": "Flagship",
     "fyraRelevance": 5,
+    "hidden": true,
     "details": {
       "name": "Hotel Green Solution House",
       "category": "Eco-design hotel / Mid-upscale",
@@ -108,6 +109,7 @@
     "type": "Hotel Case Study",
     "tier": "Showcase",
     "fyraRelevance": 4,
+    "hidden": true,
     "details": {
       "chain": "Nordic Hotels & Resorts (Strawberry affiliated)",
       "opening": "2020",
@@ -277,6 +279,7 @@
     "type": "Hotel Case Study",
     "tier": "Reference",
     "fyraRelevance": 4,
+    "hidden": true,
     "details": {
       "chain": "Brøchner Hotels (4 Copenhagen hotels)",
       "scope": "ADAPTIVE REUSE + CHEMICAL-FREE - 1963 transformer station",
@@ -381,6 +384,7 @@
     "type": "Hotel Case Study",
     "tier": "Reference",
     "fyraRelevance": 3,
+    "hidden": true,
     "details": {
       "chain": "Nordic Choice Hotels / Strawberry",
       "scope": "MASS TIMBER CONSTRUCTION - Carbon storage",
@@ -423,6 +427,7 @@
     "type": "Hotel Case Study",
     "tier": "Reference",
     "fyraRelevance": 3,
+    "hidden": true,
     "details": {
       "chain": "Brøchner Hotels",
       "scope": "ADAPTIVE REUSE - Carlsberg brewery conversion"
@@ -456,6 +461,7 @@
     "type": "Hotel Case Study",
     "tier": "Scale Reference",
     "fyraRelevance": 3,
+    "hidden": true,
     "details": {
       "chain": "Thon Hotels (~80 properties)",
       "scope": "NEW BUILD - Sustainability integration at scale"

@@ -21,12 +21,12 @@ export const metadata: Metadata = {
     template: "%s | Fyra Circular Platform",
   },
   description:
-    "Your guide to circular economy in Nordic hospitality. Find verified suppliers, consultants, and case studies for sustainable hotel construction and renovation.",
+    "Your guide to circular economy in Nordic hospitality. Find verified suppliers, consultants, and case studies for sustainable hospitality construction and renovation.",
   keywords: [
     "circular economy",
     "sustainable construction",
     "Nordic hospitality",
-    "hotel renovation",
+    "hospitality renovation",
     "reused materials",
     "circular design",
     "Sweden",
